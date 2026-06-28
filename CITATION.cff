@@ -1,12 +1,12 @@
 cff-version: 1.2.0
 message: "If you use ZeroGateSim, please cite the software release and the related first-research-alpha proof-of-concept record."
 title: "ZeroGateSim: A toy-field simulator for zero-gate earned-one witnessing"
-version: "1.0.2-alpha"
+version: "1.1-alpha"
 date-released: "2026-06-28"
 authors:
   - family-names: "Bargiel"
     given-names: "Marek"
-abstract: "ZeroGateSim is speculative research software for testing a zero-gate dimensional-emergence grammar in generated toy fields. The v1.0-alpha proof-of-concept tested a final trinary earned-one witness across adversarial distinction, polarity, and relation corpora."
+abstract: "ZeroGateSim is speculative research software for testing a zero-gate dimensional-emergence grammar in generated toy fields. The v1.1-alpha share-ready witness pack presents the first-research-alpha proof-of-concept with bounded claims, visual orientation, and public review guides."
 keywords:
   - zero-gate
   - trinary logic

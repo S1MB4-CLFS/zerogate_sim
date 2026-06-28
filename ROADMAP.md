@@ -1,213 +1,147 @@
-# ZeroGateSim ROADMAP
+# ZeroGateSim Roadmap
 
-**Status:** v1.0.2-alpha license/citation final / ready for public GitHub setup  
-**Project spine:** zero-gate dimensional emergence simulator  
-**Current stage:** proof-of-concept recorded; core held unless breach appears
+**Current line:** `v1.1-alpha` share-ready public witness pack  
+**Release posture:** public research-alpha / speculative toy-field proof-of-concept
 
-ZeroGateSim tests whether reality-like structure can be modeled as pressure earning expression through zero, rather than as dead axes added to an imaginary box.
+ZeroGateSim now has a working first-research-alpha proof record. The next work is not to keep adding theory machinery sideways. The next work is public witness: make the repo readable, visual, reproducible, and bounded enough that an outside reader can understand what was tested and what was not.
 
-The v1.0-alpha boundary is not cosmic proof. It is the first working instrument.
+## North Star
 
+ZeroGateSim tests whether dimensional expression can be modeled not as adding axes to a box, but as candidate freedoms surviving a four-gate return through zero and then earning final +1 through trinary witness.
 
+The first research-alpha result supports this narrow claim inside generated toy fields:
 
-## v1.0.1-alpha — public repo hygiene
+> Final trinary witness separated earned-one from raw expression, latent overcrown, and false-one pressure across original and fresh-seed trinary adversarial proof records.
 
-Purpose: prepare ZeroGateSim for a public GitHub repository without dragging local proof weather, virtual environments, caches, or generated run folders into source control.
+It does not prove physical dimensions, cosmology, or that reality itself is trinary.
 
-This release-prep line adds:
+## Current proof record
 
-- public export tooling;
-- repository ignore rules;
-- citation metadata;
-- release checklist;
-- GitHub/Zenodo plan;
-- evidence-handling discipline;
-- paper lineage folders;
-- proof-record documentation.
-
-Victory here is not another simulation result. Victory here is a clean public source tree that can be inspected, installed, tested, and cited without making the repo a hoarder cave.
-
-The export must keep the proof record small and traceable while leaving heavy generated evidence outside Git history.
-
-## v1.0.2-alpha — license and citation final
-
-Purpose: remove the final publication fog-door before public GitHub setup.
-
-This patch finalizes:
-
-- MIT License for the source repository;
-- `CITATION.cff` with the intended public repository URL;
-- public export naming for v1.0.2-alpha;
-- release notes for the license/citation boundary;
-- public CI smoke-test workflow.
-
-Victory here is not another simulation result. Victory here is opening the door without ambiguity about reuse, citation, or claim boundary.
-
-## Current release posture
-
-v1.0-alpha is justified by two proof records:
-
-**Original proof:** seeds `0-8`.
-
-**Fresh-seed reproduction:** seeds `9-17`.
-
-Together they produced:
+Combined original proof and fresh-seed reproduction:
 
 - `1458` scenario cells;
-- `13122` seeded simulation runs;
+- `13122` seeded toy-field runs;
 - `22131` final earned-one events;
 - `2388` raw false-one pressures detected and demoted;
 - `0` final false-one crowns.
 
-This supports a toy-field claim only:
+This is the first proof-of-concept floor. It is not the roof.
 
-> The final trinary witness separated earned-one from raw expression, latent overcrown, and false-one pressure across original and fresh-seed trinary adversarial proof records.
+## v1.0-alpha to v1.0.2-alpha — public source foundation
 
-This does not support cosmology, physics, or final trinary mathematics.
+Completed:
 
-## Core held state
+- first-research-alpha proof record;
+- MIT license;
+- `CITATION.cff`;
+- DREED / `active_inference_review_lens_v0` public method note;
+- historical pre-simulation manuscript lane;
+- public repository hygiene;
+- generated run exclusion.
 
-The following should remain held for v1.0-alpha:
+## v1.1-alpha — Share-Ready Public Witness Pack
 
-**Expand:** candidate freedoms may express only as earned-one, not raw local pressure.
+Purpose:
 
-**Witness:** zero-state holds remain meaningful, not failure trash.
+Make the repo understandable to people who were not present for the build.
 
-**Resist:** false-one pressure must be named and demoted before final crown.
+Deliverables:
 
-The four-gate core should not be mutated unless future evidence creates a breach:
+- README top-card polish;
+- `docs/quickstart.md`;
+- `docs/claim_boundary.md`;
+- `docs/for_reviewers.md`;
+- `docs/visual_guide.md`;
+- `docs/public_sharing_note.md`;
+- `docs/proof_records/first_research_alpha/proof_card.md`;
+- `docs/assets/zero_gate_cycle.svg`;
+- `docs/assets/trinary_witness_stack.svg`;
+- `docs/assets/proof_harness_map.svg`;
+- simulation-supported paper scaffold in `docs/papers/zenodo_ready/`;
+- v1.1 release note.
 
-```math
-C_Z^i(t)=\min(g_D^i(t),g_P^i(t),g_R^i(t),g_B^i(t))
-```
+Success condition:
 
-## What is finished enough
+A skeptical reader can open the repo, understand the claim boundary, see the proof shape, run a small demo, and know where the full proof record belongs.
 
-The first research-alpha finish line is visible and reached:
+No new core gate mutation in this line.
 
-- the engine creates toy candidate fields;
-- gates can be scored;
-- zero-depth and trinary outcome can be read;
-- temporal endurance and lineage can be inspected;
-- candidate truth roles can be separated;
-- echo-independence can detect borrowed coherence;
-- earned-one can become the final +1;
-- proof records and release records can be frozen.
+## v1.2-alpha — Simulation-Supported Manuscript Draft
 
-That is enough to stop calibration creep and write the first proof-of-concept package.
+Purpose:
 
-## What is not finished
+Turn the historical theory draft plus proof record into a Zenodo-ready post-test manuscript.
 
-The project has not connected to real physics.
+Required movement:
 
-The project has not demonstrated dimensional emergence outside toy fields.
+- preserve the original pre-simulation paper as history;
+- explain what the simulator forced us to repair;
+- state raw expression versus earned-one as the main software-theory correction;
+- present proof harness and reproduction;
+- define unsupported claims clearly.
 
-The project has not compared itself against external mathematical emergence frameworks.
+Success condition:
 
-The project has not yet generated a manuscript-quality paper companion with figures, methods, limitations, and proof-record tables.
+A reader can understand the theory, the simulation, the repair history, and the bounded proof-of-concept without private context.
 
-Those are later gates.
+## v1.3-alpha — Reproducibility and Evidence Packaging
 
-## v1.0-alpha immediate tasks
+Purpose:
 
-### Proof report package
+Prepare clean evidence archives without bloating GitHub.
 
-Create a human-readable proof report from the v1.0-alpha evidence:
+Deliverables:
 
-- theory boundary;
-- simulation setup;
-- adversarial corpora;
-- original proof;
-- fresh-seed reproduction;
-- combined result;
-- failure/limitation section;
-- next research questions.
+- minimal demo evidence bundle;
+- first-research-alpha proof record bundle;
+- optional Zenodo evidence archive plan;
+- checksum / manifest convention;
+- clear distinction between source repo, evidence record, and paper record.
 
-### Repo hygiene
+Success condition:
 
-Keep generated proof runs out of normal source control.
+The source repo stays small while evidence remains traceable and citable.
 
-Keep the source package small. The weather can be large; the repo should not become a hoarder cave with plots in every drawer.
+## v1.4-alpha — Visual Workbench Lite
 
-### Paper companion
+Purpose:
 
-Write the first manuscript companion as proof-of-concept, not universal theory proof.
+Improve visual witness without building a GUI cathedral.
 
-Working claim:
+Possible deliverables:
 
-> In generated toy fields, a zero-gate earned-one witness can separate raw expression, latent holding, and false-one pressure under trinary adversarial stress.
+- selected field atlas examples;
+- glyph legend improvements;
+- one-command visual demo;
+- static gallery in `docs/assets/`.
 
-## v1.1-alpha — External baseline pressure
+Success condition:
 
-Goal: compare ZeroGateSim against simpler baselines beyond the internal ones.
+The visual layer helps readers understand proof pressure, not drown in plot confetti.
 
-Pressure questions:
+## v2.0 direction — External Review and Generalization
 
-- Does earned-one outperform amplitude-only under adversarial pressure?
-- Does earned-one outperform polarity-only under pulse theater?
-- Does earned-one outperform relation-only under echo mimicry?
+Only after the paper and release are stable:
 
-The result should be a baseline comparison report, not a core mutation.
+- ask external readers to reproduce small runs;
+- add issue templates for mechanism-boundary questions;
+- explore additional adversarial corpora;
+- compare earned-one witness against independent dimensionality measures;
+- consider a separate evidence DOI.
 
-## v1.2-alpha — Candidate ecology widening
+## HOLD conditions
 
-Goal: generate candidate families rather than only named hand-designed candidates.
+Stop and repair before advancing if:
 
-The v1.0 proof uses named adversarial corpora. That is valid for first proof-of-concept, but later work must ask whether the witness survives less curated candidate ecologies.
+- any public artifact implies proof of cosmology or physics;
+- final false-one crowns reappear in proof records;
+- generated runs enter Git history;
+- DREED language turns into reviewer cosplay;
+- visual polish obscures the claim boundary;
+- the repo becomes too large to audit.
 
-## v1.3-alpha — Effective dimension bridge
+## Operating sentence
 
-Goal: compare earned-one output against independent measures of effective structure.
+Small engine. Large weather. Clear witness.
 
-Candidate measures:
-
-- rank-like structure;
-- singular spectrum;
-- covariance geometry;
-- graph coherence;
-- later spectral-style behavior if justified.
-
-This is where the project begins touching external mathematical ground.
-
-## v2.0 horizon
-
-v2.0 should exist only if v1.x shows that earned-one is not just a tuned toy classifier.
-
-The v2 question:
-
-> Can zero-gate earned-one behavior predict emergent effective structure in less hand-designed systems?
-
-That is the next real wall.
-
-## Current operating sentence
-
-A real one is not what appears, and not even what returns once. A real one is what survives zero, time, role, and echo without borrowing a false name.
-
-
-## Public release sequence
-
-### Step A — local clean export
-
-Run `zerogate-export-public` and inspect the ZIP size and manifest.
-
-### Step B — local Git initialization
-
-Initialize Git only after the clean export has been inspected. Do not initialize from a folder containing `.venv/` or generated `runs/` unless `.gitignore` has already been verified.
-
-### Step C — public GitHub repository
-
-Create the public GitHub repo after the source tree is clean. Push code, docs, tests, proof-record summaries, and small examples only.
-
-### Step D — GitHub release
-
-Create a `v1.0.2-alpha` public release once the public repo installs and tests from a clean clone. The proof record remains v1.0-alpha; the source package is v1.0.2-alpha because public hygiene and license/citation finalization came after the proof freeze.
-
-### Step E — Zenodo software archive
-
-Archive the GitHub release through Zenodo after repository metadata, citation metadata, and license decision are settled.
-
-### Step F — paper companion
-
-Prepare the simulation-supported paper after the repo is public and citable.
-
-Do not let publication excitement mutate the core. The witness earned its first record because it refused false crowns.
+A real one is not the first thing after zero. A real one is what zero can return as without lying.

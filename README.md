@@ -1,13 +1,48 @@
 # ZeroGateSim
 
-**Current:** `v1.0.2-alpha` license/citation final / public-repo ready  
-**Status:** local-first speculative research software / toy-field proof-of-concept  
+**Current:** `v1.1-alpha` share-ready public witness pack  
+**Status:** speculative research software / toy-field proof-of-concept  
 **Working identity:** zero-gate dimensional emergence simulator  
 **Core question:** can a final trinary witness distinguish earned-one from raw expression, latent overcrown, and false-one pressure under adversarial toy-field weather?
 
 ZeroGateSim is a small research software project for testing a speculative theory of dimensional emergence.
 
-The theory begins with a refusal of the usual dead-shape ladder:
+It does **not** prove cosmology, physics, or that reality itself is trinary.
+
+It does test a narrower software-theory claim:
+
+> In generated toy fields, a final trinary witness can separate **earned-one** from raw expression pressure, latent overcrown, and false-one pressure across distinction, polarity, and relation adversaries.
+
+## First-research-alpha proof card
+
+Across the original proof harness and fresh-seed reproduction:
+
+| Measure | Result |
+|---|---:|
+| Scenario cells | `1458` |
+| Seeded toy-field runs | `13122` |
+| Final earned-one events | `22131` |
+| Raw false-one pressures detected | `2388` |
+| Raw false-one pressures demoted | `2388` |
+| Final false-one crowns | `0` |
+
+The machine did not prove the universe. It did something narrower and real:
+
+> It met false one, named it, and refused the crown.
+
+## Visual map
+
+Start with the three visual witnesses:
+
+- [Zero-Gate Cycle](docs/assets/zero_gate_cycle.svg)
+- [Trinary Witness Stack](docs/assets/trinary_witness_stack.svg)
+- [Proof Harness Map](docs/assets/proof_harness_map.svg)
+
+Reader guide: [docs/visual_guide.md](docs/visual_guide.md)
+
+## Core theory
+
+The theory begins by refusing the common dead-shape ladder:
 
 > point, line, plane, cube, then time.
 
@@ -27,74 +62,7 @@ Volume is not a box. Volume is closed relational freedom.
 
 A dimension is not merely an axis. A dimension is stabilized freedom that has passed through zero without losing coherence.
 
-
-
-## Public repository posture
-
-ZeroGateSim is now ready for a public GitHub repository after local confirmation of the v1.0.2-alpha patch.
-
-The public repo should contain the **source machine**: code, tests, docs, proof-record tools, release notes, small examples, and the first-research-alpha record.
-
-The public repo should **not** contain the heavy weather: `.venv/`, `runs/`, generated proof matrices, cache folders, local exports, or large ZIP evidence bundles.
-
-The working rule is:
-
-> Small engine. Large weather. Clear witness.
-
-## License and citation
-
-The source repository uses the MIT License. Citation metadata is stored in `CITATION.cff` and points to the intended public repository:
-
-`https://github.com/S1MB4-CLFS/zerogate_sim`
-
-The DOI field is intentionally absent until a Zenodo record exists. Future manuscript or evidence records may use separate explicit licenses.
-
-Use the export command before GitHub publication:
-
-```powershell
-Set-Location C:\dev\zerogate_sim
-$P = ".\.venv\Scripts\python.exe"
-& $P -m zerogate_sim.export_public_repo --repo . --out exports\zerogate_sim_public_repo_v1_0_2_alpha.zip
-```
-
-Then inspect the export ZIP before creating or pushing a public repository.
-
-## Paper lineage
-
-Do not overwrite the original theory draft.
-
-The repo reserves two paper lanes:
-
-- `docs/papers/history/` — the original pre-simulation paper, preserved as historical trace.
-- `docs/papers/zenodo_ready/` — the later simulation-supported manuscript prepared after repo publication.
-
-This keeps the lineage honest: original seeing, executable simulation, proof record, upgraded paper.
-
-## What v1.0-alpha means
-
-v1.0-alpha means the first proof-shaped software instrument stood up inside generated toy fields.
-
-It does **not** mean cosmology is proven.
-
-It means the current simulation grammar passed an original and fresh-seed trinary adversarial proof harness:
-
-- `1458` scenario cells;
-- `13122` seeded simulation runs;
-- `22131` final earned-one events;
-- `2388` raw false-one pressures detected and demoted;
-- `0` final false-one crowns.
-
-The supported claim is narrow:
-
-> ZeroGateSim's final trinary witness separated earned-one from raw expression, latent overcrown, and false-one pressure across original and fresh-seed trinary adversarial proof records.
-
-The unsupported claim is everything larger:
-
-> This does not prove physical dimensions, cosmology, or that reality itself is trinary.
-
-The machine did not prove the universe. It did something narrower and real: it met false one, named it, and refused the crown.
-
-## Core theory
+## The four-gate operator
 
 The central hypothesis is:
 
@@ -107,8 +75,6 @@ The four gates are:
 - **Relation** — polarity becomes bound into stable relation rather than split or drift.
 - **Return** — the expressed structure folds back toward zero while preserving coherence.
 
-The return gate is not decorative. Return is prompted by the first three gates. Distinction separates. Polarity tensions. Relation binds. When binding becomes coherent, expansion curves back as return.
-
 The zero-gate coherence of candidate freedom `i` at time `t` is:
 
 ```math
@@ -117,7 +83,7 @@ C_Z^i(t)=\min(g_D^i(t),g_P^i(t),g_R^i(t),g_B^i(t))
 
 The minimum matters. A candidate does not pass because one gate is beautiful. The weakest gate decides the coherence pressure.
 
-The old raw expression count is now treated as pressure, not truth:
+The old raw expression count is now treated as pressure, not final truth:
 
 ```math
 d_Z(t)=\sum_i H(\sigma_i(t)-\epsilon)H(C_Z^i(t)-\theta_Z)
@@ -127,7 +93,7 @@ Raw local expression is not final +1. Final +1 belongs only to **earned-one**.
 
 ## Trinary witness stack
 
-ZeroGateSim now distinguishes:
+ZeroGateSim distinguishes:
 
 **Expand / +1:** earned-one, final expression.
 
@@ -158,7 +124,7 @@ Run shape for the v1 proof record:
 - `6561` seeded runs per proof record;
 - original seeds `0-8` and reproduction seeds `9-17`.
 
-## Main commands
+## Quickstart
 
 Install/update locally:
 
@@ -169,38 +135,52 @@ $P = ".\.venv\Scripts\python.exe"
 & $P -m pytest
 ```
 
-Run the proof harness:
+Small demo:
 
 ```powershell
-& $P -m zerogate_sim.proof --profile wide243 --start-seed 0 --count 9 --out runs\proof_wide243_0_8_v033
-& $P -m zerogate_sim.proof_record --proof-dir runs\proof_wide243_0_8_v033
+& $P -m zerogate_sim.demo --seed 42 --out runs\demo_seed_42
+notepad runs\demo_seed_42\summary.md
 ```
 
-Run the fresh-seed reproduction:
+Small proof smoke test:
 
 ```powershell
-& $P -m zerogate_sim.proof --profile wide243 --start-seed 9 --count 9 --out runs\proof_wide243_9_17_repro
-& $P -m zerogate_sim.proof_record --proof-dir runs\proof_wide243_9_17_repro
+& $P -m zerogate_sim.proof --profile triad27 --start-seed 0 --count 1 --out runs\proof_smoke
+& $P -m zerogate_sim.proof_record --proof-dir runs\proof_smoke
+notepad runs\proof_smoke\proof_record.md
 ```
 
-Freeze the v1.0-alpha combined record:
+Full proof harnesses are heavy. Read [docs/quickstart.md](docs/quickstart.md) before running them.
 
-```powershell
-& $P -m zerogate_sim.release_record --proof-dir runs\proof_wide243_0_8_v033 --proof-dir runs\proof_wide243_9_17_repro --out runs\first_research_alpha_v1_0_alpha
-```
+## Reading order
 
-Read first:
+For a fast but honest orientation:
 
-- `runs\first_research_alpha_v1_0_alpha\first_research_alpha_record.md`
-- `docs\v1_0_alpha_first_research_alpha.md`
-- `docs\release_notes\v1_0_alpha.md`
-- `ROADMAP.md`
+1. [Claim boundary](docs/claim_boundary.md)
+2. [Visual guide](docs/visual_guide.md)
+3. [Proof card](docs/proof_records/first_research_alpha/proof_card.md)
+4. [Reviewer guide](docs/for_reviewers.md)
+5. [DREED method note](docs/methods/dreed_active_inference_review_lens_v0.md)
+6. [Original historical manuscript](docs/papers/history/zero_gate_dimensional_genesis_original_pre_simulation/)
+
+## Paper lineage
+
+Do not overwrite the original theory draft.
+
+The repo reserves two paper lanes:
+
+- `docs/papers/history/` — the original pre-simulation paper, preserved as historical trace.
+- `docs/papers/zenodo_ready/` — the later simulation-supported manuscript prepared after repo publication.
+
+This keeps the lineage honest:
+
+> original seeing -> executable simulation -> proof record -> upgraded paper.
 
 ## Repository rule
 
 Generated runs are evidence, not source. Keep them local or bundled for review. Do not store heavy proof weather in the repo by default.
 
-Small engine. Large weather. Clear witness.
+> Small engine. Large weather. Clear witness.
 
 ## DREED-style discipline
 
@@ -213,5 +193,7 @@ Inference is what may be suggested.
 Metaphor is how we explain it.
 
 Speculation is what remains unproven.
+
+DREED is not the judge. It is the pressure lantern.
 
 The primate may dance. It may not notarize the universe.

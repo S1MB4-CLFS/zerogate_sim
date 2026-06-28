@@ -1,0 +1,111 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1120" viewBox="0 0 1920 1120" role="img">
+<defs>
+        <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+          <stop offset="0%" stop-color="#07111f"/><stop offset="62%" stop-color="#0d1117"/><stop offset="100%" stop-color="#150f22"/>
+        </linearGradient>
+        <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="8" stdDeviation="9" flood-color="#000" flood-opacity="0.35"/></filter>
+        <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="9" markerHeight="9" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#d6e4ff"/></marker>
+        <marker id="arrowBlue" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="9" markerHeight="9" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#79c0ff"/></marker>
+        <marker id="arrowGreen" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="9" markerHeight="9" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#7ee787"/></marker>
+        <marker id="arrowRed" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="9" markerHeight="9" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#ff7b72"/></marker>
+        <marker id="arrowGold" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="9" markerHeight="9" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#f2cc60"/></marker>
+        </defs>
+<rect width="1920" height="1120" fill="url(#bg)"/>
+<line x1="0" y1="0" x2="0" y2="1120" stroke="#27364a" stroke-opacity="0.16"/>
+<line x1="96" y1="0" x2="96" y2="1120" stroke="#27364a" stroke-opacity="0.16"/>
+<line x1="192" y1="0" x2="192" y2="1120" stroke="#27364a" stroke-opacity="0.16"/>
+<line x1="288" y1="0" x2="288" y2="1120" stroke="#27364a" stroke-opacity="0.16"/>
+<line x1="384" y1="0" x2="384" y2="1120" stroke="#27364a" stroke-opacity="0.16"/>
+<line x1="480" y1="0" x2="480" y2="1120" stroke="#27364a" stroke-opacity="0.16"/>
+<line x1="576" y1="0" x2="576" y2="1120" stroke="#27364a" stroke-opacity="0.16"/>
+<line x1="672" y1="0" x2="672" y2="1120" stroke="#27364a" stroke-opacity="0.16"/>
+<line x1="768" y1="0" x2="768" y2="1120" stroke="#27364a" stroke-opacity="0.16"/>
+<line x1="864" y1="0" x2="864" y2="1120" stroke="#27364a" stroke-opacity="0.16"/>
+<line x1="960" y1="0" x2="960" y2="1120" stroke="#27364a" stroke-opacity="0.16"/>
+<line x1="1056" y1="0" x2="1056" y2="1120" stroke="#27364a" stroke-opacity="0.16"/>
+<line x1="1152" y1="0" x2="1152" y2="1120" stroke="#27364a" stroke-opacity="0.16"/>
+<line x1="1248" y1="0" x2="1248" y2="1120" stroke="#27364a" stroke-opacity="0.16"/>
+<line x1="1344" y1="0" x2="1344" y2="1120" stroke="#27364a" stroke-opacity="0.16"/>
+<line x1="1440" y1="0" x2="1440" y2="1120" stroke="#27364a" stroke-opacity="0.16"/>
+<line x1="1536" y1="0" x2="1536" y2="1120" stroke="#27364a" stroke-opacity="0.16"/>
+<line x1="1632" y1="0" x2="1632" y2="1120" stroke="#27364a" stroke-opacity="0.16"/>
+<line x1="1728" y1="0" x2="1728" y2="1120" stroke="#27364a" stroke-opacity="0.16"/>
+<line x1="1824" y1="0" x2="1824" y2="1120" stroke="#27364a" stroke-opacity="0.16"/>
+<line x1="0" y1="0" x2="1920" y2="0" stroke="#27364a" stroke-opacity="0.16"/>
+<line x1="0" y1="96" x2="1920" y2="96" stroke="#27364a" stroke-opacity="0.16"/>
+<line x1="0" y1="192" x2="1920" y2="192" stroke="#27364a" stroke-opacity="0.16"/>
+<line x1="0" y1="288" x2="1920" y2="288" stroke="#27364a" stroke-opacity="0.16"/>
+<line x1="0" y1="384" x2="1920" y2="384" stroke="#27364a" stroke-opacity="0.16"/>
+<line x1="0" y1="480" x2="1920" y2="480" stroke="#27364a" stroke-opacity="0.16"/>
+<line x1="0" y1="576" x2="1920" y2="576" stroke="#27364a" stroke-opacity="0.16"/>
+<line x1="0" y1="672" x2="1920" y2="672" stroke="#27364a" stroke-opacity="0.16"/>
+<line x1="0" y1="768" x2="1920" y2="768" stroke="#27364a" stroke-opacity="0.16"/>
+<line x1="0" y1="864" x2="1920" y2="864" stroke="#27364a" stroke-opacity="0.16"/>
+<line x1="0" y1="960" x2="1920" y2="960" stroke="#27364a" stroke-opacity="0.16"/>
+<line x1="0" y1="1056" x2="1920" y2="1056" stroke="#27364a" stroke-opacity="0.16"/>
+<text x="70" y="70" fill="#f0f6fc" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="42" font-weight="800" text-anchor="start">Zero-Gate Cycle</text>
+<text x="72" y="112" fill="#a8b9d0" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="20" font-weight="500" text-anchor="start">Mechanism map: from latent pressure to earned-one without crowning raw pressure</text>
+<circle cx="165" cy="480" r="90" fill="#0e2039" stroke="#79c0ff" stroke-width="4" filter="url(#shadow)"/>
+<text x="165" y="470" fill="#79c0ff" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="50" font-weight="900" text-anchor="middle">Z₀</text>
+<text x="165" y="510" fill="#d6e4ff" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="20" font-weight="800" text-anchor="middle">zero-zone</text>
+<text x="70" y="610.0" fill="#a8b9d0" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="17" font-weight="400" text-anchor="start">latent pressure; not</text>
+<text x="70" y="631.25" fill="#a8b9d0" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="17" font-weight="400" text-anchor="start">nothing, not yet one</text>
+<rect x="390" y="245" width="270" height="195" rx="28" fill="#3a2411" fill-opacity="1" stroke="#ffa657" stroke-width="3" filter="url(#shadow)"/>
+<rect x="414" y="265" width="54" height="36" rx="18.0" fill="#0d1117" fill-opacity="1" stroke="#ffa657" stroke-width="2"/>
+<text x="441.0" y="290.0" fill="#ffa657" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="18" font-weight="800" text-anchor="middle">1</text>
+<text x="485" y="300" fill="#f0f6fc" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="26" font-weight="900" text-anchor="start">Distinction</text>
+<text x="485" y="338" fill="#ffa657" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="30" font-weight="900" text-anchor="start">g_D</text>
+<text x="425" y="382.0" fill="#d6e4ff" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="17" font-weight="400" text-anchor="start">contrast emerges</text>
+<text x="425" y="403.25" fill="#d6e4ff" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="17" font-weight="400" text-anchor="start">signal separates from field</text>
+<rect x="720" y="245" width="270" height="195" rx="28" fill="#2a163e" fill-opacity="1" stroke="#d2a8ff" stroke-width="3" filter="url(#shadow)"/>
+<rect x="744" y="265" width="54" height="36" rx="18.0" fill="#0d1117" fill-opacity="1" stroke="#d2a8ff" stroke-width="2"/>
+<text x="771.0" y="290.0" fill="#d2a8ff" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="18" font-weight="800" text-anchor="middle">2</text>
+<text x="815" y="300" fill="#f0f6fc" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="26" font-weight="900" text-anchor="start">Polarity</text>
+<text x="815" y="338" fill="#d2a8ff" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="30" font-weight="900" text-anchor="start">g_P</text>
+<text x="755" y="382.0" fill="#d6e4ff" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="17" font-weight="400" text-anchor="start">two-sided axis</text>
+<text x="755" y="403.25" fill="#d6e4ff" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="17" font-weight="400" text-anchor="start">+ / 0 / − tension</text>
+<rect x="1050" y="245" width="270" height="195" rx="28" fill="#12321d" fill-opacity="1" stroke="#7ee787" stroke-width="3" filter="url(#shadow)"/>
+<rect x="1074" y="265" width="54" height="36" rx="18.0" fill="#0d1117" fill-opacity="1" stroke="#7ee787" stroke-width="2"/>
+<text x="1101.0" y="290.0" fill="#7ee787" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="18" font-weight="800" text-anchor="middle">3</text>
+<text x="1145" y="300" fill="#f0f6fc" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="26" font-weight="900" text-anchor="start">Relation</text>
+<text x="1145" y="338" fill="#7ee787" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="30" font-weight="900" text-anchor="start">g_L</text>
+<text x="1085" y="382.0" fill="#d6e4ff" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="17" font-weight="400" text-anchor="start">binding forms</text>
+<text x="1085" y="403.25" fill="#d6e4ff" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="17" font-weight="400" text-anchor="start">differences matter to each</text>
+<text x="1085" y="424.5" fill="#d6e4ff" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="17" font-weight="400" text-anchor="start">other</text>
+<line x1="255" y1="480" x2="390" y2="343" stroke="#79c0ff" stroke-width="4" stroke-linecap="round" opacity="1" marker-end="url(#arrowBlue)"/>
+<line x1="660" y1="342" x2="720" y2="342" stroke="#d6e4ff" stroke-width="4" stroke-linecap="round" opacity="1" marker-end="url(#arrow)"/>
+<line x1="990" y1="342" x2="1050" y2="342" stroke="#d6e4ff" stroke-width="4" stroke-linecap="round" opacity="1" marker-end="url(#arrow)"/>
+<rect x="1390" y="245" width="315" height="195" rx="28" fill="#172033" fill-opacity="1" stroke="#f2cc60" stroke-width="3" filter="url(#shadow)"/>
+<text x="1548" y="296" fill="#f0f6fc" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="26" font-weight="900" text-anchor="middle">Return-potential</text>
+<text x="1548" y="350" fill="#f2cc60" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="36" font-weight="900" text-anchor="middle">Γ = D · P · L</text>
+<text x="1428" y="395.0" fill="#d6e4ff" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="18" font-weight="400" text-anchor="start">relation makes return possible</text>
+<line x1="1320" y1="342" x2="1390" y2="342" stroke="#f2cc60" stroke-width="4" stroke-linecap="round" opacity="1" marker-end="url(#arrowGold)"/>
+<rect x="1250" y="575" width="395" height="190" rx="28" fill="#2b1115" fill-opacity="1" stroke="#ff7b72" stroke-width="3" filter="url(#shadow)"/>
+<text x="1448" y="625" fill="#ff7b72" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="28" font-weight="900" text-anchor="middle">B: Observed return</text>
+<text x="1448" y="666" fill="#f0f6fc" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="24" font-weight="800" text-anchor="middle">compression + memory</text>
+<text x="1290" y="712.0" fill="#d6e4ff" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="17" font-weight="400" text-anchor="start">not zero-crossing; coherent return</text>
+<text x="1290" y="733.25" fill="#d6e4ff" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="17" font-weight="400" text-anchor="start">preserves form</text>
+<path d="M1548 440 C1548 515 1518 555 1460 575" fill="none" stroke="#f2cc60" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" opacity="1" marker-end="url(#arrowGold)"/>
+<rect x="515" y="590" width="500" height="190" rx="28" fill="#111827" fill-opacity="1" stroke="#d6e4ff" stroke-width="3" filter="url(#shadow)"/>
+<text x="765" y="640" fill="#f0f6fc" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="28" font-weight="900" text-anchor="middle">Zero-gate coherence</text>
+<text x="765" y="698" fill="#d6e4ff" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="38" font-weight="900" text-anchor="middle">C_Z = min(D, P, L, B)</text>
+<text x="555" y="742.0" fill="#a8b9d0" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="17" font-weight="400" text-anchor="start">weakest gate decides; no averaging away a missing gate</text>
+<path d="M1250 670 C1140 650 1060 650 1015 680" fill="none" stroke="#ff7b72" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" opacity="1" marker-end="url(#arrowRed)"/>
+<rect x="1110" y="850" width="270" height="105" rx="24" fill="#0e2039" fill-opacity="1" stroke="#79c0ff" stroke-width="3" filter="url(#shadow)"/>
+<text x="1245" y="890" fill="#79c0ff" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="24" font-weight="900" text-anchor="middle">Raw expression</text>
+<text x="1245" y="924" fill="#d6e4ff" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="18" font-weight="800" text-anchor="middle">pressure, not truth</text>
+<rect x="1430" y="850" width="220" height="105" rx="24" fill="#2a163e" fill-opacity="1" stroke="#d2a8ff" stroke-width="3" filter="url(#shadow)"/>
+<text x="1540" y="888" fill="#d2a8ff" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="22" font-weight="900" text-anchor="middle">Return-depth</text>
+<text x="1540" y="923" fill="#f0f6fc" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="26" font-weight="900" text-anchor="middle">Z¹ → Z⁴</text>
+<rect x="1700" y="850" width="150" height="105" rx="24" fill="#122b1a" fill-opacity="1" stroke="#7ee787" stroke-width="3" filter="url(#shadow)"/>
+<text x="1775" y="890" fill="#7ee787" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="42" font-weight="900" text-anchor="middle">+1</text>
+<text x="1775" y="925" fill="#d6e4ff" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="17" font-weight="800" text-anchor="middle">earned-one</text>
+<path d="M1015 735 C1060 800 1080 850 1110 895" fill="none" stroke="#79c0ff" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" opacity="1" marker-end="url(#arrowBlue)"/>
+<line x1="1380" y1="902" x2="1430" y2="902" stroke="#d2a8ff" stroke-width="4" stroke-linecap="round" opacity="1" marker-end="url(#arrow)"/>
+<line x1="1650" y1="902" x2="1700" y2="902" stroke="#7ee787" stroke-width="4" stroke-linecap="round" opacity="1" marker-end="url(#arrowGreen)"/>
+<rect x="70" y="840" width="880" height="180" rx="26" fill="#120f13" fill-opacity="0.95" stroke="#ff7b72" stroke-width="2" filter="url(#shadow)"/>
+<text x="105" y="884" fill="#ff7b72" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="28" font-weight="900" text-anchor="start">Failure exits held by witness</text>
+<text x="105" y="930.0" fill="#d6e4ff" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="18" font-weight="400" text-anchor="start">No distinction → fog. No polarity → one-way drift. No relation → isolated peacock. No</text>
+<text x="105" y="952.5" fill="#d6e4ff" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="18" font-weight="400" text-anchor="start">return-memory → collapse. Borrowed relation → echo debt, not earned-one.</text>
+<text x="960.0" y="1088" fill="#8b949e" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="16" font-weight="500" text-anchor="middle">DREED posture: orient the mechanism; do not inflate the claim.</text>
+</svg>
