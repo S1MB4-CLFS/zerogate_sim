@@ -1,7 +1,7 @@
 cff-version: 1.2.0
-message: "If you use ZeroGateSim, please cite the software release and the related proof-of-concept record."
+message: "If you use ZeroGateSim, please cite the software release and the related first-research-alpha proof-of-concept record."
 title: "ZeroGateSim: A toy-field simulator for zero-gate earned-one witnessing"
-version: "1.0.1-alpha"
+version: "1.0.2-alpha"
 date-released: "2026-06-28"
 authors:
   - family-names: "Bargiel"
@@ -14,4 +14,5 @@ keywords:
   - toy simulation
   - dimensional emergence
   - proof-of-concept
-repository-code: "https://github.com/REPLACE_WITH_OWNER/zerogate_sim"
+license: MIT
+repository-code: "https://github.com/S1MB4-CLFS/zerogate_sim"

@@ -1,6 +1,6 @@
 # ZeroGateSim ROADMAP
 
-**Status:** v1.0.1-alpha public-repo hygiene / release-prep pack  
+**Status:** v1.0.2-alpha license/citation final / ready for public GitHub setup  
 **Project spine:** zero-gate dimensional emergence simulator  
 **Current stage:** proof-of-concept recorded; core held unless breach appears
 
@@ -28,6 +28,20 @@ This release-prep line adds:
 Victory here is not another simulation result. Victory here is a clean public source tree that can be inspected, installed, tested, and cited without making the repo a hoarder cave.
 
 The export must keep the proof record small and traceable while leaving heavy generated evidence outside Git history.
+
+## v1.0.2-alpha — license and citation final
+
+Purpose: remove the final publication fog-door before public GitHub setup.
+
+This patch finalizes:
+
+- MIT License for the source repository;
+- `CITATION.cff` with the intended public repository URL;
+- public export naming for v1.0.2-alpha;
+- release notes for the license/citation boundary;
+- public CI smoke-test workflow.
+
+Victory here is not another simulation result. Victory here is opening the door without ambiguity about reuse, citation, or claim boundary.
 
 ## Current release posture
 
@@ -186,7 +200,7 @@ Create the public GitHub repo after the source tree is clean. Push code, docs, t
 
 ### Step D — GitHub release
 
-Create a `v1.0-alpha` or `v1.0.1-alpha` release once the public repo installs and tests from a clean clone.
+Create a `v1.0.2-alpha` public release once the public repo installs and tests from a clean clone. The proof record remains v1.0-alpha; the source package is v1.0.2-alpha because public hygiene and license/citation finalization came after the proof freeze.
 
 ### Step E — Zenodo software archive
 

@@ -12,6 +12,7 @@ Include:
 - proof-record summaries;
 - small examples;
 - citation metadata;
+- MIT license;
 - release notes.
 
 Exclude:
@@ -26,13 +27,15 @@ Exclude:
 
 After a clean clone installs and tests, create a GitHub release.
 
-Recommended release identity:
+Recommended public source release identity:
 
-`v1.0-alpha` or `v1.0.1-alpha`, depending on whether the public-hygiene changes are included in the first public release tag.
+`v1.0.2-alpha`
+
+The proof record remains `v1.0-alpha`; the public source package is `v1.0.2-alpha` because public hygiene and license/citation finalization came after the proof freeze.
 
 ## Stage 3 — Zenodo software DOI
 
-Archive the GitHub release through Zenodo once metadata and license are settled.
+Archive the GitHub release through Zenodo after the public GitHub release exists. Metadata and MIT software license are now settled in v1.0.2-alpha; add DOI metadata only after Zenodo creates it.
 
 The software DOI should cite the source release.
 

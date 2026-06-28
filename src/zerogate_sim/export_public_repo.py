@@ -13,7 +13,7 @@ from dataclasses import dataclass
 from pathlib import Path
 from zipfile import ZIP_DEFLATED, ZipFile
 
-DEFAULT_OUT = Path("exports/zerogate_sim_public_repo_v1_0_1_alpha.zip")
+DEFAULT_OUT = Path("exports/zerogate_sim_public_repo_v1_0_2_alpha.zip")
 ROOT_NAME = "zerogate_sim"
 
 EXCLUDE_DIRS = {
@@ -49,6 +49,7 @@ EXCLUDE_NAMES = {
     ".DS_Store",
     "Thumbs.db",
     "READMAP.md",
+    "PUBLIC_EXPORT_MANIFEST.json",
 }
 
 EXCLUDE_CONTAINS = (

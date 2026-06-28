@@ -1,6 +1,6 @@
 # ZeroGateSim
 
-**Current:** `v1.0.1-alpha` public-repo hygiene / release-prep pack  
+**Current:** `v1.0.2-alpha` license/citation final / public-repo ready  
 **Status:** local-first speculative research software / toy-field proof-of-concept  
 **Working identity:** zero-gate dimensional emergence simulator  
 **Core question:** can a final trinary witness distinguish earned-one from raw expression, latent overcrown, and false-one pressure under adversarial toy-field weather?
@@ -31,7 +31,7 @@ A dimension is not merely an axis. A dimension is stabilized freedom that has pa
 
 ## Public repository posture
 
-ZeroGateSim is now being prepared for a public GitHub repository.
+ZeroGateSim is now ready for a public GitHub repository after local confirmation of the v1.0.2-alpha patch.
 
 The public repo should contain the **source machine**: code, tests, docs, proof-record tools, release notes, small examples, and the first-research-alpha record.
 
@@ -41,12 +41,20 @@ The working rule is:
 
 > Small engine. Large weather. Clear witness.
 
+## License and citation
+
+The source repository uses the MIT License. Citation metadata is stored in `CITATION.cff` and points to the intended public repository:
+
+`https://github.com/S1MB4-CLFS/zerogate_sim`
+
+The DOI field is intentionally absent until a Zenodo record exists. Future manuscript or evidence records may use separate explicit licenses.
+
 Use the export command before GitHub publication:
 
 ```powershell
 Set-Location C:\dev\zerogate_sim
 $P = ".\.venv\Scripts\python.exe"
-& $P -m zerogate_sim.export_public_repo --repo . --out exports\zerogate_sim_public_repo_v1_0_1_alpha.zip
+& $P -m zerogate_sim.export_public_repo --repo . --out exports\zerogate_sim_public_repo_v1_0_2_alpha.zip
 ```
 
 Then inspect the export ZIP before creating or pushing a public repository.
