@@ -1,48 +1,21 @@
 # ZeroGateSim
 
-**Current:** `v1.1-alpha` share-ready public witness pack  
+**Current public line:** `v1.0.2-alpha` with visual-witness polish in branch work  
 **Status:** speculative research software / toy-field proof-of-concept  
 **Working identity:** zero-gate dimensional emergence simulator  
 **Core question:** can a final trinary witness distinguish earned-one from raw expression, latent overcrown, and false-one pressure under adversarial toy-field weather?
 
 ZeroGateSim is a small research software project for testing a speculative theory of dimensional emergence.
 
-It does **not** prove cosmology, physics, or that reality itself is trinary.
+It does **not** prove cosmology, physical dimensions, or that reality itself is trinary.
 
 It does test a narrower software-theory claim:
 
-> In generated toy fields, a final trinary witness can separate **earned-one** from raw expression pressure, latent overcrown, and false-one pressure across distinction, polarity, and relation adversaries.
+> Inside generated toy fields, final earned-one witness can separate earned expression from raw expression pressure, latent overcrown, and false-one pressure across distinction, polarity, and relation adversaries.
 
-## First-research-alpha proof card
+## Why this exists
 
-Across the original proof harness and fresh-seed reproduction:
-
-| Measure | Result |
-|---|---:|
-| Scenario cells | `1458` |
-| Seeded toy-field runs | `13122` |
-| Final earned-one events | `22131` |
-| Raw false-one pressures detected | `2388` |
-| Raw false-one pressures demoted | `2388` |
-| Final false-one crowns | `0` |
-
-The machine did not prove the universe. It did something narrower and real:
-
-> It met false one, named it, and refused the crown.
-
-## Visual map
-
-Start with the three visual witnesses:
-
-- [Zero-Gate Cycle](docs/assets/zero_gate_cycle.svg)
-- [Trinary Witness Stack](docs/assets/trinary_witness_stack.svg)
-- [Proof Harness Map](docs/assets/proof_harness_map.svg)
-
-Reader guide: [docs/visual_guide.md](docs/visual_guide.md)
-
-## Core theory
-
-The theory begins by refusing the common dead-shape ladder:
+The usual ladder of dimensional explanation often begins with:
 
 > point, line, plane, cube, then time.
 
@@ -52,17 +25,35 @@ ZeroGateSim tests a different spine:
 
 > Time is not merely the fourth room in the house of space. Time is the generative ordering condition through which dimensions become expressed.
 
-A point is not the first dimension. A point is the zero-zone of dimensional potential.
+In this frame:
 
-A line is not merely extension. A line is polarity around zero.
+- a point is the zero-zone of dimensional potential;
+- a line is polarity around zero;
+- a plane is relation between polarities;
+- volume is closed relational freedom;
+- a dimension is stabilized freedom that has passed through zero without losing coherence.
 
-A plane is not merely a flat surface. A plane is relation between polarities.
+The simulator exists because a theory does not earn trust by sounding beautiful. It earns its first bones by meeting pressure.
 
-Volume is not a box. Volume is closed relational freedom.
+## First-research-alpha result
 
-A dimension is not merely an axis. A dimension is stabilized freedom that has passed through zero without losing coherence.
+ZeroGateSim passed an original proof harness and a fresh-seed reproduction inside generated toy fields.
 
-## The four-gate operator
+Combined record:
+
+- `1458` scenario cells;
+- `13122` seeded simulation runs;
+- `22131` final earned-one events;
+- `2388` raw false-one pressures detected and demoted;
+- `0` final false-one crowns.
+
+The machine did not prove the universe.
+
+It did something narrower and real:
+
+> it met false one, named it, and refused the crown.
+
+## Core theory
 
 The central hypothesis is:
 
@@ -71,9 +62,11 @@ The central hypothesis is:
 The four gates are:
 
 - **Distinction** — something becomes separable from background.
-- **Polarity** — the distinction gains meaningful positive and negative expression around zero.
+- **Polarity** — distinction gains meaningful positive and negative expression around zero.
 - **Relation** — polarity becomes bound into stable relation rather than split or drift.
-- **Return** — the expressed structure folds back toward zero while preserving coherence.
+- **Return** — expressed structure folds back toward zero while preserving coherence.
+
+Return is not decorative. Distinction separates. Polarity tensions. Relation binds. When binding becomes coherent, expansion curves back as return.
 
 The zero-gate coherence of candidate freedom `i` at time `t` is:
 
@@ -83,7 +76,7 @@ C_Z^i(t)=\min(g_D^i(t),g_P^i(t),g_R^i(t),g_B^i(t))
 
 The minimum matters. A candidate does not pass because one gate is beautiful. The weakest gate decides the coherence pressure.
 
-The old raw expression count is now treated as pressure, not final truth:
+The old raw expression count is treated as pressure, not truth:
 
 ```math
 d_Z(t)=\sum_i H(\sigma_i(t)-\epsilon)H(C_Z^i(t)-\theta_Z)
@@ -91,29 +84,42 @@ d_Z(t)=\sum_i H(\sigma_i(t)-\epsilon)H(C_Z^i(t)-\theta_Z)
 
 Raw local expression is not final +1. Final +1 belongs only to **earned-one**.
 
-## Trinary witness stack
-
-ZeroGateSim distinguishes:
-
-**Expand / +1:** earned-one, final expression.
-
-**Witness / 0:** structured zero-state, including fertile hold, witness hold, quarantine hold, latent overcrown, and relation debt.
-
-**Resist / −1:** rejection, false-one demotion, trap containment.
-
-The core sentence:
+Core sentence:
 
 > A real one is not the first thing after zero. A real one is what zero can return as without lying.
+
+## Visual route
+
+Start with the visual maps before reading the full machinery.
+
+### Zero-gate cycle
+
+![Zero-gate cycle](docs/assets/zero_gate_cycle.svg)
+
+### Trinary witness stack
+
+![Trinary witness stack](docs/assets/trinary_witness_stack.svg)
+
+### Proof harness map
+
+![Proof harness map](docs/assets/proof_harness_map.svg)
+
+### First-research-alpha proof card
+
+![First-research-alpha proof card](docs/assets/first_research_alpha_proof_card.svg)
+
+Visual guide:
+
+- [`docs/visual_guide.md`](docs/visual_guide.md)
+- [`docs/share_ready_reader_path.md`](docs/share_ready_reader_path.md)
 
 ## Proof harness
 
 The proof harness pressures three dependency wounds:
 
-**Distinction adversary:** visibility and contrast pretending to be reality.
-
-**Polarity adversary:** pulse and zero-crossing pretending to be return.
-
-**Relation adversary:** borrowed coherence pretending to be earned one.
+- **Distinction adversary:** visibility and contrast pretending to be reality.
+- **Polarity adversary:** pulse and zero-crossing pretending to be return.
+- **Relation adversary:** borrowed coherence pretending to be earned one.
 
 Run shape for the v1 proof record:
 
@@ -123,6 +129,10 @@ Run shape for the v1 proof record:
 - `729` scenario cells per proof record;
 - `6561` seeded runs per proof record;
 - original seeds `0-8` and reproduction seeds `9-17`.
+
+Read the proof card:
+
+- [`docs/proof_records/first_research_alpha/proof_card.md`](docs/proof_records/first_research_alpha/proof_card.md)
 
 ## Quickstart
 
@@ -135,65 +145,85 @@ $P = ".\.venv\Scripts\python.exe"
 & $P -m pytest
 ```
 
-Small demo:
+Run a small demo first:
 
 ```powershell
 & $P -m zerogate_sim.demo --seed 42 --out runs\demo_seed_42
-notepad runs\demo_seed_42\summary.md
 ```
 
-Small proof smoke test:
+Run the original proof harness:
 
 ```powershell
-& $P -m zerogate_sim.proof --profile triad27 --start-seed 0 --count 1 --out runs\proof_smoke
-& $P -m zerogate_sim.proof_record --proof-dir runs\proof_smoke
-notepad runs\proof_smoke\proof_record.md
+& $P -m zerogate_sim.proof --profile wide243 --start-seed 0 --count 9 --out runs\proof_wide243_0_8_v033
+& $P -m zerogate_sim.proof_record --proof-dir runs\proof_wide243_0_8_v033
 ```
 
-Full proof harnesses are heavy. Read [docs/quickstart.md](docs/quickstart.md) before running them.
+Run the fresh-seed reproduction:
 
-## Reading order
+```powershell
+& $P -m zerogate_sim.proof --profile wide243 --start-seed 9 --count 9 --out runs\proof_wide243_9_17_repro
+& $P -m zerogate_sim.proof_record --proof-dir runs\proof_wide243_9_17_repro
+```
 
-For a fast but honest orientation:
+Freeze the combined record:
 
-1. [Claim boundary](docs/claim_boundary.md)
-2. [Visual guide](docs/visual_guide.md)
-3. [Proof card](docs/proof_records/first_research_alpha/proof_card.md)
-4. [Reviewer guide](docs/for_reviewers.md)
-5. [DREED method note](docs/methods/dreed_active_inference_review_lens_v0.md)
-6. [Original historical manuscript](docs/papers/history/zero_gate_dimensional_genesis_original_pre_simulation/)
+```powershell
+& $P -m zerogate_sim.release_record --proof-dir runs\proof_wide243_0_8_v033 --proof-dir runs\proof_wide243_9_17_repro --out runs\first_research_alpha_v1_0_alpha
+```
+
+More detailed quickstart:
+
+- [`docs/quickstart.md`](docs/quickstart.md)
+
+## Claim boundary
+
+Supported claim:
+
+> ZeroGateSim's final trinary witness separated earned-one from raw expression, latent overcrown, and false-one pressure across original and fresh-seed trinary adversarial proof records inside generated toy fields.
+
+Unsupported claims:
+
+- this proves physical dimensions;
+- this proves cosmology;
+- this proves that reality itself is trinary;
+- this replaces physics or mathematics.
+
+Read the full boundary:
+
+- [`docs/claim_boundary.md`](docs/claim_boundary.md)
 
 ## Paper lineage
 
 Do not overwrite the original theory draft.
 
-The repo reserves two paper lanes:
+The repo preserves two lanes:
 
-- `docs/papers/history/` — the original pre-simulation paper, preserved as historical trace.
-- `docs/papers/zenodo_ready/` — the later simulation-supported manuscript prepared after repo publication.
+- [`docs/papers/history/`](docs/papers/history/) — original pre-simulation manuscript, preserved as historical trace.
+- [`docs/papers/zenodo_ready/`](docs/papers/zenodo_ready/) — later simulation-supported manuscript scaffold.
 
 This keeps the lineage honest:
 
-> original seeing -> executable simulation -> proof record -> upgraded paper.
+> original seeing → executable simulation → proof-of-concept record → simulation-supported paper.
 
-## Repository rule
+## For reviewers and interested readers
 
-Generated runs are evidence, not source. Keep them local or bundled for review. Do not store heavy proof weather in the repo by default.
+Recommended route:
 
-> Small engine. Large weather. Clear witness.
+1. README top card.
+2. Visual route.
+3. Claim boundary.
+4. Proof card.
+5. Quickstart or code.
+6. Historical manuscript only after the current proof boundary is understood.
 
-## DREED-style discipline
+Reviewer guide:
 
-Evidence is what the simulation produced.
+- [`docs/for_reviewers.md`](docs/for_reviewers.md)
 
-Logic is what follows from the model.
+## License and citation
 
-Inference is what may be suggested.
+The source repository uses the MIT License.
 
-Metaphor is how we explain it.
+Citation metadata is stored in [`CITATION.cff`](CITATION.cff). The DOI field is intentionally absent until a Zenodo record exists.
 
-Speculation is what remains unproven.
-
-DREED is not the judge. It is the pressure lantern.
-
-The primate may dance. It may not notarize the universe.
+Future manuscript and evidence records may use separate explicit licenses.
