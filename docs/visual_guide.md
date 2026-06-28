@@ -1,94 +1,72 @@
 # Visual Guide
 
-This guide explains the public-facing visual witness layer for ZeroGateSim.
+This guide covers the public visual witness layer for ZeroGateSim.
 
-The visuals are orientation aids, not proof. The proof lives in the simulation records and the first-research-alpha proof record. The diagrams help a new reader see what the code is testing before they open the machinery.
+The purpose of the visuals is not decoration. The purpose is orientation:
+a reader should understand the mechanism, the final trinary witness,
+and the proof harness before reading long reports or source code.
 
-## Visual 1 — Zero-Gate Cycle
+## Accepted visual format
 
-File: `docs/assets/zero_gate_cycle.svg`
+Use simple, high-contrast SVG diagrams with:
 
-This is the mechanism map.
+- one clear direction of reading;
+- explicit labels;
+- no hidden paper-trail promises;
+- no decorative arrows without logical meaning;
+- no text boxes overlapping other text;
+- no release claims beyond the proof record.
 
-It shows how a candidate freedom moves from the zero-zone through distinction, polarity, relation, and observed return. Return is shown as a consequence of coherent relation through return-potential:
+## Core visuals
 
-```text
-Gamma = D · P · L
-```
+### `docs/assets/zero_gate_cycle.svg`
 
-The important correction is visible here:
+Explains the mechanism:
 
-```text
-raw expression is pressure, not final truth
-```
+Zero-zone -> distinction -> polarity -> relation -> return -> zero-gate coherence -> raw expression -> return-depth -> earned-one.
 
-A candidate must also survive return-depth before it earns final +1.
+Use this when introducing the theory.
 
-## Visual 2 — Final Trinary Witness Stack
+### `docs/assets/trinary_witness_stack.svg`
 
-File: `docs/assets/trinary_witness_stack.svg`
+Explains the final output stack:
 
-This is the output map.
+Raw expression is pressure. Earned-one is final +1.
+Zero holds latent, overcrown, relation debt, and quarantine states.
+Minus rejects false-one pressure.
 
-It shows why raw +1 is not enough. Final output passes through three witness checks:
+Use this when explaining why raw +1 is not final truth.
 
-- truth-role;
-- temporal lineage;
-- echo-independence.
+### `docs/assets/proof_harness_map.svg`
 
-The final states are trinary:
+Explains the proof harness:
 
-- `+1` earned-one;
-- `0` structured zero / held-latent / overcrown / relation debt;
-- `-1` containment / false-one demotion / rejection.
+Distinction adversary, polarity adversary, and relation adversary are tested across wide243 weather and fresh seed reproduction.
 
-This visual carries the F26 lesson: a field echo can pass raw local expression by borrowing relation, but it must not receive the final crown.
+Use this when explaining what was actually tested.
 
-## Visual 3 — Trinary Adversarial Proof Harness
+### `docs/assets/first_research_alpha_proof_card.svg`
 
-File: `docs/assets/proof_harness_map.svg`
+Public proof-card visual.
 
-This is the test map.
+Use this as the compact sharing image when introducing ZeroGateSim to someone who does not need to read the whole repo first.
 
-It shows the three adversarial corpora:
+### `docs/assets/reader_path_map.svg`
 
-- distinction adversary;
-- polarity adversary;
-- relation adversary.
+Explains the recommended path through the repository.
 
-Each corpus is tested across `243` trinary weather cells and `9` seeds per proof record. The original proof and fresh-seed reproduction together produce `13,122` seeded toy-field runs.
+Use this for reader onboarding.
 
-The key result shown in the visual:
+## Removed visuals
 
-```text
-2,388 raw false-one pressures detected and demoted
-0 final false-one crowns
-```
+`paper_argument_map.svg` is intentionally removed from this branch.
 
-## Visual 4 — First-Research-Alpha Proof Card
+The paper will be built deliberately later. Until then, the repo should not carry paper-scaffold diagrams that create future cleanup debt.
 
-File: `docs/assets/first_research_alpha_proof_card.svg`
+## Boundary
 
-This is the one-image public summary.
+These visuals support the public repository. They do not prove cosmology, physical dimensions, or trinary reality.
 
-It shows the final proof posture:
+They explain the software-theory proof-of-concept:
 
-- `22,131` final earned-one events;
-- `2,388` raw false-one pressures demoted;
-- `0` final false-one crowns.
-
-It also repeats the claim boundary: this is software-theory evidence inside generated toy fields, not proof of physical cosmology.
-
-## DREED discipline
-
-The visual layer follows the project review rule:
-
-```text
-Evidence is what the simulation produced.
-Logic is what follows from the model.
-Inference is what may be suggested.
-Metaphor is how we explain it.
-Speculation is what remains unproven.
-```
-
-The visuals should make the mechanism easier to see. They should not make the claim louder than the evidence.
+ZeroGateSim met false-one pressure, named it, and refused the crown inside generated toy-field simulations.

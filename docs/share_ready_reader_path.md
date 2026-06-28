@@ -1,48 +1,63 @@
 # Share-Ready Reader Path
 
-This page is the public front-room route for ZeroGateSim.
+This is the recommended public reading path for ZeroGateSim.
 
-The goal is not to make a reader swallow the whole storm. The goal is to let them walk the witness path in the right order.
+## Start here
 
-![ZeroGateSim reader path](assets/reader_path_map.svg)
+Read `README.md`.
 
-## Expand
+Purpose: understand what ZeroGateSim is, what was tested, and what is not claimed.
 
-Start with the supported claim:
+## Then read the claim boundary
 
-ZeroGateSim's final trinary witness separated earned-one from raw expression, latent overcrown, and false-one pressure across original and fresh-seed trinary adversarial proof records.
+Read `docs/claim_boundary.md`.
 
-The core proof-card numbers are:
+Purpose: separate supported software-theory claims from unsupported cosmology/physics claims.
 
-- 13,122 seeded toy-field runs;
-- 22,131 final earned-one events;
-- 2,388 raw false-one pressures detected and demoted;
-- 0 final false-one crowns.
+## Then inspect the visuals
 
-## Witness
+Read `docs/visual_guide.md` and open:
 
-The reader should then see why raw expression is not the final crown.
+- `docs/assets/zero_gate_cycle.svg`
+- `docs/assets/trinary_witness_stack.svg`
+- `docs/assets/proof_harness_map.svg`
+- `docs/assets/first_research_alpha_proof_card.svg`
+- `docs/assets/reader_path_map.svg`
 
-Read in this order:
+Purpose: understand the mechanism before drowning in report files.
 
-1. `docs/claim_boundary.md`
-2. `docs/visual_guide.md`
-3. `docs/proof_records/first_research_alpha/proof_card.md`
-4. `docs/for_reviewers.md`
-5. `README.md`
+## Then inspect the proof record
 
-This order protects the reader from mistaking a poetic theory for a tested physics claim.
+Read:
 
-## Resist
+- `docs/proof_records/first_research_alpha/proof_card.md`
+- `docs/v1_0_alpha_first_research_alpha.md`
 
-Do not begin with the original historical PDF as the public entry point.
+Purpose: see the first-research-alpha result and its boundary.
 
-The historical manuscript matters, but it predates the simulation repairs. It belongs in the lineage, not as the final current claim.
+## Then run the code
 
-The public first impression should be:
+Use `docs/quickstart.md`.
 
-> Small engine. Large weather. Clear witness.
+Purpose: run tests, demo, and proof commands locally.
 
-## Operating sentence
+## Then read history if needed
 
-A real one is not the first thing after zero. A real one is what zero can return as without lying.
+The original pre-simulation manuscript is preserved under:
+
+`docs/papers/history/zero_gate_dimensional_genesis_original_pre_simulation/`
+
+Purpose: preserve lineage. It is not the final simulation-supported paper.
+
+## Paper mode
+
+Paper writing is intentionally not part of this branch.
+
+The paper will be built later from:
+
+- the historical manuscript;
+- the proof record;
+- the accepted visual witness layer;
+- the final public repo state.
+
+Until paper mode begins, do not add paper scaffolds, argument-map diagrams, or Zenodo-ready drafts to this branch.
