@@ -1,0 +1,41 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "zerogate-sim"
+version = "1.0.1a0"
+description = "Toy simulation framework for zero-gate dimensional emergence."
+readme = "README.md"
+requires-python = ">=3.10"
+authors = [
+  { name = "Marek Bargiel" }
+]
+dependencies = [
+  "numpy>=1.24",
+  "matplotlib>=3.7"
+]
+
+[project.optional-dependencies]
+dev = [
+  "pytest>=8"
+]
+
+[project.scripts]
+zerogate-demo = "zerogate_sim.demo:main"
+zerogate-batch = "zerogate_sim.batch:main"
+zerogate-clean = "zerogate_sim.clean:main"
+zerogate-stress = "zerogate_sim.stress:main"
+zerogate-matrix = "zerogate_sim.matrix:main"
+zerogate-finalize = "zerogate_sim.finalize:main"
+zerogate-proof = "zerogate_sim.proof:main"
+zerogate-record = "zerogate_sim.proof_record:main"
+zerogate-release = "zerogate_sim.release_record:main"
+zerogate-export-public = "zerogate_sim.export_public_repo:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]

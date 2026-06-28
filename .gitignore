@@ -1,0 +1,42 @@
+# Python caches
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Virtual environments
+.venv/
+venv/
+ENV/
+
+# Build artifacts
+build/
+dist/
+*.egg-info/
+
+# Local/generated evidence weather
+runs/
+reports/generated/
+exports/
+*.zip
+*.tar
+*.tar.gz
+*.7z
+
+# Local notebooks / scratch unless promoted intentionally
+scratch/
+tmp/
+
+# OS/editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Do not commit accidental typo file
+READMAP.md
