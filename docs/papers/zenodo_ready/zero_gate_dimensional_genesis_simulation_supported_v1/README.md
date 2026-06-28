@@ -1,35 +1,29 @@
-# Zero-Gate Dimensional Genesis — Simulation-Supported Manuscript Lane
+# Zero-Gate Dimensional Genesis — Simulation-Supported Foundation Manuscript
 
-This folder is reserved for the post-test manuscript.
+This folder is the working lane for the post-test paper.
 
-Do not overwrite the original pre-simulation paper. The historical manuscript lives in:
+It is not the historical manuscript. The historical manuscript lives in:
 
-```text
-docs/papers/history/zero_gate_dimensional_genesis_original_pre_simulation/
-```
+`docs/papers/history/zero_gate_dimensional_genesis_original_pre_simulation/`
 
-The manuscript prepared here should explain what changed after ZeroGateSim became executable.
+The paper in this folder should explain what the original theory proposed, what ZeroGateSim tested, what the simulator repaired, and what claim survives.
 
 ## Working title
 
 **Zero-Gate Dimensional Genesis: A Simulation-Supported Foundation for Earned-One Witness**
 
-## Required posture
+## Current status
 
-This paper should not present the theory as established physics.
+Scaffold only.
 
-It should present a simulation-supported speculative framework with a bounded software-theory proof-of-concept.
+Do not submit this folder to Zenodo until the manuscript is written, DREED-checked, and paired with the software/evidence citation trail.
 
-## Main repair discovered by simulation
+## Core transformation
 
-The original theory centered on zero-gate coherence and return-depth.
+The original theory proposed zero-gated dimensional emergence.
 
-The simulator forced one major correction:
+The simulator forced a sharper distinction:
 
-> Raw expression is not final truth. Final +1 belongs only to earned-one.
+> Raw expression is pressure. Earned-one is final +1.
 
-The post-test paper should make that repair explicit.
-
-## Next file
-
-Start from [`manuscript_scaffold.md`](manuscript_scaffold.md).
+That distinction is the center of the post-test paper.
