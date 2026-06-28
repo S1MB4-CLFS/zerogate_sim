@@ -1,13 +1,14 @@
 # Minimal Run Example
 
-A tiny run is for onboarding only. It is not the v1.0-alpha proof harness.
+This folder is intentionally light. Generated run outputs belong under local `runs/`, not in the source repository.
 
-From the repo root:
+Try:
 
 ```powershell
+Set-Location C:\dev\zerogate_sim
 $P = ".\.venv\Scripts\python.exe"
-& $P -m zerogate_sim.demo --seed 42 --out runs\example_seed_42
-notepad runs\example_seed_42\summary.md
+& $P -m zerogate_sim.demo --seed 42 --out runs\demo_seed_42
+notepad runs\demo_seed_42\summary.md
 ```
 
-For proof records, use `zerogate-proof`, `zerogate-record`, and `zerogate-release` as documented in the README.
+Upload `runs\demo_seed_42\run_bundle.zip` only when asking for review.
