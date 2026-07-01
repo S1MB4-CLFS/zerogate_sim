@@ -13,6 +13,7 @@ from zerogate_sim.config import SimulationConfig
 from zerogate_sim.echo_independence import write_echo_independence_outputs
 from zerogate_sim.earned_one import write_earned_one_outputs
 from zerogate_sim.final_output import write_final_output_outputs
+from zerogate_sim.fuzzy_mirror import write_fuzzy_mirror_outputs
 from zerogate_sim.endurance import build_temporal_rows, write_temporal_outputs
 from zerogate_sim.gates import GateScores, evaluate_run
 from zerogate_sim.lineage import write_lineage_outputs
@@ -605,6 +606,7 @@ def run_matrix(
     echo_independence_paths = write_echo_independence_outputs(matrix_dir, all_gate_rows)
     earned_one_paths = write_earned_one_outputs(matrix_dir, all_gate_rows)
     final_output_paths = write_final_output_outputs(matrix_dir, all_gate_rows)
+    fuzzy_mirror_paths = write_fuzzy_mirror_outputs(matrix_dir, all_gate_rows)
     bundle = write_evidence_bundle(
         matrix_dir,
         bundle_name="matrix_bundle.zip",
@@ -638,6 +640,9 @@ def run_matrix(
         "matrix_final_output_summary": final_output_paths["matrix_final_output_summary"],
         "matrix_final_output_read": final_output_paths["matrix_final_output_read"],
         "matrix_theory_confirmation_read": final_output_paths["matrix_theory_confirmation_read"],
+        "matrix_fuzzy_mirror_trace": fuzzy_mirror_paths["matrix_fuzzy_mirror_trace"],
+        "matrix_fuzzy_mirror_candidate_summary": fuzzy_mirror_paths["matrix_fuzzy_mirror_candidate_summary"],
+        "matrix_fuzzy_mirror_read": fuzzy_mirror_paths["matrix_fuzzy_mirror_read"],
         "matrix_bundle": bundle,
     }
 

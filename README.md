@@ -1,6 +1,6 @@
 # ZeroGateSim
 
-**Current public line:** `v1.2.5-alpha` — roadmap repair and surgical scope recovery  
+**Current public line:** `v1.3.0-alpha` — fuzzy / many-valued mirror foundation  
 **Status:** speculative research software / toy-field proof-of-concept  
 **Working identity:** zero-gate dimensional emergence simulator  
 **Core question:** can a final trinary witness distinguish earned-one from raw expression pressure, latent overcrown, and false-one pressure under adversarial toy-field weather?
@@ -20,9 +20,9 @@ The active public line is repaired around this spine:
 - `v1.0.x-alpha` — first-research-alpha proof record and public source foundation.
 - `v1.1.x-alpha` — share-ready public witness pack.
 - `v1.2.x-alpha` — native math witness lock, invariant tests, and scope discipline.
-- `v1.3.x-alpha` and later — known-logic mirrors, only after native math stands still.
+- `v1.3.x-alpha` — known-logic mirrors, beginning with fuzzy / many-valued score comparison.
 
-`v1.2.4-alpha` added a Power-Up / Fail report too early. `v1.2.5-alpha` removes that active machinery and keeps the useful question as documentation-only acceptance criteria.
+`v1.2.4-alpha` added a Power-Up / Fail report too early. `v1.2.5-alpha` removed that active machinery and kept the useful question as documentation-only acceptance criteria. `v1.3.0-alpha` begins the known-logic mirror line with fuzzy / many-valued scoring comparison.
 
 ## Active route
 
@@ -39,6 +39,8 @@ Read first:
 - [`docs/math_witness_map.md`](docs/math_witness_map.md)
 - [`docs/simulation_win_conditions.md`](docs/simulation_win_conditions.md)
 - [`docs/local_tooling_repair.md`](docs/local_tooling_repair.md)
+- [`docs/known_logic_boundary.md`](docs/known_logic_boundary.md)
+- [`docs/fuzzy_mirror.md`](docs/fuzzy_mirror.md)
 
 ## Why this exists
 
@@ -98,7 +100,9 @@ C_Z^i(t)=\min(D_i(t),P_i(t),R_i(t),B_i(t))
 
 ## Known-logic comparison boundary
 
-Known logic work is next only after the native math line is stable.
+Known logic work has begun with the fuzzy / many-valued mirror. This is a projection mirror, not an identity claim.
+
+The v1.3.0 fuzzy mirror compares native weakest-gate coherence against product, average, and Lukasiewicz-style continuous conjunctions. It asks where softer aggregation hides a missing gate and where stricter aggregation adds useful pressure.
 
 Allowed:
 
@@ -108,7 +112,20 @@ Forbidden:
 
 > ZeroGateSim is identical to any of those logics.
 
-The planned mirror order is fuzzy / many-valued scoring first, then Belnap evidence states, then paraconsistent conflict locality, then Kleene / Lukasiewicz compression and loss reporting.
+The active mirror order is fuzzy / many-valued scoring first, then Belnap evidence states, then paraconsistent conflict locality, then Kleene / Lukasiewicz compression and loss reporting.
+
+
+### Fuzzy mirror outputs
+
+Matrix runs now write:
+
+```text
+matrix_fuzzy_mirror_trace.csv
+matrix_fuzzy_mirror_candidate_summary.csv
+matrix_fuzzy_mirror_read.md
+```
+
+These compare `C_Z = min(D, P, R, B)` against fuzzy-style product, average, and Lukasiewicz conjunction mirrors. A fuzzy score is pressure, not final earned-one.
 
 ## First-research-alpha result
 

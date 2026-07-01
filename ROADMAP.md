@@ -1,6 +1,6 @@
 # ZeroGateSim Roadmap
 
-**Current line:** `v1.2.5-alpha` roadmap repair and surgical scope recovery  
+**Current line:** `v1.3.0-alpha` fuzzy / many-valued mirror foundation  
 **Release posture:** public research-alpha / speculative toy-field proof-of-concept
 
 ZeroGateSim already has a first-research-alpha toy-field proof record. The next work is not to make bigger claims or add shiny machinery. The next work is to make the native math testable, then compare that native math against nearby formal logic families without pretending they are the same thing.
@@ -210,7 +210,7 @@ The test design exists before any prediction module exists.
 
 Purpose:
 
-Prepare formal comparison with known non-binary logic families as projection mirrors, not identity claims.
+Compare ZeroGateSim's native math against known non-binary logic families as projection mirrors, not identity claims.
 
 Forbidden claim:
 
@@ -218,37 +218,60 @@ Forbidden claim:
 
 Allowed claim:
 
-> ZeroGateSim can project its native states into known logic mirrors to see what is preserved, collapsed, or distorted.
+> ZeroGateSim can project its native states and scores into known logic mirrors to see what is preserved, collapsed, or distorted.
 
-### v1.3.1-alpha — Known logic boundary document
+### v1.3.0-alpha — Fuzzy / many-valued mirror foundation
 
-Add `docs/known_logic_boundary.md`.
+Purpose:
 
-It must define:
+Begin the formal mirror line with the closest native mathematical neighbor: continuous fuzzy / many-valued scoring.
 
-- native ZeroGateSim states;
-- projection states;
-- loss report;
-- forbidden equivalence claims.
+Why first:
 
-### v1.3.2-alpha — Fuzzy / many-valued score mirror
+ZeroGateSim already computes continuous gate scores and native weakest-gate coherence:
 
-First formal mirror because `C_Z = min(D, P, R, B)` resembles minimum conjunction over continuous scores.
+```text
+C_Z = min(D, P, R, B)
+```
 
-Compare:
+This can be compared safely against other continuous conjunction mirrors without claiming equivalence.
 
-- min gate;
+Delivered:
+
+- `docs/known_logic_boundary.md`;
+- `docs/fuzzy_mirror.md`;
+- `src/zerogate_sim/fuzzy_mirror.py`;
+- `tests/test_fuzzy_mirror.py`;
+- matrix outputs:
+  - `matrix_fuzzy_mirror_trace.csv`;
+  - `matrix_fuzzy_mirror_candidate_summary.csv`;
+  - `matrix_fuzzy_mirror_read.md`.
+
+Comparison mirrors:
+
+- native min gate;
 - product gate;
 - average gate;
-- current thresholded witness stack.
+- Lukasiewicz-style conjunction;
+- strength-min-native pressure.
+
+Key diagnostic:
+
+- `average_overcrown_pressure`: average gate passes threshold while native min gate fails.
 
 Success condition:
 
-The repo can say where ZeroGateSim behaves like fuzzy scoring and where it exceeds fuzzy scoring through return-depth, lineage, independence, and role witness.
+A matrix run can show where ZeroGateSim behaves like fuzzy scoring, where average aggregation hides a wounded gate, and why a high fuzzy score remains pressure rather than final earned-one.
 
-### v1.3.3-alpha — Belnap evidence-state mirror
+Boundary:
 
-Belnap-style comparison is relevant because ZeroGateSim separates evidence-for and evidence-against expression.
+No new core gate. No final truth claim. No identity with fuzzy logic.
+
+### v1.3.1-alpha — Belnap evidence-state mirror
+
+Purpose:
+
+Compare ZeroGateSim's raw-expression / earned-one / false-one / hold grammar with evidence-state logic.
 
 Projection target:
 
@@ -261,7 +284,7 @@ Success condition:
 
 The projection exposes whether ZeroGateSim preserves conflict instead of flattening it.
 
-### v1.3.4-alpha — Paraconsistent conflict-locality mirror
+### v1.3.2-alpha — Paraconsistent conflict-locality mirror
 
 Purpose:
 
@@ -275,7 +298,7 @@ Success condition:
 
 Conflicting evidence can be reported without crowning unrelated candidates or confirming the whole run.
 
-### v1.3.5-alpha — Kleene / Lukasiewicz compression mirror
+### v1.3.3-alpha — Kleene / Lukasiewicz compression mirror
 
 Purpose:
 
@@ -292,6 +315,16 @@ Required loss report:
 - `0+`, `0`, and `0-` collapse into one middle value;
 - temporal lineage and echo-debt information are lost;
 - raw expression vs earned-one must remain externally explained.
+
+### v1.3.4-alpha — v1.3 mirror closeout
+
+Purpose:
+
+Confirm that the fuzzy, Belnap, paraconsistent, and K3/L3 mirrors are projections with explicit loss reports before moving into wider comparison.
+
+Success condition:
+
+A reader can see which mirror is useful for which pressure and where each mirror lies if overused.
 
 ## v1.4-alpha — Cross-logic comparison report
 
