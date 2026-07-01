@@ -1,6 +1,6 @@
 # ZeroGateSim
 
-**Current public line:** `v1.2.3-alpha` — native math witness lock and invariant-test foundation  
+**Current public line:** `v1.2.4-alpha` — power-up / fail witness harness for matrix proof outputs  
 **Status:** speculative research software / toy-field proof-of-concept  
 **Working identity:** zero-gate dimensional emergence simulator  
 **Core question:** can a final trinary witness distinguish earned-one from raw expression pressure, latent overcrown, and false-one pressure under adversarial toy-field weather?
@@ -19,9 +19,9 @@ The public line has been repaired around the current active spine:
 
 - `v1.0.x-alpha` — first-research-alpha proof record and public source foundation.
 - `v1.1.x-alpha` — share-ready public witness pack.
-- `v1.2.x-alpha` — native math witness lock, native invariant tests, and power-up criteria preparation.
+- `v1.2.x-alpha` — native math witness lock, native invariant tests, and power-up / fail criteria.
 
-`v1.2.3-alpha` does **not** add a new gate and does **not** claim external logic validation. It locks the native geometry-math-code chain before any Kleene, Łukasiewicz, Priest, Belnap, or fuzzy-logic mirror is allowed to touch the engine.
+`v1.2.4-alpha` does **not** add a new gate and does **not** claim external logic validation. It adds a Power-Up / Fail harness that reads matrix proof artifacts and reports whether a run is merely executing, discriminating false-one pressure, or ready for later zero-band prediction and role-blind shadow work.
 
 ## Why this exists
 
@@ -52,6 +52,35 @@ The active v1.2 line begins by asking whether the repository obeys its own nativ
 Read first:
 
 - [`docs/math_witness_map.md`](docs/math_witness_map.md)
+
+## Power-up / fail witness
+
+The active v1.2.4 layer adds a conservative report over an existing matrix/proof output directory. It does not mutate the four-gate core and does not promote raw expression into final truth. It asks a narrower question:
+
+> Is this matrix merely running, or is it becoming harder to fool?
+
+Run it after a matrix or proof-corpus output exists:
+
+```powershell
+& $P -m zerogate_sim.power_check --matrix-dir runs\matrix_triad27_0_0
+```
+
+It writes:
+
+- `matrix_power_check_summary.csv`;
+- `matrix_power_check_fail_summary.csv`;
+- `matrix_power_check_read.md`.
+
+Power states are deliberately conservative:
+
+- `POWER 0` — runs;
+- `POWER 1` — witness artifacts present;
+- `POWER 2` — discriminator;
+- `POWER 3` — predictive-zero-ready;
+- `POWER 4` — role-blind shadow;
+- `POWER 5` — holy-shit detector.
+
+`POWER 4` and `POWER 5` are expected to remain HOLD until future role-blind and later-pressure confirmation work exists. No fake trophies.
 
 Native anchors:
 
@@ -197,6 +226,19 @@ Run the native math invariant tests:
 
 ```powershell
 & $P -m pytest tests\test_native_math_invariants.py -q
+```
+
+Run the power-check tests:
+
+```powershell
+& $P -m pytest tests\test_power_check.py -q
+```
+
+Run a small matrix and power-check it:
+
+```powershell
+& $P -m zerogate_sim.matrix --profile triad27 --start-seed 0 --count 1 --steps 90 --out runs\matrix_triad27_0_0_power_smoke
+& $P -m zerogate_sim.power_check --matrix-dir runs\matrix_triad27_0_0_power_smoke
 ```
 
 Run the original proof harness:

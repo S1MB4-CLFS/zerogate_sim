@@ -1,6 +1,6 @@
 # ZeroGateSim Roadmap
 
-**Current line:** `v1.2.3-alpha` native math witness lock and invariant-test foundation  
+**Current line:** `v1.2.4-alpha` power-up / fail witness harness  
 **Release posture:** public research-alpha / speculative toy-field proof-of-concept
 
 ZeroGateSim has a working first-research-alpha proof record. The next work is not to inflate the theory sideways. The next work is to make the native geometry, math, code, and tests agree before external logic mirrors are allowed to touch the engine.
@@ -125,13 +125,16 @@ The tests can catch a broken gate, broken witness, or accidental overcrown.
 
 ### v1.2.4-alpha — Power-Up / Fail Harness
 
-Planned module:
+Adds:
 
-- `src/zerogate_sim/power_check.py`
+- `src/zerogate_sim/power_check.py`;
+- `tests/test_power_check.py`;
+- `zerogate-power-check` console script.
 
-Planned outputs:
+Outputs:
 
 - `matrix_power_check_summary.csv`;
+- `matrix_power_check_fail_summary.csv`;
 - `matrix_power_check_read.md`.
 
 Power states:
@@ -143,7 +146,9 @@ Power states:
 - `POWER 4` — role-blind shadow;
 - `POWER 5` — holy-shit detector.
 
-The holy-shit detector is reached when the simulator refuses or holds a tempting candidate before collapse is obvious, names the wound, and later fresh pressure confirms the refusal.
+The holy-shit detector is reached when the simulator refuses or holds a tempting candidate before collapse is obvious, names the wound, and later fresh pressure confirms the refusal. In v1.2.4 this remains a HOLD boundary, not a claimed achievement.
+
+Status: completed as a conservative artifact reader. It does not mutate the matrix engine and does not claim POWER 4 or POWER 5 until future artifacts exist.
 
 ### v1.2.5-alpha — Zero-Band Prediction Tests
 
