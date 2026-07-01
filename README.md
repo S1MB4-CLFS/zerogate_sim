@@ -1,6 +1,6 @@
 # ZeroGateSim
 
-**Current public line:** `v1.2.5-alpha` — restore surgical scope after premature acceptance-harness expansion  
+**Current public line:** `v1.2.5-alpha` — roadmap repair and surgical scope recovery  
 **Status:** speculative research software / toy-field proof-of-concept  
 **Working identity:** zero-gate dimensional emergence simulator  
 **Core question:** can a final trinary witness distinguish earned-one from raw expression pressure, latent overcrown, and false-one pressure under adversarial toy-field weather?
@@ -15,22 +15,56 @@ It tests a narrower software-theory claim:
 
 ## Version truth
 
-The public line is repaired around the current active spine:
+The active public line is repaired around this spine:
 
 - `v1.0.x-alpha` — first-research-alpha proof record and public source foundation.
 - `v1.1.x-alpha` — share-ready public witness pack.
-- `v1.2.x-alpha` — native math witness lock, native invariant tests, and release-safe simulation win conditions.
+- `v1.2.x-alpha` — native math witness lock, invariant tests, and scope discipline.
+- `v1.3.x-alpha` and later — known-logic mirrors, only after native math stands still.
 
-`v1.2.5-alpha` removes the premature simulation win-condition code layer from the active package. The idea is preserved only as release-safe acceptance criteria in documentation, not as engine machinery, not as a new gate, and not as a claimed achievement.
+`v1.2.4-alpha` added a Power-Up / Fail report too early. `v1.2.5-alpha` removes that active machinery and keeps the useful question as documentation-only acceptance criteria.
 
-## Native math witness
+## Active route
 
-The active v1.2 line begins by asking whether the repository obeys its own native math before comparing itself with external formal logics.
+The current route is:
+
+```text
+native geometry -> native math -> code fidelity -> invariant tests -> known logic mirrors -> stronger experiments
+```
+
+Do not skip the order. ZeroGateSim is not helped by wearing a borrowed lab coat.
 
 Read first:
 
 - [`docs/math_witness_map.md`](docs/math_witness_map.md)
 - [`docs/simulation_win_conditions.md`](docs/simulation_win_conditions.md)
+- [`docs/local_tooling_repair.md`](docs/local_tooling_repair.md)
+
+## Why this exists
+
+The usual ladder of dimensional explanation often begins with:
+
+> point, line, plane, cube, then time.
+
+That ladder may work as a classroom drawing. It does not work as a genesis model. It describes completed structures, not how structure becomes expressible.
+
+ZeroGateSim tests a different spine:
+
+> Time is not merely the fourth room in the house of space. Time is the generative ordering condition through which dimensions become expressed.
+
+In this frame:
+
+- a point is the zero-zone of dimensional potential;
+- a line is polarity around zero;
+- a plane is relation between polarities;
+- volume is closed relational freedom;
+- a dimension is stabilized freedom that has passed through zero without losing coherence.
+
+The simulator exists because a theory does not earn trust by sounding beautiful. It earns its first bones by meeting pressure.
+
+## Native math witness
+
+The v1.2 line asks whether the repository obeys its own native math before comparing itself with external formal logics.
 
 Native anchors:
 
@@ -62,27 +96,19 @@ C_Z^i(t)=\min(D_i(t),P_i(t),R_i(t),B_i(t))
 \chi^i_{earned}(t)=\chi^i_{raw}(t)H(k_i(t)-K^*)W^i_{lineage}(t)W^i_{independence}(t)W^i_{role}
 ```
 
-## Why this exists
+## Known-logic comparison boundary
 
-The usual ladder of dimensional explanation often begins with:
+Known logic work is next only after the native math line is stable.
 
-> point, line, plane, cube, then time.
+Allowed:
 
-That ladder may work as a classroom drawing. It does not work as a genesis model. It describes completed structures, not how structure becomes expressible.
+> Project ZeroGateSim states into fuzzy, Belnap, paraconsistent, Kleene, or Lukasiewicz mirrors to see what is preserved, collapsed, or distorted.
 
-ZeroGateSim tests a different spine:
+Forbidden:
 
-> Time is not merely the fourth room in the house of space. Time is the generative ordering condition through which dimensions become expressed.
+> ZeroGateSim is identical to any of those logics.
 
-In this frame:
-
-- a point is the zero-zone of dimensional potential;
-- a line is polarity around zero;
-- a plane is relation between polarities;
-- volume is closed relational freedom;
-- a dimension is stabilized freedom that has passed through zero without losing coherence.
-
-The simulator exists because a theory does not earn trust by sounding beautiful. It earns its first bones by meeting pressure.
+The planned mirror order is fuzzy / many-valued scoring first, then Belnap evidence states, then paraconsistent conflict locality, then Kleene / Lukasiewicz compression and loss reporting.
 
 ## First-research-alpha result
 
@@ -200,7 +226,6 @@ Run the native math invariant tests:
 & $P -m pytest tests\test_native_math_invariants.py -q
 ```
 
-
 Run the original proof harness:
 
 ```powershell
@@ -255,7 +280,7 @@ The repo preserves two lanes:
 
 This keeps the lineage honest:
 
-> original seeing → executable simulation → proof-of-concept record → simulation-supported paper → native math witness lock.
+> original seeing → executable simulation → proof-of-concept record → simulation-supported paper → native math witness lock → known-logic mirrors.
 
 ## For reviewers and interested readers
 

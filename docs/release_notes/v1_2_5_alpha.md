@@ -2,33 +2,33 @@
 
 ## Purpose
 
-Restore surgical scope after a premature acceptance-reporting layer was added too early.
+Roadmap repair and surgical scope recovery after the premature v1.2.4 Power-Up / Fail harness.
 
-This release keeps the native math witness line and removes code that turned informal future validation language into active package machinery before the test design existed.
-
-## Removed
-
-- `src/zerogate_sim/power_check.py`
-- `tests/test_power_check.py`
-- `zerogate-power-check` console script
-- the v1.2.4 release note for the premature acceptance-report layer
-
-## Added
-
-- `docs/simulation_win_conditions.md`
+This release removes the overbuilt acceptance-reporting module from the active package and restores the active line to native math fidelity followed by known-logic comparison.
 
 ## Changed
 
-- README now describes v1.2.5 as scope restoration and links to release-safe simulation win conditions.
-- ROADMAP now marks the premature artifact-reader layer as held/superseded and keeps future validation as design work, not code.
-- Package version moved to `1.2.5a0`.
+- Updated package version to `1.2.5a0`.
+- Updated `__version__` to `1.2.5-alpha`.
+- Removed the `zerogate-power-check` console script.
+- Removed `src/zerogate_sim/power_check.py` from the active package.
+- Removed `tests/test_power_check.py` from the active test suite.
+- Rewrote `ROADMAP.md` around the real build sequence:
+  - native math;
+  - code fidelity;
+  - invariant tests;
+  - formal logic mirrors;
+  - stronger experiments;
+  - observed-universe bridge only after those survive.
+- Updated `README.md` to remove active Power-Up / Fail instructions.
+- Added `docs/simulation_win_conditions.md` as documentation-only acceptance criteria.
+- Added `docs/local_tooling_repair.md` for the broken-pip editable-install failure.
+- Marked v1.2.4 as superseded, not as a current architecture direction.
 
 ## Boundary
 
-This release does not mutate the four-gate engine. It does not add a new witness layer. It does not claim role-blind detection. It does not claim external logic validation.
+This release does not add a new gate, does not add known-logic comparison, does not solve role-blind false-one detection, and does not claim physical dimensional genesis.
 
-The useful idea is preserved as acceptance criteria:
+## Operating sentence
 
-> A future stronger result would be a witness refusal that is later confirmed by fresh pressure.
-
-That remains future work.
+Native math first. Formal mirrors second. Stronger reality bridge later.

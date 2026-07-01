@@ -1,23 +1,25 @@
 # ZeroGateSim Roadmap
 
-**Current line:** `v1.2.5-alpha` surgical scope restoration and simulation win conditions  
+**Current line:** `v1.2.5-alpha` roadmap repair and surgical scope recovery  
 **Release posture:** public research-alpha / speculative toy-field proof-of-concept
 
-ZeroGateSim has a working first-research-alpha proof record. The active work is not to inflate the engine. The active work is to make the native geometry, math, code, tests, and public claim boundary agree before external logic mirrors or role-blind extensions are allowed to touch the engine.
+ZeroGateSim already has a first-research-alpha toy-field proof record. The next work is not to make bigger claims or add shiny machinery. The next work is to make the native math testable, then compare that native math against nearby formal logic families without pretending they are the same thing.
 
 ## North Star
 
-ZeroGateSim tests whether dimensional expression can be modeled not as adding axes to a box, but as candidate freedoms surviving a four-gate return through zero and then earning final +1 through trinary witness.
+ZeroGateSim tests whether dimensional expression can be modeled as candidate freedoms passing through a zero-gate cycle of distinction, polarity, relation, and return, then earning final +1 through a trinary witness stack.
 
-The first research-alpha result supports this narrow claim inside generated toy fields:
+Current supported claim:
 
-> Final trinary witness separated earned-one from raw expression, latent overcrown, and false-one pressure across original and fresh-seed trinary adversarial proof records.
+> Inside generated toy fields, final trinary witness separated earned-one from raw expression, latent overcrown, and false-one pressure across original and fresh-seed adversarial proof records.
 
-It does not prove physical dimensions, cosmology, or that reality itself is trinary.
+Current unsupported claims:
 
-The active v1.2 line adds a stricter question:
-
-> Does the repository obey its own native math well enough to deserve later comparison against known external logic families?
+- not proof of cosmology;
+- not proof of physical dimensional genesis;
+- not proof that reality itself is trinary;
+- not role-blind false-one discovery;
+- not equivalence with Kleene, Lukasiewicz, Priest, Belnap, fuzzy, or other known logic systems.
 
 ## Current proof record
 
@@ -29,242 +31,342 @@ Combined original proof and fresh-seed reproduction:
 - `2388` raw false-one pressures detected and demoted;
 - `0` final false-one crowns.
 
-This is the first proof-of-concept floor. It is not the roof.
+This is the proof-of-concept floor. It is not the roof.
 
-## v1.0-alpha to v1.0.2-alpha — public source foundation
+## Operating law
+
+The build order is:
+
+> native geometry -> native math -> code fidelity -> invariant tests -> formal mirrors -> stronger experiments.
+
+Any version that skips this order is a HOLD or RESIST event.
+
+## v1.0-alpha to v1.0.2-alpha — First proof floor
 
 Completed:
 
 - first-research-alpha proof record;
-- MIT license;
-- `CITATION.cff`;
-- DREED / `active_inference_review_lens_v0` public method note;
-- historical pre-simulation manuscript lane;
-- public repository hygiene;
-- generated run exclusion.
-
-## v1.1-alpha — Share-Ready Public Witness Pack
+- public source foundation;
+- generated run exclusion;
+- release notes and proof boundary;
+- MIT license and citation metadata.
 
 Purpose:
 
-Make the repo understandable to people who were not present for the build.
+Show that the toy-field engine can generate adversarial pressure, name false-one pressure, and refuse final false-one crowns inside the controlled harness.
+
+## v1.1-alpha — Public witness pack
 
 Completed or preserved:
 
-- README top-card polish;
-- `docs/quickstart.md`;
-- `docs/claim_boundary.md`;
-- `docs/for_reviewers.md`;
-- `docs/visual_guide.md`;
-- `docs/public_sharing_note.md`;
-- `docs/proof_records/first_research_alpha/proof_card.md`;
-- visual assets;
-- simulation-supported paper scaffold in `docs/papers/zenodo_ready/`.
-
-Success condition:
-
-A skeptical reader can open the repo, understand the claim boundary, see the proof shape, run a small demo, and know where the full proof record belongs.
-
-## v1.2-alpha — Native Math Witness and Scope Discipline
+- README / quickstart / public sharing path;
+- claim boundary;
+- reviewer guide;
+- visual guide and visual assets;
+- proof record summary;
+- simulation-supported manuscript scaffold.
 
 Purpose:
 
-Lock the native math before known-logic comparison. No external logic mirror, acceptance metric, or future validation phrase is allowed to become a new engine claim until ZeroGateSim can show that its own geometry, equations, implementation, and tests agree.
+Let a skeptical reader understand what was tested, what was not tested, and where the proof record belongs.
 
-### v1.2.1-alpha — Version Truth Repair
+## v1.2-alpha — Native math and scope discipline
 
-Repair README / ROADMAP / package metadata so the repo tells one version story:
+Purpose:
 
-- `v1.0.x-alpha` — first-research-alpha proof record;
-- `v1.1.x-alpha` — public witness / share-ready cleanup;
-- `v1.2.x-alpha` — native math witness and release-safe simulation criteria.
+Make the native ZeroGateSim math explicit and testable before comparing it against known logic systems.
+
+Native anchors:
+
+- `E0 = (Z0, tau)` — zero-zone under generative ordering;
+- `T3[X](tau)` — becoming / witness-invariance / inheritance posture;
+- `Li = (-ei, 0, +ei)` — polarity around zero;
+- `Gamma_i = D_i P_i R_i` — return-potential / relational-gravity coherence;
+- `C_Z = min(D, P, R, B)` — weakest-gate coherence;
+- `chi_raw` — local expression pressure;
+- `Z(0)..Z(4)` — return-depth grammar;
+- `chi_earned` — raw expression plus return-depth, lineage, independence, and role witness.
+
+### v1.2.1-alpha — Version truth repair
+
+Repair README, ROADMAP, package metadata, and public docs so the repo tells one version story.
 
 Success condition:
 
-No public file still calls the active line `v1.0.2-alpha` or `v1.1-alpha`.
+- no active file falsely calls the current line `v1.0.2-alpha` or `v1.1-alpha`;
+- release history remains visible instead of being rewritten.
 
-### v1.2.2-alpha — Native Math Witness Map
+### v1.2.2-alpha — Native math witness map
 
-Add:
+Add `docs/math_witness_map.md`.
 
-- `docs/math_witness_map.md`
-
-The map must show:
+Each native object must show:
 
 - geometry;
 - manuscript equation;
-- code location;
+- code trace;
 - invariant;
 - external-logic relevance;
 - overclaim boundary.
 
 Success condition:
 
-A reader can trace the path:
+A reader can trace:
 
 > geometry -> math -> code -> test -> claim boundary.
 
-### v1.2.3-alpha — Native Math Invariant Tests
+### v1.2.3-alpha — Native invariant tests
 
-Add:
+Add `tests/test_native_math_invariants.py`.
 
-- `tests/test_native_math_invariants.py`
-
-Test the native commitments before testing external logics:
+Protected commitments:
 
 - `C_Z = min(D, P, R, B)`;
 - return-potential behaves as `D * P * R`;
 - raw expression requires strength and zero-gate coherence threshold passage;
-- zero-depth is ordered rather than flat;
+- zero-depth is ordered and bounded;
 - `0+`, `0`, and `0-` remain distinct;
 - final +1 is not raw +1 automatically.
 
 Success condition:
 
-The tests can catch a broken gate, broken witness, or accidental overcrown.
+The tests catch broken gates, broken witness grammar, and accidental overcrown.
 
-### v1.2.4-alpha — Held / superseded scope
+### v1.2.4-alpha — Superseded overbuild
 
-A proposed artifact-reader layer was too early and too close to turning informal acceptance language into engine machinery. It is not part of the active package after v1.2.5.
+Status: superseded by `v1.2.5-alpha`.
+
+A Power-Up / Fail reporting module was added too early. The idea was useful as a human acceptance question, but not ready as engine machinery. It blurred future validation language with current capability.
+
+What was wrong:
+
+- informal operator language became code too soon;
+- future role-blind and later-pressure validation appeared as a ladder before the tests were designed;
+- the roadmap drifted from native math / known-logic comparison into acceptance-reporting machinery.
 
 Boundary:
 
-- no new gate;
-- no acceptance-score module;
-- no future validation phrase treated as current capability;
-- no console script for acceptance reporting.
+- do not treat `POWER` or “holy-shit detector” language as active product architecture;
+- keep that language only as documentation-level acceptance criteria until tests exist.
 
-### v1.2.5-alpha — Surgical Scope Restoration and Simulation Win Conditions
+### v1.2.5-alpha — Roadmap repair and surgical scope recovery
 
 Purpose:
 
-Remove premature acceptance-reporting code and preserve the useful idea only as documentation-level criteria.
+Restore the active line to native math fidelity and release-safe simulation criteria.
 
 Changes:
 
-- remove `src/zerogate_sim/power_check.py`;
+- remove `src/zerogate_sim/power_check.py` from the active package;
 - remove `tests/test_power_check.py`;
-- remove the console script that invoked that module;
-- add `docs/simulation_win_conditions.md`;
-- update README and ROADMAP so the current line is clear.
+- remove the `zerogate-power-check` console script;
+- add `docs/simulation_win_conditions.md` as a documentation-only translation of “power up or fail”;
+- add `docs/local_tooling_repair.md` for the corrupted-pip / editable-install failure;
+- rewrite ROADMAP so the next steps point toward formal comparison, not accidental machinery.
 
 Success condition:
 
-The package again contains native math witness work without pretending that future role-blind or later-pressure validation has already been implemented.
+The active package is back to:
 
-### v1.2.6-alpha — Installer / Local Tooling Repair Note
+> toy-field proof floor -> native math fidelity -> known logic mirror preparation.
 
-Purpose:
+No new gate. No fake detector. No external-logic claim yet.
 
-Document the local venv/pip repair path if editable install fails because pip internals are broken.
-
-Allowed output:
-
-- a small troubleshooting note or quickstart repair section.
-
-Forbidden output:
-
-- no engine changes;
-- no roadmap expansion;
-- no new simulator feature.
-
-### v1.2.7-alpha — Zero-Band Prediction Design, Not Code Yet
+### v1.2.6-alpha — Local tooling repair note only
 
 Purpose:
 
-Design how to test whether `0+`, `0`, and `0-` predict later maturation, ambiguity, or collapse under fresh pressure.
+Make the editable-install / broken-pip repair path explicit in docs and quickstart if needed.
+
+Allowed:
+
+- docs-only repair instructions;
+- workflow clarification.
+
+Forbidden:
+
+- engine changes;
+- roadmap expansion;
+- workaround code for a local pip corruption.
+
+### v1.2.7-alpha — Zero-band prediction design, not code yet
+
+Purpose:
+
+Design how to test whether `0+`, `0`, and `0-` predict later maturation, ambiguity, or collapse.
 
 Required before code:
 
-- define independent later-pressure scenarios;
-- define expected behavior per zero-band;
-- define what would falsify the prediction claim.
+- define later-pressure scenarios;
+- define expected behavior per zero band;
+- define what counts as prediction success;
+- define what falsifies the claim.
 
-Only after that design is approved may tests be added.
+Success condition:
 
-## v1.3-alpha — External Logic Mirror Line
+The test design exists before any prediction module exists.
 
-Only after the v1.2 native math and scope line is stable.
+## v1.3-alpha — Known logic mirror foundation
 
 Purpose:
 
-Compare ZeroGateSim against known non-binary logic families as projection mirrors, not identity claims.
+Prepare formal comparison with known non-binary logic families as projection mirrors, not identity claims.
 
 Forbidden claim:
 
-> ZeroGateSim is Kleene logic, Łukasiewicz logic, Priest logic, Belnap logic, or fuzzy logic.
+> ZeroGateSim is Kleene logic, Lukasiewicz logic, Priest logic, Belnap logic, or fuzzy logic.
 
 Allowed claim:
 
-> ZeroGateSim can project its native output grammar into known logic mirrors to expose what is preserved, collapsed, or distorted.
+> ZeroGateSim can project its native states into known logic mirrors to see what is preserved, collapsed, or distorted.
 
-Planned sequence:
+### v1.3.1-alpha — Known logic boundary document
 
-1. Known logic boundary document.
-2. Fuzzy / many-valued mirror, because weakest-gate coherence resembles a minimum conjunction.
-3. Belnap evidence mirror, because raw pressure and counterpressure need separate evidence-for / evidence-against tracking.
-4. Paraconsistent conflict-locality tests, because contradiction pressure must stay local and not explode into arbitrary crown.
-5. Kleene / Łukasiewicz compression tests, because they reveal what is lost when `0+`, `0`, and `0-` collapse into one middle value.
+Add `docs/known_logic_boundary.md`.
 
-## v1.4-alpha — Reproducibility and Evidence Packaging
+It must define:
+
+- native ZeroGateSim states;
+- projection states;
+- loss report;
+- forbidden equivalence claims.
+
+### v1.3.2-alpha — Fuzzy / many-valued score mirror
+
+First formal mirror because `C_Z = min(D, P, R, B)` resembles minimum conjunction over continuous scores.
+
+Compare:
+
+- min gate;
+- product gate;
+- average gate;
+- current thresholded witness stack.
+
+Success condition:
+
+The repo can say where ZeroGateSim behaves like fuzzy scoring and where it exceeds fuzzy scoring through return-depth, lineage, independence, and role witness.
+
+### v1.3.3-alpha — Belnap evidence-state mirror
+
+Belnap-style comparison is relevant because ZeroGateSim separates evidence-for and evidence-against expression.
+
+Projection target:
+
+- true-only: earned-one;
+- false-only: false-one demoted / trap contained;
+- both: raw expression plus debt / echo / contradiction pressure;
+- neither: clean hold / insufficient evidence.
+
+Success condition:
+
+The projection exposes whether ZeroGateSim preserves conflict instead of flattening it.
+
+### v1.3.4-alpha — Paraconsistent conflict-locality mirror
 
 Purpose:
 
-Prepare clean evidence archives without bloating GitHub.
+Test whether contradiction pressure stays local.
+
+Core rule:
+
+> raw +1 plus debt must not explode into arbitrary final +1.
+
+Success condition:
+
+Conflicting evidence can be reported without crowning unrelated candidates or confirming the whole run.
+
+### v1.3.5-alpha — Kleene / Lukasiewicz compression mirror
+
+Purpose:
+
+Test what gets lost when the native grammar compresses to three values.
+
+Projection:
+
+- earned-one -> true;
+- hold -> unknown / indeterminate;
+- false-one demoted / rejection -> false.
+
+Required loss report:
+
+- `0+`, `0`, and `0-` collapse into one middle value;
+- temporal lineage and echo-debt information are lost;
+- raw expression vs earned-one must remain externally explained.
+
+## v1.4-alpha — Cross-logic comparison report
+
+Purpose:
+
+Aggregate fuzzy, Belnap, paraconsistent, and K3/L3 projections into one comparison report.
 
 Deliverables:
 
-- minimal demo evidence bundle;
-- first-research-alpha proof record bundle;
-- optional Zenodo evidence archive plan;
-- checksum / manifest convention;
-- clear distinction between source repo, evidence record, and paper record.
+- `docs/known_logic_comparison_report.md`;
+- optional CSV summaries if tests generate projection rows.
 
 Success condition:
 
-The source repo stays small while evidence remains traceable and citable.
+A reader can see which external logic mirror is closest for which part of ZeroGateSim and what each mirror loses.
 
-## v1.5-alpha — Visual Workbench Lite
+## v1.5-alpha — Stronger toy-field experiments
 
 Purpose:
 
-Improve visual witness without building a GUI cathedral.
+Move from current designed adversarial roles toward stronger tests without pretending role-blind discovery is solved.
 
-Possible deliverables:
+Possible work:
 
-- selected field atlas examples;
-- glyph legend improvements;
-- one-command visual demo;
-- static gallery in `docs/assets/`.
+- independent oracle signal families;
+- stricter adversarial corpora;
+- threshold sensitivity;
+- ablation: remove return / lineage / independence / role witness;
+- seed block confidence summaries.
 
 Success condition:
 
-The visual layer helps readers understand proof pressure, not drown in plot confetti.
+The engine becomes harder to fool under tests that were not shaped only around its own favorite examples.
 
-## v2.0 direction — External Review and Generalization
+## v1.6-alpha — Role-blind shadow design
 
-Only after the native math, scope discipline, and external logic mirrors are stable:
+Purpose:
 
-- ask external readers to reproduce small runs;
-- add issue templates for mechanism-boundary questions;
-- explore additional adversarial corpora;
-- compare earned-one witness against independent dimensionality measures;
-- consider a separate evidence DOI.
+Design, then only later implement, a shadow detector that estimates false-one pressure from observable metrics without reading designed truth-role labels.
+
+Required before code:
+
+- metric list;
+- expected failure modes;
+- comparison against current role-aware proof witness;
+- clear claim boundary.
+
+## v2.0 direction — External review and observed-universe bridge
+
+Only after v1.3-v1.6 are stable:
+
+- external reproduction of small runs;
+- effective dimension comparisons: PCA rank, stable rank, graph diffusion, spectral-style return probabilities;
+- comparison against relevant emergence / pregeometry / many-valued logic literature;
+- evidence DOI plan;
+- manuscript update separating simulation support, mathematical analogy, and physical speculation.
+
+Observed-universe bridge rule:
+
+> A match to known math or observed behavior is support for a modeling analogy, not proof that the universe uses ZeroGateSim.
 
 ## HOLD conditions
 
 Stop and repair before advancing if:
 
-- any public artifact implies proof of cosmology or physics;
-- final false-one crowns reappear in proof records;
-- generated runs enter Git history;
-- acceptance language becomes engine machinery before test design exists;
-- DREED language turns into reviewer cosplay;
-- visual polish obscures the claim boundary;
-- the repo becomes too large to audit.
+- public language implies proof of cosmology or physics;
+- final false-one crowns reappear and are hidden;
+- raw expression is treated as final earned-one;
+- role-aware proof is described as role-blind discovery;
+- known-logic projection is described as identity;
+- generated runs, bundles, or PDFs enter Git history by accident;
+- roadmap turns into a wish list instead of a promise map.
 
 ## Operating sentence
 
-Small engine. Large weather. Clear witness.
+Small engine. Native math first. Formal mirrors second. Stronger reality bridge later.
 
 A real one is not the first thing after zero. A real one is what zero can return as without lying.

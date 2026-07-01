@@ -1,9 +1,9 @@
 # ZeroGateSim Simulation Win Conditions
 
 **Line:** `v1.2-alpha`  
-**Purpose:** translate informal operator pressure into release-safe acceptance criteria without adding engine machinery.
+**Status:** documentation-only acceptance criteria
 
-This document is not a module, not a score, and not a new gate. It states what would count as the simulation working, failing, or overclaiming.
+This document translates the operator question “power up or fail?” into release-safe criteria. It is not a module, not a score, not a new gate, and not a current claim of role-blind intelligence.
 
 ## Boundary
 
@@ -13,11 +13,11 @@ Raw expression is pressure. Earned-one is final +1 only after the witness stack.
 
 ## What counts as working now
 
-The simulation is working at the current proof-of-concept level when all of these remain true:
+The simulation is working at the current proof-of-concept level when:
 
 - generated toy-field runs complete and write inspectable evidence artifacts;
-- the four native gates remain visible: distinction, polarity, relation, return;
-- `C_Z` is the weakest-gate coherence, not an average beauty contest;
+- distinction, polarity, relation, and return stay visible;
+- `C_Z` is weakest-gate coherence, not an average beauty contest;
 - raw expression is kept separate from final earned-one;
 - latent/probe pressure can be held in zero instead of forced into pass/fail;
 - trap pressure can appear locally without receiving final +1;
@@ -33,12 +33,12 @@ A run or release is not acceptable if any of these occur without being clearly m
 - `0+`, `0`, and `0-` collapse into one meaningless middle bucket;
 - a simpler baseline explains the result as well as the witness stack and this is ignored;
 - the result depends on one lucky seed range or one fragile threshold;
-- role labels do all the meaningful false-one work while the report implies role-blind detection;
+- role labels do all meaningful false-one work while the report implies role-blind detection;
 - public language claims more than the toy-field proof supports.
 
 ## Future validation target
 
-The strongest future validation target is not a bigger run count. It is anticipatory refusal.
+The strongest future target is not a bigger run count. It is anticipatory refusal.
 
 Pattern:
 
@@ -55,7 +55,7 @@ This remains future work. It is not claimed by the current proof record.
 
 Do not add acceptance-score machinery until the tests are designed.
 
-Do not add role-blind detection until the observable criteria are specified.
+Do not add role-blind detection until observable criteria are specified.
 
 Do not add external-logic comparison until the native math witness line remains stable.
 
@@ -63,8 +63,6 @@ Do not let informal operator language become public product language.
 
 ## Correct current posture
 
-The correct current posture is:
+> The simulation has a strong role-aware toy-field proof floor. The next real advance is to test native math fidelity and compare the native grammar with known formal mirrors without claiming equivalence.
 
-> The simulation has a strong role-aware toy-field proof floor. The next real advance is to test whether zero-band posture and witness refusal predict later behavior under fresh pressure.
-
-Until that is tested, the future validation target stays in HOLD.
+Until that is tested, future validation stays in HOLD.
