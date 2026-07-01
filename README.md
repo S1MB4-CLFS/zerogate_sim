@@ -1,17 +1,27 @@
 # ZeroGateSim
 
-**Current public line:** `v1.0.2-alpha` with visual-witness polish in branch work  
+**Current public line:** `v1.2.3-alpha` — native math witness lock and invariant-test foundation  
 **Status:** speculative research software / toy-field proof-of-concept  
 **Working identity:** zero-gate dimensional emergence simulator  
-**Core question:** can a final trinary witness distinguish earned-one from raw expression, latent overcrown, and false-one pressure under adversarial toy-field weather?
+**Core question:** can a final trinary witness distinguish earned-one from raw expression pressure, latent overcrown, and false-one pressure under adversarial toy-field weather?
 
 ZeroGateSim is a small research software project for testing a speculative theory of dimensional emergence.
 
 It does **not** prove cosmology, physical dimensions, or that reality itself is trinary.
 
-It does test a narrower software-theory claim:
+It tests a narrower software-theory claim:
 
 > Inside generated toy fields, final earned-one witness can separate earned expression from raw expression pressure, latent overcrown, and false-one pressure across distinction, polarity, and relation adversaries.
+
+## Version truth
+
+The public line has been repaired around the current active spine:
+
+- `v1.0.x-alpha` — first-research-alpha proof record and public source foundation.
+- `v1.1.x-alpha` — share-ready public witness pack.
+- `v1.2.x-alpha` — native math witness lock, native invariant tests, and power-up criteria preparation.
+
+`v1.2.3-alpha` does **not** add a new gate and does **not** claim external logic validation. It locks the native geometry-math-code chain before any Kleene, Łukasiewicz, Priest, Belnap, or fuzzy-logic mirror is allowed to touch the engine.
 
 ## Why this exists
 
@@ -34,6 +44,44 @@ In this frame:
 - a dimension is stabilized freedom that has passed through zero without losing coherence.
 
 The simulator exists because a theory does not earn trust by sounding beautiful. It earns its first bones by meeting pressure.
+
+## Native math witness
+
+The active v1.2 line begins by asking whether the repository obeys its own native math before comparing itself with external formal logics.
+
+Read first:
+
+- [`docs/math_witness_map.md`](docs/math_witness_map.md)
+
+Native anchors:
+
+```math
+E_0 = (Z_0, \tau)
+```
+
+```math
+T_3[X](\tau) = (X(\tau+h)-X(\tau), I_h[X](\tau), X(\tau)-X(\tau-h))
+```
+
+```math
+L_i = (-e_i, 0, +e_i)
+```
+
+```math
+\Gamma_i(t)=D_i(t)P_i(t)R_i(t)
+```
+
+```math
+C_Z^i(t)=\min(D_i(t),P_i(t),R_i(t),B_i(t))
+```
+
+```math
+\chi^i_{raw}(t)=H(\sigma_i(t)-\epsilon)H(C_Z^i(t)-\theta_Z)
+```
+
+```math
+\chi^i_{earned}(t)=\chi^i_{raw}(t)H(k_i(t)-K^*)W^i_{lineage}(t)W^i_{independence}(t)W^i_{role}
+```
 
 ## First-research-alpha result
 
@@ -68,19 +116,13 @@ The four gates are:
 
 Return is not decorative. Distinction separates. Polarity tensions. Relation binds. When binding becomes coherent, expansion curves back as return.
 
-The zero-gate coherence of candidate freedom `i` at time `t` is:
+The zero-gate coherence of candidate `i` at time `t` is:
 
 ```math
 C_Z^i(t)=\min(g_D^i(t),g_P^i(t),g_R^i(t),g_B^i(t))
 ```
 
 The minimum matters. A candidate does not pass because one gate is beautiful. The weakest gate decides the coherence pressure.
-
-The old raw expression count is treated as pressure, not truth:
-
-```math
-d_Z(t)=\sum_i H(\sigma_i(t)-\epsilon)H(C_Z^i(t)-\theta_Z)
-```
 
 Raw local expression is not final +1. Final +1 belongs only to **earned-one**.
 
@@ -151,6 +193,12 @@ Run a small demo first:
 & $P -m zerogate_sim.demo --seed 42 --out runs\demo_seed_42
 ```
 
+Run the native math invariant tests:
+
+```powershell
+& $P -m pytest tests\test_native_math_invariants.py -q
+```
+
 Run the original proof harness:
 
 ```powershell
@@ -186,7 +234,9 @@ Unsupported claims:
 - this proves physical dimensions;
 - this proves cosmology;
 - this proves that reality itself is trinary;
-- this replaces physics or mathematics.
+- this replaces physics or mathematics;
+- this already validates the model against external many-valued logics;
+- this already solves role-blind false-one detection.
 
 Read the full boundary:
 
@@ -203,18 +253,19 @@ The repo preserves two lanes:
 
 This keeps the lineage honest:
 
-> original seeing → executable simulation → proof-of-concept record → simulation-supported paper.
+> original seeing → executable simulation → proof-of-concept record → simulation-supported paper → native math witness lock.
 
 ## For reviewers and interested readers
 
 Recommended route:
 
 1. README top card.
-2. Visual route.
-3. Claim boundary.
-4. Proof card.
-5. Quickstart or code.
-6. Historical manuscript only after the current proof boundary is understood.
+2. Claim boundary.
+3. Math witness map.
+4. Visual route.
+5. Proof card.
+6. Quickstart or code.
+7. Historical manuscript only after the current proof boundary is understood.
 
 Reviewer guide:
 
