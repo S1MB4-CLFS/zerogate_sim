@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "zerogate-sim"
-version = "1.2.4a0"
+version = "1.2.5a0"
 description = "Toy simulation framework for zero-gate dimensional emergence."
 readme = "README.md"
 requires-python = ">=3.10"
@@ -38,7 +38,6 @@ zerogate-finalize = "zerogate_sim.finalize:main"
 zerogate-proof = "zerogate_sim.proof:main"
 zerogate-record = "zerogate_sim.proof_record:main"
 zerogate-release = "zerogate_sim.release_record:main"
-zerogate-power-check = "zerogate_sim.power_check:main"
 zerogate-export-public = "zerogate_sim.export_public_repo:main"
 
 [tool.setuptools.packages.find]

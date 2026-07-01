@@ -10,7 +10,7 @@ This release does not add a new gate, does not claim external logic validation, 
 
 - Repaired public version line to `v1.2.3-alpha`.
 - Updated package metadata to `1.2.3a0`.
-- Rewrote `ROADMAP.md` around the active v1.2 native math / power-up line.
+- Rewrote `ROADMAP.md` around the active v1.2 native math witness line.
 - Updated `README.md` with the v1.2 native math witness boundary.
 - Added `docs/math_witness_map.md`.
 - Added `tests/test_native_math_invariants.py`.

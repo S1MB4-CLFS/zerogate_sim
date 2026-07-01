@@ -1,9 +1,9 @@
 # ZeroGateSim Roadmap
 
-**Current line:** `v1.2.4-alpha` power-up / fail witness harness  
+**Current line:** `v1.2.5-alpha` surgical scope restoration and simulation win conditions  
 **Release posture:** public research-alpha / speculative toy-field proof-of-concept
 
-ZeroGateSim has a working first-research-alpha proof record. The next work is not to inflate the theory sideways. The next work is to make the native geometry, math, code, and tests agree before external logic mirrors are allowed to touch the engine.
+ZeroGateSim has a working first-research-alpha proof record. The active work is not to inflate the engine. The active work is to make the native geometry, math, code, tests, and public claim boundary agree before external logic mirrors or role-blind extensions are allowed to touch the engine.
 
 ## North Star
 
@@ -15,7 +15,7 @@ The first research-alpha result supports this narrow claim inside generated toy 
 
 It does not prove physical dimensions, cosmology, or that reality itself is trinary.
 
-The v1.2 line adds a stricter question:
+The active v1.2 line adds a stricter question:
 
 > Does the repository obey its own native math well enough to deserve later comparison against known external logic families?
 
@@ -65,11 +65,11 @@ Success condition:
 
 A skeptical reader can open the repo, understand the claim boundary, see the proof shape, run a small demo, and know where the full proof record belongs.
 
-## v1.2-alpha — Native Math Witness and Power-Up Foundation
+## v1.2-alpha — Native Math Witness and Scope Discipline
 
 Purpose:
 
-Lock the native math before known-logic comparison. No external logic mirror is allowed to become a new crown until ZeroGateSim can show that its own geometry, equations, implementation, and tests agree.
+Lock the native math before known-logic comparison. No external logic mirror, acceptance metric, or future validation phrase is allowed to become a new engine claim until ZeroGateSim can show that its own geometry, equations, implementation, and tests agree.
 
 ### v1.2.1-alpha — Version Truth Repair
 
@@ -77,7 +77,7 @@ Repair README / ROADMAP / package metadata so the repo tells one version story:
 
 - `v1.0.x-alpha` — first-research-alpha proof record;
 - `v1.1.x-alpha` — public witness / share-ready cleanup;
-- `v1.2.x-alpha` — native math witness and power-up criteria.
+- `v1.2.x-alpha` — native math witness and release-safe simulation criteria.
 
 Success condition:
 
@@ -102,7 +102,7 @@ Success condition:
 
 A reader can trace the path:
 
-> geometry → math → code → test → claim boundary.
+> geometry -> math -> code -> test -> claim boundary.
 
 ### v1.2.3-alpha — Native Math Invariant Tests
 
@@ -123,81 +123,68 @@ Success condition:
 
 The tests can catch a broken gate, broken witness, or accidental overcrown.
 
-### v1.2.4-alpha — Power-Up / Fail Harness
+### v1.2.4-alpha — Held / superseded scope
 
-Adds:
+A proposed artifact-reader layer was too early and too close to turning informal acceptance language into engine machinery. It is not part of the active package after v1.2.5.
 
-- `src/zerogate_sim/power_check.py`;
-- `tests/test_power_check.py`;
-- `zerogate-power-check` console script.
+Boundary:
 
-Outputs:
+- no new gate;
+- no acceptance-score module;
+- no future validation phrase treated as current capability;
+- no console script for acceptance reporting.
 
-- `matrix_power_check_summary.csv`;
-- `matrix_power_check_fail_summary.csv`;
-- `matrix_power_check_read.md`.
+### v1.2.5-alpha — Surgical Scope Restoration and Simulation Win Conditions
 
-Power states:
+Purpose:
 
-- `POWER 0` — runs;
-- `POWER 1` — math-faithful;
-- `POWER 2` — discriminator;
-- `POWER 3` — predictive zero;
-- `POWER 4` — role-blind shadow;
-- `POWER 5` — holy-shit detector.
+Remove premature acceptance-reporting code and preserve the useful idea only as documentation-level criteria.
 
-The holy-shit detector is reached when the simulator refuses or holds a tempting candidate before collapse is obvious, names the wound, and later fresh pressure confirms the refusal. In v1.2.4 this remains a HOLD boundary, not a claimed achievement.
+Changes:
 
-Status: completed as a conservative artifact reader. It does not mutate the matrix engine and does not claim POWER 4 or POWER 5 until future artifacts exist.
+- remove `src/zerogate_sim/power_check.py`;
+- remove `tests/test_power_check.py`;
+- remove the console script that invoked that module;
+- add `docs/simulation_win_conditions.md`;
+- update README and ROADMAP so the current line is clear.
 
-### v1.2.5-alpha — Zero-Band Prediction Tests
+Success condition:
 
-Planned tests:
+The package again contains native math witness work without pretending that future role-blind or later-pressure validation has already been implemented.
 
-- `tests/test_zero_band_prediction.py`
+### v1.2.6-alpha — Installer / Local Tooling Repair Note
 
-Core question:
+Purpose:
 
-Do `0+`, `0`, and `0-` predict later maturation, ambiguity, or collapse under fresh pressure?
+Document the local venv/pip repair path if editable install fails because pip internals are broken.
 
-### v1.2.6-alpha — Role-Blind Shadow Detector
+Allowed output:
 
-Planned module:
+- a small troubleshooting note or quickstart repair section.
 
-- `src/zerogate_sim/role_blind_shadow.py`
+Forbidden output:
 
-Rule:
+- no engine changes;
+- no roadmap expansion;
+- no new simulator feature.
 
-Do not replace the role-aware proof witness yet. Run a shadow detector beside it and measure how much false-one detection survives without designed truth-role labels.
+### v1.2.7-alpha — Zero-Band Prediction Design, Not Code Yet
 
-### v1.2.7-alpha — Baseline and Ablation Pressure
+Purpose:
 
-Planned outputs:
+Design how to test whether `0+`, `0`, and `0-` predict later maturation, ambiguity, or collapse under fresh pressure.
 
-- `matrix_ablation_summary.csv`;
-- `matrix_ablation_read.md`.
+Required before code:
 
-Ablations:
+- define independent later-pressure scenarios;
+- define expected behavior per zero-band;
+- define what would falsify the prediction claim.
 
-- remove return;
-- remove lineage;
-- remove echo-independence;
-- remove role witness;
-- replace min gate with average gate;
-- replace min gate with product gate;
-- compare amplitude-only, polarity-only, relation-only, and random-pressure baselines.
-
-### v1.2.8-alpha — Native Math + Power-Up Report
-
-Planned doc:
-
-- `docs/native_math_power_report.md`
-
-This report must answer what is working, what is still role-aware only, which ablations hurt the witness, and what remains unproven.
+Only after that design is approved may tests be added.
 
 ## v1.3-alpha — External Logic Mirror Line
 
-Only after the v1.2 native math and power-up line is stable.
+Only after the v1.2 native math and scope line is stable.
 
 Purpose:
 
@@ -256,7 +243,7 @@ The visual layer helps readers understand proof pressure, not drown in plot conf
 
 ## v2.0 direction — External Review and Generalization
 
-Only after the native math, power-up criteria, and external logic mirrors are stable:
+Only after the native math, scope discipline, and external logic mirrors are stable:
 
 - ask external readers to reproduce small runs;
 - add issue templates for mechanism-boundary questions;
@@ -271,12 +258,10 @@ Stop and repair before advancing if:
 - any public artifact implies proof of cosmology or physics;
 - final false-one crowns reappear in proof records;
 - generated runs enter Git history;
+- acceptance language becomes engine machinery before test design exists;
 - DREED language turns into reviewer cosplay;
 - visual polish obscures the claim boundary;
-- the repo becomes too large to audit;
-- external logic comparison is presented as identity rather than projection;
-- role-aware false-one detection is described as role-blind discovery;
-- raw expression starts wearing final +1's jacket again.
+- the repo becomes too large to audit.
 
 ## Operating sentence
 

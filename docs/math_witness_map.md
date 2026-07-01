@@ -540,18 +540,23 @@ The weather matrix is not itself a truth table. It is an adversarial environment
 
 Do not treat weather-cell success as physical confirmation.
 
-## Native power-up question
+## Simulation acceptance question
 
-The simulation powers up when it becomes harder to fool than the eye that built it.
+The simulation is useful when it becomes harder to fool than a raw visual reading of the generated field. This is not a new gate and not a score. It is an acceptance question for later test design.
 
-Working power ladder:
+Current floor:
 
 1. **Runs** — commands complete and reports are produced.
 2. **Math-faithful** — native invariants pass.
-3. **Discriminator** — expressers are crowned and known traps are demoted under adversarial weather.
-4. **Predictive zero** — `0+`, `0`, and `0-` forecast future maturation, ambiguity, or collapse.
-5. **Role-blind shadow** — false-one pressure can be flagged without depending entirely on designed roles.
-6. **Holy-shit detector** — the simulator refuses or holds a tempting candidate before collapse is obvious, names the wound, and later pressure confirms the refusal.
+3. **Role-aware discriminator** — expressers are crowned and known traps are demoted under adversarial weather.
+
+Future validation targets, not current claims:
+
+1. `0+`, `0`, and `0-` should predict later maturation, ambiguity, or collapse under fresh pressure.
+2. Observable metrics should eventually flag false-one pressure without depending entirely on designed roles.
+3. A tempting candidate should be refused or held before collapse is obvious, with later pressure confirming the refusal.
+
+These targets stay in HOLD until the test design exists.
 
 ## External logic gate
 
