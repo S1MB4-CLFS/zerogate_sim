@@ -8,6 +8,7 @@ from statistics import mean
 import numpy as np
 
 from zerogate_sim.baselines import ModelComparison, compare_models
+from zerogate_sim.belnap_mirror import write_belnap_mirror_outputs
 from zerogate_sim.batch import build_candidate_summary_rows
 from zerogate_sim.config import SimulationConfig
 from zerogate_sim.echo_independence import write_echo_independence_outputs
@@ -607,6 +608,7 @@ def run_matrix(
     earned_one_paths = write_earned_one_outputs(matrix_dir, all_gate_rows)
     final_output_paths = write_final_output_outputs(matrix_dir, all_gate_rows)
     fuzzy_mirror_paths = write_fuzzy_mirror_outputs(matrix_dir, all_gate_rows)
+    belnap_mirror_paths = write_belnap_mirror_outputs(matrix_dir, gate_rows=all_gate_rows)
     bundle = write_evidence_bundle(
         matrix_dir,
         bundle_name="matrix_bundle.zip",
@@ -643,6 +645,8 @@ def run_matrix(
         "matrix_fuzzy_mirror_trace": fuzzy_mirror_paths["matrix_fuzzy_mirror_trace"],
         "matrix_fuzzy_mirror_candidate_summary": fuzzy_mirror_paths["matrix_fuzzy_mirror_candidate_summary"],
         "matrix_fuzzy_mirror_read": fuzzy_mirror_paths["matrix_fuzzy_mirror_read"],
+        "matrix_belnap_mirror_summary": belnap_mirror_paths["matrix_belnap_mirror_summary"],
+        "matrix_belnap_mirror_read": belnap_mirror_paths["matrix_belnap_mirror_read"],
         "matrix_bundle": bundle,
     }
 

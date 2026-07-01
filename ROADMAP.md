@@ -1,6 +1,6 @@
 # ZeroGateSim Roadmap
 
-**Current line:** `v1.3.0-alpha` fuzzy / many-valued mirror foundation  
+**Current line:** `v1.3.1-alpha` Belnap evidence-state mirror  
 **Release posture:** public research-alpha / speculative toy-field proof-of-concept
 
 ZeroGateSim already has a first-research-alpha toy-field proof record. The next work is not to make bigger claims or add shiny machinery. The next work is to make the native math testable, then compare that native math against nearby formal logic families without pretending they are the same thing.
@@ -273,16 +273,56 @@ Purpose:
 
 Compare ZeroGateSim's raw-expression / earned-one / false-one / hold grammar with evidence-state logic.
 
+Delivered:
+
+- `docs/belnap_mirror.md`;
+- `src/zerogate_sim/belnap_mirror.py`;
+- `tests/test_belnap_mirror.py`;
+- matrix outputs:
+  - `matrix_belnap_mirror_summary.csv`;
+  - `matrix_belnap_mirror_read.md`.
+
 Projection target:
 
-- true-only: earned-one;
-- false-only: false-one demoted / trap contained;
-- both: raw expression plus debt / echo / contradiction pressure;
-- neither: clean hold / insufficient evidence.
+- `T` / true-only: evidence for final +1 without contrary witness;
+- `F` / false-only: evidence against final +1 without positive expression pressure;
+- `B` / both: raw expression or positive-looking pressure plus false-one / latent / relation-debt witness;
+- `N` / neither: clean hold / insufficient evidence.
+
+Key diagnostic:
+
+- Belnap `B` conflict-pressure: positive-looking pressure and contrary witness coexist locally.
 
 Success condition:
 
-The projection exposes whether ZeroGateSim preserves conflict instead of flattening it.
+The projection exposes whether ZeroGateSim preserves local conflict instead of flattening it or crowning it.
+
+Boundary:
+
+A Belnap `B` state is not a native final +1. It is pressure under conflict. The native earned-one witness still decides final output.
+
+### v1.3.1-alpha companion — Assistant test handoff bundle
+
+Purpose:
+
+Create one uploadable bundle after local test gates so future continuation can read test status, git state, notes, and optional result files.
+
+Delivered:
+
+- `docs/assistant_test_handoff.md`;
+- `src/zerogate_sim/test_handoff.py`;
+- `tests/test_assistant_test_handoff.py`.
+
+Use local-source mode:
+
+```powershell
+$env:PYTHONPATH = (Join-Path (Get-Location) "src")
+& $P -m zerogate_sim.test_handoff --version v1.3.1-alpha --status passed --note "full test suite passed" --out runs\assistant_test_handoff_v1_3_1_alpha
+```
+
+Boundary:
+
+This bundle is a continuation aid, not a truth machine and not a release gate by itself.
 
 ### v1.3.2-alpha — Paraconsistent conflict-locality mirror
 

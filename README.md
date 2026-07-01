@@ -1,6 +1,6 @@
 # ZeroGateSim
 
-**Current public line:** `v1.3.0-alpha` — fuzzy / many-valued mirror foundation  
+**Current public line:** `v1.3.1-alpha` — Belnap evidence-state mirror  
 **Status:** speculative research software / toy-field proof-of-concept  
 **Working identity:** zero-gate dimensional emergence simulator  
 **Core question:** can a final trinary witness distinguish earned-one from raw expression pressure, latent overcrown, and false-one pressure under adversarial toy-field weather?
@@ -20,9 +20,9 @@ The active public line is repaired around this spine:
 - `v1.0.x-alpha` — first-research-alpha proof record and public source foundation.
 - `v1.1.x-alpha` — share-ready public witness pack.
 - `v1.2.x-alpha` — native math witness lock, invariant tests, and scope discipline.
-- `v1.3.x-alpha` — known-logic mirrors, beginning with fuzzy / many-valued score comparison.
+- `v1.3.x-alpha` — known-logic mirrors: fuzzy scoring, Belnap evidence states, then conflict/locality and compression tests.
 
-`v1.2.4-alpha` added a Power-Up / Fail report too early. `v1.2.5-alpha` removed that active machinery and kept the useful question as documentation-only acceptance criteria. `v1.3.0-alpha` begins the known-logic mirror line with fuzzy / many-valued scoring comparison.
+`v1.2.4-alpha` added a Power-Up / Fail report too early. `v1.2.5-alpha` removed that active machinery and kept the useful question as documentation-only acceptance criteria. `v1.3.0-alpha` begins the known-logic mirror line with fuzzy / many-valued scoring comparison. `v1.3.1-alpha` adds the Belnap evidence-state mirror and an assistant test handoff bundle for continuation.
 
 ## Active route
 
@@ -41,6 +41,8 @@ Read first:
 - [`docs/local_tooling_repair.md`](docs/local_tooling_repair.md)
 - [`docs/known_logic_boundary.md`](docs/known_logic_boundary.md)
 - [`docs/fuzzy_mirror.md`](docs/fuzzy_mirror.md)
+- [`docs/belnap_mirror.md`](docs/belnap_mirror.md)
+- [`docs/assistant_test_handoff.md`](docs/assistant_test_handoff.md)
 
 ## Why this exists
 
@@ -100,9 +102,9 @@ C_Z^i(t)=\min(D_i(t),P_i(t),R_i(t),B_i(t))
 
 ## Known-logic comparison boundary
 
-Known logic work has begun with the fuzzy / many-valued mirror. This is a projection mirror, not an identity claim.
+Known logic work has begun with fuzzy / many-valued and Belnap evidence-state mirrors. This is a projection mirror, not an identity claim.
 
-The v1.3.0 fuzzy mirror compares native weakest-gate coherence against product, average, and Lukasiewicz-style continuous conjunctions. It asks where softer aggregation hides a missing gate and where stricter aggregation adds useful pressure.
+The v1.3.0 fuzzy mirror compares native weakest-gate coherence against product, average, and Lukasiewicz-style continuous conjunctions. The v1.3.1 Belnap mirror projects final-output evidence into true-only, false-only, both, and neither states. Both are mirrors, not identity claims.
 
 Allowed:
 
@@ -112,12 +114,36 @@ Forbidden:
 
 > ZeroGateSim is identical to any of those logics.
 
-The active mirror order is fuzzy / many-valued scoring first, then Belnap evidence states, then paraconsistent conflict locality, then Kleene / Lukasiewicz compression and loss reporting.
+The active mirror order is fuzzy / many-valued scoring first, Belnap evidence states second, then paraconsistent conflict locality, then Kleene / Lukasiewicz compression and loss reporting.
+
+
+### Belnap mirror outputs
+
+Matrix runs now also write:
+
+```text
+matrix_belnap_mirror_summary.csv
+matrix_belnap_mirror_read.md
+```
+
+The Belnap mirror projects final-output evidence into `T` true-only, `F` false-only, `B` both/conflict-pressure, and `N` neither. It does not replace the native earned-one witness. A `B` state is pressure under conflict, not permission to crown.
+
+### Assistant test handoff
+
+`v1.3.1-alpha` adds a small continuation tool:
+
+```powershell
+$env:PYTHONPATH = (Join-Path (Get-Location) "src")
+& $P -m zerogate_sim.test_handoff --version v1.3.1-alpha --status passed --note "full test suite passed" --out runs\assistant_test_handoff_v1_3_1_alpha
+```
+
+It writes an uploadable `assistant_test_handoff.zip` so future continuation can see local gate results without guessing from scattered terminal fragments.
+
 
 
 ### Fuzzy mirror outputs
 
-Matrix runs now write:
+Matrix runs write:
 
 ```text
 matrix_fuzzy_mirror_trace.csv
