@@ -1,6 +1,6 @@
 # ZeroGateSim Roadmap
 
-**Current line:** `v1.4.2-alpha` truth-safe handoff and preset path repair  
+**Current line:** `v1.4.3-alpha` unique handoff include path repair  
 **Release posture:** public research-alpha / speculative toy-field proof-of-concept
 
 **CI support boundary:** Python 3.12 is the required release/test runtime. v1.3.5 deliberately tried to re-expand Python 3.10 / 3.11 / 3.12, but GitHub Actions showed 3.10 / 3.11 are still red. v1.3.6 keeps the release gate green on 3.12 and moves older interpreters into manual compatibility probes so unresolved legacy drift does not block the main research line.
@@ -515,6 +515,27 @@ Delivered:
 Success condition:
 
 A handoff that says tests passed must either contain the requested evidence files or fail loudly. No silent skipped include. No wrong report path hidden behind a green-looking bundle.
+
+Boundary:
+
+This is infrastructure truth repair. No native gate change, no new mirror, no new simulation claim.
+
+### v1.4.3-alpha — Unique handoff include path repair
+
+Purpose:
+
+Repair the second continuation/test handoff wound: different result files with the same basename must not collapse into one bundled file.
+
+Delivered:
+
+- source-relative include paths are preserved under `included/`;
+- include audit records `source_relative_path`;
+- duplicate basenames from distinction / polarity / relation matrix folders remain separate in the ZIP;
+- tests prove same-named closeout files keep distinct contents in the bundle.
+
+Success condition:
+
+A handoff that includes three `matrix_known_logic_closeout_read.md` files from three run folders must preserve all three as distinct evidence files with distinct contents.
 
 Boundary:
 

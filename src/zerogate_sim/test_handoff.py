@@ -19,6 +19,7 @@ class IncludeResult:
     status: str
     bundled_path: str
     reason: str
+    source_relative_path: str = ""
 
 
 def _run_git(args: Sequence[str], *, cwd: Path) -> str:
@@ -36,16 +37,84 @@ def _run_git(args: Sequence[str], *, cwd: Path) -> str:
     return result.stdout.strip()
 
 
-def _copy_include(path: Path, out_dir: Path) -> IncludeResult:
+def _safe_bundle_parts(path: Path, *, repo_root: Path) -> tuple[str, ...]:
+    """Return safe source-relative path parts for an included handoff file.
+
+    v1.4.3 truth repair: include files must not be flattened to only their
+    basename. Matrix outputs often share names such as
+    ``matrix_known_logic_closeout_read.md``; flattening those paths overwrites
+    evidence from distinction / polarity / relation runs. The bundle path must
+    preserve enough source-relative structure to keep every requested witness
+    separate.
+    """
+
+    try:
+        root = repo_root.resolve()
+    except OSError:
+        root = repo_root.absolute()
+
+    source_path = path
+    if path.is_absolute():
+        try:
+            source_path = path.resolve().relative_to(root)
+        except (OSError, ValueError):
+            # External absolute file: include it under an explicit external
+            # namespace instead of flattening it or leaking an unsafe drive/root.
+            source_path = Path("__external__", *path.parts[1:]) if len(path.parts) > 1 else Path("__external__", path.name)
+
+    parts: list[str] = []
+    for part in source_path.parts:
+        if part in {"", "."}:
+            continue
+        if part == "..":
+            parts.append("__parent__")
+            continue
+        cleaned = part.replace(":", "").replace("\\", "_").replace("/", "_").strip()
+        if cleaned:
+            parts.append(cleaned)
+
+    if not parts:
+        parts = [path.name or "include"]
+    return tuple(parts)
+
+
+def _unique_target(target: Path) -> Path:
+    if not target.exists():
+        return target
+    stem = target.stem
+    suffix = target.suffix
+    parent = target.parent
+    counter = 2
+    while True:
+        candidate = parent / f"{stem}__{counter}{suffix}"
+        if not candidate.exists():
+            return candidate
+        counter += 1
+
+
+def _copy_include(path: Path, out_dir: Path, *, repo_root: Path) -> IncludeResult:
     source = str(path)
     if not path.exists():
         return IncludeResult(source=source, status="missing", bundled_path="", reason="path does not exist")
     if not path.is_file():
         return IncludeResult(source=source, status="not_file", bundled_path="", reason="path exists but is not a file")
+
     include_dir = ensure_dir(out_dir / "included")
-    target = include_dir / path.name
+    rel_parts = _safe_bundle_parts(path, repo_root=repo_root)
+    target = _unique_target(include_dir.joinpath(*rel_parts))
+    ensure_dir(target.parent)
     target.write_bytes(path.read_bytes())
-    return IncludeResult(source=source, status="included", bundled_path=target.relative_to(out_dir).as_posix(), reason="copied")
+
+    source_relative_path = "/".join(rel_parts)
+    bundled_path = target.relative_to(out_dir).as_posix()
+    reason = "copied" if target.name == rel_parts[-1] else "copied with collision suffix"
+    return IncludeResult(
+        source=source,
+        status="included",
+        bundled_path=bundled_path,
+        reason=reason,
+        source_relative_path=source_relative_path,
+    )
 
 
 def _raise_for_missing_includes(results: list[IncludeResult]) -> None:
@@ -77,8 +146,10 @@ def build_test_handoff(
 
     v1.4.2 truth repair: requested includes are strict by default. A handoff that
     says tests passed but silently omits a missing report file is a false witness.
-    Use ``allow_missing_includes=True`` only when missing includes are explicitly
-    expected and the handoff should record that fact instead of failing.
+
+    v1.4.3 truth repair: included files preserve source-relative paths under the
+    bundle's ``included/`` directory so reports with the same basename from
+    different run folders cannot overwrite each other.
     """
 
     out_dir = ensure_dir(out_dir)
@@ -87,7 +158,7 @@ def build_test_handoff(
     includes = includes or []
     now = datetime.now(timezone.utc).replace(microsecond=0).isoformat()
 
-    include_results = [_copy_include(include, out_dir) for include in includes]
+    include_results = [_copy_include(include, out_dir, repo_root=repo_root) for include in includes]
     if not allow_missing_includes:
         _raise_for_missing_includes(include_results)
 
@@ -159,11 +230,12 @@ def build_test_handoff(
     lines.append("## Include audit")
     lines.append("")
     if include_results:
-        lines.append("| source | status | bundled path | reason |")
-        lines.append("|---|---|---|---|")
+        lines.append("| source | status | bundled path | source-relative path | reason |")
+        lines.append("|---|---|---|---|---|")
         for item in include_results:
             bundled = item.bundled_path or ""
-            lines.append(f"| `{item.source}` | `{item.status}` | `{bundled}` | {item.reason} |")
+            source_rel = item.source_relative_path or ""
+            lines.append(f"| `{item.source}` | `{item.status}` | `{bundled}` | `{source_rel}` | {item.reason} |")
     else:
         lines.append("- No include paths requested.")
     lines.append("")
@@ -177,7 +249,7 @@ def build_test_handoff(
     lines.append("")
     lines.append("This bundle records local gate results for continuation. It is not proof of cosmology, not proof of final theory truth, and not a substitute for the repo tests or release boundary.")
     lines.append("")
-    lines.append("Truth rule: a requested include that is missing is a failed handoff unless explicitly allowed with `--allow-missing-include`.")
+    lines.append("Truth rule: a requested include that is missing is a failed handoff unless explicitly allowed with `--allow-missing-include`. Requested includes preserve source-relative paths so same-named reports from different runs cannot overwrite each other.")
     lines.append("")
     md_path.write_text("\n".join(lines), encoding="utf-8")
 
