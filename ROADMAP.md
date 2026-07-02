@@ -1,6 +1,6 @@
 # ZeroGateSim Roadmap
 
-**Current line:** `v1.3.1-alpha` Belnap evidence-state mirror  
+**Current line:** `v1.3.2-alpha` paraconsistent conflict-locality mirror  
 **Release posture:** public research-alpha / speculative toy-field proof-of-concept
 
 ZeroGateSim already has a first-research-alpha toy-field proof record. The next work is not to make bigger claims or add shiny machinery. The next work is to make the native math testable, then compare that native math against nearby formal logic families without pretending they are the same thing.
@@ -330,13 +330,38 @@ Purpose:
 
 Test whether contradiction pressure stays local.
 
+Delivered:
+
+- `docs/paraconsistent_mirror.md`;
+- `src/zerogate_sim/paraconsistent_mirror.py`;
+- `tests/test_paraconsistent_mirror.py`;
+- matrix outputs:
+  - `matrix_paraconsistent_mirror_summary.csv`;
+  - `matrix_paraconsistent_mirror_read.md`.
+
 Core rule:
 
 > raw +1 plus debt must not explode into arbitrary final +1.
 
+Projection target:
+
+- `conflict_localized`: Belnap-both conflict pressure is held or demoted instead of crowned;
+- `conflict_overcrowned`: Belnap-both conflict pressure becomes final +1 and must be inspected as a breach;
+- `true_without_conflict`: positive evidence without contrary witness;
+- `false_without_conflict`: contrary witness without positive pressure;
+- `neither_without_conflict`: no decisive pressure.
+
+Key diagnostic:
+
+- `local_explosion_flag`: conflict pressure was crowned as final +1.
+
 Success condition:
 
 Conflicting evidence can be reported without crowning unrelated candidates or confirming the whole run.
+
+Boundary:
+
+This is not Priest logic and not a native gate. It is a projection mirror that reads conflict-locality pressure after the native final-output witness.
 
 ### v1.3.3-alpha — Kleene / Lukasiewicz compression mirror
 

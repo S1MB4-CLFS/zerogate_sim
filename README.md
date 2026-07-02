@@ -1,6 +1,6 @@
 # ZeroGateSim
 
-**Current public line:** `v1.3.1-alpha` — Belnap evidence-state mirror  
+**Current public line:** `v1.3.2-alpha` — paraconsistent conflict-locality mirror  
 **Status:** speculative research software / toy-field proof-of-concept  
 **Working identity:** zero-gate dimensional emergence simulator  
 **Core question:** can a final trinary witness distinguish earned-one from raw expression pressure, latent overcrown, and false-one pressure under adversarial toy-field weather?
@@ -22,7 +22,7 @@ The active public line is repaired around this spine:
 - `v1.2.x-alpha` — native math witness lock, invariant tests, and scope discipline.
 - `v1.3.x-alpha` — known-logic mirrors: fuzzy scoring, Belnap evidence states, then conflict/locality and compression tests.
 
-`v1.2.4-alpha` added a Power-Up / Fail report too early. `v1.2.5-alpha` removed that active machinery and kept the useful question as documentation-only acceptance criteria. `v1.3.0-alpha` begins the known-logic mirror line with fuzzy / many-valued scoring comparison. `v1.3.1-alpha` adds the Belnap evidence-state mirror and an assistant test handoff bundle for continuation.
+`v1.2.4-alpha` added a Power-Up / Fail report too early. `v1.2.5-alpha` removed that active machinery and kept the useful question as documentation-only acceptance criteria. `v1.3.0-alpha` begins the known-logic mirror line with fuzzy / many-valued scoring comparison. `v1.3.1-alpha` adds the Belnap evidence-state mirror and an assistant test handoff bundle for continuation. `v1.3.2-alpha` adds the paraconsistent conflict-locality mirror.
 
 ## Active route
 
@@ -42,6 +42,7 @@ Read first:
 - [`docs/known_logic_boundary.md`](docs/known_logic_boundary.md)
 - [`docs/fuzzy_mirror.md`](docs/fuzzy_mirror.md)
 - [`docs/belnap_mirror.md`](docs/belnap_mirror.md)
+- [`docs/paraconsistent_mirror.md`](docs/paraconsistent_mirror.md)
 - [`docs/assistant_test_handoff.md`](docs/assistant_test_handoff.md)
 
 ## Why this exists
@@ -102,9 +103,9 @@ C_Z^i(t)=\min(D_i(t),P_i(t),R_i(t),B_i(t))
 
 ## Known-logic comparison boundary
 
-Known logic work has begun with fuzzy / many-valued and Belnap evidence-state mirrors. This is a projection mirror, not an identity claim.
+Known logic work has begun with fuzzy / many-valued, Belnap evidence-state, and paraconsistent conflict-locality mirrors. This is a projection mirror, not an identity claim.
 
-The v1.3.0 fuzzy mirror compares native weakest-gate coherence against product, average, and Lukasiewicz-style continuous conjunctions. The v1.3.1 Belnap mirror projects final-output evidence into true-only, false-only, both, and neither states. Both are mirrors, not identity claims.
+The v1.3.0 fuzzy mirror compares native weakest-gate coherence against product, average, and Lukasiewicz-style continuous conjunctions. The v1.3.1 Belnap mirror projects final-output evidence into true-only, false-only, both, and neither states. The v1.3.2 paraconsistent mirror checks whether conflict pressure stays local instead of becoming arbitrary final +1. All are mirrors, not identity claims.
 
 Allowed:
 
@@ -115,6 +116,18 @@ Forbidden:
 > ZeroGateSim is identical to any of those logics.
 
 The active mirror order is fuzzy / many-valued scoring first, Belnap evidence states second, then paraconsistent conflict locality, then Kleene / Lukasiewicz compression and loss reporting.
+
+
+### Paraconsistent conflict-locality mirror outputs
+
+Matrix runs now also write:
+
+```text
+matrix_paraconsistent_mirror_summary.csv
+matrix_paraconsistent_mirror_read.md
+```
+
+The paraconsistent mirror asks one narrow question: when positive-looking pressure and contrary witness coexist, does the conflict remain local instead of exploding into final +1? It is not Priest logic and not a native gate. It is a conflict-locality witness.
 
 
 ### Belnap mirror outputs
@@ -134,7 +147,7 @@ The Belnap mirror projects final-output evidence into `T` true-only, `F` false-o
 
 ```powershell
 $env:PYTHONPATH = (Join-Path (Get-Location) "src")
-& $P -m zerogate_sim.test_handoff --version v1.3.1-alpha --status passed --note "full test suite passed" --out runs\assistant_test_handoff_v1_3_1_alpha
+& $P -m zerogate_sim.test_handoff --version v1.3.2-alpha --status passed --note "full test suite passed" --out runs\assistant_test_handoff_v1_3_2_alpha
 ```
 
 It writes an uploadable `assistant_test_handoff.zip` so future continuation can see local gate results without guessing from scattered terminal fragments.

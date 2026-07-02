@@ -18,6 +18,7 @@ from zerogate_sim.fuzzy_mirror import write_fuzzy_mirror_outputs
 from zerogate_sim.endurance import build_temporal_rows, write_temporal_outputs
 from zerogate_sim.gates import GateScores, evaluate_run
 from zerogate_sim.lineage import write_lineage_outputs
+from zerogate_sim.paraconsistent_mirror import write_paraconsistent_mirror_outputs
 from zerogate_sim.reporting import ensure_dir, write_dict_rows_csv, write_evidence_bundle, write_run_outputs
 from zerogate_sim.signals import CANDIDATE_PROFILES, CandidateSpec, SimulationRun, candidate_specs, default_candidate_specs, generate_pressure_field
 from zerogate_sim.truth_roles import write_truth_role_outputs
@@ -609,6 +610,7 @@ def run_matrix(
     final_output_paths = write_final_output_outputs(matrix_dir, all_gate_rows)
     fuzzy_mirror_paths = write_fuzzy_mirror_outputs(matrix_dir, all_gate_rows)
     belnap_mirror_paths = write_belnap_mirror_outputs(matrix_dir, gate_rows=all_gate_rows)
+    paraconsistent_mirror_paths = write_paraconsistent_mirror_outputs(matrix_dir, gate_rows=all_gate_rows)
     bundle = write_evidence_bundle(
         matrix_dir,
         bundle_name="matrix_bundle.zip",
@@ -647,6 +649,8 @@ def run_matrix(
         "matrix_fuzzy_mirror_read": fuzzy_mirror_paths["matrix_fuzzy_mirror_read"],
         "matrix_belnap_mirror_summary": belnap_mirror_paths["matrix_belnap_mirror_summary"],
         "matrix_belnap_mirror_read": belnap_mirror_paths["matrix_belnap_mirror_read"],
+        "matrix_paraconsistent_mirror_summary": paraconsistent_mirror_paths["matrix_paraconsistent_mirror_summary"],
+        "matrix_paraconsistent_mirror_read": paraconsistent_mirror_paths["matrix_paraconsistent_mirror_read"],
         "matrix_bundle": bundle,
     }
 

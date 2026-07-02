@@ -67,7 +67,7 @@ Examples:
 
 - The fuzzy mirror can grade continuous pressure but cannot crown earned-one without return-depth, temporal lineage, echo-independence, and role witness.
 - A three-valued mirror collapses `0+`, `0`, and `0-` into one middle state.
-- A paraconsistent mirror can report conflict locality but does not by itself define dimensional genesis.
+- The paraconsistent mirror can report conflict locality but does not by itself define dimensional genesis, decide final truth, or license contradiction as a crown.
 
 ## Operating sentence
 
