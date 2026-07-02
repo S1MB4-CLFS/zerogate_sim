@@ -83,3 +83,8 @@ Examples:
 Known logic mirrors are pressure tests, not borrowed authority.
 
 If a mirror makes ZeroGateSim look stronger by hiding a native wound, the mirror failed its witness job.
+
+
+## Closeout witness
+
+The v1.3.4 closeout report summarizes all four mirrors in one place. It is not a fifth mirror. It is a witness file that states what each mirror preserves, exposes, and loses before the project moves into wider cross-logic comparison.

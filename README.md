@@ -1,6 +1,6 @@
 # ZeroGateSim
 
-**Current public line:** `v1.3.3-alpha` — Kleene / Lukasiewicz compression and loss mirror  
+**Current public line:** `v1.3.4-alpha` — known-logic mirror closeout  
 **Status:** speculative research software / toy-field proof-of-concept  
 **Working identity:** zero-gate dimensional emergence simulator  
 **Core question:** can a final trinary witness distinguish earned-one from raw expression pressure, latent overcrown, and false-one pressure under adversarial toy-field weather?
@@ -29,7 +29,7 @@ The active public line is repaired around this spine:
 - `v1.2.x-alpha` — native math witness lock, invariant tests, and scope discipline.
 - `v1.3.x-alpha` — known-logic mirrors: fuzzy scoring, Belnap evidence states, then conflict/locality and compression tests.
 
-`v1.2.4-alpha` added a Power-Up / Fail report too early. `v1.2.5-alpha` removed that active machinery and kept the useful question as documentation-only acceptance criteria. `v1.3.0-alpha` begins the known-logic mirror line with fuzzy / many-valued scoring comparison. `v1.3.1-alpha` adds the Belnap evidence-state mirror and an assistant test handoff bundle for continuation. `v1.3.2-alpha` adds the paraconsistent conflict-locality mirror. `v1.3.3-alpha` adds the Kleene / Lukasiewicz compression and loss mirror.
+`v1.2.4-alpha` added a Power-Up / Fail report too early. `v1.2.5-alpha` removed that active machinery and kept the useful question as documentation-only acceptance criteria. `v1.3.0-alpha` begins the known-logic mirror line with fuzzy / many-valued scoring comparison. `v1.3.1-alpha` adds the Belnap evidence-state mirror and an assistant test handoff bundle for continuation. `v1.3.2-alpha` adds the paraconsistent conflict-locality mirror. `v1.3.3-alpha` adds the Kleene / Lukasiewicz compression and loss mirror. `v1.3.4-alpha` closes the first known-logic mirror line with one report that states what each mirror preserves, exposes, and collapses.
 
 ## Active route
 
@@ -113,7 +113,7 @@ C_Z^i(t)=\min(D_i(t),P_i(t),R_i(t),B_i(t))
 
 Known logic work has begun with fuzzy / many-valued, Belnap evidence-state, and paraconsistent conflict-locality mirrors. This is a projection mirror, not an identity claim.
 
-The v1.3.0 fuzzy mirror compares native weakest-gate coherence against product, average, and Lukasiewicz-style continuous conjunctions. The v1.3.1 Belnap mirror projects final-output evidence into true-only, false-only, both, and neither states. The v1.3.2 paraconsistent mirror checks whether conflict pressure stays local instead of becoming arbitrary final +1. The v1.3.3 three-valued mirror compresses final output into true / unknown / false and reports what native zero information is lost. All are mirrors, not identity claims.
+The v1.3.0 fuzzy mirror compares native weakest-gate coherence against product, average, and Lukasiewicz-style continuous conjunctions. The v1.3.1 Belnap mirror projects final-output evidence into true-only, false-only, both, and neither states. The v1.3.2 paraconsistent mirror checks whether conflict pressure stays local instead of becoming arbitrary final +1. The v1.3.3 three-valued mirror compresses final output into true / unknown / false and reports what native zero information is lost. The v1.3.4 closeout summarizes all four mirrors and their loss reports. All are mirrors, not identity claims.
 
 Allowed:
 
@@ -173,6 +173,17 @@ matrix_fuzzy_mirror_read.md
 ```
 
 These compare `C_Z = min(D, P, R, B)` against fuzzy-style product, average, and Lukasiewicz conjunction mirrors. A fuzzy score is pressure, not final earned-one.
+
+### Known-logic closeout outputs
+
+Matrix runs now also write:
+
+```text
+matrix_known_logic_closeout_summary.csv
+matrix_known_logic_closeout_read.md
+```
+
+These files close the first mirror line by saying what each mirror preserves, exposes, and destroys.
 
 ## First-research-alpha result
 

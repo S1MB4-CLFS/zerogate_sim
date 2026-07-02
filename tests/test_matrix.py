@@ -30,6 +30,7 @@ def test_matrix_bundle_creation(tmp_path) -> None:
     assert paths["matrix_belnap_mirror_read"].exists()
     assert paths["matrix_paraconsistent_mirror_read"].exists()
     assert paths["matrix_three_valued_mirror_read"].exists()
+    assert paths["matrix_known_logic_closeout_read"].exists()
 
     with open(paths["matrix_scenario_summary"], newline="", encoding="utf-8") as f:
         scenario_rows = list(csv.DictReader(f))
@@ -56,3 +57,5 @@ def test_matrix_bundle_creation(tmp_path) -> None:
     assert "matrix_paraconsistent_mirror_summary.csv" in names
     assert "matrix_three_valued_mirror_read.md" in names
     assert "matrix_three_valued_mirror_summary.csv" in names
+    assert "matrix_known_logic_closeout_read.md" in names
+    assert "matrix_known_logic_closeout_summary.csv" in names

@@ -1,6 +1,6 @@
 # ZeroGateSim Roadmap
 
-**Current line:** `v1.3.3-alpha` Kleene / Lukasiewicz compression and loss mirror  
+**Current line:** `v1.3.4-alpha` known-logic mirror closeout  
 **Release posture:** public research-alpha / speculative toy-field proof-of-concept
 
 **CI support boundary:** Python 3.12 is the active supported release/test runtime. The v1.3 known-logic mirror line exposed GitHub Actions failures on 3.10 / 3.11, so support is narrowed rather than pretending those interpreters are green. Re-expanding the matrix is future repair work, not current truth.
@@ -402,9 +402,17 @@ Purpose:
 
 Confirm that the fuzzy, Belnap, paraconsistent, and K3/L3 mirrors are projections with explicit loss reports before moving into wider comparison.
 
+Delivered:
+
+- `src/zerogate_sim/known_logic_closeout.py`;
+- `tests/test_known_logic_closeout.py`;
+- `docs/known_logic_closeout.md`;
+- `matrix_known_logic_closeout_summary.csv`;
+- `matrix_known_logic_closeout_read.md`.
+
 Success condition:
 
-A reader can see which mirror is useful for which pressure and where each mirror lies if overused.
+A reader can see which mirror is useful for which pressure and where each mirror lies if overused. The closeout report must not turn projection into borrowed authority.
 
 ## v1.4-alpha — Cross-logic comparison report
 
