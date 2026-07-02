@@ -1,51 +1,60 @@
 # ZeroGateSim Runtime and CI Support
 
-**Line:** `v1.3.5-alpha`  
-**Status:** CI compatibility re-expansion
+**Line:** `v1.3.6-alpha`  
+**Status:** release-gate flow repair
 
-ZeroGateSim is intended to stay small and portable. The active release/test support target is:
+ZeroGateSim is intended to stay small and portable, but the release gate must tell the truth.
+
+## Required release/test runtime
 
 ```text
-Python 3.10
-Python 3.11
 Python 3.12
 ```
 
-## Why this exists
+`v1.3.5-alpha` tried to re-expand the required GitHub Actions matrix to Python 3.10 / 3.11 / 3.12. GitHub Actions stayed red on Python 3.10 and 3.11.
 
-During the v1.3 known-logic mirror line, GitHub Actions reported failures on Python 3.10 and 3.11. The repo temporarily narrowed support to Python 3.12 so the build was honest about what was green.
+`v1.3.6-alpha` repairs the flow:
 
-That was a HOLD state, not a destination.
+- required CI gate returns to Python 3.12;
+- `pyproject.toml` declares `requires-python = ">=3.12"`;
+- Python 3.10 / 3.11 move into a manual, non-blocking compatibility probe workflow;
+- feature work is no longer held hostage by unresolved legacy-interpreter drift.
 
-`v1.3.5-alpha` re-expands support deliberately:
+## Compatibility probes
 
-- `pyproject.toml` now declares `requires-python = ">=3.10"`;
-- classifiers include Python 3.10, 3.11, and 3.12;
-- CI runs the full test suite on 3.10 / 3.11 / 3.12;
-- dependencies are bounded enough to avoid drifting into unsupported future major versions.
+The manual workflow is:
+
+```text
+.github/workflows/compatibility.yml
+```
+
+It can be run deliberately when the project wants to investigate older interpreters. It uses local-source mode rather than package install, because the package itself is not currently declaring 3.10 / 3.11 release support.
 
 ## Local development
 
-For normal Marek/Simba update blocks, use local-source mode instead of mandatory editable install:
+For normal Marek/Simba update blocks, use local-source mode:
 
 ```powershell
 $env:PYTHONPATH = (Join-Path (Get-Location) "src")
 & $P -m pytest -q
 ```
 
-Editable install remains useful for packaging checks and CI, but it is no longer required for every local patch handoff.
+Editable install remains useful for packaging checks and CI, but it is not required for every local patch handoff.
 
 ## Failure protocol
 
-If one interpreter lane fails:
+If the required 3.12 gate fails:
 
 1. Stop feature work.
-2. Read the exact GitHub Actions log for that interpreter.
-3. Repair the failing lane.
-4. Keep the matrix honest.
+2. Read the exact GitHub Actions log.
+3. Repair that gate before advancing.
 
-Do not hide failures by narrowing support unless the roadmap explicitly marks the narrowed state as HOLD.
+If a manual 3.10 / 3.11 probe fails:
+
+1. Record the failure as compatibility pressure.
+2. Do not call those runtimes supported.
+3. Repair deliberately only when older-interpreter support becomes a release goal.
 
 ## Boundary
 
-CI support is engineering evidence. It does not prove the theory. It only says the software can run its current tests across the declared Python support range.
+CI support is engineering evidence. It does not prove the theory. It only says the software can run its current tests across the declared release runtime.

@@ -1,9 +1,9 @@
 # ZeroGateSim Roadmap
 
-**Current line:** `v1.3.5-alpha` CI compatibility re-expansion  
+**Current line:** `v1.3.6-alpha` CI release-gate flow repair  
 **Release posture:** public research-alpha / speculative toy-field proof-of-concept
 
-**CI support boundary:** Python 3.10 / 3.11 / 3.12 are the active supported release/test runtimes. v1.3.3 temporarily narrowed support to 3.12 after Actions failures appeared; v1.3.5 deliberately re-expands and makes the matrix the active witness again.
+**CI support boundary:** Python 3.12 is the required release/test runtime. v1.3.5 deliberately tried to re-expand Python 3.10 / 3.11 / 3.12, but GitHub Actions showed 3.10 / 3.11 are still red. v1.3.6 keeps the release gate green on 3.12 and moves older interpreters into manual compatibility probes so unresolved legacy drift does not block the main research line.
 
 ZeroGateSim already has a first-research-alpha toy-field proof record. The next work is not to make bigger claims or add shiny machinery. The next work is to make the native math testable, then compare that native math against nearby formal logic families without pretending they are the same thing.
 
