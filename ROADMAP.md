@@ -1,6 +1,6 @@
 # ZeroGateSim Roadmap
 
-**Current line:** `v1.4.3-alpha` unique handoff include path repair  
+**Current line:** `v1.4.4-alpha` four-gate adversary coverage lock  
 **Release posture:** public research-alpha / speculative toy-field proof-of-concept
 
 **CI support boundary:** Python 3.12 is the required release/test runtime. v1.3.5 deliberately tried to re-expand Python 3.10 / 3.11 / 3.12, but GitHub Actions showed 3.10 / 3.11 are still red. v1.3.6 keeps the release gate green on 3.12 and moves older interpreters into manual compatibility probes so unresolved legacy drift does not block the main research line.
@@ -486,8 +486,8 @@ Delivered:
 Preset families:
 
 - `quick_smoke` — wiring check;
-- `adversary_triad27` — small distinction / polarity / relation adversary comparison;
-- `wide_adversary_probe` — heavier wide243 adversary probe.
+- `adversary_triad27` — small distinction / polarity / relation / return adversary comparison;
+- `wide_adversary_probe` — heavier wide243 four-gate adversary probe.
 
 Success condition:
 
@@ -540,6 +540,27 @@ A handoff that includes three `matrix_known_logic_closeout_read.md` files from t
 Boundary:
 
 This is infrastructure truth repair. No native gate change, no new mirror, no new simulation claim.
+
+### v1.4.4-alpha — Four-gate adversary coverage lock
+
+Purpose:
+
+Align adversary comparison presets with the native four-gate witness cycle: distinction, polarity, relation, and observed return.
+
+Delivered:
+
+- `adversary_return` candidate profile;
+- `return_triad27` in the `adversary_triad27` preset;
+- `return_wide243` in the `wide_adversary_probe` preset;
+- preset coverage helpers and tests that require four-gate adversary presets to cover every native gate.
+
+Success condition:
+
+A four-gate adversary preset cannot be treated as complete unless its dedicated run coverage equals the native gate set: distinction, polarity, relation, and return.
+
+Boundary:
+
+This is coverage repair for run planning. It does not change the native gate law, the mirror layer, or the final-output claim boundary.
 
 ## v1.5-alpha — Stronger toy-field experiments
 

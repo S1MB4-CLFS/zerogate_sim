@@ -3,9 +3,12 @@ from __future__ import annotations
 from pathlib import Path
 
 from zerogate_sim.comparison_preset import (
+    NATIVE_GATE_NAMES,
     build_powershell_lines,
     build_preset_runs,
     handoff_zip_path,
+    missing_native_gates,
+    preset_gate_coverage,
     report_output_dir,
     preset_names,
     write_comparison_preset,
@@ -19,14 +22,39 @@ def test_preset_names_include_expected_comparison_presets() -> None:
     assert "wide_adversary_probe" in names
 
 
-def test_adversary_triad27_preset_has_three_dependency_wounds() -> None:
+def test_adversary_triad27_preset_has_four_native_gate_wounds() -> None:
     runs = build_preset_runs("adversary_triad27")
+    assert [run.gate for run in runs] == [
+        "distinction",
+        "polarity",
+        "relation",
+        "return",
+    ]
     assert [run.candidate_profile for run in runs] == [
         "adversary_distinction",
         "adversary_polarity",
         "adversary_relation",
+        "adversary_return",
+    ]
+    assert [run.run_id for run in runs] == [
+        "distinction_triad27",
+        "polarity_triad27",
+        "relation_triad27",
+        "return_triad27",
     ]
     assert {run.profile for run in runs} == {"triad27"}
+
+
+def test_four_gate_adversary_presets_cover_native_gate_set() -> None:
+    assert preset_gate_coverage("adversary_triad27") == tuple(sorted(NATIVE_GATE_NAMES))
+    assert preset_gate_coverage("wide_adversary_probe") == tuple(sorted(NATIVE_GATE_NAMES))
+    assert missing_native_gates("adversary_triad27") == ()
+    assert missing_native_gates("wide_adversary_probe") == ()
+
+
+def test_wide_adversary_probe_includes_return_gate() -> None:
+    runs = build_preset_runs("wide_adversary_probe")
+    assert any(run.run_id == "return_wide243" and run.candidate_profile == "adversary_return" for run in runs)
 
 
 def test_preset_overrides_seed_count_and_steps() -> None:
@@ -63,6 +91,7 @@ def test_write_comparison_preset_outputs_plan_files(tmp_path) -> None:
     assert "zerogate_sim.matrix" in commands_text
     assert "cross_logic_report" in commands_text
     assert "quick_alpha12" in manifest_text
+    assert "gate" in manifest_text
 
 
 def test_powershell_plan_prints_and_checks_truth_files() -> None:

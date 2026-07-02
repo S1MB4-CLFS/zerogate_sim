@@ -1,7 +1,7 @@
 # ZeroGateSim Cross-Logic Comparison Presets
 
 **Introduced:** `v1.4.1-alpha`  
-**Truth repair:** `v1.4.2-alpha`  
+**Truth repair:** `v1.4.2-alpha` / `v1.4.4-alpha`  
 **Status:** run-plan generator, not evidence
 
 The cross-logic comparison report introduced in `v1.4.0-alpha` reads completed matrix runs. This file explains the next small step: writing repeatable run plans so stronger comparisons are not hand-assembled every time.
@@ -16,7 +16,7 @@ The preset writer gives a stable, inspectable plan:
 
 ```powershell
 $env:PYTHONPATH = (Join-Path (Get-Location) "src")
-& $P -m zerogate_sim.comparison_preset --preset adversary_triad27 --out runs\comparison_preset_plan_v1_4_2
+& $P -m zerogate_sim.comparison_preset --preset adversary_triad27 --out runs\comparison_preset_plan_v1_4_4
 ```
 
 It writes:
@@ -49,6 +49,19 @@ runs\cross_logic_presets\adversary_triad27\cross_logic_report\cross_logic_compar
 
 The preset script is now the path authority. Do not invent the report path by hand.
 
+## v1.4.4 coverage rule
+
+Four-gate adversary presets must explicitly cover the native gate set:
+
+```text
+distinction
+polarity
+relation
+return
+```
+
+The preset tests lock this rule so a dedicated four-gate adversary plan cannot silently omit observed return coverage.
+
 ## Presets
 
 ### `quick_smoke`
@@ -63,19 +76,20 @@ Use when:
 
 ### `adversary_triad27`
 
-A small three-run comparison across the three proof wounds:
+A small four-run comparison across the native gate wounds:
 
 ```text
 adversary_distinction
 adversary_polarity
 adversary_relation
+adversary_return
 ```
 
-Each run uses `triad27` weather with a small seed count. This is the first useful stronger comparison preset.
+Each run uses `triad27` weather with a small seed count. The preset is complete only when all four native gates have dedicated adversary coverage.
 
 ### `wide_adversary_probe`
 
-A heavier three-run comparison using `wide243` weather for the same three adversarial corpora.
+A heavier four-run comparison using `wide243` weather for the same four adversarial corpora.
 
 Use only when local runtime cost is acceptable.
 

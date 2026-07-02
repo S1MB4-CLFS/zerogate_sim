@@ -20,6 +20,7 @@ class MatrixPresetRun:
     """
 
     run_id: str
+    gate: str
     profile: str
     candidate_profile: str
     start_seed: int
@@ -28,10 +29,15 @@ class MatrixPresetRun:
     description: str
 
 
+NATIVE_GATE_NAMES = ("distinction", "polarity", "relation", "return")
+FOUR_GATE_ADVERSARY_PRESETS = ("adversary_triad27", "wide_adversary_probe")
+
+
 PRESET_RUNS: dict[str, tuple[MatrixPresetRun, ...]] = {
     "quick_smoke": (
         MatrixPresetRun(
             run_id="quick_alpha12",
+            gate="general",
             profile="triad27",
             candidate_profile="alpha12",
             start_seed=0,
@@ -43,6 +49,7 @@ PRESET_RUNS: dict[str, tuple[MatrixPresetRun, ...]] = {
     "adversary_triad27": (
         MatrixPresetRun(
             run_id="distinction_triad27",
+            gate="distinction",
             profile="triad27",
             candidate_profile="adversary_distinction",
             start_seed=0,
@@ -52,6 +59,7 @@ PRESET_RUNS: dict[str, tuple[MatrixPresetRun, ...]] = {
         ),
         MatrixPresetRun(
             run_id="polarity_triad27",
+            gate="polarity",
             profile="triad27",
             candidate_profile="adversary_polarity",
             start_seed=0,
@@ -61,6 +69,7 @@ PRESET_RUNS: dict[str, tuple[MatrixPresetRun, ...]] = {
         ),
         MatrixPresetRun(
             run_id="relation_triad27",
+            gate="relation",
             profile="triad27",
             candidate_profile="adversary_relation",
             start_seed=0,
@@ -68,10 +77,21 @@ PRESET_RUNS: dict[str, tuple[MatrixPresetRun, ...]] = {
             steps=180,
             description="Relation-echo pressure with a small trinary matrix.",
         ),
+        MatrixPresetRun(
+            run_id="return_triad27",
+            gate="return",
+            profile="triad27",
+            candidate_profile="adversary_return",
+            start_seed=0,
+            count=3,
+            steps=180,
+            description="Observed-return pressure with a small trinary matrix.",
+        ),
     ),
     "wide_adversary_probe": (
         MatrixPresetRun(
             run_id="distinction_wide243",
+            gate="distinction",
             profile="wide243",
             candidate_profile="adversary_distinction",
             start_seed=0,
@@ -81,6 +101,7 @@ PRESET_RUNS: dict[str, tuple[MatrixPresetRun, ...]] = {
         ),
         MatrixPresetRun(
             run_id="polarity_wide243",
+            gate="polarity",
             profile="wide243",
             candidate_profile="adversary_polarity",
             start_seed=0,
@@ -90,6 +111,7 @@ PRESET_RUNS: dict[str, tuple[MatrixPresetRun, ...]] = {
         ),
         MatrixPresetRun(
             run_id="relation_wide243",
+            gate="relation",
             profile="wide243",
             candidate_profile="adversary_relation",
             start_seed=0,
@@ -97,12 +119,46 @@ PRESET_RUNS: dict[str, tuple[MatrixPresetRun, ...]] = {
             steps=240,
             description="Wide weather relation-adversary probe. Heavier than triad27.",
         ),
+        MatrixPresetRun(
+            run_id="return_wide243",
+            gate="return",
+            profile="wide243",
+            candidate_profile="adversary_return",
+            start_seed=0,
+            count=3,
+            steps=240,
+            description="Wide weather observed-return adversary probe. Heavier than triad27.",
+        ),
     ),
 }
 
 
 def preset_names() -> list[str]:
     return sorted(PRESET_RUNS)
+
+
+def preset_gate_coverage(preset: str) -> tuple[str, ...]:
+    """Return the native gate names explicitly covered by a preset."""
+
+    if preset not in PRESET_RUNS:
+        raise ValueError(f"Unknown preset {preset!r}. Choose one of: {', '.join(preset_names())}")
+    return tuple(sorted({run.gate for run in PRESET_RUNS[preset] if run.gate in NATIVE_GATE_NAMES}))
+
+
+def missing_native_gates(preset: str) -> tuple[str, ...]:
+    coverage = set(preset_gate_coverage(preset))
+    return tuple(gate for gate in NATIVE_GATE_NAMES if gate not in coverage)
+
+
+def assert_four_gate_coverage(preset: str) -> None:
+    """Fail if a four-gate adversary preset does not cover every native gate."""
+
+    if preset not in FOUR_GATE_ADVERSARY_PRESETS:
+        return
+    missing = missing_native_gates(preset)
+    if missing:
+        raise ValueError(f"Preset {preset!r} is missing native gate coverage: {', '.join(missing)}")
+
 
 
 def build_preset_runs(
@@ -116,6 +172,7 @@ def build_preset_runs(
 
     if preset not in PRESET_RUNS:
         raise ValueError(f"Unknown preset {preset!r}. Choose one of: {', '.join(preset_names())}")
+    assert_four_gate_coverage(preset)
     runs = list(PRESET_RUNS[preset])
     if start_seed is None and count is None and steps is None:
         return runs
@@ -225,6 +282,7 @@ def build_manifest_rows(preset: str, runs: list[MatrixPresetRun], *, base_dir: P
             {
                 "preset": preset,
                 "run_id": run.run_id,
+                "gate": run.gate,
                 "profile": run.profile,
                 "candidate_profile": run.candidate_profile,
                 "start_seed": run.start_seed,
@@ -264,13 +322,13 @@ def write_preset_read(path: Path, *, preset: str, runs: list[MatrixPresetRun], b
     lines.append("")
     lines.append("## Planned runs")
     lines.append("")
-    lines.append("| run | profile | candidate profile | seeds | steps | output | purpose |")
-    lines.append("|---|---|---|---:|---:|---|---|")
+    lines.append("| run | native gate | profile | candidate profile | seeds | steps | output | purpose |")
+    lines.append("|---|---|---|---|---:|---:|---|---|")
     for run in runs:
         out_dir = matrix_output_dir(base_dir, preset, run)
         seed_range = f"{run.start_seed}-{run.start_seed + run.count - 1}"
         lines.append(
-            f"| {run.run_id} | {run.profile} | {run.candidate_profile} | {seed_range} | {run.steps} | `{_ps_path(out_dir)}` | {run.description} |"
+            f"| {run.run_id} | {run.gate} | {run.profile} | {run.candidate_profile} | {seed_range} | {run.steps} | `{_ps_path(out_dir)}` | {run.description} |"
         )
     lines.append("")
     lines.append("## How to use")

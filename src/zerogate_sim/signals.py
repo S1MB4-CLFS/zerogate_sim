@@ -47,6 +47,7 @@ CANDIDATE_PROFILES = (
     "adversary_distinction",
     "adversary_polarity",
     "adversary_relation",
+    "adversary_return",
 )
 
 
@@ -604,6 +605,35 @@ def adversary_relation_candidate_specs() -> list[CandidateSpec]:
     return _apply_truth_roles(out, PROOF_CORE_ROLES)
 
 
+def adversary_return_candidate_specs() -> list[CandidateSpec]:
+    """Corpus targeting the observed-return wound.
+
+    These traps try to look visible, polarized, and related while failing the
+    return gate through memory reset, late collapse, phase drift, noisy return,
+    delayed return debt, or zero chatter. The profile exists because four-gate
+    adversary presets must attack distinction, polarity, relation, and return
+    as separate pressure families.
+    """
+
+    specs = {spec.candidate_id: spec for spec in _proof_base_specs()}
+    updates = {
+        "F05": dict(kind="memory_reset", amplitude=1.18, frequency=1.08, noise=0.030, relation_weight=0.28, description="return adversary: crosses zero but resets cycle memory"),
+        "F07": dict(kind="collapse_after_shock", amplitude=1.22, frequency=0.98, noise=0.040, relation_weight=0.30, description="return adversary: early coherence collapses after field shock"),
+        "F15": dict(kind="noisy_returner", amplitude=1.05, frequency=1.10, noise=0.220, relation_weight=0.36, description="return adversary: return-like motion blurred by noise"),
+        "F19": dict(kind="late_collapse", amplitude=1.12, frequency=0.94, noise=0.040, relation_weight=0.34, description="return adversary: plausible pulse loses late persistence"),
+        "F20": dict(kind="phase_drift", amplitude=1.05, frequency=1.00, noise=0.035, drift=0.026, relation_weight=0.32, description="return adversary: phase drift breaks continuity"),
+        "F21": dict(kind="zero_chatter", amplitude=1.00, frequency=3.50, noise=0.110, relation_weight=0.18, description="return adversary: many zero crossings without trustworthy memory"),
+        "F24": dict(kind="delayed_return_debt", amplitude=1.00, bias=0.48, noise=0.035, relation_weight=0.46, description="return adversary/probe: DPR pressure appears before observed return pays debt"),
+        "F25": dict(kind="harmonic_alias", amplitude=1.04, frequency=1.22, noise=0.035, relation_weight=0.24, description="return adversary: harmonic alias mimics return shape"),
+        "F26": dict(kind="memory_reset", amplitude=0.92, frequency=0.86, noise=0.035, relation_weight=0.52, description="return adversary: relational-looking echo with reset memory"),
+    }
+    out: list[CandidateSpec] = []
+    for spec in specs.values():
+        patch = updates.get(spec.candidate_id, {})
+        out.append(_mutate_spec(spec, **patch) if patch else spec)
+    return _apply_truth_roles(out, PROOF_CORE_ROLES)
+
+
 def candidate_specs(profile: str = "alpha12") -> list[CandidateSpec]:
     """Return a named candidate corpus."""
 
@@ -617,6 +647,8 @@ def candidate_specs(profile: str = "alpha12") -> list[CandidateSpec]:
         return adversary_polarity_candidate_specs()
     if profile == "adversary_relation":
         return adversary_relation_candidate_specs()
+    if profile == "adversary_return":
+        return adversary_return_candidate_specs()
     raise ValueError("candidate profile must be one of: " + ", ".join(CANDIDATE_PROFILES))
 
 

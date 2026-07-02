@@ -23,3 +23,22 @@ def test_triad27_candidate_profile_has_27_candidates():
     assert len(specs) == 27
     assert specs[0].candidate_id == "F00"
     assert specs[-1].candidate_id == "F26"
+
+
+
+def test_adversary_return_candidate_profile_exists_and_targets_return_gate():
+    from zerogate_sim.signals import CANDIDATE_PROFILES, candidate_specs
+
+    assert "adversary_return" in CANDIDATE_PROFILES
+    specs = candidate_specs("adversary_return")
+    assert len(specs) == 27
+    patched = [spec for spec in specs if "return adversary" in spec.description]
+    assert len(patched) >= 6
+    assert {spec.kind for spec in patched} & {
+        "memory_reset",
+        "collapse_after_shock",
+        "late_collapse",
+        "phase_drift",
+        "zero_chatter",
+        "delayed_return_debt",
+    }
