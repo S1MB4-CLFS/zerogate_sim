@@ -1,9 +1,9 @@
 # ZeroGateSim Roadmap
 
-**Current line:** `v1.3.4-alpha` known-logic mirror closeout  
+**Current line:** `v1.3.5-alpha` CI compatibility re-expansion  
 **Release posture:** public research-alpha / speculative toy-field proof-of-concept
 
-**CI support boundary:** Python 3.12 is the active supported release/test runtime. The v1.3 known-logic mirror line exposed GitHub Actions failures on 3.10 / 3.11, so support is narrowed rather than pretending those interpreters are green. Re-expanding the matrix is future repair work, not current truth.
+**CI support boundary:** Python 3.10 / 3.11 / 3.12 are the active supported release/test runtimes. v1.3.3 temporarily narrowed support to 3.12 after Actions failures appeared; v1.3.5 deliberately re-expands and makes the matrix the active witness again.
 
 ZeroGateSim already has a first-research-alpha toy-field proof record. The next work is not to make bigger claims or add shiny machinery. The next work is to make the native math testable, then compare that native math against nearby formal logic families without pretending they are the same thing.
 
@@ -413,6 +413,29 @@ Delivered:
 Success condition:
 
 A reader can see which mirror is useful for which pressure and where each mirror lies if overused. The closeout report must not turn projection into borrowed authority.
+
+
+### v1.3.5-alpha — CI compatibility re-expansion
+
+Purpose:
+
+Repair the temporary support narrowing introduced when older-interpreter CI failures appeared during the known-logic mirror line.
+
+Delivered:
+
+- restore `requires-python = >=3.10`;
+- restore CI matrix for Python 3.10 / 3.11 / 3.12;
+- add `docs/runtime_ci_support.md`;
+- bound dependencies below future major versions where practical;
+- keep local handoffs on `PYTHONPATH=src` while CI still checks editable install.
+
+Success condition:
+
+GitHub Actions is green on Python 3.10, 3.11, and 3.12.
+
+Boundary:
+
+If one lane fails, feature work stops and that exact interpreter log is repaired. Do not leave older-interpreter failures as vague HOLD language.
 
 ## v1.4-alpha — Cross-logic comparison report
 

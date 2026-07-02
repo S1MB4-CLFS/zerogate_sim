@@ -1,6 +1,6 @@
 # ZeroGateSim
 
-**Current public line:** `v1.3.4-alpha` — known-logic mirror closeout  
+**Current public line:** `v1.3.5-alpha` — CI compatibility re-expansion  
 **Status:** speculative research software / toy-field proof-of-concept  
 **Working identity:** zero-gate dimensional emergence simulator  
 **Core question:** can a final trinary witness distinguish earned-one from raw expression pressure, latent overcrown, and false-one pressure under adversarial toy-field weather?
@@ -16,9 +16,11 @@ It tests a narrower software-theory claim:
 
 ## Runtime and CI support boundary
 
-The active CI support target is **Python 3.12**. Earlier 3.10 / 3.11 CI matrix entries produced GitHub Actions failures during the v1.3 known-logic mirror line, so the repository now tells the smaller truth: Python 3.12 is the supported release/test runtime until older-interpreter failures are deliberately diagnosed and repaired.
+The active CI support target is **Python 3.10, 3.11, and 3.12**.
 
-Local development may still work on other Python versions, but release confidence comes from the supported gate.
+`v1.3.3-alpha` temporarily narrowed CI to Python 3.12 after older-interpreter failures appeared during the known-logic mirror line. `v1.3.5-alpha` deliberately re-expands the matrix, lowers the package requirement back to `>=3.10`, and treats CI as the witness gate for interpreter support.
+
+If a future interpreter lane fails, the next move is to read that exact Actions log and repair that lane before adding more theory features.
 
 ## Version truth
 
@@ -29,7 +31,7 @@ The active public line is repaired around this spine:
 - `v1.2.x-alpha` — native math witness lock, invariant tests, and scope discipline.
 - `v1.3.x-alpha` — known-logic mirrors: fuzzy scoring, Belnap evidence states, then conflict/locality and compression tests.
 
-`v1.2.4-alpha` added a Power-Up / Fail report too early. `v1.2.5-alpha` removed that active machinery and kept the useful question as documentation-only acceptance criteria. `v1.3.0-alpha` begins the known-logic mirror line with fuzzy / many-valued scoring comparison. `v1.3.1-alpha` adds the Belnap evidence-state mirror and an assistant test handoff bundle for continuation. `v1.3.2-alpha` adds the paraconsistent conflict-locality mirror. `v1.3.3-alpha` adds the Kleene / Lukasiewicz compression and loss mirror. `v1.3.4-alpha` closes the first known-logic mirror line with one report that states what each mirror preserves, exposes, and collapses.
+`v1.2.4-alpha` added a Power-Up / Fail report too early. `v1.2.5-alpha` removed that active machinery and kept the useful question as documentation-only acceptance criteria. `v1.3.0-alpha` begins the known-logic mirror line with fuzzy / many-valued scoring comparison. `v1.3.1-alpha` adds the Belnap evidence-state mirror and an assistant test handoff bundle for continuation. `v1.3.2-alpha` adds the paraconsistent conflict-locality mirror. `v1.3.3-alpha` adds the Kleene / Lukasiewicz compression and loss mirror. `v1.3.4-alpha` closes the first known-logic mirror line with one report that states what each mirror preserves, exposes, and collapses. `v1.3.5-alpha` repairs the CI support boundary by re-expanding Python 3.10 / 3.11 / 3.12 support instead of leaving older interpreters behind.
 
 ## Active route
 
@@ -46,6 +48,7 @@ Read first:
 - [`docs/math_witness_map.md`](docs/math_witness_map.md)
 - [`docs/simulation_win_conditions.md`](docs/simulation_win_conditions.md)
 - [`docs/local_tooling_repair.md`](docs/local_tooling_repair.md)
+- [`docs/runtime_ci_support.md`](docs/runtime_ci_support.md)
 - [`docs/known_logic_boundary.md`](docs/known_logic_boundary.md)
 - [`docs/fuzzy_mirror.md`](docs/fuzzy_mirror.md)
 - [`docs/belnap_mirror.md`](docs/belnap_mirror.md)
