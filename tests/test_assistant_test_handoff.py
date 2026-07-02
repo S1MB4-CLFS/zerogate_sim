@@ -1,6 +1,9 @@
 from __future__ import annotations
 
+import json
 import zipfile
+
+import pytest
 
 from zerogate_sim.test_handoff import build_test_handoff
 
@@ -11,7 +14,7 @@ def test_build_test_handoff_creates_assistant_zip(tmp_path) -> None:
 
     paths = build_test_handoff(
         out_dir=tmp_path / "handoff",
-        version="v1.3.1-alpha",
+        version="v1.4.2-alpha",
         status="passed",
         notes=["unit tests passed"],
         repo_root=tmp_path,
@@ -23,11 +26,56 @@ def test_build_test_handoff_creates_assistant_zip(tmp_path) -> None:
     assert paths["assistant_test_handoff_zip"].exists()
 
     text = paths["assistant_test_handoff_md"].read_text(encoding="utf-8")
-    assert "v1.3.1-alpha" in text
+    assert "v1.4.2-alpha" in text
     assert "unit tests passed" in text
+    assert "Missing include count: `0`" in text
+    assert "included/sample.txt" in text
+
+    data = json.loads(paths["assistant_test_handoff_json"].read_text(encoding="utf-8"))
+    assert data["missing_include_count"] == 0
+    assert data["strict_includes"] is True
+    assert data["included_files"] == ["included/sample.txt"]
 
     with zipfile.ZipFile(paths["assistant_test_handoff_zip"]) as zf:
         names = set(zf.namelist())
     assert "assistant_test_handoff.md" in names
     assert "assistant_test_handoff.json" in names
     assert "included/sample.txt" in names
+
+
+def test_build_test_handoff_fails_on_missing_include_by_default(tmp_path) -> None:
+    missing = tmp_path / "missing_report.md"
+
+    with pytest.raises(FileNotFoundError) as exc:
+        build_test_handoff(
+            out_dir=tmp_path / "handoff",
+            version="v1.4.2-alpha",
+            status="passed",
+            repo_root=tmp_path,
+            includes=[missing],
+        )
+
+    assert "missing_report.md" in str(exc.value)
+    assert "path does not exist" in str(exc.value)
+
+
+def test_build_test_handoff_can_record_missing_include_when_explicitly_allowed(tmp_path) -> None:
+    missing = tmp_path / "optional_report.md"
+
+    paths = build_test_handoff(
+        out_dir=tmp_path / "handoff",
+        version="v1.4.2-alpha",
+        status="partial",
+        repo_root=tmp_path,
+        includes=[missing],
+        allow_missing_includes=True,
+    )
+
+    data = json.loads(paths["assistant_test_handoff_json"].read_text(encoding="utf-8"))
+    assert data["missing_include_count"] == 1
+    assert data["strict_includes"] is False
+    assert data["missing_includes"][0]["source"].endswith("optional_report.md")
+
+    text = paths["assistant_test_handoff_md"].read_text(encoding="utf-8")
+    assert "Missing include count: `1`" in text
+    assert "optional_report.md" in text

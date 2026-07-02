@@ -5,6 +5,8 @@ from pathlib import Path
 from zerogate_sim.comparison_preset import (
     build_powershell_lines,
     build_preset_runs,
+    handoff_zip_path,
+    report_output_dir,
     preset_names,
     write_comparison_preset,
 )
@@ -61,3 +63,21 @@ def test_write_comparison_preset_outputs_plan_files(tmp_path) -> None:
     assert "zerogate_sim.matrix" in commands_text
     assert "cross_logic_report" in commands_text
     assert "quick_alpha12" in manifest_text
+
+
+def test_powershell_plan_prints_and_checks_truth_files() -> None:
+    runs = build_preset_runs("quick_smoke")
+    text = "\n".join(build_powershell_lines("quick_smoke", runs, base_dir=Path("runs/cross_logic_presets")))
+    assert 'Expected cross-logic report missing' in text
+    assert 'Expected assistant handoff ZIP missing' in text
+    assert 'Upload this ZIP' in text
+    assert 'cross_logic_comparison_read.md' in text
+    assert str(handoff_zip_path("quick_smoke")).replace("/", "\\") in text
+
+
+def test_report_and_handoff_paths_match_generated_preset_truth() -> None:
+    base_dir = Path("runs/cross_logic_presets")
+    report = report_output_dir(base_dir, "adversary_triad27") / "cross_logic_comparison_read.md"
+    handoff = handoff_zip_path("adversary_triad27")
+    assert str(report).replace("/", "\\") == "runs\\cross_logic_presets\\adversary_triad27\\cross_logic_report\\cross_logic_comparison_read.md"
+    assert str(handoff).endswith("adversary_triad27/assistant_test_handoff.zip") or str(handoff).endswith("adversary_triad27\\assistant_test_handoff.zip")

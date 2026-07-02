@@ -4,12 +4,21 @@ import argparse
 import json
 import subprocess
 import zipfile
+from dataclasses import dataclass
 from datetime import datetime, timezone
 from pathlib import Path
 from typing import Sequence
 
 from zerogate_sim import __version__
 from zerogate_sim.reporting import ensure_dir
+
+
+@dataclass(frozen=True)
+class IncludeResult:
+    source: str
+    status: str
+    bundled_path: str
+    reason: str
 
 
 def _run_git(args: Sequence[str], *, cwd: Path) -> str:
@@ -27,13 +36,26 @@ def _run_git(args: Sequence[str], *, cwd: Path) -> str:
     return result.stdout.strip()
 
 
-def _copy_include(path: Path, out_dir: Path) -> str | None:
-    if not path.exists() or not path.is_file():
-        return None
+def _copy_include(path: Path, out_dir: Path) -> IncludeResult:
+    source = str(path)
+    if not path.exists():
+        return IncludeResult(source=source, status="missing", bundled_path="", reason="path does not exist")
+    if not path.is_file():
+        return IncludeResult(source=source, status="not_file", bundled_path="", reason="path exists but is not a file")
     include_dir = ensure_dir(out_dir / "included")
     target = include_dir / path.name
     target.write_bytes(path.read_bytes())
-    return target.relative_to(out_dir).as_posix()
+    return IncludeResult(source=source, status="included", bundled_path=target.relative_to(out_dir).as_posix(), reason="copied")
+
+
+def _raise_for_missing_includes(results: list[IncludeResult]) -> None:
+    bad = [item for item in results if item.status != "included"]
+    if not bad:
+        return
+    lines = ["One or more requested handoff include files are missing or invalid:"]
+    for item in bad:
+        lines.append(f"- {item.source}: {item.status} ({item.reason})")
+    raise FileNotFoundError("\n".join(lines))
 
 
 def build_test_handoff(
@@ -45,12 +67,18 @@ def build_test_handoff(
     repo_root: Path | None = None,
     includes: list[Path] | None = None,
     zip_name: str = "assistant_test_handoff.zip",
+    allow_missing_includes: bool = False,
 ) -> dict[str, Path]:
     """Write an assistant-readable bundle after Marek's local test gates.
 
     This does not decide whether a version is true. It preserves the local gate
-    result, repo state, and optional included files so the next chat/assistant can
+    result, repo state, and included result files so the next chat/assistant can
     read the result without guessing from screenshots and memory crumbs.
+
+    v1.4.2 truth repair: requested includes are strict by default. A handoff that
+    says tests passed but silently omits a missing report file is a false witness.
+    Use ``allow_missing_includes=True`` only when missing includes are explicitly
+    expected and the handoff should record that fact instead of failing.
     """
 
     out_dir = ensure_dir(out_dir)
@@ -59,11 +87,12 @@ def build_test_handoff(
     includes = includes or []
     now = datetime.now(timezone.utc).replace(microsecond=0).isoformat()
 
-    included_files: list[str] = []
-    for include in includes:
-        copied = _copy_include(include, out_dir)
-        if copied is not None:
-            included_files.append(copied)
+    include_results = [_copy_include(include, out_dir) for include in includes]
+    if not allow_missing_includes:
+        _raise_for_missing_includes(include_results)
+
+    included_files = [item.bundled_path for item in include_results if item.status == "included"]
+    missing_includes = [item for item in include_results if item.status != "included"]
 
     data = {
         "bundle_kind": "zerogate_assistant_test_handoff",
@@ -77,6 +106,10 @@ def build_test_handoff(
         "git_log_oneline_decorate": _run_git(["--no-pager", "log", "--oneline", "--decorate", "-8"], cwd=repo_root),
         "git_tags_v": _run_git(["tag", "--list", "v*", "--sort=-creatordate"], cwd=repo_root),
         "included_files": included_files,
+        "include_results": [item.__dict__ for item in include_results],
+        "missing_includes": [item.__dict__ for item in missing_includes],
+        "missing_include_count": len(missing_includes),
+        "strict_includes": not allow_missing_includes,
     }
 
     json_path = out_dir / "assistant_test_handoff.json"
@@ -92,6 +125,8 @@ def build_test_handoff(
     lines.append(f"Requested version: `{data['requested_version']}`")
     lines.append(f"Package version: `{data['package_version']}`")
     lines.append(f"Status: `{status}`")
+    lines.append(f"Strict includes: `{data['strict_includes']}`")
+    lines.append(f"Missing include count: `{len(missing_includes)}`")
     lines.append("")
     lines.append("## Notes")
     lines.append("")
@@ -121,9 +156,28 @@ def build_test_handoff(
     else:
         lines.append("- none")
     lines.append("")
+    lines.append("## Include audit")
+    lines.append("")
+    if include_results:
+        lines.append("| source | status | bundled path | reason |")
+        lines.append("|---|---|---|---|")
+        for item in include_results:
+            bundled = item.bundled_path or ""
+            lines.append(f"| `{item.source}` | `{item.status}` | `{bundled}` | {item.reason} |")
+    else:
+        lines.append("- No include paths requested.")
+    lines.append("")
+    if missing_includes:
+        lines.append("## Missing includes")
+        lines.append("")
+        for item in missing_includes:
+            lines.append(f"- `{item.source}` — {item.status}: {item.reason}")
+        lines.append("")
     lines.append("## Boundary")
     lines.append("")
     lines.append("This bundle records local gate results for continuation. It is not proof of cosmology, not proof of final theory truth, and not a substitute for the repo tests or release boundary.")
+    lines.append("")
+    lines.append("Truth rule: a requested include that is missing is a failed handoff unless explicitly allowed with `--allow-missing-include`.")
     lines.append("")
     md_path.write_text("\n".join(lines), encoding="utf-8")
 
@@ -150,6 +204,7 @@ def build_parser() -> argparse.ArgumentParser:
     parser.add_argument("--status", choices=["passed", "failed", "hold", "partial"], default="passed")
     parser.add_argument("--note", action="append", default=[])
     parser.add_argument("--include", action="append", type=Path, default=[])
+    parser.add_argument("--allow-missing-include", action="store_true", help="Record missing include paths instead of failing. Use only when missing files are expected.")
     parser.add_argument("--zip-name", default="assistant_test_handoff.zip")
     return parser
 
@@ -163,6 +218,7 @@ def main(argv: list[str] | None = None) -> int:
         notes=list(args.note),
         includes=list(args.include),
         zip_name=args.zip_name,
+        allow_missing_includes=args.allow_missing_include,
     )
     print("ZeroGateSim assistant test handoff complete.")
     for name, path in paths.items():

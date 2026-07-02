@@ -1,6 +1,7 @@
 # ZeroGateSim Cross-Logic Comparison Presets
 
-**Line:** `v1.4.1-alpha`  
+**Introduced:** `v1.4.1-alpha`  
+**Truth repair:** `v1.4.2-alpha`  
 **Status:** run-plan generator, not evidence
 
 The cross-logic comparison report introduced in `v1.4.0-alpha` reads completed matrix runs. This file explains the next small step: writing repeatable run plans so stronger comparisons are not hand-assembled every time.
@@ -15,7 +16,7 @@ The preset writer gives a stable, inspectable plan:
 
 ```powershell
 $env:PYTHONPATH = (Join-Path (Get-Location) "src")
-& $P -m zerogate_sim.comparison_preset --preset adversary_triad27 --out runs\comparison_preset_plan_v1_4_1
+& $P -m zerogate_sim.comparison_preset --preset adversary_triad27 --out runs\comparison_preset_plan_v1_4_2
 ```
 
 It writes:
@@ -27,6 +28,26 @@ run_preset.ps1
 ```
 
 The human reads `run_preset.ps1` before execution. The script runs matrix commands and then runs the cross-logic comparison report.
+
+## v1.4.2 path truth repair
+
+Generated preset scripts now check the exact cross-logic report path before building the assistant handoff. If the report is missing, the script fails instead of producing a green-looking bundle without the report.
+
+The script also prints the exact handoff ZIP path to upload.
+
+This repairs the earlier operator wound where a manual follow-up command looked for:
+
+```text
+runs\comparison_preset_adversary_triad27\cross_logic_comparison\cross_logic_comparison_read.md
+```
+
+but the generated preset report actually belonged under:
+
+```text
+runs\cross_logic_presets\adversary_triad27\cross_logic_report\cross_logic_comparison_read.md
+```
+
+The preset script is now the path authority. Do not invent the report path by hand.
 
 ## Presets
 

@@ -6,6 +6,7 @@ from dataclasses import dataclass, replace
 from pathlib import Path
 from typing import Iterable
 
+from zerogate_sim import __version__
 from zerogate_sim.reporting import ensure_dir
 
 
@@ -156,11 +157,26 @@ def build_report_command(matrix_dirs: Iterable[Path], output_dir: Path) -> str:
     return f"& $P -m zerogate_sim.cross_logic_report {matrix_args} --out {_ps_path(output_dir)}"
 
 
-def build_handoff_command(preset: str, report_dir: Path, *, version: str = "v1.4.1-alpha") -> str:
+def _version_label() -> str:
+    return __version__ if __version__.startswith("v") else f"v{__version__}"
+
+
+def handoff_output_dir(preset: str, *, version: str | None = None) -> Path:
+    label = version or _version_label()
+    safe_label = label.replace("-", "_").replace(".", "_")
+    return Path("runs") / f"assistant_test_handoff_{safe_label}_{preset}"
+
+
+def handoff_zip_path(preset: str, *, version: str | None = None) -> Path:
+    return handoff_output_dir(preset, version=version) / "assistant_test_handoff.zip"
+
+
+def build_handoff_command(preset: str, report_dir: Path, *, version: str | None = None) -> str:
+    label = version or _version_label()
     read_path = report_dir / "cross_logic_comparison_read.md"
-    out_dir = Path("runs") / f"assistant_test_handoff_{version.replace('-', '_')}_{preset}"
+    out_dir = handoff_output_dir(preset, version=label)
     return (
-        f"& $P -m zerogate_sim.test_handoff --version {version} --status passed "
+        f"& $P -m zerogate_sim.test_handoff --version {label} --status passed "
         f"--note \"{preset} preset completed locally\" "
         f"--include {_ps_path(read_path)} --out {_ps_path(out_dir)}"
     )
@@ -182,13 +198,23 @@ def build_powershell_lines(preset: str, runs: list[MatrixPresetRun], *, base_dir
         lines.append(f'Write-Host "`n=== matrix {run.run_id} ===" -ForegroundColor Cyan')
         lines.append(build_matrix_command(run, out_dir))
         lines.append("")
+    report_read = report_dir / "cross_logic_comparison_read.md"
+    handoff_zip = handoff_zip_path(preset)
+
     lines.append('Write-Host "`n=== cross logic report ===" -ForegroundColor Cyan')
     lines.append(build_report_command(matrix_dirs, report_dir))
+    lines.append(f'$Report = "{_ps_path(report_read)}"')
+    lines.append('if (!(Test-Path $Report)) { throw "Expected cross-logic report missing: $Report" }')
+    lines.append('Write-Host "`nCross-logic report:" -ForegroundColor Green')
+    lines.append('Write-Host (Join-Path (Get-Location) $Report)')
+    lines.append('Get-Content $Report -TotalCount 120')
     lines.append("")
     lines.append('Write-Host "`n=== assistant handoff ===" -ForegroundColor Cyan')
     lines.append(build_handoff_command(preset, report_dir))
-    lines.append("")
-    lines.append('Write-Host "`nPreset complete. Upload the assistant_test_handoff.zip from the printed out folder if review is needed." -ForegroundColor Green')
+    lines.append(f'$HandoffZip = "{_ps_path(handoff_zip)}"')
+    lines.append('if (!(Test-Path $HandoffZip)) { throw "Expected assistant handoff ZIP missing: $HandoffZip" }')
+    lines.append('Write-Host "`nPreset complete. Upload this ZIP:" -ForegroundColor Green')
+    lines.append('Write-Host (Join-Path (Get-Location) $HandoffZip)')
     return lines
 
 

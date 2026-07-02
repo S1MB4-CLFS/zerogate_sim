@@ -1,6 +1,6 @@
 # ZeroGateSim
 
-**Current public line:** `v1.4.1-alpha` — cross-logic comparison preset planning  
+**Current public line:** `v1.4.2-alpha` — truth-safe handoff and preset path repair  
 **Status:** speculative research software / toy-field proof-of-concept  
 **Working identity:** zero-gate dimensional emergence simulator  
 **Core question:** can a final trinary witness distinguish earned-one from raw expression pressure, latent overcrown, and false-one pressure under adversarial toy-field weather?
@@ -22,6 +22,12 @@ The required release/test gate is **Python 3.12**.
 
 That is not a theory claim. It is an engineering boundary: older interpreters can be explored deliberately, but they do not block the native-math / mirror / experiment line.
 
+## Test truth and handoff boundary
+
+`v1.4.2-alpha` makes handoff includes strict by default. If a command requests a report file for the assistant handoff and that file is missing, the handoff fails instead of silently creating a partial bundle that looks green. Optional missing includes must be explicitly requested with `--allow-missing-include`.
+
+Generated comparison preset scripts now check the expected cross-logic report path before building the handoff and print the exact `assistant_test_handoff.zip` path to upload.
+
 ## Version truth
 
 The active public line is repaired around this spine:
@@ -32,7 +38,7 @@ The active public line is repaired around this spine:
 - `v1.3.x-alpha` — known-logic mirrors: fuzzy scoring, Belnap evidence states, conflict locality, compression tests, and closeout.
 - `v1.4.x-alpha` — cross-logic comparison reports across completed matrix runs.
 
-`v1.2.4-alpha` added a Power-Up / Fail report too early. `v1.2.5-alpha` removed that active machinery and kept the useful question as documentation-only acceptance criteria. `v1.3.0-alpha` begins the known-logic mirror line with fuzzy / many-valued scoring comparison. `v1.3.1-alpha` adds the Belnap evidence-state mirror and an assistant test handoff bundle for continuation. `v1.3.2-alpha` adds the paraconsistent conflict-locality mirror. `v1.3.3-alpha` adds the Kleene / Lukasiewicz compression and loss mirror. `v1.3.4-alpha` closes the first known-logic mirror line with one report that states what each mirror preserves, exposes, and collapses. `v1.3.5-alpha` attempted to re-expand Python 3.10 / 3.11 / 3.12 support, but CI showed 3.10 / 3.11 were still red. `v1.3.6-alpha` restores a clean 3.12 release gate and keeps 3.10 / 3.11 as manual compatibility probes so feature work is not held hostage by unresolved legacy-interpreter drift. `v1.4.0-alpha` adds the cross-logic comparison report. `v1.4.1-alpha` adds comparison presets so stronger runs can be planned and repeated without turning the preset itself into evidence.
+`v1.2.4-alpha` added a Power-Up / Fail report too early. `v1.2.5-alpha` removed that active machinery and kept the useful question as documentation-only acceptance criteria. `v1.3.0-alpha` begins the known-logic mirror line with fuzzy / many-valued scoring comparison. `v1.3.1-alpha` adds the Belnap evidence-state mirror and an assistant test handoff bundle for continuation. `v1.3.2-alpha` adds the paraconsistent conflict-locality mirror. `v1.3.3-alpha` adds the Kleene / Lukasiewicz compression and loss mirror. `v1.3.4-alpha` closes the first known-logic mirror line with one report that states what each mirror preserves, exposes, and collapses. `v1.3.5-alpha` attempted to re-expand Python 3.10 / 3.11 / 3.12 support, but CI showed 3.10 / 3.11 were still red. `v1.3.6-alpha` restores a clean 3.12 release gate and keeps 3.10 / 3.11 as manual compatibility probes so feature work is not held hostage by unresolved legacy-interpreter drift. `v1.4.0-alpha` adds the cross-logic comparison report. `v1.4.1-alpha` adds comparison presets so stronger runs can be planned and repeated without turning the preset itself into evidence. `v1.4.2-alpha` repairs the truth layer for handoffs and preset scripts so missing requested result files fail loudly and the exact upload ZIP path is printed.
 
 ## Active route
 

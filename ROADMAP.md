@@ -1,6 +1,6 @@
 # ZeroGateSim Roadmap
 
-**Current line:** `v1.4.1-alpha` cross-logic comparison preset planning  
+**Current line:** `v1.4.2-alpha` truth-safe handoff and preset path repair  
 **Release posture:** public research-alpha / speculative toy-field proof-of-concept
 
 **CI support boundary:** Python 3.12 is the required release/test runtime. v1.3.5 deliberately tried to re-expand Python 3.10 / 3.11 / 3.12, but GitHub Actions showed 3.10 / 3.11 are still red. v1.3.6 keeps the release gate green on 3.12 and moves older interpreters into manual compatibility probes so unresolved legacy drift does not block the main research line.
@@ -497,6 +497,28 @@ Boundary:
 
 This version writes commands. It does not run heavy matrices automatically, does not mutate the native gate, and does not claim stronger proof until generated outputs are actually produced and reviewed.
 
+
+### v1.4.2-alpha — Truth-safe handoff and preset path repair
+
+Purpose:
+
+Repair the continuation/test handoff layer so it cannot silently omit requested result files or print ambiguous paths.
+
+Delivered:
+
+- strict include checking in `src/zerogate_sim/test_handoff.py`;
+- `--allow-missing-include` only for explicit optional missing files;
+- include audit and missing-include count in handoff JSON/Markdown;
+- generated preset scripts check the exact cross-logic report path before building the handoff;
+- generated preset scripts print the exact ZIP path to upload.
+
+Success condition:
+
+A handoff that says tests passed must either contain the requested evidence files or fail loudly. No silent skipped include. No wrong report path hidden behind a green-looking bundle.
+
+Boundary:
+
+This is infrastructure truth repair. No native gate change, no new mirror, no new simulation claim.
 
 ## v1.5-alpha — Stronger toy-field experiments
 
