@@ -1,6 +1,6 @@
 # ZeroGateSim
 
-**Current public line:** `v1.4.0-alpha` — cross-logic comparison report  
+**Current public line:** `v1.4.1-alpha` — cross-logic comparison preset planning  
 **Status:** speculative research software / toy-field proof-of-concept  
 **Working identity:** zero-gate dimensional emergence simulator  
 **Core question:** can a final trinary witness distinguish earned-one from raw expression pressure, latent overcrown, and false-one pressure under adversarial toy-field weather?
@@ -32,7 +32,7 @@ The active public line is repaired around this spine:
 - `v1.3.x-alpha` — known-logic mirrors: fuzzy scoring, Belnap evidence states, conflict locality, compression tests, and closeout.
 - `v1.4.x-alpha` — cross-logic comparison reports across completed matrix runs.
 
-`v1.2.4-alpha` added a Power-Up / Fail report too early. `v1.2.5-alpha` removed that active machinery and kept the useful question as documentation-only acceptance criteria. `v1.3.0-alpha` begins the known-logic mirror line with fuzzy / many-valued scoring comparison. `v1.3.1-alpha` adds the Belnap evidence-state mirror and an assistant test handoff bundle for continuation. `v1.3.2-alpha` adds the paraconsistent conflict-locality mirror. `v1.3.3-alpha` adds the Kleene / Lukasiewicz compression and loss mirror. `v1.3.4-alpha` closes the first known-logic mirror line with one report that states what each mirror preserves, exposes, and collapses. `v1.3.5-alpha` attempted to re-expand Python 3.10 / 3.11 / 3.12 support, but CI showed 3.10 / 3.11 were still red. `v1.3.6-alpha` restores a clean 3.12 release gate and keeps 3.10 / 3.11 as manual compatibility probes so feature work is not held hostage by unresolved legacy-interpreter drift. `v1.4.0-alpha` begins cross-logic comparison reporting across completed matrix runs.
+`v1.2.4-alpha` added a Power-Up / Fail report too early. `v1.2.5-alpha` removed that active machinery and kept the useful question as documentation-only acceptance criteria. `v1.3.0-alpha` begins the known-logic mirror line with fuzzy / many-valued scoring comparison. `v1.3.1-alpha` adds the Belnap evidence-state mirror and an assistant test handoff bundle for continuation. `v1.3.2-alpha` adds the paraconsistent conflict-locality mirror. `v1.3.3-alpha` adds the Kleene / Lukasiewicz compression and loss mirror. `v1.3.4-alpha` closes the first known-logic mirror line with one report that states what each mirror preserves, exposes, and collapses. `v1.3.5-alpha` attempted to re-expand Python 3.10 / 3.11 / 3.12 support, but CI showed 3.10 / 3.11 were still red. `v1.3.6-alpha` restores a clean 3.12 release gate and keeps 3.10 / 3.11 as manual compatibility probes so feature work is not held hostage by unresolved legacy-interpreter drift. `v1.4.0-alpha` adds the cross-logic comparison report. `v1.4.1-alpha` adds comparison presets so stronger runs can be planned and repeated without turning the preset itself into evidence.
 
 ## Active route
 
@@ -56,6 +56,7 @@ Read first:
 - [`docs/paraconsistent_mirror.md`](docs/paraconsistent_mirror.md)
 - [`docs/three_valued_mirror.md`](docs/three_valued_mirror.md)
 - [`docs/assistant_test_handoff.md`](docs/assistant_test_handoff.md)
+- [`docs/cross_logic_comparison_presets.md`](docs/cross_logic_comparison_presets.md)
 - [`docs/known_logic_comparison_report.md`](docs/known_logic_comparison_report.md)
 
 ## Why this exists
@@ -211,6 +212,18 @@ cross_logic_report_bundle.zip
 ```
 
 The report aggregates mirror pressure. It does not crown any external logic as authority.
+
+
+### Cross-logic comparison presets
+
+`v1.4.1-alpha` adds a preset writer for stronger comparison runs:
+
+```powershell
+$env:PYTHONPATH = (Join-Path (Get-Location) "src")
+& $P -m zerogate_sim.comparison_preset --preset adversary_triad27 --out runs\comparison_preset_plan_v1_4_1
+```
+
+The preset writes a readable plan, manifest, and `run_preset.ps1`. It does not execute the runs automatically and is not evidence by itself.
 
 ## First-research-alpha result
 

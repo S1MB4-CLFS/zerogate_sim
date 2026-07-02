@@ -1,6 +1,6 @@
 # ZeroGateSim Roadmap
 
-**Current line:** `v1.4.0-alpha` cross-logic comparison report  
+**Current line:** `v1.4.1-alpha` cross-logic comparison preset planning  
 **Release posture:** public research-alpha / speculative toy-field proof-of-concept
 
 **CI support boundary:** Python 3.12 is the required release/test runtime. v1.3.5 deliberately tried to re-expand Python 3.10 / 3.11 / 3.12, but GitHub Actions showed 3.10 / 3.11 are still red. v1.3.6 keeps the release gate green on 3.12 and moves older interpreters into manual compatibility probes so unresolved legacy drift does not block the main research line.
@@ -468,15 +468,34 @@ This line reads completed toy-field evidence. It does not run a new proof harnes
 
 ### v1.4.1-alpha — Stronger run comparison preset
 
-Future purpose:
+Purpose:
 
-Define a small, repeatable comparison recipe for reading multiple completed matrix runs without turning it into a full proof harness.
+Define small, repeatable comparison recipes for reading multiple completed matrix runs without turning the preset itself into a proof harness.
 
-Required before code:
+Delivered:
 
-- identify which matrix profiles/candidate profiles belong in the preset;
-- decide runtime cost;
-- define what counts as comparison pressure versus breach.
+- `src/zerogate_sim/comparison_preset.py`;
+- `tests/test_comparison_preset.py`;
+- `docs/cross_logic_comparison_presets.md`;
+- console script: `zerogate-cross-logic-preset`;
+- generated local outputs:
+  - `comparison_preset_read.md`;
+  - `comparison_preset_manifest.csv`;
+  - `run_preset.ps1`.
+
+Preset families:
+
+- `quick_smoke` — wiring check;
+- `adversary_triad27` — small distinction / polarity / relation adversary comparison;
+- `wide_adversary_probe` — heavier wide243 adversary probe.
+
+Success condition:
+
+A reader can generate a repeatable run plan for stronger cross-logic comparison while preserving the boundary: a preset is a plan, not evidence.
+
+Boundary:
+
+This version writes commands. It does not run heavy matrices automatically, does not mutate the native gate, and does not claim stronger proof until generated outputs are actually produced and reviewed.
 
 
 ## v1.5-alpha — Stronger toy-field experiments
