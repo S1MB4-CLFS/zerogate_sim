@@ -1,6 +1,6 @@
 # ZeroGateSim Roadmap
 
-**Current line:** `v1.3.6-alpha` CI release-gate flow repair  
+**Current line:** `v1.4.0-alpha` cross-logic comparison report  
 **Release posture:** public research-alpha / speculative toy-field proof-of-concept
 
 **CI support boundary:** Python 3.12 is the required release/test runtime. v1.3.5 deliberately tried to re-expand Python 3.10 / 3.11 / 3.12, but GitHub Actions showed 3.10 / 3.11 are still red. v1.3.6 keeps the release gate green on 3.12 and moves older interpreters into manual compatibility probes so unresolved legacy drift does not block the main research line.
@@ -441,16 +441,43 @@ If one lane fails, feature work stops and that exact interpreter log is repaired
 
 Purpose:
 
-Aggregate fuzzy, Belnap, paraconsistent, and K3/L3 projections into one comparison report.
+Aggregate fuzzy, Belnap, paraconsistent, and K3/L3 projection closeout results across completed matrix runs.
 
-Deliverables:
+### v1.4.0-alpha — Cross-logic report foundation
+
+Delivered:
 
 - `docs/known_logic_comparison_report.md`;
-- optional CSV summaries if tests generate projection rows.
+- `src/zerogate_sim/cross_logic_report.py`;
+- `tests/test_cross_logic_report.py`;
+- console script: `zerogate-cross-logic`;
+- report outputs:
+  - `cross_logic_comparison_summary.csv`;
+  - `cross_logic_comparison_matrix_summary.csv`;
+  - `cross_logic_comparison_mirror_summary.csv`;
+  - `cross_logic_comparison_read.md`;
+  - `cross_logic_report_bundle.zip`.
 
 Success condition:
 
-A reader can see which external logic mirror is closest for which part of ZeroGateSim and what each mirror loses.
+A reader can see which external logic mirror is useful for which pressure across completed runs, where safety breaches appear, and what each mirror loses.
+
+Boundary:
+
+This line reads completed toy-field evidence. It does not run a new proof harness, mutate the native gate, or claim equivalence with any external logic system.
+
+### v1.4.1-alpha — Stronger run comparison preset
+
+Future purpose:
+
+Define a small, repeatable comparison recipe for reading multiple completed matrix runs without turning it into a full proof harness.
+
+Required before code:
+
+- identify which matrix profiles/candidate profiles belong in the preset;
+- decide runtime cost;
+- define what counts as comparison pressure versus breach.
+
 
 ## v1.5-alpha — Stronger toy-field experiments
 
