@@ -21,6 +21,7 @@ from zerogate_sim.lineage import write_lineage_outputs
 from zerogate_sim.paraconsistent_mirror import write_paraconsistent_mirror_outputs
 from zerogate_sim.reporting import ensure_dir, write_dict_rows_csv, write_evidence_bundle, write_run_outputs
 from zerogate_sim.signals import CANDIDATE_PROFILES, CandidateSpec, SimulationRun, candidate_specs, default_candidate_specs, generate_pressure_field
+from zerogate_sim.three_valued_mirror import write_three_valued_mirror_outputs
 from zerogate_sim.truth_roles import write_truth_role_outputs
 from zerogate_sim.visual_witness import write_matrix_visual_witness
 
@@ -466,7 +467,7 @@ def _write_matrix_summary(
     lines.append("")
     lines.append("## How to read the CSVs")
     lines.append("")
-    lines.append("`matrix_final_output_read.md` is the primary crown witness: raw expression is pressure, earned-one is final +1. `matrix_theory_confirmation_read.md` states whether the toy-domain software theory is confirmed in this run. `matrix_scenario_summary.csv` is the scenario-level map. `matrix_seed_summary.csv` is the seed-level trace. `matrix_candidate_summary.csv` is the pressure table for each scenario/candidate pair. `matrix_axis_summary.csv` is the trinary witness view. `matrix_glyph_map.md` is the human geometry view, `matrix_shape_read.md` is the speakable field reading, `matrix_field_atlas.png` is the one-image atlas, and `matrix_temporal_read.md` is the test-of-time witness. `matrix_lineage_read.md` reads how early/witness/late postures move instead of flattening time into final posture. `matrix_truth_role_read.md` repairs the candidate truth layer, `matrix_echo_mimic_report.md` focuses on signal echo pressure, and `matrix_echo_independence_read.md` checks whether expression survives relation-weather changes or depends only on relation-plus.")
+    lines.append("`matrix_final_output_read.md` is the primary crown witness: raw expression is pressure, earned-one is final +1. `matrix_theory_confirmation_read.md` states whether the toy-domain software theory is confirmed in this run. `matrix_scenario_summary.csv` is the scenario-level map. `matrix_seed_summary.csv` is the seed-level trace. `matrix_candidate_summary.csv` is the pressure table for each scenario/candidate pair. `matrix_axis_summary.csv` is the trinary witness view. `matrix_glyph_map.md` is the human geometry view, `matrix_shape_read.md` is the speakable field reading, `matrix_field_atlas.png` is the one-image atlas, and `matrix_temporal_read.md` is the test-of-time witness. `matrix_lineage_read.md` reads how early/witness/late postures move instead of flattening time into final posture. `matrix_truth_role_read.md` repairs the candidate truth layer, `matrix_echo_mimic_report.md` focuses on signal echo pressure, and `matrix_echo_independence_read.md` checks whether expression survives relation-weather changes or depends only on relation-plus. `matrix_fuzzy_mirror_read.md`, `matrix_belnap_mirror_read.md`, `matrix_paraconsistent_mirror_read.md`, and `matrix_three_valued_mirror_read.md` are projection mirrors for known-logic comparison; they are not native truth engines.")
     lines.append("")
     lines.append("## Witness note")
     lines.append("")
@@ -611,6 +612,7 @@ def run_matrix(
     fuzzy_mirror_paths = write_fuzzy_mirror_outputs(matrix_dir, all_gate_rows)
     belnap_mirror_paths = write_belnap_mirror_outputs(matrix_dir, gate_rows=all_gate_rows)
     paraconsistent_mirror_paths = write_paraconsistent_mirror_outputs(matrix_dir, gate_rows=all_gate_rows)
+    three_valued_mirror_paths = write_three_valued_mirror_outputs(matrix_dir, gate_rows=all_gate_rows)
     bundle = write_evidence_bundle(
         matrix_dir,
         bundle_name="matrix_bundle.zip",
@@ -651,6 +653,8 @@ def run_matrix(
         "matrix_belnap_mirror_read": belnap_mirror_paths["matrix_belnap_mirror_read"],
         "matrix_paraconsistent_mirror_summary": paraconsistent_mirror_paths["matrix_paraconsistent_mirror_summary"],
         "matrix_paraconsistent_mirror_read": paraconsistent_mirror_paths["matrix_paraconsistent_mirror_read"],
+        "matrix_three_valued_mirror_summary": three_valued_mirror_paths["matrix_three_valued_mirror_summary"],
+        "matrix_three_valued_mirror_read": three_valued_mirror_paths["matrix_three_valued_mirror_read"],
         "matrix_bundle": bundle,
     }
 

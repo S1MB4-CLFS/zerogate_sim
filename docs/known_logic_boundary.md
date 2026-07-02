@@ -57,7 +57,16 @@ The mirror order is deliberate:
 1. **Fuzzy / many-valued scoring mirror** — closest to current continuous gate scores.
 2. **Belnap evidence-state mirror** — closest to raw expression versus false-one / hold evidence.
 3. **Paraconsistent conflict-locality mirror** — tests whether conflicting pressure stays local.
-4. **Kleene / Lukasiewicz compression mirror** — tests what is lost when ZeroGateSim collapses to true / unknown / false.
+4. **Kleene / Lukasiewicz compression mirror** — tests what is lost when ZeroGateSim collapses final output to true / unknown / false.
+
+
+Allowed:
+
+> A three-valued mirror may show what is lost when final `+1 / 0 / -1` output is compressed to `true / unknown / false`.
+
+Forbidden:
+
+> ZeroGateSim is Kleene K3 or Lukasiewicz L3.
 
 ## Required loss report
 

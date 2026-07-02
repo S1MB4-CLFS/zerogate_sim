@@ -1,6 +1,6 @@
 # ZeroGateSim
 
-**Current public line:** `v1.3.2-alpha` — paraconsistent conflict-locality mirror  
+**Current public line:** `v1.3.3-alpha` — Kleene / Lukasiewicz compression and loss mirror  
 **Status:** speculative research software / toy-field proof-of-concept  
 **Working identity:** zero-gate dimensional emergence simulator  
 **Core question:** can a final trinary witness distinguish earned-one from raw expression pressure, latent overcrown, and false-one pressure under adversarial toy-field weather?
@@ -13,6 +13,13 @@ It tests a narrower software-theory claim:
 
 > Inside generated toy fields, final earned-one witness can separate earned expression from raw expression pressure, latent overcrown, and false-one pressure across distinction, polarity, and relation adversaries.
 
+
+## Runtime and CI support boundary
+
+The active CI support target is **Python 3.12**. Earlier 3.10 / 3.11 CI matrix entries produced GitHub Actions failures during the v1.3 known-logic mirror line, so the repository now tells the smaller truth: Python 3.12 is the supported release/test runtime until older-interpreter failures are deliberately diagnosed and repaired.
+
+Local development may still work on other Python versions, but release confidence comes from the supported gate.
+
 ## Version truth
 
 The active public line is repaired around this spine:
@@ -22,7 +29,7 @@ The active public line is repaired around this spine:
 - `v1.2.x-alpha` — native math witness lock, invariant tests, and scope discipline.
 - `v1.3.x-alpha` — known-logic mirrors: fuzzy scoring, Belnap evidence states, then conflict/locality and compression tests.
 
-`v1.2.4-alpha` added a Power-Up / Fail report too early. `v1.2.5-alpha` removed that active machinery and kept the useful question as documentation-only acceptance criteria. `v1.3.0-alpha` begins the known-logic mirror line with fuzzy / many-valued scoring comparison. `v1.3.1-alpha` adds the Belnap evidence-state mirror and an assistant test handoff bundle for continuation. `v1.3.2-alpha` adds the paraconsistent conflict-locality mirror.
+`v1.2.4-alpha` added a Power-Up / Fail report too early. `v1.2.5-alpha` removed that active machinery and kept the useful question as documentation-only acceptance criteria. `v1.3.0-alpha` begins the known-logic mirror line with fuzzy / many-valued scoring comparison. `v1.3.1-alpha` adds the Belnap evidence-state mirror and an assistant test handoff bundle for continuation. `v1.3.2-alpha` adds the paraconsistent conflict-locality mirror. `v1.3.3-alpha` adds the Kleene / Lukasiewicz compression and loss mirror.
 
 ## Active route
 
@@ -43,6 +50,7 @@ Read first:
 - [`docs/fuzzy_mirror.md`](docs/fuzzy_mirror.md)
 - [`docs/belnap_mirror.md`](docs/belnap_mirror.md)
 - [`docs/paraconsistent_mirror.md`](docs/paraconsistent_mirror.md)
+- [`docs/three_valued_mirror.md`](docs/three_valued_mirror.md)
 - [`docs/assistant_test_handoff.md`](docs/assistant_test_handoff.md)
 
 ## Why this exists
@@ -105,7 +113,7 @@ C_Z^i(t)=\min(D_i(t),P_i(t),R_i(t),B_i(t))
 
 Known logic work has begun with fuzzy / many-valued, Belnap evidence-state, and paraconsistent conflict-locality mirrors. This is a projection mirror, not an identity claim.
 
-The v1.3.0 fuzzy mirror compares native weakest-gate coherence against product, average, and Lukasiewicz-style continuous conjunctions. The v1.3.1 Belnap mirror projects final-output evidence into true-only, false-only, both, and neither states. The v1.3.2 paraconsistent mirror checks whether conflict pressure stays local instead of becoming arbitrary final +1. All are mirrors, not identity claims.
+The v1.3.0 fuzzy mirror compares native weakest-gate coherence against product, average, and Lukasiewicz-style continuous conjunctions. The v1.3.1 Belnap mirror projects final-output evidence into true-only, false-only, both, and neither states. The v1.3.2 paraconsistent mirror checks whether conflict pressure stays local instead of becoming arbitrary final +1. The v1.3.3 three-valued mirror compresses final output into true / unknown / false and reports what native zero information is lost. All are mirrors, not identity claims.
 
 Allowed:
 

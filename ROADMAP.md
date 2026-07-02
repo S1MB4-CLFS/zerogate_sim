@@ -1,7 +1,9 @@
 # ZeroGateSim Roadmap
 
-**Current line:** `v1.3.2-alpha` paraconsistent conflict-locality mirror  
+**Current line:** `v1.3.3-alpha` Kleene / Lukasiewicz compression and loss mirror  
 **Release posture:** public research-alpha / speculative toy-field proof-of-concept
+
+**CI support boundary:** Python 3.12 is the active supported release/test runtime. The v1.3 known-logic mirror line exposed GitHub Actions failures on 3.10 / 3.11, so support is narrowed rather than pretending those interpreters are green. Re-expanding the matrix is future repair work, not current truth.
 
 ZeroGateSim already has a first-research-alpha toy-field proof record. The next work is not to make bigger claims or add shiny machinery. The next work is to make the native math testable, then compare that native math against nearby formal logic families without pretending they are the same thing.
 
@@ -363,23 +365,36 @@ Boundary:
 
 This is not Priest logic and not a native gate. It is a projection mirror that reads conflict-locality pressure after the native final-output witness.
 
-### v1.3.3-alpha — Kleene / Lukasiewicz compression mirror
+### v1.3.3-alpha — Kleene / Lukasiewicz compression and loss mirror + CI support boundary
 
 Purpose:
 
-Test what gets lost when the native grammar compresses to three values.
+Test what gets lost when native final trinary output compresses to true / unknown / false.
+
+Delivered:
+
+- `docs/three_valued_mirror.md`;
+- `src/zerogate_sim/three_valued_mirror.py`;
+- `tests/test_three_valued_mirror.py`;
+- matrix outputs:
+  - `matrix_three_valued_mirror_summary.csv`;
+  - `matrix_three_valued_mirror_read.md`.
 
 Projection:
 
-- earned-one -> true;
-- hold -> unknown / indeterminate;
-- false-one demoted / rejection -> false.
+- final `+1` earned-one -> `T` true;
+- final `0` witness / hold / debt / wound -> `U` unknown;
+- final `-1` resist / rejection / demotion -> `F` false.
 
 Required loss report:
 
-- `0+`, `0`, and `0-` collapse into one middle value;
+- native zero-state detail collapses into one middle value;
 - temporal lineage and echo-debt information are lost;
 - raw expression vs earned-one must remain externally explained.
+
+Boundary:
+
+This is not full Kleene K3 or Lukasiewicz L3 semantics. It is a value-level compression mirror that prepares the ground for deeper truth-table comparison only if later needed.
 
 ### v1.3.4-alpha — v1.3 mirror closeout
 
