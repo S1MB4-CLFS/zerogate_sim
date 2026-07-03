@@ -1,6 +1,6 @@
 # ZeroGateSim
 
-**Current public line:** `v1.5.0-alpha` — seed-block four-gate adversary report  
+**Current public line:** `v1.5.1-alpha` — threshold sensitivity report  
 **Status:** speculative research software / toy-field proof-of-concept  
 **Working identity:** zero-gate dimensional emergence simulator  
 **Core question:** can a final trinary witness distinguish earned-one from raw expression pressure, latent overcrown, and false-one pressure under adversarial toy-field weather?
@@ -34,6 +34,8 @@ That is not a theory claim. It is an engineering boundary: older interpreters ca
 
 `v1.5.0-alpha` adds a seed-block four-gate adversary report. It reads completed distinction, polarity, relation, and return matrix runs and reports earned-one, raw false-one pressure, latent pressure, relation/return debt, final false-one crowns, and mirror safety breaches in one evidence table.
 
+`v1.5.1-alpha` adds a threshold sensitivity report. Matrix runs can now record gate/strength threshold overrides, and completed seed-block reports can be compared across threshold variants to expose stable, sensitive, or breached operating regions.
+
 Generated comparison preset scripts now check the expected cross-logic report path before building the handoff and print the exact `assistant_test_handoff.zip` path to upload.
 
 ## Version truth
@@ -47,7 +49,7 @@ The active public line is repaired around this spine:
 - `v1.4.x-alpha` — cross-logic comparison reports across completed matrix runs.
 - `v1.5.x-alpha` — stronger controlled synthetic-field experiments and seed-block reporting.
 
-`v1.2.4-alpha` added a Power-Up / Fail report too early. `v1.2.5-alpha` removed that active machinery and kept the useful question as documentation-only acceptance criteria. `v1.3.0-alpha` begins the known-logic mirror line with fuzzy / many-valued scoring comparison. `v1.3.1-alpha` adds the Belnap evidence-state mirror and an assistant test handoff bundle for continuation. `v1.3.2-alpha` adds the paraconsistent conflict-locality mirror. `v1.3.3-alpha` adds the Kleene / Lukasiewicz compression and loss mirror. `v1.3.4-alpha` closes the first known-logic mirror line with one report that states what each mirror preserves, exposes, and collapses. `v1.3.5-alpha` attempted to re-expand Python 3.10 / 3.11 / 3.12 support, but CI showed 3.10 / 3.11 were still red. `v1.3.6-alpha` restores a clean 3.12 release gate and keeps 3.10 / 3.11 as manual compatibility probes so feature work is not held hostage by unresolved legacy-interpreter drift. `v1.4.0-alpha` adds the cross-logic comparison report. `v1.4.1-alpha` adds comparison presets so stronger runs can be planned and repeated without turning the preset itself into evidence. `v1.4.2-alpha` repairs the truth layer for handoffs and preset scripts so missing requested result files fail loudly and the exact upload ZIP path is printed. `v1.4.3-alpha` repairs same-named include files from different runs so source-relative paths remain separate evidence files. `v1.4.4-alpha` locks four-gate adversary coverage for distinction, polarity, relation, and return. `v1.4.5-alpha` captures the v1.2-to-v1.4.4 learning arc as a paper-two source note and sets the next experimental criteria for v1.5. `v1.5.0-alpha` starts stronger controlled synthetic-field experiments with a seed-block four-gate adversary report.
+`v1.2.4-alpha` added a Power-Up / Fail report too early. `v1.2.5-alpha` removed that active machinery and kept the useful question as documentation-only acceptance criteria. `v1.3.0-alpha` begins the known-logic mirror line with fuzzy / many-valued scoring comparison. `v1.3.1-alpha` adds the Belnap evidence-state mirror and an assistant test handoff bundle for continuation. `v1.3.2-alpha` adds the paraconsistent conflict-locality mirror. `v1.3.3-alpha` adds the Kleene / Lukasiewicz compression and loss mirror. `v1.3.4-alpha` closes the first known-logic mirror line with one report that states what each mirror preserves, exposes, and collapses. `v1.3.5-alpha` attempted to re-expand Python 3.10 / 3.11 / 3.12 support, but CI showed 3.10 / 3.11 were still red. `v1.3.6-alpha` restores a clean 3.12 release gate and keeps 3.10 / 3.11 as manual compatibility probes so feature work is not held hostage by unresolved legacy-interpreter drift. `v1.4.0-alpha` adds the cross-logic comparison report. `v1.4.1-alpha` adds comparison presets so stronger runs can be planned and repeated without turning the preset itself into evidence. `v1.4.2-alpha` repairs the truth layer for handoffs and preset scripts so missing requested result files fail loudly and the exact upload ZIP path is printed. `v1.4.3-alpha` repairs same-named include files from different runs so source-relative paths remain separate evidence files. `v1.4.4-alpha` locks four-gate adversary coverage for distinction, polarity, relation, and return. `v1.4.5-alpha` captures the v1.2-to-v1.4.4 learning arc as a paper-two source note and sets the next experimental criteria for v1.5. `v1.5.0-alpha` starts stronger controlled synthetic-field experiments with a seed-block four-gate adversary report. `v1.5.1-alpha` adds threshold sensitivity reporting so the result can be tested for brittleness before ablation work begins.
 
 ## Active route
 
@@ -75,6 +77,7 @@ Read first:
 - [`docs/known_logic_comparison_report.md`](docs/known_logic_comparison_report.md)
 - [`docs/reports/v1_2_to_v1_4_4_learning_report.md`](docs/reports/v1_2_to_v1_4_4_learning_report.md)
 - [`docs/seed_block_four_gate_report.md`](docs/seed_block_four_gate_report.md)
+- [`docs/threshold_sensitivity_report.md`](docs/threshold_sensitivity_report.md)
 
 ## Why this exists
 
@@ -252,6 +255,17 @@ $env:PYTHONPATH = (Join-Path (Get-Location) "src")
 ```
 
 It writes `seed_block_four_gate_summary.csv`, `seed_block_four_gate_mirror_summary.csv`, `seed_block_four_gate_read.md`, and `seed_block_report_bundle.zip`. The report reads evidence; it does not run a new proof harness or claim physics.
+
+### Threshold sensitivity report
+
+`v1.5.1-alpha` adds a threshold sensitivity reader for completed seed-block reports:
+
+```powershell
+$env:PYTHONPATH = (Join-Path (Get-Location) "src")
+& $P -m zerogate_sim.threshold_sensitivity --variant gate_050=runs\seed_block_gate_050 --variant gate_055=runs\seed_block_gate_055 --out runs\threshold_sensitivity_report
+```
+
+It writes `threshold_sensitivity_summary.csv`, `threshold_sensitivity_gate_summary.csv`, `threshold_sensitivity_mirror_summary.csv`, `threshold_sensitivity_read.md`, and `threshold_sensitivity_bundle.zip`. The report reads completed evidence; it does not change the native gate law or claim physics.
 
 ## First-research-alpha result
 

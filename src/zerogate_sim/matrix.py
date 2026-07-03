@@ -225,6 +225,8 @@ def build_parser() -> argparse.ArgumentParser:
     parser.add_argument("--count", type=int, default=9, help="Number of seeds per scenario. Default 9 keeps the first matrix at 27*9=243 runs.")
     parser.add_argument("--steps", type=int, default=600, help="Number of simulation steps per seed.")
     parser.add_argument("--dt", type=float, default=0.05, help="Time/order step size.")
+    parser.add_argument("--gate-threshold", type=float, default=None, help="Override the zero-gate threshold for sensitivity runs. Default uses scenario settings.")
+    parser.add_argument("--strength-threshold", type=float, default=None, help="Override the strength threshold for sensitivity runs. Default uses scenario settings.")
     parser.add_argument("--out", type=Path, default=None, help="Matrix output directory.")
     parser.add_argument("--plots", action="store_true", help="Generate PNG plots for every matrix seed. Default is off.")
     return parser
@@ -407,6 +409,8 @@ def _write_matrix_summary(
     scenarios: list[TrinaryScenario],
     scenario_rows: list[dict[str, object]],
     axis_rows: list[dict[str, object]],
+    gate_threshold: float | None = None,
+    strength_threshold: float | None = None,
 ) -> None:
     total_runs = len(scenarios) * count
     false_pos = sum(int(row["false_positive_runs"]) for row in scenario_rows)
@@ -426,6 +430,10 @@ def _write_matrix_summary(
     lines.append(f"Candidate profile: `{candidate_profile}`")
     lines.append(f"Seeds per scenario: `{start_seed}` through `{start_seed + count - 1}`")
     lines.append(f"Total runs: `{total_runs}`")
+    if gate_threshold is not None:
+        lines.append(f"Gate threshold override: `{gate_threshold:.3f}`")
+    if strength_threshold is not None:
+        lines.append(f"Strength threshold override: `{strength_threshold:.3f}`")
     lines.append("")
     lines.append("## Claim boundary")
     lines.append("")
@@ -493,9 +501,15 @@ def run_matrix(
     dt: float = 0.05,
     output_dir: Path | None = None,
     make_plots: bool = False,
+    gate_threshold: float | None = None,
+    strength_threshold: float | None = None,
 ) -> dict[str, Path]:
     if count <= 0:
         raise ValueError("count must be positive")
+    if gate_threshold is not None and not (0.0 <= gate_threshold <= 1.0):
+        raise ValueError("gate_threshold must be between 0 and 1")
+    if strength_threshold is not None and not (0.0 <= strength_threshold <= 1.0):
+        raise ValueError("strength_threshold must be between 0 and 1")
 
     scenarios = build_scenarios(profile)
     matrix_dir = ensure_dir(output_dir or Path(f"runs/matrix_{profile}_{start_seed}_{start_seed + count - 1}"))
@@ -509,6 +523,8 @@ def run_matrix(
         if scenario_index == 0 or (scenario_index + 1) % progress_step == 0 or scenario_index == len(scenarios) - 1:
             print(f"[matrix] scenario {scenario_index + 1}/{len(scenarios)}: {scenario.name}", flush=True)
         specs = apply_spec_pressure(candidate_specs(candidate_profile), scenario)
+        effective_gate_threshold = scenario.gate_threshold if gate_threshold is None else float(gate_threshold)
+        effective_strength_threshold = scenario.strength_threshold if strength_threshold is None else float(strength_threshold)
         for seed in range(start_seed, start_seed + count):
             run_dir = matrix_dir / scenario.name / f"seed_{seed}"
             config = SimulationConfig(
@@ -516,8 +532,8 @@ def run_matrix(
                 n_steps=steps,
                 dt=dt * scenario.dt_factor,
                 noise_floor=scenario.noise_floor,
-                gate_threshold=scenario.gate_threshold,
-                strength_threshold=scenario.strength_threshold,
+                gate_threshold=effective_gate_threshold,
+                strength_threshold=effective_strength_threshold,
                 output_dir=run_dir,
             )
             run = generate_pressure_field(seed=seed, n_steps=steps, dt=dt * scenario.dt_factor, specs=specs)
@@ -539,11 +555,11 @@ def run_matrix(
             rows = evaluate_run(
                 run,
                 noise_floor=scenario.noise_floor,
-                gate_threshold=scenario.gate_threshold,
-                strength_threshold=scenario.strength_threshold,
+                gate_threshold=effective_gate_threshold,
+                strength_threshold=effective_strength_threshold,
             )
-            comparisons_designed = compare_models(rows, threshold=scenario.gate_threshold, truth_field="designed_stable", seed=seed)
-            comparisons_observed = compare_models(rows, threshold=scenario.gate_threshold, truth_field="observed_stable", seed=seed + 1)
+            comparisons_designed = compare_models(rows, threshold=effective_gate_threshold, truth_field="designed_stable", seed=seed)
+            comparisons_observed = compare_models(rows, threshold=effective_gate_threshold, truth_field="observed_stable", seed=seed + 1)
             write_run_outputs(
                 run=run,
                 config=config,
@@ -573,8 +589,8 @@ def run_matrix(
                     perturbation_axis=scenario.perturbation_axis,
                     time_axis=scenario.time_axis,
                     noise_floor=scenario.noise_floor,
-                    gate_threshold=scenario.gate_threshold,
-                    strength_threshold=scenario.strength_threshold,
+                    gate_threshold=effective_gate_threshold,
+                    strength_threshold=effective_strength_threshold,
                 )
             )
             synthetic_seed = scenario_index * 1_000_000 + seed
@@ -602,6 +618,8 @@ def run_matrix(
         scenarios=scenarios,
         scenario_rows=scenario_rows,
         axis_rows=axis_rows,
+        gate_threshold=gate_threshold,
+        strength_threshold=strength_threshold,
     )
     visual_paths = write_matrix_visual_witness(matrix_dir, scenario_rows, profile=profile)
     temporal_paths = write_temporal_outputs(matrix_dir, temporal_rows)
@@ -610,11 +628,12 @@ def run_matrix(
     echo_independence_paths = write_echo_independence_outputs(matrix_dir, all_gate_rows)
     earned_one_paths = write_earned_one_outputs(matrix_dir, all_gate_rows)
     final_output_paths = write_final_output_outputs(matrix_dir, all_gate_rows)
-    fuzzy_mirror_paths = write_fuzzy_mirror_outputs(matrix_dir, all_gate_rows)
+    mirror_threshold = 0.55 if gate_threshold is None else float(gate_threshold)
+    fuzzy_mirror_paths = write_fuzzy_mirror_outputs(matrix_dir, all_gate_rows, threshold=mirror_threshold)
     belnap_mirror_paths = write_belnap_mirror_outputs(matrix_dir, gate_rows=all_gate_rows)
     paraconsistent_mirror_paths = write_paraconsistent_mirror_outputs(matrix_dir, gate_rows=all_gate_rows)
     three_valued_mirror_paths = write_three_valued_mirror_outputs(matrix_dir, gate_rows=all_gate_rows)
-    known_logic_closeout_paths = write_known_logic_closeout_outputs(matrix_dir, all_gate_rows)
+    known_logic_closeout_paths = write_known_logic_closeout_outputs(matrix_dir, all_gate_rows, threshold=mirror_threshold)
     bundle = write_evidence_bundle(
         matrix_dir,
         bundle_name="matrix_bundle.zip",
@@ -674,6 +693,8 @@ def main(argv: list[str] | None = None) -> int:
         dt=args.dt,
         output_dir=args.out,
         make_plots=args.plots,
+        gate_threshold=args.gate_threshold,
+        strength_threshold=args.strength_threshold,
     )
     print("ZeroGateSim trinary matrix complete.")
     for name, path in paths.items():

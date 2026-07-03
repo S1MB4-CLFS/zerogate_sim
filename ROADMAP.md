@@ -1,6 +1,6 @@
 # ZeroGateSim Roadmap
 
-**Current line:** `v1.5.0-alpha` seed-block four-gate adversary report  
+**Current line:** `v1.5.1-alpha` threshold sensitivity report  
 **Release posture:** public research-alpha / speculative toy-field proof-of-concept
 
 **CI support boundary:** Python 3.12 is the required release/test runtime. v1.3.5 deliberately tried to re-expand Python 3.10 / 3.11 / 3.12, but GitHub Actions showed 3.10 / 3.11 are still red. v1.3.6 keeps the release gate green on 3.12 and moves older interpreters into manual compatibility probes so unresolved legacy drift does not block the main research line.
@@ -616,11 +616,31 @@ The report reads completed controlled synthetic-field evidence. It does not muta
 
 ### v1.5.1-alpha — Threshold sensitivity report
 
-Sweep gate and strength thresholds to test whether the result is stable or brittle.
+Purpose:
+
+Compare completed seed-block four-gate reports across gate and/or strength threshold variants to test whether the result is stable or brittle.
+
+Delivered:
+
+- optional matrix threshold overrides: `--gate-threshold` and `--strength-threshold`;
+- `src/zerogate_sim/threshold_sensitivity.py`;
+- `tests/test_threshold_sensitivity.py`;
+- `docs/threshold_sensitivity_report.md`;
+- console script: `zerogate-threshold-sensitivity`;
+- report outputs:
+  - `threshold_sensitivity_summary.csv`;
+  - `threshold_sensitivity_gate_summary.csv`;
+  - `threshold_sensitivity_mirror_summary.csv`;
+  - `threshold_sensitivity_read.md`;
+  - `threshold_sensitivity_bundle.zip`.
 
 Success condition:
 
-The report identifies safe operating regions, brittle thresholds, and any threshold band where false-one pressure becomes dangerous.
+The report identifies stable operating bands, sensitive-but-nonbreaching movement, and any threshold variant where final false-one crowns or mirror safety breaches appear.
+
+Boundary:
+
+This report reads completed threshold-variant evidence. It does not change the native gate law, solve role-blind detection, or claim physical dimensional genesis.
 
 ### v1.5.2-alpha — Witness ablation report
 
