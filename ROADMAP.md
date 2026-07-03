@@ -1,6 +1,6 @@
 # ZeroGateSim Roadmap
 
-**Current line:** `v1.4.5-alpha` v1.2-to-v1.4.4 learning report  
+**Current line:** `v1.5.0-alpha` seed-block four-gate adversary report  
 **Release posture:** public research-alpha / speculative toy-field proof-of-concept
 
 **CI support boundary:** Python 3.12 is the required release/test runtime. v1.3.5 deliberately tried to re-expand Python 3.10 / 3.11 / 3.12, but GitHub Actions showed 3.10 / 3.11 are still red. v1.3.6 keeps the release gate green on 3.12 and moves older interpreters into manual compatibility probes so unresolved legacy drift does not block the main research line.
@@ -590,11 +590,29 @@ Move from single readiness runs toward seed-block evidence, sensitivity analysis
 
 ### v1.5.0-alpha — Seed-block four-gate adversary report
 
-Run distinction, polarity, relation, and return adversary corpora across controlled seed blocks and produce one report comparing earned-one, raw false-one pressure, latent/return debt, final false-one crowns, and mirror safety breaches.
+Purpose:
+
+Read completed distinction, polarity, relation, and return adversary matrix runs as one controlled seed-block report.
+
+Delivered:
+
+- `src/zerogate_sim/seed_block_report.py`;
+- `tests/test_seed_block_report.py`;
+- `docs/seed_block_four_gate_report.md`;
+- console script: `zerogate-seed-block-report`;
+- report outputs:
+  - `seed_block_four_gate_summary.csv`;
+  - `seed_block_four_gate_mirror_summary.csv`;
+  - `seed_block_four_gate_read.md`;
+  - `seed_block_report_bundle.zip`.
 
 Success condition:
 
 The four-gate adversary report preserves pressure visibility while keeping final false-one crowns at zero, or it reports the exact breach without hiding it.
+
+Boundary:
+
+The report reads completed controlled synthetic-field evidence. It does not mutate the native gate law, run a new proof harness by itself, solve role-blind detection, or claim physical dimensional genesis.
 
 ### v1.5.1-alpha — Threshold sensitivity report
 
