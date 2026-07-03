@@ -1,6 +1,6 @@
 # ZeroGateSim Roadmap
 
-**Current line:** `v1.5.1-alpha` threshold sensitivity report  
+**Current line:** `v1.5.2-alpha` witness ablation report  
 **Release posture:** public research-alpha / speculative toy-field proof-of-concept
 
 **CI support boundary:** Python 3.12 is the required release/test runtime. v1.3.5 deliberately tried to re-expand Python 3.10 / 3.11 / 3.12, but GitHub Actions showed 3.10 / 3.11 are still red. v1.3.6 keeps the release gate green on 3.12 and moves older interpreters into manual compatibility probes so unresolved legacy drift does not block the main research line.
@@ -644,11 +644,37 @@ This report reads completed threshold-variant evidence. It does not change the n
 
 ### v1.5.2-alpha — Witness ablation report
 
-Run controlled ablations that weaken or remove selected witness layers such as return, lineage, echo-independence, role witness, or the weakest-gate minimum.
+Purpose:
+
+Run post-hoc witness ablation accounting over completed four-gate matrix outputs before heavier rerun-style ablations are attempted. This version does not mutate the native gate law. It asks what would be promoted or hidden if selected final witness layers were disabled in the report layer.
+
+Delivered:
+
+- `src/zerogate_sim/witness_ablation_report.py`;
+- `tests/test_witness_ablation_report.py`;
+- `docs/witness_ablation_report.md`;
+- console script: `zerogate-witness-ablation`;
+- report outputs:
+  - `witness_ablation_summary.csv`;
+  - `witness_ablation_gate_summary.csv`;
+  - `witness_ablation_read.md`;
+  - `witness_ablation_bundle.zip`.
+
+Ablation variants:
+
+- `control` — recorded native final witness;
+- `raw_as_final` — raw expression is treated as final +1;
+- `no_false_one_demotion` — trap raw expression is allowed to crown;
+- `no_latent_hold` — latent/probe overcrown is promoted;
+- `no_echo_independence` — relation/echo debt is promoted.
 
 Success condition:
 
-Critical witness layers should show measurable consequence when removed. If a layer can be removed without effect, it must be treated as unsupported until redesigned.
+Critical witness layers should show measurable consequence when removed. If an ablation promotes false-one crowns or hides pressure, the report must expose it. If a layer can be removed without effect, it must be treated as unsupported until stronger rerun-style ablation is designed.
+
+Boundary:
+
+This is a post-hoc accounting ablation over completed controlled synthetic-field outputs. It does not rerun the simulator with altered mechanics, solve role-blind detection, or claim physical dimensional genesis.
 
 ### v1.5.3-alpha — Controlled synthetic-field language checkpoint
 
