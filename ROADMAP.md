@@ -1,6 +1,6 @@
 # ZeroGateSim Roadmap
 
-**Current line:** `v1.4.4-alpha` four-gate adversary coverage lock  
+**Current line:** `v1.4.5-alpha` v1.2-to-v1.4.4 learning report  
 **Release posture:** public research-alpha / speculative toy-field proof-of-concept
 
 **CI support boundary:** Python 3.12 is the required release/test runtime. v1.3.5 deliberately tried to re-expand Python 3.10 / 3.11 / 3.12, but GitHub Actions showed 3.10 / 3.11 are still red. v1.3.6 keeps the release gate green on 3.12 and moves older interpreters into manual compatibility probes so unresolved legacy drift does not block the main research line.
@@ -562,23 +562,63 @@ Boundary:
 
 This is coverage repair for run planning. It does not change the native gate law, the mirror layer, or the final-output claim boundary.
 
-## v1.5-alpha — Stronger toy-field experiments
+### v1.4.5-alpha — v1.2-to-v1.4.4 learning report
 
 Purpose:
 
-Move from current designed adversarial roles toward stronger tests without pretending role-blind discovery is solved.
+Capture the research arc from native math lock through four-gate adversary coverage as professional paper-two source material before moving into stronger experiments.
 
-Possible work:
+Delivered:
 
-- independent oracle signal families;
-- stricter adversarial corpora;
-- threshold sensitivity;
-- ablation: remove return / lineage / independence / role witness;
-- seed block confidence summaries.
+- `docs/reports/v1_2_to_v1_4_4_learning_report.md`;
+- report boundary language for what the line established and what remains unproven;
+- next-experiment criteria for v1.5 seed-block, sensitivity, and ablation work.
 
 Success condition:
 
-The engine becomes harder to fool under tests that were not shaped only around its own favorite examples.
+The repo has one concise, citable internal note explaining what v1.2-v1.4.4 established without overstating the proof record or turning development history into an apology log.
+
+Boundary:
+
+This is a research-record note. It does not change the native gate law, rerun evidence, or claim physics.
+
+## v1.5-alpha — Stronger controlled synthetic-field experiments
+
+Purpose:
+
+Move from single readiness runs toward seed-block evidence, sensitivity analysis, and mechanism-necessity tests without pretending role-blind discovery is solved.
+
+### v1.5.0-alpha — Seed-block four-gate adversary report
+
+Run distinction, polarity, relation, and return adversary corpora across controlled seed blocks and produce one report comparing earned-one, raw false-one pressure, latent/return debt, final false-one crowns, and mirror safety breaches.
+
+Success condition:
+
+The four-gate adversary report preserves pressure visibility while keeping final false-one crowns at zero, or it reports the exact breach without hiding it.
+
+### v1.5.1-alpha — Threshold sensitivity report
+
+Sweep gate and strength thresholds to test whether the result is stable or brittle.
+
+Success condition:
+
+The report identifies safe operating regions, brittle thresholds, and any threshold band where false-one pressure becomes dangerous.
+
+### v1.5.2-alpha — Witness ablation report
+
+Run controlled ablations that weaken or remove selected witness layers such as return, lineage, echo-independence, role witness, or the weakest-gate minimum.
+
+Success condition:
+
+Critical witness layers should show measurable consequence when removed. If a layer can be removed without effect, it must be treated as unsupported until redesigned.
+
+### v1.5.3-alpha — Controlled synthetic-field language checkpoint
+
+Decide whether the evidence supports shifting some repo language from `toy field` to `controlled synthetic field` while preserving the claim boundary.
+
+Success condition:
+
+The language shift is allowed only after seed-block, sensitivity, and ablation evidence exist. No physics claim is implied.
 
 ## v1.6-alpha — Role-blind shadow design
 

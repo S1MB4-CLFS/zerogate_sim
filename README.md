@@ -1,6 +1,6 @@
 # ZeroGateSim
 
-**Current public line:** `v1.4.4-alpha` — four-gate adversary coverage lock  
+**Current public line:** `v1.4.5-alpha` — v1.2-to-v1.4.4 learning report  
 **Status:** speculative research software / toy-field proof-of-concept  
 **Working identity:** zero-gate dimensional emergence simulator  
 **Core question:** can a final trinary witness distinguish earned-one from raw expression pressure, latent overcrown, and false-one pressure under adversarial toy-field weather?
@@ -30,6 +30,8 @@ That is not a theory claim. It is an engineering boundary: older interpreters ca
 
 `v1.4.4-alpha` aligns adversary presets with the native four-gate cycle. Dedicated adversary presets now cover distinction, polarity, relation, and observed return, and tests lock that coverage before evidence runs are treated as complete.
 
+`v1.4.5-alpha` adds a professional learning report for the v1.2-to-v1.4.4 line. It records what the line established, what remains bounded, and what evidence is needed before the language can move from toy-field proof-of-concept toward controlled synthetic-field benchmark.
+
 Generated comparison preset scripts now check the expected cross-logic report path before building the handoff and print the exact `assistant_test_handoff.zip` path to upload.
 
 ## Version truth
@@ -42,7 +44,7 @@ The active public line is repaired around this spine:
 - `v1.3.x-alpha` — known-logic mirrors: fuzzy scoring, Belnap evidence states, conflict locality, compression tests, and closeout.
 - `v1.4.x-alpha` — cross-logic comparison reports across completed matrix runs.
 
-`v1.2.4-alpha` added a Power-Up / Fail report too early. `v1.2.5-alpha` removed that active machinery and kept the useful question as documentation-only acceptance criteria. `v1.3.0-alpha` begins the known-logic mirror line with fuzzy / many-valued scoring comparison. `v1.3.1-alpha` adds the Belnap evidence-state mirror and an assistant test handoff bundle for continuation. `v1.3.2-alpha` adds the paraconsistent conflict-locality mirror. `v1.3.3-alpha` adds the Kleene / Lukasiewicz compression and loss mirror. `v1.3.4-alpha` closes the first known-logic mirror line with one report that states what each mirror preserves, exposes, and collapses. `v1.3.5-alpha` attempted to re-expand Python 3.10 / 3.11 / 3.12 support, but CI showed 3.10 / 3.11 were still red. `v1.3.6-alpha` restores a clean 3.12 release gate and keeps 3.10 / 3.11 as manual compatibility probes so feature work is not held hostage by unresolved legacy-interpreter drift. `v1.4.0-alpha` adds the cross-logic comparison report. `v1.4.1-alpha` adds comparison presets so stronger runs can be planned and repeated without turning the preset itself into evidence. `v1.4.2-alpha` repairs the truth layer for handoffs and preset scripts so missing requested result files fail loudly and the exact upload ZIP path is printed. `v1.4.3-alpha` repairs same-named include files from different runs so source-relative paths remain separate evidence files. `v1.4.4-alpha` locks four-gate adversary coverage for distinction, polarity, relation, and return.
+`v1.2.4-alpha` added a Power-Up / Fail report too early. `v1.2.5-alpha` removed that active machinery and kept the useful question as documentation-only acceptance criteria. `v1.3.0-alpha` begins the known-logic mirror line with fuzzy / many-valued scoring comparison. `v1.3.1-alpha` adds the Belnap evidence-state mirror and an assistant test handoff bundle for continuation. `v1.3.2-alpha` adds the paraconsistent conflict-locality mirror. `v1.3.3-alpha` adds the Kleene / Lukasiewicz compression and loss mirror. `v1.3.4-alpha` closes the first known-logic mirror line with one report that states what each mirror preserves, exposes, and collapses. `v1.3.5-alpha` attempted to re-expand Python 3.10 / 3.11 / 3.12 support, but CI showed 3.10 / 3.11 were still red. `v1.3.6-alpha` restores a clean 3.12 release gate and keeps 3.10 / 3.11 as manual compatibility probes so feature work is not held hostage by unresolved legacy-interpreter drift. `v1.4.0-alpha` adds the cross-logic comparison report. `v1.4.1-alpha` adds comparison presets so stronger runs can be planned and repeated without turning the preset itself into evidence. `v1.4.2-alpha` repairs the truth layer for handoffs and preset scripts so missing requested result files fail loudly and the exact upload ZIP path is printed. `v1.4.3-alpha` repairs same-named include files from different runs so source-relative paths remain separate evidence files. `v1.4.4-alpha` locks four-gate adversary coverage for distinction, polarity, relation, and return. `v1.4.5-alpha` captures the v1.2-to-v1.4.4 learning arc as a paper-two source note and sets the next experimental criteria for v1.5.
 
 ## Active route
 
@@ -68,6 +70,7 @@ Read first:
 - [`docs/assistant_test_handoff.md`](docs/assistant_test_handoff.md)
 - [`docs/cross_logic_comparison_presets.md`](docs/cross_logic_comparison_presets.md)
 - [`docs/known_logic_comparison_report.md`](docs/known_logic_comparison_report.md)
+- [`docs/reports/v1_2_to_v1_4_4_learning_report.md`](docs/reports/v1_2_to_v1_4_4_learning_report.md)
 
 ## Why this exists
 
