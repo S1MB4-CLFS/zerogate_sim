@@ -1,9 +1,11 @@
 # ZeroGateSim Roadmap
 
-**Current line:** `v1.5.3-alpha` controlled synthetic-field language boundary  
+**Current line:** `v1.5.4-alpha` wide243 historical evidence intake  
 **Release posture:** public research-alpha / controlled synthetic-field experiment line
 
 **Runtime support boundary:** Python 3.12 is the required release/test runtime. Details live in [`docs/runtime_ci_support.md`](docs/runtime_ci_support.md).
+
+**Language boundary:** `v1.5.3-alpha` established the controlled synthetic-field language boundary; `v1.5.4-alpha` preserves the historical `wide243` proof floor without changing that boundary.
 
 ZeroGateSim already has a first-research-alpha generated toy-field proof record. The v1.5 line uses controlled synthetic-field language only for explicit, seeded, adversarial, bounded experimental reports. The next work is not bigger claims; it is stronger evidence with clean falsifiers.
 
@@ -688,6 +690,50 @@ Trinary weather ladder:
 Boundary:
 
 This language checkpoint does not change the native gate law, rerun evidence, solve role-blind detection, or claim physical dimensional genesis.
+
+### v1.5.4-alpha — Wide243 historical evidence intake
+
+Purpose:
+
+Record the uploaded original and fresh-seed `wide243` proof archives as historical evidence intake before fresh heavy controlled reruns are attempted.
+
+Delivered:
+
+- `docs/reports/wide243_historical_evidence_intake.md`;
+- `docs/release_notes/v1_5_4_alpha.md`;
+- text boundary test for historical evidence language.
+
+Evidence sources:
+
+- `proof_wide243_0_8_v033` — original first-research-alpha archive;
+- `proof_wide243_9_17_repro` — fresh-seed reproduction archive.
+
+Combined historical intake:
+
+- `13,122` seeded runs;
+- `22,131` final earned-one events;
+- `2,388` raw false-one pressures detected and demoted;
+- `2,442` latent overcrown pressures held in zero;
+- `0` final false-one crowns;
+- `0` trap final crowns.
+
+Trinary weather ladder:
+
+- `triad27 = 3^3` varies noise, relation, and expansion pressure;
+- `deep81 = 3^4` adds perturbation / late-shock pressure;
+- `wide243 = 3^5` adds temporal-depth / time-axis pressure.
+
+Boundary:
+
+This is historical evidence intake. The uploaded `wide243` proof archives remain three-corpus first-research-alpha proof records. They evaluate return internally through the native `C_Z = min(D, P, R, B)` gate law, but they are not the same as the newer four-gate adversary preset line with a dedicated return-adversary corpus.
+
+Next evidence order:
+
+- use `v1.5.4` to preserve the old `wide243` proof floor;
+- run a fresh non-smoke threshold sweep before spending heavy compute;
+- run fresh controlled `deep81` four-gate evidence as the perturbation bridge;
+- run fresh controlled `wide243` four-gate evidence after `deep81` is clean or if disk/time are deliberately allocated;
+- use those outputs to inform `v1.6` role-blind shadow design.
 
 ## v1.6-alpha — Role-blind shadow design
 

@@ -1,6 +1,6 @@
 # ZeroGateSim
 
-**Current public line:** `v1.5.3-alpha` — controlled synthetic-field language boundary  
+**Current public line:** `v1.5.4-alpha` — wide243 historical evidence intake  
 **Status:** speculative research software / controlled synthetic-field experiment line  
 **Working identity:** zero-gate dimensional emergence simulator  
 **Core question:** can a final trinary witness distinguish earned-one from raw expression pressure, latent overcrown, relation/return debt, and false-one pressure under controlled synthetic-field adversarial weather?
@@ -36,6 +36,8 @@ The required release/test runtime is **Python 3.12**. Runtime history and older-
 
 `v1.5.3-alpha` creates the controlled synthetic-field language boundary. It keeps `toy field` for the historical first-research-alpha proof record while allowing `controlled synthetic field` for the v1.5 experimental layer. It also moves runtime-history detail out of README/ROADMAP and into the runtime support note.
 
+`v1.5.4-alpha` adds a historical `wide243` evidence-intake report. It records the uploaded original and fresh-seed `wide243` proof archives, explains `triad27` / `deep81` / `wide243`, and states when fresh controlled `deep81` / `wide243` four-gate reruns should happen.
+
 Generated comparison preset scripts now check the expected cross-logic report path before building the handoff and print the exact `assistant_test_handoff.zip` path to upload.
 
 ## Version truth
@@ -57,6 +59,7 @@ Recent checkpoints:
 - `v1.5.1-alpha` adds threshold sensitivity reporting.
 - `v1.5.2-alpha` adds post-hoc witness ablation reporting.
 - `v1.5.3-alpha` defines the controlled synthetic-field language boundary and moves runtime-history detail into `docs/runtime_ci_support.md`.
+- `v1.5.4-alpha` adds historical `wide243` evidence intake and fresh `deep81` / `wide243` run-order guidance.
 
 Detailed release notes live in [`docs/release_notes/`](docs/release_notes/).
 
@@ -89,6 +92,7 @@ Read first:
 - [`docs/threshold_sensitivity_report.md`](docs/threshold_sensitivity_report.md)
 - [`docs/witness_ablation_report.md`](docs/witness_ablation_report.md)
 - [`docs/controlled_synthetic_field_language.md`](docs/controlled_synthetic_field_language.md)
+- [`docs/reports/wide243_historical_evidence_intake.md`](docs/reports/wide243_historical_evidence_intake.md)
 
 ## Why this exists
 
@@ -289,6 +293,22 @@ $env:PYTHONPATH = (Join-Path (Get-Location) "src")
 ```
 
 It writes `witness_ablation_summary.csv`, `witness_ablation_gate_summary.csv`, `witness_ablation_read.md`, and `witness_ablation_bundle.zip`. The report does not mutate the native gate law. It asks what would be promoted or hidden if final witness accounting layers were disabled.
+
+### Wide243 historical evidence intake
+
+`v1.5.4-alpha` records the uploaded original and fresh-seed `wide243` proof archives as historical evidence intake:
+
+```text
+13,122 seeded runs
+22,131 final earned-one events
+2,388 raw false-one pressures detected and demoted
+2,442 latent overcrown pressures held in zero
+0 final false-one crowns
+```
+
+The report keeps the first-research-alpha archives in the generated toy-field proof-floor lane while explaining how `wide243 = 3^5` adds temporal-depth / time-axis pressure. It also gives the order for fresh controlled `deep81` and `wide243` four-gate reruns.
+
+Read it here: [`docs/reports/wide243_historical_evidence_intake.md`](docs/reports/wide243_historical_evidence_intake.md).
 
 ## First-research-alpha result
 
