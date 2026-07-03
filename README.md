@@ -1,26 +1,22 @@
 # ZeroGateSim
 
-**Current public line:** `v1.5.2-alpha` — witness ablation report  
-**Status:** speculative research software / toy-field proof-of-concept  
+**Current public line:** `v1.5.3-alpha` — controlled synthetic-field language boundary  
+**Status:** speculative research software / controlled synthetic-field experiment line  
 **Working identity:** zero-gate dimensional emergence simulator  
-**Core question:** can a final trinary witness distinguish earned-one from raw expression pressure, latent overcrown, and false-one pressure under adversarial toy-field weather?
+**Core question:** can a final trinary witness distinguish earned-one from raw expression pressure, latent overcrown, relation/return debt, and false-one pressure under controlled synthetic-field adversarial weather?
 
-ZeroGateSim is a small research software project for testing a speculative theory of dimensional emergence.
+ZeroGateSim is a small research software project for testing a speculative theory of dimensional emergence. The historical first-research-alpha proof record remains a generated toy-field proof-of-concept; the v1.5 line uses controlled synthetic-field language for explicit, seeded, adversarial, bounded experiments.
 
 It does **not** prove cosmology, physical dimensions, or that reality itself is trinary.
 
-It tests a narrower software-theory claim:
+It tests a narrower software-theory claim in the active v1.5 line:
 
-> Inside generated toy fields, final earned-one witness can separate earned expression from raw expression pressure, latent overcrown, relation/return debt, and false-one pressure under four-gate adversarial pressure.
+> Inside controlled synthetic fields, final earned-one witness can separate earned expression from raw expression pressure, latent overcrown, relation/return debt, and false-one pressure under four-gate adversarial pressure.
 
 
-## Runtime and CI support boundary
+## Runtime support boundary
 
-The required release/test gate is **Python 3.12**.
-
-`v1.3.5-alpha` tried to re-expand the required CI matrix to Python 3.10 / 3.11 / 3.12. GitHub Actions showed that 3.10 and 3.11 still fail. `v1.3.6-alpha` repairs the release flow by making 3.12 the explicit supported runtime again and moving 3.10 / 3.11 into a manual, non-blocking compatibility probe.
-
-That is not a theory claim. It is an engineering boundary: older interpreters can be explored deliberately, but they do not block the native-math / mirror / experiment line.
+The required release/test runtime is **Python 3.12**. Runtime history and older-interpreter notes live in [`docs/runtime_ci_support.md`](docs/runtime_ci_support.md).
 
 ## Test truth and handoff boundary
 
@@ -38,6 +34,8 @@ That is not a theory claim. It is an engineering boundary: older interpreters ca
 
 `v1.5.2-alpha` adds a witness ablation report. It reads completed four-gate matrix outputs and performs post-hoc accounting ablations over raw-as-final, false-one demotion, latent hold, and echo/relation-debt witness layers. This exposes which witness layers are doing visible work before heavier rerun-style ablations are attempted.
 
+`v1.5.3-alpha` creates the controlled synthetic-field language boundary. It keeps `toy field` for the historical first-research-alpha proof record while allowing `controlled synthetic field` for the v1.5 experimental layer. It also moves runtime-history detail out of README/ROADMAP and into the runtime support note.
+
 Generated comparison preset scripts now check the expected cross-logic report path before building the handoff and print the exact `assistant_test_handoff.zip` path to upload.
 
 ## Version truth
@@ -47,11 +45,20 @@ The active public line is repaired around this spine:
 - `v1.0.x-alpha` — first-research-alpha proof record and public source foundation.
 - `v1.1.x-alpha` — share-ready public witness pack.
 - `v1.2.x-alpha` — native math witness lock, invariant tests, and scope discipline.
-- `v1.3.x-alpha` — known-logic mirrors: fuzzy scoring, Belnap evidence states, conflict locality, compression tests, and closeout.
-- `v1.4.x-alpha` — cross-logic comparison reports across completed matrix runs.
-- `v1.5.x-alpha` — stronger controlled synthetic-field experiments and seed-block reporting.
+- `v1.3.x-alpha` — known-logic mirrors and projection-loss reports.
+- `v1.4.x-alpha` — cross-logic comparison, preset planning, and evidence-handoff integrity.
+- `v1.5.x-alpha` — stronger controlled synthetic-field experiments: seed-block reporting, threshold sensitivity, witness ablation, and language boundary.
 
-`v1.2.4-alpha` added a Power-Up / Fail report too early. `v1.2.5-alpha` removed that active machinery and kept the useful question as documentation-only acceptance criteria. `v1.3.0-alpha` begins the known-logic mirror line with fuzzy / many-valued scoring comparison. `v1.3.1-alpha` adds the Belnap evidence-state mirror and an assistant test handoff bundle for continuation. `v1.3.2-alpha` adds the paraconsistent conflict-locality mirror. `v1.3.3-alpha` adds the Kleene / Lukasiewicz compression and loss mirror. `v1.3.4-alpha` closes the first known-logic mirror line with one report that states what each mirror preserves, exposes, and collapses. `v1.3.5-alpha` attempted to re-expand Python 3.10 / 3.11 / 3.12 support, but CI showed 3.10 / 3.11 were still red. `v1.3.6-alpha` restores a clean 3.12 release gate and keeps 3.10 / 3.11 as manual compatibility probes so feature work is not held hostage by unresolved legacy-interpreter drift. `v1.4.0-alpha` adds the cross-logic comparison report. `v1.4.1-alpha` adds comparison presets so stronger runs can be planned and repeated without turning the preset itself into evidence. `v1.4.2-alpha` repairs the truth layer for handoffs and preset scripts so missing requested result files fail loudly and the exact upload ZIP path is printed. `v1.4.3-alpha` repairs same-named include files from different runs so source-relative paths remain separate evidence files. `v1.4.4-alpha` locks four-gate adversary coverage for distinction, polarity, relation, and return. `v1.4.5-alpha` captures the v1.2-to-v1.4.4 learning arc as a paper-two source note and sets the next experimental criteria for v1.5. `v1.5.0-alpha` starts stronger controlled synthetic-field experiments with a seed-block four-gate adversary report. `v1.5.1-alpha` adds threshold sensitivity reporting so the result can be tested for brittleness before ablation work begins. `v1.5.2-alpha` adds post-hoc witness ablation reporting to test whether disabling final witness accounting would promote hidden pressure or false crowns.
+Recent checkpoints:
+
+- `v1.4.4-alpha` locks four-gate adversary preset coverage: distinction, polarity, relation, and return.
+- `v1.4.5-alpha` captures the v1.2-to-v1.4.4 learning arc as a paper-two source note.
+- `v1.5.0-alpha` adds seed-block four-gate reporting.
+- `v1.5.1-alpha` adds threshold sensitivity reporting.
+- `v1.5.2-alpha` adds post-hoc witness ablation reporting.
+- `v1.5.3-alpha` defines the controlled synthetic-field language boundary and moves runtime-history detail into `docs/runtime_ci_support.md`.
+
+Detailed release notes live in [`docs/release_notes/`](docs/release_notes/).
 
 ## Active route
 
@@ -81,6 +88,7 @@ Read first:
 - [`docs/seed_block_four_gate_report.md`](docs/seed_block_four_gate_report.md)
 - [`docs/threshold_sensitivity_report.md`](docs/threshold_sensitivity_report.md)
 - [`docs/witness_ablation_report.md`](docs/witness_ablation_report.md)
+- [`docs/controlled_synthetic_field_language.md`](docs/controlled_synthetic_field_language.md)
 
 ## Why this exists
 
@@ -454,7 +462,7 @@ The repo preserves two lanes:
 
 This keeps the lineage honest:
 
-> original seeing → executable simulation → proof-of-concept record → simulation-supported paper → native math witness lock → known-logic mirrors.
+> original seeing → executable simulation → proof-of-concept record → simulation-supported paper → native math witness lock → known-logic mirrors → controlled synthetic-field experiments.
 
 ## For reviewers and interested readers
 

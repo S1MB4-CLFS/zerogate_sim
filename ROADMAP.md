@@ -1,11 +1,11 @@
 # ZeroGateSim Roadmap
 
-**Current line:** `v1.5.2-alpha` witness ablation report  
-**Release posture:** public research-alpha / speculative toy-field proof-of-concept
+**Current line:** `v1.5.3-alpha` controlled synthetic-field language boundary  
+**Release posture:** public research-alpha / controlled synthetic-field experiment line
 
-**CI support boundary:** Python 3.12 is the required release/test runtime. v1.3.5 deliberately tried to re-expand Python 3.10 / 3.11 / 3.12, but GitHub Actions showed 3.10 / 3.11 are still red. v1.3.6 keeps the release gate green on 3.12 and moves older interpreters into manual compatibility probes so unresolved legacy drift does not block the main research line.
+**Runtime support boundary:** Python 3.12 is the required release/test runtime. Details live in [`docs/runtime_ci_support.md`](docs/runtime_ci_support.md).
 
-ZeroGateSim already has a first-research-alpha toy-field proof record. The next work is not to make bigger claims or add shiny machinery. The next work is to make the native math testable, then compare that native math against nearby formal logic families without pretending they are the same thing.
+ZeroGateSim already has a first-research-alpha generated toy-field proof record. The v1.5 line uses controlled synthetic-field language only for explicit, seeded, adversarial, bounded experimental reports. The next work is not bigger claims; it is stronger evidence with clean falsifiers.
 
 ## North Star
 
@@ -13,7 +13,9 @@ ZeroGateSim tests whether dimensional expression can be modeled as candidate fre
 
 Current supported claim:
 
-> Inside generated toy fields, final trinary witness separated earned-one from raw expression, latent overcrown, and false-one pressure across original and fresh-seed adversarial proof records.
+> Historical first-research-alpha: inside generated toy fields, final trinary witness separated earned-one from raw expression, latent overcrown, and false-one pressure across original and fresh-seed adversarial proof records.
+>
+> Active v1.5 line: inside controlled synthetic fields, final witness reports seed-block, threshold, and ablation behavior under bounded four-gate adversarial pressure.
 
 Current unsupported claims:
 
@@ -365,7 +367,7 @@ Boundary:
 
 This is not Priest logic and not a native gate. It is a projection mirror that reads conflict-locality pressure after the native final-output witness.
 
-### v1.3.3-alpha — Kleene / Lukasiewicz compression and loss mirror + CI support boundary
+### v1.3.3-alpha — Kleene / Lukasiewicz compression and loss mirror
 
 Purpose:
 
@@ -415,27 +417,9 @@ Success condition:
 A reader can see which mirror is useful for which pressure and where each mirror lies if overused. The closeout report must not turn projection into borrowed authority.
 
 
-### v1.3.5-alpha — CI compatibility re-expansion
+### v1.3.5-alpha / v1.3.6-alpha — Runtime support archive
 
-Purpose:
-
-Repair the temporary support narrowing introduced when older-interpreter CI failures appeared during the known-logic mirror line.
-
-Delivered:
-
-- restore `requires-python = >=3.10`;
-- restore CI matrix for Python 3.10 / 3.11 / 3.12;
-- add `docs/runtime_ci_support.md`;
-- bound dependencies below future major versions where practical;
-- keep local handoffs on `PYTHONPATH=src` while CI still checks editable install.
-
-Success condition:
-
-GitHub Actions is green on Python 3.10, 3.11, and 3.12.
-
-Boundary:
-
-If one lane fails, feature work stops and that exact interpreter log is repaired. Do not leave older-interpreter failures as vague HOLD language.
+Runtime support details moved to [`docs/runtime_ci_support.md`](docs/runtime_ci_support.md). README and ROADMAP keep only the active runtime boundary so the research spine stays readable.
 
 ## v1.4-alpha — Cross-logic comparison report
 
@@ -676,13 +660,34 @@ Boundary:
 
 This is a post-hoc accounting ablation over completed controlled synthetic-field outputs. It does not rerun the simulator with altered mechanics, solve role-blind detection, or claim physical dimensional genesis.
 
-### v1.5.3-alpha — Controlled synthetic-field language checkpoint
+### v1.5.3-alpha — Controlled synthetic-field language boundary
 
-Decide whether the evidence supports shifting some repo language from `toy field` to `controlled synthetic field` while preserving the claim boundary.
+Purpose:
 
-Success condition:
+Create the language boundary that lets the active v1.5 experiment line say `controlled synthetic field` without erasing the historical `toy field` proof record or implying physics validation.
 
-The language shift is allowed only after seed-block, sensitivity, and ablation evidence exist. No physics claim is implied.
+Delivered:
+
+- `docs/controlled_synthetic_field_language.md`;
+- updated `docs/runtime_ci_support.md` with runtime-history detail moved out of README/ROADMAP;
+- slim README/ROADMAP runtime wording;
+- release note and boundary test.
+
+Language rule:
+
+- use `generated toy field` for the first-research-alpha proof record and manuscript lineage;
+- use `controlled synthetic field` for v1.5+ seeded, parameterized, adversarial matrix experiments with explicit report bundles;
+- reserve `adversarial synthetic benchmark` for later role-blind, independent-generator, externally reproducible work.
+
+Trinary weather ladder:
+
+- `triad27 = 3^3` varies noise, relation, and expansion pressure;
+- `deep81 = 3^4` adds perturbation pressure;
+- `wide243 = 3^5` adds temporal-depth / time-axis pressure.
+
+Boundary:
+
+This language checkpoint does not change the native gate law, rerun evidence, solve role-blind detection, or claim physical dimensional genesis.
 
 ## v1.6-alpha — Role-blind shadow design
 

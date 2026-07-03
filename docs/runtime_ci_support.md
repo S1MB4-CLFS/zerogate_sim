@@ -1,9 +1,17 @@
-# ZeroGateSim Runtime and CI Support
+# ZeroGateSim Runtime Support
 
-**Line:** `v1.3.6-alpha`  
-**Status:** release-gate flow repair
+**Current release/test runtime:** Python 3.12  
+**Archive note:** detailed runtime history moved here in `v1.5.3-alpha` so README and ROADMAP stay readable.
 
-ZeroGateSim is intended to stay small and portable, but the release gate must tell the truth.
+ZeroGateSim uses Python 3.12 as the required release/test runtime. This is an engineering boundary, not a theory claim.
+
+## Why this note exists
+
+The known-logic mirror line temporarily exposed older-interpreter compatibility pressure. That history is useful for maintainers, but it is not central research language and should not clutter the README or ROADMAP.
+
+## Runtime history
+
+During the v1.3 line, the project tested whether the required runtime support could be widened beyond Python 3.12. The attempt showed that older interpreter lanes were not ready to serve as release gates. The project therefore kept Python 3.12 as the required runtime and moved older-interpreter investigation into manual compatibility pressure rather than blocking the active research line.
 
 ## Required release/test runtime
 
@@ -11,50 +19,33 @@ ZeroGateSim is intended to stay small and portable, but the release gate must te
 Python 3.12
 ```
 
-`v1.3.5-alpha` tried to re-expand the required GitHub Actions matrix to Python 3.10 / 3.11 / 3.12. GitHub Actions stayed red on Python 3.10 and 3.11.
-
-`v1.3.6-alpha` repairs the flow:
-
-- required CI gate returns to Python 3.12;
-- `pyproject.toml` declares `requires-python = ">=3.12"`;
-- Python 3.10 / 3.11 move into a manual, non-blocking compatibility probe workflow;
-- feature work is no longer held hostage by unresolved legacy-interpreter drift.
-
-## Compatibility probes
-
-The manual workflow is:
-
-```text
-.github/workflows/compatibility.yml
-```
-
-It can be run deliberately when the project wants to investigate older interpreters. It uses local-source mode rather than package install, because the package itself is not currently declaring 3.10 / 3.11 release support.
+The package metadata declares this boundary. Normal release gates and local handoff checks should treat Python 3.12 as the supported runtime unless a later version deliberately reopens compatibility work.
 
 ## Local development
 
-For normal Marek/Simba update blocks, use local-source mode:
+For normal Marek/Simba update blocks, prefer local-source mode:
 
 ```powershell
 $env:PYTHONPATH = (Join-Path (Get-Location) "src")
 & $P -m pytest -q
 ```
 
-Editable install remains useful for packaging checks and CI, but it is not required for every local patch handoff.
+Editable install remains useful for packaging checks, but it is not required for every local patch handoff.
 
 ## Failure protocol
 
-If the required 3.12 gate fails:
+If the required Python 3.12 gate fails:
 
 1. Stop feature work.
-2. Read the exact GitHub Actions log.
+2. Read the exact failure log.
 3. Repair that gate before advancing.
 
-If a manual 3.10 / 3.11 probe fails:
+If an older-interpreter probe fails:
 
-1. Record the failure as compatibility pressure.
-2. Do not call those runtimes supported.
-3. Repair deliberately only when older-interpreter support becomes a release goal.
+1. Record it as compatibility pressure.
+2. Do not call that interpreter supported.
+3. Repair it only when compatibility becomes an explicit release goal.
 
 ## Boundary
 
-CI support is engineering evidence. It does not prove the theory. It only says the software can run its current tests across the declared release runtime.
+Runtime support is engineering evidence. It says whether the software can run its declared tests on the declared runtime. It does not prove the ZeroGateSim theory.
