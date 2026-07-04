@@ -1,11 +1,11 @@
 # ZeroGateSim Roadmap
 
-**Current line:** `v1.5.4-alpha` wide243 historical evidence intake  
+**Current line:** `v1.5.5-alpha` fresh controlled deep81/wide243 evidence report  
 **Release posture:** public research-alpha / controlled synthetic-field experiment line
 
 **Runtime support boundary:** Python 3.12 is the required release/test runtime. Details live in [`docs/runtime_ci_support.md`](docs/runtime_ci_support.md).
 
-**Language boundary:** `v1.5.3-alpha` established the controlled synthetic-field language boundary; `v1.5.4-alpha` preserves the historical `wide243` proof floor without changing that boundary.
+**Language boundary:** `v1.5.3-alpha` established the controlled synthetic-field language boundary; `v1.5.4-alpha` preserved the historical `wide243` proof floor; `v1.5.5-alpha` reports fresh controlled `deep81` / `wide243` evidence without changing that boundary.
 
 ZeroGateSim already has a first-research-alpha generated toy-field proof record. The v1.5 line uses controlled synthetic-field language only for explicit, seeded, adversarial, bounded experimental reports. The next work is not bigger claims; it is stronger evidence with clean falsifiers.
 
@@ -17,7 +17,7 @@ Current supported claim:
 
 > Historical first-research-alpha: inside generated toy fields, final trinary witness separated earned-one from raw expression, latent overcrown, and false-one pressure across original and fresh-seed adversarial proof records.
 >
-> Active v1.5 line: inside controlled synthetic fields, final witness reports seed-block, threshold, and ablation behavior under bounded four-gate adversarial pressure.
+> Active v1.5 line: inside controlled synthetic fields, final witness reports seed-block, threshold, ablation, and fresh `deep81` / `wide243` four-gate behavior under bounded adversarial pressure.
 
 Current unsupported claims:
 
@@ -38,6 +38,15 @@ Combined original proof and fresh-seed reproduction:
 - `0` final false-one crowns.
 
 This is the proof-of-concept floor. It is not the roof.
+
+Fresh controlled v1.5 evidence block:
+
+| profile | role in ladder | runs | earned-one events | raw false-one pressure | latent overcrown pressure | final false-one crowns |
+|---|---|---:|---:|---:|---:|---:|
+| `deep81` | perturbation / late-shock bridge | `2,916` | `5,155` | `402` | `639` | `0` |
+| `wide243` | temporal-depth / time-axis stress | `8,748` | `16,217` | `1,242` | `2,043` | `0` |
+
+This evidence block supports the controlled synthetic-field line and role-blind shadow design. It does not prove physical time, gravity, mass, cosmology, or role-blind discovery.
 
 ## Operating law
 
@@ -734,6 +743,43 @@ Next evidence order:
 - run fresh controlled `deep81` four-gate evidence as the perturbation bridge;
 - run fresh controlled `wide243` four-gate evidence after `deep81` is clean or if disk/time are deliberately allocated;
 - use those outputs to inform `v1.6` role-blind shadow design.
+
+### v1.5.5-alpha — Fresh controlled deep81/wide243 evidence report
+
+Purpose:
+
+Preserve the fresh controlled `deep81` and `wide243` four-gate evidence runs as repo history, README visuals, visual-source data, and paper-source reports.
+
+Delivered:
+
+- `docs/reports/fresh_controlled_deep81_four_gate_evidence_report.md`;
+- `docs/reports/fresh_controlled_wide243_four_gate_evidence_report.md`;
+- `docs/reports/fresh_controlled_81_243_visual_source.csv`;
+- `docs/assets/fresh_controlled_deep81_evidence_card.svg`;
+- `docs/assets/fresh_controlled_wide243_evidence_card.svg`;
+- `docs/release_notes/v1_5_5_alpha.md`;
+- text tests for report numbers, README visual links, and native-math boundary.
+
+Evidence summary:
+
+- `deep81`: `2,916` runs, `5,155` earned-one events, `402` raw false-one pressures, `639` latent overcrown pressures, `0` final false-one crowns;
+- `wide243`: `8,748` runs, `16,217` earned-one events, `1,242` raw false-one pressures, `2,043` latent overcrown pressures, `0` final false-one crowns.
+
+Derived evidence metrics:
+
+- `rho_F = F_raw / N_runs` — raw false-one pressure rate;
+- `rho_L = L_held / N_runs` — latent overcrown hold rate;
+- `K_R = F_relation / sum_g F_g` — relation wound concentration;
+- `A_F = max(F_final^ablation) - F_final^control` — false-crown dependence under ablation;
+- `S_tau = B_tau+ - B_tau-` — temporal-stretch severity for `wide243`.
+
+Boundary:
+
+No new native gate. No engine change. No physics claim. Native `C_Z = min(D, P, R, B)` remains the coherence witness. These metrics are report readers for completed controlled synthetic-field evidence.
+
+Role-blind implication:
+
+The strongest first shadow signals should be relation false-pressure concentration, temporal-stretch sensitivity, latent-hold dependence, raw-as-final crown risk, and false-one demotion dependence. Echo/relation-debt alone is weak in these runs because relation/return debt stayed `0`.
 
 ## v1.6-alpha — Role-blind shadow design
 

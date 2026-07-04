@@ -1,6 +1,6 @@
 # ZeroGateSim
 
-**Current public line:** `v1.5.4-alpha` — wide243 historical evidence intake  
+**Current public line:** `v1.5.5-alpha` — fresh controlled deep81/wide243 evidence report  
 **Status:** speculative research software / controlled synthetic-field experiment line  
 **Working identity:** zero-gate dimensional emergence simulator  
 **Core question:** can a final trinary witness distinguish earned-one from raw expression pressure, latent overcrown, relation/return debt, and false-one pressure under controlled synthetic-field adversarial weather?
@@ -38,6 +38,8 @@ The required release/test runtime is **Python 3.12**. Runtime history and older-
 
 `v1.5.4-alpha` adds a historical `wide243` evidence-intake report. It records the uploaded original and fresh-seed `wide243` proof archives, explains `triad27` / `deep81` / `wide243`, and states when fresh controlled `deep81` / `wide243` four-gate reruns should happen.
 
+`v1.5.5-alpha` preserves the fresh controlled `deep81` and `wide243` four-gate evidence runs as repo reports, README visual cards, and later paper-source material. It adds derived evidence metrics only; the native math witness is unchanged.
+
 Generated comparison preset scripts now check the expected cross-logic report path before building the handoff and print the exact `assistant_test_handoff.zip` path to upload.
 
 ## Version truth
@@ -60,6 +62,7 @@ Recent checkpoints:
 - `v1.5.2-alpha` adds post-hoc witness ablation reporting.
 - `v1.5.3-alpha` defines the controlled synthetic-field language boundary and moves runtime-history detail into `docs/runtime_ci_support.md`.
 - `v1.5.4-alpha` adds historical `wide243` evidence intake and fresh `deep81` / `wide243` run-order guidance.
+- `v1.5.5-alpha` adds fresh controlled `deep81` / `wide243` reports, visual-source data, and README evidence cards.
 
 Detailed release notes live in [`docs/release_notes/`](docs/release_notes/).
 
@@ -93,6 +96,8 @@ Read first:
 - [`docs/witness_ablation_report.md`](docs/witness_ablation_report.md)
 - [`docs/controlled_synthetic_field_language.md`](docs/controlled_synthetic_field_language.md)
 - [`docs/reports/wide243_historical_evidence_intake.md`](docs/reports/wide243_historical_evidence_intake.md)
+- [`docs/reports/fresh_controlled_deep81_four_gate_evidence_report.md`](docs/reports/fresh_controlled_deep81_four_gate_evidence_report.md)
+- [`docs/reports/fresh_controlled_wide243_four_gate_evidence_report.md`](docs/reports/fresh_controlled_wide243_four_gate_evidence_report.md)
 
 ## Why this exists
 
@@ -310,6 +315,40 @@ The report keeps the first-research-alpha archives in the generated toy-field pr
 
 Read it here: [`docs/reports/wide243_historical_evidence_intake.md`](docs/reports/wide243_historical_evidence_intake.md).
 
+### Fresh controlled deep81 / wide243 evidence
+
+`v1.5.5-alpha` records the fresh controlled `deep81` and `wide243` four-gate evidence runs as README-visible cards and report files:
+
+| profile | role in ladder | runs | earned-one events | raw false-one pressure | latent overcrown pressure | final false-one crowns |
+|---|---|---:|---:|---:|---:|---:|
+| `deep81` | perturbation / late-shock bridge | `2,916` | `5,155` | `402` | `639` | `0` |
+| `wide243` | temporal-depth / time-axis stress | `8,748` | `16,217` | `1,242` | `2,043` | `0` |
+
+Both runs passed with pressure visible, false-one pressure demoted, latent pressure held, and no final false-one crowns.
+
+Derived report metrics were added for paper and visual work:
+
+```math
+\rho_F = \frac{F_{raw}}{N_{runs}},\quad
+\rho_L = \frac{L_{held}}{N_{runs}},\quad
+K_R = \frac{F_{relation}}{\sum_g F_g},\quad
+A_F = \max(F^{ablation}_{final}) - F^{control}_{final}
+```
+
+For `wide243`, temporal-stretch severity is read as:
+
+```math
+S_{\tau} = B_{\tau+} - B_{\tau-}
+```
+
+These are **derived evidence witnesses**, not new native gates. The native math witness remains `C_Z = min(D, P, R, B)` and final earned-one still requires the existing final witness stack.
+
+Reports:
+
+- [`docs/reports/fresh_controlled_deep81_four_gate_evidence_report.md`](docs/reports/fresh_controlled_deep81_four_gate_evidence_report.md)
+- [`docs/reports/fresh_controlled_wide243_four_gate_evidence_report.md`](docs/reports/fresh_controlled_wide243_four_gate_evidence_report.md)
+- [`docs/reports/fresh_controlled_81_243_visual_source.csv`](docs/reports/fresh_controlled_81_243_visual_source.csv)
+
 ## First-research-alpha result
 
 ZeroGateSim passed an original proof harness and a fresh-seed reproduction inside generated toy fields.
@@ -376,6 +415,14 @@ Start with the visual maps before reading the full machinery.
 ### First-research-alpha proof card
 
 ![First-research-alpha proof card](docs/assets/first_research_alpha_proof_card.svg)
+
+### Fresh controlled deep81 evidence card
+
+![Fresh controlled deep81 evidence card](docs/assets/fresh_controlled_deep81_evidence_card.svg)
+
+### Fresh controlled wide243 evidence card
+
+![Fresh controlled wide243 evidence card](docs/assets/fresh_controlled_wide243_evidence_card.svg)
 
 Visual guide:
 

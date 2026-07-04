@@ -1,0 +1,52 @@
+chart,x,series,value,note
+deep81_gate_pressure,distinction,raw_false_one_pressure,0,fresh controlled deep81 four-gate run
+deep81_gate_pressure,distinction,latent_overcrown_pressure,0,fresh controlled deep81 four-gate run
+deep81_gate_pressure,polarity,raw_false_one_pressure,3,fresh controlled deep81 four-gate run
+deep81_gate_pressure,polarity,latent_overcrown_pressure,213,fresh controlled deep81 four-gate run
+deep81_gate_pressure,relation,raw_false_one_pressure,396,fresh controlled deep81 four-gate run
+deep81_gate_pressure,relation,latent_overcrown_pressure,213,fresh controlled deep81 four-gate run
+deep81_gate_pressure,return,raw_false_one_pressure,3,fresh controlled deep81 four-gate run
+deep81_gate_pressure,return,latent_overcrown_pressure,213,fresh controlled deep81 four-gate run
+deep81_witness_ablation,control,final_false_one_crowns,0,fresh controlled deep81
+deep81_witness_ablation,control,promoted_latent_pressure,0,fresh controlled deep81
+deep81_witness_ablation,raw_as_final,final_false_one_crowns,402,fresh controlled deep81
+deep81_witness_ablation,raw_as_final,promoted_latent_pressure,639,fresh controlled deep81
+deep81_witness_ablation,no_false_one_demotion,final_false_one_crowns,402,fresh controlled deep81
+deep81_witness_ablation,no_false_one_demotion,promoted_latent_pressure,0,fresh controlled deep81
+deep81_witness_ablation,no_latent_hold,final_false_one_crowns,0,fresh controlled deep81
+deep81_witness_ablation,no_latent_hold,promoted_latent_pressure,639,fresh controlled deep81
+deep81_witness_ablation,no_echo_independence,final_false_one_crowns,0,fresh controlled deep81
+deep81_witness_ablation,no_echo_independence,promoted_latent_pressure,0,fresh controlled deep81
+wide243_gate_pressure,distinction,raw_false_one_pressure,0,fresh controlled wide243 four-gate run
+wide243_gate_pressure,distinction,latent_overcrown_pressure,0,fresh controlled wide243 four-gate run
+wide243_gate_pressure,polarity,raw_false_one_pressure,6,fresh controlled wide243 four-gate run
+wide243_gate_pressure,polarity,latent_overcrown_pressure,681,fresh controlled wide243 four-gate run
+wide243_gate_pressure,relation,raw_false_one_pressure,1230,fresh controlled wide243 four-gate run
+wide243_gate_pressure,relation,latent_overcrown_pressure,681,fresh controlled wide243 four-gate run
+wide243_gate_pressure,return,raw_false_one_pressure,6,fresh controlled wide243 four-gate run
+wide243_gate_pressure,return,latent_overcrown_pressure,681,fresh controlled wide243 four-gate run
+wide243_witness_ablation,control,final_false_one_crowns,0,fresh controlled wide243
+wide243_witness_ablation,control,promoted_latent_pressure,0,fresh controlled wide243
+wide243_witness_ablation,raw_as_final,final_false_one_crowns,1242,fresh controlled wide243
+wide243_witness_ablation,raw_as_final,promoted_latent_pressure,2043,fresh controlled wide243
+wide243_witness_ablation,no_false_one_demotion,final_false_one_crowns,1242,fresh controlled wide243
+wide243_witness_ablation,no_false_one_demotion,promoted_latent_pressure,0,fresh controlled wide243
+wide243_witness_ablation,no_latent_hold,final_false_one_crowns,0,fresh controlled wide243
+wide243_witness_ablation,no_latent_hold,promoted_latent_pressure,2043,fresh controlled wide243
+wide243_witness_ablation,no_echo_independence,final_false_one_crowns,0,fresh controlled wide243
+wide243_witness_ablation,no_echo_independence,promoted_latent_pressure,0,fresh controlled wide243
+deep81_vs_wide243_rates,deep81,earned_per_run,1.767833,fresh controlled four-gate evidence
+deep81_vs_wide243_rates,deep81,raw_false_per_run,0.13786,fresh controlled four-gate evidence
+deep81_vs_wide243_rates,deep81,latent_per_run,0.219136,fresh controlled four-gate evidence
+deep81_vs_wide243_rates,wide243,earned_per_run,1.853795,fresh controlled four-gate evidence
+deep81_vs_wide243_rates,wide243,raw_false_per_run,0.141975,fresh controlled four-gate evidence
+deep81_vs_wide243_rates,wide243,latent_per_run,0.233539,fresh controlled four-gate evidence
+wide243_time_axis_pressure,minus,mean_accuracy,0.925,aggregate across four gates
+wide243_time_axis_pressure,minus,breach,348,aggregate across four gates
+wide243_time_axis_pressure,minus,designed_minus1,148,aggregate across four gates
+wide243_time_axis_pressure,zero,mean_accuracy,0.913,aggregate across four gates
+wide243_time_axis_pressure,zero,breach,723,aggregate across four gates
+wide243_time_axis_pressure,zero,designed_minus1,865,aggregate across four gates
+wide243_time_axis_pressure,plus,mean_accuracy,0.9,aggregate across four gates
+wide243_time_axis_pressure,plus,breach,1041,aggregate across four gates
+wide243_time_axis_pressure,plus,designed_minus1,2033,aggregate across four gates
