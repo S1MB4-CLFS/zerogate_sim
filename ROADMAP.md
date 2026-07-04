@@ -1,6 +1,6 @@
 # ZeroGateSim Roadmap
 
-**Current line:** `v1.6.0-alpha` role-blind shadow design  
+**Current line:** `v1.6.1-alpha` role-stripped feature extraction report  
 **Release posture:** public research-alpha / controlled synthetic-field experiment line
 
 **Runtime support boundary:** Python 3.12 is the required release/test runtime. Details live in [`docs/runtime_ci_support.md`](docs/runtime_ci_support.md).
@@ -836,7 +836,42 @@ If a role-stripped shadow report cannot separate known false-pressure-heavy case
 
 Next v1.6 work:
 
-- `v1.6.1-alpha` — role-stripped feature extraction report;
+- `v1.6.2-alpha` — transparent shadow score prototype, report-only;
+- `v1.6.3-alpha` — baseline comparison and falsifier report;
+- `v1.6.4-alpha` — holdout `deep81` / `wide243` role-stripped evaluation;
+- `v1.6.5-alpha` — role-blind shadow visual/report closeout if evidence deserves it.
+
+
+### v1.6.1-alpha — Role-stripped feature extraction report
+
+Purpose:
+
+Read completed seed-block and witness-ablation summaries and write role-stripped feature files without designed truth-role shortcut fields.
+
+Delivered:
+
+- `src/zerogate_sim/role_stripped_feature_report.py`;
+- console script `zerogate-role-stripped-features`;
+- `docs/role_stripped_feature_extraction.md`;
+- `docs/assets/role_stripped_feature_extraction_card.svg`;
+- `docs/release_notes/v1_6_1_alpha.md`;
+- tests for feature/target separation and forbidden-field audit.
+
+Outputs:
+
+- `role_stripped_profile_features.csv`;
+- `role_stripped_family_features.csv`;
+- `role_stripped_evaluation_targets.csv`;
+- `role_stripped_feature_read.md`;
+- `role_stripped_forbidden_field_audit.json`;
+- `role_stripped_feature_bundle.zip`.
+
+Boundary:
+
+The feature files are role-stripped inputs. The evaluation target file remains separate and must not be loaded by a future shadow scorer. This is not a detector, not role-blind discovery, and not a replacement for the native `C_Z = min(D, P, R, B)` witness.
+
+Next v1.6 work:
+
 - `v1.6.2-alpha` — transparent shadow score prototype, report-only;
 - `v1.6.3-alpha` — baseline comparison and falsifier report;
 - `v1.6.4-alpha` — holdout `deep81` / `wide243` role-stripped evaluation;

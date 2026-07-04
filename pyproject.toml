@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "zerogate-sim"
-version = "1.6.0a0"
+version = "1.6.1a0"
 description = "Toy simulation framework for zero-gate dimensional emergence."
 readme = "README.md"
 requires-python = ">=3.12"
@@ -45,6 +45,7 @@ zerogate-cross-logic-preset = "zerogate_sim.comparison_preset:main"
 zerogate-seed-block-report = "zerogate_sim.seed_block_report:main"
 zerogate-threshold-sensitivity = "zerogate_sim.threshold_sensitivity:main"
 zerogate-witness-ablation = "zerogate_sim.witness_ablation_report:main"
+zerogate-role-stripped-features = "zerogate_sim.role_stripped_feature_report:main"
 
 [tool.setuptools.packages.find]
 where = ["src"]
