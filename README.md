@@ -1,6 +1,6 @@
 # ZeroGateSim
 
-**Current public line:** `v1.6.8-alpha` — shadow triad27 hardened evidence  
+**Current public line:** `v1.6.9-alpha` — shadow discrimination repair and README reorganization  
 **Status:** speculative research software / controlled synthetic-field experiment line  
 **Working identity:** zero-gate dimensional emergence simulator  
 **Core question:** can a final trinary witness distinguish earned-one from raw expression pressure, latent overcrown, relation/return debt, and false-one pressure under controlled synthetic-field adversarial weather?
@@ -12,127 +12,6 @@ It does **not** prove cosmology, physical dimensions, or that reality itself is 
 It tests a narrower software-theory claim in the active v1.5/v1.6 line:
 
 > Inside controlled synthetic fields, final earned-one witness can separate earned expression from raw expression pressure, latent overcrown, relation/return debt, and false-one pressure under four-gate adversarial pressure.
-
-
-## Runtime support boundary
-
-The required release/test runtime is **Python 3.12**. Runtime history and older-interpreter notes live in [`docs/runtime_ci_support.md`](docs/runtime_ci_support.md).
-
-## Test truth and handoff boundary
-
-`v1.4.2-alpha` makes handoff includes strict by default. If a command requests a report file for the assistant handoff and that file is missing, the handoff fails instead of silently creating a partial bundle that looks green. Optional missing includes must be explicitly requested with `--allow-missing-include`.
-
-`v1.4.3-alpha` preserves source-relative include paths inside the handoff ZIP. Three matrix reports can all be named `matrix_known_logic_closeout_read.md`; they now bundle as separate files under their run folders instead of overwriting each other by basename.
-
-`v1.4.4-alpha` aligns adversary presets with the native four-gate cycle. Dedicated adversary presets now cover distinction, polarity, relation, and observed return, and tests lock that coverage before evidence runs are treated as complete.
-
-`v1.4.5-alpha` adds a professional learning report for the v1.2-to-v1.4.4 line. It records what the line established, what remains bounded, and what evidence is needed before the language can move from toy-field proof-of-concept toward controlled synthetic-field benchmark.
-
-`v1.5.0-alpha` adds a seed-block four-gate adversary report. It reads completed distinction, polarity, relation, and return matrix runs and reports earned-one, raw false-one pressure, latent pressure, relation/return debt, final false-one crowns, and mirror safety breaches in one evidence table.
-
-`v1.5.1-alpha` adds a threshold sensitivity report. Matrix runs can now record gate/strength threshold overrides, and completed seed-block reports can be compared across threshold variants to expose stable, sensitive, or breached operating regions.
-
-`v1.5.2-alpha` adds a witness ablation report. It reads completed four-gate matrix outputs and performs post-hoc accounting ablations over raw-as-final, false-one demotion, latent hold, and echo/relation-debt witness layers. This exposes which witness layers are doing visible work before heavier rerun-style ablations are attempted.
-
-`v1.5.3-alpha` creates the controlled synthetic-field language boundary. It keeps `toy field` for the historical first-research-alpha proof record while allowing `controlled synthetic field` for the v1.5 experimental layer. It also moves runtime-history detail out of README/ROADMAP and into the runtime support note.
-
-`v1.5.4-alpha` adds a historical `wide243` evidence-intake report. It records the uploaded original and fresh-seed `wide243` proof archives, explains `triad27` / `deep81` / `wide243`, and states when fresh controlled `deep81` / `wide243` four-gate reruns should happen.
-
-`v1.5.5-alpha` preserves the fresh controlled `deep81` and `wide243` four-gate evidence runs as repo reports, README visual cards, and later paper-source material. It adds derived evidence metrics only; the native math witness is unchanged.
-
-`v1.6.0-alpha` adds the role-blind shadow design. It is a report-only design checkpoint: the shadow may read observable behavior, but it must not read designed truth-role labels, and it does not replace the current role-aware witness.
-
-`v1.6.1-alpha` adds role-stripped feature extraction. It reads completed seed-block and witness-ablation reports, writes feature files without designed truth-role shortcut fields, and keeps evaluation targets separate for later falsifier tests.
-
-`v1.6.2-alpha` adds a transparent shadow score prototype. It reads only role-stripped feature files, writes fixed-weight report-side scores, refuses role/answer-key fields, and leaves target comparison for the next falsifier report.
-
-`v1.6.3-alpha` adds a baseline/falsifier report. It compares already-written transparent scores against separated evaluation targets and trivial role-stripped baselines, records missing exact-baseline schema gaps, and still refuses role-blind discovery language.
-
-`v1.6.4-alpha` adds a four-gate reconciliation / return-adversary audit. It states that the historical first-alpha proof used three dedicated adversarial corpora while return was measured as the native `B` gate, points to later dedicated return-adversary coverage, and writes Zenodo correction-note source text without backdating evidence.
-
-`v1.6.5-alpha` adds a shadow holdout evaluation report. It evaluates already-written transparent shadow scores on declared held-out `deep81` / `wide243` role-stripped evidence, hardens opaque family IDs, and still refuses role-blind discovery language.
-
-`v1.6.6-alpha` adds a triad27 preflight report. It forces the shadow line through the first trinary weather cube, `triad27 = 3^3`, before deeper `deep81` / `wide243` evidence is treated as the next rightful gate.
-
-`v1.6.7-alpha` adds a shadow weather hardening report. It treats the actual triad27 wound seriously: the shadow score can be right and still scientifically trivial if raw-pressure or mirror baselines tie it. The new report evaluates triad27 / deep81 / wide243 evidence with expanded target variety, native-gate pressure diagnostics, baseline-tie reporting, and no score retuning.
-
-`v1.6.8-alpha` adds a hardened triad27 evidence generator. It converts four native triad27 matrix runs into cell-level role-stripped evidence, exposes exact raw-strength / weakest-gate / relation-gate / return-gate baselines, and immediately runs weather hardening without retuning the score.
-
-Generated comparison preset scripts now check the expected cross-logic report path before building the handoff and print the exact `assistant_test_handoff.zip` path to upload.
-
-## Version truth
-
-The active public line is repaired around this spine:
-
-- `v1.0.x-alpha` — first-research-alpha proof record and public source foundation.
-- `v1.1.x-alpha` — share-ready public witness pack.
-- `v1.2.x-alpha` — native math witness lock, invariant tests, and scope discipline.
-- `v1.3.x-alpha` — known-logic mirrors and projection-loss reports.
-- `v1.4.x-alpha` — cross-logic comparison, preset planning, and evidence-handoff integrity.
-- `v1.5.x-alpha` — stronger controlled synthetic-field experiments: seed-block reporting, threshold sensitivity, witness ablation, and language boundary.
-- `v1.6.x-alpha` — role-blind shadow design, role-stripped metrics, and later validation reports.
-
-Recent checkpoints:
-
-- `v1.4.4-alpha` locks four-gate adversary preset coverage: distinction, polarity, relation, and return.
-- `v1.4.5-alpha` captures the v1.2-to-v1.4.4 learning arc as a paper-two source note.
-- `v1.5.0-alpha` adds seed-block four-gate reporting.
-- `v1.5.1-alpha` adds threshold sensitivity reporting.
-- `v1.5.2-alpha` adds post-hoc witness ablation reporting.
-- `v1.5.3-alpha` defines the controlled synthetic-field language boundary and moves runtime-history detail into `docs/runtime_ci_support.md`.
-- `v1.5.4-alpha` adds historical `wide243` evidence intake and fresh `deep81` / `wide243` run-order guidance.
-- `v1.5.5-alpha` adds fresh controlled `deep81` / `wide243` reports, visual-source data, and README evidence cards.
-- `v1.6.0-alpha` adds role-blind shadow design, a report schema, a README design card, and falsifier boundaries before scoring code exists.
-- `v1.6.1-alpha` adds role-stripped feature extraction, feature/target separation, and a report bundle for later shadow scoring tests.
-- `v1.6.2-alpha` adds a transparent shadow score prototype, score formula artifact, and report-only boundary before baseline comparison.
-- `v1.6.3-alpha` adds a baseline/falsifier report comparing transparent shadow scores against separated targets and trivial baselines without claiming discovery.
-- `v1.6.4-alpha` adds four-gate reconciliation, historical first-alpha claim correction, and return-adversary audit source text before holdout.
-- `v1.6.5-alpha` adds held-out `deep81` / `wide243` role-stripped shadow evaluation tooling and opaque family-id hardening.
-- `v1.6.6-alpha` adds triad27 shadow preflight so the shadow line starts with `3^3` local expression weather before deeper `3^4` / `3^5` evidence.
-- `v1.6.7-alpha` adds weather hardening across the trinary ladder, expanded evaluation targets, native gate diagnostics, and baseline-tie honesty before deeper trust.
-- `v1.6.8-alpha` adds hardened triad27 cell-level evidence generation before deep81 / wide243 trust.
-
-Detailed release notes live in [`docs/release_notes/`](docs/release_notes/).
-
-## Active route
-
-The current route is:
-
-```text
-native geometry -> native math -> code fidelity -> invariant tests -> known logic mirrors -> stronger experiments
-```
-
-Do not skip the order. ZeroGateSim is not helped by wearing a borrowed lab coat.
-
-Read first:
-
-- [`docs/math_witness_map.md`](docs/math_witness_map.md)
-- [`docs/simulation_win_conditions.md`](docs/simulation_win_conditions.md)
-- [`docs/local_tooling_repair.md`](docs/local_tooling_repair.md)
-- [`docs/runtime_ci_support.md`](docs/runtime_ci_support.md)
-- [`docs/known_logic_boundary.md`](docs/known_logic_boundary.md)
-- [`docs/fuzzy_mirror.md`](docs/fuzzy_mirror.md)
-- [`docs/belnap_mirror.md`](docs/belnap_mirror.md)
-- [`docs/paraconsistent_mirror.md`](docs/paraconsistent_mirror.md)
-- [`docs/three_valued_mirror.md`](docs/three_valued_mirror.md)
-- [`docs/assistant_test_handoff.md`](docs/assistant_test_handoff.md)
-- [`docs/cross_logic_comparison_presets.md`](docs/cross_logic_comparison_presets.md)
-- [`docs/known_logic_comparison_report.md`](docs/known_logic_comparison_report.md)
-- [`docs/reports/v1_2_to_v1_4_4_learning_report.md`](docs/reports/v1_2_to_v1_4_4_learning_report.md)
-- [`docs/seed_block_four_gate_report.md`](docs/seed_block_four_gate_report.md)
-- [`docs/threshold_sensitivity_report.md`](docs/threshold_sensitivity_report.md)
-- [`docs/witness_ablation_report.md`](docs/witness_ablation_report.md)
-- [`docs/controlled_synthetic_field_language.md`](docs/controlled_synthetic_field_language.md)
-- [`docs/reports/wide243_historical_evidence_intake.md`](docs/reports/wide243_historical_evidence_intake.md)
-- [`docs/reports/fresh_controlled_deep81_four_gate_evidence_report.md`](docs/reports/fresh_controlled_deep81_four_gate_evidence_report.md)
-- [`docs/reports/fresh_controlled_wide243_four_gate_evidence_report.md`](docs/reports/fresh_controlled_wide243_four_gate_evidence_report.md)
-- [`docs/role_blind_shadow_design.md`](docs/role_blind_shadow_design.md)
-- [`docs/role_blind_shadow_schema.json`](docs/role_blind_shadow_schema.json)
-- [`docs/role_stripped_feature_extraction.md`](docs/role_stripped_feature_extraction.md)
-- [`docs/transparent_shadow_score.md`](docs/transparent_shadow_score.md)
-- [`docs/shadow_baseline_falsifier.md`](docs/shadow_baseline_falsifier.md)
-- [`docs/four_gate_reconciliation.md`](docs/four_gate_reconciliation.md)
-- [`docs/shadow_triad27_preflight.md`](docs/shadow_triad27_preflight.md)
 
 ## Why this exists
 
@@ -155,6 +34,58 @@ In this frame:
 - a dimension is stabilized freedom that has passed through zero without losing coherence.
 
 The simulator exists because a theory does not earn trust by sounding beautiful. It earns its first bones by meeting pressure.
+
+## First visual spine
+
+These first three maps are the fastest route into the project. They show mechanism, witness, and test pressure before the README descends into machinery.
+
+### Zero-gate cycle
+
+![Zero-gate cycle](docs/assets/zero_gate_cycle.svg)
+
+Native coherence is weakest-gate coherence:
+
+```math
+C_Z^i(t)=\min(D_i(t),P_i(t),R_i(t),B_i(t))
+```
+
+Raw expression is pressure, not final truth:
+
+```math
+\chi^i_{raw}(t)=H(\sigma_i(t)-\epsilon)H(C_Z^i(t)-\theta_Z)
+```
+
+### Trinary witness stack
+
+![Trinary witness stack](docs/assets/trinary_witness_stack.svg)
+
+Final earned-one is raw expression after return-depth, lineage, independence, and role-aware witness in the current harness:
+
+```math
+\chi^i_{earned}(t)=\chi^i_{raw}(t)H(k_i(t)-K^*)W^i_{lineage}(t)W^i_{independence}(t)W^i_{role}
+```
+
+The output grammar is trinary:
+
+```text
++1 earned-one
+ 0 witness / hold / quarantine / not-yet
+-1 resist / reject / false-one demotion
+```
+
+### Proof harness map
+
+![Proof harness map](docs/assets/proof_harness_map.svg)
+
+Weather is trinary, not decimal decoration:
+
+```text
+triad27 = 3^3 local expression weather
+deep81  = 3^4 perturbation / late-shock bridge
+wide243 = 3^5 temporal-depth / time-axis stress
+```
+
+Historical first-alpha used three dedicated adversarial corpora with return measured as native `B`. The current four-gate evidence route includes distinction, polarity, relation, and return as dedicated native run families before shadow claims are trusted.
 
 ## Native math witness
 
@@ -189,6 +120,133 @@ C_Z^i(t)=\min(D_i(t),P_i(t),R_i(t),B_i(t))
 ```math
 \chi^i_{earned}(t)=\chi^i_{raw}(t)H(k_i(t)-K^*)W^i_{lineage}(t)W^i_{independence}(t)W^i_{role}
 ```
+
+## Active route
+
+The current route is:
+
+```text
+native geometry -> native math -> code fidelity -> invariant tests -> known logic mirrors -> stronger experiments -> shadow discrimination repair
+```
+
+Do not skip the order. ZeroGateSim is not helped by wearing a borrowed lab coat.
+
+Read first:
+
+- [`docs/math_witness_map.md`](docs/math_witness_map.md)
+- [`docs/simulation_win_conditions.md`](docs/simulation_win_conditions.md)
+- [`docs/controlled_synthetic_field_language.md`](docs/controlled_synthetic_field_language.md)
+  - controlled synthetic-field language boundary for v1.5+ evidence wording.
+- [`docs/shadow_discrimination_repair.md`](docs/shadow_discrimination_repair.md)
+- [`docs/shadow_triad27_hardened_evidence.md`](docs/shadow_triad27_hardened_evidence.md)
+- [`docs/shadow_weather_hardening.md`](docs/shadow_weather_hardening.md)
+- [`docs/four_gate_reconciliation.md`](docs/four_gate_reconciliation.md)
+- [`docs/claim_boundary.md`](docs/claim_boundary.md)
+
+## Current evidence state
+
+### First-research-alpha result
+
+ZeroGateSim passed an original proof harness and a fresh-seed reproduction inside generated toy fields.
+
+Combined record:
+
+- `1458` scenario cells;
+- `13122` seeded simulation runs;
+- `22131` final earned-one events;
+- `2388` raw false-one pressures detected and demoted;
+- `0` final false-one crowns.
+
+The machine did not prove the universe.
+
+It did something narrower and real:
+
+> it met false one, named it, and refused the crown.
+
+### Fresh controlled deep81 / wide243 evidence
+
+`v1.5.5-alpha` records the fresh controlled `deep81` and `wide243` four-gate evidence runs as README-visible cards and report files:
+
+| profile | role in ladder | runs | earned-one events | raw false-one pressure | latent overcrown pressure | final false-one crowns |
+|---|---|---:|---:|---:|---:|---:|
+| `deep81` | perturbation / late-shock bridge | `2,916` | `5,155` | `402` | `639` | `0` |
+| `wide243` | temporal-depth / time-axis stress | `8,748` | `16,217` | `1,242` | `2,043` | `0` |
+
+Both runs passed with pressure visible, false-one pressure demoted, latent pressure held, and no final false-one crowns. These are controlled synthetic-field evidence witnesses, not physics proof.
+
+### Shadow lane current result
+
+The v1.6 shadow line is stricter than the native role-aware witness. It asks whether false-one-like pressure can be ranked from role-stripped observable behavior without role labels.
+
+`v1.6.8-alpha` made triad27 harder by generating cell-level evidence. The result showed the frozen transparent shadow score could see pressure density, but it did not yet earn relation/return/demotion-specific discrimination beyond dumb baselines. Therefore `v1.6.9-alpha` adds shadow discrimination repair. The weather hardening gate remains the judge that prevents larger weather from looking stronger than it is.
+
+Read the current shadow repair note:
+
+- [`docs/shadow_discrimination_repair.md`](docs/shadow_discrimination_repair.md)
+
+## Evidence visuals
+
+### First-research-alpha proof card
+
+![First-research-alpha proof card](docs/assets/first_research_alpha_proof_card.svg)
+
+### Fresh controlled deep81 evidence card
+
+![Fresh controlled deep81 evidence card](docs/assets/fresh_controlled_deep81_evidence_card.svg)
+
+### Fresh controlled wide243 evidence card
+
+![Fresh controlled wide243 evidence card](docs/assets/fresh_controlled_wide243_evidence_card.svg)
+
+### Role-blind shadow design card
+
+![Role-blind shadow design card](docs/assets/role_blind_shadow_design_card.svg)
+
+### Role-stripped feature extraction card
+
+![Role-stripped feature extraction card](docs/assets/role_stripped_feature_extraction_card.svg)
+
+### Transparent shadow score card
+
+![Transparent shadow score card](docs/assets/transparent_shadow_score_card.svg)
+
+### Shadow baseline/falsifier card
+
+![Shadow baseline/falsifier card](docs/assets/shadow_baseline_falsifier_card.svg)
+
+Visual guide:
+
+- [`docs/visual_guide.md`](docs/visual_guide.md)
+- [`docs/share_ready_reader_path.md`](docs/share_ready_reader_path.md)
+
+## Core theory
+
+The central hypothesis is:
+
+> Dimensionality emerges when candidate freedoms pass through the zero-gate cycle of distinction, polarity, relation, and return under trinary temporal ordering.
+
+The four gates are:
+
+- **Distinction** — something becomes separable from background.
+- **Polarity** — distinction gains meaningful positive and negative expression around zero.
+- **Relation** — polarity becomes bound into stable relation rather than split or drift.
+- **Return** — expressed structure folds back toward zero while preserving coherence.
+
+Return is not decorative. Distinction separates. Polarity tensions. Relation binds. When binding becomes coherent, expansion curves back as return.
+
+The zero-gate coherence of candidate `i` at time `t` is:
+
+```math
+C_Z^i(t)=\min(g_D^i(t),g_P^i(t),g_R^i(t),g_B^i(t))
+```
+
+The minimum matters. A candidate does not pass because one gate is beautiful. The weakest gate decides the coherence pressure.
+
+Raw local expression is not final +1. Final +1 belongs only to **earned-one**.
+
+Core sentence:
+
+> A real one is not the first thing after zero. A real one is what zero can return as without lying.
 
 ## Known-logic comparison boundary
 
@@ -549,103 +607,19 @@ Read the holdout boundary:
 
 - [`docs/shadow_holdout_evaluation.md`](docs/shadow_holdout_evaluation.md)
 
-## First-research-alpha result
+## Shadow discrimination repair
 
-ZeroGateSim passed an original proof harness and a fresh-seed reproduction inside generated toy fields.
+`v1.6.9-alpha` adds a residual discrimination report for the shadow line:
 
-Combined record:
+```powershell
+$env:PYTHONPATH = (Join-Path (Get-Location) "src")
 
-- `1458` scenario cells;
-- `13122` seeded simulation runs;
-- `22131` final earned-one events;
-- `2388` raw false-one pressures detected and demoted;
-- `0` final false-one crowns.
-
-The machine did not prove the universe.
-
-It did something narrower and real:
-
-> it met false one, named it, and refused the crown.
-
-## Core theory
-
-The central hypothesis is:
-
-> Dimensionality emerges when candidate freedoms pass through the zero-gate cycle of distinction, polarity, relation, and return under trinary temporal ordering.
-
-The four gates are:
-
-- **Distinction** — something becomes separable from background.
-- **Polarity** — distinction gains meaningful positive and negative expression around zero.
-- **Relation** — polarity becomes bound into stable relation rather than split or drift.
-- **Return** — expressed structure folds back toward zero while preserving coherence.
-
-Return is not decorative. Distinction separates. Polarity tensions. Relation binds. When binding becomes coherent, expansion curves back as return.
-
-The zero-gate coherence of candidate `i` at time `t` is:
-
-```math
-C_Z^i(t)=\min(g_D^i(t),g_P^i(t),g_R^i(t),g_B^i(t))
+& $P -m zerogate_sim.shadow_discrimination_report `
+  --hardening-comparison runs\shadow_triad27_harder_v1_6_8\triad27_hardened_evidence\weather_hardening `
+  --out runs\shadow_discrimination_v1_6_9_triad27
 ```
 
-The minimum matters. A candidate does not pass because one gate is beautiful. The weakest gate decides the coherence pressure.
-
-Raw local expression is not final +1. Final +1 belongs only to **earned-one**.
-
-Core sentence:
-
-> A real one is not the first thing after zero. A real one is what zero can return as without lying.
-
-## Visual route
-
-Start with the visual maps before reading the full machinery.
-
-### Zero-gate cycle
-
-![Zero-gate cycle](docs/assets/zero_gate_cycle.svg)
-
-### Trinary witness stack
-
-![Trinary witness stack](docs/assets/trinary_witness_stack.svg)
-
-### Proof harness map
-
-![Proof harness map](docs/assets/proof_harness_map.svg)
-
-### First-research-alpha proof card
-
-![First-research-alpha proof card](docs/assets/first_research_alpha_proof_card.svg)
-
-### Fresh controlled deep81 evidence card
-
-![Fresh controlled deep81 evidence card](docs/assets/fresh_controlled_deep81_evidence_card.svg)
-
-### Fresh controlled wide243 evidence card
-
-![Fresh controlled wide243 evidence card](docs/assets/fresh_controlled_wide243_evidence_card.svg)
-
-### Role-blind shadow design card
-
-![Role-blind shadow design card](docs/assets/role_blind_shadow_design_card.svg)
-
-### Role-stripped feature extraction card
-
-![Role-stripped feature extraction card](docs/assets/role_stripped_feature_extraction_card.svg)
-
-### Transparent shadow score card
-
-![Transparent shadow score card](docs/assets/transparent_shadow_score_card.svg)
-
-### Shadow baseline/falsifier card
-
-![Shadow baseline/falsifier card](docs/assets/shadow_baseline_falsifier_card.svg)
-
-Visual guide:
-
-- [`docs/visual_guide.md`](docs/visual_guide.md)
-- [`docs/share_ready_reader_path.md`](docs/share_ready_reader_path.md)
-
-## Proof harness
+It asks whether the frozen shadow score sees anything after the best available baseline already explains the easy target pressure. It does not retune the score and is not role-blind discovery.
 
 The first proof record used three adversarial dependency corpora:
 
@@ -762,6 +736,15 @@ Recommended route:
 Reviewer guide:
 
 - [`docs/for_reviewers.md`](docs/for_reviewers.md)
+
+## Boundary and release references
+
+Long release and process lists live in dedicated files so the README begins with the project rather than bookkeeping:
+
+- [`docs/runtime_ci_support.md`](docs/runtime_ci_support.md) — Python/runtime and CI support boundary.
+- [`docs/test_truth_and_handoff_boundary.md`](docs/test_truth_and_handoff_boundary.md) — strict assistant handoff, `runs/` evidence, and test-truth rules.
+- [`docs/version_truth.md`](docs/version_truth.md) — release spine and recent checkpoints.
+- [`docs/release_notes/`](docs/release_notes/) — detailed release notes.
 
 ## License and citation
 

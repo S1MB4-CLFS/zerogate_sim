@@ -1,11 +1,11 @@
 # ZeroGateSim Roadmap
 
-**Current line:** `v1.6.8-alpha` shadow triad27 hardened evidence  
+**Current line:** `v1.6.9-alpha` shadow discrimination repair  
 **Release posture:** public research-alpha / controlled synthetic-field experiment line
 
 **Runtime support boundary:** Python 3.12 is the required release/test runtime. Details live in [`docs/runtime_ci_support.md`](docs/runtime_ci_support.md).
 
-**Language boundary:** `v1.5.3-alpha` established the controlled synthetic-field language boundary; `v1.5.4-alpha` preserved the historical `wide243` proof floor; `v1.5.5-alpha` reports fresh controlled `deep81` / `wide243` evidence; `v1.6.0-alpha` begins role-blind shadow design without claiming role-blind discovery; `v1.6.1-alpha` separates role-stripped features from targets; `v1.6.2-alpha` adds a transparent report-side score without target loading; `v1.6.3-alpha` adds a baseline/falsifier comparison after scoring; `v1.6.4-alpha` reconciles the historical three-corpus first-alpha proof with the native four-gate mechanism before holdout; `v1.6.5-alpha` adds held-out `deep81` / `wide243` role-stripped evaluation without discovery language; `v1.6.6-alpha` adds triad27 preflight; `v1.6.7-alpha` hardens the weather judge before deeper trust; `v1.6.8-alpha` generates harder cell-level triad27 evidence before deep81 / wide243.
+**Language boundary:** `v1.5.3-alpha` established the controlled synthetic-field language boundary; `v1.5.4-alpha` preserved the historical `wide243` proof floor; `v1.5.5-alpha` reports fresh controlled `deep81` / `wide243` evidence; `v1.6.0-alpha` begins role-blind shadow design without claiming role-blind discovery; `v1.6.1-alpha` separates role-stripped features from targets; `v1.6.2-alpha` adds a transparent report-side score without target loading; `v1.6.3-alpha` adds a baseline/falsifier comparison after scoring; `v1.6.4-alpha` reconciles the historical three-corpus first-alpha proof with the native four-gate mechanism before holdout; `v1.6.5-alpha` adds held-out `deep81` / `wide243` role-stripped evaluation without discovery language; `v1.6.6-alpha` adds triad27 preflight; `v1.6.7-alpha` hardens the weather judge before deeper trust; `v1.6.8-alpha` generates harder cell-level triad27 evidence before deep81 / wide243; `v1.6.9-alpha` adds shadow discrimination repair so density-only pressure detection cannot masquerade as relation/return false-one discrimination.
 
 ZeroGateSim already has a first-research-alpha generated toy-field proof record. The v1.5 line uses controlled synthetic-field language only for explicit, seeded, adversarial, bounded experimental reports. The v1.6 line starts a stricter question: can a side-reader estimate false-one risk from observable behavior without reading role labels? The current work is not bigger claims; it is role-stripped evidence with clean falsifiers and explicit baseline comparison.
 
@@ -49,6 +49,17 @@ Fresh controlled v1.5 evidence block:
 | `wide243` | temporal-depth / time-axis stress | `8,748` | `16,217` | `1,242` | `2,043` | `0` |
 
 This evidence block supports the controlled synthetic-field line and role-blind shadow design. It does not prove physical time, gravity, mass, cosmology, or role-blind discovery.
+
+## Current v1.6.9 repair gate
+
+`v1.6.9-alpha` adds a residual discrimination report after the hardened triad27 wound. It asks whether the frozen shadow score sees anything beyond the best available dumb baseline. This is still report-side evaluation only: no score retuning, no native math mutation, no role-blind discovery claim.
+
+Success condition:
+
+- the report identifies density-only shadow behavior separately from relation/return/demotion-specific discrimination;
+- residual target diagnostics are computed after the best available baseline;
+- README test truth and version truth lists are moved into dedicated Markdown files without losing their content;
+- generated shadow score reports no longer point only to stale `v1.6.3-alpha` next-step language.
 
 ## Operating law
 

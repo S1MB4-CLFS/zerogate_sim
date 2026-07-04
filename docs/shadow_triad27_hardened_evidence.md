@@ -57,8 +57,8 @@ The role-stripped family file has one row per native-gate/weather-cell evidence 
 python -m zerogate_sim.shadow_triad27_hardened_evidence_report `
   --matrix-dir runs\shadow_triad27_harder_v1_6_8\matrix\distinction_triad27 `
   --matrix-dir runs\shadow_triad27_harder_v1_6_8\matrix\polarity_triad27 `
-  --matrix-dir runs\shadow_triad27_harder_v1_6_8\matrixelation_triad27 `
-  --matrix-dir runs\shadow_triad27_harder_v1_6_8\matrixeturn_triad27 `
+  --matrix-dir runs\shadow_triad27_harder_v1_6_8\matrix\relation_triad27 `
+  --matrix-dir runs\shadow_triad27_harder_v1_6_8\matrix\return_triad27 `
   --out runs\shadow_triad27_hardened_evidence_v1_6_8
 ```
 

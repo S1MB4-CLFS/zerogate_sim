@@ -184,9 +184,9 @@ def _write_read(path: Path, *, profile_scores: list[dict[str, object]], family_s
     for row in top_family:
         lines.append(f"| {row.get('source_label', '')} | {row.get('family_id', '')} | {row.get('shadow_score', '')} | {row.get('shadow_band', '')} | {row.get('strongest_contributor', '')} |")
     lines.append("")
-    lines.append("## Next step")
+    lines.append("## Evaluation route")
     lines.append("")
-    lines.append("`v1.6.3-alpha` should compare these scores against trivial baselines and the separated evaluation targets. If the transparent score cannot beat simple baselines, role-blind shadow is not earned.")
+    lines.append("These scores are pressure witnesses, not verdicts. Later baseline, weather-hardening, and discrimination reports must compare them against separated targets and dumb baselines. If the frozen score cannot beat simple baselines or cannot explain residual pressure beyond them, role-blind shadow is not earned.")
     lines.append("")
     path.write_text("\n".join(lines), encoding="utf-8")
 
@@ -257,7 +257,7 @@ def write_shadow_score_report(
         "family_forbidden_fields_found": _forbidden_header_fields(family_rows),
         "forbidden_shadow_input_fields": sorted(FORBIDDEN_SHADOW_INPUT_FIELDS),
         "target_file_loaded": False,
-        "target_file_boundary": "evaluation targets are reserved for v1.6.3 baseline/falsifier comparison",
+        "target_file_boundary": "evaluation targets are reserved for later baseline/falsifier, weather-hardening, and discrimination reports",
     }
     audit_path.write_text(json.dumps(audit, indent=2), encoding="utf-8")
     bundle_path = _write_bundle(output_dir)
