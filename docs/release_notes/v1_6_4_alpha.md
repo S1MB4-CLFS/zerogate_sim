@@ -41,4 +41,4 @@ It repairs the claim lane before the shadow line moves to holdout evaluation.
 
 ## Next
 
-`v1.6.5-alpha` should perform the held-out `deep81` / `wide243` role-stripped evaluation, only after this correction report and handoff are green.
+`v1.6.5-alpha` performs the held-out `deep81` / `wide243` role-stripped evaluation after this correction gate.

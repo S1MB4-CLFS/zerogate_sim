@@ -144,6 +144,25 @@ def test_targets_are_separate_from_features(tmp_path: Path) -> None:
     assert "target_raw_false_one_rate" not in feature_text
 
 
+def test_family_ids_are_opaque_and_match_targets(tmp_path: Path) -> None:
+    seed, ablation = _fixture(tmp_path)
+    paths = write_role_stripped_feature_report(
+        output_dir=tmp_path / "out",
+        seed_summaries={"deep81": seed},
+        ablation_summaries={"deep81": ablation},
+    )
+    with paths["role_stripped_family_features"].open(newline="", encoding="utf-8") as f:
+        feature_rows = list(csv.DictReader(f))
+    with paths["role_stripped_evaluation_targets"].open(newline="", encoding="utf-8") as f:
+        target_rows = [row for row in csv.DictReader(f) if row.get("family_id")]
+    feature_ids = {row["family_id"] for row in feature_rows}
+    target_ids = {row["family_id"] for row in target_rows}
+    assert feature_ids == target_ids
+    assert all("_opaque_" in family_id for family_id in feature_ids)
+    assert all("family_001" not in family_id and "family_002" not in family_id for family_id in feature_ids)
+    assert not any("relation" in family_id or "return" in family_id for family_id in feature_ids)
+
+
 def test_docs_and_readme_name_v1_6_1_boundary() -> None:
     readme = (ROOT / "README.md").read_text(encoding="utf-8")
     roadmap = (ROOT / "ROADMAP.md").read_text(encoding="utf-8")

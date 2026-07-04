@@ -58,6 +58,12 @@ role_stripped_feature_bundle.zip
 
 The first two are role-stripped feature inputs. The evaluation target file is deliberately separate and must not be loaded by a future role-blind scorer.
 
+## v1.6.5 family-id hardening
+
+`v1.6.5-alpha` keeps this extractor compatible but hardens the family-level join surface. Family IDs are now deterministic opaque hashes over observable non-role fields, not ordinal labels such as `family_001`.
+
+The ID is allowed to preserve feature/target joins. It must not encode `gate`, `candidate_profile`, `truth_role`, `role_label`, `answer_key`, or simple row order.
+
 ## Feature witness math
 
 For each source or opaque family row, the report extracts rate features such as:

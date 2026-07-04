@@ -1,6 +1,6 @@
 # ZeroGateSim
 
-**Current public line:** `v1.6.4-alpha` — four-gate reconciliation / return-adversary audit  
+**Current public line:** `v1.6.5-alpha` — shadow holdout evaluation  
 **Status:** speculative research software / controlled synthetic-field experiment line  
 **Working identity:** zero-gate dimensional emergence simulator  
 **Core question:** can a final trinary witness distinguish earned-one from raw expression pressure, latent overcrown, relation/return debt, and false-one pressure under controlled synthetic-field adversarial weather?
@@ -50,6 +50,8 @@ The required release/test runtime is **Python 3.12**. Runtime history and older-
 
 `v1.6.4-alpha` adds a four-gate reconciliation / return-adversary audit. It states that the historical first-alpha proof used three dedicated adversarial corpora while return was measured as the native `B` gate, points to later dedicated return-adversary coverage, and writes Zenodo correction-note source text without backdating evidence.
 
+`v1.6.5-alpha` adds a shadow holdout evaluation report. It evaluates already-written transparent shadow scores on declared held-out `deep81` / `wide243` role-stripped evidence, hardens opaque family IDs, and still refuses role-blind discovery language.
+
 Generated comparison preset scripts now check the expected cross-logic report path before building the handoff and print the exact `assistant_test_handoff.zip` path to upload.
 
 ## Version truth
@@ -79,6 +81,7 @@ Recent checkpoints:
 - `v1.6.2-alpha` adds a transparent shadow score prototype, score formula artifact, and report-only boundary before baseline comparison.
 - `v1.6.3-alpha` adds a baseline/falsifier report comparing transparent shadow scores against separated targets and trivial baselines without claiming discovery.
 - `v1.6.4-alpha` adds four-gate reconciliation, historical first-alpha claim correction, and return-adversary audit source text before holdout.
+- `v1.6.5-alpha` adds held-out `deep81` / `wide243` role-stripped shadow evaluation and opaque family-id hardening.
 
 Detailed release notes live in [`docs/release_notes/`](docs/release_notes/).
 
@@ -375,6 +378,7 @@ Reports:
 - [`docs/transparent_shadow_score.md`](docs/transparent_shadow_score.md)
 - [`docs/shadow_baseline_falsifier.md`](docs/shadow_baseline_falsifier.md)
 - [`docs/four_gate_reconciliation.md`](docs/four_gate_reconciliation.md)
+- [`docs/shadow_holdout_evaluation.md`](docs/shadow_holdout_evaluation.md)
 - [`docs/reports/fresh_controlled_81_243_visual_source.csv`](docs/reports/fresh_controlled_81_243_visual_source.csv)
 
 ### Role-blind shadow design
@@ -463,6 +467,29 @@ Read the falsifier boundary:
 
 - [`docs/shadow_baseline_falsifier.md`](docs/shadow_baseline_falsifier.md)
 - [`docs/four_gate_reconciliation.md`](docs/four_gate_reconciliation.md)
+
+### Shadow holdout evaluation
+
+`v1.6.5-alpha` adds the held-out role-stripped evaluation gate:
+
+```powershell
+$env:PYTHONPATH = (Join-Path (Get-Location) "src")
+& $P -m zerogate_sim.shadow_holdout_evaluation_report `
+  --profile-features runs\role_stripped_feature_report_v1_6_5_holdout\role_stripped_profile_features.csv `
+  --family-features runs\role_stripped_feature_report_v1_6_5_holdout\role_stripped_family_features.csv `
+  --profile-scores runs\shadow_score_report_v1_6_5_holdout\shadow_score_profile_scores.csv `
+  --family-scores runs\shadow_score_report_v1_6_5_holdout\shadow_score_family_scores.csv `
+  --evaluation-targets runs\role_stripped_feature_report_v1_6_5_holdout\role_stripped_evaluation_targets.csv `
+  --required-source deep81 `
+  --required-source wide243 `
+  --out runs\shadow_holdout_evaluation_v1_6_5
+```
+
+It evaluates scores only after they have already been written, requires visible `deep81` / `wide243` holdout sources, and reports whether the shadow survives available baselines. It is still not role-blind discovery.
+
+Read the holdout boundary:
+
+- [`docs/shadow_holdout_evaluation.md`](docs/shadow_holdout_evaluation.md)
 
 ## First-research-alpha result
 

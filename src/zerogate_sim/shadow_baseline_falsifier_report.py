@@ -459,7 +459,7 @@ def _write_read(
     lines.append("")
     lines.append("## Next gate")
     lines.append("")
-    lines.append("`v1.6.4-alpha` should run a held-out `deep81` / `wide243` role-stripped evaluation with exact gate baselines if the source feature schema provides them. Until holdout passes, the shadow remains report-side evidence only.")
+    lines.append("`v1.6.5-alpha` runs a held-out `deep81` / `wide243` role-stripped evaluation with exact gate baselines only if the source feature schema provides them. Until holdout passes, the shadow remains report-side evidence only.")
     lines.append("")
     path.write_text("\n".join(lines), encoding="utf-8")
 

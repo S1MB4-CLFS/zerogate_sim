@@ -2,6 +2,7 @@ from __future__ import annotations
 
 import argparse
 import csv
+import hashlib
 import json
 import zipfile
 from pathlib import Path
@@ -26,6 +27,34 @@ FEATURE_FILE_NAMES = {
     "audit": "role_stripped_forbidden_field_audit.json",
     "bundle": "role_stripped_feature_bundle.zip",
 }
+
+OPAQUE_FAMILY_ID_FIELDS = (
+    "seed_range",
+    "total_runs",
+    "final_earned_one_events",
+    "raw_expression_pressure",
+    "latent_overcrown_pressure",
+    "relation_debt_count",
+    "mirror_primary_pressure",
+    "mirror_secondary_pressure",
+)
+
+
+def _opaque_family_id(label: str, row: dict[str, str]) -> str:
+    """Return a deterministic non-sequential family id without role/gate labels.
+
+    The old v1.6.1 surface used `<label>_family_001` style ids. That was
+    convenient, but row order could leak gate-family identity. The holdout line
+    needs an id that preserves feature/target joins without carrying `gate`,
+    `candidate_profile`, `truth_role`, or a simple ordinal shortcut.
+    """
+
+    payload = {"source_label": label}
+    for key in OPAQUE_FAMILY_ID_FIELDS:
+        payload[key] = str(row.get(key, "") or "")
+    digest_source = json.dumps(payload, sort_keys=True, separators=(",", ":"))
+    digest = hashlib.sha256(digest_source.encode("utf-8")).hexdigest()[:12]
+    return f"{label}_opaque_{digest}"
 
 
 def _ensure_dir(path: Path) -> Path:
@@ -152,7 +181,7 @@ def _family_feature_rows(label: str, seed_rows: list[dict[str, str]]) -> list[di
             {
                 "source_label": label,
                 "source_profile": str(row.get("profile", "unknown") or "unknown"),
-                "family_id": f"{label}_family_{idx:03d}",
+                "family_id": _opaque_family_id(label, row),
                 "seed_range": str(row.get("seed_range", "unknown") or "unknown"),
                 "total_runs": total_runs,
                 "feature_earned_rate": _rate(_int(row, "final_earned_one_events"), total_runs),
@@ -164,7 +193,7 @@ def _family_feature_rows(label: str, seed_rows: list[dict[str, str]]) -> list[di
                 "boundary": "opaque_family_row_role_stripped",
             }
         )
-    return out
+    return sorted(out, key=lambda item: str(item["family_id"]))
 
 
 def _family_target_rows(label: str, seed_rows: list[dict[str, str]]) -> list[dict[str, object]]:
@@ -174,7 +203,7 @@ def _family_target_rows(label: str, seed_rows: list[dict[str, str]]) -> list[dic
         out.append(
             {
                 "source_label": label,
-                "family_id": f"{label}_family_{idx:03d}",
+                "family_id": _opaque_family_id(label, row),
                 "evaluation_family_label": str(row.get("gate", "unknown") or "unknown"),
                 "target_raw_false_one_rate": _rate(_int(row, "raw_false_one_pressure"), total_runs),
                 "target_false_one_demotion_rate": _rate(_int(row, "false_one_demoted_count"), total_runs),
@@ -182,7 +211,7 @@ def _family_target_rows(label: str, seed_rows: list[dict[str, str]]) -> list[dic
                 "boundary": "evaluation_target_separate_from_role_stripped_features",
             }
         )
-    return out
+    return sorted(out, key=lambda item: str(item["family_id"]))
 
 
 def _write_read(path: Path, *, profile_features: list[dict[str, object]], family_features: list[dict[str, object]], target_rows: list[dict[str, object]]) -> None:
@@ -214,6 +243,7 @@ def _write_read(path: Path, *, profile_features: list[dict[str, object]], family
     lines.append("")
     lines.append("- `role_stripped_profile_features.csv` — source-level observable features.")
     lines.append("- `role_stripped_family_features.csv` — opaque family-level observable features.")
+    lines.append("- Family IDs are hashed from observable non-role fields so row order does not become a gate-label shortcut.")
     lines.append("")
     lines.append("These feature files must not include `candidate_profile`, `truth_role`, `role_label`, `trap`, `expresser`, `latent_probe`, `designed_truth_role`, or `answer_key` fields.")
     lines.append("")
@@ -306,6 +336,8 @@ def write_role_stripped_feature_report(
         "forbidden_shadow_input_fields": sorted(FORBIDDEN_SHADOW_INPUT_FIELDS),
         "feature_files": [FEATURE_FILE_NAMES["profile_features"], FEATURE_FILE_NAMES["family_features"]],
         "target_file": FEATURE_FILE_NAMES["evaluation_targets"],
+        "family_ids_are_opaque_nonsequential": True,
+        "family_id_boundary": "family ids are deterministic hashes over observable non-role fields; they do not use gate, candidate_profile, truth_role, or ordinal row numbers",
         "target_file_boundary": "targets are separate and must not be loaded as shadow features",
     }
     audit_path.write_text(json.dumps(audit, indent=2), encoding="utf-8")

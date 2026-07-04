@@ -1,11 +1,11 @@
 # ZeroGateSim Roadmap
 
-**Current line:** `v1.6.4-alpha` four-gate reconciliation / return-adversary audit  
+**Current line:** `v1.6.5-alpha` shadow holdout evaluation  
 **Release posture:** public research-alpha / controlled synthetic-field experiment line
 
 **Runtime support boundary:** Python 3.12 is the required release/test runtime. Details live in [`docs/runtime_ci_support.md`](docs/runtime_ci_support.md).
 
-**Language boundary:** `v1.5.3-alpha` established the controlled synthetic-field language boundary; `v1.5.4-alpha` preserved the historical `wide243` proof floor; `v1.5.5-alpha` reports fresh controlled `deep81` / `wide243` evidence; `v1.6.0-alpha` begins role-blind shadow design without claiming role-blind discovery; `v1.6.1-alpha` separates role-stripped features from targets; `v1.6.2-alpha` adds a transparent report-side score without target loading; `v1.6.3-alpha` adds a baseline/falsifier comparison after scoring; `v1.6.4-alpha` reconciles the historical three-corpus first-alpha proof with the native four-gate mechanism before holdout.
+**Language boundary:** `v1.5.3-alpha` established the controlled synthetic-field language boundary; `v1.5.4-alpha` preserved the historical `wide243` proof floor; `v1.5.5-alpha` reports fresh controlled `deep81` / `wide243` evidence; `v1.6.0-alpha` begins role-blind shadow design without claiming role-blind discovery; `v1.6.1-alpha` separates role-stripped features from targets; `v1.6.2-alpha` adds a transparent report-side score without target loading; `v1.6.3-alpha` adds a baseline/falsifier comparison after scoring; `v1.6.4-alpha` reconciles the historical three-corpus first-alpha proof with the native four-gate mechanism before holdout; `v1.6.5-alpha` adds held-out `deep81` / `wide243` role-stripped evaluation without discovery language.
 
 ZeroGateSim already has a first-research-alpha generated toy-field proof record. The v1.5 line uses controlled synthetic-field language only for explicit, seeded, adversarial, bounded experimental reports. The v1.6 line starts a stricter question: can a side-reader estimate false-one risk from observable behavior without reading role labels? The current work is not bigger claims; it is role-stripped evidence with clean falsifiers and explicit baseline comparison.
 
@@ -839,10 +839,13 @@ Completed follow-ups preserved for the design boundary:
 - `v1.6.2-alpha` — transparent shadow score prototype, report-only;
 - `v1.6.3-alpha` — baseline comparison and falsifier report.
 
-Next v1.6 work:
+Completed follow-ups:
 
 - `v1.6.4-alpha` — four-gate reconciliation / return-adversary audit;
-- `v1.6.5-alpha` — holdout `deep81` / `wide243` role-stripped evaluation;
+- `v1.6.5-alpha` — holdout `deep81` / `wide243` role-stripped evaluation.
+
+Next v1.6 work:
+
 - `v1.6.6-alpha` — role-blind shadow visual/report closeout if evidence deserves it.
 
 
@@ -879,10 +882,13 @@ Completed follow-ups:
 - `v1.6.2-alpha` — transparent shadow score prototype;
 - `v1.6.3-alpha` — baseline comparison and falsifier report.
 
-Next v1.6 work:
+Completed follow-ups:
 
 - `v1.6.4-alpha` — four-gate reconciliation / return-adversary audit;
-- `v1.6.5-alpha` — holdout `deep81` / `wide243` role-stripped evaluation;
+- `v1.6.5-alpha` — holdout `deep81` / `wide243` role-stripped evaluation.
+
+Next v1.6 work:
+
 - `v1.6.6-alpha` — role-blind shadow visual/report closeout if evidence deserves it.
 
 
@@ -952,10 +958,13 @@ Boundary:
 
 This is not role-blind discovery. It does not crown, demote, or replace the role-aware witness. It records exact-baseline schema gaps instead of inventing missing evidence, and it does not change `C_Z = min(D, P, R, B)`.
 
-Next v1.6 work:
+Completed follow-ups:
 
 - `v1.6.4-alpha` — four-gate reconciliation / return-adversary audit;
-- `v1.6.5-alpha` — holdout `deep81` / `wide243` role-stripped evaluation;
+- `v1.6.5-alpha` — holdout `deep81` / `wide243` role-stripped evaluation.
+
+Next v1.6 work:
+
 - `v1.6.6-alpha` — role-blind shadow visual/report closeout if evidence deserves it.
 
 ### v1.6.4-alpha — Four-gate reconciliation / return-adversary audit
@@ -987,9 +996,35 @@ Boundary:
 
 No new proof harness, no native math change, no role-blind discovery claim. This version repairs evidence language before holdout.
 
+Completed follow-up:
+
+- `v1.6.5-alpha` — holdout `deep81` / `wide243` role-stripped evaluation.
+
 Next v1.6 work:
 
-- `v1.6.5-alpha` — holdout `deep81` / `wide243` role-stripped evaluation;
+- `v1.6.6-alpha` — role-blind shadow visual/report closeout if evidence deserves it.
+
+### v1.6.5-alpha — Shadow holdout evaluation
+
+Purpose:
+
+Evaluate already-written transparent shadow scores on declared held-out `deep81` / `wide243` role-stripped evidence after the four-gate reconciliation gate.
+
+Delivered:
+
+- `src/zerogate_sim/shadow_holdout_evaluation_report.py`;
+- console script `zerogate-shadow-holdout-evaluation`;
+- `docs/shadow_holdout_evaluation.md`;
+- `docs/release_notes/v1_6_5_alpha.md`;
+- tests for holdout source coverage, score-before-target boundary, forbidden-field refusal, output files, and documentation boundaries;
+- opaque non-sequential family IDs in the role-stripped feature extractor to reduce row-order/gate-family leakage.
+
+Boundary:
+
+This is not role-blind discovery and not a detector closeout. It evaluates a frozen transparent score against held-out targets only after scoring. The native witness remains `C_Z = min(D, P, R, B)`.
+
+Next v1.6 work:
+
 - `v1.6.6-alpha` — role-blind shadow visual/report closeout if evidence deserves it.
 
 ## v2.0 direction — External review and observed-universe bridge
