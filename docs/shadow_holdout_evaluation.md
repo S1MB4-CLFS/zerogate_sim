@@ -6,7 +6,7 @@
 
 ## Purpose
 
-`v1.6.5-alpha` adds the evaluator for declared held-out `deep81` / `wide243` role-stripped evidence. After the v1.6.6 correction, the intended evidence order is triad27 preflight first, then deeper `deep81` / `wide243` holdout.
+`v1.6.5-alpha` adds the evaluator for declared held-out `deep81` / `wide243` role-stripped evidence. After the v1.6.6/v1.6.7 corrections, the intended evidence order is triad27 preflight first, weather hardening second, then deeper `deep81` / `wide243` holdout only if the hardened judge does not reduce the shadow to a trivial baseline tie.
 
 This is not role-blind discovery. It is not a detector closeout. It does not crown, demote, or replace the current role-aware witness.
 
@@ -65,11 +65,13 @@ mean_target_top_bucket
 mean_target_all
 ```
 
-The primary target remains:
+The original primary target remains:
 
 ```text
 target_raw_false_one_rate
 ```
+
+The weather hardening report added in v1.6.7 also evaluates expanded target variety before this holdout is treated as stronger evidence.
 
 ## Decision language
 
@@ -122,4 +124,4 @@ After local tests and this report are green, build the assistant test handoff un
 
 ## Next gate
 
-`v1.6.6-alpha` adds triad27 preflight before this deeper holdout is treated as the next evidence gate. After triad27 is green, `v1.6.7-alpha` should run the `deep81` / `wide243` holdout evidence. Otherwise the shadow line remains in HOLD.
+`v1.6.7-alpha` adds shadow weather hardening before this deeper holdout is trusted. If the hardened report says the shadow is trivial against available baselines, the next work is discrimination repair, not larger weather.

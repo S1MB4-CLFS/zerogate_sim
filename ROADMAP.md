@@ -1,11 +1,11 @@
 # ZeroGateSim Roadmap
 
-**Current line:** `v1.6.5-alpha` shadow holdout evaluation  
+**Current line:** `v1.6.7-alpha` shadow weather hardening foundation  
 **Release posture:** public research-alpha / controlled synthetic-field experiment line
 
 **Runtime support boundary:** Python 3.12 is the required release/test runtime. Details live in [`docs/runtime_ci_support.md`](docs/runtime_ci_support.md).
 
-**Language boundary:** `v1.5.3-alpha` established the controlled synthetic-field language boundary; `v1.5.4-alpha` preserved the historical `wide243` proof floor; `v1.5.5-alpha` reports fresh controlled `deep81` / `wide243` evidence; `v1.6.0-alpha` begins role-blind shadow design without claiming role-blind discovery; `v1.6.1-alpha` separates role-stripped features from targets; `v1.6.2-alpha` adds a transparent report-side score without target loading; `v1.6.3-alpha` adds a baseline/falsifier comparison after scoring; `v1.6.4-alpha` reconciles the historical three-corpus first-alpha proof with the native four-gate mechanism before holdout; `v1.6.5-alpha` adds held-out `deep81` / `wide243` role-stripped evaluation without discovery language.
+**Language boundary:** `v1.5.3-alpha` established the controlled synthetic-field language boundary; `v1.5.4-alpha` preserved the historical `wide243` proof floor; `v1.5.5-alpha` reports fresh controlled `deep81` / `wide243` evidence; `v1.6.0-alpha` begins role-blind shadow design without claiming role-blind discovery; `v1.6.1-alpha` separates role-stripped features from targets; `v1.6.2-alpha` adds a transparent report-side score without target loading; `v1.6.3-alpha` adds a baseline/falsifier comparison after scoring; `v1.6.4-alpha` reconciles the historical three-corpus first-alpha proof with the native four-gate mechanism before holdout; `v1.6.5-alpha` adds held-out `deep81` / `wide243` role-stripped evaluation without discovery language; `v1.6.6-alpha` adds triad27 preflight; `v1.6.7-alpha` hardens the weather judge before deeper trust.
 
 ZeroGateSim already has a first-research-alpha generated toy-field proof record. The v1.5 line uses controlled synthetic-field language only for explicit, seeded, adversarial, bounded experimental reports. The v1.6 line starts a stricter question: can a side-reader estimate false-one risk from observable behavior without reading role labels? The current work is not bigger claims; it is role-stripped evidence with clean falsifiers and explicit baseline comparison.
 
@@ -844,10 +844,10 @@ Completed follow-ups:
 - `v1.6.4-alpha` — four-gate reconciliation / return-adversary audit;
 - `v1.6.5-alpha` — holdout `deep81` / `wide243` role-stripped evaluator tooling.
 
-Next v1.6 work:
+Completed follow-ups:
 
 - `v1.6.6-alpha` — triad27 shadow preflight before deeper holdout evidence;
-- `v1.6.7-alpha` — `deep81` / `wide243` shadow holdout evidence if triad27 is green.
+- `v1.6.7-alpha` — shadow weather hardening foundation across triad27/deep81/wide243 evidence; no score retuning; expanded target diagnostics.
 
 
 ### v1.6.1-alpha — Role-stripped feature extraction report
@@ -888,10 +888,10 @@ Completed follow-ups:
 - `v1.6.4-alpha` — four-gate reconciliation / return-adversary audit;
 - `v1.6.5-alpha` — holdout `deep81` / `wide243` role-stripped evaluator tooling.
 
-Next v1.6 work:
+Completed follow-ups:
 
 - `v1.6.6-alpha` — triad27 shadow preflight before deeper holdout evidence;
-- `v1.6.7-alpha` — `deep81` / `wide243` shadow holdout evidence if triad27 is green.
+- `v1.6.7-alpha` — shadow weather hardening foundation across triad27/deep81/wide243 evidence; no score retuning; expanded target diagnostics.
 
 
 ### v1.6.2-alpha — Transparent shadow score prototype
@@ -965,10 +965,10 @@ Completed follow-ups:
 - `v1.6.4-alpha` — four-gate reconciliation / return-adversary audit;
 - `v1.6.5-alpha` — holdout `deep81` / `wide243` role-stripped evaluator tooling.
 
-Next v1.6 work:
+Completed follow-ups:
 
 - `v1.6.6-alpha` — triad27 shadow preflight before deeper holdout evidence;
-- `v1.6.7-alpha` — `deep81` / `wide243` shadow holdout evidence if triad27 is green.
+- `v1.6.7-alpha` — shadow weather hardening foundation across triad27/deep81/wide243 evidence; no score retuning; expanded target diagnostics.
 
 ### v1.6.4-alpha — Four-gate reconciliation / return-adversary audit
 
@@ -1003,10 +1003,10 @@ Completed follow-up:
 
 - `v1.6.5-alpha` — holdout `deep81` / `wide243` role-stripped evaluation.
 
-Next v1.6 work:
+Completed follow-ups:
 
 - `v1.6.6-alpha` — triad27 shadow preflight before deeper holdout evidence;
-- `v1.6.7-alpha` — `deep81` / `wide243` shadow holdout evidence if triad27 is green.
+- `v1.6.7-alpha` — shadow weather hardening foundation across triad27/deep81/wide243 evidence; no score retuning; expanded target diagnostics.
 
 ### v1.6.5-alpha — Shadow holdout evaluation
 
@@ -1027,10 +1027,41 @@ Boundary:
 
 This is not role-blind discovery and not a detector closeout. It evaluates a frozen transparent score against held-out targets only after scoring. The native witness remains `C_Z = min(D, P, R, B)`.
 
-Next v1.6 work:
+Completed follow-ups:
 
 - `v1.6.6-alpha` — triad27 shadow preflight before deeper holdout evidence;
-- `v1.6.7-alpha` — `deep81` / `wide243` shadow holdout evidence if triad27 is green.
+- `v1.6.7-alpha` — shadow weather hardening foundation across triad27/deep81/wide243 evidence; no score retuning; expanded target diagnostics.
+
+### v1.6.7-alpha — Shadow weather hardening foundation
+
+Purpose:
+
+- stop the shadow line from treating a baseline tie as evidence;
+- evaluate triad27, deep81, and wide243 under one harder report surface;
+- expand evaluation targets beyond raw false-one rate;
+- show native gate pressure beside shadow diagnostics;
+- preserve score-first / target-later separation;
+- keep the current shadow score frozen during the audit.
+
+Outputs:
+
+- `src/zerogate_sim/shadow_weather_hardening_report.py`;
+- `docs/shadow_weather_hardening.md`;
+- `docs/release_notes/v1_6_7_alpha.md`;
+- `tests/test_shadow_weather_hardening_report.py`.
+
+Boundary:
+
+- not role-blind discovery;
+- not detector closeout;
+- not score retuning;
+- not a mutation of `C_Z = min(D, P, R, B)`.
+
+Next v1.6 work:
+
+- if weather hardening reports trivial shadow behavior, repair discrimination before deeper trust;
+- if weather hardening reports non-trivial shadow behavior across the ladder, then run deeper held-out evidence and prepare a bounded correction package.
+
 
 ## v2.0 direction — External review and observed-universe bridge
 

@@ -89,3 +89,22 @@ These are not new native gates. They are report-side features prepared for later
 A later role-blind shadow score must be produced from the feature files first. Only after that may it be compared against `role_stripped_evaluation_targets.csv`.
 
 If a shadow score cannot beat random, raw-pressure-only, weakest-gate-only, and relation-gate-only baselines on held-out controlled synthetic-field evidence, it is not earned.
+
+## v1.6.7 target hardening
+
+`v1.6.7-alpha` keeps the feature files role-stripped but expands the separate evaluation target file so later weather hardening can judge more than one easy target.
+
+The expanded target surface includes:
+
+```text
+target_raw_false_one_rate
+target_false_one_demotion_rate
+target_final_false_crown_rate
+target_relation_false_pressure_share
+target_false_pressure_density_rate
+target_hold_or_demote_rate
+target_return_false_pressure_share
+target_native_breach_rate
+```
+
+These target fields are evaluation-only. They must never appear in role-stripped feature files or score files.

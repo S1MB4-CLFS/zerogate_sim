@@ -1,6 +1,6 @@
 # ZeroGateSim
 
-**Current public line:** `v1.6.6-alpha` — shadow triad27 preflight  
+**Current public line:** `v1.6.7-alpha` — shadow weather hardening foundation  
 **Status:** speculative research software / controlled synthetic-field experiment line  
 **Working identity:** zero-gate dimensional emergence simulator  
 **Core question:** can a final trinary witness distinguish earned-one from raw expression pressure, latent overcrown, relation/return debt, and false-one pressure under controlled synthetic-field adversarial weather?
@@ -54,6 +54,8 @@ The required release/test runtime is **Python 3.12**. Runtime history and older-
 
 `v1.6.6-alpha` adds a triad27 preflight report. It forces the shadow line through the first trinary weather cube, `triad27 = 3^3`, before deeper `deep81` / `wide243` evidence is treated as the next rightful gate.
 
+`v1.6.7-alpha` adds a shadow weather hardening report. It treats the actual triad27 wound seriously: the shadow score can be right and still scientifically trivial if raw-pressure or mirror baselines tie it. The new report evaluates triad27 / deep81 / wide243 evidence with expanded target variety, native-gate pressure diagnostics, baseline-tie reporting, and no score retuning.
+
 Generated comparison preset scripts now check the expected cross-logic report path before building the handoff and print the exact `assistant_test_handoff.zip` path to upload.
 
 ## Version truth
@@ -85,6 +87,7 @@ Recent checkpoints:
 - `v1.6.4-alpha` adds four-gate reconciliation, historical first-alpha claim correction, and return-adversary audit source text before holdout.
 - `v1.6.5-alpha` adds held-out `deep81` / `wide243` role-stripped shadow evaluation tooling and opaque family-id hardening.
 - `v1.6.6-alpha` adds triad27 shadow preflight so the shadow line starts with `3^3` local expression weather before deeper `3^4` / `3^5` evidence.
+- `v1.6.7-alpha` adds weather hardening across the trinary ladder, expanded evaluation targets, native gate diagnostics, and baseline-tie honesty before deeper trust.
 
 Detailed release notes live in [`docs/release_notes/`](docs/release_notes/).
 
@@ -474,6 +477,31 @@ Read the falsifier boundary:
 - [`docs/four_gate_reconciliation.md`](docs/four_gate_reconciliation.md)
 
 ### Shadow triad27 preflight
+
+`v1.6.7-alpha` adds the harder cross-rung weather judge. Run this before treating any larger weather as stronger evidence:
+
+```powershell
+$env:PYTHONPATH = (Join-Path (Get-Location) "src")
+
+& $P -m zerogate_sim.shadow_weather_hardening_report `
+  --source triad27=runs\shadow_triad27_actual_v1_6_6 `
+  --required-rung triad27 `
+  --out runs\shadow_weather_hardening_v1_6_7_triad27
+```
+
+This report writes:
+
+```text
+weather_hardening_baseline_comparison.csv
+weather_hardening_target_diagnostics.csv
+weather_hardening_native_gate_metrics.csv
+weather_hardening_decision.json
+weather_hardening_audit.json
+weather_hardening_read.md
+weather_hardening_bundle.zip
+```
+
+It is still not role-blind discovery. It is the harder judge.
 
 `v1.6.6-alpha` adds the first trinary-weather shadow preflight:
 

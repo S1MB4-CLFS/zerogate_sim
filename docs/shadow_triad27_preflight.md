@@ -52,11 +52,13 @@ mean_target_top_bucket
 mean_target_all
 ```
 
-The primary target remains:
+The primary target in the preflight remains:
 
 ```text
 target_raw_false_one_rate
 ```
+
+After v1.6.7, the harder weather-hardened judge also evaluates expanded target variety so a raw-pressure tie cannot hide behind one easy target.
 
 ## Decision language
 
@@ -107,4 +109,4 @@ After local tests and this report are green, build the assistant test handoff un
 
 ## Next gate
 
-`v1.6.7-alpha` should run the deeper `deep81` / `wide243` holdout evidence only after triad27 preflight evidence, local full tests, and CI are green.
+`v1.6.7-alpha` hardens the weather judge before deeper trust. If triad27 says the shadow is right but trivial against available baselines, do not jump straight to `deep81` / `wide243`; run the hardening report and repair discrimination first.

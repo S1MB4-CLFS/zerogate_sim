@@ -144,3 +144,9 @@ shadow_baseline_falsifier_bundle.zip
 ## Next gate
 
 `v1.6.4-alpha` repairs the four-gate / first-alpha claim lane before holdout. `v1.6.5-alpha` adds a held-out `deep81` / `wide243` role-stripped evaluation. If exact gate baseline fields are absent, the result must stay in witness instead of pretending the missing baselines exist.
+
+## v1.6.7 weather-hardening note
+
+`v1.6.7-alpha` does not change the baseline/falsifier principle. It extends the later weather-hardening judge so target comparison can evaluate multiple separated target fields, not only `target_raw_false_one_rate`.
+
+The rule remains unchanged: target fields are evaluation-only and must not appear in feature or score inputs.

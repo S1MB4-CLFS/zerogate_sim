@@ -26,6 +26,10 @@ TARGET_FIELDS = {
     "target_false_one_demotion_rate",
     "target_final_false_crown_rate",
     "target_relation_false_pressure_share",
+    "target_false_pressure_density_rate",
+    "target_hold_or_demote_rate",
+    "target_return_false_pressure_share",
+    "target_native_breach_rate",
 }
 
 EVALUATION_ONLY_FIELDS = TARGET_FIELDS | {"evaluation_family_label"}

@@ -160,7 +160,12 @@ def _profile_target_row(label: str, seed_rows: list[dict[str, str]]) -> dict[str
     raw_false = sum(_int(row, "raw_false_one_pressure") for row in seed_rows)
     false_demoted = sum(_int(row, "false_one_demoted_count") for row in seed_rows)
     final_false = sum(_int(row, "final_false_one_crowns") for row in seed_rows)
+    latent = sum(_int(row, "latent_overcrown_pressure") for row in seed_rows)
+    latent_demoted = sum(_int(row, "latent_overcrown_demoted_count") for row in seed_rows)
+    relation_debt = sum(_int(row, "relation_debt_count") for row in seed_rows)
+    mirror_breach = sum(_int(row, "mirror_safety_breach_total") for row in seed_rows)
     relation_false = sum(_int(row, "raw_false_one_pressure") for row in seed_rows if str(row.get("gate", "")) == "relation")
+    return_false = sum(_int(row, "raw_false_one_pressure") for row in seed_rows if str(row.get("gate", "")) == "return")
     return {
         "source_label": label,
         "source_profile": _source_profile(seed_rows),
@@ -169,6 +174,10 @@ def _profile_target_row(label: str, seed_rows: list[dict[str, str]]) -> dict[str
         "target_false_one_demotion_rate": _rate(false_demoted, total_runs),
         "target_final_false_crown_rate": _rate(final_false, total_runs),
         "target_relation_false_pressure_share": _rate(relation_false, raw_false),
+        "target_false_pressure_density_rate": _rate(raw_false + latent + relation_debt, total_runs),
+        "target_hold_or_demote_rate": _rate(false_demoted + latent_demoted, total_runs),
+        "target_return_false_pressure_share": _rate(return_false, raw_false),
+        "target_native_breach_rate": _rate(final_false + mirror_breach, total_runs),
         "boundary": "evaluation_targets_only_do_not_load_as_shadow_features",
     }
 
@@ -200,14 +209,24 @@ def _family_target_rows(label: str, seed_rows: list[dict[str, str]]) -> list[dic
     out: list[dict[str, object]] = []
     for idx, row in enumerate(seed_rows, start=1):
         total_runs = _int(row, "total_runs")
+        raw_false = _int(row, "raw_false_one_pressure")
+        latent = _int(row, "latent_overcrown_pressure")
+        relation_debt = _int(row, "relation_debt_count")
+        false_demoted = _int(row, "false_one_demoted_count")
+        latent_demoted = _int(row, "latent_overcrown_demoted_count")
+        final_false = _int(row, "final_false_one_crowns")
+        mirror_breach = _int(row, "mirror_safety_breach_total")
         out.append(
             {
                 "source_label": label,
                 "family_id": _opaque_family_id(label, row),
                 "evaluation_family_label": str(row.get("gate", "unknown") or "unknown"),
-                "target_raw_false_one_rate": _rate(_int(row, "raw_false_one_pressure"), total_runs),
-                "target_false_one_demotion_rate": _rate(_int(row, "false_one_demoted_count"), total_runs),
-                "target_final_false_crown_rate": _rate(_int(row, "final_false_one_crowns"), total_runs),
+                "target_raw_false_one_rate": _rate(raw_false, total_runs),
+                "target_false_one_demotion_rate": _rate(false_demoted, total_runs),
+                "target_final_false_crown_rate": _rate(final_false, total_runs),
+                "target_false_pressure_density_rate": _rate(raw_false + latent + relation_debt, total_runs),
+                "target_hold_or_demote_rate": _rate(false_demoted + latent_demoted, total_runs),
+                "target_native_breach_rate": _rate(final_false + mirror_breach, total_runs),
                 "boundary": "evaluation_target_separate_from_role_stripped_features",
             }
         )
@@ -249,7 +268,7 @@ def _write_read(path: Path, *, profile_features: list[dict[str, object]], family
     lines.append("")
     lines.append("## Evaluation targets")
     lines.append("")
-    lines.append("`role_stripped_evaluation_targets.csv` keeps role-aware target values separate. A future shadow scorer may be evaluated against this file only after producing scores from the role-stripped feature files.")
+    lines.append("`role_stripped_evaluation_targets.csv` keeps role-aware target values separate. A future shadow scorer may be evaluated against this file only after producing scores from the role-stripped feature files. v1.6.7 expands this target surface beyond raw false-one rate so triad27, deep81, and wide243 can be judged by harder target variety rather than a single easy answer window.")
     lines.append("")
     lines.append("## Profile summary")
     lines.append("")
