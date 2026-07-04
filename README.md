@@ -1,6 +1,6 @@
 # ZeroGateSim
 
-**Current public line:** `v1.6.3-alpha` — shadow baseline/falsifier report  
+**Current public line:** `v1.6.4-alpha` — four-gate reconciliation / return-adversary audit  
 **Status:** speculative research software / controlled synthetic-field experiment line  
 **Working identity:** zero-gate dimensional emergence simulator  
 **Core question:** can a final trinary witness distinguish earned-one from raw expression pressure, latent overcrown, relation/return debt, and false-one pressure under controlled synthetic-field adversarial weather?
@@ -48,6 +48,8 @@ The required release/test runtime is **Python 3.12**. Runtime history and older-
 
 `v1.6.3-alpha` adds a baseline/falsifier report. It compares already-written transparent scores against separated evaluation targets and trivial role-stripped baselines, records missing exact-baseline schema gaps, and still refuses role-blind discovery language.
 
+`v1.6.4-alpha` adds a four-gate reconciliation / return-adversary audit. It states that the historical first-alpha proof used three dedicated adversarial corpora while return was measured as the native `B` gate, points to later dedicated return-adversary coverage, and writes Zenodo correction-note source text without backdating evidence.
+
 Generated comparison preset scripts now check the expected cross-logic report path before building the handoff and print the exact `assistant_test_handoff.zip` path to upload.
 
 ## Version truth
@@ -76,6 +78,7 @@ Recent checkpoints:
 - `v1.6.1-alpha` adds role-stripped feature extraction, feature/target separation, and a report bundle for later shadow scoring tests.
 - `v1.6.2-alpha` adds a transparent shadow score prototype, score formula artifact, and report-only boundary before baseline comparison.
 - `v1.6.3-alpha` adds a baseline/falsifier report comparing transparent shadow scores against separated targets and trivial baselines without claiming discovery.
+- `v1.6.4-alpha` adds four-gate reconciliation, historical first-alpha claim correction, and return-adversary audit source text before holdout.
 
 Detailed release notes live in [`docs/release_notes/`](docs/release_notes/).
 
@@ -116,6 +119,7 @@ Read first:
 - [`docs/role_stripped_feature_extraction.md`](docs/role_stripped_feature_extraction.md)
 - [`docs/transparent_shadow_score.md`](docs/transparent_shadow_score.md)
 - [`docs/shadow_baseline_falsifier.md`](docs/shadow_baseline_falsifier.md)
+- [`docs/four_gate_reconciliation.md`](docs/four_gate_reconciliation.md)
 
 ## Why this exists
 
@@ -370,6 +374,7 @@ Reports:
 - [`docs/role_stripped_feature_extraction.md`](docs/role_stripped_feature_extraction.md)
 - [`docs/transparent_shadow_score.md`](docs/transparent_shadow_score.md)
 - [`docs/shadow_baseline_falsifier.md`](docs/shadow_baseline_falsifier.md)
+- [`docs/four_gate_reconciliation.md`](docs/four_gate_reconciliation.md)
 - [`docs/reports/fresh_controlled_81_243_visual_source.csv`](docs/reports/fresh_controlled_81_243_visual_source.csv)
 
 ### Role-blind shadow design
@@ -457,6 +462,7 @@ It compares scores to targets only after the role-stripped scoring pass. It writ
 Read the falsifier boundary:
 
 - [`docs/shadow_baseline_falsifier.md`](docs/shadow_baseline_falsifier.md)
+- [`docs/four_gate_reconciliation.md`](docs/four_gate_reconciliation.md)
 
 ## First-research-alpha result
 

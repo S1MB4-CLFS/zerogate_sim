@@ -33,4 +33,4 @@ The report also records schema gaps when exact minimum baselines from the `v1.6.
 
 ## Next
 
-`v1.6.4-alpha` should perform a held-out `deep81` / `wide243` role-stripped evaluation and include exact gate baselines if the feature schema provides them.
+`v1.6.4-alpha` now performs four-gate reconciliation / return-adversary audit before holdout. `v1.6.5-alpha` should perform the held-out `deep81` / `wide243` role-stripped evaluation and include exact gate baselines if the feature schema provides them.

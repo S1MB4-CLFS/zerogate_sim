@@ -81,14 +81,18 @@ def build_final_output_rows_from_earned_rows(earned_rows: list[dict[str, object]
     return out
 
 
+def _final_false_one_crowns(rows: list[dict[str, object]]) -> int:
+    return sum(
+        int(row.get("raw_false_one_pressure", 0) or 0)
+        for row in rows
+        if int(row.get("final_trinary_value", 0) or 0) == 1 and str(row.get("truth_role", "")) == "trap"
+    )
+
+
 def _confirmation_status(rows: list[dict[str, object]]) -> tuple[str, str]:
     total_earned = sum(int(row["final_earned_one_count"]) for row in rows)
     false_pressure = sum(int(row["raw_false_one_pressure"]) for row in rows)
-    final_false_crowns = sum(
-        int(row["raw_false_one_pressure"])
-        for row in rows
-        if int(row["final_trinary_value"]) == 1 and str(row["truth_role"]) == "trap"
-    )
+    final_false_crowns = _final_false_one_crowns(rows)
     latent_pressure = sum(int(row["latent_overcrown_pressure"]) for row in rows)
     expressers = [row for row in rows if row["truth_role"] == "expresser"]
     earned_expressers = [row for row in expressers if int(row["final_earned_one_count"]) > 0]
@@ -136,7 +140,7 @@ def _write_final_output_read(path: Path, rows: list[dict[str, object]]) -> None:
     false_demoted = sum(int(row["false_one_demoted_count"]) for row in rows)
     latent_pressure = sum(int(row["latent_overcrown_pressure"]) for row in rows)
     latent_demoted = sum(int(row["latent_overcrown_demoted_count"]) for row in rows)
-    final_false_crowns = 0
+    final_false_crowns = _final_false_one_crowns(rows)
     earned_candidates = [row for row in rows if int(row["final_earned_one_count"]) > 0]
     demoted_false = [row for row in rows if int(row["false_one_demoted_count"]) > 0]
     demoted_latent = [row for row in rows if int(row["latent_overcrown_demoted_count"]) > 0]
@@ -218,6 +222,7 @@ def _write_confirmation_read(path: Path, rows: list[dict[str, object]]) -> None:
     total_raw = sum(int(row["raw_expression_pressure"]) for row in rows)
     total_earned = sum(int(row["final_earned_one_count"]) for row in rows)
     false_pressure = sum(int(row["raw_false_one_pressure"]) for row in rows)
+    final_false_crowns = _final_false_one_crowns(rows)
     latent_pressure = sum(int(row["latent_overcrown_pressure"]) for row in rows)
     earned = [row for row in rows if int(row["final_earned_one_count"]) > 0]
     false_demoted = [row for row in rows if int(row["false_one_demoted_count"]) > 0]
@@ -240,7 +245,7 @@ def _write_confirmation_read(path: Path, rows: list[dict[str, object]]) -> None:
     lines.append("")
     lines.append("## Resist")
     lines.append("")
-    lines.append(f"The final witness detects `{false_pressure}` raw false-one pressure events and allows `0` final false-one crowns.")
+    lines.append(f"The final witness detects `{false_pressure}` raw false-one pressure events and allows `{final_false_crowns}` final false-one crowns.")
     lines.append("")
     lines.append("## Result")
     lines.append("")

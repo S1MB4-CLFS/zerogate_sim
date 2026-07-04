@@ -54,3 +54,45 @@ def test_final_output_uses_earned_one_as_only_final_crown():
     assert out["F16"]["final_band"] == "latent_overcrown_demoted"
     assert out["F16"]["final_trinary_value"] == 0
     assert out["F16"]["latent_overcrown_demoted_count"] == 1
+
+
+def test_final_output_read_computes_final_false_crowns_from_rows(tmp_path):
+    from zerogate_sim.final_output import write_final_output_rows
+
+    rows = [
+        {
+            "candidate_id": "F26",
+            "kind": "field_echo",
+            "truth_role": "trap",
+            "runs": 1,
+            "raw_expression_pressure": 1,
+            "final_earned_one_count": 1,
+            "raw_false_one_pressure": 1,
+            "false_one_demoted_count": 0,
+            "latent_overcrown_pressure": 0,
+            "latent_overcrown_demoted_count": 0,
+            "relation_debt_count": 0,
+            "final_trinary_value": 1,
+            "final_trinary_symbol": "+1",
+            "final_band": "earned_one",
+            "final_reason": "malformed fixture: trap was crowned",
+            "echo_independence_band": "low_echo_pressure",
+            "relation_dependency_score": 0.0,
+            "echo_independence_score": 1.0,
+            "relation_minus_raw_expression": 0,
+            "relation_zero_raw_expression": 0,
+            "relation_plus_raw_expression": 1,
+            "mean_strength": 1.0,
+            "mean_zero_coherence": 1.0,
+            "mean_return_potential": 1.0,
+            "mean_return_observed": 1.0,
+        }
+    ]
+
+    paths = write_final_output_rows(tmp_path, rows)
+    final_read = paths["matrix_final_output_read"].read_text(encoding="utf-8")
+    confirmation = paths["matrix_theory_confirmation_read"].read_text(encoding="utf-8")
+
+    assert "final false-one crowns: `1`" in final_read
+    assert "allows `1` final false-one crowns" in confirmation
+    assert "Status: `hold`" in confirmation

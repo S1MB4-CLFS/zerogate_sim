@@ -143,4 +143,4 @@ shadow_baseline_falsifier_bundle.zip
 
 ## Next gate
 
-`v1.6.4-alpha` should run a held-out `deep81` / `wide243` role-stripped evaluation. If exact gate baseline fields are needed, the feature schema must expose them before the claim gets stronger.
+`v1.6.4-alpha` repairs the four-gate / first-alpha claim lane before holdout. `v1.6.5-alpha` should run a held-out `deep81` / `wide243` role-stripped evaluation. If exact gate baseline fields are needed, the feature schema must expose them before the claim gets stronger.

@@ -162,8 +162,9 @@ If the shadow does not beat these baselines on held-out controlled synthetic-fie
 1. `v1.6.1-alpha` — role-stripped feature extraction report.
 2. `v1.6.2-alpha` — transparent shadow score prototype, report-only.
 3. `v1.6.3-alpha` — baseline comparison and falsifier report.
-4. `v1.6.4-alpha` — held-out `deep81` / `wide243` role-stripped evaluation.
-5. `v1.6.5-alpha` — visual/report closeout only if evidence deserves it.
+4. `v1.6.4-alpha` — four-gate reconciliation / return-adversary audit.
+5. `v1.6.5-alpha` — held-out `deep81` / `wide243` role-stripped evaluation.
+6. `v1.6.6-alpha` — visual/report closeout only if evidence deserves it.
 
 ## Claim boundary
 
