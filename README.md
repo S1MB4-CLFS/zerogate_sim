@@ -1,6 +1,6 @@
 # ZeroGateSim
 
-**Current public line:** `v1.6.2-alpha` — transparent shadow score prototype  
+**Current public line:** `v1.6.3-alpha` — shadow baseline/falsifier report  
 **Status:** speculative research software / controlled synthetic-field experiment line  
 **Working identity:** zero-gate dimensional emergence simulator  
 **Core question:** can a final trinary witness distinguish earned-one from raw expression pressure, latent overcrown, relation/return debt, and false-one pressure under controlled synthetic-field adversarial weather?
@@ -46,6 +46,8 @@ The required release/test runtime is **Python 3.12**. Runtime history and older-
 
 `v1.6.2-alpha` adds a transparent shadow score prototype. It reads only role-stripped feature files, writes fixed-weight report-side scores, refuses role/answer-key fields, and leaves target comparison for the next falsifier report.
 
+`v1.6.3-alpha` adds a baseline/falsifier report. It compares already-written transparent scores against separated evaluation targets and trivial role-stripped baselines, records missing exact-baseline schema gaps, and still refuses role-blind discovery language.
+
 Generated comparison preset scripts now check the expected cross-logic report path before building the handoff and print the exact `assistant_test_handoff.zip` path to upload.
 
 ## Version truth
@@ -73,6 +75,7 @@ Recent checkpoints:
 - `v1.6.0-alpha` adds role-blind shadow design, a report schema, a README design card, and falsifier boundaries before scoring code exists.
 - `v1.6.1-alpha` adds role-stripped feature extraction, feature/target separation, and a report bundle for later shadow scoring tests.
 - `v1.6.2-alpha` adds a transparent shadow score prototype, score formula artifact, and report-only boundary before baseline comparison.
+- `v1.6.3-alpha` adds a baseline/falsifier report comparing transparent shadow scores against separated targets and trivial baselines without claiming discovery.
 
 Detailed release notes live in [`docs/release_notes/`](docs/release_notes/).
 
@@ -112,6 +115,7 @@ Read first:
 - [`docs/role_blind_shadow_schema.json`](docs/role_blind_shadow_schema.json)
 - [`docs/role_stripped_feature_extraction.md`](docs/role_stripped_feature_extraction.md)
 - [`docs/transparent_shadow_score.md`](docs/transparent_shadow_score.md)
+- [`docs/shadow_baseline_falsifier.md`](docs/shadow_baseline_falsifier.md)
 
 ## Why this exists
 
@@ -365,6 +369,7 @@ Reports:
 - [`docs/role_blind_shadow_schema.json`](docs/role_blind_shadow_schema.json)
 - [`docs/role_stripped_feature_extraction.md`](docs/role_stripped_feature_extraction.md)
 - [`docs/transparent_shadow_score.md`](docs/transparent_shadow_score.md)
+- [`docs/shadow_baseline_falsifier.md`](docs/shadow_baseline_falsifier.md)
 - [`docs/reports/fresh_controlled_81_243_visual_source.csv`](docs/reports/fresh_controlled_81_243_visual_source.csv)
 
 ### Role-blind shadow design
@@ -431,6 +436,27 @@ It reads role-stripped feature files only. It does not read evaluation targets, 
 Read the score boundary:
 
 - [`docs/transparent_shadow_score.md`](docs/transparent_shadow_score.md)
+
+### Shadow baseline/falsifier report
+
+`v1.6.3-alpha` adds the first baseline/falsifier comparison for the shadow line:
+
+```powershell
+$env:PYTHONPATH = (Join-Path (Get-Location) "src")
+& $P -m zerogate_sim.shadow_baseline_falsifier_report `
+  --profile-features runs\role_stripped_feature_report_v1_6_1\role_stripped_profile_features.csv `
+  --family-features runs\role_stripped_feature_report_v1_6_1\role_stripped_family_features.csv `
+  --profile-scores runs\shadow_score_report_v1_6_2\shadow_score_profile_scores.csv `
+  --family-scores runs\shadow_score_report_v1_6_2\shadow_score_family_scores.csv `
+  --evaluation-targets runs\role_stripped_feature_report_v1_6_1\role_stripped_evaluation_targets.csv `
+  --out runs\shadow_baseline_falsifier_report_v1_6_3
+```
+
+It compares scores to targets only after the role-stripped scoring pass. It writes ranking metrics against available baselines and records exact-baseline schema gaps instead of inventing missing evidence. The result is still not role-blind discovery.
+
+Read the falsifier boundary:
+
+- [`docs/shadow_baseline_falsifier.md`](docs/shadow_baseline_falsifier.md)
 
 ## First-research-alpha result
 
@@ -518,6 +544,10 @@ Start with the visual maps before reading the full machinery.
 ### Transparent shadow score card
 
 ![Transparent shadow score card](docs/assets/transparent_shadow_score_card.svg)
+
+### Shadow baseline/falsifier card
+
+![Shadow baseline/falsifier card](docs/assets/shadow_baseline_falsifier_card.svg)
 
 Visual guide:
 

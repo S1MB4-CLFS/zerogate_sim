@@ -1,13 +1,13 @@
 # ZeroGateSim Roadmap
 
-**Current line:** `v1.6.2-alpha` transparent shadow score prototype  
+**Current line:** `v1.6.3-alpha` shadow baseline/falsifier report  
 **Release posture:** public research-alpha / controlled synthetic-field experiment line
 
 **Runtime support boundary:** Python 3.12 is the required release/test runtime. Details live in [`docs/runtime_ci_support.md`](docs/runtime_ci_support.md).
 
-**Language boundary:** `v1.5.3-alpha` established the controlled synthetic-field language boundary; `v1.5.4-alpha` preserved the historical `wide243` proof floor; `v1.5.5-alpha` reports fresh controlled `deep81` / `wide243` evidence; `v1.6.0-alpha` begins role-blind shadow design without claiming role-blind discovery; `v1.6.1-alpha` separates role-stripped features from targets; `v1.6.2-alpha` adds a transparent report-side score without target loading.
+**Language boundary:** `v1.5.3-alpha` established the controlled synthetic-field language boundary; `v1.5.4-alpha` preserved the historical `wide243` proof floor; `v1.5.5-alpha` reports fresh controlled `deep81` / `wide243` evidence; `v1.6.0-alpha` begins role-blind shadow design without claiming role-blind discovery; `v1.6.1-alpha` separates role-stripped features from targets; `v1.6.2-alpha` adds a transparent report-side score without target loading; `v1.6.3-alpha` adds a baseline/falsifier comparison after scoring.
 
-ZeroGateSim already has a first-research-alpha generated toy-field proof record. The v1.5 line uses controlled synthetic-field language only for explicit, seeded, adversarial, bounded experimental reports. The v1.6 line starts a stricter question: can a side-reader estimate false-one risk from observable behavior without reading role labels? The next work is not bigger claims; it is role-stripped evidence with clean falsifiers.
+ZeroGateSim already has a first-research-alpha generated toy-field proof record. The v1.5 line uses controlled synthetic-field language only for explicit, seeded, adversarial, bounded experimental reports. The v1.6 line starts a stricter question: can a side-reader estimate false-one risk from observable behavior without reading role labels? The current work is not bigger claims; it is role-stripped evidence with clean falsifiers and explicit baseline comparison.
 
 ## North Star
 
@@ -19,7 +19,7 @@ Current supported claim:
 >
 > Active v1.5 line: inside controlled synthetic fields, final witness reports seed-block, threshold, ablation, and fresh `deep81` / `wide243` four-gate behavior under bounded adversarial pressure.
 >
-> Active v1.6 line: role-blind shadow is design-only until a role-stripped report proves it can rank false-one-like pressure from observable behavior alone.
+> Active v1.6 line: role-blind shadow is design-only until role-stripped scoring, baseline comparison, and holdout evidence prove it can rank false-one-like pressure from observable behavior alone.
 
 Current unsupported claims:
 
@@ -834,11 +834,13 @@ Falsifier:
 
 If a role-stripped shadow report cannot separate known false-pressure-heavy cases from clean earned-one cases better than raw-strength-only, weakest-gate-only, and random baselines, the shadow is not earned.
 
-Completed follow-up preserved for the design boundary: `v1.6.2-alpha` — transparent shadow score prototype, report-only.
+Completed follow-ups preserved for the design boundary:
+
+- `v1.6.2-alpha` — transparent shadow score prototype, report-only;
+- `v1.6.3-alpha` — baseline comparison and falsifier report.
 
 Next v1.6 work:
 
-- `v1.6.3-alpha` — baseline comparison and falsifier report;
 - `v1.6.4-alpha` — holdout `deep81` / `wide243` role-stripped evaluation;
 - `v1.6.5-alpha` — role-blind shadow visual/report closeout if evidence deserves it.
 
@@ -871,9 +873,13 @@ Boundary:
 
 The feature files are role-stripped inputs. The evaluation target file remains separate and must not be loaded by a future shadow scorer. This is not a detector, not role-blind discovery, and not a replacement for the native `C_Z = min(D, P, R, B)` witness.
 
+Completed follow-ups:
+
+- `v1.6.2-alpha` — transparent shadow score prototype;
+- `v1.6.3-alpha` — baseline comparison and falsifier report.
+
 Next v1.6 work:
 
-- `v1.6.3-alpha` — baseline comparison and falsifier report;
 - `v1.6.4-alpha` — holdout `deep81` / `wide243` role-stripped evaluation;
 - `v1.6.5-alpha` — role-blind shadow visual/report closeout if evidence deserves it.
 
@@ -913,9 +919,39 @@ Boundary:
 
 The scorer reads role-stripped feature files only. It does not load `role_stripped_evaluation_targets.csv`, `truth_role`, `role_label`, `candidate_profile`, or answer keys. It is report-only: no crowns, no demotions, no role-blind discovery claim, and no change to `C_Z = min(D, P, R, B)`.
 
+Completed follow-up: `v1.6.3-alpha` — baseline comparison and falsifier report.
+
+### v1.6.3-alpha — Shadow baseline/falsifier report
+
+Purpose:
+
+Compare already-written transparent shadow scores against separated evaluation targets and trivial role-stripped baselines after scoring has happened. The report asks whether the shadow ranks known false-one-like pressure better than available baselines without using role labels as score inputs.
+
+Delivered:
+
+- `src/zerogate_sim/shadow_baseline_falsifier_report.py`;
+- console script `zerogate-shadow-baseline-falsifier`;
+- `docs/shadow_baseline_falsifier.md`;
+- `docs/assets/shadow_baseline_falsifier_card.svg`;
+- `docs/release_notes/v1_6_3_alpha.md`;
+- tests for comparison output, target/role-field refusal, metrics, and documentation boundary.
+
+Outputs:
+
+- `shadow_baseline_profile_comparison.csv`;
+- `shadow_baseline_family_comparison.csv`;
+- `shadow_baseline_model_metrics.csv`;
+- `shadow_baseline_falsifier_read.md`;
+- `shadow_baseline_falsifier_metrics.json`;
+- `shadow_baseline_falsifier_audit.json`;
+- `shadow_baseline_falsifier_bundle.zip`.
+
+Boundary:
+
+This is not role-blind discovery. It does not crown, demote, or replace the role-aware witness. It records exact-baseline schema gaps instead of inventing missing evidence, and it does not change `C_Z = min(D, P, R, B)`.
+
 Next v1.6 work:
 
-- `v1.6.3-alpha` — baseline comparison and falsifier report;
 - `v1.6.4-alpha` — holdout `deep81` / `wide243` role-stripped evaluation;
 - `v1.6.5-alpha` — role-blind shadow visual/report closeout if evidence deserves it.
 

@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" role="img" aria-labelledby="title desc">
+  <title id="title">v1.6.3-alpha shadow baseline/falsifier card</title>
+  <desc id="desc">ZeroGateSim v1.6.3 compares transparent shadow scores against role-stripped baselines and separated evaluation targets without claiming role-blind discovery.</desc>
+  <rect width="1200" height="675" fill="#08111f"/>
+  <rect x="48" y="48" width="1104" height="579" rx="28" fill="#0f1b2e" stroke="#7dd3fc" stroke-width="3"/>
+  <text x="90" y="115" fill="#e0f2fe" font-family="Arial, sans-serif" font-size="42" font-weight="700">v1.6.3-alpha — Shadow Baseline/Falsifier</text>
+  <text x="90" y="165" fill="#bae6fd" font-family="Arial, sans-serif" font-size="25">Scores first. Targets after. Baselines decide whether the shadow earns trust.</text>
+
+  <rect x="90" y="220" width="300" height="150" rx="20" fill="#13213a" stroke="#60a5fa" stroke-width="3"/>
+  <text x="240" y="265" fill="#bfdbfe" font-family="Arial, sans-serif" font-size="24" font-weight="700" text-anchor="middle">1 Role-stripped inputs</text>
+  <text x="240" y="310" fill="#dbeafe" font-family="Arial, sans-serif" font-size="18" text-anchor="middle">features + transparent scores</text>
+  <text x="240" y="340" fill="#93c5fd" font-family="Arial, sans-serif" font-size="17" text-anchor="middle">no role labels, no targets</text>
+
+  <rect x="450" y="220" width="300" height="150" rx="20" fill="#182538" stroke="#fbbf24" stroke-width="3"/>
+  <text x="600" y="265" fill="#fde68a" font-family="Arial, sans-serif" font-size="24" font-weight="700" text-anchor="middle">2 Evaluation targets</text>
+  <text x="600" y="310" fill="#fef3c7" font-family="Arial, sans-serif" font-size="18" text-anchor="middle">loaded only after scoring</text>
+  <text x="600" y="340" fill="#fde68a" font-family="Arial, sans-serif" font-size="17" text-anchor="middle">target_raw_false_one_rate</text>
+
+  <rect x="810" y="220" width="300" height="150" rx="20" fill="#14251b" stroke="#86efac" stroke-width="3"/>
+  <text x="960" y="265" fill="#bbf7d0" font-family="Arial, sans-serif" font-size="24" font-weight="700" text-anchor="middle">3 Baseline gate</text>
+  <text x="960" y="310" fill="#dcfce7" font-family="Arial, sans-serif" font-size="18" text-anchor="middle">random + feature-only ranks</text>
+  <text x="960" y="340" fill="#86efac" font-family="Arial, sans-serif" font-size="17" text-anchor="middle">beat or hold, never bluff</text>
+
+  <path d="M395 295 H445" stroke="#e5e7eb" stroke-width="5" marker-end="url(#arrow)"/>
+  <path d="M755 295 H805" stroke="#e5e7eb" stroke-width="5" marker-end="url(#arrow)"/>
+  <defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L0,6 L9,3 z" fill="#e5e7eb"/></marker></defs>
+
+  <rect x="120" y="425" width="960" height="112" rx="18" fill="#111827" stroke="#f87171" stroke-width="3"/>
+  <text x="600" y="470" fill="#fecaca" font-family="Arial, sans-serif" font-size="25" font-weight="700" text-anchor="middle">Boundary</text>
+  <text x="600" y="510" fill="#fee2e2" font-family="Arial, sans-serif" font-size="20" text-anchor="middle">not role-blind discovery · not a detector closeout · C_Z = min(D, P, R, B)</text>
+
+  <text x="600" y="595" fill="#93c5fd" font-family="Arial, sans-serif" font-size="18" text-anchor="middle">A score is pressure. A detector is earned only after baselines and holdout.</text>
+</svg>
