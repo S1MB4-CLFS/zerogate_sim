@@ -842,11 +842,12 @@ Completed follow-ups preserved for the design boundary:
 Completed follow-ups:
 
 - `v1.6.4-alpha` — four-gate reconciliation / return-adversary audit;
-- `v1.6.5-alpha` — holdout `deep81` / `wide243` role-stripped evaluation.
+- `v1.6.5-alpha` — holdout `deep81` / `wide243` role-stripped evaluator tooling.
 
 Next v1.6 work:
 
-- `v1.6.6-alpha` — role-blind shadow visual/report closeout if evidence deserves it.
+- `v1.6.6-alpha` — triad27 shadow preflight before deeper holdout evidence;
+- `v1.6.7-alpha` — `deep81` / `wide243` shadow holdout evidence if triad27 is green.
 
 
 ### v1.6.1-alpha — Role-stripped feature extraction report
@@ -885,11 +886,12 @@ Completed follow-ups:
 Completed follow-ups:
 
 - `v1.6.4-alpha` — four-gate reconciliation / return-adversary audit;
-- `v1.6.5-alpha` — holdout `deep81` / `wide243` role-stripped evaluation.
+- `v1.6.5-alpha` — holdout `deep81` / `wide243` role-stripped evaluator tooling.
 
 Next v1.6 work:
 
-- `v1.6.6-alpha` — role-blind shadow visual/report closeout if evidence deserves it.
+- `v1.6.6-alpha` — triad27 shadow preflight before deeper holdout evidence;
+- `v1.6.7-alpha` — `deep81` / `wide243` shadow holdout evidence if triad27 is green.
 
 
 ### v1.6.2-alpha — Transparent shadow score prototype
@@ -961,11 +963,12 @@ This is not role-blind discovery. It does not crown, demote, or replace the role
 Completed follow-ups:
 
 - `v1.6.4-alpha` — four-gate reconciliation / return-adversary audit;
-- `v1.6.5-alpha` — holdout `deep81` / `wide243` role-stripped evaluation.
+- `v1.6.5-alpha` — holdout `deep81` / `wide243` role-stripped evaluator tooling.
 
 Next v1.6 work:
 
-- `v1.6.6-alpha` — role-blind shadow visual/report closeout if evidence deserves it.
+- `v1.6.6-alpha` — triad27 shadow preflight before deeper holdout evidence;
+- `v1.6.7-alpha` — `deep81` / `wide243` shadow holdout evidence if triad27 is green.
 
 ### v1.6.4-alpha — Four-gate reconciliation / return-adversary audit
 
@@ -1002,7 +1005,8 @@ Completed follow-up:
 
 Next v1.6 work:
 
-- `v1.6.6-alpha` — role-blind shadow visual/report closeout if evidence deserves it.
+- `v1.6.6-alpha` — triad27 shadow preflight before deeper holdout evidence;
+- `v1.6.7-alpha` — `deep81` / `wide243` shadow holdout evidence if triad27 is green.
 
 ### v1.6.5-alpha — Shadow holdout evaluation
 
@@ -1025,7 +1029,8 @@ This is not role-blind discovery and not a detector closeout. It evaluates a fro
 
 Next v1.6 work:
 
-- `v1.6.6-alpha` — role-blind shadow visual/report closeout if evidence deserves it.
+- `v1.6.6-alpha` — triad27 shadow preflight before deeper holdout evidence;
+- `v1.6.7-alpha` — `deep81` / `wide243` shadow holdout evidence if triad27 is green.
 
 ## v2.0 direction — External review and observed-universe bridge
 

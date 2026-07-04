@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "zerogate-sim"
-version = "1.6.5a0"
+version = "1.6.6a0"
 description = "Toy simulation framework for zero-gate dimensional emergence."
 readme = "README.md"
 requires-python = ">=3.12"
@@ -50,6 +50,7 @@ zerogate-shadow-score = "zerogate_sim.shadow_score_report:main"
 zerogate-shadow-baseline-falsifier = "zerogate_sim.shadow_baseline_falsifier_report:main"
 zerogate-four-gate-reconciliation = "zerogate_sim.four_gate_reconciliation_report:main"
 zerogate-shadow-holdout-evaluation = "zerogate_sim.shadow_holdout_evaluation_report:main"
+zerogate-shadow-triad27-preflight = "zerogate_sim.shadow_triad27_preflight_report:main"
 
 [tool.setuptools.packages.find]
 where = ["src"]

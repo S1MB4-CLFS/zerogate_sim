@@ -6,7 +6,7 @@
 
 ## Purpose
 
-`v1.6.5-alpha` tests whether the transparent shadow score survives a declared held-out `deep81` / `wide243` role-stripped evaluation.
+`v1.6.5-alpha` adds the evaluator for declared held-out `deep81` / `wide243` role-stripped evidence. After the v1.6.6 correction, the intended evidence order is triad27 preflight first, then deeper `deep81` / `wide243` holdout.
 
 This is not role-blind discovery. It is not a detector closeout. It does not crown, demote, or replace the current role-aware witness.
 
@@ -122,4 +122,4 @@ After local tests and this report are green, build the assistant test handoff un
 
 ## Next gate
 
-`v1.6.6-alpha` may become a role-blind shadow visual/report closeout only if this holdout report, local full tests, and CI are green. Otherwise the shadow line remains in HOLD.
+`v1.6.6-alpha` adds triad27 preflight before this deeper holdout is treated as the next evidence gate. After triad27 is green, `v1.6.7-alpha` should run the `deep81` / `wide243` holdout evidence. Otherwise the shadow line remains in HOLD.

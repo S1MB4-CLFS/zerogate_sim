@@ -163,8 +163,9 @@ If the shadow does not beat these baselines on held-out controlled synthetic-fie
 2. `v1.6.2-alpha` — transparent shadow score prototype, report-only.
 3. `v1.6.3-alpha` — baseline comparison and falsifier report.
 4. `v1.6.4-alpha` — four-gate reconciliation / return-adversary audit.
-5. `v1.6.5-alpha` — held-out `deep81` / `wide243` role-stripped evaluation.
-6. `v1.6.6-alpha` — visual/report closeout only if evidence deserves it.
+5. `v1.6.5-alpha` — held-out `deep81` / `wide243` role-stripped evaluator tooling.
+6. `v1.6.6-alpha` — triad27 preflight, first trinary weather cube.
+7. `v1.6.7-alpha` — held-out `deep81` / `wide243` evidence after triad27 is green.
 
 ## Claim boundary
 
