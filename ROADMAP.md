@@ -834,6 +834,8 @@ Falsifier:
 
 If a role-stripped shadow report cannot separate known false-pressure-heavy cases from clean earned-one cases better than raw-strength-only, weakest-gate-only, and random baselines, the shadow is not earned.
 
+Completed follow-up preserved for the design boundary: `v1.6.2-alpha` — transparent shadow score prototype, report-only.
+
 Next v1.6 work:
 
 - `v1.6.3-alpha` — baseline comparison and falsifier report;

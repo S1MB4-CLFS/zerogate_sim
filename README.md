@@ -432,8 +432,6 @@ Read the score boundary:
 
 - [`docs/transparent_shadow_score.md`](docs/transparent_shadow_score.md)
 
-- [`docs/transparent_shadow_score.md`](docs/transparent_shadow_score.md)
-
 ## First-research-alpha result
 
 ZeroGateSim passed an original proof harness and a fresh-seed reproduction inside generated toy fields.
