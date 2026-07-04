@@ -36,11 +36,11 @@ Example using the fresh controlled `deep81` and `wide243` evidence folders kept 
 $env:PYTHONPATH = (Join-Path (Get-Location) "src")
 
 & $P -m zerogate_sim.role_stripped_feature_report `
-  --seed-summary deep81=runs\controlled_deep81_four_gate_v1_5_4eports\seed_block_four_gate_report\seed_block_four_gate_summary.csv `
-  --ablation-summary deep81=runs\controlled_deep81_four_gate_v1_5_4eports\witness_ablation_report\witness_ablation_summary.csv `
-  --seed-summary wide243=runs\controlled_wide243_four_gate_v1_5_4eports\seed_block_four_gate_report\seed_block_four_gate_summary.csv `
-  --ablation-summary wide243=runs\controlled_wide243_four_gate_v1_5_4eports\witness_ablation_report\witness_ablation_summary.csv `
-  --out runsole_stripped_feature_report_v1_6_1
+  --seed-summary deep81=runs\controlled_deep81_four_gate_v1_5_4\reports\seed_block_four_gate_report\seed_block_four_gate_summary.csv `
+  --ablation-summary deep81=runs\controlled_deep81_four_gate_v1_5_4\reports\witness_ablation_report\witness_ablation_summary.csv `
+  --seed-summary wide243=runs\controlled_wide243_four_gate_v1_5_4\reports\seed_block_four_gate_report\seed_block_four_gate_summary.csv `
+  --ablation-summary wide243=runs\controlled_wide243_four_gate_v1_5_4\reports\witness_ablation_report\witness_ablation_summary.csv `
+  --out runs\role_stripped_feature_report_v1_6_1
 ```
 
 ## Outputs

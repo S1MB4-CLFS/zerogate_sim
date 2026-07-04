@@ -1,6 +1,6 @@
 # ZeroGateSim
 
-**Current public line:** `v1.6.1-alpha` — role-stripped feature extraction report  
+**Current public line:** `v1.6.2-alpha` — transparent shadow score prototype  
 **Status:** speculative research software / controlled synthetic-field experiment line  
 **Working identity:** zero-gate dimensional emergence simulator  
 **Core question:** can a final trinary witness distinguish earned-one from raw expression pressure, latent overcrown, relation/return debt, and false-one pressure under controlled synthetic-field adversarial weather?
@@ -44,6 +44,8 @@ The required release/test runtime is **Python 3.12**. Runtime history and older-
 
 `v1.6.1-alpha` adds role-stripped feature extraction. It reads completed seed-block and witness-ablation reports, writes feature files without designed truth-role shortcut fields, and keeps evaluation targets separate for later falsifier tests.
 
+`v1.6.2-alpha` adds a transparent shadow score prototype. It reads only role-stripped feature files, writes fixed-weight report-side scores, refuses role/answer-key fields, and leaves target comparison for the next falsifier report.
+
 Generated comparison preset scripts now check the expected cross-logic report path before building the handoff and print the exact `assistant_test_handoff.zip` path to upload.
 
 ## Version truth
@@ -70,6 +72,7 @@ Recent checkpoints:
 - `v1.5.5-alpha` adds fresh controlled `deep81` / `wide243` reports, visual-source data, and README evidence cards.
 - `v1.6.0-alpha` adds role-blind shadow design, a report schema, a README design card, and falsifier boundaries before scoring code exists.
 - `v1.6.1-alpha` adds role-stripped feature extraction, feature/target separation, and a report bundle for later shadow scoring tests.
+- `v1.6.2-alpha` adds a transparent shadow score prototype, score formula artifact, and report-only boundary before baseline comparison.
 
 Detailed release notes live in [`docs/release_notes/`](docs/release_notes/).
 
@@ -108,6 +111,7 @@ Read first:
 - [`docs/role_blind_shadow_design.md`](docs/role_blind_shadow_design.md)
 - [`docs/role_blind_shadow_schema.json`](docs/role_blind_shadow_schema.json)
 - [`docs/role_stripped_feature_extraction.md`](docs/role_stripped_feature_extraction.md)
+- [`docs/transparent_shadow_score.md`](docs/transparent_shadow_score.md)
 
 ## Why this exists
 
@@ -360,6 +364,7 @@ Reports:
 - [`docs/role_blind_shadow_design.md`](docs/role_blind_shadow_design.md)
 - [`docs/role_blind_shadow_schema.json`](docs/role_blind_shadow_schema.json)
 - [`docs/role_stripped_feature_extraction.md`](docs/role_stripped_feature_extraction.md)
+- [`docs/transparent_shadow_score.md`](docs/transparent_shadow_score.md)
 - [`docs/reports/fresh_controlled_81_243_visual_source.csv`](docs/reports/fresh_controlled_81_243_visual_source.csv)
 
 ### Role-blind shadow design
@@ -396,11 +401,11 @@ Read the design:
 ```powershell
 $env:PYTHONPATH = (Join-Path (Get-Location) "src")
 & $P -m zerogate_sim.role_stripped_feature_report `
-  --seed-summary deep81=runs\controlled_deep81_four_gate_v1_5_4eports\seed_block_four_gate_report\seed_block_four_gate_summary.csv `
-  --ablation-summary deep81=runs\controlled_deep81_four_gate_v1_5_4eports\witness_ablation_report\witness_ablation_summary.csv `
-  --seed-summary wide243=runs\controlled_wide243_four_gate_v1_5_4eports\seed_block_four_gate_report\seed_block_four_gate_summary.csv `
-  --ablation-summary wide243=runs\controlled_wide243_four_gate_v1_5_4eports\witness_ablation_report\witness_ablation_summary.csv `
-  --out runsole_stripped_feature_report_v1_6_1
+  --seed-summary deep81=runs\controlled_deep81_four_gate_v1_5_4\reports\seed_block_four_gate_report\seed_block_four_gate_summary.csv `
+  --ablation-summary deep81=runs\controlled_deep81_four_gate_v1_5_4\reports\witness_ablation_report\witness_ablation_summary.csv `
+  --seed-summary wide243=runs\controlled_wide243_four_gate_v1_5_4\reports\seed_block_four_gate_report\seed_block_four_gate_summary.csv `
+  --ablation-summary wide243=runs\controlled_wide243_four_gate_v1_5_4\reports\witness_ablation_report\witness_ablation_summary.csv `
+  --out runs\role_stripped_feature_report_v1_6_1
 ```
 
 It writes role-stripped feature files and a separate evaluation-target file. Future shadow scoring must load the feature files first and compare against targets only after scoring.
@@ -408,6 +413,26 @@ It writes role-stripped feature files and a separate evaluation-target file. Fut
 Read the extraction boundary:
 
 - [`docs/role_stripped_feature_extraction.md`](docs/role_stripped_feature_extraction.md)
+
+### Transparent shadow score prototype
+
+`v1.6.2-alpha` adds the first transparent report-side shadow score:
+
+```powershell
+$env:PYTHONPATH = (Join-Path (Get-Location) "src")
+& $P -m zerogate_sim.shadow_score_report `
+  --profile-features runs\role_stripped_feature_report_v1_6_1\role_stripped_profile_features.csv `
+  --family-features runs\role_stripped_feature_report_v1_6_1\role_stripped_family_features.csv `
+  --out runs\shadow_score_report_v1_6_2
+```
+
+It reads role-stripped feature files only. It does not read evaluation targets, role labels, or candidate profiles. The output is a transparent score report, not a verdict.
+
+Read the score boundary:
+
+- [`docs/transparent_shadow_score.md`](docs/transparent_shadow_score.md)
+
+- [`docs/transparent_shadow_score.md`](docs/transparent_shadow_score.md)
 
 ## First-research-alpha result
 
@@ -491,6 +516,10 @@ Start with the visual maps before reading the full machinery.
 ### Role-stripped feature extraction card
 
 ![Role-stripped feature extraction card](docs/assets/role_stripped_feature_extraction_card.svg)
+
+### Transparent shadow score card
+
+![Transparent shadow score card](docs/assets/transparent_shadow_score_card.svg)
 
 Visual guide:
 

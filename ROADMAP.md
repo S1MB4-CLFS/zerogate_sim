@@ -1,11 +1,11 @@
 # ZeroGateSim Roadmap
 
-**Current line:** `v1.6.1-alpha` role-stripped feature extraction report  
+**Current line:** `v1.6.2-alpha` transparent shadow score prototype  
 **Release posture:** public research-alpha / controlled synthetic-field experiment line
 
 **Runtime support boundary:** Python 3.12 is the required release/test runtime. Details live in [`docs/runtime_ci_support.md`](docs/runtime_ci_support.md).
 
-**Language boundary:** `v1.5.3-alpha` established the controlled synthetic-field language boundary; `v1.5.4-alpha` preserved the historical `wide243` proof floor; `v1.5.5-alpha` reports fresh controlled `deep81` / `wide243` evidence; `v1.6.0-alpha` begins role-blind shadow design without claiming role-blind discovery.
+**Language boundary:** `v1.5.3-alpha` established the controlled synthetic-field language boundary; `v1.5.4-alpha` preserved the historical `wide243` proof floor; `v1.5.5-alpha` reports fresh controlled `deep81` / `wide243` evidence; `v1.6.0-alpha` begins role-blind shadow design without claiming role-blind discovery; `v1.6.1-alpha` separates role-stripped features from targets; `v1.6.2-alpha` adds a transparent report-side score without target loading.
 
 ZeroGateSim already has a first-research-alpha generated toy-field proof record. The v1.5 line uses controlled synthetic-field language only for explicit, seeded, adversarial, bounded experimental reports. The v1.6 line starts a stricter question: can a side-reader estimate false-one risk from observable behavior without reading role labels? The next work is not bigger claims; it is role-stripped evidence with clean falsifiers.
 
@@ -836,7 +836,6 @@ If a role-stripped shadow report cannot separate known false-pressure-heavy case
 
 Next v1.6 work:
 
-- `v1.6.2-alpha` — transparent shadow score prototype, report-only;
 - `v1.6.3-alpha` — baseline comparison and falsifier report;
 - `v1.6.4-alpha` — holdout `deep81` / `wide243` role-stripped evaluation;
 - `v1.6.5-alpha` — role-blind shadow visual/report closeout if evidence deserves it.
@@ -872,7 +871,48 @@ The feature files are role-stripped inputs. The evaluation target file remains s
 
 Next v1.6 work:
 
-- `v1.6.2-alpha` — transparent shadow score prototype, report-only;
+- `v1.6.3-alpha` — baseline comparison and falsifier report;
+- `v1.6.4-alpha` — holdout `deep81` / `wide243` role-stripped evaluation;
+- `v1.6.5-alpha` — role-blind shadow visual/report closeout if evidence deserves it.
+
+
+### v1.6.2-alpha — Transparent shadow score prototype
+
+Purpose:
+
+Read the role-stripped feature files from `v1.6.1-alpha` and write a fixed-weight transparent shadow score before any target comparison is allowed.
+
+Delivered:
+
+- `src/zerogate_sim/shadow_score_report.py`;
+- console script `zerogate-shadow-score`;
+- `docs/transparent_shadow_score.md`;
+- `docs/assets/transparent_shadow_score_card.svg`;
+- `docs/release_notes/v1_6_2_alpha.md`;
+- tests for score output, role/answer-key refusal, monotonic fixture behavior, and documentation boundary.
+
+Outputs:
+
+- `shadow_score_profile_scores.csv`;
+- `shadow_score_family_scores.csv`;
+- `shadow_score_read.md`;
+- `shadow_score_formula.json`;
+- `shadow_score_forbidden_field_audit.json`;
+- `shadow_score_bundle.zip`.
+
+Transparent score:
+
+```text
+N(x) = x / (1 + x)
+S_shadow = sum_j w_j N(x_j)
+```
+
+Boundary:
+
+The scorer reads role-stripped feature files only. It does not load `role_stripped_evaluation_targets.csv`, `truth_role`, `role_label`, `candidate_profile`, or answer keys. It is report-only: no crowns, no demotions, no role-blind discovery claim, and no change to `C_Z = min(D, P, R, B)`.
+
+Next v1.6 work:
+
 - `v1.6.3-alpha` — baseline comparison and falsifier report;
 - `v1.6.4-alpha` — holdout `deep81` / `wide243` role-stripped evaluation;
 - `v1.6.5-alpha` — role-blind shadow visual/report closeout if evidence deserves it.
