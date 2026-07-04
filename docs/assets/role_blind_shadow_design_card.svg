@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1700" height="1050" viewBox="0 0 1700 1050" role="img">
+<defs>
+<linearGradient id="bg" x1="0" x2="1" y1="0" y2="1"><stop offset="0%" stop-color="#07111f"/><stop offset="62%" stop-color="#0d1117"/><stop offset="100%" stop-color="#150f22"/></linearGradient>
+<filter id="shadow" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="8" stdDeviation="9" flood-color="#000" flood-opacity="0.35"/></filter>
+</defs>
+<rect width="1700" height="1050" fill="url(#bg)"/>
+<g stroke="#27364a" stroke-opacity="0.16">
+<line x1="0" y1="0" x2="0" y2="1050"/><line x1="96" y1="0" x2="96" y2="1050"/><line x1="192" y1="0" x2="192" y2="1050"/><line x1="288" y1="0" x2="288" y2="1050"/><line x1="384" y1="0" x2="384" y2="1050"/><line x1="480" y1="0" x2="480" y2="1050"/><line x1="576" y1="0" x2="576" y2="1050"/><line x1="672" y1="0" x2="672" y2="1050"/><line x1="768" y1="0" x2="768" y2="1050"/><line x1="864" y1="0" x2="864" y2="1050"/><line x1="960" y1="0" x2="960" y2="1050"/><line x1="1056" y1="0" x2="1056" y2="1050"/><line x1="1152" y1="0" x2="1152" y2="1050"/><line x1="1248" y1="0" x2="1248" y2="1050"/><line x1="1344" y1="0" x2="1344" y2="1050"/><line x1="1440" y1="0" x2="1440" y2="1050"/><line x1="1536" y1="0" x2="1536" y2="1050"/><line x1="1632" y1="0" x2="1632" y2="1050"/>
+<line x1="0" y1="0" x2="1700" y2="0"/><line x1="0" y1="96" x2="1700" y2="96"/><line x1="0" y1="192" x2="1700" y2="192"/><line x1="0" y1="288" x2="1700" y2="288"/><line x1="0" y1="384" x2="1700" y2="384"/><line x1="0" y1="480" x2="1700" y2="480"/><line x1="0" y1="576" x2="1700" y2="576"/><line x1="0" y1="672" x2="1700" y2="672"/><line x1="0" y1="768" x2="1700" y2="768"/><line x1="0" y1="864" x2="1700" y2="864"/><line x1="0" y1="960" x2="1700" y2="960"/>
+</g>
+<text x="70" y="70" fill="#f0f6fc" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="42" font-weight="800">ZeroGateSim Role-Blind Shadow Design Card</text>
+<text x="72" y="112" fill="#a8b9d0" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="20" font-weight="500">v1.6.0-alpha · report-only side-reader · no role labels as inputs</text>
+<rect x="100" y="180" width="440" height="290" rx="34" fill="#122b1a" stroke="#7ee787" stroke-width="4" filter="url(#shadow)"/>
+<text x="320" y="238" fill="#7ee787" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="29" font-weight="900" text-anchor="middle">ALLOW</text>
+<text x="320" y="306" fill="#f0f6fc" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="34" font-weight="900" text-anchor="middle">OBSERVABLES</text>
+<text x="320" y="360" fill="#d6e4ff" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="22" font-weight="800" text-anchor="middle">gates · gaps · fragility</text>
+<text x="320" y="395" fill="#d6e4ff" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="22" font-weight="800" text-anchor="middle">ablation crown risk</text>
+<rect x="630" y="180" width="440" height="290" rx="34" fill="#0e2039" stroke="#79c0ff" stroke-width="4" filter="url(#shadow)"/>
+<text x="850" y="238" fill="#79c0ff" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="29" font-weight="900" text-anchor="middle">WITNESS 0</text>
+<text x="850" y="306" fill="#f0f6fc" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="34" font-weight="900" text-anchor="middle">REPORT-ONLY</text>
+<text x="850" y="360" fill="#d6e4ff" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="22" font-weight="800" text-anchor="middle">risk score, not verdict</text>
+<text x="850" y="395" fill="#d6e4ff" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="22" font-weight="800" text-anchor="middle">side-reader only</text>
+<rect x="1160" y="180" width="440" height="290" rx="34" fill="#2b1115" stroke="#ff7b72" stroke-width="4" filter="url(#shadow)"/>
+<text x="1380" y="238" fill="#ff7b72" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="29" font-weight="900" text-anchor="middle">FORBID</text>
+<text x="1380" y="306" fill="#f0f6fc" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="34" font-weight="900" text-anchor="middle">ROLE LABELS</text>
+<text x="1380" y="360" fill="#d6e4ff" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="22" font-weight="800" text-anchor="middle">trap · expresser</text>
+<text x="1380" y="395" fill="#d6e4ff" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="22" font-weight="800" text-anchor="middle">truth_role · answer key</text>
+<rect x="100" y="540" width="1500" height="275" rx="30" fill="#111827" stroke="#d6e4ff" stroke-width="3" filter="url(#shadow)"/>
+<text x="850" y="592" fill="#f0f6fc" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="31" font-weight="900" text-anchor="middle">First shadow smell map</text>
+<text x="250" y="665" fill="#ff7b72" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="28" font-weight="900" text-anchor="middle">G_R</text>
+<text x="250" y="705" fill="#d6e4ff" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="20" font-weight="700" text-anchor="middle">relation wound</text>
+<text x="480" y="665" fill="#79c0ff" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="28" font-weight="900" text-anchor="middle">G_B</text>
+<text x="480" y="705" fill="#d6e4ff" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="20" font-weight="700" text-anchor="middle">return gap</text>
+<text x="710" y="665" fill="#d2a8ff" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="28" font-weight="900" text-anchor="middle">L</text>
+<text x="710" y="705" fill="#d6e4ff" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="20" font-weight="700" text-anchor="middle">latent hold</text>
+<text x="940" y="665" fill="#ffa657" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="28" font-weight="900" text-anchor="middle">T_f</text>
+<text x="940" y="705" fill="#d6e4ff" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="20" font-weight="700" text-anchor="middle">temporal fragility</text>
+<text x="1170" y="665" fill="#7ee787" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="28" font-weight="900" text-anchor="middle">T_h</text>
+<text x="1170" y="705" fill="#d6e4ff" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="20" font-weight="700" text-anchor="middle">threshold fragility</text>
+<text x="1400" y="665" fill="#ff7b72" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="28" font-weight="900" text-anchor="middle">A</text>
+<text x="1400" y="705" fill="#d6e4ff" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="20" font-weight="700" text-anchor="middle">ablation risk</text>
+<text x="850" y="775" fill="#f0f6fc" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="29" font-weight="900" text-anchor="middle">S_shadow = w_R G_R + w_B G_B + w_L L + w_I I + w_T T_f + w_H T_h + w_A A</text>
+<rect x="155" y="850" width="1390" height="105" rx="26" fill="#0e2039" stroke="#79c0ff" stroke-width="3" filter="url(#shadow)"/>
+<text x="850" y="890" fill="#f0f6fc" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="26" font-weight="900" text-anchor="middle">Score first without role labels · compare after scoring only</text>
+<text x="850" y="925" fill="#d6e4ff" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="21" font-weight="600" text-anchor="middle">must beat random, raw-strength-only, weakest-gate-only, and relation-gate-only baselines</text>
+<text x="850" y="1018" fill="#8b949e" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="16" font-weight="500" text-anchor="middle">Design checkpoint, not detector. Native C_Z = min(D, P, R, B) remains unchanged.</text>
+</svg>

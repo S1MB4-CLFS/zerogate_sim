@@ -1,13 +1,13 @@
 # ZeroGateSim Roadmap
 
-**Current line:** `v1.5.5-alpha` fresh controlled deep81/wide243 evidence report  
+**Current line:** `v1.6.0-alpha` role-blind shadow design  
 **Release posture:** public research-alpha / controlled synthetic-field experiment line
 
 **Runtime support boundary:** Python 3.12 is the required release/test runtime. Details live in [`docs/runtime_ci_support.md`](docs/runtime_ci_support.md).
 
-**Language boundary:** `v1.5.3-alpha` established the controlled synthetic-field language boundary; `v1.5.4-alpha` preserved the historical `wide243` proof floor; `v1.5.5-alpha` reports fresh controlled `deep81` / `wide243` evidence without changing that boundary.
+**Language boundary:** `v1.5.3-alpha` established the controlled synthetic-field language boundary; `v1.5.4-alpha` preserved the historical `wide243` proof floor; `v1.5.5-alpha` reports fresh controlled `deep81` / `wide243` evidence; `v1.6.0-alpha` begins role-blind shadow design without claiming role-blind discovery.
 
-ZeroGateSim already has a first-research-alpha generated toy-field proof record. The v1.5 line uses controlled synthetic-field language only for explicit, seeded, adversarial, bounded experimental reports. The next work is not bigger claims; it is stronger evidence with clean falsifiers.
+ZeroGateSim already has a first-research-alpha generated toy-field proof record. The v1.5 line uses controlled synthetic-field language only for explicit, seeded, adversarial, bounded experimental reports. The v1.6 line starts a stricter question: can a side-reader estimate false-one risk from observable behavior without reading role labels? The next work is not bigger claims; it is role-stripped evidence with clean falsifiers.
 
 ## North Star
 
@@ -18,6 +18,8 @@ Current supported claim:
 > Historical first-research-alpha: inside generated toy fields, final trinary witness separated earned-one from raw expression, latent overcrown, and false-one pressure across original and fresh-seed adversarial proof records.
 >
 > Active v1.5 line: inside controlled synthetic fields, final witness reports seed-block, threshold, ablation, and fresh `deep81` / `wide243` four-gate behavior under bounded adversarial pressure.
+>
+> Active v1.6 line: role-blind shadow is design-only until a role-stripped report proves it can rank false-one-like pressure from observable behavior alone.
 
 Current unsupported claims:
 
@@ -781,18 +783,64 @@ Role-blind implication:
 
 The strongest first shadow signals should be relation false-pressure concentration, temporal-stretch sensitivity, latent-hold dependence, raw-as-final crown risk, and false-one demotion dependence. Echo/relation-debt alone is weak in these runs because relation/return debt stayed `0`.
 
-## v1.6-alpha — Role-blind shadow design
+## v1.6-alpha — Role-blind shadow line
 
 Purpose:
 
-Design, then only later implement, a shadow detector that estimates false-one pressure from observable metrics without reading designed truth-role labels.
+Move from role-aware harness validation toward a conservative role-stripped side-reader. The shadow line must never pretend that role-aware proof is role-blind discovery.
 
-Required before code:
+### v1.6.0-alpha — Role-blind shadow design
 
-- metric list;
-- expected failure modes;
-- comparison against current role-aware proof witness;
-- clear claim boundary.
+Purpose:
+
+Define the role-blind shadow before implementation. The shadow estimates false-one-like pressure from observable behavior, not from designed truth-role labels.
+
+Delivered:
+
+- `docs/role_blind_shadow_design.md`;
+- `docs/role_blind_shadow_schema.json`;
+- `docs/assets/role_blind_shadow_design_card.svg`;
+- `docs/release_notes/v1_6_0_alpha.md`;
+- text tests for role-blind design boundaries.
+
+Allowed observables:
+
+- gate vectors and weakest-gate pressure;
+- relation wound and return gap;
+- zero-depth instability;
+- lineage and independence weakness where these are observable report fields;
+- threshold fragility;
+- temporal fragility;
+- ablation crown risk.
+
+Forbidden inputs:
+
+- `trap` / `expresser` / `latent/probe` labels;
+- `truth_role` or `role_label` fields;
+- `candidate_profile` as a classification shortcut;
+- any designed answer key used before scoring.
+
+Design score:
+
+```text
+S_shadow = w_R G_R + w_B G_B + w_L L + w_I I + w_T T_f + w_H H_f + w_A A
+```
+
+Boundary:
+
+This is not a detector yet. It is not role-blind discovery. It does not replace the current role-aware witness or the native `C_Z = min(D, P, R, B)` coherence law.
+
+Falsifier:
+
+If a role-stripped shadow report cannot separate known false-pressure-heavy cases from clean earned-one cases better than raw-strength-only, weakest-gate-only, and random baselines, the shadow is not earned.
+
+Next v1.6 work:
+
+- `v1.6.1-alpha` — role-stripped feature extraction report;
+- `v1.6.2-alpha` — transparent shadow score prototype, report-only;
+- `v1.6.3-alpha` — baseline comparison and falsifier report;
+- `v1.6.4-alpha` — holdout `deep81` / `wide243` role-stripped evaluation;
+- `v1.6.5-alpha` — role-blind shadow visual/report closeout if evidence deserves it.
 
 ## v2.0 direction — External review and observed-universe bridge
 

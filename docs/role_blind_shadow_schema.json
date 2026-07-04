@@ -1,0 +1,64 @@
+{
+  "schema_name": "zerogate_role_blind_shadow_report_schema",
+  "version": "v1.6.0-alpha",
+  "status": "design_only_report_schema",
+  "native_boundary": "C_Z = min(D, P, R, B) remains the coherence witness; role-blind shadow is report-only.",
+  "allowed_input_fields": [
+    "candidate_id",
+    "run_id",
+    "seed",
+    "profile",
+    "weather_cell",
+    "gate_distinction",
+    "gate_polarity",
+    "gate_relation",
+    "gate_return",
+    "weakest_gate",
+    "raw_strength_pressure",
+    "lineage_witness_score",
+    "independence_witness_score",
+    "zero_depth_state",
+    "threshold_variant",
+    "time_axis",
+    "ablation_variant_outputs"
+  ],
+  "forbidden_input_fields": [
+    "trap",
+    "expresser",
+    "latent_probe",
+    "truth_role",
+    "role_label",
+    "candidate_profile",
+    "designed_truth_role",
+    "answer_key"
+  ],
+  "derived_metrics": [
+    "relation_wound_score",
+    "return_gap_score",
+    "latent_hold_pressure",
+    "zero_depth_instability",
+    "threshold_fragility",
+    "temporal_fragility",
+    "ablation_crown_risk",
+    "shadow_false_one_risk"
+  ],
+  "report_fields": [
+    "candidate_id",
+    "shadow_false_one_risk",
+    "shadow_relation_wound_score",
+    "shadow_return_gap_score",
+    "shadow_latent_hold_pressure",
+    "shadow_temporal_fragility",
+    "shadow_threshold_fragility",
+    "shadow_ablation_crown_risk",
+    "shadow_risk_band",
+    "shadow_boundary_note"
+  ],
+  "risk_band_values": [
+    "low",
+    "watch",
+    "high"
+  ],
+  "evaluation_rule": "Score first without forbidden fields; compare against role-aware labels only after scoring.",
+  "falsifier": "If shadow risk does not beat random, raw-strength-only, weakest-gate-only, and relation-gate-only baselines on held-out controlled synthetic-field runs, it is not earned."
+}

@@ -1,15 +1,15 @@
 # ZeroGateSim
 
-**Current public line:** `v1.5.5-alpha` — fresh controlled deep81/wide243 evidence report  
+**Current public line:** `v1.6.0-alpha` — role-blind shadow design  
 **Status:** speculative research software / controlled synthetic-field experiment line  
 **Working identity:** zero-gate dimensional emergence simulator  
 **Core question:** can a final trinary witness distinguish earned-one from raw expression pressure, latent overcrown, relation/return debt, and false-one pressure under controlled synthetic-field adversarial weather?
 
-ZeroGateSim is a small research software project for testing a speculative theory of dimensional emergence. The historical first-research-alpha proof record remains a generated toy-field proof-of-concept; the v1.5 line uses controlled synthetic-field language for explicit, seeded, adversarial, bounded experiments.
+ZeroGateSim is a small research software project for testing a speculative theory of dimensional emergence. The historical first-research-alpha proof record remains a generated toy-field proof-of-concept; the v1.5 line uses controlled synthetic-field language for explicit, seeded, adversarial, bounded experiments; the v1.6 line begins role-blind shadow design without claiming role-blind discovery.
 
 It does **not** prove cosmology, physical dimensions, or that reality itself is trinary.
 
-It tests a narrower software-theory claim in the active v1.5 line:
+It tests a narrower software-theory claim in the active v1.5/v1.6 line:
 
 > Inside controlled synthetic fields, final earned-one witness can separate earned expression from raw expression pressure, latent overcrown, relation/return debt, and false-one pressure under four-gate adversarial pressure.
 
@@ -40,6 +40,8 @@ The required release/test runtime is **Python 3.12**. Runtime history and older-
 
 `v1.5.5-alpha` preserves the fresh controlled `deep81` and `wide243` four-gate evidence runs as repo reports, README visual cards, and later paper-source material. It adds derived evidence metrics only; the native math witness is unchanged.
 
+`v1.6.0-alpha` adds the role-blind shadow design. It is a report-only design checkpoint: the shadow may read observable behavior, but it must not read designed truth-role labels, and it does not replace the current role-aware witness.
+
 Generated comparison preset scripts now check the expected cross-logic report path before building the handoff and print the exact `assistant_test_handoff.zip` path to upload.
 
 ## Version truth
@@ -52,6 +54,7 @@ The active public line is repaired around this spine:
 - `v1.3.x-alpha` — known-logic mirrors and projection-loss reports.
 - `v1.4.x-alpha` — cross-logic comparison, preset planning, and evidence-handoff integrity.
 - `v1.5.x-alpha` — stronger controlled synthetic-field experiments: seed-block reporting, threshold sensitivity, witness ablation, and language boundary.
+- `v1.6.x-alpha` — role-blind shadow design, role-stripped metrics, and later validation reports.
 
 Recent checkpoints:
 
@@ -63,6 +66,7 @@ Recent checkpoints:
 - `v1.5.3-alpha` defines the controlled synthetic-field language boundary and moves runtime-history detail into `docs/runtime_ci_support.md`.
 - `v1.5.4-alpha` adds historical `wide243` evidence intake and fresh `deep81` / `wide243` run-order guidance.
 - `v1.5.5-alpha` adds fresh controlled `deep81` / `wide243` reports, visual-source data, and README evidence cards.
+- `v1.6.0-alpha` adds role-blind shadow design, a report schema, a README design card, and falsifier boundaries before scoring code exists.
 
 Detailed release notes live in [`docs/release_notes/`](docs/release_notes/).
 
@@ -98,6 +102,8 @@ Read first:
 - [`docs/reports/wide243_historical_evidence_intake.md`](docs/reports/wide243_historical_evidence_intake.md)
 - [`docs/reports/fresh_controlled_deep81_four_gate_evidence_report.md`](docs/reports/fresh_controlled_deep81_four_gate_evidence_report.md)
 - [`docs/reports/fresh_controlled_wide243_four_gate_evidence_report.md`](docs/reports/fresh_controlled_wide243_four_gate_evidence_report.md)
+- [`docs/role_blind_shadow_design.md`](docs/role_blind_shadow_design.md)
+- [`docs/role_blind_shadow_schema.json`](docs/role_blind_shadow_schema.json)
 
 ## Why this exists
 
@@ -347,7 +353,36 @@ Reports:
 
 - [`docs/reports/fresh_controlled_deep81_four_gate_evidence_report.md`](docs/reports/fresh_controlled_deep81_four_gate_evidence_report.md)
 - [`docs/reports/fresh_controlled_wide243_four_gate_evidence_report.md`](docs/reports/fresh_controlled_wide243_four_gate_evidence_report.md)
+- [`docs/role_blind_shadow_design.md`](docs/role_blind_shadow_design.md)
+- [`docs/role_blind_shadow_schema.json`](docs/role_blind_shadow_schema.json)
 - [`docs/reports/fresh_controlled_81_243_visual_source.csv`](docs/reports/fresh_controlled_81_243_visual_source.csv)
+
+### Role-blind shadow design
+
+`v1.6.0-alpha` starts the role-blind shadow line as design only. The shadow is a report-side reader that may inspect observable pressure behavior but must not inspect designed truth-role labels.
+
+Allowed shadow inputs include gate vectors, weakest-gate pressure, return gap, relation wound, zero-depth instability, threshold fragility, temporal fragility, and ablation crown risk.
+
+Forbidden shadow inputs include designed `trap`, `expresser`, `latent/probe`, `truth_role`, `role_label`, and `candidate_profile` fields.
+
+The first shadow score is designed as a transparent risk witness, not a verdict:
+
+```math
+S_{shadow}=w_R G_R+w_B G_B+w_L L+w_I I+w_T T_f+w_H H_f+w_A A
+```
+
+The native witness still decides final earned-one:
+
+```math
+C_Z = min(D, P, R, B)
+```
+
+Role-blind shadow does not replace `W_role`, crown candidates, demote candidates, or claim discovery. It only asks whether a candidate behaves like false-one pressure from observable behavior alone.
+
+Read the design:
+
+- [`docs/role_blind_shadow_design.md`](docs/role_blind_shadow_design.md)
+- [`docs/role_blind_shadow_schema.json`](docs/role_blind_shadow_schema.json)
 
 ## First-research-alpha result
 
@@ -423,6 +458,10 @@ Start with the visual maps before reading the full machinery.
 ### Fresh controlled wide243 evidence card
 
 ![Fresh controlled wide243 evidence card](docs/assets/fresh_controlled_wide243_evidence_card.svg)
+
+### Role-blind shadow design card
+
+![Role-blind shadow design card](docs/assets/role_blind_shadow_design_card.svg)
 
 Visual guide:
 
