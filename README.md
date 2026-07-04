@@ -1,6 +1,6 @@
 # ZeroGateSim
 
-**Current public line:** `v1.6.7-alpha` — shadow weather hardening foundation  
+**Current public line:** `v1.6.8-alpha` — shadow triad27 hardened evidence  
 **Status:** speculative research software / controlled synthetic-field experiment line  
 **Working identity:** zero-gate dimensional emergence simulator  
 **Core question:** can a final trinary witness distinguish earned-one from raw expression pressure, latent overcrown, relation/return debt, and false-one pressure under controlled synthetic-field adversarial weather?
@@ -56,6 +56,8 @@ The required release/test runtime is **Python 3.12**. Runtime history and older-
 
 `v1.6.7-alpha` adds a shadow weather hardening report. It treats the actual triad27 wound seriously: the shadow score can be right and still scientifically trivial if raw-pressure or mirror baselines tie it. The new report evaluates triad27 / deep81 / wide243 evidence with expanded target variety, native-gate pressure diagnostics, baseline-tie reporting, and no score retuning.
 
+`v1.6.8-alpha` adds a hardened triad27 evidence generator. It converts four native triad27 matrix runs into cell-level role-stripped evidence, exposes exact raw-strength / weakest-gate / relation-gate / return-gate baselines, and immediately runs weather hardening without retuning the score.
+
 Generated comparison preset scripts now check the expected cross-logic report path before building the handoff and print the exact `assistant_test_handoff.zip` path to upload.
 
 ## Version truth
@@ -88,6 +90,7 @@ Recent checkpoints:
 - `v1.6.5-alpha` adds held-out `deep81` / `wide243` role-stripped shadow evaluation tooling and opaque family-id hardening.
 - `v1.6.6-alpha` adds triad27 shadow preflight so the shadow line starts with `3^3` local expression weather before deeper `3^4` / `3^5` evidence.
 - `v1.6.7-alpha` adds weather hardening across the trinary ladder, expanded evaluation targets, native gate diagnostics, and baseline-tie honesty before deeper trust.
+- `v1.6.8-alpha` adds hardened triad27 cell-level evidence generation before deep81 / wide243 trust.
 
 Detailed release notes live in [`docs/release_notes/`](docs/release_notes/).
 

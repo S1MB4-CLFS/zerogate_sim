@@ -1,11 +1,11 @@
 # ZeroGateSim Roadmap
 
-**Current line:** `v1.6.7-alpha` shadow weather hardening foundation  
+**Current line:** `v1.6.8-alpha` shadow triad27 hardened evidence  
 **Release posture:** public research-alpha / controlled synthetic-field experiment line
 
 **Runtime support boundary:** Python 3.12 is the required release/test runtime. Details live in [`docs/runtime_ci_support.md`](docs/runtime_ci_support.md).
 
-**Language boundary:** `v1.5.3-alpha` established the controlled synthetic-field language boundary; `v1.5.4-alpha` preserved the historical `wide243` proof floor; `v1.5.5-alpha` reports fresh controlled `deep81` / `wide243` evidence; `v1.6.0-alpha` begins role-blind shadow design without claiming role-blind discovery; `v1.6.1-alpha` separates role-stripped features from targets; `v1.6.2-alpha` adds a transparent report-side score without target loading; `v1.6.3-alpha` adds a baseline/falsifier comparison after scoring; `v1.6.4-alpha` reconciles the historical three-corpus first-alpha proof with the native four-gate mechanism before holdout; `v1.6.5-alpha` adds held-out `deep81` / `wide243` role-stripped evaluation without discovery language; `v1.6.6-alpha` adds triad27 preflight; `v1.6.7-alpha` hardens the weather judge before deeper trust.
+**Language boundary:** `v1.5.3-alpha` established the controlled synthetic-field language boundary; `v1.5.4-alpha` preserved the historical `wide243` proof floor; `v1.5.5-alpha` reports fresh controlled `deep81` / `wide243` evidence; `v1.6.0-alpha` begins role-blind shadow design without claiming role-blind discovery; `v1.6.1-alpha` separates role-stripped features from targets; `v1.6.2-alpha` adds a transparent report-side score without target loading; `v1.6.3-alpha` adds a baseline/falsifier comparison after scoring; `v1.6.4-alpha` reconciles the historical three-corpus first-alpha proof with the native four-gate mechanism before holdout; `v1.6.5-alpha` adds held-out `deep81` / `wide243` role-stripped evaluation without discovery language; `v1.6.6-alpha` adds triad27 preflight; `v1.6.7-alpha` hardens the weather judge before deeper trust; `v1.6.8-alpha` generates harder cell-level triad27 evidence before deep81 / wide243.
 
 ZeroGateSim already has a first-research-alpha generated toy-field proof record. The v1.5 line uses controlled synthetic-field language only for explicit, seeded, adversarial, bounded experimental reports. The v1.6 line starts a stricter question: can a side-reader estimate false-one risk from observable behavior without reading role labels? The current work is not bigger claims; it is role-stripped evidence with clean falsifiers and explicit baseline comparison.
 
@@ -848,6 +848,7 @@ Completed follow-ups:
 
 - `v1.6.6-alpha` — triad27 shadow preflight before deeper holdout evidence;
 - `v1.6.7-alpha` — shadow weather hardening foundation across triad27/deep81/wide243 evidence; no score retuning; expanded target diagnostics.
+- `v1.6.8-alpha` — hardened triad27 cell-level evidence generator; exact baseline fields before score repair or deeper weather.
 
 
 ### v1.6.1-alpha — Role-stripped feature extraction report
@@ -892,6 +893,7 @@ Completed follow-ups:
 
 - `v1.6.6-alpha` — triad27 shadow preflight before deeper holdout evidence;
 - `v1.6.7-alpha` — shadow weather hardening foundation across triad27/deep81/wide243 evidence; no score retuning; expanded target diagnostics.
+- `v1.6.8-alpha` — hardened triad27 cell-level evidence generator; exact baseline fields before score repair or deeper weather.
 
 
 ### v1.6.2-alpha — Transparent shadow score prototype
@@ -969,6 +971,7 @@ Completed follow-ups:
 
 - `v1.6.6-alpha` — triad27 shadow preflight before deeper holdout evidence;
 - `v1.6.7-alpha` — shadow weather hardening foundation across triad27/deep81/wide243 evidence; no score retuning; expanded target diagnostics.
+- `v1.6.8-alpha` — hardened triad27 cell-level evidence generator; exact baseline fields before score repair or deeper weather.
 
 ### v1.6.4-alpha — Four-gate reconciliation / return-adversary audit
 
@@ -1007,6 +1010,7 @@ Completed follow-ups:
 
 - `v1.6.6-alpha` — triad27 shadow preflight before deeper holdout evidence;
 - `v1.6.7-alpha` — shadow weather hardening foundation across triad27/deep81/wide243 evidence; no score retuning; expanded target diagnostics.
+- `v1.6.8-alpha` — hardened triad27 cell-level evidence generator; exact baseline fields before score repair or deeper weather.
 
 ### v1.6.5-alpha — Shadow holdout evaluation
 
@@ -1031,6 +1035,7 @@ Completed follow-ups:
 
 - `v1.6.6-alpha` — triad27 shadow preflight before deeper holdout evidence;
 - `v1.6.7-alpha` — shadow weather hardening foundation across triad27/deep81/wide243 evidence; no score retuning; expanded target diagnostics.
+- `v1.6.8-alpha` — hardened triad27 cell-level evidence generator; exact baseline fields before score repair or deeper weather.
 
 ### v1.6.7-alpha — Shadow weather hardening foundation
 
@@ -1056,6 +1061,32 @@ Boundary:
 - not detector closeout;
 - not score retuning;
 - not a mutation of `C_Z = min(D, P, R, B)`.
+
+
+### v1.6.8-alpha — Shadow triad27 hardened evidence
+
+Purpose: make the first trinary-weather rung harder before spending trust on deeper weather.
+
+Scope:
+
+- read completed four-gate `triad27` matrix directories;
+- create cell-level role-stripped family rows;
+- keep native gate labels and truth-role labels out of feature inputs;
+- expose exact raw-strength, weakest-gate, relation-gate, and return-gate baselines;
+- run weather hardening immediately on the generated evidence base;
+- do not retune the transparent shadow score.
+
+Files:
+
+- `src/zerogate_sim/shadow_triad27_hardened_evidence_report.py`;
+- `tests/test_shadow_triad27_hardened_evidence_report.py`;
+- `docs/shadow_triad27_hardened_evidence.md`;
+- `docs/release_notes/v1_6_8_alpha.md`.
+
+Next v1.6 work:
+
+- if hardened triad27 is trivial or under baseline, repair shadow discrimination before deep81 / wide243;
+- if hardened triad27 is non-trivial, generate deep81 / wide243 evidence under the same hardening judge.
 
 Next v1.6 work:
 

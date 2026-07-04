@@ -52,6 +52,7 @@ BASELINE_FEATURE_FIELDS: dict[str, str] = {
     "weakest_gate_only": "feature_weakest_gate_pressure_rate",
     "raw_strength_only": "feature_raw_strength_pressure_rate",
     "relation_gate_only": "feature_relation_gate_rate",
+    "return_gate_only": "feature_return_gate_rate",
 }
 
 MINIMUM_BASELINE_MAP = {
@@ -59,6 +60,7 @@ MINIMUM_BASELINE_MAP = {
     "raw-strength-only ranking": "raw_strength_only",
     "weakest-gate-only ranking": "weakest_gate_only",
     "relation-gate-only ranking": "relation_gate_only",
+    "return-gate-only ranking": "return_gate_only",
 }
 
 TARGET_NAME = "target_raw_false_one_rate"
