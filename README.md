@@ -1,6 +1,6 @@
 # ZeroGateSim
 
-**Current public line:** `v1.6.25-alpha` — Anti-Tautology Audit / Role-Dependence Check  
+**Current public line:** `v1.6.26-alpha` — Reproduction Command Package  
 **Status:** speculative research software / controlled synthetic-field experiment line  
 **Working identity:** Four Gates of Becoming witness simulator  
 **Core question:** can a final trinary witness distinguish earned-one from raw expression pressure, latent overcrown, relation/return debt, and false-one pressure under controlled synthetic-field adversarial weather?
@@ -190,10 +190,10 @@ C_Z^i(t)=\min(D_i(t),P_i(t),R_i(t),B_i(t))
 
 ## Active route
 
-The active route after `v1.6.25-alpha` is:
+The active route after `v1.6.26-alpha` is:
 
 ```text
-anti-tautology audit complete -> reproduction command package -> manuscript correction package -> v1.6 closeout -> v1.7 operational claim package
+anti-tautology audit complete -> reproduction command package complete -> manuscript correction package -> v1.6 closeout -> v1.7 operational claim package
 ```
 
 The shadow route is **not** the active route now. It is preserved as historical diagnostic work in the [history vault](docs/history_vault/README.md).
@@ -211,13 +211,16 @@ Read first:
 - [`docs/current_evidence_index.md`](docs/current_evidence_index.md)
 - [`docs/anti_tautology_audit_plan.md`](docs/anti_tautology_audit_plan.md)
 - [`docs/anti_tautology_audit_report.md`](docs/anti_tautology_audit_report.md)
+- [`docs/four_gates_reproduction_command_package.md`](docs/four_gates_reproduction_command_package.md)
 - [`docs/claim_boundary.md`](docs/claim_boundary.md)
 
 ## Current evidence state
 
-### Anti-tautology audit boundary
+### Anti-tautology and reproduction boundary
 
-`v1.6.25-alpha` adds the role-dependence check before the project can move to reproduction packaging. The expected honest outcome may be bounded: debt states can be witness-counted and reproducible while still being designed-profile / role-shaped. That is acceptable for controlled synthetic-field evidence, but it is not independent role-blind discovery.
+`v1.6.25-alpha` completed the role-dependence check. The honest result is bounded: debt states are witness-counted and reproducible, but the current evidence is still designed-profile / role-shaped rather than independent role-blind discovery.
+
+`v1.6.26-alpha` adds the reproduction command package so a skeptical reader can run a small pipeline smoke, locate canonical heavy evidence, and see the full reference/fresh seed reproduction route before manuscript correction.
 
 The recent native evidence line now has the shape the project was trying to reach:
 
@@ -295,7 +298,8 @@ The README keeps only the recent native route because it explains the current ev
 - `v1.6.22-alpha` — Four Gates fresh-seed debt reproduction;
 - `v1.6.23-alpha` — history vault and current evidence surface cleanup;
 - `v1.6.24-alpha` — How It Works, current evidence index, and v1.6 closeout route lock.
-- `v1.6.25-alpha` — Anti-Tautology Audit / Role-Dependence Check.
+- `v1.6.25-alpha` — Anti-Tautology Audit / Role-Dependence Check;
+- `v1.6.26-alpha` — Reproduction Command Package.
 
 Older proof and shadow history lives in the history vault.
 

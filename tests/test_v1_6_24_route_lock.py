@@ -9,13 +9,13 @@ def read(path: str) -> str:
 
 def test_v1_6_24_surfaces_how_it_works_and_current_route() -> None:
     readme = read("README.md")
-    assert "v1.6.25-alpha" in readme
+    assert "v1.6.26-alpha" in readme
     assert "## How it works" in readme
     assert readme.index("## Why this exists") < readme.index("## How it works") < readme.index("## First visual spine")
     assert "raw expression is pressure, not truth" in readme
     assert "0 structured zero" in readme
     assert "computational approximation of zero-zone gating" in readme
-    assert "anti-tautology audit complete -> reproduction command package -> manuscript correction package" in readme
+    assert "anti-tautology audit complete -> reproduction command package complete -> manuscript correction package" in readme
 
 
 def test_v1_6_24_locks_remaining_v1_6_route() -> None:

@@ -1,6 +1,6 @@
 # ZeroGateSim Roadmap
 
-**Current line:** `v1.6.25-alpha` — Anti-Tautology Audit / Role-Dependence Check  
+**Current line:** `v1.6.26-alpha` — Reproduction Command Package  
 **Release posture:** public research-alpha / controlled synthetic-field experiment line
 
 ZeroGateSim now has a repaired Four Gates evidence path. The older generated toy-field proof record remains preserved in the history vault, not on the active claim surface. The history vault keeps what the project was; the README shows what the project is; this roadmap shows what still has to be earned.
@@ -46,7 +46,8 @@ C_Z = min(D, P, R, B)
 | `v1.6.22` fresh-seed reproduction | expand | latent overcrown did not reproduce; relation/return debt did |
 | `v1.6.23` history vault | hygiene | no new scientific claim |
 | `v1.6.24` route lock | hygiene | makes the active claim path legible before audit |
-| `v1.6.25` anti-tautology audit | current | checks role-dependence and bounds the debt claim if too designed-profile-shaped |
+| `v1.6.25` anti-tautology audit | witness_bounded_role_shaped_but_witness_computed | debt states are designed-profile shaped but witness-counted |
+| `v1.6.26` reproduction command package | current | packages small smoke and full reference/fresh reproduction commands |
 
 ## Locked v1.6 closeout route
 
@@ -54,8 +55,9 @@ No new theory branch belongs in v1.6. The remaining versions are verification an
 
 | version | role | pass condition |
 |---|---|---|
-| `v1.6.25-alpha` | Anti-Tautology Audit / Role-Dependence Check | show whether debt outputs are computed from witness/gate dynamics rather than merely re-counting designed labels; bound or demote the claim if too role-dependent |
-| `v1.6.26-alpha` | Reproduction Command Package | provide a clean command path for a skeptical reader to reproduce a smaller run and locate canonical heavy evidence |
+| `v1.6.25-alpha` | Anti-Tautology Audit / Role-Dependence Check |
+| `v1.6.26-alpha` | Reproduction Command Package | completed; honest boundary is designed-profile shaped but witness-counted and reproducible |
+| `v1.6.26-alpha` | Reproduction Command Package | current; provide a clean command path for a skeptical reader to reproduce a smaller run and locate canonical heavy evidence |
 | `v1.6.27-alpha` | Manuscript Correction Package | prepare corrected paper/README language; separate simulation support, mathematical analogy, and speculation; do not upload to Zenodo yet |
 | `v1.6 closeout` | earned / partial / demoted decision | decide whether the controlled synthetic-field claim earns `+1`, remains `0` partial, or must be demoted `-1` |
 
@@ -95,13 +97,18 @@ These remain because they explain the current evidence route without reopening t
 | `v1.6.23-alpha` | Evidence consolidation / history vault and public evidence surface cleanup |
 | `v1.6.24-alpha` | How It Works, current evidence index, and closeout route lock |
 | `v1.6.25-alpha` | Anti-Tautology Audit / Role-Dependence Check |
+| `v1.6.26-alpha` | Reproduction Command Package |
 
 No new native gate was introduced in these steps; the native witness remains `C_Z = min(D, P, R, B)`.
 
 
 ## v1.6.25-alpha note
 
-`v1.6.25-alpha` adds the Anti-Tautology Audit / Role-Dependence Check. It preserves `C_Z = min(D, P, R, B)`, does not start Zenodo correction, does not revive shadow, and does not claim observed-universe proof. Its likely honest output may be bounded: debt states are designed-profile-shaped but witness-counted and reproducible. That bounds the claim; it does not kill it.
+`v1.6.25-alpha` adds the Anti-Tautology Audit / Role-Dependence Check. It preserves `C_Z = min(D, P, R, B)`, does not start Zenodo correction, does not revive shadow, and does not claim observed-universe proof. The honest output is bounded: debt states are designed-profile-shaped but witness-counted and reproducible. That bounds the claim; it does not kill it.
+
+## v1.6.26-alpha note
+
+`v1.6.26-alpha` adds the Reproduction Command Package. It preserves `C_Z = min(D, P, R, B)`, adds no new evidence claim, and provides a small smoke command path, full reference/fresh reproduction command path, canonical evidence manifest, and expected output map before the manuscript correction package.
 
 ## v1.7 boundary
 
