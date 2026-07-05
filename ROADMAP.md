@@ -1,6 +1,6 @@
 # ZeroGateSim Roadmap
 
-**Current line:** `v1.6.18-alpha` Four Gates debt candidate design  
+**Current line:** `v1.6.19-alpha` Four Gates debt candidate generator  
 **Release posture:** public research-alpha / controlled synthetic-field experiment line
 
 ZeroGateSim already has a generated toy-field proof record; later lines repair, strengthen, and bound what that record can honestly support.
@@ -48,9 +48,9 @@ Fresh controlled v1.5 evidence block:
 
 This evidence block supports the controlled synthetic-field line. It does not prove physical time, gravity, mass, cosmology, or role-blind discovery.
 
-## Current v1.6.18 gate
+## Current v1.6.19 gate
 
-`v1.6.18-alpha` is **Four Gates debt candidate design**. It follows the `v1.6.17-alpha` result: the native witness is strong for earned-one preservation and false-one demotion under deep81 / wide243, but the full zero-state debt grammar is not earned because relation debt and return debt remain absent or only partially visible.
+`v1.6.19-alpha` is **Four Gates debt candidate generator**. It follows the `v1.6.18-alpha` design gate by implementing the `four_gates_debt` candidate profile.
 
 Scientific question:
 
@@ -58,11 +58,11 @@ Scientific question:
 
 Delivered in this gate:
 
-- Four Gates of Becoming route cleanup;
-- debt-shaped candidate-family definitions;
-- relation / return debt diagnostic definitions;
-- mathematical analogy / physics-HOLD / forbidden-claim boundaries;
-- ablation status-label cleanup.
+- `four_gates_debt` candidate profile;
+- near-success relation/return/closure candidate families;
+- earned-return and false-one trap controls;
+- a generator preview/report tool;
+- no mutation of `C_Z = min(D, P, R, B)`.
 
 Not delivered:
 
@@ -72,11 +72,9 @@ Not delivered:
 - no shadow revival;
 - no native witness mutation.
 
-Native witness remains `C_Z = min(D, P, R, B)`.
-
 Boundary:
 
-The next useful evidence requires near-success debt candidates, not more trap-only adversaries. If relation debt and return debt remain zero after dedicated debt candidates are implemented and tested, the full debt claim must be demoted rather than patched forever.
+The next useful evidence is `v1.6.20-alpha`: four-corpus `triad27` debt evidence. If relation debt and return debt remain zero after dedicated debt candidates are tested, the full debt claim must be demoted rather than patched forever.
 
 ## Operating law
 
@@ -102,9 +100,9 @@ Any version that skips this order is a HOLD or RESIST event.
 | `v1.6.15-alpha` | complete | native ablation baselines: raw-only, binary-only, dead-safe, no-zero-hold, no-return, no-relation, no-echo |
 | `v1.6.16-alpha` | complete | four-corpus triad27 native evidence with trinary lane accounting and ablation comparison |
 | `v1.6.17-alpha` | complete | deep81 / wide243 native evidence with debt-lane requirement; core strong, debt lanes partial |
-| `v1.6.18-alpha` | current | Four Gates debt candidate design and logic/math cleanup |
-| `v1.6.19-alpha` | next candidate | debt candidate generator: near-success relation/return/closure candidates, no C_Z mutation |
-| `v1.6.20-alpha` | planned | four-corpus triad27 debt evidence with positive zero-state visibility |
+| `v1.6.18-alpha` | complete | Four Gates debt candidate design and logic/math cleanup |
+| `v1.6.19-alpha` | current | debt candidate generator: near-success relation/return/closure candidates, no C_Z mutation |
+| `v1.6.20-alpha` | next evidence | four-corpus triad27 debt evidence with positive zero-state visibility |
 | `v1.6.21-alpha` | planned | deep81 / wide243 debt evidence only after triad27 debt lanes are visible |
 | `v1.6.22-alpha` | planned | fresh-seed debt reproduction |
 | `v1.6.23-alpha` | planned hygiene | evidence consolidation / runs inventory / canonical cleanup, no deletion by default |
@@ -356,7 +354,7 @@ Forbidden:
 - confusing native witness evidence with shadow role-blind discovery;
 - treating absent debt lanes as if the full zero-state debt grammar is answered.
 
-## v1.6.18-alpha candidate — Fresh-seed reproduction and correction package planning
+## Historical note — old v1.6.18 correction-package slot, now deferred
 
 Purpose:
 
@@ -371,7 +369,7 @@ Required separation:
 
 No Zenodo route begins until this package is coherent.
 
-## v1.6.19-alpha optional — Runs hygiene and canonical evidence inventory
+## Historical note — old v1.6.19 runs-hygiene slot, now deferred to v1.6.23
 
 Purpose:
 
@@ -469,9 +467,16 @@ Purpose:
 
 Implement near-success candidate families without changing native `C_Z = min(D, P, R, B)`.
 
+Deliverables:
+
+- `four_gates_debt` candidate profile;
+- relation/return/global/closure/dual-return/perturbation-survival candidate kinds;
+- earned and false-one controls;
+- generator report tool.
+
 Pass condition:
 
-Generated candidates are structured enough to hold, incomplete enough not to crown, and wrong to demote.
+Generated candidates are structured enough to hold, incomplete enough not to crown, and wrong to demote. The heavy evidence question is deferred to `v1.6.20-alpha`.
 
 ## v1.6.20-alpha — Four-corpus triad27 debt evidence
 

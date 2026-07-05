@@ -1,9 +1,9 @@
 # Version Truth
 
-**Status:** README overflow moved here in `v1.6.9-alpha`; current spine advanced in `v1.6.18-alpha`  
+**Status:** README overflow moved here in `v1.6.9-alpha`; current spine advanced in `v1.6.19-alpha`  
 **Purpose:** preserve the release spine and recent checkpoints without forcing the README to open with a wall of version bookkeeping.
 
-The active public line is now `v1.6.18-alpha` — Four Gates debt candidate design.
+The active public line is now `v1.6.19-alpha` — Four Gates debt candidate generator.
 
 ## Release spine
 
@@ -20,6 +20,7 @@ The active public line is now `v1.6.18-alpha` — Four Gates debt candidate desi
 - `v1.6.16-alpha` — four-corpus triad27 native evidence: first repaired native weather evidence gate.
 - `v1.6.17-alpha` — deep81 / wide243 native evidence with debt-lane requirement.
 - `v1.6.18-alpha` — Four Gates debt candidate design: relation/return debt candidate families and claim-boundary cleanup.
+- `v1.6.19-alpha` — Four Gates debt candidate generator: `four_gates_debt` near-success candidate profile for the next triad27 debt evidence gate.
 
 ## Recent checkpoints
 
@@ -50,6 +51,7 @@ The active public line is now `v1.6.18-alpha` — Four Gates debt candidate desi
 - `v1.6.16-alpha` evaluates four-corpus triad27 native evidence against those ablation enemies.
 - `v1.6.17-alpha` adds deep81 / wide243 native evidence reporting with explicit latent-overcrown, relation-debt, and return-debt lane visibility.
 - `v1.6.18-alpha` adds Four Gates debt candidate design and separates formal computation from mathematical analogy and physics/topology HOLD lanes.
+- `v1.6.19-alpha` adds the `four_gates_debt` candidate generator profile and generator report before heavy evidence.
 
 Detailed release notes live in [`docs/release_notes/`](release_notes/).
 
@@ -82,3 +84,8 @@ C_Z = min(D, P, R, B)
 ## v1.6.18-alpha note
 
 `v1.6.18-alpha` is the Four Gates debt candidate design gate. It preserves `C_Z = min(D, P, R, B)`, does not start Zenodo correction, does not revive shadow, and does not claim observed-universe proof. It defines near-success relation/return/closure candidate families before the `v1.6.19-alpha` generator implementation.
+
+
+## v1.6.19-alpha note
+
+`v1.6.19-alpha` is the Four Gates debt candidate generator gate. It preserves `C_Z = min(D, P, R, B)`, does not start Zenodo correction, does not revive shadow, and does not claim observed-universe proof. It implements the `four_gates_debt` near-success candidate profile before the `v1.6.20-alpha` triad27 debt evidence gate.

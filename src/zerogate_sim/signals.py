@@ -48,6 +48,7 @@ CANDIDATE_PROFILES = (
     "adversary_polarity",
     "adversary_relation",
     "adversary_return",
+    "four_gates_debt",
 )
 
 
@@ -634,6 +635,169 @@ def adversary_return_candidate_specs() -> list[CandidateSpec]:
     return _apply_truth_roles(out, PROOF_CORE_ROLES)
 
 
+FOUR_GATES_DEBT_ROLES = {
+    "D00": TRUTH_ROLE_EXPRESSER,
+    "D01": TRUTH_ROLE_TRAP,
+    "D02": TRUTH_ROLE_LATENT,
+    "D03": TRUTH_ROLE_LATENT,
+    "D04": TRUTH_ROLE_LATENT,
+    "D05": TRUTH_ROLE_LATENT,
+    "D06": TRUTH_ROLE_LATENT,
+    "D07": TRUTH_ROLE_LATENT,
+    "D08": TRUTH_ROLE_LATENT,
+    "D09": TRUTH_ROLE_EXPRESSER,
+    "D10": TRUTH_ROLE_TRAP,
+}
+
+
+def four_gates_debt_candidate_specs() -> list[CandidateSpec]:
+    """Return the v1.6.19 debt-candidate generator corpus.
+
+    These are near-success candidates, not another trap pile. They are designed
+    to make structured zero visible: relation debt and return debt should be
+    possible outcomes without mutating the native witness law ``C_Z = min(D,P,R,B)``.
+    """
+
+    specs = [
+        CandidateSpec(
+            "D00",
+            "earned_return_control",
+            amplitude=0.96,
+            frequency=0.88,
+            phase=0.20,
+            noise=0.035,
+            coupling_group=2,
+            relation_weight=0.46,
+            designed_stable=True,
+            description="debt control: coherent return should still earn +1",
+        ),
+        CandidateSpec(
+            "D01",
+            "false_one_trap_control",
+            amplitude=1.34,
+            frequency=0.76,
+            phase=0.35,
+            noise=0.035,
+            bias=0.92,
+            coupling_group=2,
+            relation_weight=0.42,
+            designed_stable=False,
+            description="debt control: loud local expression should still demote as false-one pressure",
+        ),
+        CandidateSpec(
+            "D02",
+            "relation_debt_local",
+            amplitude=0.84,
+            frequency=1.03,
+            phase=0.55,
+            noise=0.055,
+            coupling_group=2,
+            relation_weight=0.34,
+            designed_stable=False,
+            description="near-success relation debt: D/P strong while relation is under-owned and unstable",
+        ),
+        CandidateSpec(
+            "D03",
+            "return_debt_local",
+            amplitude=0.88,
+            frequency=0.86,
+            phase=1.15,
+            noise=0.045,
+            bias=0.16,
+            coupling_group=2,
+            relation_weight=0.54,
+            designed_stable=False,
+            description="near-success return debt: relation matters but return comes back changed",
+        ),
+        CandidateSpec(
+            "D04",
+            "relation_debt_global_a",
+            amplitude=0.58,
+            frequency=0.82,
+            phase=0.10,
+            noise=0.040,
+            coupling_group=2,
+            relation_weight=0.78,
+            designed_stable=False,
+            description="global relation debt half A: local part is incomplete, paired relation is meaningful",
+        ),
+        CandidateSpec(
+            "D05",
+            "relation_debt_global_b",
+            amplitude=0.56,
+            frequency=0.82,
+            phase=3.14,
+            noise=0.040,
+            coupling_group=2,
+            relation_weight=0.78,
+            designed_stable=False,
+            description="global relation debt half B: complement to D04, should be held rather than locally crowned",
+        ),
+        CandidateSpec(
+            "D06",
+            "closure_gap_candidate",
+            amplitude=0.82,
+            frequency=0.92,
+            phase=0.80,
+            noise=0.042,
+            coupling_group=2,
+            relation_weight=0.48,
+            designed_stable=False,
+            description="closure gap: first witness frame survives but double-witness return is not identical",
+        ),
+        CandidateSpec(
+            "D07",
+            "dual_return_gap_candidate",
+            amplitude=0.82,
+            frequency=0.96,
+            phase=1.65,
+            noise=0.042,
+            coupling_group=2,
+            relation_weight=0.50,
+            designed_stable=False,
+            description="dual-return gap: complementary pressure changes the candidate without destroying it",
+        ),
+        CandidateSpec(
+            "D08",
+            "perturbation_survival_candidate",
+            amplitude=0.76,
+            frequency=0.80,
+            phase=2.05,
+            noise=0.052,
+            coupling_group=2,
+            relation_weight=0.44,
+            designed_stable=False,
+            description="perturbation survival: survives late shock partly but not enough to crown",
+        ),
+        CandidateSpec(
+            "D09",
+            "earned_return_control",
+            amplitude=0.95,
+            frequency=1.20,
+            phase=1.00,
+            noise=0.035,
+            coupling_group=2,
+            relation_weight=0.55,
+            designed_stable=True,
+            description="second earned control so debt weather cannot win by killing all +1",
+        ),
+        CandidateSpec(
+            "D10",
+            "false_one_trap_control",
+            amplitude=1.08,
+            frequency=1.18,
+            phase=0.30,
+            noise=0.038,
+            bias=0.62,
+            coupling_group=0,
+            relation_weight=0.72,
+            designed_stable=False,
+            description="second false-one control: borrowed relation should demote, not crown",
+        ),
+    ]
+    return _apply_truth_roles(specs, FOUR_GATES_DEBT_ROLES)
+
+
 def candidate_specs(profile: str = "alpha12") -> list[CandidateSpec]:
     """Return a named candidate corpus."""
 
@@ -649,6 +813,8 @@ def candidate_specs(profile: str = "alpha12") -> list[CandidateSpec]:
         return adversary_relation_candidate_specs()
     if profile == "adversary_return":
         return adversary_return_candidate_specs()
+    if profile == "four_gates_debt":
+        return four_gates_debt_candidate_specs()
     raise ValueError("candidate profile must be one of: " + ", ".join(CANDIDATE_PROFILES))
 
 
@@ -656,6 +822,7 @@ def _hidden_drivers(t: np.ndarray) -> dict[int, np.ndarray]:
     return {
         0: np.sin(1.00 * t + 0.05) + 0.18 * np.sin(2.00 * t + 0.30),
         1: np.sin(0.64 * t + 0.80) + 0.16 * np.sin(1.28 * t + 0.10),
+        2: 0.72 * np.sin(0.82 * t + 0.60) + 0.24 * np.sin(1.64 * t + 1.10),
     }
 
 
@@ -722,6 +889,35 @@ def _base_signal(t: np.ndarray, spec: CandidateSpec, rng: np.random.Generator) -
         signal = spec.amplitude * (0.62 * np.sin(spec.frequency * t + spec.phase) + 0.56 * np.sin(3.03 * spec.frequency * t + 0.2))
     elif spec.kind == "field_echo":
         signal = 0.50 * signal
+    elif spec.kind == "earned_return_control":
+        signal = signal + 0.08 * spec.amplitude * np.sin(0.45 * spec.frequency * t + spec.phase / 3.0)
+    elif spec.kind == "false_one_trap_control":
+        signal = spec.bias + 0.58 * np.abs(signal) + 0.12 * np.sin(0.33 * t + spec.phase)
+    elif spec.kind == "relation_debt_local":
+        wobble = 0.16 * spec.amplitude * np.sin(0.37 * t + 1.1)
+        signal = 0.72 * signal + wobble
+    elif spec.kind == "return_debt_local":
+        debt_offset = spec.bias * np.exp(-0.055 * t)
+        late_shift = 0.16 * spec.amplitude * (1.0 / (1.0 + np.exp(-1.0 * (t - t[int(0.62 * len(t))]))))
+        signal = debt_offset + 0.76 * signal - late_shift
+    elif spec.kind == "relation_debt_global_a":
+        signal = 0.54 * signal + 0.18 * np.sin(0.41 * t + 0.7)
+    elif spec.kind == "relation_debt_global_b":
+        signal = -0.50 * signal + 0.18 * np.sin(0.41 * t + 0.7)
+    elif spec.kind == "closure_gap_candidate":
+        pivot = t[int(0.52 * len(t))]
+        mix = 1.0 / (1.0 + np.exp(-1.7 * (t - pivot)))
+        changed = spec.amplitude * np.sin((spec.frequency * 1.11) * t + spec.phase + 0.65)
+        signal = (1.0 - 0.42 * mix) * signal + 0.42 * mix * changed
+    elif spec.kind == "dual_return_gap_candidate":
+        pivot = t[int(0.56 * len(t))]
+        mix = 1.0 / (1.0 + np.exp(-1.5 * (t - pivot)))
+        dual = -0.82 * spec.amplitude * np.sin(spec.frequency * t + spec.phase)
+        signal = (1.0 - 0.55 * mix) * signal + 0.55 * mix * dual
+    elif spec.kind == "perturbation_survival_candidate":
+        collapse_center = t[int(0.68 * len(t))]
+        partial = 1.0 - 0.34 * (1.0 / (1.0 + np.exp(-4.2 * (t - collapse_center))))
+        signal = signal * partial + 0.07 * np.sin(0.29 * t + spec.phase)
     elif spec.kind == "ambiguous":
         signal = signal + 0.25 * np.sin(0.31 * t + 0.4)
 
@@ -757,7 +953,7 @@ def generate_pressure_field(
         # should recover structure; shallow candidates should betray themselves.
         shock_center = t[int(0.66 * len(t))]
         shock = np.exp(-((t - shock_center) ** 2) / (2.0 * 0.18**2))
-        if spec.kind in {"stable_core", "stable_partner", "returner_deep", "weak_stable", "late_maturer", "quiet_returner", "anti_phase_partner", "deep_bridge", "slow_core"}:
+        if spec.kind in {"stable_core", "stable_partner", "returner_deep", "weak_stable", "late_maturer", "quiet_returner", "anti_phase_partner", "deep_bridge", "slow_core", "earned_return_control"}:
             signal = signal + 0.12 * shock * np.sin(spec.frequency * t + spec.phase)
         elif spec.kind == "collapse_after_shock":
             signal = signal - 0.50 * shock
