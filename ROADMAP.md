@@ -1,11 +1,11 @@
 # ZeroGateSim Roadmap
 
-**Current line:** `v1.6.9-alpha` shadow discrimination repair  
+**Current line:** `v1.6.11-alpha` roadmap truth + shadow feature-design proposal  
 **Release posture:** public research-alpha / controlled synthetic-field experiment line
 
 **Runtime support boundary:** Python 3.12 is the required release/test runtime. Details live in [`docs/runtime_ci_support.md`](docs/runtime_ci_support.md).
 
-**Language boundary:** `v1.5.3-alpha` established the controlled synthetic-field language boundary; `v1.5.4-alpha` preserved the historical `wide243` proof floor; `v1.5.5-alpha` reports fresh controlled `deep81` / `wide243` evidence; `v1.6.0-alpha` begins role-blind shadow design without claiming role-blind discovery; `v1.6.1-alpha` separates role-stripped features from targets; `v1.6.2-alpha` adds a transparent report-side score without target loading; `v1.6.3-alpha` adds a baseline/falsifier comparison after scoring; `v1.6.4-alpha` reconciles the historical three-corpus first-alpha proof with the native four-gate mechanism before holdout; `v1.6.5-alpha` adds held-out `deep81` / `wide243` role-stripped evaluation without discovery language; `v1.6.6-alpha` adds triad27 preflight; `v1.6.7-alpha` hardens the weather judge before deeper trust; `v1.6.8-alpha` generates harder cell-level triad27 evidence before deep81 / wide243; `v1.6.9-alpha` adds shadow discrimination repair so density-only pressure detection cannot masquerade as relation/return false-one discrimination.
+**Language boundary:** `v1.5.3-alpha` established the controlled synthetic-field language boundary; `v1.5.4-alpha` preserved the historical `wide243` proof floor; `v1.5.5-alpha` reports fresh controlled `deep81` / `wide243` evidence; `v1.6.0-alpha` begins role-blind shadow design without claiming role-blind discovery; `v1.6.1-alpha` separates role-stripped features from targets; `v1.6.2-alpha` adds a transparent report-side score without target loading; `v1.6.3-alpha` adds a baseline/falsifier comparison after scoring; `v1.6.4-alpha` reconciles the historical three-corpus first-alpha proof with the native four-gate mechanism before holdout; `v1.6.5-alpha` adds held-out `deep81` / `wide243` role-stripped evaluation without discovery language; `v1.6.6-alpha` adds triad27 preflight; `v1.6.7-alpha` hardens the weather judge before deeper trust; `v1.6.8-alpha` generates harder cell-level triad27 evidence before deep81 / wide243; `v1.6.9-alpha` adds shadow discrimination repair so density-only pressure detection cannot masquerade as relation/return false-one discrimination; `v1.6.10-alpha` adds lane-specific candidate scores and runs inventory; `v1.6.11-alpha` repairs roadmap truth and defines the next shadow feature-design proposal before implementation.
 
 ZeroGateSim already has a first-research-alpha generated toy-field proof record. The v1.5 line uses controlled synthetic-field language only for explicit, seeded, adversarial, bounded experimental reports. The v1.6 line starts a stricter question: can a side-reader estimate false-one risk from observable behavior without reading role labels? The current work is not bigger claims; it is role-stripped evidence with clean falsifiers and explicit baseline comparison.
 
@@ -50,17 +50,43 @@ Fresh controlled v1.5 evidence block:
 
 This evidence block supports the controlled synthetic-field line and role-blind shadow design. It does not prove physical time, gravity, mass, cosmology, or role-blind discovery.
 
-## Current v1.6.10 repair gate
+## Current v1.6.11 route audit and feature-design gate
 
-`v1.6.10-alpha` adds lane-specific shadow candidate scores and a lane discrimination report after the hardened triad27 wound. It asks whether any lane sees pressure kind beyond the best available dumb baseline. This is still report-side evaluation only: no score retuning, no native math mutation, no role-blind discovery claim.
+`v1.6.11-alpha` compresses two required actions into one gate:
+
+```text
+roadmap/version truth repair
+shadow route audit + feature-design proposal
+```
+
+This version exists because the project cannot keep reacting one wound at a time. The route must name several steps ahead, what each gate falsifies, and when to stop.
+
+Current shadow state:
+
+```text
+native four-gate witness: standing
+shadow density pressure: candidate signal
+shadow relation / return / demotion specificity: not earned
+```
+
+`v1.6.10-alpha` remains the lane-split implementation gate: it added fixed candidate lane scores and runs inventory classification. `v1.6.11-alpha` does not retune those scores. It writes the map for the next implementation.
 
 Success condition:
 
-- the historical frozen `shadow_score` remains available as the v1.6.2 transparent pressure score;
-- lane-specific candidate scores are emitted from role-stripped features only;
-- lane discrimination compares lane scores against separated targets and dumb baselines;
-- README Core theory moves near the front without losing content;
-- `runs/` cleanup remains inventory/classification only, not deletion by default.
+- README, ROADMAP, metadata, and release notes agree on `v1.6.11-alpha`;
+- the release spine includes `v1.6.9-alpha`, `v1.6.10-alpha`, and `v1.6.11-alpha`;
+- the current wound is named as density-only shadow evidence with unearned specificity;
+- the next feature-design families are documented before implementation;
+- deep81 / wide243 shadow trust remains blocked until hardened triad27 specificity is earned.
+
+Next bounded route:
+
+| version | gate | condition |
+|---|---|---|
+| `v1.6.12-alpha` | shadow feature implementation | add observable, role-stripped feature columns only if they do not read targets or roles |
+| `v1.6.13-alpha` | hardened triad27 rerun | test whether new features improve lane specificity beyond dumb baselines |
+| `v1.6.14-alpha` | shadow decision gate | advance, hold diagnostic-only, or demote shadow before deeper weather |
+| `v1.7.0-alpha` | deep81 / wide243 extension | only if hardened triad27 specificity is earned |
 
 ## Operating law
 
