@@ -1,6 +1,6 @@
 # ZeroGateSim
 
-**Current public line:** `v1.6.17-alpha` — deep81 / wide243 native evidence  
+**Current public line:** `v1.6.18-alpha` — Four Gates debt candidate design  
 **Status:** speculative research software / controlled synthetic-field experiment line  
 **Working identity:** zero-gate dimensional emergence simulator  
 **Core question:** can a final trinary witness distinguish earned-one from raw expression pressure, latent overcrown, relation/return debt, and false-one pressure under controlled synthetic-field adversarial weather?
@@ -154,10 +154,10 @@ C_Z^i(t)=\min(D_i(t),P_i(t),R_i(t),B_i(t))
 
 ## Active route
 
-The active route after `v1.6.17-alpha` is:
+The active route after `v1.6.18-alpha` is:
 
 ```text
-deep81 / wide243 native evidence -> fresh-seed reproduction -> manuscript / evidence correction package
+Four Gates debt candidate design -> debt candidate generator -> triad27 debt evidence -> deep81 / wide243 debt evidence -> fresh-seed reproduction -> correction package planning
 ```
 
 The shadow route is **not** the active route now. It is preserved as historical diagnostic work because hardened triad27 lane-specific discrimination did not beat simple baselines strongly enough to earn deeper `deep81` / `wide243` trust.
@@ -172,30 +172,46 @@ Read first:
 - [`docs/native_ablation_baselines.md`](docs/native_ablation_baselines.md)
 - [`docs/native_triad27_evidence.md`](docs/native_triad27_evidence.md)
 - [`docs/native_deepwide_evidence.md`](docs/native_deepwide_evidence.md)
+- [`docs/four_gates_debt_candidate_design.md`](docs/four_gates_debt_candidate_design.md)
 - [`docs/shadow_route_history_and_closeout.md`](docs/shadow_route_history_and_closeout.md)
 - [`docs/claim_boundary.md`](docs/claim_boundary.md)
 
 
-## Current v1.6.17 gate
+## Current v1.6.18 gate
 
-`v1.6.17-alpha` adds the repaired `deep81 = 3^4` and `wide243 = 3^5` native evidence gate after the `v1.6.16-alpha` four-corpus `triad27` result. It requires distinction, polarity, relation, and return adversarial families for both deeper weather rungs. The immediate native route history is `v1.6.15-alpha` native ablation baselines followed by `v1.6.16-alpha` four-corpus triad27 native evidence.
+`v1.6.18-alpha` is a logic / math cleanup and debt-candidate design gate. It responds to the `v1.6.17-alpha` result: native deep81 / wide243 evidence is strong for earned-one preservation and false-one demotion, but relation debt and return debt remain absent or only partially visible.
 
-The test question is:
+The active test question remains:
 
 > Can a final trinary witness distinguish earned-one from raw expression pressure, latent overcrown, relation/return debt, and false-one pressure under controlled synthetic-field adversarial weather?
 
-The report combines:
+The design correction is simple:
 
-- native seed-block evidence for `deep81` and `wide243`;
-- native ablation baseline results;
-- trinary lane visibility for `+1 / 0 / -1`;
-- explicit debt-lane reporting for latent overcrown, relation debt, and return debt.
+```text
+Debt candidates are near-success states, not traps.
+They must be structured enough to hold, incomplete enough not to crown, and wrong to demote.
+```
 
-Read: [`docs/native_deepwide_evidence.md`](docs/native_deepwide_evidence.md).
+Recent native evidence history:
+
+- `v1.6.15-alpha` — native ablation baselines;
+- `v1.6.16-alpha` — four-corpus triad27 native evidence;
+- `v1.6.17-alpha` — deep81 / wide243 native evidence with core strong and debt lanes partial.
+
+`v1.6.18-alpha` defines the next candidate families:
+
+- `relation_debt_local`;
+- `return_debt_local`;
+- `relation_debt_global`;
+- `closure_gap_candidate`;
+- `dual_return_gap_candidate`;
+- `perturbation_survival_candidate`.
+
+Read: [`docs/four_gates_debt_candidate_design.md`](docs/four_gates_debt_candidate_design.md).
 
 Boundary:
 
-This is not Zenodo correction yet, not observed-universe bridge work, not shadow revival, and not proof of physical dimensional genesis. A clean `deep81` / `wide243` result only earns permission to continue to fresh-seed reproduction and correction package planning. Native witness remains `C_Z = min(D, P, R, B)`.
+No Zenodo correction yet, no shadow route revival, no observed-universe bridge, no spacetime metric claim, and no native witness mutation. Native witness remains `C_Z = min(D, P, R, B)`.
 
 ## Current evidence state
 

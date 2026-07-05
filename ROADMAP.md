@@ -1,6 +1,6 @@
 # ZeroGateSim Roadmap
 
-**Current line:** `v1.6.17-alpha` deep81 / wide243 native evidence  
+**Current line:** `v1.6.18-alpha` Four Gates debt candidate design  
 **Release posture:** public research-alpha / controlled synthetic-field experiment line
 
 ZeroGateSim already has a generated toy-field proof record; later lines repair, strengthen, and bound what that record can honestly support.
@@ -48,25 +48,26 @@ Fresh controlled v1.5 evidence block:
 
 This evidence block supports the controlled synthetic-field line. It does not prove physical time, gravity, mass, cosmology, or role-blind discovery.
 
-## Current v1.6.17 gate
+## Current v1.6.18 gate
 
-`v1.6.17-alpha` adds the repaired `deep81` / `wide243` native evidence gate. It only exists because the `v1.6.16-alpha` four-corpus `triad27` gate passed against ablation enemies.
+`v1.6.18-alpha` is **Four Gates debt candidate design**. It follows the `v1.6.17-alpha` result: the native witness is strong for earned-one preservation and false-one demotion under deep81 / wide243, but the full zero-state debt grammar is not earned because relation debt and return debt remain absent or only partially visible.
 
 Scientific question:
 
-> Does the final trinary witness preserve earned-one, hold structured zero pressure, and demote false-one pressure better than raw, binary, and ablated alternatives under deeper perturbation and temporal-depth weather?
+> Can a final trinary witness distinguish earned-one from raw expression pressure, latent overcrown, relation/return debt, and false-one pressure under controlled synthetic-field adversarial weather?
 
-Delivered:
+Delivered in this gate:
 
-- `docs/native_deepwide_evidence.md`;
-- `docs/release_notes/v1_6_17_alpha.md`;
-- `zerogate-native-deepwide-evidence`;
-- required `deep81` and `wide243` four-corpus report wiring;
-- explicit debt-lane requirement for latent overcrown, relation debt, and return debt.
+- Four Gates of Becoming route cleanup;
+- debt-shaped candidate-family definitions;
+- relation / return debt diagnostic definitions;
+- mathematical analogy / physics-HOLD / forbidden-claim boundaries;
+- ablation status-label cleanup.
 
 Not delivered:
 
-- no Zenodo update;
+- no heavy evidence run;
+- no Zenodo correction;
 - no physical claim;
 - no shadow revival;
 - no native witness mutation.
@@ -75,7 +76,7 @@ Native witness remains `C_Z = min(D, P, R, B)`.
 
 Boundary:
 
-Bigger weather is not allowed to hide missing zero-state structure. If relation debt and return debt remain absent, the report must say the debt grammar is partial rather than pretending the full core question is answered.
+The next useful evidence requires near-success debt candidates, not more trap-only adversaries. If relation debt and return debt remain zero after dedicated debt candidates are implemented and tested, the full debt claim must be demoted rather than patched forever.
 
 ## Operating law
 
@@ -100,9 +101,14 @@ Any version that skips this order is a HOLD or RESIST event.
 | `v1.6.14-alpha` | complete | native four-gate claim audit and route correction |
 | `v1.6.15-alpha` | complete | native ablation baselines: raw-only, binary-only, dead-safe, no-zero-hold, no-return, no-relation, no-echo |
 | `v1.6.16-alpha` | complete | four-corpus triad27 native evidence with trinary lane accounting and ablation comparison |
-| `v1.6.17-alpha` | current | deep81 / wide243 native evidence with debt-lane requirement |
-| `v1.6.18-alpha` | next candidate | fresh-seed reproduction and manuscript/evidence correction package planning |
-| `v1.6.19-alpha` | optional hygiene | runs inventory / canonical evidence cleanup, no deletion by default |
+| `v1.6.17-alpha` | complete | deep81 / wide243 native evidence with debt-lane requirement; core strong, debt lanes partial |
+| `v1.6.18-alpha` | current | Four Gates debt candidate design and logic/math cleanup |
+| `v1.6.19-alpha` | next candidate | debt candidate generator: near-success relation/return/closure candidates, no C_Z mutation |
+| `v1.6.20-alpha` | planned | four-corpus triad27 debt evidence with positive zero-state visibility |
+| `v1.6.21-alpha` | planned | deep81 / wide243 debt evidence only after triad27 debt lanes are visible |
+| `v1.6.22-alpha` | planned | fresh-seed debt reproduction |
+| `v1.6.23-alpha` | planned hygiene | evidence consolidation / runs inventory / canonical cleanup, no deletion by default |
+| `v1.6.24-alpha` | planned package | manuscript / README correction package planning, not upload |
 | `v2.0` | deferred review release | stable external-review package, not observed-universe proof |
 
 ## v1.0-alpha to v1.0.2-alpha — First proof floor
@@ -434,3 +440,73 @@ Stop and repair before advancing if:
 Small engine. Native math first. Formal mirrors second. Stronger reality bridge later.
 
 A real one is not the first thing after zero. A real one is what zero can return as without lying.
+
+
+## v1.6.18-alpha — Four Gates debt candidate design
+
+Purpose:
+
+Clean the formal route before more evidence. The current native route has earned strong false-one demotion evidence, but not positive relation-debt / return-debt visibility. This version defines debt-shaped candidates and boundaries before generation.
+
+Deliverables:
+
+- `docs/four_gates_debt_candidate_design.md`;
+- `zerogate-four-gates-debt-design`;
+- relation-debt and return-debt candidate-family definitions;
+- claim-lane boundaries separating formal computation, mathematical analogy, physics/topology HOLD, and forbidden claims.
+
+Pass condition:
+
+The repo can say what relation debt and return debt are supposed to be before it tries to generate them.
+
+Stop condition:
+
+If the route starts treating mathematical analogy or physics speculation as evidence, stop.
+
+## v1.6.19-alpha — Debt candidate generator
+
+Purpose:
+
+Implement near-success candidate families without changing native `C_Z = min(D, P, R, B)`.
+
+Pass condition:
+
+Generated candidates are structured enough to hold, incomplete enough not to crown, and wrong to demote.
+
+## v1.6.20-alpha — Four-corpus triad27 debt evidence
+
+Purpose:
+
+Run the repaired small-weather proof with debt candidates included.
+
+Pass condition:
+
+Earned-one, false-one demotion, latent overcrown, relation debt, return debt, and ablation wounds are all visible with final false-one crowns remaining zero.
+
+## v1.6.21-alpha — Deep81 / wide243 debt evidence
+
+Purpose:
+
+Scale only after `triad27` debt lanes are visible.
+
+Pass condition:
+
+Debt lanes survive perturbation and temporal-depth pressure.
+
+## v1.6.22-alpha — Fresh-seed debt reproduction
+
+Purpose:
+
+Reproduce the repaired pattern on fresh seeds.
+
+## v1.6.23-alpha — Evidence consolidation / runs hygiene
+
+Purpose:
+
+Create a canonical evidence index and classify local runs as KEEP / ARCHIVE / DELETE without deleting by default.
+
+## v1.6.24-alpha — Manuscript / README correction package planning
+
+Purpose:
+
+Prepare the correction package only after evidence closeout. No Zenodo upload yet.

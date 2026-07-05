@@ -208,11 +208,11 @@ def test_native_triad27_public_version_truth_surfaces() -> None:
     version_truth = (ROOT / "docs/version_truth.md").read_text(encoding="utf-8")
     doc = (ROOT / "docs/native_triad27_evidence.md").read_text(encoding="utf-8")
     release = (ROOT / "docs/release_notes/v1_6_16_alpha.md").read_text(encoding="utf-8")
-    assert "1.6.17-alpha" in (ROOT / "src/zerogate_sim/__init__.py").read_text(encoding="utf-8")
-    assert 'version = "1.6.17a0"' in (ROOT / "pyproject.toml").read_text(encoding="utf-8")
+    assert "1.6.18-alpha" in (ROOT / "src/zerogate_sim/__init__.py").read_text(encoding="utf-8")
+    assert 'version = "1.6.18a0"' in (ROOT / "pyproject.toml").read_text(encoding="utf-8")
     for text in [readme, roadmap, version_truth, doc, release]:
         assert "v1.6.16-alpha" in text
         assert "triad27" in text
         assert "C_Z = min(D, P, R, B)" in text
-    assert "v1.6.17-alpha" in roadmap
+    assert "v1.6.18-alpha" in roadmap
     assert "deep81 / wide243 native evidence" in roadmap

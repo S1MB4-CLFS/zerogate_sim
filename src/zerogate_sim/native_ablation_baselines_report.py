@@ -436,6 +436,14 @@ def build_native_ablation_rows(matrix_dirs: Iterable[Path], *, require_four_gate
     return gate_rows_out, summary_rows
 
 
+
+def _collapse_statuses(statuses: set[str]) -> str:
+    collapsed = set(statuses)
+    if len(collapsed) > 1 and "no_visible_ablation_wound" in collapsed:
+        collapsed.remove("no_visible_ablation_wound")
+    return ";".join(sorted(collapsed))
+
+
 def build_summary_rows(gate_rows: list[dict[str, object]]) -> list[dict[str, object]]:
     by_baseline: dict[str, list[dict[str, object]]] = defaultdict(list)
     for row in gate_rows:
@@ -447,7 +455,7 @@ def build_summary_rows(gate_rows: list[dict[str, object]]) -> list[dict[str, obj
         rows = by_baseline.get(definition.name, [])
         if not rows:
             continue
-        statuses = sorted({str(row["baseline_status"]) for row in rows})
+        statuses = {str(row["baseline_status"]) for row in rows}
         final_false = sum(_int(row, "final_false_one_crowns") for row in rows)
         zero_promoted = sum(_int(row, "structured_zero_promoted") for row in rows)
         earned_lost = sum(_int(row, "earned_lost") for row in rows)
@@ -472,7 +480,7 @@ def build_summary_rows(gate_rows: list[dict[str, object]]) -> list[dict[str, obj
                 "zero_state_erased": sum(_int(row, "zero_state_erased") for row in rows),
                 "final_false_one_crowns": final_false,
                 "pressure_hidden_by_ablation": sum(_int(row, "pressure_hidden_by_ablation") for row in rows),
-                "baseline_status": ";".join(statuses),
+                "baseline_status": _collapse_statuses(statuses),
             }
         )
     return out
