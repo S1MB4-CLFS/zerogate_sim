@@ -1,9 +1,9 @@
 # Version Truth
 
-**Status:** README overflow moved here in `v1.6.9-alpha`; current spine repaired in `v1.6.14-alpha`  
+**Status:** README overflow moved here in `v1.6.9-alpha`; current spine repaired in `v1.6.15-alpha`  
 **Purpose:** preserve the release spine and recent checkpoints without forcing the README to open with a wall of version bookkeeping.
 
-The active public line is now `v1.6.14-alpha` — native four-gate claim audit and route correction.
+The active public line is now `v1.6.15-alpha` — native ablation baselines.
 
 ## Release spine
 
@@ -16,6 +16,7 @@ The active public line is now `v1.6.14-alpha` — native four-gate claim audit a
 - `v1.6.0-alpha` to `v1.6.12-alpha` — role-stripped shadow route exploration and testing infrastructure; useful tooling, scientific claim not earned.
 - `v1.6.13-alpha` — shadow route historical closeout and README/ROADMAP surface cleanup.
 - `v1.6.14-alpha` — native four-gate claim audit, readiness criteria, and route correction before manuscript/Zenodo work.
+- `v1.6.15-alpha` — native ablation baselines: raw/binary/ablated enemies for the repaired native route.
 
 ## Recent checkpoints
 
@@ -41,6 +42,8 @@ The active public line is now `v1.6.14-alpha` — native four-gate claim audit a
 - `v1.6.11-alpha` repairs roadmap truth and defines a bounded route before feature implementation.
 - `v1.6.12-alpha` implements observable role-stripped feature candidates and feature-aware candidate scores, then fails to earn hardened triad27 lane-specific discrimination.
 - `v1.6.13-alpha` parks the shadow route as historical diagnostic work and removes shadow result visuals/data from README and ROADMAP surfaces.
+- `v1.6.14-alpha` adds native four-gate claim audit and route correction.
+- `v1.6.15-alpha` adds native ablation baseline enemies before four-corpus triad27 evidence.
 
 Detailed release notes live in [`docs/release_notes/`](release_notes/).
 
@@ -53,3 +56,8 @@ Native witness remains:
 ```text
 C_Z = min(D, P, R, B)
 ```
+
+
+## v1.6.15-alpha note
+
+`v1.6.15-alpha` is the native ablation baselines gate. It preserves `C_Z = min(D, P, R, B)`, does not start Zenodo correction, and prepares `v1.6.16-alpha` four-corpus triad27 native evidence.

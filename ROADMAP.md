@@ -1,6 +1,6 @@
 # ZeroGateSim Roadmap
 
-**Current line:** `v1.6.14-alpha` native four-gate claim audit / route correction  
+**Current line:** `v1.6.15-alpha` native ablation baselines  
 **Release posture:** public research-alpha / controlled synthetic-field experiment line
 
 ZeroGateSim already has a generated toy-field proof record; later lines repair, strengthen, and bound what that record can honestly support.
@@ -48,27 +48,29 @@ Fresh controlled v1.5 evidence block:
 
 This evidence block supports the controlled synthetic-field line. It does not prove physical time, gravity, mass, cosmology, or role-blind discovery.
 
-## Current v1.6.14 gate
+## Current v1.6.15 gate
 
-`v1.6.14-alpha` is a native four-gate claim audit. It stops the shadow side-route and defines the active scientific route again.
+`v1.6.15-alpha` defines native ablation baselines. It makes the final trinary witness fight meaningful competitors before the repaired route moves to fresh four-corpus `triad27` evidence.
 
 Scientific question:
 
-> Can a final trinary witness distinguish earned-one from raw expression pressure, latent overcrown, relation/return debt, and false-one pressure under controlled synthetic-field adversarial weather?
+> Does the final trinary witness preserve earned-one, hold structured zero pressure, and demote false-one pressure better than raw, binary, and ablated alternatives?
 
 Delivered:
 
-- `docs/native_four_gate_claim_audit.md`;
-- `docs/release_notes/v1_6_14_alpha.md`;
-- `zerogate-native-four-gate-claim-audit`;
-- roadmap repair: v1.6 now points to native ablations, four-corpus triad27, deep81/wide243 native evidence, fresh-seed reproduction, then manuscript/evidence correction.
+- `docs/native_ablation_baselines.md`;
+- `docs/release_notes/v1_6_15_alpha.md`;
+- `zerogate-native-ablation-baselines`;
+- baseline enemy set: dead-safe no-crown, raw-expression-only, binary raw/fail, no-zero-hold, no-false-one-demotion, no-echo-independence, no-return-debt witness, no-relation-gate raw, no-return-gate raw, and average-gate raw.
 
 Not delivered:
 
 - no Zenodo update;
 - no physical claim;
 - no shadow revival;
-- no new native gate.
+- no native witness mutation.
+
+Native witness remains `C_Z = min(D, P, R, B)`.
 
 Boundary:
 
@@ -94,8 +96,8 @@ Any version that skips this order is a HOLD or RESIST event.
 | `v1.5.x-alpha` | complete/current evidence | controlled synthetic-field language, seed-block, threshold, ablation, deep81/wide243 evidence |
 | `v1.6.0-alpha` - `v1.6.12-alpha` | historical/HOLD | role-stripped shadow route exploration; useful tooling, scientific claim not earned |
 | `v1.6.13-alpha` | complete | shadow route historical closeout and public-surface cleanup |
-| `v1.6.14-alpha` | current | native four-gate claim audit and route correction |
-| `v1.6.15-alpha` | next candidate | native ablation baselines: raw-only, binary-only, no-return, no-relation, no-lineage/depth, no-echo |
+| `v1.6.14-alpha` | complete | native four-gate claim audit and route correction |
+| `v1.6.15-alpha` | current | native ablation baselines: raw-only, binary-only, dead-safe, no-zero-hold, no-return, no-relation, no-echo |
 | `v1.6.16-alpha` | next candidate | four-corpus triad27 native evidence with trinary confusion accounting |
 | `v1.6.17-alpha` | next candidate | deep81 / wide243 native evidence only after triad27 ablations pass |
 | `v1.6.18-alpha` | next candidate | fresh-seed reproduction and manuscript/evidence correction package planning |
@@ -282,7 +284,7 @@ Delivered in this gate:
 - native evidence route;
 - v2.0 boundary update.
 
-## v1.6.15-alpha candidate — Native ablation baselines
+## v1.6.15-alpha — Native ablation baselines
 
 Purpose:
 

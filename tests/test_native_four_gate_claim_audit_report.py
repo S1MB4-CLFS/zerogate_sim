@@ -59,16 +59,19 @@ def test_readiness_route_names_ablation_and_weather_order(tmp_path: Path) -> Non
     assert "v1.6.16-alpha four-corpus triad27 native evidence" in joined_route
 
 
-def test_public_version_truth_surfaces_are_v1_6_14() -> None:
+def test_public_version_truth_surfaces_preserve_v1_6_14_and_route_to_v1_6_15() -> None:
     readme = (ROOT / "README.md").read_text(encoding="utf-8")
     roadmap = (ROOT / "ROADMAP.md").read_text(encoding="utf-8")
     version_truth = (ROOT / "docs/version_truth.md").read_text(encoding="utf-8")
     release = (ROOT / "docs/release_notes/v1_6_14_alpha.md").read_text(encoding="utf-8")
     doc = (ROOT / "docs/native_four_gate_claim_audit.md").read_text(encoding="utf-8")
-    assert "1.6.14-alpha" in (ROOT / "src/zerogate_sim/__init__.py").read_text(encoding="utf-8")
-    assert 'version = "1.6.14a0"' in (ROOT / "pyproject.toml").read_text(encoding="utf-8")
-    for text in [readme, roadmap, version_truth, release, doc]:
+    assert "1.6.15-alpha" in (ROOT / "src/zerogate_sim/__init__.py").read_text(encoding="utf-8")
+    assert 'version = "1.6.15a0"' in (ROOT / "pyproject.toml").read_text(encoding="utf-8")
+    for text in [version_truth, release, doc]:
         assert "v1.6.14-alpha" in text
+        assert "C_Z = min(D, P, R, B)" in text
+    for text in [readme, roadmap, version_truth]:
+        assert "v1.6.15-alpha" in text
         assert "C_Z = min(D, P, R, B)" in text
     assert "v1.6.15-alpha" in roadmap
     assert "native ablation baselines" in roadmap
