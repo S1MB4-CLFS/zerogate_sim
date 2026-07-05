@@ -1,6 +1,6 @@
 # ZeroGateSim
 
-**Current public line:** `v1.6.21-alpha` — Four Gates deep81 / wide243 debt evidence  
+**Current public line:** `v1.6.22-alpha` — Four Gates fresh-seed debt reproduction  
 **Status:** speculative research software / controlled synthetic-field experiment line  
 **Working identity:** zero-gate dimensional emergence simulator  
 **Core question:** can a final trinary witness distinguish earned-one from raw expression pressure, latent overcrown, relation/return debt, and false-one pressure under controlled synthetic-field adversarial weather?
@@ -154,7 +154,7 @@ C_Z^i(t)=\min(D_i(t),P_i(t),R_i(t),B_i(t))
 
 ## Active route
 
-The active route after `v1.6.21-alpha` is:
+The active route after `v1.6.22-alpha` is:
 
 ```text
 Four Gates triad27 debt evidence -> deep81 / wide243 debt evidence -> fresh-seed debt reproduction -> evidence consolidation -> correction package planning
@@ -176,30 +176,36 @@ Read first:
 - [`docs/four_gates_debt_candidate_generator.md`](docs/four_gates_debt_candidate_generator.md)
 - [`docs/four_gates_triad27_debt_evidence.md`](docs/four_gates_triad27_debt_evidence.md)
 - [`docs/four_gates_deepwide_debt_evidence.md`](docs/four_gates_deepwide_debt_evidence.md)
+- [`docs/four_gates_fresh_seed_debt_reproduction.md`](docs/four_gates_fresh_seed_debt_reproduction.md)
 - [`docs/shadow_route_history_and_closeout.md`](docs/shadow_route_history_and_closeout.md)
 - [`docs/claim_boundary.md`](docs/claim_boundary.md)
 
 
-## Current v1.6.21 gate
+## Current v1.6.22 gate
 
-`v1.6.21-alpha` is the deeper-weather Four Gates debt evidence gate. It scales the `v1.6.20-alpha` `triad27` debt result into:
-
-```text
-deep81  = perturbation / late-shock bridge
-wide243 = temporal-depth / time-axis stress
-```
+`v1.6.22-alpha` is the Four Gates fresh-seed debt reproduction gate. It follows the successful `v1.6.20-alpha` `triad27` debt evidence and `v1.6.21-alpha` `deep81` / `wide243` debt evidence by asking whether the repaired pattern reproduces on fresh seeds.
 
 The active test question remains:
 
 > Can a final trinary witness distinguish earned-one from raw expression pressure, latent overcrown, relation/return debt, and false-one pressure under controlled synthetic-field adversarial weather?
 
-This gate asks whether the small-weather debt result survives deeper pressure:
+This gate compares:
 
 ```text
-+1 earned-one preserved
+reference evidence: seed range 0-8
+fresh evidence:     seed range 9-17
+```
+
+A reproduced pattern requires:
+
+```text
++1 earned-one remains visible
+ 0 latent overcrown remains visible
  0 relation debt remains visible
  0 return debt remains visible
--1 false-one pressure demoted
+-1 false-one pressure remains visible and demoted
+final false-one crowns remain 0
+ablation enemies remain wounded
 ```
 
 Recent native evidence history:
@@ -209,14 +215,16 @@ Recent native evidence history:
 - `v1.6.17-alpha` — deep81 / wide243 native evidence with core strong and debt lanes partial;
 - `v1.6.18-alpha` — Four Gates debt candidate design;
 - `v1.6.19-alpha` — Four Gates debt candidate generator;
-- `v1.6.20-alpha` — Four Gates triad27 debt evidence.
+- `v1.6.20-alpha` — Four Gates triad27 debt evidence;
+- `v1.6.21-alpha` — Four Gates deep81 / wide243 debt evidence.
 
 Read:
 
 - [`docs/four_gates_debt_candidate_design.md`](docs/four_gates_debt_candidate_design.md);
 - [`docs/four_gates_debt_candidate_generator.md`](docs/four_gates_debt_candidate_generator.md);
 - [`docs/four_gates_triad27_debt_evidence.md`](docs/four_gates_triad27_debt_evidence.md);
-- [`docs/four_gates_deepwide_debt_evidence.md`](docs/four_gates_deepwide_debt_evidence.md).
+- [`docs/four_gates_deepwide_debt_evidence.md`](docs/four_gates_deepwide_debt_evidence.md);
+- [`docs/four_gates_fresh_seed_debt_reproduction.md`](docs/four_gates_fresh_seed_debt_reproduction.md).
 
 Boundary:
 

@@ -1,6 +1,6 @@
 # ZeroGateSim Roadmap
 
-**Current line:** `v1.6.21-alpha` Four Gates deep81 / wide243 debt evidence  
+**Current line:** `v1.6.22-alpha` Four Gates fresh-seed debt reproduction  
 **Release posture:** public research-alpha / controlled synthetic-field experiment line
 
 ZeroGateSim already has a generated toy-field proof record; later lines repair, strengthen, and bound what that record can honestly support.
@@ -48,9 +48,9 @@ Fresh controlled v1.5 evidence block:
 
 This evidence block supports the controlled synthetic-field line. It does not prove physical time, gravity, mass, cosmology, or role-blind discovery.
 
-## Current v1.6.21 gate
+## Current v1.6.22 gate
 
-`v1.6.21-alpha` is **Four Gates deep81 / wide243 debt evidence**. It follows the successful `v1.6.20-alpha` triad27 debt gate by asking whether debt-shaped zero-state lanes survive deeper weather.
+`v1.6.22-alpha` is **Four Gates fresh-seed debt reproduction**. It follows the successful `v1.6.20-alpha` triad27 debt gate and the `v1.6.21-alpha` deep81 / wide243 debt gate by asking whether the repaired debt pattern reproduces on fresh seeds.
 
 Scientific question:
 
@@ -58,15 +58,14 @@ Scientific question:
 
 Delivered in this gate:
 
-- `deep81` and `wide243` debt evidence report tooling;
-- required native controls for distinction, polarity, relation, and return on each rung;
-- required `four_gates_debt` matrix on each rung;
-- state-lane visibility for earned-one, latent overcrown, relation debt, return debt, false-one pressure, and final false crowns;
+- fresh-seed reproduction report tooling;
+- comparison between reference `deep81` / `wide243` debt evidence and fresh-seed `deep81` / `wide243` debt evidence;
+- qualitative reproduction status for earned-one, latent overcrown, relation debt, return debt, false-one pressure, final false crowns, and ablation wounds;
 - no mutation of `C_Z = min(D, P, R, B)`.
 
 Boundary:
 
-The next useful evidence after this gate is `v1.6.22-alpha`: fresh-seed debt reproduction, but only if both deeper rungs preserve the triad27 debt pattern. If relation debt or return debt disappears under deeper weather, inspect before moving forward.
+The next useful work after this gate is `v1.6.23-alpha`: evidence consolidation / runs hygiene, but only if fresh seeds reproduce the qualitative pattern. If fresh seeds fail relation debt, return debt, or false-crown safety, inspect before moving forward.
 
 ## Operating law
 
@@ -95,8 +94,8 @@ Any version that skips this order is a HOLD or RESIST event.
 | `v1.6.18-alpha` | complete | Four Gates debt candidate design and logic/math cleanup |
 | `v1.6.19-alpha` | complete | debt candidate generator: near-success relation/return/closure candidates, no C_Z mutation |
 | `v1.6.20-alpha` | complete | four-corpus triad27 debt evidence with positive zero-state visibility |
-| `v1.6.21-alpha` | current evidence | deep81 / wide243 debt evidence after triad27 debt lanes became visible |
-| `v1.6.22-alpha` | planned | fresh-seed debt reproduction |
+| `v1.6.21-alpha` | complete | deep81 / wide243 debt evidence after triad27 debt lanes became visible |
+| `v1.6.22-alpha` | current evidence | fresh-seed debt reproduction |
 | `v1.6.23-alpha` | planned hygiene | evidence consolidation / runs inventory / canonical cleanup, no deletion by default |
 | `v1.6.24-alpha` | planned package | manuscript / README correction package planning, not upload |
 | `v2.0` | deferred review release | stable external-review package, not observed-universe proof |
@@ -511,6 +510,20 @@ If debt lanes disappear under deeper weather, do not move to fresh-seed reproduc
 Purpose:
 
 Reproduce the repaired pattern on fresh seeds.
+
+Pass condition:
+
+- fresh `deep81` and `wide243` evidence both load;
+- earned-one remains visible;
+- false-one pressure remains visible and demoted;
+- final false-one crowns remain `0`;
+- latent overcrown remains visible;
+- relation debt remains visible;
+- return debt remains visible;
+- ablation enemies remain wounded;
+- native witness remains `C_Z = min(D, P, R, B)`.
+
+If fresh seeds fail the qualitative pattern, stop before evidence consolidation.
 
 ## v1.6.23-alpha — Evidence consolidation / runs hygiene
 
