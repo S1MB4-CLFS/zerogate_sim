@@ -21,6 +21,7 @@ def _final_band(row: dict[str, object]) -> tuple[int, str, str, str]:
     false_one = int(row.get("false_one_count", 0) or 0)
     latent = int(row.get("latent_overcrown_count", 0) or 0)
     relation_debt = int(row.get("relation_debt_count", 0) or 0)
+    return_debt = int(row.get("return_debt_count", 0) or 0)
     echo_band = str(row.get("echo_independence_band", ""))
 
     if earned > 0:
@@ -29,7 +30,11 @@ def _final_band(row: dict[str, object]) -> tuple[int, str, str, str]:
         return -1, "-1", "false_one_demoted", "raw expression was trap pressure; final output refuses the crown"
     if latent > 0:
         return 0, "0+", "latent_overcrown_demoted", "latent/probe expressed locally but remains zero-held, not final one"
-    if relation_debt > 0 or echo_band in {"relation_debt", "echo_debt_hold", "relation_supported"}:
+    if relation_debt > 0:
+        return 0, "0", "relation_debt_hold", "expression depends on support weather; keep in witness"
+    if return_debt > 0:
+        return 0, "0", "return_debt_hold", "return changed or incomplete; keep in witness"
+    if echo_band in {"relation_debt", "echo_debt_hold", "relation_supported"}:
         return 0, "0", "relation_debt_hold", "expression depends on support weather; keep in witness"
     if truth_role == "trap":
         return -1, "-1", "trap_contained", "trap did not earn expression"
@@ -49,6 +54,7 @@ def build_final_output_rows_from_earned_rows(earned_rows: list[dict[str, object]
         false_one = int(row["false_one_count"])
         latent = int(row["latent_overcrown_count"])
         relation_debt = int(row["relation_debt_count"])
+        return_debt = int(row.get("return_debt_count", 0) or 0)
         out.append(
             {
                 "candidate_id": row["candidate_id"],
@@ -62,6 +68,7 @@ def build_final_output_rows_from_earned_rows(earned_rows: list[dict[str, object]
                 "latent_overcrown_pressure": latent,
                 "latent_overcrown_demoted_count": latent,
                 "relation_debt_count": relation_debt,
+                "return_debt_count": return_debt,
                 "final_trinary_value": value,
                 "final_trinary_symbol": symbol,
                 "final_band": band,
@@ -94,6 +101,8 @@ def _confirmation_status(rows: list[dict[str, object]]) -> tuple[str, str]:
     false_pressure = sum(int(row["raw_false_one_pressure"]) for row in rows)
     final_false_crowns = _final_false_one_crowns(rows)
     latent_pressure = sum(int(row["latent_overcrown_pressure"]) for row in rows)
+    relation_debt = sum(int(row.get("relation_debt_count", 0)) for row in rows)
+    return_debt = sum(int(row.get("return_debt_count", 0)) for row in rows)
     expressers = [row for row in rows if row["truth_role"] == "expresser"]
     earned_expressers = [row for row in expressers if int(row["final_earned_one_count"]) > 0]
 
@@ -139,11 +148,15 @@ def _write_final_output_read(path: Path, rows: list[dict[str, object]]) -> None:
     false_pressure = sum(int(row["raw_false_one_pressure"]) for row in rows)
     false_demoted = sum(int(row["false_one_demoted_count"]) for row in rows)
     latent_pressure = sum(int(row["latent_overcrown_pressure"]) for row in rows)
+    relation_debt = sum(int(row.get("relation_debt_count", 0)) for row in rows)
+    return_debt = sum(int(row.get("return_debt_count", 0)) for row in rows)
     latent_demoted = sum(int(row["latent_overcrown_demoted_count"]) for row in rows)
     final_false_crowns = _final_false_one_crowns(rows)
     earned_candidates = [row for row in rows if int(row["final_earned_one_count"]) > 0]
     demoted_false = [row for row in rows if int(row["false_one_demoted_count"]) > 0]
     demoted_latent = [row for row in rows if int(row["latent_overcrown_demoted_count"]) > 0]
+    relation_debt_rows = [row for row in rows if int(row.get("relation_debt_count", 0)) > 0]
+    return_debt_rows = [row for row in rows if int(row.get("return_debt_count", 0)) > 0]
     status, status_reason = _confirmation_status(rows)
 
     lines: list[str] = []
@@ -161,6 +174,7 @@ def _write_final_output_read(path: Path, rows: list[dict[str, object]]) -> None:
     lines.append("## Witness")
     lines.append("")
     lines.append(f"Latent overcrown pressure: `{latent_pressure}`; demoted before final crown: `{latent_demoted}`.")
+    lines.append(f"Relation debt pressure: `{relation_debt}`. Return debt pressure: `{return_debt}`.")
     lines.append("The zero-zone does not erase these. It holds them as 0-state pressure.")
     lines.append("")
     lines.append("## Resist")
@@ -185,12 +199,12 @@ def _write_final_output_read(path: Path, rows: list[dict[str, object]]) -> None:
     lines.append("")
     lines.append("## Candidate table")
     lines.append("")
-    lines.append("| candidate | kind | role | final | band | raw pressure | earned one | false demoted | latent demoted | echo band | r- | r0 | r+ |")
-    lines.append("|---|---|---|---|---|---:|---:|---:|---:|---|---:|---:|---:|")
+    lines.append("| candidate | kind | role | final | band | raw pressure | earned one | false demoted | latent demoted | relation debt | return debt | echo band | r- | r0 | r+ |")
+    lines.append("|---|---|---|---|---|---:|---:|---:|---:|---:|---:|---|---:|---:|---:|")
     ranked = sorted(
         rows,
         key=lambda row: (
-            0 if int(row["false_one_demoted_count"]) > 0 else 1 if int(row["final_earned_one_count"]) > 0 else 2 if int(row["latent_overcrown_demoted_count"]) > 0 else 3,
+            0 if int(row["false_one_demoted_count"]) > 0 else 1 if int(row["final_earned_one_count"]) > 0 else 2 if int(row["latent_overcrown_demoted_count"]) > 0 else 3 if int(row.get("relation_debt_count", 0)) > 0 else 4 if int(row.get("return_debt_count", 0)) > 0 else 5,
             -int(row["raw_expression_pressure"]),
             str(row["candidate_id"]),
         ),
@@ -199,7 +213,8 @@ def _write_final_output_read(path: Path, rows: list[dict[str, object]]) -> None:
         lines.append(
             f"| {row['candidate_id']} | {row['kind']} | {row['truth_role']} | {row['final_trinary_symbol']} | {row['final_band']} | "
             f"{row['raw_expression_pressure']} | {row['final_earned_one_count']} | {row['false_one_demoted_count']} | {row['latent_overcrown_demoted_count']} | "
-            f"{row['echo_independence_band']} | {row['relation_minus_raw_expression']} | {row['relation_zero_raw_expression']} | {row['relation_plus_raw_expression']} |"
+            f"{row.get('relation_debt_count', 0)} | {row.get('return_debt_count', 0)} | {row['echo_independence_band']} | "
+            f"{row['relation_minus_raw_expression']} | {row['relation_zero_raw_expression']} | {row['relation_plus_raw_expression']} |"
         )
     lines.append("")
     lines.append("## Witness sentence")
@@ -213,6 +228,12 @@ def _write_final_output_read(path: Path, rows: list[dict[str, object]]) -> None:
     if demoted_latent:
         names = ", ".join(f"`{row['candidate_id']}`" for row in demoted_latent[:9])
         lines.append(f"Latent/probe overcrown was held in zero: {names}.")
+    if relation_debt_rows:
+        names = ", ".join(f"`{row['candidate_id']}`" for row in relation_debt_rows[:9])
+        lines.append(f"Relation debt was held in zero: {names}.")
+    if return_debt_rows:
+        names = ", ".join(f"`{row['candidate_id']}`" for row in return_debt_rows[:9])
+        lines.append(f"Return debt was held in zero: {names}.")
     lines.append("")
     path.write_text("\n".join(lines), encoding="utf-8")
 
@@ -224,6 +245,8 @@ def _write_confirmation_read(path: Path, rows: list[dict[str, object]]) -> None:
     false_pressure = sum(int(row["raw_false_one_pressure"]) for row in rows)
     final_false_crowns = _final_false_one_crowns(rows)
     latent_pressure = sum(int(row["latent_overcrown_pressure"]) for row in rows)
+    relation_debt = sum(int(row.get("relation_debt_count", 0)) for row in rows)
+    return_debt = sum(int(row.get("return_debt_count", 0)) for row in rows)
     earned = [row for row in rows if int(row["final_earned_one_count"]) > 0]
     false_demoted = [row for row in rows if int(row["false_one_demoted_count"]) > 0]
     latent_demoted = [row for row in rows if int(row["latent_overcrown_demoted_count"]) > 0]
@@ -241,7 +264,7 @@ def _write_confirmation_read(path: Path, rows: list[dict[str, object]]) -> None:
     lines.append("")
     lines.append("## Witness")
     lines.append("")
-    lines.append(f"The final witness keeps `{latent_pressure}` latent overcrown events in zero-state instead of pretending they are final one.")
+    lines.append(f"The final witness keeps `{latent_pressure}` latent overcrown events, `{relation_debt}` relation-debt events, and `{return_debt}` return-debt events in zero-state instead of pretending they are final one.")
     lines.append("")
     lines.append("## Resist")
     lines.append("")

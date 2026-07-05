@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "zerogate-sim"
-version = "1.6.19a0"
+version = "1.6.20a0"
 description = "Toy simulation framework for zero-gate dimensional emergence."
 readme = "README.md"
 requires-python = ">=3.12"
@@ -63,6 +63,7 @@ zerogate-native-triad27-evidence = "zerogate_sim.native_triad27_evidence_report:
 zerogate-native-deepwide-evidence = "zerogate_sim.native_deepwide_evidence_report:main"
 zerogate-four-gates-debt-design = "zerogate_sim.four_gates_debt_candidate_design_report:main"
 zerogate-four-gates-debt-generator = "zerogate_sim.four_gates_debt_candidate_generator_report:main"
+zerogate-four-gates-triad27-debt-evidence = "zerogate_sim.four_gates_triad27_debt_evidence_report:main"
 
 [tool.setuptools.packages.find]
 where = ["src"]

@@ -10,6 +10,9 @@ from zerogate_sim.reporting import write_dict_rows_csv
 
 AXIS_RE = re.compile(r"(?:^|_)r([MZP])(?:_|$)")
 
+RELATION_DEBT_KINDS = {"relation_debt_local", "relation_debt_global_a", "relation_debt_global_b"}
+RETURN_DEBT_KINDS = {"return_debt_local", "closure_gap_candidate", "dual_return_gap_candidate", "perturbation_survival_candidate"}
+
 
 def _base_candidate_id(candidate_id: str) -> str:
     return candidate_id.split(":", 1)[-1]
@@ -28,7 +31,7 @@ def _mean(values: list[float]) -> float:
     return sum(values) / len(values) if values else 0.0
 
 
-def _candidate_band(*, truth_role: str, raw_expressed: int, false_one: int, latent_overcrown: int, relation_debt: int, earned_one: int) -> tuple[str, str]:
+def _candidate_band(*, truth_role: str, raw_expressed: int, false_one: int, latent_overcrown: int, relation_debt: int, return_debt: int, earned_one: int) -> tuple[str, str]:
     """Matrix-level earned-one witness.
 
     This does not change the four-gate expression law. It reads the raw +1 events
@@ -41,7 +44,9 @@ def _candidate_band(*, truth_role: str, raw_expressed: int, false_one: int, late
     if latent_overcrown > 0:
         return "latent_overcrown_hold", "latent_probe_expressed_but_not_earned_one"
     if relation_debt > 0:
-        return "relation_debt_expression", "expresser_needs_relation_plus_weather"
+        return "relation_debt_expression", "candidate_has_meaningful_but_incomplete_relation"
+    if return_debt > 0:
+        return "return_debt_expression", "candidate_returns_changed_or_incomplete_and_remains_zero_held"
     if earned_one > 0:
         return "earned_one", "expresser_crowned_after_independence_witness"
     if truth_role == "expresser":
@@ -75,12 +80,18 @@ def build_earned_one_rows(gate_rows: list[tuple[int, GateScores]]) -> list[dict[
         false_one_count = 0
         latent_overcrown_count = 0
         relation_debt_count = 0
+        return_debt_count = 0
         earned_one_count = 0
 
         if first.truth_role == "trap":
             false_one_count = raw_expressed_count
         elif first.truth_role == "latent":
-            latent_overcrown_count = raw_expressed_count
+            if raw_expressed_count > 0 and first.kind in RELATION_DEBT_KINDS:
+                relation_debt_count = raw_expressed_count
+            elif raw_expressed_count > 0 and first.kind in RETURN_DEBT_KINDS:
+                return_debt_count = raw_expressed_count
+            else:
+                latent_overcrown_count = raw_expressed_count
         elif first.truth_role == "expresser":
             if echo_band == "relation_debt":
                 relation_debt_count = raw_expressed_count
@@ -93,6 +104,7 @@ def build_earned_one_rows(gate_rows: list[tuple[int, GateScores]]) -> list[dict[
             false_one=false_one_count,
             latent_overcrown=latent_overcrown_count,
             relation_debt=relation_debt_count,
+            return_debt=return_debt_count,
             earned_one=earned_one_count,
         )
         out.append(
@@ -106,6 +118,7 @@ def build_earned_one_rows(gate_rows: list[tuple[int, GateScores]]) -> list[dict[
                 "false_one_count": false_one_count,
                 "latent_overcrown_count": latent_overcrown_count,
                 "relation_debt_count": relation_debt_count,
+                "return_debt_count": return_debt_count,
                 "relation_minus_raw_expression": relation_minus_raw,
                 "relation_zero_raw_expression": relation_zero_raw,
                 "relation_plus_raw_expression": relation_plus_raw,
@@ -128,14 +141,15 @@ def _write_earned_one_read(path: Path, rows: list[dict[str, object]]) -> None:
     false_ones = [row for row in rows if int(row["false_one_count"]) > 0]
     latent_overcrowns = [row for row in rows if int(row["latent_overcrown_count"]) > 0]
     relation_debts = [row for row in rows if int(row["relation_debt_count"]) > 0]
+    return_debts = [row for row in rows if int(row.get("return_debt_count", 0)) > 0]
     earned = [row for row in rows if int(row["earned_one_count"]) > 0]
 
     total_raw = sum(int(row["raw_expressed_count"]) for row in rows)
     total_earned = sum(int(row["earned_one_count"]) for row in rows)
     total_false = sum(int(row["false_one_count"]) for row in rows)
     total_latent = sum(int(row["latent_overcrown_count"]) for row in rows)
-    total_debt = sum(int(row["relation_debt_count"]) for row in rows)
-
+    total_relation_debt = sum(int(row["relation_debt_count"]) for row in rows)
+    total_return_debt = sum(int(row.get("return_debt_count", 0)) for row in rows)
     lines: list[str] = []
     lines.append("# ZeroGateSim Earned-One Read")
     lines.append("")
@@ -149,7 +163,7 @@ def _write_earned_one_read(path: Path, rows: list[dict[str, object]]) -> None:
     lines.append("")
     lines.append("## Witness")
     lines.append("")
-    lines.append(f"Raw expression events: `{total_raw}`. Latent overcrown holds: `{total_latent}`. Relation-debt expression events: `{total_debt}`.")
+    lines.append(f"Raw expression events: `{total_raw}`. Latent overcrown holds: `{total_latent}`. Relation-debt events: `{total_relation_debt}`. Return-debt events: `{total_return_debt}`.")
     lines.append("")
     lines.append("## Resist")
     lines.append("")
@@ -162,12 +176,12 @@ def _write_earned_one_read(path: Path, rows: list[dict[str, object]]) -> None:
     lines.append("")
     lines.append("## Candidate table")
     lines.append("")
-    lines.append("| candidate | kind | role | band | raw +1 | earned | false one | latent overcrown | echo band | r- | r0 | r+ |")
-    lines.append("|---|---|---|---|---:|---:|---:|---:|---|---:|---:|---:|")
+    lines.append("| candidate | kind | role | band | raw +1 | earned | false one | latent overcrown | relation debt | return debt | echo band | r- | r0 | r+ |")
+    lines.append("|---|---|---|---|---:|---:|---:|---:|---:|---:|---|---:|---:|---:|")
     ranked = sorted(
         rows,
         key=lambda row: (
-            0 if int(row["false_one_count"]) > 0 else 1 if int(row["latent_overcrown_count"]) > 0 else 2 if int(row["relation_debt_count"]) > 0 else 3,
+            0 if int(row["false_one_count"]) > 0 else 1 if int(row["latent_overcrown_count"]) > 0 else 2 if int(row["relation_debt_count"]) > 0 else 3 if int(row.get("return_debt_count", 0)) > 0 else 4,
             -int(row["raw_expressed_count"]),
             str(row["candidate_id"]),
         ),
@@ -176,7 +190,8 @@ def _write_earned_one_read(path: Path, rows: list[dict[str, object]]) -> None:
         lines.append(
             f"| {row['candidate_id']} | {row['kind']} | {row['truth_role']} | {row['earned_one_band']} | "
             f"{row['raw_expressed_count']} | {row['earned_one_count']} | {row['false_one_count']} | {row['latent_overcrown_count']} | "
-            f"{row['echo_independence_band']} | {row['relation_minus_raw_expression']} | {row['relation_zero_raw_expression']} | {row['relation_plus_raw_expression']} |"
+            f"{row['relation_debt_count']} | {row.get('return_debt_count', 0)} | {row['echo_independence_band']} | "
+            f"{row['relation_minus_raw_expression']} | {row['relation_zero_raw_expression']} | {row['relation_plus_raw_expression']} |"
         )
     lines.append("")
     lines.append("## Witness sentence")
@@ -191,7 +206,10 @@ def _write_earned_one_read(path: Path, rows: list[dict[str, object]]) -> None:
         lines.append(f"Latent overcrown pressure is present in: {names}. These are not trap breaches, but they are not earned one either.")
     if relation_debts:
         names = ", ".join(f"`{row['candidate_id']}`" for row in relation_debts[:9])
-        lines.append(f"Relation-debt expressers require retest before being treated as fully independent: {names}.")
+        lines.append(f"Relation-debt candidates remain zero-held instead of being crowned or killed: {names}.")
+    if return_debts:
+        names = ", ".join(f"`{row['candidate_id']}`" for row in return_debts[:9])
+        lines.append(f"Return-debt candidates came back changed or incomplete and remain zero-held: {names}.")
     lines.append("")
     path.write_text("\n".join(lines), encoding="utf-8")
 

@@ -1,6 +1,6 @@
 # ZeroGateSim Roadmap
 
-**Current line:** `v1.6.19-alpha` Four Gates debt candidate generator  
+**Current line:** `v1.6.20-alpha` Four Gates triad27 debt evidence  
 **Release posture:** public research-alpha / controlled synthetic-field experiment line
 
 ZeroGateSim already has a generated toy-field proof record; later lines repair, strengthen, and bound what that record can honestly support.
@@ -48,9 +48,9 @@ Fresh controlled v1.5 evidence block:
 
 This evidence block supports the controlled synthetic-field line. It does not prove physical time, gravity, mass, cosmology, or role-blind discovery.
 
-## Current v1.6.19 gate
+## Current v1.6.20 gate
 
-`v1.6.19-alpha` is **Four Gates debt candidate generator**. It follows the `v1.6.18-alpha` design gate by implementing the `four_gates_debt` candidate profile.
+`v1.6.20-alpha` is **Four Gates triad27 debt evidence**. It follows the `v1.6.19-alpha` generator gate by testing debt-shaped candidates under repaired `triad27` evidence.
 
 Scientific question:
 
@@ -74,7 +74,7 @@ Not delivered:
 
 Boundary:
 
-The next useful evidence is `v1.6.20-alpha`: four-corpus `triad27` debt evidence. If relation debt and return debt remain zero after dedicated debt candidates are tested, the full debt claim must be demoted rather than patched forever.
+The next useful evidence after this gate is `v1.6.21-alpha`: deep81 / wide243 debt evidence, but only if `triad27` shows relation debt and return debt as visible structured-zero lanes. If debt lanes remain absent here, the full debt claim must be demoted rather than patched forever.
 
 ## Operating law
 
@@ -101,8 +101,8 @@ Any version that skips this order is a HOLD or RESIST event.
 | `v1.6.16-alpha` | complete | four-corpus triad27 native evidence with trinary lane accounting and ablation comparison |
 | `v1.6.17-alpha` | complete | deep81 / wide243 native evidence with debt-lane requirement; core strong, debt lanes partial |
 | `v1.6.18-alpha` | complete | Four Gates debt candidate design and logic/math cleanup |
-| `v1.6.19-alpha` | current | debt candidate generator: near-success relation/return/closure candidates, no C_Z mutation |
-| `v1.6.20-alpha` | next evidence | four-corpus triad27 debt evidence with positive zero-state visibility |
+| `v1.6.19-alpha` | complete | debt candidate generator: near-success relation/return/closure candidates, no C_Z mutation |
+| `v1.6.20-alpha` | current evidence | four-corpus triad27 debt evidence with positive zero-state visibility |
 | `v1.6.21-alpha` | planned | deep81 / wide243 debt evidence only after triad27 debt lanes are visible |
 | `v1.6.22-alpha` | planned | fresh-seed debt reproduction |
 | `v1.6.23-alpha` | planned hygiene | evidence consolidation / runs inventory / canonical cleanup, no deletion by default |
@@ -476,17 +476,25 @@ Deliverables:
 
 Pass condition:
 
-Generated candidates are structured enough to hold, incomplete enough not to crown, and wrong to demote. The heavy evidence question is deferred to `v1.6.20-alpha`.
+Generated candidates are structured enough to hold, incomplete enough not to crown, and wrong to demote. The heavy evidence question is tested in `v1.6.20-alpha`.
 
 ## v1.6.20-alpha — Four-corpus triad27 debt evidence
 
-Purpose:
+Test the repaired Four Gates debt candidates under `triad27` weather.
 
-Run the repaired small-weather proof with debt candidates included.
+Required evidence:
 
-Pass condition:
+- native four-gate adversary controls are present: distinction, polarity, relation, return;
+- candidate profile `four_gates_debt` is tested under `triad27`;
+- earned-one control remains visible;
+- relation debt is visible;
+- return debt is visible;
+- false-one pressure is demoted in native controls;
+- ablation enemies are wounded;
+- final false-one crowns remain `0`;
+- native witness remains `C_Z = min(D, P, R, B)`.
 
-Earned-one, false-one demotion, latent overcrown, relation debt, return debt, and ablation wounds are all visible with final false-one crowns remaining zero.
+If relation debt and return debt remain absent here, the full structured-zero debt claim is held or demoted before deeper weather.
 
 ## v1.6.21-alpha — Deep81 / wide243 debt evidence
 

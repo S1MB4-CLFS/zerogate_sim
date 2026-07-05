@@ -135,6 +135,7 @@ def _final_counts(matrix_dir: Path) -> dict[str, int]:
         "latent_overcrown_pressure": sum(_int(row, "latent_overcrown_pressure") for row in rows),
         "latent_overcrown_demoted_count": sum(_int(row, "latent_overcrown_demoted_count") for row in rows),
         "relation_debt_count": sum(_int(row, "relation_debt_count") for row in rows),
+        "return_debt_count": sum(_int(row, "return_debt_count") for row in rows),
         "final_false_one_crowns": final_false_crowns,
         "trap_final_crowns": trap_final_crowns,
     }
@@ -184,7 +185,7 @@ def build_seed_block_rows(matrix_dirs: Iterable[Path], *, require_four_gates: bo
         safety_breach = mirror_counts["mirror_safety_breach_total"]
         final_false = final_counts["final_false_one_crowns"]
         raw_false = final_counts["raw_false_one_pressure"]
-        pressure = raw_false + final_counts["latent_overcrown_pressure"] + final_counts["relation_debt_count"] + mirror_counts["mirror_primary_pressure"]
+        pressure = raw_false + final_counts["latent_overcrown_pressure"] + final_counts["relation_debt_count"] + final_counts["return_debt_count"] + mirror_counts["mirror_primary_pressure"]
         if safety_breach or final_false:
             status = "breach"
         elif pressure:
@@ -207,6 +208,7 @@ def build_seed_block_rows(matrix_dirs: Iterable[Path], *, require_four_gates: bo
                 "latent_overcrown_pressure": final_counts["latent_overcrown_pressure"],
                 "latent_overcrown_demoted_count": final_counts["latent_overcrown_demoted_count"],
                 "relation_debt_count": final_counts["relation_debt_count"],
+                "return_debt_count": final_counts["return_debt_count"],
                 "final_false_one_crowns": final_false,
                 "trap_final_crowns": final_counts["trap_final_crowns"],
                 "mirror_primary_pressure": mirror_counts["mirror_primary_pressure"],
@@ -262,6 +264,7 @@ def _overall_status(rows: list[dict[str, object]]) -> str:
         _int(row, "raw_false_one_pressure")
         or _int(row, "latent_overcrown_pressure")
         or _int(row, "relation_debt_count")
+        or _int(row, "return_debt_count")
         or _int(row, "mirror_primary_pressure")
         or _int(row, "mirror_secondary_pressure")
         for row in rows
@@ -277,6 +280,7 @@ def _write_read(path: Path, *, rows: list[dict[str, object]], mirror_rows: list[
     false_demoted = sum(_int(row, "false_one_demoted_count") for row in rows)
     latent = sum(_int(row, "latent_overcrown_pressure") for row in rows)
     relation_debt = sum(_int(row, "relation_debt_count") for row in rows)
+    return_debt = sum(_int(row, "return_debt_count") for row in rows)
     final_false = sum(_int(row, "final_false_one_crowns") for row in rows)
     mirror_breach = sum(_int(row, "safety_breach_total") for row in mirror_rows)
     status = _overall_status(rows)
@@ -298,7 +302,8 @@ def _write_read(path: Path, *, rows: list[dict[str, object]], mirror_rows: list[
     lines.append(f"Raw false-one pressure: `{raw_false}`")
     lines.append(f"False-one pressure demoted: `{false_demoted}`")
     lines.append(f"Latent overcrown pressure: `{latent}`")
-    lines.append(f"Relation/return debt count: `{relation_debt}`")
+    lines.append(f"Relation debt count: `{relation_debt}`")
+    lines.append(f"Return debt count: `{return_debt}`")
     lines.append(f"Final false-one crowns: `{final_false}`")
     lines.append(f"Mirror safety breach total: `{mirror_breach}`")
     lines.append(f"Overall status: `{status}`")
@@ -312,13 +317,13 @@ def _write_read(path: Path, *, rows: list[dict[str, object]], mirror_rows: list[
     lines.append("")
     lines.append("## Gate summary")
     lines.append("")
-    lines.append("| gate | profile | candidate profile | seeds | runs | earned | raw false | false demoted | latent | relation debt | final false | mirror breach | status |")
-    lines.append("|---|---|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---|")
+    lines.append("| gate | profile | candidate profile | seeds | runs | earned | raw false | false demoted | latent | relation debt | return debt | final false | mirror breach | status |")
+    lines.append("|---|---|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---|")
     for row in rows:
         lines.append(
             f"| {row['gate']} | {row['profile']} | {row['candidate_profile']} | {row['seed_range']} | {row['total_runs']} | "
             f"{row['final_earned_one_events']} | {row['raw_false_one_pressure']} | {row['false_one_demoted_count']} | "
-            f"{row['latent_overcrown_pressure']} | {row['relation_debt_count']} | {row['final_false_one_crowns']} | "
+            f"{row['latent_overcrown_pressure']} | {row['relation_debt_count']} | {row.get('return_debt_count', 0)} | {row['final_false_one_crowns']} | "
             f"{row['mirror_safety_breach_total']} | {row['seed_block_status']} |"
         )
     lines.append("")
