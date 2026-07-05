@@ -1,9 +1,9 @@
 # Version Truth
 
-**Status:** README overflow moved here in `v1.6.9-alpha`; current spine advanced in `v1.6.24-alpha`  
+**Status:** README overflow moved here in `v1.6.9-alpha`; current spine advanced in `v1.6.25-alpha`  
 **Purpose:** preserve the release spine and recent checkpoints without forcing the README to open with a wall of version bookkeeping.
 
-The active public line is now `v1.6.24-alpha` — How It Works and v1.6 closeout route lock.
+The active public line is now `v1.6.25-alpha` — Anti-Tautology Audit / Role-Dependence Check.
 
 ## Release spine
 
@@ -26,6 +26,7 @@ The active public line is now `v1.6.24-alpha` — How It Works and v1.6 closeout
 - `v1.6.22-alpha` — Four Gates fresh-seed debt reproduction: compares reference seed range 0-8 against fresh seed range 9-17 for qualitative debt-pattern reproduction.
 - `v1.6.23-alpha` — History vault and current evidence surface cleanup: moves historical route material out of README/ROADMAP and replaces legacy visuals with current Four Gates debt evidence cards.
 - `v1.6.24-alpha` — How It Works and closeout route lock: adds current evidence index, anti-tautology audit plan, and locks v1.6.25/v1.6.26/v1.6.27 before v1.7.
+- `v1.6.25-alpha` — Anti-Tautology Audit / Role-Dependence Check: adds the audit tool for role/profile dependence, witness-count dependence, masked numeric visibility, and relation/return debt specificity.
 
 ## Recent checkpoints
 
@@ -62,6 +63,7 @@ The active public line is now `v1.6.24-alpha` — How It Works and v1.6 closeout
 - `v1.6.22-alpha` adds the Four Gates fresh-seed debt reproduction report, comparing completed deep81 / wide243 debt evidence directories across reference and fresh seed ranges.
 - `v1.6.23-alpha` creates `docs/history_vault/`, moves the full shadow route closeout into the vault, adds current Four Gates evidence cards, and records a no-delete local `runs/` archive plan.
 - `v1.6.24-alpha` adds the README `How it works` section, `docs/current_evidence_index.md`, and `docs/anti_tautology_audit_plan.md`; ROADMAP locks v1.6.25, v1.6.26, v1.6.27, closeout, and v1.7 boundary.
+- `v1.6.25-alpha` adds `docs/anti_tautology_audit_report.md` and `zerogate-four-gates-anti-tautology-audit`; it may bound the claim if debt states are too role-shaped.
 
 Detailed release notes live in [`docs/release_notes/`](release_notes/).
 
@@ -123,3 +125,8 @@ C_Z = min(D, P, R, B)
 ## v1.6.24-alpha note
 
 `v1.6.24-alpha` is the How It Works and closeout route lock gate. It preserves `C_Z = min(D, P, R, B)`, does not start Zenodo correction, does not revive shadow, and does not claim observed-universe proof. It adds the current evidence index and anti-tautology audit plan before the final v1.6 audit and package gates.
+
+
+## v1.6.25-alpha note
+
+`v1.6.25-alpha` is the Anti-Tautology Audit / Role-Dependence Check gate. It preserves `C_Z = min(D, P, R, B)`, does not start Zenodo correction, does not revive shadow, and does not claim observed-universe proof. It distinguishes designed-profile dependence from witness-count dependence and explicitly blocks independent role-blind discovery language unless a future route earns it.

@@ -1,6 +1,6 @@
 # ZeroGateSim Roadmap
 
-**Current line:** `v1.6.24-alpha` — How It Works and v1.6 closeout route lock  
+**Current line:** `v1.6.25-alpha` — Anti-Tautology Audit / Role-Dependence Check  
 **Release posture:** public research-alpha / controlled synthetic-field experiment line
 
 ZeroGateSim now has a repaired Four Gates evidence path. The older generated toy-field proof record remains preserved in the history vault, not on the active claim surface. The history vault keeps what the project was; the README shows what the project is; this roadmap shows what still has to be earned.
@@ -45,7 +45,8 @@ C_Z = min(D, P, R, B)
 | `v1.6.21` deep81 / wide243 debt | expand | some debt candidate families inactive |
 | `v1.6.22` fresh-seed reproduction | expand | latent overcrown did not reproduce; relation/return debt did |
 | `v1.6.23` history vault | hygiene | no new scientific claim |
-| `v1.6.24` route lock | current | makes the active claim path legible before audit |
+| `v1.6.24` route lock | hygiene | makes the active claim path legible before audit |
+| `v1.6.25` anti-tautology audit | current | checks role-dependence and bounds the debt claim if too designed-profile-shaped |
 
 ## Locked v1.6 closeout route
 
@@ -93,8 +94,14 @@ These remain because they explain the current evidence route without reopening t
 | `v1.6.22-alpha` | fresh-seed debt reproduction |
 | `v1.6.23-alpha` | Evidence consolidation / history vault and public evidence surface cleanup |
 | `v1.6.24-alpha` | How It Works, current evidence index, and closeout route lock |
+| `v1.6.25-alpha` | Anti-Tautology Audit / Role-Dependence Check |
 
 No new native gate was introduced in these steps; the native witness remains `C_Z = min(D, P, R, B)`.
+
+
+## v1.6.25-alpha note
+
+`v1.6.25-alpha` adds the Anti-Tautology Audit / Role-Dependence Check. It preserves `C_Z = min(D, P, R, B)`, does not start Zenodo correction, does not revive shadow, and does not claim observed-universe proof. Its likely honest output may be bounded: debt states are designed-profile-shaped but witness-counted and reproducible. That bounds the claim; it does not kill it.
 
 ## v1.7 boundary
 

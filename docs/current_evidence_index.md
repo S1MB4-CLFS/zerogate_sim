@@ -18,6 +18,7 @@ This index describes the canonical current evidence line for the Four Gates of B
 | fresh-seed debt reproduction | `v1.6.22-alpha` | qualitative reproduction on seeds `9-17` | expand | latent overcrown did not reproduce |
 | history vault cleanup | `v1.6.23-alpha` | public surface cleanup | hygiene | no new evidence |
 | closeout route lock | `v1.6.24-alpha` | audit path definition | hygiene | no new evidence |
+| anti-tautology audit | `v1.6.25-alpha` | role-dependence check | audit | bounds whether debt states are witness-computed or label-shaped |
 
 ## Canonical state pattern
 
@@ -33,7 +34,7 @@ final false-one crowns = 0
 
 ## Required next audit
 
-`v1.6.25-alpha` must check whether this pattern is too dependent on explicit candidate profile / role design. If debt states are mostly direct labels rather than witness-derived outputs, the claim must be bounded or demoted.
+`v1.6.25-alpha` checks whether this pattern is too dependent on explicit candidate profile / role design. If debt states are mostly direct labels rather than witness-derived outputs, the claim must be bounded or demoted.
 
 ## Not current evidence
 

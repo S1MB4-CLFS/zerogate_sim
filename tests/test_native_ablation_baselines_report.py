@@ -238,8 +238,8 @@ def test_public_version_truth_surfaces_include_v1_6_16_current_and_v1_6_15_histo
     version_truth = (ROOT / "docs/version_truth.md").read_text(encoding="utf-8")
     release = (ROOT / "docs/release_notes/v1_6_15_alpha.md").read_text(encoding="utf-8")
     doc = (ROOT / "docs/native_ablation_baselines.md").read_text(encoding="utf-8")
-    assert "1.6.24-alpha" in (ROOT / "src/zerogate_sim/__init__.py").read_text(encoding="utf-8")
-    assert 'version = "1.6.24a0"' in (ROOT / "pyproject.toml").read_text(encoding="utf-8")
+    assert "1.6.25-alpha" in (ROOT / "src/zerogate_sim/__init__.py").read_text(encoding="utf-8")
+    assert 'version = "1.6.25a0"' in (ROOT / "pyproject.toml").read_text(encoding="utf-8")
     for text in [readme, roadmap, version_truth]:
         assert "v1.6.16-alpha" in text
         assert "four-corpus triad27 native evidence" in text
