@@ -25,7 +25,7 @@ def test_reproduction_command_package_writes_command_bundle(tmp_path: Path) -> N
     assert decision["version"] == CURRENT_VERSION
     assert decision["native_witness_unchanged"] == NATIVE_WITNESS
     assert decision["decision"] == "expand_reproduction_command_package_ready_for_manuscript_correction"
-    assert decision["allowed_next_gate"].startswith("v1.6.27-alpha")
+    assert decision["allowed_next_gate"].startswith("v1.6.28-alpha")
     assert decision["stronger_claim_not_earned"] == "independent role-blind discovery"
 
     quick = paths["quick_ps1"].read_text(encoding="utf-8")
@@ -59,13 +59,13 @@ def test_v1_6_27_public_surfaces_and_route() -> None:
     roadmap = read("ROADMAP.md")
     version_truth = read("docs/version_truth.md")
     doc = read("docs/manuscript_correction_package.md")
-    release = read("docs/release_notes/v1_6_27_alpha.md")
-    assert "1.6.27-alpha" in read("src/zerogate_sim/__init__.py")
-    assert 'version = "1.6.27a0"' in read("pyproject.toml")
+    release = read("docs/release_notes/v1_6_28_alpha.md")
+    assert "1.6.28-alpha" in read("src/zerogate_sim/__init__.py")
+    assert 'version = "1.6.28a0"' in read("pyproject.toml")
     for text in [readme, roadmap, version_truth, doc, release]:
-        assert "v1.6.27-alpha" in text
+        assert "v1.6.28-alpha" in text
         assert "Manuscript Correction Package" in text or "manuscript correction package" in text
         assert "C_Z = min(D, P, R, B)" in text
-    assert "v1.6.27-alpha" in roadmap
+    assert "v1.6.28-alpha" in roadmap
     assert "Manuscript Correction Package" in roadmap
     assert "observed-universe bridge" in roadmap

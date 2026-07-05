@@ -1,9 +1,9 @@
 # Version Truth
 
-**Status:** README overflow moved here in `v1.6.9-alpha`; current spine advanced in `v1.6.27-alpha`  
+**Status:** README overflow moved here in `v1.6.9-alpha`; current spine advanced in `v1.6.28-alpha`  
 **Purpose:** preserve the release spine and recent checkpoints without forcing the README to open with a wall of version bookkeeping.
 
-The active public line is now `v1.6.27-alpha` — Manuscript Correction Package.
+The active public line is now `v1.6.28-alpha` — v1.6 Closeout Decision.
 
 ## Release spine
 
@@ -29,6 +29,7 @@ The active public line is now `v1.6.27-alpha` — Manuscript Correction Package.
 - `v1.6.25-alpha` — Anti-Tautology Audit / Role-Dependence Check: adds the audit tool for role/profile dependence, witness-count dependence, masked numeric visibility, and relation/return debt specificity.
 - `v1.6.26-alpha` — Reproduction Command Package: adds small smoke and full reference/fresh reproduction command scripts, canonical evidence manifest, and expected output map before manuscript correction.
 - `v1.6.27-alpha` — Manuscript Correction Package: prepares future v2 manuscript outline, section patch map, claim lanes, canonical evidence table, and later Zenodo new-version plan without uploading or writing the full paper.
+- `v1.6.28-alpha` — v1.6 Closeout Decision: closes v1.6 as bounded controlled synthetic-field evidence and allows v1.7 operational claim work to begin.
 
 ## Recent checkpoints
 
@@ -68,6 +69,7 @@ The active public line is now `v1.6.27-alpha` — Manuscript Correction Package.
 - `v1.6.25-alpha` adds `docs/anti_tautology_audit_report.md` and `zerogate-four-gates-anti-tautology-audit`; it bounds the current evidence as designed-profile shaped but witness-counted.
 - `v1.6.26-alpha` adds `docs/four_gates_reproduction_command_package.md` and `zerogate-four-gates-reproduction-package`; it packages reproduction commands without adding new science.
 - `v1.6.27-alpha` adds `docs/manuscript_correction_package.md` and `zerogate-four-gates-manuscript-correction-package`; it prepares manuscript correction material without starting the Zenodo route.
+- `v1.6.28-alpha` adds `docs/v1_6_closeout_decision.md` and `zerogate-four-gates-v1-6-closeout`; it records the earned / partial / demoted closeout decision before v1.7.
 
 Detailed release notes live in [`docs/release_notes/`](release_notes/).
 
@@ -144,3 +146,8 @@ C_Z = min(D, P, R, B)
 ## v1.6.27-alpha note
 
 `v1.6.27-alpha` is the Manuscript Correction Package gate. It preserves `C_Z = min(D, P, R, B)`, does not upload to Zenodo, does not revive shadow, and does not claim observed-universe proof. It prepares a future v2 manuscript outline, section-by-section patch map, claim lane register, canonical evidence table, and later Zenodo new-version plan. Full v2 paper work waits until v1.7 succeeds.
+
+
+## v1.6.28-alpha note
+
+`v1.6.28-alpha` is the v1.6 Closeout Decision gate. It preserves `C_Z = min(D, P, R, B)`, does not upload to Zenodo, does not revive shadow, and does not claim observed-universe proof. It closes the controlled synthetic-field evidence line as bounded `+1` for v1.7 operationalization while keeping role-blind discovery, physical/cosmological claims, and observed-universe bridge claims blocked.

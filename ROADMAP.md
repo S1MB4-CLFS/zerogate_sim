@@ -1,6 +1,6 @@
 # ZeroGateSim Roadmap
 
-**Current line:** `v1.6.27-alpha` — Manuscript Correction Package  
+**Current line:** `v1.6.28-alpha` — v1.6 Closeout Decision  
 **Release posture:** public research-alpha / controlled synthetic-field experiment line
 
 ZeroGateSim now has a repaired Four Gates evidence path. The older generated toy-field proof record remains preserved in the history vault, not on the active claim surface. The history vault keeps what the project was; the README shows what the project is; this roadmap shows what still has to be earned.
@@ -48,7 +48,8 @@ C_Z = min(D, P, R, B)
 | `v1.6.24` route lock | hygiene | makes the active claim path legible before audit |
 | `v1.6.25` anti-tautology audit | witness_bounded_role_shaped_but_witness_computed | debt states are designed-profile shaped but witness-counted |
 | `v1.6.26` reproduction command package | expand | packages small smoke and full reference/fresh reproduction commands |
-| `v1.6.27` manuscript correction package | current | prepares v2 paper map and later Zenodo new-version plan; no upload yet |
+| `v1.6.27` manuscript correction package | expand | prepares v2 paper map and later Zenodo new-version plan; no upload yet |
+| `v1.6.28` v1.6 closeout | current | bounded controlled synthetic-field Four Gates witness claim earned for v1.7 operationalization |
 
 ## Locked v1.6 closeout route
 
@@ -58,17 +59,19 @@ No new theory branch belongs in v1.6. The remaining versions are verification an
 |---|---|---|
 | `v1.6.25-alpha` | Anti-Tautology Audit / Role-Dependence Check | completed; bounded result is designed-profile shaped but witness-counted |
 | `v1.6.26-alpha` | Reproduction Command Package | completed; provide small smoke and full heavy reference/fresh reproduction command paths |
-| `v1.6.27-alpha` | Manuscript Correction Package | current; prepare corrected paper/README language, claim lanes, evidence table, and later Zenodo new-version plan; do not upload yet |
-| `v1.6 closeout` | earned / partial / demoted decision | decide whether the controlled synthetic-field claim earns `+1`, remains `0` partial, or must be demoted `-1` |
+| `v1.6.27-alpha` | Manuscript Correction Package | completed; prepare corrected paper/README language, claim lanes, evidence table, and later Zenodo new-version plan; do not upload yet |
+| `v1.6.28-alpha` | v1.6 Closeout Decision | current; bounded controlled synthetic-field claim earns `+1` for v1.7 operationalization; broader claims remain bounded or resisted |
 
-## v1.6 closeout decision rule
+## v1.6 closeout decision
 
-At closeout, decide explicitly:
+This section is the earned / partial / demoted decision gate for v1.6.
+
+The closeout decision is now explicit:
 
 ```text
 +1 — controlled synthetic-field Four Gates witness claim earned enough for v1.7 operationalization package.
- 0 — partial result: earned-one / false-one / relation-return debt supported, but caveats block stronger package.
--1 — evidence route insufficient; demote claim and stop release path.
+ 0 — synthetic zero-zone gating principle remains the v1.7 claim candidate, not a v1.6 final crown.
+-1 — role-blind discovery, observed-universe bridge, and physics/cosmology claims remain unearned.
 ```
 
 The candidate claim that v1.7 must make auditable, if v1.6 closes cleanly, is:
@@ -99,6 +102,7 @@ These remain because they explain the current evidence route without reopening t
 | `v1.6.25-alpha` | Anti-Tautology Audit / Role-Dependence Check |
 | `v1.6.26-alpha` | Reproduction Command Package |
 | `v1.6.27-alpha` | Manuscript Correction Package |
+| `v1.6.28-alpha` | v1.6 Closeout Decision |
 
 No new native gate was introduced in these steps; the native witness remains `C_Z = min(D, P, R, B)`.
 
@@ -114,6 +118,10 @@ No new native gate was introduced in these steps; the native witness remains `C_
 ## v1.6.27-alpha note
 
 `v1.6.27-alpha` adds the Manuscript Correction Package. It preserves `C_Z = min(D, P, R, B)`, does not upload to Zenodo, does not revive shadow, and does not claim observed-universe proof. It prepares the future v2 manuscript outline, section patch map, claim lane register, canonical evidence table, and later Zenodo new-version plan. The current Zenodo paper remains the historical first-research-alpha artifact; full v2 paper work waits until v1.7 succeeds.
+
+## v1.6.28-alpha note
+
+`v1.6.28-alpha` closes v1.6 as a bounded controlled synthetic-field evidence line. It preserves `C_Z = min(D, P, R, B)`, does not upload to Zenodo, does not revive shadow, and does not claim observed-universe proof. It allows v1.7 to operationalize and audit the bounded claim that the Four Gates witness operationalizes a synthetic zero-zone gating principle.
 
 ## v1.7 boundary
 

@@ -68,14 +68,14 @@ def test_v1_6_27_public_surfaces_and_route() -> None:
     version_truth = read("docs/version_truth.md")
     evidence_index = read("docs/current_evidence_index.md")
     doc = read("docs/manuscript_correction_package.md")
-    release = read("docs/release_notes/v1_6_27_alpha.md")
+    release = read("docs/release_notes/v1_6_28_alpha.md")
 
-    assert "1.6.27-alpha" in read("src/zerogate_sim/__init__.py")
-    assert 'version = "1.6.27a0"' in read("pyproject.toml")
+    assert "1.6.28-alpha" in read("src/zerogate_sim/__init__.py")
+    assert 'version = "1.6.28a0"' in read("pyproject.toml")
     assert "zerogate-four-gates-manuscript-correction-package" in read("pyproject.toml")
 
     for text in [readme, roadmap, version_truth, evidence_index, doc, release]:
-        assert "v1.6.27-alpha" in text
+        assert "v1.6.28-alpha" in text
         assert "Manuscript Correction Package" in text or "manuscript correction package" in text
         assert "C_Z = min(D, P, R, B)" in text
 

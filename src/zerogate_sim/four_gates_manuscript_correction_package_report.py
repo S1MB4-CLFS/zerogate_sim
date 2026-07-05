@@ -9,7 +9,7 @@ from zerogate_sim.reporting import ensure_dir, write_dict_rows_csv, write_eviden
 
 CURRENT_VERSION = "v1.6.27-alpha"
 NATIVE_WITNESS = "C_Z = min(D, P, R, B)"
-NEXT_GATE = "v1.6 closeout — earned / partial / demoted"
+NEXT_GATE = "v1.6.28-alpha — v1.6 Closeout Decision"
 V2_STATUS = "not_ready_until_v1_7_success"
 ZENODO_ACTION = "no_upload_yet_prepare_new_version_later"
 CLAIM_CANDIDATE = (

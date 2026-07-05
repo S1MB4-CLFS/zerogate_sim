@@ -8,8 +8,8 @@ def read(path: str) -> str:
 
 
 def test_v1_6_24_version_truth_and_public_surface() -> None:
-    assert "1.6.27-alpha" in read("src/zerogate_sim/__init__.py")
-    assert 'version = "1.6.27a0"' in read("pyproject.toml")
+    assert "1.6.28-alpha" in read("src/zerogate_sim/__init__.py")
+    assert 'version = "1.6.28a0"' in read("pyproject.toml")
     for path in ["README.md", "ROADMAP.md", "docs/version_truth.md", "docs/release_notes/v1_6_25_alpha.md"]:
         assert "v1.6.25-alpha" in read(path)
     assert "v1.6.23-alpha" in read("docs/release_notes/v1_6_23_alpha.md")

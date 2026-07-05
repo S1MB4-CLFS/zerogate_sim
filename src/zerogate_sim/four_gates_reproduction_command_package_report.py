@@ -9,7 +9,7 @@ from zerogate_sim.reporting import ensure_dir, write_dict_rows_csv, write_eviden
 
 CURRENT_VERSION = "v1.6.26-alpha"
 NATIVE_WITNESS = "C_Z = min(D, P, R, B)"
-NEXT_GATE = "v1.6.27-alpha — Manuscript Correction Package"
+NEXT_GATE = "v1.6.28-alpha — v1.6 Closeout Decision"
 CLAIM_CANDIDATE = (
     "In controlled synthetic adversarial fields, the Four Gates witness operationalizes "
     "a synthetic zero-zone gating principle: it delays premature expression, preserves "

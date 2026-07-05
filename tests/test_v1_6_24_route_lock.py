@@ -9,7 +9,7 @@ def read(path: str) -> str:
 
 def test_v1_6_24_surfaces_how_it_works_and_current_route() -> None:
     readme = read("README.md")
-    assert "v1.6.27-alpha" in readme
+    assert "v1.6.28-alpha" in readme
     assert "## How it works" in readme
     assert readme.index("## Why this exists") < readme.index("## How it works") < readme.index("## First visual spine")
     assert "raw expression is pressure, not truth" in readme
@@ -23,9 +23,9 @@ def test_v1_6_24_locks_remaining_v1_6_route() -> None:
     for needle in [
         "v1.6.25-alpha",
         "Anti-Tautology Audit / Role-Dependence Check",
-        "v1.6.27-alpha",
+        "v1.6.28-alpha",
         "Reproduction Command Package",
-        "v1.6.27-alpha",
+        "v1.6.28-alpha",
         "Manuscript Correction Package",
         "v1.6 closeout",
         "earned / partial / demoted decision",

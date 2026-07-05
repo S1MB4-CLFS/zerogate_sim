@@ -1,6 +1,7 @@
 # Manuscript Correction Package
 
 **Introduced:** `v1.6.27-alpha`  
+**Current closeout note:** `v1.6.28-alpha` records the v1.6 closeout after this Manuscript Correction Package.  
 **Native witness:** `C_Z = min(D, P, R, B)`  
 **Status:** planning package only; not the full v2 manuscript.
 
