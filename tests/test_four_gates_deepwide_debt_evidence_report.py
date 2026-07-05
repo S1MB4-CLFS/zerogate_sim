@@ -6,7 +6,7 @@ from pathlib import Path
 
 import pytest
 
-from zerogate_sim.four_gates_triad27_debt_evidence_report import write_four_gates_triad27_debt_evidence_report
+from zerogate_sim.four_gates_deepwide_debt_evidence_report import write_four_gates_deepwide_debt_evidence_report
 
 ROOT = Path(__file__).resolve().parents[1]
 
@@ -23,7 +23,7 @@ def _matrix_dir(
     root: Path,
     name: str,
     *,
-    profile: str = "triad27",
+    profile: str,
     candidate_profile: str,
     earned: int = 0,
     false_pressure: int = 0,
@@ -56,7 +56,7 @@ def _matrix_dir(
                 "final_trinary_symbol": "+1" if earned else "0",
                 "final_band": "earned_one" if earned else "contained",
                 "final_earned_one_count": earned,
-                "raw_expression_pressure": earned + relation_debt + return_debt,
+                "raw_expression_pressure": earned + latent + relation_debt + return_debt,
                 "raw_false_one_pressure": 0,
                 "false_one_demoted_count": 0,
                 "latent_overcrown_pressure": latent,
@@ -143,18 +143,17 @@ def _matrix_dir(
     return path
 
 
-def _native_fixture(root: Path) -> list[Path]:
+def _native_fixture(root: Path, *, profile: str) -> list[Path]:
     return [
-        _matrix_dir(root, "distinction_triad27", candidate_profile="adversary_distinction", earned=2),
-        _matrix_dir(root, "polarity_triad27", candidate_profile="adversary_polarity", earned=3, false_pressure=8, latent=2),
-        _matrix_dir(root, "relation_triad27", candidate_profile="adversary_relation", earned=3, false_pressure=6),
-        _matrix_dir(root, "return_triad27", candidate_profile="adversary_return", earned=3, false_pressure=5),
+        _matrix_dir(root, f"distinction_{profile}", profile=profile, candidate_profile="adversary_distinction", earned=4),
+        _matrix_dir(root, f"polarity_{profile}", profile=profile, candidate_profile="adversary_polarity", earned=5, false_pressure=8, latent=2),
+        _matrix_dir(root, f"relation_{profile}", profile=profile, candidate_profile="adversary_relation", earned=5, false_pressure=6),
+        _matrix_dir(root, f"return_{profile}", profile=profile, candidate_profile="adversary_return", earned=5, false_pressure=7),
     ]
 
 
-def _debt_fixture(root: Path) -> Path:
-    path = _matrix_dir(root, "debt_triad27", candidate_profile="four_gates_debt", earned=5, relation_debt=7, return_debt=9)
-    # Add explicit separate rows so assigned debt lanes are visible by candidate kind.
+def _debt_fixture(root: Path, *, profile: str) -> Path:
+    path = _matrix_dir(root, f"debt_{profile}", profile=profile, candidate_profile="four_gates_debt", earned=9, relation_debt=11, return_debt=13)
     rows = list(csv.DictReader((path / "matrix_final_output_summary.csv").open(newline="", encoding="utf-8")))
     rows.extend(
         [
@@ -167,8 +166,8 @@ def _debt_fixture(root: Path) -> Path:
                 "final_trinary_symbol": "0",
                 "final_band": "relation_debt_hold",
                 "final_earned_one_count": 0,
-                "raw_expression_pressure": 7,
-                "relation_debt_count": 7,
+                "raw_expression_pressure": 11,
+                "relation_debt_count": 11,
                 "return_debt_count": 0,
             },
             {
@@ -180,9 +179,9 @@ def _debt_fixture(root: Path) -> Path:
                 "final_trinary_symbol": "0",
                 "final_band": "return_debt_hold",
                 "final_earned_one_count": 0,
-                "raw_expression_pressure": 9,
+                "raw_expression_pressure": 13,
                 "relation_debt_count": 0,
-                "return_debt_count": 9,
+                "return_debt_count": 13,
             },
         ]
     )
@@ -195,49 +194,76 @@ def _read_csv(path: Path) -> list[dict[str, str]]:
         return list(csv.DictReader(f))
 
 
-def test_four_gates_triad27_debt_requires_four_native_gates(tmp_path: Path) -> None:
-    native = _native_fixture(tmp_path / "native")[:3]
-    debt = _debt_fixture(tmp_path / "debt")
-    with pytest.raises(ValueError, match="return"):
-        write_four_gates_triad27_debt_evidence_report(output_dir=tmp_path / "out", matrix_dirs=native, debt_matrix_dir=debt)
+def test_four_gates_deepwide_debt_requires_both_rungs(tmp_path: Path) -> None:
+    deep_native = _native_fixture(tmp_path / "deep_native", profile="deep81")
+    deep_debt = _debt_fixture(tmp_path / "deep_debt", profile="deep81")
+    wide_debt = _debt_fixture(tmp_path / "wide_debt", profile="wide243")
+    with pytest.raises(ValueError, match="wide243"):
+        write_four_gates_deepwide_debt_evidence_report(
+            output_dir=tmp_path / "out",
+            deep81_matrix_dirs=deep_native,
+            deep81_debt_matrix_dir=deep_debt,
+            wide243_matrix_dirs=[],
+            wide243_debt_matrix_dir=wide_debt,
+        )
 
 
-def test_four_gates_triad27_debt_requires_debt_profile(tmp_path: Path) -> None:
-    native = _native_fixture(tmp_path / "native")
-    debt = _matrix_dir(tmp_path / "wrong", "debt_triad27", candidate_profile="adversary_relation")
+def test_four_gates_deepwide_debt_rejects_wrong_debt_profile(tmp_path: Path) -> None:
+    deep_native = _native_fixture(tmp_path / "deep_native", profile="deep81")
+    wide_native = _native_fixture(tmp_path / "wide_native", profile="wide243")
+    deep_debt = _matrix_dir(tmp_path / "wrong", "debt_deep81", profile="deep81", candidate_profile="adversary_relation")
+    wide_debt = _debt_fixture(tmp_path / "wide_debt", profile="wide243")
     with pytest.raises(ValueError, match="four_gates_debt"):
-        write_four_gates_triad27_debt_evidence_report(output_dir=tmp_path / "out", matrix_dirs=native, debt_matrix_dir=debt)
+        write_four_gates_deepwide_debt_evidence_report(
+            output_dir=tmp_path / "out",
+            deep81_matrix_dirs=deep_native,
+            deep81_debt_matrix_dir=deep_debt,
+            wide243_matrix_dirs=wide_native,
+            wide243_debt_matrix_dir=wide_debt,
+        )
 
 
-def test_four_gates_triad27_debt_report_expands_when_debt_visible(tmp_path: Path) -> None:
-    native = _native_fixture(tmp_path / "native")
-    debt = _debt_fixture(tmp_path / "debt")
-    paths = write_four_gates_triad27_debt_evidence_report(output_dir=tmp_path / "out", matrix_dirs=native, debt_matrix_dir=debt)
-    for key in ["read", "decision", "native_seed_block", "native_ablation_summary", "debt_candidate_lanes", "state_lanes", "audit", "bundle"]:
+def test_four_gates_deepwide_debt_report_expands_when_both_rungs_visible(tmp_path: Path) -> None:
+    deep_native = _native_fixture(tmp_path / "deep_native", profile="deep81")
+    wide_native = _native_fixture(tmp_path / "wide_native", profile="wide243")
+    deep_debt = _debt_fixture(tmp_path / "deep_debt", profile="deep81")
+    wide_debt = _debt_fixture(tmp_path / "wide_debt", profile="wide243")
+    paths = write_four_gates_deepwide_debt_evidence_report(
+        output_dir=tmp_path / "out",
+        deep81_matrix_dirs=deep_native,
+        deep81_debt_matrix_dir=deep_debt,
+        wide243_matrix_dirs=wide_native,
+        wide243_debt_matrix_dir=wide_debt,
+    )
+    for key in ["read", "decision", "rung_summary", "native_seed_block", "native_ablation_summary", "debt_candidate_lanes", "state_lanes", "audit", "bundle"]:
         assert paths[key].exists()
     decision = json.loads(paths["decision"].read_text(encoding="utf-8"))
-    lanes = {row["lane"]: row for row in _read_csv(paths["state_lanes"])}
+    lanes = _read_csv(paths["state_lanes"])
     debt_rows = _read_csv(paths["debt_candidate_lanes"])
-    assert decision["version"] == "v1.6.20-alpha"
-    assert decision["global_decision"] == "expand_four_gates_triad27_debt_evidence"
+    assert decision["version"] == "v1.6.21-alpha"
+    assert decision["global_decision"] == "expand_four_gates_deepwide_debt_evidence"
     assert decision["native_witness_unchanged"] == "C_Z = min(D, P, R, B)"
-    assert lanes["0 relation debt"]["lane_status"] == "visible"
-    assert lanes["0 return debt"]["lane_status"] == "visible"
+    assert decision["loaded_rungs"] == ["deep81", "wide243"]
+    assert {row["weather_rung"] for row in lanes} == {"deep81", "wide243"}
     assert any(row["assigned_lane"] == "0 relation debt" for row in debt_rows)
     assert any(row["assigned_lane"] == "0 return debt" for row in debt_rows)
+    for rung in ["deep81", "wide243"]:
+        assert decision["debt_counts_by_rung"][rung]["relation_debt"] > 0
+        assert decision["debt_counts_by_rung"][rung]["return_debt"] > 0
 
 
-def test_four_gates_triad27_debt_public_surfaces_are_current() -> None:
+def test_four_gates_deepwide_debt_public_surfaces_are_current() -> None:
     readme = (ROOT / "README.md").read_text(encoding="utf-8")
     roadmap = (ROOT / "ROADMAP.md").read_text(encoding="utf-8")
     version_truth = (ROOT / "docs/version_truth.md").read_text(encoding="utf-8")
-    doc = (ROOT / "docs/four_gates_triad27_debt_evidence.md").read_text(encoding="utf-8")
-    release = (ROOT / "docs/release_notes/v1_6_20_alpha.md").read_text(encoding="utf-8")
+    doc = (ROOT / "docs/four_gates_deepwide_debt_evidence.md").read_text(encoding="utf-8")
+    release = (ROOT / "docs/release_notes/v1_6_21_alpha.md").read_text(encoding="utf-8")
     assert "1.6.21-alpha" in (ROOT / "src/zerogate_sim/__init__.py").read_text(encoding="utf-8")
     assert 'version = "1.6.21a0"' in (ROOT / "pyproject.toml").read_text(encoding="utf-8")
     for text in [readme, roadmap, version_truth, doc, release]:
-        assert "v1.6.20-alpha" in text
-        assert "Four Gates" in text
+        assert "v1.6.21-alpha" in text
+        assert "deep81 / wide243 debt evidence" in text
         assert "C_Z = min(D, P, R, B)" in text
-        assert ("D" + "QRT") not in text
-    assert "v1.6.21-alpha" in roadmap
+        assert "observed-universe bridge" in text
+    assert "v1.6.22-alpha" in roadmap
+    assert "fresh-seed debt reproduction" in roadmap

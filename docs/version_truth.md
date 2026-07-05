@@ -1,9 +1,9 @@
 # Version Truth
 
-**Status:** README overflow moved here in `v1.6.9-alpha`; current spine advanced in `v1.6.19-alpha`  
+**Status:** README overflow moved here in `v1.6.9-alpha`; current spine advanced in `v1.6.21-alpha`  
 **Purpose:** preserve the release spine and recent checkpoints without forcing the README to open with a wall of version bookkeeping.
 
-The active public line is now `v1.6.19-alpha` — Four Gates debt candidate generator.
+The active public line is now `v1.6.21-alpha` — Four Gates deep81 / wide243 debt evidence.
 
 ## Release spine
 
@@ -22,6 +22,7 @@ The active public line is now `v1.6.19-alpha` — Four Gates debt candidate gene
 - `v1.6.18-alpha` — Four Gates debt candidate design: relation/return debt candidate families and claim-boundary cleanup.
 - `v1.6.19-alpha` — Four Gates debt candidate generator: `four_gates_debt` near-success candidate profile for the next triad27 debt evidence gate.
 - `v1.6.20-alpha` — Four Gates triad27 debt evidence: first heavy debt evidence gate testing relation and return debt visibility.
+- `v1.6.21-alpha` — Four Gates deep81 / wide243 debt evidence: deeper-weather test of the repaired debt pattern.
 
 ## Recent checkpoints
 
@@ -54,6 +55,7 @@ The active public line is now `v1.6.19-alpha` — Four Gates debt candidate gene
 - `v1.6.18-alpha` adds Four Gates debt candidate design and separates formal computation from mathematical analogy and physics/topology HOLD lanes.
 - `v1.6.19-alpha` adds the `four_gates_debt` candidate generator profile and generator report before heavy evidence.
 - `v1.6.20-alpha` adds the first Four Gates triad27 debt evidence report, combining native adversary controls with the `four_gates_debt` candidate matrix.
+- `v1.6.21-alpha` adds the Four Gates deep81 / wide243 debt evidence report, requiring `four_gates_debt` matrices on both deeper weather rungs.
 
 Detailed release notes live in [`docs/release_notes/`](release_notes/).
 
@@ -96,3 +98,8 @@ C_Z = min(D, P, R, B)
 ## v1.6.20-alpha note
 
 `v1.6.20-alpha` is the Four Gates triad27 debt evidence gate. It preserves `C_Z = min(D, P, R, B)`, does not start Zenodo correction, does not revive shadow, and does not claim observed-universe proof. It tests whether relation debt and return debt become visible structured-zero lanes under `triad27` debt-shaped candidates.
+
+
+## v1.6.21-alpha note
+
+`v1.6.21-alpha` is the Four Gates deep81 / wide243 debt evidence gate. It preserves `C_Z = min(D, P, R, B)`, does not start Zenodo correction, does not revive shadow, and does not claim observed-universe proof. It tests whether the `v1.6.20-alpha` triad27 relation-debt and return-debt pattern survives perturbation and temporal-depth weather.

@@ -1,6 +1,6 @@
 # ZeroGateSim Roadmap
 
-**Current line:** `v1.6.20-alpha` Four Gates triad27 debt evidence  
+**Current line:** `v1.6.21-alpha` Four Gates deep81 / wide243 debt evidence  
 **Release posture:** public research-alpha / controlled synthetic-field experiment line
 
 ZeroGateSim already has a generated toy-field proof record; later lines repair, strengthen, and bound what that record can honestly support.
@@ -48,9 +48,9 @@ Fresh controlled v1.5 evidence block:
 
 This evidence block supports the controlled synthetic-field line. It does not prove physical time, gravity, mass, cosmology, or role-blind discovery.
 
-## Current v1.6.20 gate
+## Current v1.6.21 gate
 
-`v1.6.20-alpha` is **Four Gates triad27 debt evidence**. It follows the `v1.6.19-alpha` generator gate by testing debt-shaped candidates under repaired `triad27` evidence.
+`v1.6.21-alpha` is **Four Gates deep81 / wide243 debt evidence**. It follows the successful `v1.6.20-alpha` triad27 debt gate by asking whether debt-shaped zero-state lanes survive deeper weather.
 
 Scientific question:
 
@@ -58,23 +58,15 @@ Scientific question:
 
 Delivered in this gate:
 
-- `four_gates_debt` candidate profile;
-- near-success relation/return/closure candidate families;
-- earned-return and false-one trap controls;
-- a generator preview/report tool;
+- `deep81` and `wide243` debt evidence report tooling;
+- required native controls for distinction, polarity, relation, and return on each rung;
+- required `four_gates_debt` matrix on each rung;
+- state-lane visibility for earned-one, latent overcrown, relation debt, return debt, false-one pressure, and final false crowns;
 - no mutation of `C_Z = min(D, P, R, B)`.
-
-Not delivered:
-
-- no heavy evidence run;
-- no Zenodo correction;
-- no physical claim;
-- no shadow revival;
-- no native witness mutation.
 
 Boundary:
 
-The next useful evidence after this gate is `v1.6.21-alpha`: deep81 / wide243 debt evidence, but only if `triad27` shows relation debt and return debt as visible structured-zero lanes. If debt lanes remain absent here, the full debt claim must be demoted rather than patched forever.
+The next useful evidence after this gate is `v1.6.22-alpha`: fresh-seed debt reproduction, but only if both deeper rungs preserve the triad27 debt pattern. If relation debt or return debt disappears under deeper weather, inspect before moving forward.
 
 ## Operating law
 
@@ -102,8 +94,8 @@ Any version that skips this order is a HOLD or RESIST event.
 | `v1.6.17-alpha` | complete | deep81 / wide243 native evidence with debt-lane requirement; core strong, debt lanes partial |
 | `v1.6.18-alpha` | complete | Four Gates debt candidate design and logic/math cleanup |
 | `v1.6.19-alpha` | complete | debt candidate generator: near-success relation/return/closure candidates, no C_Z mutation |
-| `v1.6.20-alpha` | current evidence | four-corpus triad27 debt evidence with positive zero-state visibility |
-| `v1.6.21-alpha` | planned | deep81 / wide243 debt evidence only after triad27 debt lanes are visible |
+| `v1.6.20-alpha` | complete | four-corpus triad27 debt evidence with positive zero-state visibility |
+| `v1.6.21-alpha` | current evidence | deep81 / wide243 debt evidence after triad27 debt lanes became visible |
 | `v1.6.22-alpha` | planned | fresh-seed debt reproduction |
 | `v1.6.23-alpha` | planned hygiene | evidence consolidation / runs inventory / canonical cleanup, no deletion by default |
 | `v1.6.24-alpha` | planned package | manuscript / README correction package planning, not upload |
@@ -504,7 +496,15 @@ Scale only after `triad27` debt lanes are visible.
 
 Pass condition:
 
-Debt lanes survive perturbation and temporal-depth pressure.
+- earned-one remains visible;
+- false-one pressure is demoted;
+- final false-one crowns remain `0`;
+- relation debt remains visible;
+- return debt remains visible;
+- ablation enemies remain wounded;
+- native witness remains `C_Z = min(D, P, R, B)`.
+
+If debt lanes disappear under deeper weather, do not move to fresh-seed reproduction until the weakened lane is inspected.
 
 ## v1.6.22-alpha — Fresh-seed debt reproduction
 

@@ -1,6 +1,6 @@
 # ZeroGateSim
 
-**Current public line:** `v1.6.20-alpha` — Four Gates triad27 debt evidence  
+**Current public line:** `v1.6.21-alpha` — Four Gates deep81 / wide243 debt evidence  
 **Status:** speculative research software / controlled synthetic-field experiment line  
 **Working identity:** zero-gate dimensional emergence simulator  
 **Core question:** can a final trinary witness distinguish earned-one from raw expression pressure, latent overcrown, relation/return debt, and false-one pressure under controlled synthetic-field adversarial weather?
@@ -154,10 +154,10 @@ C_Z^i(t)=\min(D_i(t),P_i(t),R_i(t),B_i(t))
 
 ## Active route
 
-The active route after `v1.6.20-alpha` is:
+The active route after `v1.6.21-alpha` is:
 
 ```text
-Four Gates triad27 debt evidence -> deep81 / wide243 debt evidence -> fresh-seed reproduction -> correction package planning
+Four Gates triad27 debt evidence -> deep81 / wide243 debt evidence -> fresh-seed debt reproduction -> evidence consolidation -> correction package planning
 ```
 
 The shadow route is **not** the active route now. It is preserved as historical diagnostic work because hardened triad27 lane-specific discrimination did not beat simple baselines strongly enough to earn deeper `deep81` / `wide243` trust.
@@ -175,24 +175,30 @@ Read first:
 - [`docs/four_gates_debt_candidate_design.md`](docs/four_gates_debt_candidate_design.md)
 - [`docs/four_gates_debt_candidate_generator.md`](docs/four_gates_debt_candidate_generator.md)
 - [`docs/four_gates_triad27_debt_evidence.md`](docs/four_gates_triad27_debt_evidence.md)
+- [`docs/four_gates_deepwide_debt_evidence.md`](docs/four_gates_deepwide_debt_evidence.md)
 - [`docs/shadow_route_history_and_closeout.md`](docs/shadow_route_history_and_closeout.md)
 - [`docs/claim_boundary.md`](docs/claim_boundary.md)
 
 
-## Current v1.6.20 gate
+## Current v1.6.21 gate
 
-`v1.6.20-alpha` is the first repaired Four Gates `triad27` debt evidence gate. It combines native four-gate adversary controls with the `four_gates_debt` candidate profile introduced in `v1.6.19-alpha`.
+`v1.6.21-alpha` is the deeper-weather Four Gates debt evidence gate. It scales the `v1.6.20-alpha` `triad27` debt result into:
+
+```text
+deep81  = perturbation / late-shock bridge
+wide243 = temporal-depth / time-axis stress
+```
 
 The active test question remains:
 
 > Can a final trinary witness distinguish earned-one from raw expression pressure, latent overcrown, relation/return debt, and false-one pressure under controlled synthetic-field adversarial weather?
 
-This gate asks whether zero can hold incomplete-but-meaningful becoming, not only reject false-one pressure:
+This gate asks whether the small-weather debt result survives deeper pressure:
 
 ```text
 +1 earned-one preserved
- 0 relation debt visible
- 0 return debt visible
+ 0 relation debt remains visible
+ 0 return debt remains visible
 -1 false-one pressure demoted
 ```
 
@@ -202,13 +208,15 @@ Recent native evidence history:
 - `v1.6.16-alpha` — four-corpus triad27 native evidence;
 - `v1.6.17-alpha` — deep81 / wide243 native evidence with core strong and debt lanes partial;
 - `v1.6.18-alpha` — Four Gates debt candidate design;
-- `v1.6.19-alpha` — Four Gates debt candidate generator.
+- `v1.6.19-alpha` — Four Gates debt candidate generator;
+- `v1.6.20-alpha` — Four Gates triad27 debt evidence.
 
 Read:
 
 - [`docs/four_gates_debt_candidate_design.md`](docs/four_gates_debt_candidate_design.md);
 - [`docs/four_gates_debt_candidate_generator.md`](docs/four_gates_debt_candidate_generator.md);
-- [`docs/four_gates_triad27_debt_evidence.md`](docs/four_gates_triad27_debt_evidence.md).
+- [`docs/four_gates_triad27_debt_evidence.md`](docs/four_gates_triad27_debt_evidence.md);
+- [`docs/four_gates_deepwide_debt_evidence.md`](docs/four_gates_deepwide_debt_evidence.md).
 
 Boundary:
 
