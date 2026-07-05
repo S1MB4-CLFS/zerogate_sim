@@ -21,6 +21,16 @@ LANE_DISCRIMINATION_FILES = {
 }
 
 TARGET_TO_LANE_SCORE = {
+    "target_false_pressure_density_rate": "shadow_feature_density_residual_score",
+    "target_raw_false_one_rate": "shadow_feature_raw_false_one_pressure_score",
+    "target_false_one_demotion_rate": "shadow_feature_demotion_pressure_score",
+    "target_hold_or_demote_rate": "shadow_feature_hold_or_demote_pressure_score",
+    "target_relation_false_pressure_share": "shadow_feature_relation_specific_pressure_score",
+    "target_return_false_pressure_share": "shadow_feature_return_specific_pressure_score",
+    "target_native_breach_rate": "shadow_feature_native_breach_proxy_score",
+}
+
+LEGACY_TARGET_TO_LANE_SCORE = {
     "target_false_pressure_density_rate": "shadow_density_pressure_score",
     "target_raw_false_one_rate": "shadow_raw_false_one_pressure_score",
     "target_false_one_demotion_rate": "shadow_demotion_pressure_score",
@@ -36,7 +46,7 @@ STANDARD_BASE_SUBPATHS = {
     "hardening_comparison": Path("weather_hardening") / "weather_hardening_baseline_comparison.csv",
 }
 
-NON_BASELINE_MODELS = set(TARGET_TO_LANE_SCORE.values()) | {"shadow_score"}
+NON_BASELINE_MODELS = set(TARGET_TO_LANE_SCORE.values()) | set(LEGACY_TARGET_TO_LANE_SCORE.values()) | {"shadow_score"}
 
 
 def _ensure_dir(path: Path) -> Path:
@@ -321,7 +331,7 @@ def _write_read(path: Path, *, decision: dict[str, object], rows: list[dict[str,
         "",
         "## Claim boundary",
         "",
-        "This `v1.6.10-alpha` report does not retune the historical shadow score and does not claim role-blind discovery. It evaluates fixed lane-specific candidate scores against separated targets and dumb baselines. It is not role-blind discovery.",
+        "This `v1.6.12-alpha` report does not retune the historical shadow score and does not claim role-blind discovery. It evaluates fixed feature-aware lane candidate scores against separated targets and dumb baselines. It is not role-blind discovery.",
         "",
         "The native witness remains:",
         "",
@@ -425,10 +435,10 @@ def write_shadow_lane_discrimination_report(
         )
 
     decision = {
-        "version": "v1.6.10-alpha",
+        "version": "v1.6.12-alpha",
         "global_decision": _global_decision(metric_rows),
         "native_witness_unchanged": "C_Z = min(D, P, R, B)",
-        "score_boundary": "fixed lane-specific report-side candidate scores; no retuning and no role-blind discovery claim",
+        "score_boundary": "fixed v1.6.12 feature-aware report-side candidate scores; no retuning after outcome and no role-blind discovery claim",
         "lane_count": len(metric_rows),
         "lane_decisions": {str(row["lane"]): str(row["lane_decision"]) for row in metric_rows},
     }

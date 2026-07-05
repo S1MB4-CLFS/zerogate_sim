@@ -1,6 +1,6 @@
 # ZeroGateSim
 
-**Current public line:** `v1.6.11-alpha` — roadmap truth repair and shadow feature-design proposal  
+**Current public line:** `v1.6.12-alpha` — observable shadow feature implementation  
 **Status:** speculative research software / controlled synthetic-field experiment line  
 **Working identity:** zero-gate dimensional emergence simulator  
 **Core question:** can a final trinary witness distinguish earned-one from raw expression pressure, latent overcrown, relation/return debt, and false-one pressure under controlled synthetic-field adversarial weather?
@@ -158,7 +158,7 @@ C_Z^i(t)=\min(D_i(t),P_i(t),R_i(t),B_i(t))
 The current route is:
 
 ```text
-native geometry -> native math -> code fidelity -> invariant tests -> known logic mirrors -> stronger experiments -> shadow route audit -> feature design
+native geometry -> native math -> code fidelity -> invariant tests -> known logic mirrors -> stronger experiments -> shadow route audit -> feature implementation
 ```
 
 Do not skip the order. ZeroGateSim is not helped by wearing a borrowed lab coat.
@@ -170,6 +170,7 @@ Read first:
 - [`docs/controlled_synthetic_field_language.md`](docs/controlled_synthetic_field_language.md)
   - controlled synthetic-field language boundary for v1.5+ evidence wording.
 - [`docs/shadow_route_audit_and_feature_design.md`](docs/shadow_route_audit_and_feature_design.md)
+- [`docs/shadow_feature_implementation.md`](docs/shadow_feature_implementation.md)
 - [`docs/shadow_discrimination_repair.md`](docs/shadow_discrimination_repair.md)
 - [`docs/shadow_lane_discrimination.md`](docs/shadow_lane_discrimination.md)
 - [`docs/runs_cleanup_policy.md`](docs/runs_cleanup_policy.md)
@@ -213,11 +214,12 @@ Both runs passed with pressure visible, false-one pressure demoted, latent press
 
 The v1.6 shadow line is stricter than the native role-aware witness. It asks whether false-one-like pressure can be ranked from role-stripped observable behavior without role labels.
 
-`v1.6.8-alpha` made triad27 harder by generating cell-level evidence. The result showed the frozen transparent shadow score could see pressure density, but it did not yet earn relation/return/demotion-specific discrimination beyond dumb baselines. `v1.6.9-alpha` added residual discrimination diagnostics. `v1.6.10-alpha` split the shadow lane into fixed candidate lane scores and added a local `runs/` inventory scaffold. `v1.6.11-alpha` repairs the roadmap truth and writes the next feature-design proposal before any deeper weather claim is trusted. The weather hardening report remains the cross-rung judge.
+`v1.6.8-alpha` made triad27 harder by generating cell-level evidence. The result showed the frozen transparent shadow score could see pressure density, but it did not yet earn relation/return/demotion-specific discrimination beyond dumb baselines. `v1.6.9-alpha` added residual discrimination diagnostics. `v1.6.10-alpha` split the shadow lane into fixed candidate lane scores and added a local `runs/` inventory scaffold. `v1.6.11-alpha` repaired roadmap truth and defined the feature-design route. `v1.6.12-alpha` implements observable, role-stripped engineered feature columns and feature-aware candidate score columns. The next evidence gate is a hardened triad27 rerun; deep81 / wide243 remain blocked until triad27 specificity is earned.
 
 Read the current shadow repair notes:
 
 - [`docs/shadow_route_audit_and_feature_design.md`](docs/shadow_route_audit_and_feature_design.md)
+- [`docs/shadow_feature_implementation.md`](docs/shadow_feature_implementation.md)
 - [`docs/shadow_discrimination_repair.md`](docs/shadow_discrimination_repair.md)
 - [`docs/shadow_lane_discrimination.md`](docs/shadow_lane_discrimination.md)
 - [`docs/runs_cleanup_policy.md`](docs/runs_cleanup_policy.md)
@@ -548,7 +550,7 @@ Read the falsifier boundary:
 
 ### Shadow triad27 preflight
 
-`v1.6.7-alpha` adds the harder cross-rung weather judge. Run this before treating any larger weather as stronger evidence:
+`v1.6.7-alpha` adds the harder cross-rung weather hardening judge. Run this before treating any larger weather as stronger evidence:
 
 ```powershell
 $env:PYTHONPATH = (Join-Path (Get-Location) "src")

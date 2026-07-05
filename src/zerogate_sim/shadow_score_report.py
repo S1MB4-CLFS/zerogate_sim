@@ -8,6 +8,7 @@ from pathlib import Path
 from typing import Iterable
 
 from zerogate_sim.role_stripped_feature_report import FORBIDDEN_SHADOW_INPUT_FIELDS
+from zerogate_sim.shadow_feature_design import SHADOW_ENGINEERED_FEATURE_COLUMNS
 
 SHADOW_SCORE_FILES = {
     "profile_scores": "shadow_score_profile_scores.csv",
@@ -98,6 +99,72 @@ SCORE_LANE_LABELS: dict[str, str] = {
     "shadow_native_breach_proxy_score": "native_breach_proxy",
 }
 
+# v1.6.12-alpha implements feature-aware candidate lane scores. These are
+# fixed before the next rerun, use only role-stripped observable fields, and do
+# not replace the historical v1.6.2 score or the v1.6.10 lane split. They exist
+# so the next hardened triad27 rerun can ask whether pressure kind improves
+# beyond raw pressure / raw strength baselines.
+SHADOW_FEATURE_AWARE_SCORE_WEIGHTS: dict[str, dict[str, float]] = {
+    "shadow_feature_density_residual_score": {
+        "feature_density_residual_proxy_rate": 0.45,
+        "feature_pressure_kind_contrast_rate": 0.25,
+        "feature_gate_imbalance_rate": 0.20,
+        "feature_raw_pressure_rate": 0.10,
+    },
+    "shadow_feature_raw_false_one_pressure_score": {
+        "feature_density_residual_proxy_rate": 0.25,
+        "feature_gate_imbalance_rate": 0.25,
+        "feature_demotion_trajectory_proxy_rate": 0.20,
+        "feature_return_strength_mismatch_rate": 0.15,
+        "feature_relation_echo_pressure_rate": 0.15,
+    },
+    "shadow_feature_demotion_pressure_score": {
+        "feature_demotion_trajectory_proxy_rate": 0.40,
+        "feature_gate_imbalance_rate": 0.20,
+        "feature_zero_hold_ambiguity_proxy_rate": 0.15,
+        "feature_return_integrity_gap_rate": 0.15,
+        "feature_relation_echo_pressure_rate": 0.10,
+    },
+    "shadow_feature_hold_or_demote_pressure_score": {
+        "feature_zero_hold_ambiguity_proxy_rate": 0.35,
+        "feature_demotion_trajectory_proxy_rate": 0.25,
+        "feature_pressure_kind_contrast_rate": 0.20,
+        "feature_relation_return_divergence_rate": 0.10,
+        "feature_density_residual_proxy_rate": 0.10,
+    },
+    "shadow_feature_relation_specific_pressure_score": {
+        "feature_relation_ownership_gap_rate": 0.35,
+        "feature_relation_echo_pressure_rate": 0.25,
+        "feature_relation_return_divergence_rate": 0.20,
+        "feature_pressure_kind_contrast_rate": 0.10,
+        "feature_gate_imbalance_rate": 0.10,
+    },
+    "shadow_feature_return_specific_pressure_score": {
+        "feature_return_integrity_gap_rate": 0.35,
+        "feature_return_strength_mismatch_rate": 0.20,
+        "feature_return_memory_pressure_rate": 0.20,
+        "feature_relation_return_divergence_rate": 0.15,
+        "feature_gate_imbalance_rate": 0.10,
+    },
+    "shadow_feature_native_breach_proxy_score": {
+        "feature_gate_imbalance_rate": 0.30,
+        "feature_return_integrity_gap_rate": 0.25,
+        "feature_return_strength_mismatch_rate": 0.20,
+        "feature_relation_ownership_gap_rate": 0.15,
+        "feature_density_residual_proxy_rate": 0.10,
+    },
+}
+
+FEATURE_AWARE_SCORE_LANE_LABELS: dict[str, str] = {
+    "shadow_feature_density_residual_score": "density_pressure",
+    "shadow_feature_raw_false_one_pressure_score": "raw_false_one",
+    "shadow_feature_demotion_pressure_score": "demotion",
+    "shadow_feature_hold_or_demote_pressure_score": "hold_or_demote",
+    "shadow_feature_relation_specific_pressure_score": "relation_specific",
+    "shadow_feature_return_specific_pressure_score": "return_specific",
+    "shadow_feature_native_breach_proxy_score": "native_breach_proxy",
+}
+
 
 def _ensure_dir(path: Path) -> Path:
     path.mkdir(parents=True, exist_ok=True)
@@ -179,14 +246,23 @@ def _lane_scores(row: dict[str, str]) -> dict[str, float]:
     return scores
 
 
+def _feature_aware_scores(row: dict[str, str]) -> dict[str, float]:
+    scores: dict[str, float] = {}
+    for score_name, weights in SHADOW_FEATURE_AWARE_SCORE_WEIGHTS.items():
+        scores[score_name] = sum(weight * _feature_pressure(row, feature) for feature, weight in weights.items())
+    return scores
+
+
 def _score_row(row: dict[str, str], *, scope: str) -> dict[str, object]:
     contributions: dict[str, float] = {}
     for feature, weight in SHADOW_SCORE_WEIGHTS.items():
         contributions[feature] = weight * _normalise_pressure(_float(row, feature))
     score = sum(contributions.values())
     lane_scores = _lane_scores(row)
+    feature_scores = _feature_aware_scores(row)
     strongest = max(contributions, key=contributions.get) if contributions else "none"
     primary_lane = max(lane_scores, key=lane_scores.get) if lane_scores else "none"
+    primary_feature_lane = max(feature_scores, key=feature_scores.get) if feature_scores else "none"
     out: dict[str, object] = {
         "scope": scope,
         "source_label": row.get("source_label", ""),
@@ -198,11 +274,15 @@ def _score_row(row: dict[str, str], *, scope: str) -> dict[str, object]:
         "strongest_contributor": strongest,
         "shadow_primary_lane": SCORE_LANE_LABELS.get(primary_lane, primary_lane),
         "shadow_primary_lane_score": f"{lane_scores.get(primary_lane, 0.0):.6f}",
+        "shadow_feature_primary_lane": FEATURE_AWARE_SCORE_LANE_LABELS.get(primary_feature_lane, primary_feature_lane),
+        "shadow_feature_primary_lane_score": f"{feature_scores.get(primary_feature_lane, 0.0):.6f}",
         "score_status": "report_only_no_crown_no_demotion",
         "boundary": "transparent_shadow_score_no_role_labels_no_targets_loaded",
     }
     for score_name, lane_score in lane_scores.items():
         out[score_name] = f"{lane_score:.6f}"
+    for score_name, feature_score in feature_scores.items():
+        out[score_name] = f"{feature_score:.6f}"
     for feature, contribution in contributions.items():
         out[f"contribution_{feature}"] = f"{contribution:.6f}"
     return out
@@ -266,6 +346,17 @@ def _write_read(path: Path, *, profile_scores: list[dict[str, object]], family_s
     lines.append("```")
     lines.append("")
     lines.append("These lane scores are not a detector and do not crown, demote, or mutate the native witness.")
+    lines.append("")
+    lines.append("## v1.6.12 feature-aware candidate scores")
+    lines.append("")
+    lines.append("`v1.6.12-alpha` adds observable engineered feature columns and fixed feature-aware candidate scores for density, raw false-one, demotion, hold/demote, relation-specific, return-specific, and native-breach-proxy lanes. These are pre-evaluation candidate signals, not tuned detectors.")
+    lines.append("")
+    lines.append("Engineered feature columns include:")
+    lines.append("")
+    lines.append("```text")
+    for column in sorted(SHADOW_ENGINEERED_FEATURE_COLUMNS):
+        lines.append(column)
+    lines.append("```")
     lines.append("")
     lines.append("## Outputs")
     lines.append("")
@@ -351,6 +442,11 @@ def write_shadow_score_report(
         "normalisation": "N(x)=x/(1+x)",
         "weights": SHADOW_SCORE_WEIGHTS,
         "lane_scores_version": "v1.6.10-alpha",
+        "feature_aware_scores_version": "v1.6.12-alpha",
+        "engineered_feature_columns": SHADOW_ENGINEERED_FEATURE_COLUMNS,
+        "feature_aware_score_weights": SHADOW_FEATURE_AWARE_SCORE_WEIGHTS,
+        "feature_aware_score_labels": FEATURE_AWARE_SCORE_LANE_LABELS,
+        "feature_aware_scores_boundary": "fixed candidate scores from role-stripped engineered features; next rerun decides evidence, not this formula",
         "lane_scores_boundary": "fixed report-side candidate lane scores; not learned, not tuned against targets, not detector closeout",
         "lane_score_weights": SHADOW_LANE_SCORE_WEIGHTS,
         "lane_score_labels": SCORE_LANE_LABELS,

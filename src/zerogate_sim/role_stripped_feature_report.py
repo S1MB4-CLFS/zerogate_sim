@@ -8,6 +8,8 @@ import zipfile
 from pathlib import Path
 from typing import Iterable
 
+from zerogate_sim.shadow_feature_design import SHADOW_ENGINEERED_FEATURE_COLUMNS, with_engineered_shadow_features
+
 FORBIDDEN_SHADOW_INPUT_FIELDS = {
     "trap",
     "expresser",
@@ -263,6 +265,7 @@ def _write_read(path: Path, *, profile_features: list[dict[str, object]], family
     lines.append("- `role_stripped_profile_features.csv` — source-level observable features.")
     lines.append("- `role_stripped_family_features.csv` — opaque family-level observable features.")
     lines.append("- Family IDs are hashed from observable non-role fields so row order does not become a gate-label shortcut.")
+    lines.append("- `v1.6.12-alpha` adds engineered observable feature candidates for relation ownership, return integrity, demotion trajectory, zero-hold ambiguity, and residual pressure-kind contrast.")
     lines.append("")
     lines.append("These feature files must not include `candidate_profile`, `truth_role`, `role_label`, `trap`, `expresser`, `latent_probe`, `designed_truth_role`, or `answer_key` fields.")
     lines.append("")
@@ -334,9 +337,9 @@ def write_role_stripped_feature_report(
         ablation_rows: list[dict[str, str]] = []
         if label in ablation_summaries:
             ablation_rows = _read_csv(Path(ablation_summaries[label]))
-        profile_features.append(_profile_feature_row(label, seed_rows, ablation_rows))
+        profile_features.append(with_engineered_shadow_features(_profile_feature_row(label, seed_rows, ablation_rows)))
         profile_targets.append(_profile_target_row(label, seed_rows))
-        family_features.extend(_family_feature_rows(label, seed_rows))
+        family_features.extend(with_engineered_shadow_features(row) for row in _family_feature_rows(label, seed_rows))
         family_targets.extend(_family_target_rows(label, seed_rows))
 
     profile_features_path = output_dir / FEATURE_FILE_NAMES["profile_features"]
@@ -356,6 +359,8 @@ def write_role_stripped_feature_report(
         "feature_files": [FEATURE_FILE_NAMES["profile_features"], FEATURE_FILE_NAMES["family_features"]],
         "target_file": FEATURE_FILE_NAMES["evaluation_targets"],
         "family_ids_are_opaque_nonsequential": True,
+        "engineered_shadow_feature_columns": sorted(SHADOW_ENGINEERED_FEATURE_COLUMNS),
+        "feature_design_boundary": "engineered features are computed before targets are loaded and use role-stripped observable fields only",
         "family_id_boundary": "family ids are deterministic hashes over observable non-role fields; they do not use gate, candidate_profile, truth_role, or ordinal row numbers",
         "target_file_boundary": "targets are separate and must not be loaded as shadow features",
     }

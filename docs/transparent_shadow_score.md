@@ -135,3 +135,19 @@ shadow_native_breach_proxy_score
 ```
 
 These lane scores do not retune the historical score and do not claim detector status. They exist so `zerogate-shadow-lane-discrimination` can test whether any lane sees pressure kind beyond dumb baselines.
+
+## v1.6.12 feature-aware candidate scores
+
+`v1.6.12-alpha` preserves the historical `shadow_score` and the `v1.6.10` lane scores, then adds feature-aware candidate score columns built from observable engineered features:
+
+```text
+shadow_feature_density_residual_score
+shadow_feature_raw_false_one_pressure_score
+shadow_feature_demotion_pressure_score
+shadow_feature_hold_or_demote_pressure_score
+shadow_feature_relation_specific_pressure_score
+shadow_feature_return_specific_pressure_score
+shadow_feature_native_breach_proxy_score
+```
+
+These scores are still report-side candidates. They are not learned, not target-tuned, and not role-blind discovery. Their only purpose is to let the next hardened triad27 rerun test whether relation / return / demotion specificity improves beyond dumb baselines.
