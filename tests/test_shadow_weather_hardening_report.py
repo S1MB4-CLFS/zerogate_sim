@@ -216,10 +216,11 @@ def test_role_stripped_targets_include_v1_6_7_harder_targets(tmp_path: Path) -> 
 def test_weather_hardening_docs_and_readme_name_v1_6_7_boundary() -> None:
     readme = (ROOT / "README.md").read_text(encoding="utf-8")
     roadmap = (ROOT / "ROADMAP.md").read_text(encoding="utf-8")
+    history = (ROOT / "docs/history_vault/shadow_route_history_and_closeout.md").read_text(encoding="utf-8")
     doc = (ROOT / "docs/shadow_weather_hardening.md").read_text(encoding="utf-8")
     release = (ROOT / "docs/release_notes/v1_6_7_alpha.md").read_text(encoding="utf-8")
-    for text in [readme, roadmap, doc, release]:
+    for text in [history, doc, release]:
         assert "v1.6.7-alpha" in text
     assert "C_Z = min(D, P, R, B)" in doc
     assert "not role-blind discovery" in doc
-    assert "weather hardening" in readme.lower()
+    assert "weather hardening" in history.lower()

@@ -53,8 +53,8 @@ def test_wide243_report_separates_native_return_from_dedicated_return_adversary(
 
 
 def test_readme_and_roadmap_point_to_wide243_intake() -> None:
-    readme = _read("README.md")
-    roadmap = _read("ROADMAP.md")
+    readme = _read("docs/history_vault/legacy_evidence_visuals.md")
+    roadmap = _read("docs/history_vault/ROADMAP_v1_6_22_snapshot.md")
 
     assert "`v1.5.4-alpha`" in readme
     assert "docs/reports/wide243_historical_evidence_intake.md" in readme

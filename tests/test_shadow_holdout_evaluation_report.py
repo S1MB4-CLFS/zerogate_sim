@@ -237,9 +237,10 @@ def test_shadow_holdout_evaluation_refuses_target_leak_in_features(tmp_path: Pat
 def test_shadow_holdout_docs_and_readme_name_v1_6_5_boundary() -> None:
     readme = (ROOT / "README.md").read_text(encoding="utf-8")
     roadmap = (ROOT / "ROADMAP.md").read_text(encoding="utf-8")
+    history = (ROOT / "docs/history_vault/shadow_route_history_and_closeout.md").read_text(encoding="utf-8")
     doc = (ROOT / "docs/shadow_holdout_evaluation.md").read_text(encoding="utf-8")
     release = (ROOT / "docs/release_notes/v1_6_5_alpha.md").read_text(encoding="utf-8")
-    for text in [readme, roadmap, doc, release]:
+    for text in [history, doc, release]:
         assert "v1.6.5-alpha" in text
     assert "not role-blind discovery" in doc
     assert "C_Z = min(D, P, R, B)" in doc

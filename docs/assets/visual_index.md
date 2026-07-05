@@ -1,10 +1,14 @@
 # Visual Index
 
-Primary orientation visuals:
+## Current public spine
 
-- `zero_gate_cycle.svg` — theory spine.
-- `trinary_witness_stack.svg` — final output logic.
-- `proof_harness_map.svg` — first-research-alpha proof structure.
-- `shadow_baseline_falsifier_card.svg` — v1.6.3 score/target/baseline boundary.
+1. [`zero_gate_cycle.svg`](zero_gate_cycle.svg)
+2. [`trinary_witness_stack.svg`](trinary_witness_stack.svg)
+3. [`proof_harness_map.svg`](proof_harness_map.svg)
+4. [`four_gates_triad27_debt_evidence_card.svg`](four_gates_triad27_debt_evidence_card.svg)
+5. [`four_gates_deepwide_debt_evidence_card.svg`](four_gates_deepwide_debt_evidence_card.svg)
+6. [`four_gates_fresh_seed_debt_reproduction_card.svg`](four_gates_fresh_seed_debt_reproduction_card.svg)
 
-These SVGs are intentionally simple. They are orientation tools, not evidence by themselves.
+## Historical visuals
+
+Legacy proof cards, v1.5 controlled evidence cards, and shadow-route cards are preserved in [`../history_vault/assets/`](../history_vault/assets/) and should not be treated as the current evidence surface.

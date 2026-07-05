@@ -1,19 +1,21 @@
 # ZeroGateSim
 
-**Current public line:** `v1.6.22-alpha` — Four Gates fresh-seed debt reproduction  
+**Current public line:** `v1.6.23-alpha` — history vault and current evidence surface cleanup  
 **Status:** speculative research software / controlled synthetic-field experiment line  
-**Working identity:** zero-gate dimensional emergence simulator  
+**Working identity:** Four Gates of Becoming witness simulator  
 **Core question:** can a final trinary witness distinguish earned-one from raw expression pressure, latent overcrown, relation/return debt, and false-one pressure under controlled synthetic-field adversarial weather?
 
 ## What ZeroGateSim is
 
-ZeroGateSim is a small research software project for testing a speculative theory of dimensional emergence. The historical first-research-alpha proof record remains a generated toy-field proof-of-concept; the v1.5 line uses controlled synthetic-field language for explicit, seeded, adversarial, bounded experiments; the v1.6 shadow route is now preserved as a historical diagnostic route, not an active claim path.
+ZeroGateSim is a small research software project for testing a speculative theory of dimensional emergence through a controlled synthetic-field simulator.
 
-It does **not** prove cosmology, physical dimensions, or that reality itself is trinary.
+It does **not** prove cosmology, physical dimensions, quantum gravity, or that reality itself is trinary.
 
 It tests a narrower software-theory claim:
 
-> Inside controlled synthetic fields, final earned-one witness can separate earned expression from raw expression pressure, latent overcrown, relation/return debt, and false-one pressure under four-gate adversarial pressure.
+> Inside controlled synthetic fields, a final trinary witness using the Four Gates of Becoming can preserve earned expression, hold structured zero/debt states, and demote false-one pressure better than raw, binary, dead-safe, and ablated witnesses.
+
+Historical proof records, v1.5 controlled evidence, and the v1.6 shadow route are preserved in the [history vault](docs/history_vault/README.md). They explain how the repo got here; they are not the current README evidence surface.
 
 ## Core theory
 
@@ -38,8 +40,6 @@ C_Z^i(t)=\min(g_D^i(t),g_P^i(t),g_R^i(t),g_B^i(t))
 
 The minimum matters. A candidate does not pass because one gate is beautiful. The weakest gate decides the coherence pressure.
 
-Raw local expression is not final `+1`. Final `+1` belongs only to **earned-one**.
-
 Core sentence:
 
 > A real one is not the first thing after zero. A real one is what zero can return as without lying.
@@ -55,14 +55,6 @@ That ladder may work as a classroom drawing. It does not work as a genesis model
 ZeroGateSim tests a different spine:
 
 > Time is not merely the fourth room in the house of space. Time is the generative ordering condition through which dimensions become expressed.
-
-In this frame:
-
-- a point is the zero-zone of dimensional potential;
-- a line is polarity around zero;
-- a plane is relation between polarities;
-- volume is closed relational freedom;
-- a dimension is stabilized freedom that has passed through zero without losing coherence.
 
 The simulator exists because a theory does not earn trust by sounding beautiful. It earns its first bones by meeting pressure.
 
@@ -83,7 +75,7 @@ C_Z^i(t)=\min(D_i(t),P_i(t),R_i(t),B_i(t))
 Raw expression is pressure, not final truth:
 
 ```math
-\chi^i_{raw}(t)=H(\sigma_i(t)-\epsilon)H(C_Z^i(t)-\theta_Z)
+\chi^i_{raw}(t)=H(\sigma_i(t)-\epsilon)H(C_Z^i(t)-	heta_Z)
 ```
 
 ### Trinary witness stack
@@ -100,7 +92,7 @@ The output grammar is trinary:
 
 ```text
 +1 earned-one
- 0 witness / hold / quarantine / not-yet
+ 0 witness / hold / debt / quarantine / not-yet
 -1 resist / reject / false-one demotion
 ```
 
@@ -116,7 +108,7 @@ deep81  = 3^4 perturbation / late-shock bridge
 wide243 = 3^5 temporal-depth / time-axis stress
 ```
 
-Historical first-alpha used three dedicated adversarial corpora with return measured as native `B`. The current four-gate evidence route includes distinction, polarity, relation, and return as dedicated native run families before broader claims are trusted.
+The current Four Gates evidence route uses distinction, polarity, relation, and return as dedicated native run families before broader claims are trusted.
 
 ## Native math witness
 
@@ -125,11 +117,11 @@ The native math witness remains the spine of the repo. In plain text: `C_Z = min
 Native anchors:
 
 ```math
-E_0 = (Z_0, \tau)
+E_0 = (Z_0, 	au)
 ```
 
 ```math
-T_3[X](\tau) = (X(\tau+h)-X(\tau), I_h[X](\tau), X(\tau)-X(\tau-h))
+T_3[X](	au) = (X(	au+h)-X(	au), I_h[X](	au), X(	au)-X(	au-h))
 ```
 
 ```math
@@ -145,7 +137,7 @@ C_Z^i(t)=\min(D_i(t),P_i(t),R_i(t),B_i(t))
 ```
 
 ```math
-\chi^i_{raw}(t)=H(\sigma_i(t)-\epsilon)H(C_Z^i(t)-\theta_Z)
+\chi^i_{raw}(t)=H(\sigma_i(t)-\epsilon)H(C_Z^i(t)-	heta_Z)
 ```
 
 ```math
@@ -154,178 +146,121 @@ C_Z^i(t)=\min(D_i(t),P_i(t),R_i(t),B_i(t))
 
 ## Active route
 
-The active route after `v1.6.22-alpha` is:
+The active route after `v1.6.23-alpha` is:
 
 ```text
-Four Gates triad27 debt evidence -> deep81 / wide243 debt evidence -> fresh-seed debt reproduction -> evidence consolidation -> correction package planning
+fresh-seed debt reproduction -> evidence consolidation / history vault -> manuscript and README correction package planning
 ```
 
-The shadow route is **not** the active route now. It is preserved as historical diagnostic work because hardened triad27 lane-specific discrimination did not beat simple baselines strongly enough to earn deeper `deep81` / `wide243` trust.
+The shadow route is **not** the active route now. It is preserved as historical diagnostic work in the [history vault](docs/history_vault/README.md).
 
 Read first:
 
 - [`docs/math_witness_map.md`](docs/math_witness_map.md)
 - [`docs/simulation_win_conditions.md`](docs/simulation_win_conditions.md)
 - [`docs/controlled_synthetic_field_language.md`](docs/controlled_synthetic_field_language.md) — controlled synthetic-field language boundary.
-- [`docs/four_gate_reconciliation.md`](docs/four_gate_reconciliation.md)
-- [`docs/native_four_gate_claim_audit.md`](docs/native_four_gate_claim_audit.md)
-- [`docs/native_ablation_baselines.md`](docs/native_ablation_baselines.md)
-- [`docs/native_triad27_evidence.md`](docs/native_triad27_evidence.md)
-- [`docs/native_deepwide_evidence.md`](docs/native_deepwide_evidence.md)
 - [`docs/four_gates_debt_candidate_design.md`](docs/four_gates_debt_candidate_design.md)
 - [`docs/four_gates_debt_candidate_generator.md`](docs/four_gates_debt_candidate_generator.md)
 - [`docs/four_gates_triad27_debt_evidence.md`](docs/four_gates_triad27_debt_evidence.md)
 - [`docs/four_gates_deepwide_debt_evidence.md`](docs/four_gates_deepwide_debt_evidence.md)
 - [`docs/four_gates_fresh_seed_debt_reproduction.md`](docs/four_gates_fresh_seed_debt_reproduction.md)
-- [`docs/shadow_route_history_and_closeout.md`](docs/shadow_route_history_and_closeout.md)
 - [`docs/claim_boundary.md`](docs/claim_boundary.md)
-
-
-## Current v1.6.22 gate
-
-`v1.6.22-alpha` is the Four Gates fresh-seed debt reproduction gate. It follows the successful `v1.6.20-alpha` `triad27` debt evidence and `v1.6.21-alpha` `deep81` / `wide243` debt evidence by asking whether the repaired pattern reproduces on fresh seeds.
-
-The active test question remains:
-
-> Can a final trinary witness distinguish earned-one from raw expression pressure, latent overcrown, relation/return debt, and false-one pressure under controlled synthetic-field adversarial weather?
-
-This gate compares:
-
-```text
-reference evidence: seed range 0-8
-fresh evidence:     seed range 9-17
-```
-
-A reproduced pattern requires:
-
-```text
-+1 earned-one remains visible
- 0 latent overcrown remains visible
- 0 relation debt remains visible
- 0 return debt remains visible
--1 false-one pressure remains visible and demoted
-final false-one crowns remain 0
-ablation enemies remain wounded
-```
-
-Recent native evidence history:
-
-- `v1.6.15-alpha` — native ablation baselines;
-- `v1.6.16-alpha` — four-corpus triad27 native evidence;
-- `v1.6.17-alpha` — deep81 / wide243 native evidence with core strong and debt lanes partial;
-- `v1.6.18-alpha` — Four Gates debt candidate design;
-- `v1.6.19-alpha` — Four Gates debt candidate generator;
-- `v1.6.20-alpha` — Four Gates triad27 debt evidence;
-- `v1.6.21-alpha` — Four Gates deep81 / wide243 debt evidence.
-
-Read:
-
-- [`docs/four_gates_debt_candidate_design.md`](docs/four_gates_debt_candidate_design.md);
-- [`docs/four_gates_debt_candidate_generator.md`](docs/four_gates_debt_candidate_generator.md);
-- [`docs/four_gates_triad27_debt_evidence.md`](docs/four_gates_triad27_debt_evidence.md);
-- [`docs/four_gates_deepwide_debt_evidence.md`](docs/four_gates_deepwide_debt_evidence.md);
-- [`docs/four_gates_fresh_seed_debt_reproduction.md`](docs/four_gates_fresh_seed_debt_reproduction.md).
-
-Boundary:
-
-No Zenodo correction yet, no shadow route revival, no observed-universe bridge, no spacetime metric claim, and no native witness mutation. Native witness remains `C_Z = min(D, P, R, B)`.
-
-shadow route status: diagnostic history / HOLD
 
 ## Current evidence state
 
-### First-research-alpha result
-
-ZeroGateSim passed an original proof harness and a fresh-seed reproduction inside generated toy fields.
-
-Combined record:
-
-- `1458` scenario cells;
-- `13122` seeded simulation runs;
-- `22131` final earned-one events;
-- `2388` raw false-one pressures detected and demoted;
-- `0` final false-one crowns.
-
-The machine did not prove the universe.
-
-It did something narrower and real:
-
-> it met false one, named it, and refused the crown.
-
-### Fresh controlled deep81 / wide243 evidence
-
-`v1.5.5-alpha` records fresh controlled `deep81` and `wide243` four-gate evidence as controlled synthetic-field reports.
-
-| profile | role in ladder | runs | earned-one events | raw false-one pressure | latent overcrown pressure | final false-one crowns |
-|---|---|---:|---:|---:|---:|---:|
-| `deep81` | perturbation / late-shock bridge | `2,916` | `5,155` | `402` | `639` | `0` |
-| `wide243` | temporal-depth / time-axis stress | `8,748` | `16,217` | `1,242` | `2,043` | `0` |
-
-Both runs passed with pressure visible, false-one pressure demoted, latent pressure held, and no final false-one crowns. These are controlled synthetic-field evidence witnesses, not physics proof.
-
-Reports:
-
-- [`docs/reports/fresh_controlled_deep81_four_gate_evidence_report.md`](docs/reports/fresh_controlled_deep81_four_gate_evidence_report.md)
-- [`docs/reports/fresh_controlled_wide243_four_gate_evidence_report.md`](docs/reports/fresh_controlled_wide243_four_gate_evidence_report.md)
-- [`docs/reports/fresh_controlled_81_243_visual_source.csv`](docs/reports/fresh_controlled_81_243_visual_source.csv)
-
-Historical intake note: `v1.5.4-alpha` preserved the old `wide243` proof floor before the fresh controlled reports. Read [`docs/reports/wide243_historical_evidence_intake.md`](docs/reports/wide243_historical_evidence_intake.md). Native witness remains `C_Z = min(D, P, R, B)`. No new native gate is introduced by these reports.
-
-### Shadow route historical status
-
-The `v1.6.0-alpha` through `v1.6.12-alpha` role-stripped shadow route produced useful tooling and a stronger testing form, but it did not earn the scientific claim it was built to test.
-
-Current historical verdict:
+The recent native evidence line now has the shape the project was trying to reach:
 
 ```text
-native four-gate witness: standing
-role-stripped shadow density signal: partially visible
-role-stripped relation / return / demotion specificity: not earned
-shadow route status: diagnostic history / HOLD
++1 earned-one visible
+ 0 relation debt visible
+ 0 return debt visible
+-1 false-one pressure visible and demoted
+final false-one crowns = 0
 ```
 
-The shadow route is not active evidence for role-blind false-one discovery. Its details live in [`docs/shadow_route_history_and_closeout.md`](docs/shadow_route_history_and_closeout.md), not in the README or roadmap surface.
+### Four Gates triad27 debt evidence
 
-Historical shadow route document index:
+![Four Gates triad27 debt evidence](docs/assets/four_gates_triad27_debt_evidence_card.svg)
 
-- `v1.6.0-alpha` — [`docs/role_blind_shadow_design.md`](docs/role_blind_shadow_design.md), [`docs/role_blind_shadow_schema.json`](docs/role_blind_shadow_schema.json)
-- `v1.6.1-alpha` — Role-stripped feature extraction: [`docs/role_stripped_feature_extraction.md`](docs/role_stripped_feature_extraction.md)
-- `v1.6.2-alpha` — [`docs/transparent_shadow_score.md`](docs/transparent_shadow_score.md) — transparent shadow score, not a role-blind detector yet
-- `v1.6.3-alpha` — baseline/falsifier: [`docs/shadow_baseline_falsifier.md`](docs/shadow_baseline_falsifier.md)
-- `v1.6.4-alpha` — [`docs/four_gate_reconciliation.md`](docs/four_gate_reconciliation.md)
-- `v1.6.5-alpha` — [`docs/shadow_holdout_evaluation.md`](docs/shadow_holdout_evaluation.md)
-- `v1.6.6-alpha` — [`docs/shadow_triad27_preflight.md`](docs/shadow_triad27_preflight.md)
-- `v1.6.7-alpha` — weather hardening: [`docs/shadow_weather_hardening.md`](docs/shadow_weather_hardening.md)
-- `v1.6.8-alpha` — [`docs/shadow_triad27_hardened_evidence.md`](docs/shadow_triad27_hardened_evidence.md)
-- `v1.6.9-alpha` — [`docs/shadow_discrimination_repair.md`](docs/shadow_discrimination_repair.md)
-- `v1.6.10-alpha` — [`docs/shadow_lane_discrimination.md`](docs/shadow_lane_discrimination.md), [`docs/runs_cleanup_policy.md`](docs/runs_cleanup_policy.md)
-- `v1.6.11-alpha` — [`docs/shadow_route_audit_and_feature_design.md`](docs/shadow_route_audit_and_feature_design.md)
-- `v1.6.12-alpha` — [`docs/shadow_feature_implementation.md`](docs/shadow_feature_implementation.md)
+`v1.6.20-alpha` showed the repaired small-weather debt pattern:
 
-These links are historical references. Shadow result visuals and result tables do not belong on the README surface.
+| lane | count |
+|---|---:|
+| earned-one | `925` |
+| latent overcrown | `3` |
+| relation debt | `30` |
+| return debt | `63` |
+| raw false-one pressure | `402` |
+| final false-one crowns | `0` |
 
-## Evidence visuals
+### Four Gates deep81 / wide243 debt evidence
 
-### First-research-alpha proof card
+![Four Gates deep81 wide243 debt evidence](docs/assets/four_gates_deepwide_debt_evidence_card.svg)
 
-![First-research-alpha proof card](docs/assets/first_research_alpha_proof_card.svg)
+`v1.6.21-alpha` pushed the pattern into deeper weather:
 
-### Fresh controlled deep81 evidence card
+| lane | count |
+|---|---:|
+| earned-one | `11,984` |
+| latent overcrown | `18` |
+| relation debt | `351` |
+| return debt | `660` |
+| raw false-one pressure | `4,980` |
+| final false-one crowns | `0` |
 
-![Fresh controlled deep81 evidence card](docs/assets/fresh_controlled_deep81_evidence_card.svg)
+### Fresh-seed reproduction
 
-### Fresh controlled wide243 evidence card
+![Four Gates fresh-seed reproduction](docs/assets/four_gates_fresh_seed_debt_reproduction_card.svg)
 
-![Fresh controlled wide243 evidence card](docs/assets/fresh_controlled_wide243_evidence_card.svg)
+`v1.6.22-alpha` reproduced the qualitative pattern on fresh seeds `9-17`:
 
-Visual guide:
+| lane | reference seeds 0-8 | fresh seeds 9-17 |
+|---|---:|---:|
+| earned-one | `11,984` | `11,732` |
+| relation debt | `351` | `528` |
+| return debt | `660` | `537` |
+| raw false-one pressure | `4,980` | `4,659` |
+| final false-one crowns | `0` | `0` |
 
-- [`docs/visual_guide.md`](docs/visual_guide.md)
-- [`docs/share_ready_reader_path.md`](docs/share_ready_reader_path.md)
+Caveat:
+
+```text
+latent overcrown reproduced as 18 -> 0, so latent overcrown remains seed-sensitive.
+relation debt and return debt did reproduce.
+```
+
+### Recent native evidence history
+
+The README keeps only the recent native route because it explains the current evidence surface:
+
+- `v1.6.14-alpha` — native four-gate claim audit;
+- `v1.6.15-alpha` — native ablation baselines;
+- `v1.6.16-alpha` — four-corpus triad27 native evidence;
+- `v1.6.17-alpha` — deep81 / wide243 native evidence with debt lanes partial;
+- `v1.6.18-alpha` — Four Gates debt candidate design;
+- `v1.6.19-alpha` — Four Gates debt candidate generator;
+- `v1.6.20-alpha` — Four Gates triad27 debt evidence;
+- `v1.6.21-alpha` — Four Gates deep81 / wide243 debt evidence;
+- `v1.6.22-alpha` — Four Gates fresh-seed debt reproduction.
+
+Older proof and shadow history lives in the history vault.
+
+Boundary:
+
+No Zenodo correction yet, no shadow route revival, no observed-universe bridge, no spacetime metric claim, No new native gate, and no native witness mutation. Native witness remains `C_Z = min(D, P, R, B)`.
+
+## History vault
+
+The history vault keeps what the project was so the README can show what the project is.
+
+- [`docs/history_vault/README.md`](docs/history_vault/README.md) — vault index.
+- [`docs/history_vault/shadow_route_history_and_closeout.md`](docs/history_vault/shadow_route_history_and_closeout.md) — full shadow route status.
+- [`docs/history_vault/legacy_evidence_visuals.md`](docs/history_vault/legacy_evidence_visuals.md) — old evidence and shadow visuals.
+- [`docs/history_vault/runs_history_vault_plan.md`](docs/history_vault/runs_history_vault_plan.md) — local `runs/` archive plan and ZIP command pattern.
 
 ## Known-logic comparison boundary
 
-Known logic work has begun with fuzzy / many-valued, Belnap evidence-state, paraconsistent conflict-locality, and three-valued compression mirrors. This is a projection mirror, not an identity claim.
+Known logic work began with fuzzy / many-valued, Belnap evidence-state, paraconsistent conflict-locality, and three-valued compression mirrors. This is a projection mirror, not an identity claim.
 
 Allowed:
 
@@ -361,27 +296,13 @@ Run a small demo first:
 Run the native math invariant tests:
 
 ```powershell
-& $P -m pytest tests\test_native_math_invariants.py -q
+& $P -m pytest tests	est_native_math_invariants.py -q
 ```
 
-Run the original proof harness:
+Run a current Four Gates debt evidence tool after the required matrix folders exist:
 
 ```powershell
-& $P -m zerogate_sim.proof --profile wide243 --start-seed 0 --count 9 --out runs\proof_wide243_0_8_v033
-& $P -m zerogate_sim.proof_record --proof-dir runs\proof_wide243_0_8_v033
-```
-
-Run the fresh-seed reproduction:
-
-```powershell
-& $P -m zerogate_sim.proof --profile wide243 --start-seed 9 --count 9 --out runs\proof_wide243_9_17_repro
-& $P -m zerogate_sim.proof_record --proof-dir runs\proof_wide243_9_17_repro
-```
-
-Freeze the combined record:
-
-```powershell
-& $P -m zerogate_sim.release_record --proof-dir runs\proof_wide243_0_8_v033 --proof-dir runs\proof_wide243_9_17_repro --out runs\first_research_alpha_v1_0_alpha
+& $P -m zerogate_sim.four_gates_fresh_seed_debt_reproduction_report --help
 ```
 
 More detailed quickstart:
@@ -390,9 +311,9 @@ More detailed quickstart:
 
 ## Claim boundary
 
-Supported claim:
+Supported current claim, if the evidence remains intact through package planning:
 
-> ZeroGateSim's final trinary witness separated earned-one from raw expression, latent overcrown, and false-one pressure across original and fresh-seed trinary adversarial proof records inside generated toy fields, and across later controlled synthetic-field evidence routes.
+> Inside controlled synthetic fields, the Four Gates final trinary witness preserved earned-one, held relation/return debt as structured zero, and demoted false-one pressure across triad27, deep81, wide243, and fresh-seed reproduction, while raw, binary, dead-safe, and ablated witnesses exposed visible failure modes.
 
 Unsupported claims:
 
@@ -400,8 +321,8 @@ Unsupported claims:
 - this proves cosmology;
 - this proves that reality itself is trinary;
 - this replaces physics or mathematics;
-- this already validates the model against external many-valued logics;
-- this solves role-blind false-one detection.
+- this solves role-blind false-one detection;
+- this proves an observed-universe bridge.
 
 Read the full boundary:
 
@@ -418,7 +339,7 @@ The repo preserves two lanes:
 
 This keeps the lineage honest:
 
-> original seeing -> executable simulation -> proof-of-concept record -> simulation-supported paper -> native math witness lock -> known-logic mirrors -> controlled synthetic-field experiments -> claim-boundary repair.
+> original seeing -> executable simulation -> proof-of-concept record -> simulation-supported paper -> native math witness lock -> controlled synthetic-field experiments -> Four Gates debt evidence -> claim-boundary repair.
 
 ## For reviewers and interested readers
 
@@ -427,10 +348,10 @@ Recommended route:
 1. README top card.
 2. Claim boundary.
 3. Math witness map.
-4. Visual route.
-5. Proof card.
+4. Current evidence cards.
+5. Four Gates debt reproduction docs.
 6. Quickstart or code.
-7. Historical manuscript only after the current proof boundary is understood.
+7. History vault only after the current proof boundary is understood.
 
 Reviewer guide:
 

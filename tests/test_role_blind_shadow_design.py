@@ -63,17 +63,17 @@ def test_role_blind_schema_separates_allowed_and_forbidden_fields() -> None:
 def test_readme_and_roadmap_preserve_role_blind_design_as_history() -> None:
     readme = _read("README.md")
     roadmap = _read("ROADMAP.md")
-    closeout = _read("docs/shadow_route_history_and_closeout.md")
+    closeout = _read("docs/history_vault/shadow_route_history_and_closeout.md")
 
     for needle in [
         "`v1.6.0-alpha`",
         "docs/role_blind_shadow_design.md",
         "docs/role_blind_shadow_schema.json",
     ]:
-        assert needle in readme
+        assert needle in closeout
 
     assert "docs/assets/role_blind_shadow_design_card.svg" not in readme
-    assert "historical/HOLD" in roadmap
+    assert "historical" in roadmap
     assert "v1.6.0-alpha" in closeout
     assert "role-blind discovery: not earned" in closeout
 

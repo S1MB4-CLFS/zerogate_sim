@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="720" viewBox="0 0 1200 720" role="img" aria-labelledby="title desc">
+  <title id="title">Transparent shadow score card</title>
+  <desc id="desc">ZeroGateSim v1.6.2 transparent shadow score boundary card.</desc>
+  <rect width="1200" height="720" fill="#0b0f14"/>
+  <rect x="50" y="46" width="1100" height="628" rx="28" fill="#111821" stroke="#a78bfa" stroke-width="3"/>
+  <text x="90" y="115" fill="#ede9fe" font-family="Arial, sans-serif" font-size="42" font-weight="700">v1.6.2-alpha — Transparent Shadow Score</text>
+  <text x="90" y="170" fill="#c4b5fd" font-family="Arial, sans-serif" font-size="25">Role-stripped features in. Targets later. No role-blind verdict yet.</text>
+  <g font-family="Arial, sans-serif" font-size="26" fill="#ede9fe">
+    <text x="110" y="245">Allowed path</text>
+    <text x="110" y="285" fill="#cbd5e1">role_stripped_profile_features.csv</text>
+    <text x="110" y="325" fill="#cbd5e1">role_stripped_family_features.csv</text>
+    <text x="110" y="365" fill="#cbd5e1">↓</text>
+    <text x="110" y="405" fill="#cbd5e1">transparent shadow score</text>
+  </g>
+  <g font-family="Arial, sans-serif" font-size="26" fill="#ede9fe">
+    <text x="690" y="245">Forbidden shortcuts</text>
+    <text x="690" y="285" fill="#fecaca">truth_role / role_label</text>
+    <text x="690" y="325" fill="#fecaca">candidate_profile</text>
+    <text x="690" y="365" fill="#fecaca">evaluation targets before scoring</text>
+  </g>
+  <line x1="90" y1="470" x2="1110" y2="470" stroke="#334155" stroke-width="2"/>
+  <text x="90" y="525" fill="#ede9fe" font-family="Arial, sans-serif" font-size="30" font-weight="700">Score</text>
+  <text x="90" y="570" fill="#cbd5e1" font-family="Arial, sans-serif" font-size="25">S_shadow = sum_j w_j N(x_j), where N(x)=x/(1+x)</text>
+  <text x="90" y="620" fill="#a78bfa" font-family="Arial, sans-serif" font-size="28" font-weight="700">Report-only. No crowns. C_Z = min(D, P, R, B)</text>
+</svg>

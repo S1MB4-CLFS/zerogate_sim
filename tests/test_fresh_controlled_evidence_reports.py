@@ -21,7 +21,7 @@ def test_fresh_controlled_reports_preserve_deep81_and_wide243_numbers() -> None:
 
 
 def test_readme_links_fresh_controlled_visuals_and_reports() -> None:
-    readme = _read("README.md")
+    readme = _read("docs/history_vault/legacy_evidence_visuals.md")
 
     for needle in [
         "`v1.5.5-alpha`",
@@ -46,8 +46,8 @@ def test_fresh_controlled_assets_exist_and_name_the_boundary() -> None:
 
 
 def test_native_math_boundary_survives_v1_5_5() -> None:
-    readme = _read("README.md")
-    roadmap = _read("ROADMAP.md")
+    readme = _read("docs/history_vault/legacy_evidence_visuals.md")
+    roadmap = _read("docs/history_vault/ROADMAP_v1_6_22_snapshot.md")
     deep = _read("docs/reports/fresh_controlled_deep81_four_gate_evidence_report.md")
     wide = _read("docs/reports/fresh_controlled_wide243_four_gate_evidence_report.md")
 

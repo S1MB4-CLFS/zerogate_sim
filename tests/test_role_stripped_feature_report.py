@@ -169,9 +169,10 @@ def test_docs_and_readme_name_v1_6_1_boundary() -> None:
     doc = (ROOT / "docs/role_stripped_feature_extraction.md").read_text(encoding="utf-8")
     release = (ROOT / "docs/release_notes/v1_6_1_alpha.md").read_text(encoding="utf-8")
     card = (ROOT / "docs/assets/role_stripped_feature_extraction_card.svg").read_text(encoding="utf-8")
-    for text in [readme, roadmap, doc, release, card]:
+    history = (ROOT / "docs/history_vault/shadow_route_history_and_closeout.md").read_text(encoding="utf-8")
+    for text in [history, doc, release, card]:
         assert "v1.6.1-alpha" in text
     assert "C_Z = min(D, P, R, B)" in doc
-    assert "Role-stripped feature extraction" in readme
+    assert "Role-stripped feature extraction" in history
     assert "docs/assets/role_stripped_feature_extraction_card.svg" not in readme
-    assert "shadow_route_history_and_closeout.md" in readme
+    assert "docs/history_vault/README.md" in readme

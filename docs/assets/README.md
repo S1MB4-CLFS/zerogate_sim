@@ -1,24 +1,12 @@
-# Visual Witness Assets
+# Visual Assets
 
-These SVG files are public orientation diagrams for ZeroGateSim.
+Current README evidence cards:
 
-They are not proof by themselves. They are visual handles for the proof record and simulation logic.
+- `zero_gate_cycle.svg` — mechanism map for the zero-gate cycle.
+- `trinary_witness_stack.svg` — output/witness map from raw pressure to earned-one / zero / resist.
+- `proof_harness_map.svg` — trinary weather and adversarial proof harness map.
+- `four_gates_triad27_debt_evidence_card.svg` — current triad27 Four Gates debt evidence card.
+- `four_gates_deepwide_debt_evidence_card.svg` — current deep81 / wide243 Four Gates debt evidence card.
+- `four_gates_fresh_seed_debt_reproduction_card.svg` — current fresh-seed reproduction card.
 
-## Files
-
-- `zero_gate_cycle.svg` — mechanism map: distinction, polarity, relation, return, return-depth, earned-one.
-- `trinary_witness_stack.svg` — final output map: raw expression pressure becomes +1 / 0 / -1 only after witness checks.
-- `proof_harness_map.svg` — test map: distinction, polarity, and relation adversaries across trinary weather.
-- `first_research_alpha_proof_card.svg` — one-image public summary of the first-research-alpha proof record.
-- `fresh_controlled_deep81_evidence_card.svg` — controlled `deep81` evidence card.
-- `fresh_controlled_wide243_evidence_card.svg` — controlled `wide243` evidence card.
-- `role_blind_shadow_design_card.svg` — v1.6.0 role-blind shadow design boundary card.
-- `role_stripped_feature_extraction_card.svg` — v1.6.1 feature/target separation card.
-- `transparent_shadow_score_card.svg` — v1.6.2 score-before-target card.
-- `shadow_baseline_falsifier_card.svg` — v1.6.3 score/target/baseline boundary card.
-
-## Rule
-
-Use these visuals to orient readers.
-
-Do not use them as proof of physical cosmology.
+Legacy cards remain in this folder for compatibility and are copied into `docs/history_vault/assets/` for historical context. They should not be used as the current README evidence surface.

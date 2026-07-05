@@ -269,10 +269,11 @@ def test_shadow_baseline_docs_and_readme_name_v1_6_3_boundary() -> None:
     doc = (ROOT / "docs/shadow_baseline_falsifier.md").read_text(encoding="utf-8")
     release = (ROOT / "docs/release_notes/v1_6_3_alpha.md").read_text(encoding="utf-8")
     card = (ROOT / "docs/assets/shadow_baseline_falsifier_card.svg").read_text(encoding="utf-8")
-    for text in [readme, roadmap, doc, release, card]:
+    history = (ROOT / "docs/history_vault/shadow_route_history_and_closeout.md").read_text(encoding="utf-8")
+    for text in [history, doc, release, card]:
         assert "v1.6.3-alpha" in text
-    assert "baseline/falsifier" in readme
+    assert "baseline/falsifier" in doc
     assert "docs/assets/shadow_baseline_falsifier_card.svg" not in readme
-    assert "shadow_route_history_and_closeout.md" in readme
+    assert "docs/history_vault/README.md" in readme
     assert "C_Z = min(D, P, R, B)" in doc
     assert "not role-blind discovery" in doc

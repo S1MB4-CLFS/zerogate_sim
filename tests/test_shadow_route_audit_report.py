@@ -48,12 +48,13 @@ def test_shadow_route_feature_design_names_specific_lanes(tmp_path: Path) -> Non
 def test_roadmap_readme_version_truth_for_v1_6_11() -> None:
     readme = (ROOT / "README.md").read_text(encoding="utf-8")
     roadmap = (ROOT / "ROADMAP.md").read_text(encoding="utf-8")
+    history = (ROOT / "docs/history_vault/shadow_route_history_and_closeout.md").read_text(encoding="utf-8")
     release = (ROOT / "docs/release_notes/v1_6_11_alpha.md").read_text(encoding="utf-8")
     doc = (ROOT / "docs/shadow_route_audit_and_feature_design.md").read_text(encoding="utf-8")
-    for text in [readme, roadmap, release, doc]:
+    for text in [history, release, doc]:
         assert "v1.6.11-alpha" in text
-    assert "v1.6.10-alpha" in roadmap
-    assert "v1.6.11-alpha" in roadmap
+    assert "v1.6.10-alpha" in history
+    assert "v1.6.11-alpha" in history
     assert readme.index("## Core theory") < readme.index("## Why this exists")
-    assert "deep81 / wide243" in roadmap
-    assert "triad27 specificity" in roadmap
+    assert "deep81 / wide243" in history
+    assert "triad27 specificity" in history

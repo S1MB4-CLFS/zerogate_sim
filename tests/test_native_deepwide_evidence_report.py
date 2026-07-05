@@ -218,8 +218,8 @@ def test_native_deepwide_public_version_truth_surfaces() -> None:
     version_truth = (ROOT / "docs/version_truth.md").read_text(encoding="utf-8")
     doc = (ROOT / "docs/native_deepwide_evidence.md").read_text(encoding="utf-8")
     release = (ROOT / "docs/release_notes/v1_6_17_alpha.md").read_text(encoding="utf-8")
-    assert "1.6.22-alpha" in (ROOT / "src/zerogate_sim/__init__.py").read_text(encoding="utf-8")
-    assert 'version = "1.6.22a0"' in (ROOT / "pyproject.toml").read_text(encoding="utf-8")
+    assert "1.6.23-alpha" in (ROOT / "src/zerogate_sim/__init__.py").read_text(encoding="utf-8")
+    assert 'version = "1.6.23a0"' in (ROOT / "pyproject.toml").read_text(encoding="utf-8")
     for text in [readme, roadmap, version_truth, doc, release]:
         assert "v1.6.17-alpha" in text
         assert "deep81 / wide243 native evidence" in text

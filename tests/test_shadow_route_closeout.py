@@ -9,23 +9,23 @@ def read(path: str) -> str:
 
 
 def test_version_truth_surfaces_include_current_and_preserve_shadow_closeout() -> None:
-    assert "1.6.22-alpha" in read("src/zerogate_sim/__init__.py")
-    assert 'version = "1.6.22a0"' in read("pyproject.toml")
-    assert "v1.6.18-alpha" in read("README.md")
-    assert "v1.6.18-alpha" in read("ROADMAP.md")
+    assert "1.6.23-alpha" in read("src/zerogate_sim/__init__.py")
+    assert 'version = "1.6.23a0"' in read("pyproject.toml")
+    assert "v1.6.23-alpha" in read("README.md")
+    assert "v1.6.23-alpha" in read("ROADMAP.md")
     assert "v1.6.14-alpha" in read("docs/version_truth.md")
     assert "v1.6.18-alpha" in read("docs/version_truth.md")
-    assert "v1.6.13-alpha" in read("ROADMAP.md")
+    assert "v1.6.13-alpha" in read("docs/history_vault/shadow_route_history_and_closeout.md")
     assert "v1.6.13-alpha" in read("docs/version_truth.md")
 
 
 def test_shadow_route_is_closeout_not_active_claim() -> None:
     readme = read("README.md")
     roadmap = read("ROADMAP.md")
-    closeout = read("docs/shadow_route_history_and_closeout.md")
+    closeout = read("docs/history_vault/shadow_route_history_and_closeout.md")
 
-    assert "shadow route status: diagnostic history / HOLD" in readme
-    assert "historical/HOLD" in roadmap
+    assert "docs/history_vault/README.md" in readme
+    assert "history vault" in roadmap
     assert "role-blind discovery: not earned" in closeout
     assert "pressure amount != false-one kind" in closeout
 
@@ -44,8 +44,8 @@ def test_readme_no_longer_surfaces_shadow_visual_cards() -> None:
 
 def test_roadmap_blocks_deeper_shadow_trust() -> None:
     roadmap = read("ROADMAP.md")
-    assert "deep81 / wide243 shadow trust is blocked" in roadmap
-    assert "No more one-more-feature drift" not in roadmap  # kept in history doc, not roadmap surface
-    assert "v1.6.14-alpha" in roadmap
-    assert "v1.6.16-alpha" in roadmap
-    assert "four-corpus triad27 native evidence" in roadmap
+    assert "stable external-review release package" in roadmap
+    assert "No more one-more-feature drift" not in roadmap
+    assert "v1.6.20-alpha" in roadmap
+    assert "v1.6.22-alpha" in roadmap
+    assert "fresh-seed" in roadmap

@@ -192,9 +192,10 @@ def test_triad27_hardened_refuses_missing_four_gate_coverage(tmp_path: Path) -> 
 def test_triad27_hardened_docs_and_readme_name_v1_6_8_boundary() -> None:
     readme = (ROOT / "README.md").read_text(encoding="utf-8")
     roadmap = (ROOT / "ROADMAP.md").read_text(encoding="utf-8")
+    history = (ROOT / "docs/history_vault/shadow_route_history_and_closeout.md").read_text(encoding="utf-8")
     doc = (ROOT / "docs/shadow_triad27_hardened_evidence.md").read_text(encoding="utf-8")
     release = (ROOT / "docs/release_notes/v1_6_8_alpha.md").read_text(encoding="utf-8")
-    for text in [readme, roadmap, doc, release]:
+    for text in [history, doc, release]:
         assert "v1.6.8-alpha" in text
     assert "triad27 = 3^3 local expression weather" in doc
     assert "C_Z = min(D, P, R, B)" in doc

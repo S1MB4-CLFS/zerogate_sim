@@ -147,13 +147,14 @@ def test_shadow_score_formula_and_docs_keep_boundary(tmp_path: Path) -> None:
 def test_docs_and_readme_name_v1_6_2_boundary() -> None:
     readme = (ROOT / "README.md").read_text(encoding="utf-8")
     roadmap = (ROOT / "ROADMAP.md").read_text(encoding="utf-8")
+    history = (ROOT / "docs/history_vault/shadow_route_history_and_closeout.md").read_text(encoding="utf-8")
     doc = (ROOT / "docs/transparent_shadow_score.md").read_text(encoding="utf-8")
     release = (ROOT / "docs/release_notes/v1_6_2_alpha.md").read_text(encoding="utf-8")
     card = (ROOT / "docs/assets/transparent_shadow_score_card.svg").read_text(encoding="utf-8")
-    closeout = (ROOT / "docs/shadow_route_history_and_closeout.md").read_text(encoding="utf-8")
-    for text in [readme, roadmap, doc, release, card, closeout]:
+    closeout = (ROOT / "docs/history_vault/shadow_route_history_and_closeout.md").read_text(encoding="utf-8")
+    for text in [history, doc, release, card, closeout]:
         assert "v1.6.2-alpha" in text
-    assert "transparent shadow score" in readme
+    assert "transparent shadow score" in history
     assert "docs/assets/transparent_shadow_score_card.svg" not in readme
     assert "C_Z = min(D, P, R, B)" in doc
     assert "not a role-blind detector yet" in doc

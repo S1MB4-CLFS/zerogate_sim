@@ -1,9 +1,9 @@
 # Version Truth
 
-**Status:** README overflow moved here in `v1.6.9-alpha`; current spine advanced in `v1.6.22-alpha`  
+**Status:** README overflow moved here in `v1.6.9-alpha`; current spine advanced in `v1.6.23-alpha`  
 **Purpose:** preserve the release spine and recent checkpoints without forcing the README to open with a wall of version bookkeeping.
 
-The active public line is now `v1.6.22-alpha` — Four Gates fresh-seed debt reproduction.
+The active public line is now `v1.6.23-alpha` — history vault and current evidence surface cleanup.
 
 ## Release spine
 
@@ -24,6 +24,7 @@ The active public line is now `v1.6.22-alpha` — Four Gates fresh-seed debt rep
 - `v1.6.20-alpha` — Four Gates triad27 debt evidence: first heavy debt evidence gate testing relation and return debt visibility.
 - `v1.6.21-alpha` — Four Gates deep81 / wide243 debt evidence: deeper-weather test of the repaired debt pattern.
 - `v1.6.22-alpha` — Four Gates fresh-seed debt reproduction: compares reference seed range 0-8 against fresh seed range 9-17 for qualitative debt-pattern reproduction.
+- `v1.6.23-alpha` — History vault and current evidence surface cleanup: moves historical route material out of README/ROADMAP and replaces legacy visuals with current Four Gates debt evidence cards.
 
 ## Recent checkpoints
 
@@ -58,6 +59,7 @@ The active public line is now `v1.6.22-alpha` — Four Gates fresh-seed debt rep
 - `v1.6.20-alpha` adds the first Four Gates triad27 debt evidence report, combining native adversary controls with the `four_gates_debt` candidate matrix.
 - `v1.6.21-alpha` adds the Four Gates deep81 / wide243 debt evidence report, requiring `four_gates_debt` matrices on both deeper weather rungs.
 - `v1.6.22-alpha` adds the Four Gates fresh-seed debt reproduction report, comparing completed deep81 / wide243 debt evidence directories across reference and fresh seed ranges.
+- `v1.6.23-alpha` creates `docs/history_vault/`, moves the full shadow route closeout into the vault, adds current Four Gates evidence cards, and records a no-delete local `runs/` archive plan.
 
 Detailed release notes live in [`docs/release_notes/`](release_notes/).
 
@@ -110,3 +112,7 @@ C_Z = min(D, P, R, B)
 ## v1.6.22-alpha note
 
 `v1.6.22-alpha` is the Four Gates fresh-seed debt reproduction gate. It preserves `C_Z = min(D, P, R, B)`, does not start Zenodo correction, does not revive shadow, and does not claim observed-universe proof. It compares a reference deep81 / wide243 debt evidence bundle against a fresh-seed bundle and asks whether the qualitative state pattern reproduces.
+
+## v1.6.23-alpha note
+
+`v1.6.23-alpha` is the history vault and current evidence surface cleanup gate. It preserves `C_Z = min(D, P, R, B)`, does not start Zenodo correction, does not revive shadow, and does not claim observed-universe proof. It moves historical route material to `docs/history_vault/`, replaces README legacy evidence visuals with current Four Gates debt evidence cards, and documents a no-delete local `runs/` vault plan.

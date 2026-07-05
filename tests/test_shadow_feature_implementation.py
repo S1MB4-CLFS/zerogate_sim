@@ -155,11 +155,12 @@ def test_lane_discrimination_uses_v1_6_12_feature_aware_scores() -> None:
 def test_docs_and_roadmap_name_v1_6_12_route() -> None:
     readme = (ROOT / "README.md").read_text(encoding="utf-8")
     roadmap = (ROOT / "ROADMAP.md").read_text(encoding="utf-8")
+    history = (ROOT / "docs/history_vault/shadow_route_history_and_closeout.md").read_text(encoding="utf-8")
     doc = (ROOT / "docs/shadow_feature_implementation.md").read_text(encoding="utf-8")
     release = (ROOT / "docs/release_notes/v1_6_12_alpha.md").read_text(encoding="utf-8")
-    for text in [readme, roadmap, doc, release]:
+    for text in [history, doc, release]:
         assert "v1.6.12-alpha" in text
         assert "C_Z = min(D, P, R, B)" in text
-    assert "v1.6.13-alpha" in roadmap
-    assert "v1.6.14-alpha" in roadmap
+    assert "v1.6.13-alpha" in history
+    assert "v1.6.14-alpha" in (ROOT / "docs/version_truth.md").read_text(encoding="utf-8")
     assert "deep81 / wide243 remain blocked" in release

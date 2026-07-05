@@ -167,9 +167,10 @@ def test_shadow_lane_discrimination_keeps_boundary(tmp_path: Path) -> None:
 def test_docs_and_readme_name_v1_6_10_boundary() -> None:
     readme = (ROOT / "README.md").read_text(encoding="utf-8")
     roadmap = (ROOT / "ROADMAP.md").read_text(encoding="utf-8")
+    history = (ROOT / "docs/history_vault/shadow_route_history_and_closeout.md").read_text(encoding="utf-8")
     doc = (ROOT / "docs/shadow_lane_discrimination.md").read_text(encoding="utf-8")
     release = (ROOT / "docs/release_notes/v1_6_10_alpha.md").read_text(encoding="utf-8")
-    for text in [readme, roadmap, doc, release]:
+    for text in [history, doc, release]:
         assert "v1.6.10-alpha" in text
     assert readme.index("## Core theory") < readme.index("## Why this exists")
-    assert "docs/runs_cleanup_policy.md" in readme
+    assert "docs/runs_cleanup_policy.md" in history or "runs cleanup" in history.lower()
