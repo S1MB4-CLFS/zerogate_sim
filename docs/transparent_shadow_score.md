@@ -119,3 +119,19 @@ The score outputs are still report evidence, not product verdicts.
 `v1.6.3-alpha` must compare these scores against trivial baselines and the separated target file.
 
 If the transparent shadow score cannot beat raw-pressure-only, weakest-gate-only, random, and simple profile baselines on held-out controlled synthetic-field evidence, role-blind shadow is not earned.
+
+## v1.6.10 lane split
+
+The original `shadow_score` remains frozen as the v1.6.2 transparent score. `v1.6.10-alpha` adds fixed lane-specific candidate score columns to the same score CSVs:
+
+```text
+shadow_density_pressure_score
+shadow_raw_false_one_pressure_score
+shadow_demotion_pressure_score
+shadow_hold_or_demote_pressure_score
+shadow_relation_specific_pressure_score
+shadow_return_specific_pressure_score
+shadow_native_breach_proxy_score
+```
+
+These lane scores do not retune the historical score and do not claim detector status. They exist so `zerogate-shadow-lane-discrimination` can test whether any lane sees pressure kind beyond dumb baselines.

@@ -32,6 +32,72 @@ SHADOW_SCORE_WEIGHTS: dict[str, float] = {
     "feature_ablation_echo_independence_rate": 0.02,
 }
 
+# v1.6.10-alpha adds fixed lane-specific candidate scores. These do not
+# replace the historical frozen shadow_score above and they are not learned or
+# retuned against targets. They split the report-side pressure witness into
+# candidate lanes so later discrimination reports can ask whether any lane sees
+# pressure kind beyond raw intensity and dumb baselines.
+SHADOW_LANE_SCORE_WEIGHTS: dict[str, dict[str, float]] = {
+    "shadow_density_pressure_score": {
+        "feature_raw_pressure_rate": 0.40,
+        "feature_latent_hold_rate": 0.25,
+        "feature_relation_debt_rate": 0.20,
+        "feature_weakest_gate_pressure_rate": 0.15,
+    },
+    "shadow_raw_false_one_pressure_score": {
+        "feature_raw_pressure_rate": 0.35,
+        "feature_raw_strength_pressure_rate": 0.20,
+        "feature_weakest_gate_pressure_rate": 0.20,
+        "feature_ablation_raw_as_final_crown_risk_rate": 0.15,
+        "feature_relation_debt_rate": 0.10,
+    },
+    "shadow_demotion_pressure_score": {
+        "feature_raw_pressure_rate": 0.30,
+        "feature_latent_hold_rate": 0.20,
+        "feature_ablation_demotion_dependence_rate": 0.25,
+        "feature_ablation_raw_as_final_crown_risk_rate": 0.15,
+        "feature_weakest_gate_pressure_rate": 0.10,
+    },
+    "shadow_hold_or_demote_pressure_score": {
+        "feature_latent_hold_rate": 0.35,
+        "feature_raw_pressure_rate": 0.25,
+        "feature_relation_debt_rate": 0.20,
+        "feature_weakest_gate_pressure_rate": 0.10,
+        "feature_ablation_demotion_dependence_rate": 0.10,
+    },
+    "shadow_relation_specific_pressure_score": {
+        "feature_relation_debt_rate": 0.30,
+        "feature_relation_gate_rate": 0.25,
+        "feature_relation_limiting_rate": 0.25,
+        "feature_ablation_echo_independence_rate": 0.15,
+        "feature_mirror_secondary_rate": 0.05,
+    },
+    "shadow_return_specific_pressure_score": {
+        "feature_return_limiting_rate": 0.35,
+        "feature_return_gate_inverse_rate": 0.25,
+        "feature_weakest_gate_pressure_rate": 0.20,
+        "feature_raw_pressure_rate": 0.15,
+        "feature_latent_hold_rate": 0.05,
+    },
+    "shadow_native_breach_proxy_score": {
+        "feature_weakest_gate_pressure_rate": 0.35,
+        "feature_raw_pressure_rate": 0.25,
+        "feature_raw_strength_pressure_rate": 0.20,
+        "feature_return_limiting_rate": 0.10,
+        "feature_relation_limiting_rate": 0.10,
+    },
+}
+
+SCORE_LANE_LABELS: dict[str, str] = {
+    "shadow_density_pressure_score": "density_pressure",
+    "shadow_raw_false_one_pressure_score": "raw_false_one",
+    "shadow_demotion_pressure_score": "demotion",
+    "shadow_hold_or_demote_pressure_score": "hold_or_demote",
+    "shadow_relation_specific_pressure_score": "relation_specific",
+    "shadow_return_specific_pressure_score": "return_specific",
+    "shadow_native_breach_proxy_score": "native_breach_proxy",
+}
+
 
 def _ensure_dir(path: Path) -> Path:
     path.mkdir(parents=True, exist_ok=True)
@@ -74,6 +140,15 @@ def _normalise_pressure(value: float) -> float:
     return value / (1.0 + value) if value else 0.0
 
 
+def _feature_pressure(row: dict[str, str], feature: str) -> float:
+    """Return a bounded pressure value for ordinary and inverse lane features."""
+    if feature == "feature_return_gate_inverse_rate":
+        # Higher return gate means less return-failure pressure. Treat the
+        # inverse as a transparent report-side pressure proxy, not a native gate.
+        return max(0.0, min(1.0, 1.0 - _float(row, "feature_return_gate_rate")))
+    return _normalise_pressure(_float(row, feature))
+
+
 def _band(score: float) -> str:
     if score >= 0.35:
         return "high_pressure_watch"
@@ -97,12 +172,21 @@ def assert_role_stripped_rows(rows: list[dict[str, str]], *, source_name: str) -
         raise ValueError(f"Forbidden role/answer-key fields in {source_name}: {', '.join(forbidden)}")
 
 
+def _lane_scores(row: dict[str, str]) -> dict[str, float]:
+    scores: dict[str, float] = {}
+    for score_name, weights in SHADOW_LANE_SCORE_WEIGHTS.items():
+        scores[score_name] = sum(weight * _feature_pressure(row, feature) for feature, weight in weights.items())
+    return scores
+
+
 def _score_row(row: dict[str, str], *, scope: str) -> dict[str, object]:
     contributions: dict[str, float] = {}
     for feature, weight in SHADOW_SCORE_WEIGHTS.items():
         contributions[feature] = weight * _normalise_pressure(_float(row, feature))
     score = sum(contributions.values())
+    lane_scores = _lane_scores(row)
     strongest = max(contributions, key=contributions.get) if contributions else "none"
+    primary_lane = max(lane_scores, key=lane_scores.get) if lane_scores else "none"
     out: dict[str, object] = {
         "scope": scope,
         "source_label": row.get("source_label", ""),
@@ -112,9 +196,13 @@ def _score_row(row: dict[str, str], *, scope: str) -> dict[str, object]:
         "shadow_score": f"{score:.6f}",
         "shadow_band": _band(score),
         "strongest_contributor": strongest,
+        "shadow_primary_lane": SCORE_LANE_LABELS.get(primary_lane, primary_lane),
+        "shadow_primary_lane_score": f"{lane_scores.get(primary_lane, 0.0):.6f}",
         "score_status": "report_only_no_crown_no_demotion",
         "boundary": "transparent_shadow_score_no_role_labels_no_targets_loaded",
     }
+    for score_name, lane_score in lane_scores.items():
+        out[score_name] = f"{lane_score:.6f}"
     for feature, contribution in contributions.items():
         out[f"contribution_{feature}"] = f"{contribution:.6f}"
     return out
@@ -162,6 +250,22 @@ def _write_read(path: Path, *, profile_scores: list[dict[str, object]], family_s
     lines.append("```")
     lines.append("")
     lines.append("Weights are fixed in `shadow_score_formula.json` for inspection. This is deliberately not learned yet.")
+    lines.append("")
+    lines.append("## v1.6.10 lane-specific candidate scores")
+    lines.append("")
+    lines.append("The historical `shadow_score` remains frozen as the v1.6.2 report-side score. `v1.6.10-alpha` adds fixed lane-specific candidate scores so later discrimination reports can ask whether any lane sees pressure kind beyond raw intensity and dumb baselines:")
+    lines.append("")
+    lines.append("```text")
+    lines.append("density_pressure")
+    lines.append("raw_false_one")
+    lines.append("demotion")
+    lines.append("hold_or_demote")
+    lines.append("relation_specific")
+    lines.append("return_specific")
+    lines.append("native_breach_proxy")
+    lines.append("```")
+    lines.append("")
+    lines.append("These lane scores are not a detector and do not crown, demote, or mutate the native witness.")
     lines.append("")
     lines.append("## Outputs")
     lines.append("")
@@ -246,6 +350,11 @@ def write_shadow_score_report(
         "score_name": "transparent_shadow_score",
         "normalisation": "N(x)=x/(1+x)",
         "weights": SHADOW_SCORE_WEIGHTS,
+        "lane_scores_version": "v1.6.10-alpha",
+        "lane_scores_boundary": "fixed report-side candidate lane scores; not learned, not tuned against targets, not detector closeout",
+        "lane_score_weights": SHADOW_LANE_SCORE_WEIGHTS,
+        "lane_score_labels": SCORE_LANE_LABELS,
+        "special_lane_feature": "feature_return_gate_inverse_rate = max(0, min(1, 1 - feature_return_gate_rate))",
         "role_blind_boundary": "score reads role-stripped feature files only; targets are not loaded",
         "native_witness_unchanged": "C_Z = min(D, P, R, B)",
     }

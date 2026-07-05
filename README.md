@@ -1,9 +1,11 @@
 # ZeroGateSim
 
-**Current public line:** `v1.6.9-alpha` — shadow discrimination repair and README reorganization  
+**Current public line:** `v1.6.10-alpha` — shadow lane split, README theory placement, and runs hygiene scaffold  
 **Status:** speculative research software / controlled synthetic-field experiment line  
 **Working identity:** zero-gate dimensional emergence simulator  
 **Core question:** can a final trinary witness distinguish earned-one from raw expression pressure, latent overcrown, relation/return debt, and false-one pressure under controlled synthetic-field adversarial weather?
+
+## What ZeroGateSim is
 
 ZeroGateSim is a small research software project for testing a speculative theory of dimensional emergence. The historical first-research-alpha proof record remains a generated toy-field proof-of-concept; the v1.5 line uses controlled synthetic-field language for explicit, seeded, adversarial, bounded experiments; the v1.6 line begins role-blind shadow design without claiming role-blind discovery.
 
@@ -12,6 +14,36 @@ It does **not** prove cosmology, physical dimensions, or that reality itself is 
 It tests a narrower software-theory claim in the active v1.5/v1.6 line:
 
 > Inside controlled synthetic fields, final earned-one witness can separate earned expression from raw expression pressure, latent overcrown, relation/return debt, and false-one pressure under four-gate adversarial pressure.
+
+## Core theory
+
+The central hypothesis is:
+
+> Dimensionality emerges when candidate freedoms pass through the zero-gate cycle of distinction, polarity, relation, and return under trinary temporal ordering.
+
+The four gates are:
+
+- **Distinction** — something becomes separable from background.
+- **Polarity** — distinction gains meaningful positive and negative expression around zero.
+- **Relation** — polarity becomes bound into stable relation rather than split or drift.
+- **Return** — expressed structure folds back toward zero while preserving coherence.
+
+Return is not decorative. Distinction separates. Polarity tensions. Relation binds. When binding becomes coherent, expansion curves back as return.
+
+The zero-gate coherence of candidate `i` at time `t` is:
+
+```math
+C_Z^i(t)=\min(g_D^i(t),g_P^i(t),g_R^i(t),g_B^i(t))
+```
+
+The minimum matters. A candidate does not pass because one gate is beautiful. The weakest gate decides the coherence pressure.
+
+Raw local expression is not final +1. Final +1 belongs only to **earned-one**.
+
+Core sentence:
+
+> A real one is not the first thing after zero. A real one is what zero can return as without lying.
+
 
 ## Why this exists
 
@@ -126,7 +158,7 @@ C_Z^i(t)=\min(D_i(t),P_i(t),R_i(t),B_i(t))
 The current route is:
 
 ```text
-native geometry -> native math -> code fidelity -> invariant tests -> known logic mirrors -> stronger experiments -> shadow discrimination repair
+native geometry -> native math -> code fidelity -> invariant tests -> known logic mirrors -> stronger experiments -> shadow lane discrimination
 ```
 
 Do not skip the order. ZeroGateSim is not helped by wearing a borrowed lab coat.
@@ -138,6 +170,8 @@ Read first:
 - [`docs/controlled_synthetic_field_language.md`](docs/controlled_synthetic_field_language.md)
   - controlled synthetic-field language boundary for v1.5+ evidence wording.
 - [`docs/shadow_discrimination_repair.md`](docs/shadow_discrimination_repair.md)
+- [`docs/shadow_lane_discrimination.md`](docs/shadow_lane_discrimination.md)
+- [`docs/runs_cleanup_policy.md`](docs/runs_cleanup_policy.md)
 - [`docs/shadow_triad27_hardened_evidence.md`](docs/shadow_triad27_hardened_evidence.md)
 - [`docs/shadow_weather_hardening.md`](docs/shadow_weather_hardening.md)
 - [`docs/four_gate_reconciliation.md`](docs/four_gate_reconciliation.md)
@@ -178,11 +212,14 @@ Both runs passed with pressure visible, false-one pressure demoted, latent press
 
 The v1.6 shadow line is stricter than the native role-aware witness. It asks whether false-one-like pressure can be ranked from role-stripped observable behavior without role labels.
 
-`v1.6.8-alpha` made triad27 harder by generating cell-level evidence. The result showed the frozen transparent shadow score could see pressure density, but it did not yet earn relation/return/demotion-specific discrimination beyond dumb baselines. Therefore `v1.6.9-alpha` adds shadow discrimination repair. The weather hardening gate remains the judge that prevents larger weather from looking stronger than it is.
+`v1.6.8-alpha` made triad27 harder by generating cell-level evidence. The result showed the frozen transparent shadow score could see pressure density, but it did not yet earn relation/return/demotion-specific discrimination beyond dumb baselines. `v1.6.9-alpha` added residual discrimination diagnostics. `v1.6.10-alpha` splits the shadow lane into fixed candidate lane scores and adds a local `runs/` inventory scaffold before any deeper weather claim is trusted. The weather hardening report remains the cross-rung judge.
 
-Read the current shadow repair note:
+Read the current shadow repair notes:
 
 - [`docs/shadow_discrimination_repair.md`](docs/shadow_discrimination_repair.md)
+- [`docs/shadow_lane_discrimination.md`](docs/shadow_lane_discrimination.md)
+- [`docs/shadow_lane_discrimination.md`](docs/shadow_lane_discrimination.md)
+- [`docs/runs_cleanup_policy.md`](docs/runs_cleanup_policy.md)
 
 ## Evidence visuals
 
@@ -218,35 +255,6 @@ Visual guide:
 
 - [`docs/visual_guide.md`](docs/visual_guide.md)
 - [`docs/share_ready_reader_path.md`](docs/share_ready_reader_path.md)
-
-## Core theory
-
-The central hypothesis is:
-
-> Dimensionality emerges when candidate freedoms pass through the zero-gate cycle of distinction, polarity, relation, and return under trinary temporal ordering.
-
-The four gates are:
-
-- **Distinction** — something becomes separable from background.
-- **Polarity** — distinction gains meaningful positive and negative expression around zero.
-- **Relation** — polarity becomes bound into stable relation rather than split or drift.
-- **Return** — expressed structure folds back toward zero while preserving coherence.
-
-Return is not decorative. Distinction separates. Polarity tensions. Relation binds. When binding becomes coherent, expansion curves back as return.
-
-The zero-gate coherence of candidate `i` at time `t` is:
-
-```math
-C_Z^i(t)=\min(g_D^i(t),g_P^i(t),g_R^i(t),g_B^i(t))
-```
-
-The minimum matters. A candidate does not pass because one gate is beautiful. The weakest gate decides the coherence pressure.
-
-Raw local expression is not final +1. Final +1 belongs only to **earned-one**.
-
-Core sentence:
-
-> A real one is not the first thing after zero. A real one is what zero can return as without lying.
 
 ## Known-logic comparison boundary
 

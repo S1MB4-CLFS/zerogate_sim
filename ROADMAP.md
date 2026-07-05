@@ -50,16 +50,17 @@ Fresh controlled v1.5 evidence block:
 
 This evidence block supports the controlled synthetic-field line and role-blind shadow design. It does not prove physical time, gravity, mass, cosmology, or role-blind discovery.
 
-## Current v1.6.9 repair gate
+## Current v1.6.10 repair gate
 
-`v1.6.9-alpha` adds a residual discrimination report after the hardened triad27 wound. It asks whether the frozen shadow score sees anything beyond the best available dumb baseline. This is still report-side evaluation only: no score retuning, no native math mutation, no role-blind discovery claim.
+`v1.6.10-alpha` adds lane-specific shadow candidate scores and a lane discrimination report after the hardened triad27 wound. It asks whether any lane sees pressure kind beyond the best available dumb baseline. This is still report-side evaluation only: no score retuning, no native math mutation, no role-blind discovery claim.
 
 Success condition:
 
-- the report identifies density-only shadow behavior separately from relation/return/demotion-specific discrimination;
-- residual target diagnostics are computed after the best available baseline;
-- README test truth and version truth lists are moved into dedicated Markdown files without losing their content;
-- generated shadow score reports no longer point only to stale `v1.6.3-alpha` next-step language.
+- the historical frozen `shadow_score` remains available as the v1.6.2 transparent pressure score;
+- lane-specific candidate scores are emitted from role-stripped features only;
+- lane discrimination compares lane scores against separated targets and dumb baselines;
+- README Core theory moves near the front without losing content;
+- `runs/` cleanup remains inventory/classification only, not deletion by default.
 
 ## Operating law
 
