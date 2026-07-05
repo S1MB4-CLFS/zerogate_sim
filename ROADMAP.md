@@ -1,6 +1,6 @@
 # ZeroGateSim Roadmap
 
-**Current line:** `v1.6.15-alpha` native ablation baselines  
+**Current line:** `v1.6.16-alpha` four-corpus triad27 native evidence  
 **Release posture:** public research-alpha / controlled synthetic-field experiment line
 
 ZeroGateSim already has a generated toy-field proof record; later lines repair, strengthen, and bound what that record can honestly support.
@@ -48,9 +48,9 @@ Fresh controlled v1.5 evidence block:
 
 This evidence block supports the controlled synthetic-field line. It does not prove physical time, gravity, mass, cosmology, or role-blind discovery.
 
-## Current v1.6.15 gate
+## Current v1.6.16 gate
 
-`v1.6.15-alpha` defines native ablation baselines. It makes the final trinary witness fight meaningful competitors before the repaired route moves to fresh four-corpus `triad27` evidence.
+`v1.6.16-alpha` evaluates four-corpus `triad27` native evidence. It makes the final trinary witness face distinction, polarity, relation, and return adversarial families while ablation enemies expose whether the witness is doing real trinary work.
 
 Scientific question:
 
@@ -59,7 +59,7 @@ Scientific question:
 Delivered:
 
 - `docs/native_ablation_baselines.md`;
-- `docs/release_notes/v1_6_15_alpha.md`;
+- `docs/release_notes/v1_6_16_alpha.md`;
 - `zerogate-native-ablation-baselines`;
 - baseline enemy set: dead-safe no-crown, raw-expression-only, binary raw/fail, no-zero-hold, no-false-one-demotion, no-echo-independence, no-return-debt witness, no-relation-gate raw, no-return-gate raw, and average-gate raw.
 
@@ -97,8 +97,8 @@ Any version that skips this order is a HOLD or RESIST event.
 | `v1.6.0-alpha` - `v1.6.12-alpha` | historical/HOLD | role-stripped shadow route exploration; useful tooling, scientific claim not earned |
 | `v1.6.13-alpha` | complete | shadow route historical closeout and public-surface cleanup |
 | `v1.6.14-alpha` | complete | native four-gate claim audit and route correction |
-| `v1.6.15-alpha` | current | native ablation baselines: raw-only, binary-only, dead-safe, no-zero-hold, no-return, no-relation, no-echo |
-| `v1.6.16-alpha` | next candidate | four-corpus triad27 native evidence with trinary confusion accounting |
+| `v1.6.15-alpha` | complete | native ablation baselines: raw-only, binary-only, dead-safe, no-zero-hold, no-return, no-relation, no-echo |
+| `v1.6.16-alpha` | current | four-corpus triad27 native evidence with trinary lane accounting and ablation comparison |
 | `v1.6.17-alpha` | next candidate | deep81 / wide243 native evidence only after triad27 ablations pass |
 | `v1.6.18-alpha` | next candidate | fresh-seed reproduction and manuscript/evidence correction package planning |
 | `v1.6.19-alpha` | optional hygiene | runs inventory / canonical evidence cleanup, no deletion by default |
@@ -304,7 +304,7 @@ Pass condition:
 
 Native witness must preserve earned-one, hold structured zero pressure, and demote false-one pressure better than the ablated alternatives. A witness that avoids false crowns only by refusing everything does not pass.
 
-## v1.6.16-alpha candidate — Four-corpus triad27 native evidence
+## v1.6.16-alpha — Four-corpus triad27 native evidence
 
 Purpose:
 

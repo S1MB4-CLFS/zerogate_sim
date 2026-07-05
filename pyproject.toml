@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "zerogate-sim"
-version = "1.6.15a0"
+version = "1.6.16a0"
 description = "Toy simulation framework for zero-gate dimensional emergence."
 readme = "README.md"
 requires-python = ">=3.12"
@@ -59,6 +59,7 @@ zerogate-runs-inventory = "zerogate_sim.runs_inventory_report:main"
 zerogate-shadow-route-audit = "zerogate_sim.shadow_route_audit_report:main"
 zerogate-native-four-gate-claim-audit = "zerogate_sim.native_four_gate_claim_audit_report:main"
 zerogate-native-ablation-baselines = "zerogate_sim.native_ablation_baselines_report:main"
+zerogate-native-triad27-evidence = "zerogate_sim.native_triad27_evidence_report:main"
 
 [tool.setuptools.packages.find]
 where = ["src"]

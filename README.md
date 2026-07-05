@@ -1,6 +1,6 @@
 # ZeroGateSim
 
-**Current public line:** `v1.6.15-alpha` — native ablation baselines  
+**Current public line:** `v1.6.16-alpha` — four-corpus triad27 native evidence  
 **Status:** speculative research software / controlled synthetic-field experiment line  
 **Working identity:** zero-gate dimensional emergence simulator  
 **Core question:** can a final trinary witness distinguish earned-one from raw expression pressure, latent overcrown, relation/return debt, and false-one pressure under controlled synthetic-field adversarial weather?
@@ -154,10 +154,10 @@ C_Z^i(t)=\min(D_i(t),P_i(t),R_i(t),B_i(t))
 
 ## Active route
 
-The active route after `v1.6.15-alpha` is:
+The active route after `v1.6.16-alpha` is:
 
 ```text
-native ablation baselines -> four-corpus triad27 evidence -> deep81/wide243 native evidence -> fresh-seed reproduction -> manuscript / evidence correction package
+four-corpus triad27 evidence -> deep81/wide243 native evidence -> fresh-seed reproduction -> manuscript / evidence correction package
 ```
 
 The shadow route is **not** the active route now. It is preserved as historical diagnostic work because hardened triad27 lane-specific discrimination did not beat simple baselines strongly enough to earn deeper `deep81` / `wide243` trust.
@@ -170,36 +170,31 @@ Read first:
 - [`docs/four_gate_reconciliation.md`](docs/four_gate_reconciliation.md)
 - [`docs/native_four_gate_claim_audit.md`](docs/native_four_gate_claim_audit.md)
 - [`docs/native_ablation_baselines.md`](docs/native_ablation_baselines.md)
+- [`docs/native_triad27_evidence.md`](docs/native_triad27_evidence.md)
 - [`docs/shadow_route_history_and_closeout.md`](docs/shadow_route_history_and_closeout.md)
 - [`docs/claim_boundary.md`](docs/claim_boundary.md)
 
 
-## Current v1.6.15 gate
+## Current v1.6.16 gate
 
-`v1.6.15-alpha` defines the native ablation enemies that the repaired witness must beat before the route advances to four-corpus `triad27` evidence.
+`v1.6.16-alpha` is the first repaired native evidence gate after the `v1.6.15-alpha` ablation baseline definitions. It evaluates four-corpus `triad27 = 3^3` local-expression weather across distinction, polarity, relation, and return adversarial families.
 
 The test question is:
 
-> Does the final trinary witness preserve earned-one, hold structured zero pressure, and demote false-one pressure better than raw, binary, and ablated alternatives?
+> Can a final trinary witness distinguish earned-one from raw expression pressure, latent overcrown, relation/return debt, and false-one pressure under controlled synthetic-field adversarial weather?
 
-Baseline enemies now include:
+The report combines:
 
-- dead-safe no-crown;
-- raw-expression-only;
-- binary raw-or-fail;
-- no-zero-hold;
-- no-false-one-demotion;
-- no-echo-independence;
-- no-return-debt witness;
-- no-relation-gate raw;
-- no-return-gate raw;
-- average-gate raw.
+- native four-gate seed-block evidence;
+- native ablation baseline results;
+- trinary lane visibility for `+1 / 0 / -1`;
+- explicit decision language that refuses to treat `0` final false crowns as enough by itself.
 
-Read: [`docs/native_ablation_baselines.md`](docs/native_ablation_baselines.md).
+Read: [`docs/native_triad27_evidence.md`](docs/native_triad27_evidence.md).
 
 Boundary:
 
-This is not Zenodo correction yet, not observed-universe bridge work, not shadow revival, and not proof of physical dimensional genesis. It is the enemy set for the next native evidence gate. Native witness remains `C_Z = min(D, P, R, B)`.
+This is not Zenodo correction yet, not observed-universe bridge work, not shadow revival, and not proof of physical dimensional genesis. A clean `triad27` result only earns permission to continue to `deep81` / `wide243`. Native witness remains `C_Z = min(D, P, R, B)`.
 
 ## Current evidence state
 

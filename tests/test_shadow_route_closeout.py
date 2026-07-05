@@ -9,12 +9,12 @@ def read(path: str) -> str:
 
 
 def test_version_truth_surfaces_include_current_and_preserve_shadow_closeout() -> None:
-    assert "1.6.15-alpha" in read("src/zerogate_sim/__init__.py")
-    assert 'version = "1.6.15a0"' in read("pyproject.toml")
-    assert "v1.6.15-alpha" in read("README.md")
-    assert "v1.6.15-alpha" in read("ROADMAP.md")
+    assert "1.6.16-alpha" in read("src/zerogate_sim/__init__.py")
+    assert 'version = "1.6.16a0"' in read("pyproject.toml")
+    assert "v1.6.16-alpha" in read("README.md")
+    assert "v1.6.16-alpha" in read("ROADMAP.md")
     assert "v1.6.14-alpha" in read("docs/version_truth.md")
-    assert "v1.6.15-alpha" in read("docs/version_truth.md")
+    assert "v1.6.16-alpha" in read("docs/version_truth.md")
     assert "v1.6.13-alpha" in read("ROADMAP.md")
     assert "v1.6.13-alpha" in read("docs/version_truth.md")
 
@@ -47,5 +47,5 @@ def test_roadmap_blocks_deeper_shadow_trust() -> None:
     assert "deep81 / wide243 shadow trust is blocked" in roadmap
     assert "No more one-more-feature drift" not in roadmap  # kept in history doc, not roadmap surface
     assert "v1.6.14-alpha" in roadmap
-    assert "v1.6.15-alpha" in roadmap
-    assert "native ablation baselines" in roadmap
+    assert "v1.6.16-alpha" in roadmap
+    assert "four-corpus triad27 native evidence" in roadmap

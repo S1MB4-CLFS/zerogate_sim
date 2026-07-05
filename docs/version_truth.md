@@ -1,9 +1,9 @@
 # Version Truth
 
-**Status:** README overflow moved here in `v1.6.9-alpha`; current spine repaired in `v1.6.15-alpha`  
+**Status:** README overflow moved here in `v1.6.9-alpha`; current spine advanced in `v1.6.16-alpha`  
 **Purpose:** preserve the release spine and recent checkpoints without forcing the README to open with a wall of version bookkeeping.
 
-The active public line is now `v1.6.15-alpha` — native ablation baselines.
+The active public line is now `v1.6.16-alpha` — four-corpus triad27 native evidence.
 
 ## Release spine
 
@@ -17,6 +17,7 @@ The active public line is now `v1.6.15-alpha` — native ablation baselines.
 - `v1.6.13-alpha` — shadow route historical closeout and README/ROADMAP surface cleanup.
 - `v1.6.14-alpha` — native four-gate claim audit, readiness criteria, and route correction before manuscript/Zenodo work.
 - `v1.6.15-alpha` — native ablation baselines: raw/binary/ablated enemies for the repaired native route.
+- `v1.6.16-alpha` — four-corpus triad27 native evidence: first repaired native weather evidence gate.
 
 ## Recent checkpoints
 
@@ -44,6 +45,7 @@ The active public line is now `v1.6.15-alpha` — native ablation baselines.
 - `v1.6.13-alpha` parks the shadow route as historical diagnostic work and removes shadow result visuals/data from README and ROADMAP surfaces.
 - `v1.6.14-alpha` adds native four-gate claim audit and route correction.
 - `v1.6.15-alpha` adds native ablation baseline enemies before four-corpus triad27 evidence.
+- `v1.6.16-alpha` evaluates four-corpus triad27 native evidence against those ablation enemies.
 
 Detailed release notes live in [`docs/release_notes/`](release_notes/).
 
@@ -61,3 +63,8 @@ C_Z = min(D, P, R, B)
 ## v1.6.15-alpha note
 
 `v1.6.15-alpha` is the native ablation baselines gate. It preserves `C_Z = min(D, P, R, B)`, does not start Zenodo correction, and prepares `v1.6.16-alpha` four-corpus triad27 native evidence.
+
+
+## v1.6.16-alpha note
+
+`v1.6.16-alpha` is the four-corpus `triad27` native evidence gate. It preserves `C_Z = min(D, P, R, B)`, does not start Zenodo correction, does not revive shadow, and does not claim observed-universe proof.
