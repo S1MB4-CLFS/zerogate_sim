@@ -1,9 +1,9 @@
 # Version Truth
 
-**Status:** README overflow moved here in `v1.6.9-alpha`; current spine advanced in `v1.6.16-alpha`  
+**Status:** README overflow moved here in `v1.6.9-alpha`; current spine advanced in `v1.6.17-alpha`  
 **Purpose:** preserve the release spine and recent checkpoints without forcing the README to open with a wall of version bookkeeping.
 
-The active public line is now `v1.6.16-alpha` — four-corpus triad27 native evidence.
+The active public line is now `v1.6.17-alpha` — deep81 / wide243 native evidence.
 
 ## Release spine
 
@@ -18,6 +18,7 @@ The active public line is now `v1.6.16-alpha` — four-corpus triad27 native evi
 - `v1.6.14-alpha` — native four-gate claim audit, readiness criteria, and route correction before manuscript/Zenodo work.
 - `v1.6.15-alpha` — native ablation baselines: raw/binary/ablated enemies for the repaired native route.
 - `v1.6.16-alpha` — four-corpus triad27 native evidence: first repaired native weather evidence gate.
+- `v1.6.17-alpha` — deep81 / wide243 native evidence with debt-lane requirement.
 
 ## Recent checkpoints
 
@@ -46,6 +47,7 @@ The active public line is now `v1.6.16-alpha` — four-corpus triad27 native evi
 - `v1.6.14-alpha` adds native four-gate claim audit and route correction.
 - `v1.6.15-alpha` adds native ablation baseline enemies before four-corpus triad27 evidence.
 - `v1.6.16-alpha` evaluates four-corpus triad27 native evidence against those ablation enemies.
+- `v1.6.17-alpha` adds deep81 / wide243 native evidence reporting with explicit latent-overcrown, relation-debt, and return-debt lane visibility.
 
 Detailed release notes live in [`docs/release_notes/`](release_notes/).
 
@@ -68,3 +70,8 @@ C_Z = min(D, P, R, B)
 ## v1.6.16-alpha note
 
 `v1.6.16-alpha` is the four-corpus `triad27` native evidence gate. It preserves `C_Z = min(D, P, R, B)`, does not start Zenodo correction, does not revive shadow, and does not claim observed-universe proof.
+
+
+## v1.6.17-alpha note
+
+`v1.6.17-alpha` is the repaired `deep81` / `wide243` native evidence gate. It preserves `C_Z = min(D, P, R, B)`, requires all four adversarial families for both deeper weather rungs, does not start Zenodo correction, does not revive shadow, and does not claim observed-universe proof.

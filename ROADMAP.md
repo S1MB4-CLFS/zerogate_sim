@@ -1,6 +1,6 @@
 # ZeroGateSim Roadmap
 
-**Current line:** `v1.6.16-alpha` four-corpus triad27 native evidence  
+**Current line:** `v1.6.17-alpha` deep81 / wide243 native evidence  
 **Release posture:** public research-alpha / controlled synthetic-field experiment line
 
 ZeroGateSim already has a generated toy-field proof record; later lines repair, strengthen, and bound what that record can honestly support.
@@ -48,20 +48,21 @@ Fresh controlled v1.5 evidence block:
 
 This evidence block supports the controlled synthetic-field line. It does not prove physical time, gravity, mass, cosmology, or role-blind discovery.
 
-## Current v1.6.16 gate
+## Current v1.6.17 gate
 
-`v1.6.16-alpha` evaluates four-corpus `triad27` native evidence. It makes the final trinary witness face distinction, polarity, relation, and return adversarial families while ablation enemies expose whether the witness is doing real trinary work.
+`v1.6.17-alpha` adds the repaired `deep81` / `wide243` native evidence gate. It only exists because the `v1.6.16-alpha` four-corpus `triad27` gate passed against ablation enemies.
 
 Scientific question:
 
-> Does the final trinary witness preserve earned-one, hold structured zero pressure, and demote false-one pressure better than raw, binary, and ablated alternatives?
+> Does the final trinary witness preserve earned-one, hold structured zero pressure, and demote false-one pressure better than raw, binary, and ablated alternatives under deeper perturbation and temporal-depth weather?
 
 Delivered:
 
-- `docs/native_ablation_baselines.md`;
-- `docs/release_notes/v1_6_16_alpha.md`;
-- `zerogate-native-ablation-baselines`;
-- baseline enemy set: dead-safe no-crown, raw-expression-only, binary raw/fail, no-zero-hold, no-false-one-demotion, no-echo-independence, no-return-debt witness, no-relation-gate raw, no-return-gate raw, and average-gate raw.
+- `docs/native_deepwide_evidence.md`;
+- `docs/release_notes/v1_6_17_alpha.md`;
+- `zerogate-native-deepwide-evidence`;
+- required `deep81` and `wide243` four-corpus report wiring;
+- explicit debt-lane requirement for latent overcrown, relation debt, and return debt.
 
 Not delivered:
 
@@ -74,7 +75,7 @@ Native witness remains `C_Z = min(D, P, R, B)`.
 
 Boundary:
 
-The shadow route is not deleted and not hidden. It is demoted to history / HOLD because it failed its own hardened triad27 specificity gate. It can return only with a genuinely new hypothesis, not another incremental score patch.
+Bigger weather is not allowed to hide missing zero-state structure. If relation debt and return debt remain absent, the report must say the debt grammar is partial rather than pretending the full core question is answered.
 
 ## Operating law
 
@@ -98,8 +99,8 @@ Any version that skips this order is a HOLD or RESIST event.
 | `v1.6.13-alpha` | complete | shadow route historical closeout and public-surface cleanup |
 | `v1.6.14-alpha` | complete | native four-gate claim audit and route correction |
 | `v1.6.15-alpha` | complete | native ablation baselines: raw-only, binary-only, dead-safe, no-zero-hold, no-return, no-relation, no-echo |
-| `v1.6.16-alpha` | current | four-corpus triad27 native evidence with trinary lane accounting and ablation comparison |
-| `v1.6.17-alpha` | next candidate | deep81 / wide243 native evidence only after triad27 ablations pass |
+| `v1.6.16-alpha` | complete | four-corpus triad27 native evidence with trinary lane accounting and ablation comparison |
+| `v1.6.17-alpha` | current | deep81 / wide243 native evidence with debt-lane requirement |
 | `v1.6.18-alpha` | next candidate | fresh-seed reproduction and manuscript/evidence correction package planning |
 | `v1.6.19-alpha` | optional hygiene | runs inventory / canonical evidence cleanup, no deletion by default |
 | `v2.0` | deferred review release | stable external-review package, not observed-universe proof |
@@ -234,7 +235,7 @@ Closeout status:
 - `v1.6.0-alpha` to `v1.6.12-alpha` are preserved as historical diagnostic work;
 - `v1.6.13-alpha` demotes the route from active roadmap claim to historical/HOLD;
 - deep81 / wide243 shadow trust is blocked;
-- role-blind discovery language remains forbidden.
+- role-blind discovery language remains forbidden. Historical shadow triad27 specificity was not earned and remains a HOLD boundary.
 
 Read the full history:
 
@@ -321,21 +322,33 @@ Required outputs:
 - trinary confusion table for `+1 / 0 / -1`;
 - ablation comparison.
 
-## v1.6.17-alpha candidate — Deep81 / Wide243 native evidence
+## v1.6.17-alpha — Deep81 / Wide243 native evidence
 
 Purpose:
 
-Only after triad27 passes, test whether the native witness survives deeper perturbation and temporal-depth stress.
+Only after triad27 passes, test whether the native witness survives deeper perturbation and temporal-depth stress while reporting whether relation debt and return debt become visible.
 
 Weather ladder:
 
 - `deep81 = 3^4` perturbation / late-shock bridge;
 - `wide243 = 3^5` temporal-depth / time-axis stress.
 
+Required outputs:
+
+- earned-one preservation;
+- false-one demotion;
+- final false crowns;
+- latent overcrown;
+- relation debt;
+- return debt;
+- ablation wounds;
+- whether zero-state categories are visible or still absent.
+
 Forbidden:
 
 - using bigger weather to hide triad27 weakness;
-- confusing native witness evidence with shadow role-blind discovery.
+- confusing native witness evidence with shadow role-blind discovery;
+- treating absent debt lanes as if the full zero-state debt grammar is answered.
 
 ## v1.6.18-alpha candidate — Fresh-seed reproduction and correction package planning
 

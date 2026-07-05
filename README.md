@@ -1,6 +1,6 @@
 # ZeroGateSim
 
-**Current public line:** `v1.6.16-alpha` — four-corpus triad27 native evidence  
+**Current public line:** `v1.6.17-alpha` — deep81 / wide243 native evidence  
 **Status:** speculative research software / controlled synthetic-field experiment line  
 **Working identity:** zero-gate dimensional emergence simulator  
 **Core question:** can a final trinary witness distinguish earned-one from raw expression pressure, latent overcrown, relation/return debt, and false-one pressure under controlled synthetic-field adversarial weather?
@@ -154,10 +154,10 @@ C_Z^i(t)=\min(D_i(t),P_i(t),R_i(t),B_i(t))
 
 ## Active route
 
-The active route after `v1.6.16-alpha` is:
+The active route after `v1.6.17-alpha` is:
 
 ```text
-four-corpus triad27 evidence -> deep81/wide243 native evidence -> fresh-seed reproduction -> manuscript / evidence correction package
+deep81 / wide243 native evidence -> fresh-seed reproduction -> manuscript / evidence correction package
 ```
 
 The shadow route is **not** the active route now. It is preserved as historical diagnostic work because hardened triad27 lane-specific discrimination did not beat simple baselines strongly enough to earn deeper `deep81` / `wide243` trust.
@@ -171,13 +171,14 @@ Read first:
 - [`docs/native_four_gate_claim_audit.md`](docs/native_four_gate_claim_audit.md)
 - [`docs/native_ablation_baselines.md`](docs/native_ablation_baselines.md)
 - [`docs/native_triad27_evidence.md`](docs/native_triad27_evidence.md)
+- [`docs/native_deepwide_evidence.md`](docs/native_deepwide_evidence.md)
 - [`docs/shadow_route_history_and_closeout.md`](docs/shadow_route_history_and_closeout.md)
 - [`docs/claim_boundary.md`](docs/claim_boundary.md)
 
 
-## Current v1.6.16 gate
+## Current v1.6.17 gate
 
-`v1.6.16-alpha` is the first repaired native evidence gate after the `v1.6.15-alpha` ablation baseline definitions. It evaluates four-corpus `triad27 = 3^3` local-expression weather across distinction, polarity, relation, and return adversarial families.
+`v1.6.17-alpha` adds the repaired `deep81 = 3^4` and `wide243 = 3^5` native evidence gate after the `v1.6.16-alpha` four-corpus `triad27` result. It requires distinction, polarity, relation, and return adversarial families for both deeper weather rungs. The immediate native route history is `v1.6.15-alpha` native ablation baselines followed by `v1.6.16-alpha` four-corpus triad27 native evidence.
 
 The test question is:
 
@@ -185,16 +186,16 @@ The test question is:
 
 The report combines:
 
-- native four-gate seed-block evidence;
+- native seed-block evidence for `deep81` and `wide243`;
 - native ablation baseline results;
 - trinary lane visibility for `+1 / 0 / -1`;
-- explicit decision language that refuses to treat `0` final false crowns as enough by itself.
+- explicit debt-lane reporting for latent overcrown, relation debt, and return debt.
 
-Read: [`docs/native_triad27_evidence.md`](docs/native_triad27_evidence.md).
+Read: [`docs/native_deepwide_evidence.md`](docs/native_deepwide_evidence.md).
 
 Boundary:
 
-This is not Zenodo correction yet, not observed-universe bridge work, not shadow revival, and not proof of physical dimensional genesis. A clean `triad27` result only earns permission to continue to `deep81` / `wide243`. Native witness remains `C_Z = min(D, P, R, B)`.
+This is not Zenodo correction yet, not observed-universe bridge work, not shadow revival, and not proof of physical dimensional genesis. A clean `deep81` / `wide243` result only earns permission to continue to fresh-seed reproduction and correction package planning. Native witness remains `C_Z = min(D, P, R, B)`.
 
 ## Current evidence state
 
