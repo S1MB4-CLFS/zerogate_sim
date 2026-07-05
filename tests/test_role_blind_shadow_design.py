@@ -60,22 +60,22 @@ def test_role_blind_schema_separates_allowed_and_forbidden_fields() -> None:
     assert "raw-strength-only" in data["falsifier"]
 
 
-def test_readme_and_roadmap_point_to_role_blind_design() -> None:
+def test_readme_and_roadmap_preserve_role_blind_design_as_history() -> None:
     readme = _read("README.md")
     roadmap = _read("ROADMAP.md")
+    closeout = _read("docs/shadow_route_history_and_closeout.md")
 
     for needle in [
         "`v1.6.0-alpha`",
         "docs/role_blind_shadow_design.md",
         "docs/role_blind_shadow_schema.json",
-        "docs/assets/role_blind_shadow_design_card.svg",
-        "Role-blind shadow design card",
     ]:
         assert needle in readme
 
-    assert "### v1.6.0-alpha — Role-blind shadow design" in roadmap
-    assert "role-blind shadow is design-only" in roadmap
-    assert "score prototype, report-only" in roadmap
+    assert "docs/assets/role_blind_shadow_design_card.svg" not in readme
+    assert "historical/HOLD" in roadmap
+    assert "v1.6.0-alpha" in closeout
+    assert "role-blind discovery: not earned" in closeout
 
 
 def test_role_blind_design_card_matches_visual_boundary() -> None:

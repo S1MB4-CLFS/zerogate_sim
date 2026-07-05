@@ -1,17 +1,15 @@
 # ZeroGateSim Roadmap
 
-**Current line:** `v1.6.12-alpha` shadow feature implementation  
+**Current line:** `v1.6.13-alpha` shadow route historical closeout / public-surface cleanup  
 **Release posture:** public research-alpha / controlled synthetic-field experiment line
+
+ZeroGateSim already has a generated toy-field proof record; later lines repair, strengthen, and bound what that record can honestly support.
 
 **Runtime support boundary:** Python 3.12 is the required release/test runtime. Details live in [`docs/runtime_ci_support.md`](docs/runtime_ci_support.md).
 
-**Language boundary:** `v1.5.3-alpha` established the controlled synthetic-field language boundary; `v1.5.4-alpha` preserved the historical `wide243` proof floor; `v1.5.5-alpha` reports fresh controlled `deep81` / `wide243` evidence; `v1.6.0-alpha` begins role-blind shadow design without claiming role-blind discovery; `v1.6.1-alpha` separates role-stripped features from targets; `v1.6.2-alpha` adds a transparent report-side score without target loading; `v1.6.3-alpha` adds a baseline/falsifier comparison after scoring; `v1.6.4-alpha` reconciles the historical three-corpus first-alpha proof with the native four-gate mechanism before holdout; `v1.6.5-alpha` adds held-out `deep81` / `wide243` role-stripped evaluation without discovery language; `v1.6.6-alpha` adds triad27 preflight; `v1.6.7-alpha` hardens the weather judge before deeper trust; `v1.6.8-alpha` generates harder cell-level triad27 evidence before deep81 / wide243; `v1.6.9-alpha` adds shadow discrimination repair so density-only pressure detection cannot masquerade as relation/return false-one discrimination; `v1.6.10-alpha` adds lane-specific candidate scores and runs inventory; `v1.6.11-alpha` repairs roadmap truth and defines the next shadow feature-design proposal before implementation; `v1.6.12-alpha` implements observable role-stripped shadow feature candidates without discovery language.
-
-ZeroGateSim already has a first-research-alpha generated toy-field proof record. The v1.5 line uses controlled synthetic-field language only for explicit, seeded, adversarial, bounded experimental reports. The v1.6 line starts a stricter question: can a side-reader estimate false-one risk from observable behavior without reading role labels? The current work is not bigger claims; it is role-stripped evidence with clean falsifiers and explicit baseline comparison.
-
 ## North Star
 
-ZeroGateSim tests whether dimensional expression can be modeled as candidate freedoms passing through a zero-gate cycle of distinction, polarity, relation, and return, then earning final +1 through a trinary witness stack.
+ZeroGateSim tests whether dimensional expression can be modeled as candidate freedoms passing through a zero-gate cycle of distinction, polarity, relation, and return, then earning final `+1` through a trinary witness stack.
 
 Current supported claim:
 
@@ -19,7 +17,7 @@ Current supported claim:
 >
 > Active v1.5 line: inside controlled synthetic fields, final witness reports seed-block, threshold, ablation, and fresh `deep81` / `wide243` four-gate behavior under bounded adversarial pressure.
 >
-> Active v1.6 line: role-blind shadow is design-only until role-stripped scoring, baseline comparison, and holdout evidence prove it can rank false-one-like pressure from observable behavior alone.
+> Closed v1.6 shadow route: role-stripped shadow diagnostics produced useful testing machinery but did not earn role-blind false-one discovery or lane-specific relation/return/demotion discrimination.
 
 Current unsupported claims:
 
@@ -48,57 +46,55 @@ Fresh controlled v1.5 evidence block:
 | `deep81` | perturbation / late-shock bridge | `2,916` | `5,155` | `402` | `639` | `0` |
 | `wide243` | temporal-depth / time-axis stress | `8,748` | `16,217` | `1,242` | `2,043` | `0` |
 
-This evidence block supports the controlled synthetic-field line and role-blind shadow design. It does not prove physical time, gravity, mass, cosmology, or role-blind discovery.
+This evidence block supports the controlled synthetic-field line. It does not prove physical time, gravity, mass, cosmology, or role-blind discovery.
 
-## Current v1.6.12 shadow feature implementation gate
+## Current v1.6.13 gate
 
-`v1.6.12-alpha` implements the feature-design route defined by `v1.6.11-alpha`.
+`v1.6.13-alpha` closes the current shadow route as historical diagnostic work and cleans public surfaces.
 
-Current shadow state remains bounded:
+Purpose:
 
-```text
-native four-gate witness: standing
-shadow density pressure: candidate signal
-shadow relation / return / demotion specificity: not yet earned
-```
+- remove shadow test-result visuals and data from README / ROADMAP surfaces;
+- preserve the role-stripped shadow route in a historical closeout document;
+- keep the native evidence route clear;
+- prevent density-only shadow pressure from being mistaken for role-blind false-one discovery;
+- restore the next route to claim-boundary repair, manuscript correction, runs hygiene, and native evidence strengthening.
 
-This release adds observable, role-stripped engineered feature columns for:
+Delivered:
 
-```text
-density residual pressure
-relation ownership / echo pressure
-relation-return divergence
-return integrity / memory pressure
-demotion trajectory pressure
-zero-hold ambiguity
-gate imbalance / pressure-kind contrast
-```
+- README surface cleanup;
+- ROADMAP surface cleanup;
+- `docs/shadow_route_history_and_closeout.md`;
+- `docs/version_truth.md` update;
+- `docs/release_notes/v1_6_13_alpha.md`.
 
-It also adds fixed feature-aware candidate score columns. These are not learned, not target-tuned, and not detector closeout. They exist so the next hardened triad27 rerun can ask whether pressure kind now beats dumb baselines.
+Boundary:
 
-Success condition:
-
-- README, ROADMAP, metadata, and release notes agree on `v1.6.12-alpha`;
-- role-stripped feature files include engineered feature candidates before target loading;
-- score files include feature-aware candidate lanes while preserving the historical frozen `shadow_score`;
-- tests prove forbidden role/target fields are not used as score input;
-- deep81 / wide243 shadow trust remains blocked until hardened triad27 specificity is earned.
-
-Next bounded route:
-
-| version | gate | condition |
-|---|---|---|
-| `v1.6.13-alpha` | hardened triad27 rerun | test whether v1.6.12 features improve lane specificity beyond dumb baselines |
-| `v1.6.14-alpha` | shadow decision gate | advance, hold diagnostic-only, or demote shadow before deeper weather |
-| `v1.7.0-alpha` | deep81 / wide243 extension | only if hardened triad27 specificity is earned |
+The shadow route is not deleted and not hidden. It is demoted to history / HOLD because it failed its own hardened triad27 specificity gate. It can return only with a genuinely new hypothesis, not another incremental score patch.
 
 ## Operating law
 
 The build order is:
 
-> native geometry -> native math -> code fidelity -> invariant tests -> formal mirrors -> stronger experiments.
+> native geometry -> native math -> code fidelity -> invariant tests -> formal mirrors -> stronger experiments -> claim-boundary repair.
 
 Any version that skips this order is a HOLD or RESIST event.
+
+## Release spine
+
+| line | status | purpose |
+|---|---|---|
+| `v1.0.x-alpha` | complete | first-research-alpha proof record and public source foundation |
+| `v1.1.x-alpha` | complete | public witness pack, claim boundary, reviewer path, visuals |
+| `v1.2.x-alpha` | complete | native math witness lock, invariant tests, scope discipline |
+| `v1.3.x-alpha` | complete | fuzzy / Belnap / paraconsistent / three-valued mirror line |
+| `v1.4.x-alpha` | complete | cross-logic comparison, preset planning, evidence-handoff integrity |
+| `v1.5.x-alpha` | complete/current evidence | controlled synthetic-field language, seed-block, threshold, ablation, deep81/wide243 evidence |
+| `v1.6.0-alpha` - `v1.6.12-alpha` | historical/HOLD | role-stripped shadow route exploration; useful tooling, scientific claim not earned |
+| `v1.6.13-alpha` | current | shadow route historical closeout and public-surface cleanup |
+| `v1.6.14-alpha` | next candidate | manuscript / Zenodo correction package planning, if authorized |
+| `v1.6.15-alpha` | next candidate | runs hygiene and canonical evidence inventory, no deletion by default |
+| `v1.7.0-alpha` | deferred | only after v1.6 closeout: stronger native/effective-dimension bridge or external review route |
 
 ## v1.0-alpha to v1.0.2-alpha — First proof floor
 
@@ -146,1060 +142,163 @@ Native anchors:
 - `Z(0)..Z(4)` — return-depth grammar;
 - `chi_earned` — raw expression plus return-depth, lineage, independence, and role witness.
 
-### v1.2.1-alpha — Version truth repair
+Completed:
 
-Repair README, ROADMAP, package metadata, and public docs so the repo tells one version story.
+- version truth repair;
+- native math witness map;
+- native invariant tests;
+- removal of premature overbuild machinery;
+- simulation win-condition documentation.
 
-Success condition:
+## v1.3-alpha — Known-logic mirrors
 
-- no active file falsely calls the current line `v1.0.2-alpha` or `v1.1-alpha`;
-- release history remains visible instead of being rewritten.
+Purpose:
 
-### v1.2.2-alpha — Native math witness map
+Compare ZeroGateSim against formal mirrors without claiming identity.
 
-Add `docs/math_witness_map.md`.
+Completed:
 
-Each native object must show:
-
-- geometry;
-- manuscript equation;
-- code trace;
-- invariant;
-- external-logic relevance;
-- overclaim boundary.
-
-Success condition:
-
-A reader can trace:
-
-> geometry -> math -> code -> test -> claim boundary.
-
-### v1.2.3-alpha — Native invariant tests
-
-Add `tests/test_native_math_invariants.py`.
-
-Protected commitments:
-
-- `C_Z = min(D, P, R, B)`;
-- return-potential behaves as `D * P * R`;
-- raw expression requires strength and zero-gate coherence threshold passage;
-- zero-depth is ordered and bounded;
-- `0+`, `0`, and `0-` remain distinct;
-- final +1 is not raw +1 automatically.
-
-Success condition:
-
-The tests catch broken gates, broken witness grammar, and accidental overcrown.
-
-### v1.2.4-alpha — Superseded overbuild
-
-Status: superseded by `v1.2.5-alpha`.
-
-A Power-Up / Fail reporting module was added too early. The idea was useful as a human acceptance question, but not ready as engine machinery. It blurred future validation language with current capability.
-
-What was wrong:
-
-- informal operator language became code too soon;
-- future role-blind and later-pressure validation appeared as a ladder before the tests were designed;
-- the roadmap drifted from native math / known-logic comparison into acceptance-reporting machinery.
+- fuzzy / many-valued scoring mirror;
+- Belnap evidence-state mirror;
+- paraconsistent conflict-locality mirror;
+- three-valued compression / loss report;
+- known-logic closeout.
 
 Boundary:
 
-- do not treat `POWER` or “holy-shit detector” language as active product architecture;
-- keep that language only as documentation-level acceptance criteria until tests exist.
+Mirrors show what is preserved, collapsed, or distorted. They do not define ZeroGateSim.
 
-### v1.2.5-alpha — Roadmap repair and surgical scope recovery
-
-Purpose:
-
-Restore the active line to native math fidelity and release-safe simulation criteria.
-
-Changes:
-
-- remove `src/zerogate_sim/power_check.py` from the active package;
-- remove `tests/test_power_check.py`;
-- remove the `zerogate-power-check` console script;
-- add `docs/simulation_win_conditions.md` as a documentation-only translation of “power up or fail”;
-- add `docs/local_tooling_repair.md` for the corrupted-pip / editable-install failure;
-- rewrite ROADMAP so the next steps point toward formal comparison, not accidental machinery.
-
-Success condition:
-
-The active package is back to:
-
-> toy-field proof floor -> native math fidelity -> known logic mirror preparation.
-
-No new gate. No fake detector. No external-logic claim yet.
-
-### v1.2.6-alpha — Local tooling repair note only
+## v1.4-alpha — Cross-logic comparison and evidence handoff
 
 Purpose:
 
-Make the editable-install / broken-pip repair path explicit in docs and quickstart if needed.
-
-Allowed:
-
-- docs-only repair instructions;
-- workflow clarification.
-
-Forbidden:
-
-- engine changes;
-- roadmap expansion;
-- workaround code for a local pip corruption.
-
-### v1.2.7-alpha — Zero-band prediction design, not code yet
-
-Purpose:
-
-Design how to test whether `0+`, `0`, and `0-` predict later maturation, ambiguity, or collapse.
-
-Required before code:
-
-- define later-pressure scenarios;
-- define expected behavior per zero band;
-- define what counts as prediction success;
-- define what falsifies the claim.
-
-Success condition:
-
-The test design exists before any prediction module exists.
-
-## v1.3-alpha — Known logic mirror foundation
-
-Purpose:
-
-Compare ZeroGateSim's native math against known non-binary logic families as projection mirrors, not identity claims.
-
-Forbidden claim:
-
-> ZeroGateSim is Kleene logic, Lukasiewicz logic, Priest logic, Belnap logic, or fuzzy logic.
-
-Allowed claim:
-
-> ZeroGateSim can project its native states and scores into known logic mirrors to see what is preserved, collapsed, or distorted.
-
-### v1.3.0-alpha — Fuzzy / many-valued mirror foundation
-
-Purpose:
-
-Begin the formal mirror line with the closest native mathematical neighbor: continuous fuzzy / many-valued scoring.
-
-Why first:
-
-ZeroGateSim already computes continuous gate scores and native weakest-gate coherence:
-
-```text
-C_Z = min(D, P, R, B)
-```
-
-This can be compared safely against other continuous conjunction mirrors without claiming equivalence.
-
-Delivered:
-
-- `docs/known_logic_boundary.md`;
-- `docs/fuzzy_mirror.md`;
-- `src/zerogate_sim/fuzzy_mirror.py`;
-- `tests/test_fuzzy_mirror.py`;
-- matrix outputs:
-  - `matrix_fuzzy_mirror_trace.csv`;
-  - `matrix_fuzzy_mirror_candidate_summary.csv`;
-  - `matrix_fuzzy_mirror_read.md`.
-
-Comparison mirrors:
-
-- native min gate;
-- product gate;
-- average gate;
-- Lukasiewicz-style conjunction;
-- strength-min-native pressure.
-
-Key diagnostic:
-
-- `average_overcrown_pressure`: average gate passes threshold while native min gate fails.
-
-Success condition:
-
-A matrix run can show where ZeroGateSim behaves like fuzzy scoring, where average aggregation hides a wounded gate, and why a high fuzzy score remains pressure rather than final earned-one.
-
-Boundary:
-
-No new core gate. No final truth claim. No identity with fuzzy logic.
-
-### v1.3.1-alpha — Belnap evidence-state mirror
-
-Purpose:
-
-Compare ZeroGateSim's raw-expression / earned-one / false-one / hold grammar with evidence-state logic.
-
-Delivered:
-
-- `docs/belnap_mirror.md`;
-- `src/zerogate_sim/belnap_mirror.py`;
-- `tests/test_belnap_mirror.py`;
-- matrix outputs:
-  - `matrix_belnap_mirror_summary.csv`;
-  - `matrix_belnap_mirror_read.md`.
-
-Projection target:
-
-- `T` / true-only: evidence for final +1 without contrary witness;
-- `F` / false-only: evidence against final +1 without positive expression pressure;
-- `B` / both: raw expression or positive-looking pressure plus false-one / latent / relation-debt witness;
-- `N` / neither: clean hold / insufficient evidence.
-
-Key diagnostic:
-
-- Belnap `B` conflict-pressure: positive-looking pressure and contrary witness coexist locally.
-
-Success condition:
-
-The projection exposes whether ZeroGateSim preserves local conflict instead of flattening it or crowning it.
-
-Boundary:
-
-A Belnap `B` state is not a native final +1. It is pressure under conflict. The native earned-one witness still decides final output.
-
-### v1.3.1-alpha companion — Assistant test handoff bundle
-
-Purpose:
-
-Create one uploadable bundle after local test gates so future continuation can read test status, git state, notes, and optional result files.
-
-Delivered:
-
-- `docs/assistant_test_handoff.md`;
-- `src/zerogate_sim/test_handoff.py`;
-- `tests/test_assistant_test_handoff.py`.
-
-Use local-source mode:
-
-```powershell
-$env:PYTHONPATH = (Join-Path (Get-Location) "src")
-& $P -m zerogate_sim.test_handoff --version v1.3.1-alpha --status passed --note "full test suite passed" --out runs\assistant_test_handoff_v1_3_1_alpha
-```
-
-Boundary:
-
-This bundle is a continuation aid, not a truth machine and not a release gate by itself.
-
-### v1.3.2-alpha — Paraconsistent conflict-locality mirror
-
-Purpose:
-
-Test whether contradiction pressure stays local.
-
-Delivered:
-
-- `docs/paraconsistent_mirror.md`;
-- `src/zerogate_sim/paraconsistent_mirror.py`;
-- `tests/test_paraconsistent_mirror.py`;
-- matrix outputs:
-  - `matrix_paraconsistent_mirror_summary.csv`;
-  - `matrix_paraconsistent_mirror_read.md`.
-
-Core rule:
-
-> raw +1 plus debt must not explode into arbitrary final +1.
-
-Projection target:
-
-- `conflict_localized`: Belnap-both conflict pressure is held or demoted instead of crowned;
-- `conflict_overcrowned`: Belnap-both conflict pressure becomes final +1 and must be inspected as a breach;
-- `true_without_conflict`: positive evidence without contrary witness;
-- `false_without_conflict`: contrary witness without positive pressure;
-- `neither_without_conflict`: no decisive pressure.
-
-Key diagnostic:
-
-- `local_explosion_flag`: conflict pressure was crowned as final +1.
-
-Success condition:
-
-Conflicting evidence can be reported without crowning unrelated candidates or confirming the whole run.
-
-Boundary:
-
-This is not Priest logic and not a native gate. It is a projection mirror that reads conflict-locality pressure after the native final-output witness.
-
-### v1.3.3-alpha — Kleene / Lukasiewicz compression and loss mirror
-
-Purpose:
-
-Test what gets lost when native final trinary output compresses to true / unknown / false.
-
-Delivered:
-
-- `docs/three_valued_mirror.md`;
-- `src/zerogate_sim/three_valued_mirror.py`;
-- `tests/test_three_valued_mirror.py`;
-- matrix outputs:
-  - `matrix_three_valued_mirror_summary.csv`;
-  - `matrix_three_valued_mirror_read.md`.
-
-Projection:
-
-- final `+1` earned-one -> `T` true;
-- final `0` witness / hold / debt / wound -> `U` unknown;
-- final `-1` resist / rejection / demotion -> `F` false.
-
-Required loss report:
-
-- native zero-state detail collapses into one middle value;
-- temporal lineage and echo-debt information are lost;
-- raw expression vs earned-one must remain externally explained.
-
-Boundary:
-
-This is not full Kleene K3 or Lukasiewicz L3 semantics. It is a value-level compression mirror that prepares the ground for deeper truth-table comparison only if later needed.
-
-### v1.3.4-alpha — v1.3 mirror closeout
-
-Purpose:
-
-Confirm that the fuzzy, Belnap, paraconsistent, and K3/L3 mirrors are projections with explicit loss reports before moving into wider comparison.
-
-Delivered:
-
-- `src/zerogate_sim/known_logic_closeout.py`;
-- `tests/test_known_logic_closeout.py`;
-- `docs/known_logic_closeout.md`;
-- `matrix_known_logic_closeout_summary.csv`;
-- `matrix_known_logic_closeout_read.md`.
-
-Success condition:
-
-A reader can see which mirror is useful for which pressure and where each mirror lies if overused. The closeout report must not turn projection into borrowed authority.
-
-
-### v1.3.5-alpha / v1.3.6-alpha — Runtime support archive
-
-Runtime support details moved to [`docs/runtime_ci_support.md`](docs/runtime_ci_support.md). README and ROADMAP keep only the active runtime boundary so the research spine stays readable.
-
-## v1.4-alpha — Cross-logic comparison report
-
-Purpose:
-
-Aggregate fuzzy, Belnap, paraconsistent, and K3/L3 projection closeout results across completed matrix runs.
-
-### v1.4.0-alpha — Cross-logic report foundation
-
-Delivered:
-
-- `docs/known_logic_comparison_report.md`;
-- `src/zerogate_sim/cross_logic_report.py`;
-- `tests/test_cross_logic_report.py`;
-- console script: `zerogate-cross-logic`;
-- report outputs:
-  - `cross_logic_comparison_summary.csv`;
-  - `cross_logic_comparison_matrix_summary.csv`;
-  - `cross_logic_comparison_mirror_summary.csv`;
-  - `cross_logic_comparison_read.md`;
-  - `cross_logic_report_bundle.zip`.
-
-Success condition:
-
-A reader can see which external logic mirror is useful for which pressure across completed runs, where safety breaches appear, and what each mirror loses.
-
-Boundary:
-
-This line reads completed toy-field evidence. It does not run a new proof harness, mutate the native gate, or claim equivalence with any external logic system.
-
-### v1.4.1-alpha — Stronger run comparison preset
-
-Purpose:
-
-Define small, repeatable comparison recipes for reading multiple completed matrix runs without turning the preset itself into a proof harness.
-
-Delivered:
-
-- `src/zerogate_sim/comparison_preset.py`;
-- `tests/test_comparison_preset.py`;
-- `docs/cross_logic_comparison_presets.md`;
-- console script: `zerogate-cross-logic-preset`;
-- generated local outputs:
-  - `comparison_preset_read.md`;
-  - `comparison_preset_manifest.csv`;
-  - `run_preset.ps1`.
-
-Preset families:
-
-- `quick_smoke` — wiring check;
-- `adversary_triad27` — small distinction / polarity / relation / return adversary comparison;
-- `wide_adversary_probe` — heavier wide243 four-gate adversary probe.
-
-Success condition:
-
-A reader can generate a repeatable run plan for stronger cross-logic comparison while preserving the boundary: a preset is a plan, not evidence.
-
-Boundary:
-
-This version writes commands. It does not run heavy matrices automatically, does not mutate the native gate, and does not claim stronger proof until generated outputs are actually produced and reviewed.
-
-
-### v1.4.2-alpha — Truth-safe handoff and preset path repair
-
-Purpose:
-
-Repair the continuation/test handoff layer so it cannot silently omit requested result files or print ambiguous paths.
-
-Delivered:
-
-- strict include checking in `src/zerogate_sim/test_handoff.py`;
-- `--allow-missing-include` only for explicit optional missing files;
-- include audit and missing-include count in handoff JSON/Markdown;
-- generated preset scripts check the exact cross-logic report path before building the handoff;
-- generated preset scripts print the exact ZIP path to upload.
-
-Success condition:
-
-A handoff that says tests passed must either contain the requested evidence files or fail loudly. No silent skipped include. No wrong report path hidden behind a green-looking bundle.
-
-Boundary:
-
-This is infrastructure truth repair. No native gate change, no new mirror, no new simulation claim.
-
-### v1.4.3-alpha — Unique handoff include path repair
-
-Purpose:
-
-Repair the second continuation/test handoff wound: different result files with the same basename must not collapse into one bundled file.
-
-Delivered:
-
-- source-relative include paths are preserved under `included/`;
-- include audit records `source_relative_path`;
-- duplicate basenames from distinction / polarity / relation matrix folders remain separate in the ZIP;
-- tests prove same-named closeout files keep distinct contents in the bundle.
-
-Success condition:
-
-A handoff that includes three `matrix_known_logic_closeout_read.md` files from three run folders must preserve all three as distinct evidence files with distinct contents.
-
-Boundary:
-
-This is infrastructure truth repair. No native gate change, no new mirror, no new simulation claim.
-
-### v1.4.4-alpha — Four-gate adversary coverage lock
-
-Purpose:
-
-Align adversary comparison presets with the native four-gate witness cycle: distinction, polarity, relation, and observed return.
-
-Delivered:
-
-- `adversary_return` candidate profile;
-- `return_triad27` in the `adversary_triad27` preset;
-- `return_wide243` in the `wide_adversary_probe` preset;
-- preset coverage helpers and tests that require four-gate adversary presets to cover every native gate.
-
-Success condition:
-
-A four-gate adversary preset cannot be treated as complete unless its dedicated run coverage equals the native gate set: distinction, polarity, relation, and return.
-
-Boundary:
-
-This is coverage repair for run planning. It does not change the native gate law, the mirror layer, or the final-output claim boundary.
-
-### v1.4.5-alpha — v1.2-to-v1.4.4 learning report
-
-Purpose:
-
-Capture the research arc from native math lock through four-gate adversary coverage as professional paper-two source material before moving into stronger experiments.
-
-Delivered:
-
-- `docs/reports/v1_2_to_v1_4_4_learning_report.md`;
-- report boundary language for what the line established and what remains unproven;
-- next-experiment criteria for v1.5 seed-block, sensitivity, and ablation work.
-
-Success condition:
-
-The repo has one concise, citable internal note explaining what v1.2-v1.4.4 established without overstating the proof record or turning development history into an apology log.
-
-Boundary:
-
-This is a research-record note. It does not change the native gate law, rerun evidence, or claim physics.
-
-## v1.5-alpha — Stronger controlled synthetic-field experiments
-
-Purpose:
-
-Move from single readiness runs toward seed-block evidence, sensitivity analysis, and mechanism-necessity tests without pretending role-blind discovery is solved.
-
-### v1.5.0-alpha — Seed-block four-gate adversary report
-
-Purpose:
-
-Read completed distinction, polarity, relation, and return adversary matrix runs as one controlled seed-block report.
-
-Delivered:
-
-- `src/zerogate_sim/seed_block_report.py`;
-- `tests/test_seed_block_report.py`;
-- `docs/seed_block_four_gate_report.md`;
-- console script: `zerogate-seed-block-report`;
-- report outputs:
-  - `seed_block_four_gate_summary.csv`;
-  - `seed_block_four_gate_mirror_summary.csv`;
-  - `seed_block_four_gate_read.md`;
-  - `seed_block_report_bundle.zip`.
-
-Success condition:
-
-The four-gate adversary report preserves pressure visibility while keeping final false-one crowns at zero, or it reports the exact breach without hiding it.
-
-Boundary:
-
-The report reads completed controlled synthetic-field evidence. It does not mutate the native gate law, run a new proof harness by itself, solve role-blind detection, or claim physical dimensional genesis.
-
-### v1.5.1-alpha — Threshold sensitivity report
-
-Purpose:
-
-Compare completed seed-block four-gate reports across gate and/or strength threshold variants to test whether the result is stable or brittle.
-
-Delivered:
-
-- optional matrix threshold overrides: `--gate-threshold` and `--strength-threshold`;
-- `src/zerogate_sim/threshold_sensitivity.py`;
-- `tests/test_threshold_sensitivity.py`;
-- `docs/threshold_sensitivity_report.md`;
-- console script: `zerogate-threshold-sensitivity`;
-- report outputs:
-  - `threshold_sensitivity_summary.csv`;
-  - `threshold_sensitivity_gate_summary.csv`;
-  - `threshold_sensitivity_mirror_summary.csv`;
-  - `threshold_sensitivity_read.md`;
-  - `threshold_sensitivity_bundle.zip`.
-
-Success condition:
-
-The report identifies stable operating bands, sensitive-but-nonbreaching movement, and any threshold variant where final false-one crowns or mirror safety breaches appear.
-
-Boundary:
-
-This report reads completed threshold-variant evidence. It does not change the native gate law, solve role-blind detection, or claim physical dimensional genesis.
-
-### v1.5.2-alpha — Witness ablation report
-
-Purpose:
-
-Run post-hoc witness ablation accounting over completed four-gate matrix outputs before heavier rerun-style ablations are attempted. This version does not mutate the native gate law. It asks what would be promoted or hidden if selected final witness layers were disabled in the report layer.
-
-Delivered:
-
-- `src/zerogate_sim/witness_ablation_report.py`;
-- `tests/test_witness_ablation_report.py`;
-- `docs/witness_ablation_report.md`;
-- console script: `zerogate-witness-ablation`;
-- report outputs:
-  - `witness_ablation_summary.csv`;
-  - `witness_ablation_gate_summary.csv`;
-  - `witness_ablation_read.md`;
-  - `witness_ablation_bundle.zip`.
-
-Ablation variants:
-
-- `control` — recorded native final witness;
-- `raw_as_final` — raw expression is treated as final +1;
-- `no_false_one_demotion` — trap raw expression is allowed to crown;
-- `no_latent_hold` — latent/probe overcrown is promoted;
-- `no_echo_independence` — relation/echo debt is promoted.
-
-Success condition:
-
-Critical witness layers should show measurable consequence when removed. If an ablation promotes false-one crowns or hides pressure, the report must expose it. If a layer can be removed without effect, it must be treated as unsupported until stronger rerun-style ablation is designed.
-
-Boundary:
-
-This is a post-hoc accounting ablation over completed controlled synthetic-field outputs. It does not rerun the simulator with altered mechanics, solve role-blind detection, or claim physical dimensional genesis.
-
-### v1.5.3-alpha — Controlled synthetic-field language boundary
-
-Purpose:
-
-Create the language boundary that lets the active v1.5 experiment line say `controlled synthetic field` without erasing the historical `toy field` proof record or implying physics validation.
-
-Delivered:
-
-- `docs/controlled_synthetic_field_language.md`;
-- updated `docs/runtime_ci_support.md` with runtime-history detail moved out of README/ROADMAP;
-- slim README/ROADMAP runtime wording;
-- release note and boundary test.
-
-Language rule:
-
-- use `generated toy field` for the first-research-alpha proof record and manuscript lineage;
-- use `controlled synthetic field` for v1.5+ seeded, parameterized, adversarial matrix experiments with explicit report bundles;
-- reserve `adversarial synthetic benchmark` for later role-blind, independent-generator, externally reproducible work.
-
-Trinary weather ladder:
-
-- `triad27 = 3^3` varies noise, relation, and expansion pressure;
-- `deep81 = 3^4` adds perturbation pressure;
-- `wide243 = 3^5` adds temporal-depth / time-axis pressure.
-
-Boundary:
-
-This language checkpoint does not change the native gate law, rerun evidence, solve role-blind detection, or claim physical dimensional genesis.
+Aggregate completed mirror pressure and preserve evidence handoff integrity.
+
+Completed:
+
+- cross-logic comparison report;
+- comparison presets;
+- handoff validity repairs;
+- four-gate adversary preset coverage: distinction, polarity, relation, return;
+- learning-arc source note.
 
 ### v1.5.4-alpha — Wide243 historical evidence intake
 
 Purpose:
 
-Record the uploaded original and fresh-seed `wide243` proof archives as historical evidence intake before fresh heavy controlled reruns are attempted.
+Preserve the old `wide243` first-alpha proof floor as historical evidence intake before the fresh controlled `deep81` / `wide243` evidence reports.
 
-Delivered:
+Read: [`docs/reports/wide243_historical_evidence_intake.md`](docs/reports/wide243_historical_evidence_intake.md).
 
-- `docs/reports/wide243_historical_evidence_intake.md`;
-- `docs/release_notes/v1_5_4_alpha.md`;
-- text boundary test for historical evidence language.
+Next evidence order at that point was to run fresh controlled `deep81` four-gate evidence before spending trust on fresh controlled `wide243`.
 
-Evidence sources:
-
-- `proof_wide243_0_8_v033` — original first-research-alpha archive;
-- `proof_wide243_9_17_repro` — fresh-seed reproduction archive.
-
-Combined historical intake:
-
-- `13,122` seeded runs;
-- `22,131` final earned-one events;
-- `2,388` raw false-one pressures detected and demoted;
-- `2,442` latent overcrown pressures held in zero;
-- `0` final false-one crowns;
-- `0` trap final crowns.
-
-Trinary weather ladder:
-
-- `triad27 = 3^3` varies noise, relation, and expansion pressure;
-- `deep81 = 3^4` adds perturbation / late-shock pressure;
-- `wide243 = 3^5` adds temporal-depth / time-axis pressure.
-
-Boundary:
-
-This is historical evidence intake. The uploaded `wide243` proof archives remain three-corpus first-research-alpha proof records. They evaluate return internally through the native `C_Z = min(D, P, R, B)` gate law, but they are not the same as the newer four-gate adversary preset line with a dedicated return-adversary corpus.
-
-Next evidence order:
-
-- use `v1.5.4` to preserve the old `wide243` proof floor;
-- run a fresh non-smoke threshold sweep before spending heavy compute;
-- run fresh controlled `deep81` four-gate evidence as the perturbation bridge;
-- run fresh controlled `wide243` four-gate evidence after `deep81` is clean or if disk/time are deliberately allocated;
-- use those outputs to inform `v1.6` role-blind shadow design.
-
-### v1.5.5-alpha — Fresh controlled deep81/wide243 evidence report
+## v1.5-alpha — Controlled synthetic-field evidence
 
 Purpose:
 
-Preserve the fresh controlled `deep81` and `wide243` four-gate evidence runs as repo history, README visuals, visual-source data, and paper-source reports.
+Move beyond the first proof floor into stronger controlled reports while preserving claim boundary.
 
-Delivered:
+Completed:
 
-- `docs/reports/fresh_controlled_deep81_four_gate_evidence_report.md`;
-- `docs/reports/fresh_controlled_wide243_four_gate_evidence_report.md`;
-- `docs/reports/fresh_controlled_81_243_visual_source.csv`;
-- `docs/assets/fresh_controlled_deep81_evidence_card.svg`;
-- `docs/assets/fresh_controlled_wide243_evidence_card.svg`;
-- `docs/release_notes/v1_5_5_alpha.md`;
-- text tests for report numbers, README visual links, and native-math boundary.
-
-Evidence summary:
-
-- `deep81`: `2,916` runs, `5,155` earned-one events, `402` raw false-one pressures, `639` latent overcrown pressures, `0` final false-one crowns;
-- `wide243`: `8,748` runs, `16,217` earned-one events, `1,242` raw false-one pressures, `2,043` latent overcrown pressures, `0` final false-one crowns.
-
-Derived evidence metrics:
-
-- `rho_F = F_raw / N_runs` — raw false-one pressure rate;
-- `rho_L = L_held / N_runs` — latent overcrown hold rate;
-- `K_R = F_relation / sum_g F_g` — relation wound concentration;
-- `A_F = max(F_final^ablation) - F_final^control` — false-crown dependence under ablation;
-- `S_tau = B_tau+ - B_tau-` — temporal-stretch severity for `wide243`.
+- seed-block four-gate report;
+- threshold sensitivity report;
+- witness ablation report;
+- controlled synthetic-field language boundary;
+- historical `wide243` evidence intake;
+- fresh controlled `deep81` / `wide243` evidence reports and visual cards.
 
 Boundary:
 
-No new native gate. No engine change. No physics claim. Native `C_Z = min(D, P, R, B)` remains the coherence witness. These metrics are report readers for completed controlled synthetic-field evidence.
+No new native gate. No engine mutation disguised as evidence. No physics claim. Native `C_Z = min(D, P, R, B)` remains the coherence witness.
 
-Role-blind implication:
+## v1.6-alpha — Shadow route exploration, now historical/HOLD
 
-The strongest first shadow signals should be relation false-pressure concentration, temporal-stretch sensitivity, latent-hold dependence, raw-as-final crown risk, and false-one demotion dependence. Echo/relation-debt alone is weak in these runs because relation/return debt stayed `0`.
+Purpose at launch:
 
-## v1.6-alpha — Role-blind shadow line
+Ask a stricter side-question: can role-stripped observable behavior rank false-one-like pressure without designed role labels?
 
-Purpose:
+Scientific outcome:
 
-Move from role-aware harness validation toward a conservative role-stripped side-reader. The shadow line must never pretend that role-aware proof is role-blind discovery.
+The current shadow route did not earn role-blind false-one discovery. It produced useful tooling, stronger baselines, triad27 hardening, and a better understanding of why pressure-density is not the same as false-one-kind discrimination.
 
-### v1.6.0-alpha — Role-blind shadow design
+Closeout status:
 
-Purpose:
+- `v1.6.0-alpha` to `v1.6.12-alpha` are preserved as historical diagnostic work;
+- `v1.6.13-alpha` demotes the route from active roadmap claim to historical/HOLD;
+- deep81 / wide243 shadow trust is blocked;
+- role-blind discovery language remains forbidden.
 
-Define the role-blind shadow before implementation. The shadow estimates false-one-like pressure from observable behavior, not from designed truth-role labels.
+Read the full history:
 
-Delivered:
+- [`docs/shadow_route_history_and_closeout.md`](docs/shadow_route_history_and_closeout.md)
 
-- `docs/role_blind_shadow_design.md`;
-- `docs/role_blind_shadow_schema.json`;
-- `docs/assets/role_blind_shadow_design_card.svg`;
-- `docs/release_notes/v1_6_0_alpha.md`;
-- text tests for role-blind design boundaries.
+Historical version index, without result tables or visuals:
 
-Allowed observables:
+| version | historical role |
+|---|---|
+| `v1.6.0-alpha` | role-blind shadow design |
+| `v1.6.1-alpha` | role-stripped feature extraction |
+| `v1.6.2-alpha` | transparent shadow score prototype |
+| `v1.6.3-alpha` | shadow baseline/falsifier report |
+| `v1.6.4-alpha` | four-gate reconciliation / return audit |
+| `v1.6.5-alpha` | shadow holdout evaluator tooling |
+| `v1.6.6-alpha` | triad27 preflight |
+| `v1.6.7-alpha` | shadow weather hardening judge |
+| `v1.6.8-alpha` | hardened triad27 cell-level evidence generator |
+| `v1.6.9-alpha` | residual shadow discrimination repair |
+| `v1.6.10-alpha` | lane discrimination and runs inventory |
+| `v1.6.11-alpha` | route audit and feature design |
+| `v1.6.12-alpha` | feature implementation, not discovery |
+| `v1.6.13-alpha` | historical closeout / HOLD |
 
-- gate vectors and weakest-gate pressure;
-- relation wound and return gap;
-- zero-depth instability;
-- lineage and independence weakness where these are observable report fields;
-- threshold fragility;
-- temporal fragility;
-- ablation crown risk.
-
-Forbidden inputs:
-
-- `trap` / `expresser` / `latent/probe` labels;
-- `truth_role` or `role_label` fields;
-- `candidate_profile` as a classification shortcut;
-- any designed answer key used before scoring.
-
-Design score:
-
-```text
-S_shadow = w_R G_R + w_B G_B + w_L L + w_I I + w_T T_f + w_H H_f + w_A A
-```
-
-Boundary:
-
-This is not a detector yet. It is not role-blind discovery. It does not replace the current role-aware witness or the native `C_Z = min(D, P, R, B)` coherence law.
-
-Falsifier:
-
-If a role-stripped shadow report cannot separate known false-pressure-heavy cases from clean earned-one cases better than raw-strength-only, weakest-gate-only, and random baselines, the shadow is not earned.
-
-Completed follow-ups preserved for the design boundary:
-
-- `v1.6.2-alpha` — transparent shadow score prototype, report-only;
-- `v1.6.3-alpha` — baseline comparison and falsifier report.
-
-Completed follow-ups:
-
-- `v1.6.4-alpha` — four-gate reconciliation / return-adversary audit;
-- `v1.6.5-alpha` — holdout `deep81` / `wide243` role-stripped evaluator tooling.
-
-Completed follow-ups:
-
-- `v1.6.6-alpha` — triad27 shadow preflight before deeper holdout evidence;
-- `v1.6.7-alpha` — shadow weather hardening foundation across triad27/deep81/wide243 evidence; no score retuning; expanded target diagnostics.
-- `v1.6.8-alpha` — hardened triad27 cell-level evidence generator; exact baseline fields before score repair or deeper weather.
-
-
-### v1.6.1-alpha — Role-stripped feature extraction report
+## v1.6.14-alpha candidate — Manuscript / Zenodo correction package planning
 
 Purpose:
 
-Read completed seed-block and witness-ablation summaries and write role-stripped feature files without designed truth-role shortcut fields.
+Prepare a correction package that clearly separates:
 
-Delivered:
+- historical first-alpha three-corpus proof shape;
+- native four-gate mechanism;
+- later four-gate controlled evidence;
+- shadow route historical closeout;
+- what must be updated in any public manuscript / Zenodo version.
 
-- `src/zerogate_sim/role_stripped_feature_report.py`;
-- console script `zerogate-role-stripped-features`;
-- `docs/role_stripped_feature_extraction.md`;
-- `docs/assets/role_stripped_feature_extraction_card.svg`;
-- `docs/release_notes/v1_6_1_alpha.md`;
-- tests for feature/target separation and forbidden-field audit.
+Allowed:
 
-Outputs:
+- docs;
+- correction note;
+- manuscript boundary language;
+- checklist for new version upload.
 
-- `role_stripped_profile_features.csv`;
-- `role_stripped_family_features.csv`;
-- `role_stripped_evaluation_targets.csv`;
-- `role_stripped_feature_read.md`;
-- `role_stripped_forbidden_field_audit.json`;
-- `role_stripped_feature_bundle.zip`.
+Forbidden:
 
-Boundary:
+- backdating history;
+- hiding failed shadow evidence;
+- claiming role-blind discovery;
+- changing old proof numbers to make the route look cleaner.
 
-The feature files are role-stripped inputs. The evaluation target file remains separate and must not be loaded by a future shadow scorer. This is not a detector, not role-blind discovery, and not a replacement for the native `C_Z = min(D, P, R, B)` witness.
-
-Completed follow-ups:
-
-- `v1.6.2-alpha` — transparent shadow score prototype;
-- `v1.6.3-alpha` — baseline comparison and falsifier report.
-
-Completed follow-ups:
-
-- `v1.6.4-alpha` — four-gate reconciliation / return-adversary audit;
-- `v1.6.5-alpha` — holdout `deep81` / `wide243` role-stripped evaluator tooling.
-
-Completed follow-ups:
-
-- `v1.6.6-alpha` — triad27 shadow preflight before deeper holdout evidence;
-- `v1.6.7-alpha` — shadow weather hardening foundation across triad27/deep81/wide243 evidence; no score retuning; expanded target diagnostics.
-- `v1.6.8-alpha` — hardened triad27 cell-level evidence generator; exact baseline fields before score repair or deeper weather.
-
-
-### v1.6.2-alpha — Transparent shadow score prototype
+## v1.6.15-alpha candidate — Runs hygiene and canonical evidence inventory
 
 Purpose:
 
-Read the role-stripped feature files from `v1.6.1-alpha` and write a fixed-weight transparent shadow score before any target comparison is allowed.
+Clean `runs/` by classification, not vibes.
 
-Delivered:
+Allowed:
 
-- `src/zerogate_sim/shadow_score_report.py`;
-- console script `zerogate-shadow-score`;
-- `docs/transparent_shadow_score.md`;
-- `docs/assets/transparent_shadow_score_card.svg`;
-- `docs/release_notes/v1_6_2_alpha.md`;
-- tests for score output, role/answer-key refusal, monotonic fixture behavior, and documentation boundary.
+- inventory;
+- keep/archive/delete recommendation;
+- protect historical evidence roots;
+- keep latest assistant handoff per evidence branch.
 
-Outputs:
+Forbidden:
 
-- `shadow_score_profile_scores.csv`;
-- `shadow_score_family_scores.csv`;
-- `shadow_score_read.md`;
-- `shadow_score_formula.json`;
-- `shadow_score_forbidden_field_audit.json`;
-- `shadow_score_bundle.zip`.
-
-Transparent score:
-
-```text
-N(x) = x / (1 + x)
-S_shadow = sum_j w_j N(x_j)
-```
-
-Boundary:
-
-The scorer reads role-stripped feature files only. It does not load `role_stripped_evaluation_targets.csv`, `truth_role`, `role_label`, `candidate_profile`, or answer keys. It is report-only: no crowns, no demotions, no role-blind discovery claim, and no change to `C_Z = min(D, P, R, B)`.
-
-Completed follow-up: `v1.6.3-alpha` — baseline comparison and falsifier report.
-
-### v1.6.3-alpha — Shadow baseline/falsifier report
-
-Purpose:
-
-Compare already-written transparent shadow scores against separated evaluation targets and trivial role-stripped baselines after scoring has happened. The report asks whether the shadow ranks known false-one-like pressure better than available baselines without using role labels as score inputs.
-
-Delivered:
-
-- `src/zerogate_sim/shadow_baseline_falsifier_report.py`;
-- console script `zerogate-shadow-baseline-falsifier`;
-- `docs/shadow_baseline_falsifier.md`;
-- `docs/assets/shadow_baseline_falsifier_card.svg`;
-- `docs/release_notes/v1_6_3_alpha.md`;
-- tests for comparison output, target/role-field refusal, metrics, and documentation boundary.
-
-Outputs:
-
-- `shadow_baseline_profile_comparison.csv`;
-- `shadow_baseline_family_comparison.csv`;
-- `shadow_baseline_model_metrics.csv`;
-- `shadow_baseline_falsifier_read.md`;
-- `shadow_baseline_falsifier_metrics.json`;
-- `shadow_baseline_falsifier_audit.json`;
-- `shadow_baseline_falsifier_bundle.zip`.
-
-Boundary:
-
-This is not role-blind discovery. It does not crown, demote, or replace the role-aware witness. It records exact-baseline schema gaps instead of inventing missing evidence, and it does not change `C_Z = min(D, P, R, B)`.
-
-Completed follow-ups:
-
-- `v1.6.4-alpha` — four-gate reconciliation / return-adversary audit;
-- `v1.6.5-alpha` — holdout `deep81` / `wide243` role-stripped evaluator tooling.
-
-Completed follow-ups:
-
-- `v1.6.6-alpha` — triad27 shadow preflight before deeper holdout evidence;
-- `v1.6.7-alpha` — shadow weather hardening foundation across triad27/deep81/wide243 evidence; no score retuning; expanded target diagnostics.
-- `v1.6.8-alpha` — hardened triad27 cell-level evidence generator; exact baseline fields before score repair or deeper weather.
-
-### v1.6.4-alpha — Four-gate reconciliation / return-adversary audit
-
-Purpose:
-
-Repair the public claim lane before holdout by separating the historical first-alpha proof shape from the native four-gate mechanism.
-
-Delivered:
-
-- `src/zerogate_sim/four_gate_reconciliation_report.py`;
-- console script `zerogate-four-gate-reconciliation`;
-- `docs/four_gate_reconciliation.md`;
-- `docs/release_notes/v1_6_4_alpha.md`;
-- final-output safety readout repair: final false-one crowns are computed from rows, not hardcoded in report text;
-- tests for native four-gate / historical three-corpus separation and forbidden claim-language detection.
-
-Correct public sentence:
-
-```text
-The historical first-alpha proof is a three-corpus pre-return adversarial proof with return measured as a native gate and final witness requirement; later controlled evidence adds dedicated return-adversary coverage.
-```
-
-Success condition:
-
-The repo can state the limitation without panic or backdating: historical first-alpha used three dedicated corpora; native `C_Z = min(D, P, R, B)` remains four-gate; later controlled evidence carries dedicated return-adversary coverage.
-
-Boundary:
-
-No new proof harness, no native math change, no role-blind discovery claim. This version repairs evidence language before holdout.
-
-Completed follow-up:
-
-- `v1.6.5-alpha` — holdout `deep81` / `wide243` role-stripped evaluation.
-
-Completed follow-ups:
-
-- `v1.6.6-alpha` — triad27 shadow preflight before deeper holdout evidence;
-- `v1.6.7-alpha` — shadow weather hardening foundation across triad27/deep81/wide243 evidence; no score retuning; expanded target diagnostics.
-- `v1.6.8-alpha` — hardened triad27 cell-level evidence generator; exact baseline fields before score repair or deeper weather.
-
-### v1.6.5-alpha — Shadow holdout evaluation
-
-Purpose:
-
-Evaluate already-written transparent shadow scores on declared held-out `deep81` / `wide243` role-stripped evidence after the four-gate reconciliation gate.
-
-Delivered:
-
-- `src/zerogate_sim/shadow_holdout_evaluation_report.py`;
-- console script `zerogate-shadow-holdout-evaluation`;
-- `docs/shadow_holdout_evaluation.md`;
-- `docs/release_notes/v1_6_5_alpha.md`;
-- tests for holdout source coverage, score-before-target boundary, forbidden-field refusal, output files, and documentation boundaries;
-- opaque non-sequential family IDs in the role-stripped feature extractor to reduce row-order/gate-family leakage.
-
-Boundary:
-
-This is not role-blind discovery and not a detector closeout. It evaluates a frozen transparent score against held-out targets only after scoring. The native witness remains `C_Z = min(D, P, R, B)`.
-
-Completed follow-ups:
-
-- `v1.6.6-alpha` — triad27 shadow preflight before deeper holdout evidence;
-- `v1.6.7-alpha` — shadow weather hardening foundation across triad27/deep81/wide243 evidence; no score retuning; expanded target diagnostics.
-- `v1.6.8-alpha` — hardened triad27 cell-level evidence generator; exact baseline fields before score repair or deeper weather.
-
-### v1.6.7-alpha — Shadow weather hardening foundation
-
-Purpose:
-
-- stop the shadow line from treating a baseline tie as evidence;
-- evaluate triad27, deep81, and wide243 under one harder report surface;
-- expand evaluation targets beyond raw false-one rate;
-- show native gate pressure beside shadow diagnostics;
-- preserve score-first / target-later separation;
-- keep the current shadow score frozen during the audit.
-
-Outputs:
-
-- `src/zerogate_sim/shadow_weather_hardening_report.py`;
-- `docs/shadow_weather_hardening.md`;
-- `docs/release_notes/v1_6_7_alpha.md`;
-- `tests/test_shadow_weather_hardening_report.py`.
-
-Boundary:
-
-- not role-blind discovery;
-- not detector closeout;
-- not score retuning;
-- not a mutation of `C_Z = min(D, P, R, B)`.
-
-
-### v1.6.8-alpha — Shadow triad27 hardened evidence
-
-Purpose: make the first trinary-weather rung harder before spending trust on deeper weather.
-
-Scope:
-
-- read completed four-gate `triad27` matrix directories;
-- create cell-level role-stripped family rows;
-- keep native gate labels and truth-role labels out of feature inputs;
-- expose exact raw-strength, weakest-gate, relation-gate, and return-gate baselines;
-- run weather hardening immediately on the generated evidence base;
-- do not retune the transparent shadow score.
-
-Files:
-
-- `src/zerogate_sim/shadow_triad27_hardened_evidence_report.py`;
-- `tests/test_shadow_triad27_hardened_evidence_report.py`;
-- `docs/shadow_triad27_hardened_evidence.md`;
-- `docs/release_notes/v1_6_8_alpha.md`.
-
-Next v1.6 work:
-
-- if hardened triad27 is trivial or under baseline, repair shadow discrimination before deep81 / wide243;
-- if hardened triad27 is non-trivial, generate deep81 / wide243 evidence under the same hardening judge.
-
-Next v1.6 work:
-
-- if weather hardening reports trivial shadow behavior, repair discrimination before deeper trust;
-- if weather hardening reports non-trivial shadow behavior across the ladder, then run deeper held-out evidence and prepare a bounded correction package.
-
-
-### v1.6.9-alpha — Shadow discrimination repair
-
-Purpose: prove that density-only pressure detection is not enough.
-
-Delivered:
-
-- `src/zerogate_sim/shadow_discrimination_report.py`;
-- `docs/shadow_discrimination_repair.md`;
-- `docs/test_truth_and_handoff_boundary.md`;
-- `docs/version_truth.md`;
-- `docs/release_notes/v1_6_9_alpha.md`;
-- tests for residual diagnostics and boundary language.
-
-Result: the frozen shadow score showed density signal but relation / return / demotion specificity remained unearned.
-
-### v1.6.10-alpha — Shadow lane discrimination + runs inventory
-
-Purpose: split the shadow lane so one global score cannot hide pressure-kind failure.
-
-Delivered:
-
-- `src/zerogate_sim/shadow_lane_discrimination_report.py`;
-- `src/zerogate_sim/runs_inventory_report.py`;
-- `docs/shadow_lane_discrimination.md`;
-- `docs/runs_cleanup_policy.md`;
-- `docs/transparent_shadow_score.md` update;
-- `docs/release_notes/v1_6_10_alpha.md`;
-- tests for lane score columns and no-delete runs inventory.
-
-Result: density-pressure earned candidate signal; raw false-one, demotion, relation-specific, and return-specific lanes remained under dumb baselines.
-
-### v1.6.11-alpha — Roadmap truth and shadow route audit
-
-Purpose: stop reactive patching and restore the multi-step map before feature implementation.
-
-Delivered:
-
-- `src/zerogate_sim/shadow_route_audit_report.py`;
-- `docs/shadow_route_audit_and_feature_design.md`;
-- `docs/release_notes/v1_6_11_alpha.md`;
-- roadmap/version truth repair.
-
-Result: next route was bounded as feature implementation -> hardened triad27 rerun -> decision gate -> only then deeper weather if earned.
-
-### v1.6.12-alpha — Shadow feature implementation
-
-Purpose: implement observable, role-stripped feature candidates for pressure kind, without target leakage or role labels.
-
-Delivered:
-
-- `src/zerogate_sim/shadow_feature_design.py`;
-- engineered role-stripped feature columns in role-stripped and hardened triad27 feature outputs;
-- feature-aware candidate score columns in `shadow_score_report.py`;
-- active lane judge mapping to feature-aware candidate scores;
-- `docs/shadow_feature_implementation.md`;
-- `docs/release_notes/v1_6_12_alpha.md`;
-- tests for feature emission, target separation, and boundary language.
-
-Boundary: this is not score victory and not role-blind discovery. The next gate must rerun hardened triad27 and decide whether the new features actually improve lane specificity beyond raw-pressure and raw-strength baselines.
-
+- deleting without review;
+- committing `runs/` artifacts;
+- confusing assistant handoff bundles with repo truth.
 
 ## v2.0 direction — External review and observed-universe bridge
 
-Only after v1.3-v1.6 are stable:
+Only after v1.6 closeout:
 
 - external reproduction of small runs;
 - effective dimension comparisons: PCA rank, stable rank, graph diffusion, spectral-style return probabilities;
@@ -1221,7 +320,8 @@ Stop and repair before advancing if:
 - role-aware proof is described as role-blind discovery;
 - known-logic projection is described as identity;
 - generated runs, bundles, or PDFs enter Git history by accident;
-- roadmap turns into a wish list instead of a promise map.
+- roadmap turns into a wish list instead of a promise map;
+- a failed route is kept alive by one-more-feature pressure instead of a new falsifiable hypothesis.
 
 ## Operating sentence
 

@@ -272,6 +272,7 @@ def test_shadow_baseline_docs_and_readme_name_v1_6_3_boundary() -> None:
     for text in [readme, roadmap, doc, release, card]:
         assert "v1.6.3-alpha" in text
     assert "baseline/falsifier" in readme
-    assert "docs/assets/shadow_baseline_falsifier_card.svg" in readme
+    assert "docs/assets/shadow_baseline_falsifier_card.svg" not in readme
+    assert "shadow_route_history_and_closeout.md" in readme
     assert "C_Z = min(D, P, R, B)" in doc
     assert "not role-blind discovery" in doc

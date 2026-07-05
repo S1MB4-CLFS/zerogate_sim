@@ -173,4 +173,5 @@ def test_docs_and_readme_name_v1_6_1_boundary() -> None:
         assert "v1.6.1-alpha" in text
     assert "C_Z = min(D, P, R, B)" in doc
     assert "Role-stripped feature extraction" in readme
-    assert "docs/assets/role_stripped_feature_extraction_card.svg" in readme
+    assert "docs/assets/role_stripped_feature_extraction_card.svg" not in readme
+    assert "shadow_route_history_and_closeout.md" in readme
