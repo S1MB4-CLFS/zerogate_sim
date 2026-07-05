@@ -5,6 +5,12 @@
 
 This index describes the canonical current evidence line for the Four Gates of Becoming witness. It is not a physics claim and not a Zenodo upload plan.
 
+Native witness remains:
+
+```text
+C_Z = min(D, P, R, B)
+```
+
 ## Active claim candidate
 
 > In controlled synthetic adversarial fields, the Four Gates witness can preserve earned expression, hold unresolved relation/return debt as structured zero, and demote false-one pressure better than raw, binary, dead-safe, and ablated witnesses.
@@ -19,7 +25,8 @@ This index describes the canonical current evidence line for the Four Gates of B
 | history vault cleanup | `v1.6.23-alpha` | public surface cleanup | hygiene | no new evidence |
 | closeout route lock | `v1.6.24-alpha` | audit path definition | hygiene | no new evidence |
 | anti-tautology audit | `v1.6.25-alpha` | role-dependence check | witness | debt states are designed-profile shaped but witness-counted |
-| reproduction command package | `v1.6.26-alpha` | command package | current | small smoke and full reference/fresh reproduction command paths |
+| reproduction command package | `v1.6.26-alpha` | command package | expand | small smoke and full reference/fresh reproduction command paths |
+| manuscript correction package | `v1.6.27-alpha` | correction package | current | v2 outline and later Zenodo plan; no upload yet |
 
 ## Canonical state pattern
 
@@ -38,6 +45,8 @@ final false-one crowns = 0
 `v1.6.25-alpha` checked the role-dependence boundary. The honest status is bounded: debt states are designed-profile shaped but witness-counted and reproducible.
 
 `v1.6.26-alpha` packages reproduction commands before manuscript correction. It adds no new scientific claim.
+
+`v1.6.27-alpha` packages manuscript correction materials for later v2 paper work. It does not start the Zenodo route and does not make a new evidence claim.
 
 ## Not current evidence
 

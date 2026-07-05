@@ -233,8 +233,8 @@ def test_four_gates_triad27_debt_public_surfaces_are_current() -> None:
     version_truth = (ROOT / "docs/version_truth.md").read_text(encoding="utf-8")
     doc = (ROOT / "docs/four_gates_triad27_debt_evidence.md").read_text(encoding="utf-8")
     release = (ROOT / "docs/release_notes/v1_6_20_alpha.md").read_text(encoding="utf-8")
-    assert "1.6.26-alpha" in (ROOT / "src/zerogate_sim/__init__.py").read_text(encoding="utf-8")
-    assert 'version = "1.6.26a0"' in (ROOT / "pyproject.toml").read_text(encoding="utf-8")
+    assert "1.6.27-alpha" in (ROOT / "src/zerogate_sim/__init__.py").read_text(encoding="utf-8")
+    assert 'version = "1.6.27a0"' in (ROOT / "pyproject.toml").read_text(encoding="utf-8")
     for text in [readme, roadmap, version_truth, doc, release]:
         assert "v1.6.20-alpha" in text
         assert "Four Gates" in text

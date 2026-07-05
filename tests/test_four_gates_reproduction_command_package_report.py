@@ -54,17 +54,17 @@ def test_reproduction_command_package_cli(tmp_path: Path) -> None:
     assert (out / "four_gates_reproduction_command_package_bundle.zip").exists()
 
 
-def test_v1_6_26_public_surfaces_and_route() -> None:
+def test_v1_6_27_public_surfaces_and_route() -> None:
     readme = read("README.md")
     roadmap = read("ROADMAP.md")
     version_truth = read("docs/version_truth.md")
-    doc = read("docs/four_gates_reproduction_command_package.md")
-    release = read("docs/release_notes/v1_6_26_alpha.md")
-    assert "1.6.26-alpha" in read("src/zerogate_sim/__init__.py")
-    assert 'version = "1.6.26a0"' in read("pyproject.toml")
+    doc = read("docs/manuscript_correction_package.md")
+    release = read("docs/release_notes/v1_6_27_alpha.md")
+    assert "1.6.27-alpha" in read("src/zerogate_sim/__init__.py")
+    assert 'version = "1.6.27a0"' in read("pyproject.toml")
     for text in [readme, roadmap, version_truth, doc, release]:
-        assert "v1.6.26-alpha" in text
-        assert "Reproduction Command Package" in text or "reproduction command package" in text
+        assert "v1.6.27-alpha" in text
+        assert "Manuscript Correction Package" in text or "manuscript correction package" in text
         assert "C_Z = min(D, P, R, B)" in text
     assert "v1.6.27-alpha" in roadmap
     assert "Manuscript Correction Package" in roadmap

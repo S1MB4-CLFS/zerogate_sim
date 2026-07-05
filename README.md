@@ -1,6 +1,6 @@
 # ZeroGateSim
 
-**Current public line:** `v1.6.26-alpha` — Reproduction Command Package  
+**Current public line:** `v1.6.27-alpha` — Manuscript Correction Package  
 **Status:** speculative research software / controlled synthetic-field experiment line  
 **Working identity:** Four Gates of Becoming witness simulator  
 **Core question:** can a final trinary witness distinguish earned-one from raw expression pressure, latent overcrown, relation/return debt, and false-one pressure under controlled synthetic-field adversarial weather?
@@ -190,10 +190,10 @@ C_Z^i(t)=\min(D_i(t),P_i(t),R_i(t),B_i(t))
 
 ## Active route
 
-The active route after `v1.6.26-alpha` is:
+The active route after `v1.6.27-alpha` is:
 
 ```text
-anti-tautology audit complete -> reproduction command package complete -> manuscript correction package -> v1.6 closeout -> v1.7 operational claim package
+anti-tautology audit complete -> reproduction command package complete -> manuscript correction package complete -> v1.6 closeout -> v1.7 operational claim package
 ```
 
 The shadow route is **not** the active route now. It is preserved as historical diagnostic work in the [history vault](docs/history_vault/README.md).
@@ -212,6 +212,7 @@ Read first:
 - [`docs/anti_tautology_audit_plan.md`](docs/anti_tautology_audit_plan.md)
 - [`docs/anti_tautology_audit_report.md`](docs/anti_tautology_audit_report.md)
 - [`docs/four_gates_reproduction_command_package.md`](docs/four_gates_reproduction_command_package.md)
+- [`docs/manuscript_correction_package.md`](docs/manuscript_correction_package.md)
 - [`docs/claim_boundary.md`](docs/claim_boundary.md)
 
 ## Current evidence state
@@ -221,6 +222,8 @@ Read first:
 `v1.6.25-alpha` completed the role-dependence check. The honest result is bounded: debt states are witness-counted and reproducible, but the current evidence is still designed-profile / role-shaped rather than independent role-blind discovery.
 
 `v1.6.26-alpha` adds the reproduction command package so a skeptical reader can run a small pipeline smoke, locate canonical heavy evidence, and see the full reference/fresh seed reproduction route before manuscript correction.
+
+`v1.6.27-alpha` adds the manuscript correction package. It prepares section-level patch maps, claim lanes, canonical evidence tables, and a later Zenodo new-version plan without writing the full v2 paper or starting any Zenodo upload.
 
 The recent native evidence line now has the shape the project was trying to reach:
 
@@ -299,13 +302,14 @@ The README keeps only the recent native route because it explains the current ev
 - `v1.6.23-alpha` — history vault and current evidence surface cleanup;
 - `v1.6.24-alpha` — How It Works, current evidence index, and v1.6 closeout route lock.
 - `v1.6.25-alpha` — Anti-Tautology Audit / Role-Dependence Check;
-- `v1.6.26-alpha` — Reproduction Command Package.
+- `v1.6.26-alpha` — Reproduction Command Package;
+- `v1.6.27-alpha` — Manuscript Correction Package.
 
 Older proof and shadow history lives in the history vault.
 
 Boundary:
 
-No Zenodo correction yet, no shadow route revival, no observed-universe bridge, no spacetime metric claim, No new native gate, and no native witness mutation. Native witness remains `C_Z = min(D, P, R, B)`.
+No Zenodo upload yet, no shadow route revival, no observed-universe bridge, no spacetime metric claim, no new native gate, and no native witness mutation. Native witness remains `C_Z = min(D, P, R, B)`.
 
 ## History vault
 

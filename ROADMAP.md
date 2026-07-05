@@ -1,6 +1,6 @@
 # ZeroGateSim Roadmap
 
-**Current line:** `v1.6.26-alpha` — Reproduction Command Package  
+**Current line:** `v1.6.27-alpha` — Manuscript Correction Package  
 **Release posture:** public research-alpha / controlled synthetic-field experiment line
 
 ZeroGateSim now has a repaired Four Gates evidence path. The older generated toy-field proof record remains preserved in the history vault, not on the active claim surface. The history vault keeps what the project was; the README shows what the project is; this roadmap shows what still has to be earned.
@@ -47,7 +47,8 @@ C_Z = min(D, P, R, B)
 | `v1.6.23` history vault | hygiene | no new scientific claim |
 | `v1.6.24` route lock | hygiene | makes the active claim path legible before audit |
 | `v1.6.25` anti-tautology audit | witness_bounded_role_shaped_but_witness_computed | debt states are designed-profile shaped but witness-counted |
-| `v1.6.26` reproduction command package | current | packages small smoke and full reference/fresh reproduction commands |
+| `v1.6.26` reproduction command package | expand | packages small smoke and full reference/fresh reproduction commands |
+| `v1.6.27` manuscript correction package | current | prepares v2 paper map and later Zenodo new-version plan; no upload yet |
 
 ## Locked v1.6 closeout route
 
@@ -55,10 +56,9 @@ No new theory branch belongs in v1.6. The remaining versions are verification an
 
 | version | role | pass condition |
 |---|---|---|
-| `v1.6.25-alpha` | Anti-Tautology Audit / Role-Dependence Check |
-| `v1.6.26-alpha` | Reproduction Command Package | completed; honest boundary is designed-profile shaped but witness-counted and reproducible |
-| `v1.6.26-alpha` | Reproduction Command Package | current; provide a clean command path for a skeptical reader to reproduce a smaller run and locate canonical heavy evidence |
-| `v1.6.27-alpha` | Manuscript Correction Package | prepare corrected paper/README language; separate simulation support, mathematical analogy, and speculation; do not upload to Zenodo yet |
+| `v1.6.25-alpha` | Anti-Tautology Audit / Role-Dependence Check | completed; bounded result is designed-profile shaped but witness-counted |
+| `v1.6.26-alpha` | Reproduction Command Package | completed; provide small smoke and full heavy reference/fresh reproduction command paths |
+| `v1.6.27-alpha` | Manuscript Correction Package | current; prepare corrected paper/README language, claim lanes, evidence table, and later Zenodo new-version plan; do not upload yet |
 | `v1.6 closeout` | earned / partial / demoted decision | decide whether the controlled synthetic-field claim earns `+1`, remains `0` partial, or must be demoted `-1` |
 
 ## v1.6 closeout decision rule
@@ -98,6 +98,7 @@ These remain because they explain the current evidence route without reopening t
 | `v1.6.24-alpha` | How It Works, current evidence index, and closeout route lock |
 | `v1.6.25-alpha` | Anti-Tautology Audit / Role-Dependence Check |
 | `v1.6.26-alpha` | Reproduction Command Package |
+| `v1.6.27-alpha` | Manuscript Correction Package |
 
 No new native gate was introduced in these steps; the native witness remains `C_Z = min(D, P, R, B)`.
 
@@ -109,6 +110,10 @@ No new native gate was introduced in these steps; the native witness remains `C_
 ## v1.6.26-alpha note
 
 `v1.6.26-alpha` adds the Reproduction Command Package. It preserves `C_Z = min(D, P, R, B)`, adds no new evidence claim, and provides a small smoke command path, full reference/fresh reproduction command path, canonical evidence manifest, and expected output map before the manuscript correction package.
+
+## v1.6.27-alpha note
+
+`v1.6.27-alpha` adds the Manuscript Correction Package. It preserves `C_Z = min(D, P, R, B)`, does not upload to Zenodo, does not revive shadow, and does not claim observed-universe proof. It prepares the future v2 manuscript outline, section patch map, claim lane register, canonical evidence table, and later Zenodo new-version plan. The current Zenodo paper remains the historical first-research-alpha artifact; full v2 paper work waits until v1.7 succeeds.
 
 ## v1.7 boundary
 

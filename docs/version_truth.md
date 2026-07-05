@@ -1,9 +1,9 @@
 # Version Truth
 
-**Status:** README overflow moved here in `v1.6.9-alpha`; current spine advanced in `v1.6.26-alpha`  
+**Status:** README overflow moved here in `v1.6.9-alpha`; current spine advanced in `v1.6.27-alpha`  
 **Purpose:** preserve the release spine and recent checkpoints without forcing the README to open with a wall of version bookkeeping.
 
-The active public line is now `v1.6.26-alpha` — Reproduction Command Package.
+The active public line is now `v1.6.27-alpha` — Manuscript Correction Package.
 
 ## Release spine
 
@@ -28,6 +28,7 @@ The active public line is now `v1.6.26-alpha` — Reproduction Command Package.
 - `v1.6.24-alpha` — How It Works and closeout route lock: adds current evidence index, anti-tautology audit plan, and locks v1.6.25/v1.6.26/v1.6.27 before v1.7.
 - `v1.6.25-alpha` — Anti-Tautology Audit / Role-Dependence Check: adds the audit tool for role/profile dependence, witness-count dependence, masked numeric visibility, and relation/return debt specificity.
 - `v1.6.26-alpha` — Reproduction Command Package: adds small smoke and full reference/fresh reproduction command scripts, canonical evidence manifest, and expected output map before manuscript correction.
+- `v1.6.27-alpha` — Manuscript Correction Package: prepares future v2 manuscript outline, section patch map, claim lanes, canonical evidence table, and later Zenodo new-version plan without uploading or writing the full paper.
 
 ## Recent checkpoints
 
@@ -66,6 +67,7 @@ The active public line is now `v1.6.26-alpha` — Reproduction Command Package.
 - `v1.6.24-alpha` adds the README `How it works` section, `docs/current_evidence_index.md`, and `docs/anti_tautology_audit_plan.md`; ROADMAP locks v1.6.25, v1.6.26, v1.6.27, closeout, and v1.7 boundary.
 - `v1.6.25-alpha` adds `docs/anti_tautology_audit_report.md` and `zerogate-four-gates-anti-tautology-audit`; it bounds the current evidence as designed-profile shaped but witness-counted.
 - `v1.6.26-alpha` adds `docs/four_gates_reproduction_command_package.md` and `zerogate-four-gates-reproduction-package`; it packages reproduction commands without adding new science.
+- `v1.6.27-alpha` adds `docs/manuscript_correction_package.md` and `zerogate-four-gates-manuscript-correction-package`; it prepares manuscript correction material without starting the Zenodo route.
 
 Detailed release notes live in [`docs/release_notes/`](release_notes/).
 
@@ -137,3 +139,8 @@ C_Z = min(D, P, R, B)
 ## v1.6.26-alpha note
 
 `v1.6.26-alpha` is the Reproduction Command Package gate. It preserves `C_Z = min(D, P, R, B)`, does not start Zenodo correction, does not revive shadow, and does not claim observed-universe proof. It provides a small smoke reproduction path, a full heavy reference/fresh reproduction path, a canonical evidence manifest, and expected output map before manuscript correction.
+
+
+## v1.6.27-alpha note
+
+`v1.6.27-alpha` is the Manuscript Correction Package gate. It preserves `C_Z = min(D, P, R, B)`, does not upload to Zenodo, does not revive shadow, and does not claim observed-universe proof. It prepares a future v2 manuscript outline, section-by-section patch map, claim lane register, canonical evidence table, and later Zenodo new-version plan. Full v2 paper work waits until v1.7 succeeds.
