@@ -8,10 +8,12 @@ def read(path: str) -> str:
     return (ROOT / path).read_text(encoding="utf-8")
 
 
-def test_version_truth_surfaces_are_v1_6_13() -> None:
-    assert "1.6.13-alpha" in read("src/zerogate_sim/__init__.py")
-    assert 'version = "1.6.13a0"' in read("pyproject.toml")
-    assert "v1.6.13-alpha" in read("README.md")
+def test_version_truth_surfaces_include_v1_6_14_and_preserve_shadow_closeout() -> None:
+    assert "1.6.14-alpha" in read("src/zerogate_sim/__init__.py")
+    assert 'version = "1.6.14a0"' in read("pyproject.toml")
+    assert "v1.6.14-alpha" in read("README.md")
+    assert "v1.6.14-alpha" in read("ROADMAP.md")
+    assert "v1.6.14-alpha" in read("docs/version_truth.md")
     assert "v1.6.13-alpha" in read("ROADMAP.md")
     assert "v1.6.13-alpha" in read("docs/version_truth.md")
 
@@ -45,3 +47,4 @@ def test_roadmap_blocks_deeper_shadow_trust() -> None:
     assert "No more one-more-feature drift" not in roadmap  # kept in history doc, not roadmap surface
     assert "v1.6.14-alpha" in roadmap
     assert "v1.6.15-alpha" in roadmap
+    assert "native ablation baselines" in roadmap

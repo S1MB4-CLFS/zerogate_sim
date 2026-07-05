@@ -161,4 +161,5 @@ def test_docs_and_roadmap_name_v1_6_12_route() -> None:
         assert "v1.6.12-alpha" in text
         assert "C_Z = min(D, P, R, B)" in text
     assert "v1.6.13-alpha" in roadmap
+    assert "v1.6.14-alpha" in roadmap
     assert "deep81 / wide243 remain blocked" in release

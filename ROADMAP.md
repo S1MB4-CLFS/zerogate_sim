@@ -1,6 +1,6 @@
 # ZeroGateSim Roadmap
 
-**Current line:** `v1.6.13-alpha` shadow route historical closeout / public-surface cleanup  
+**Current line:** `v1.6.14-alpha` native four-gate claim audit / route correction  
 **Release posture:** public research-alpha / controlled synthetic-field experiment line
 
 ZeroGateSim already has a generated toy-field proof record; later lines repair, strengthen, and bound what that record can honestly support.
@@ -48,25 +48,27 @@ Fresh controlled v1.5 evidence block:
 
 This evidence block supports the controlled synthetic-field line. It does not prove physical time, gravity, mass, cosmology, or role-blind discovery.
 
-## Current v1.6.13 gate
+## Current v1.6.14 gate
 
-`v1.6.13-alpha` closes the current shadow route as historical diagnostic work and cleans public surfaces.
+`v1.6.14-alpha` is a native four-gate claim audit. It stops the shadow side-route and defines the active scientific route again.
 
-Purpose:
+Scientific question:
 
-- remove shadow test-result visuals and data from README / ROADMAP surfaces;
-- preserve the role-stripped shadow route in a historical closeout document;
-- keep the native evidence route clear;
-- prevent density-only shadow pressure from being mistaken for role-blind false-one discovery;
-- restore the next route to claim-boundary repair, manuscript correction, runs hygiene, and native evidence strengthening.
+> Can a final trinary witness distinguish earned-one from raw expression pressure, latent overcrown, relation/return debt, and false-one pressure under controlled synthetic-field adversarial weather?
 
 Delivered:
 
-- README surface cleanup;
-- ROADMAP surface cleanup;
-- `docs/shadow_route_history_and_closeout.md`;
-- `docs/version_truth.md` update;
-- `docs/release_notes/v1_6_13_alpha.md`.
+- `docs/native_four_gate_claim_audit.md`;
+- `docs/release_notes/v1_6_14_alpha.md`;
+- `zerogate-native-four-gate-claim-audit`;
+- roadmap repair: v1.6 now points to native ablations, four-corpus triad27, deep81/wide243 native evidence, fresh-seed reproduction, then manuscript/evidence correction.
+
+Not delivered:
+
+- no Zenodo update;
+- no physical claim;
+- no shadow revival;
+- no new native gate.
 
 Boundary:
 
@@ -91,10 +93,14 @@ Any version that skips this order is a HOLD or RESIST event.
 | `v1.4.x-alpha` | complete | cross-logic comparison, preset planning, evidence-handoff integrity |
 | `v1.5.x-alpha` | complete/current evidence | controlled synthetic-field language, seed-block, threshold, ablation, deep81/wide243 evidence |
 | `v1.6.0-alpha` - `v1.6.12-alpha` | historical/HOLD | role-stripped shadow route exploration; useful tooling, scientific claim not earned |
-| `v1.6.13-alpha` | current | shadow route historical closeout and public-surface cleanup |
-| `v1.6.14-alpha` | next candidate | manuscript / Zenodo correction package planning, if authorized |
-| `v1.6.15-alpha` | next candidate | runs hygiene and canonical evidence inventory, no deletion by default |
-| `v1.7.0-alpha` | deferred | only after v1.6 closeout: stronger native/effective-dimension bridge or external review route |
+| `v1.6.13-alpha` | complete | shadow route historical closeout and public-surface cleanup |
+| `v1.6.14-alpha` | current | native four-gate claim audit and route correction |
+| `v1.6.15-alpha` | next candidate | native ablation baselines: raw-only, binary-only, no-return, no-relation, no-lineage/depth, no-echo |
+| `v1.6.16-alpha` | next candidate | four-corpus triad27 native evidence with trinary confusion accounting |
+| `v1.6.17-alpha` | next candidate | deep81 / wide243 native evidence only after triad27 ablations pass |
+| `v1.6.18-alpha` | next candidate | fresh-seed reproduction and manuscript/evidence correction package planning |
+| `v1.6.19-alpha` | optional hygiene | runs inventory / canonical evidence cleanup, no deletion by default |
+| `v2.0` | deferred review release | stable external-review package, not observed-universe proof |
 
 ## v1.0-alpha to v1.0.2-alpha — First proof floor
 
@@ -251,33 +257,100 @@ Historical version index, without result tables or visuals:
 | `v1.6.12-alpha` | feature implementation, not discovery |
 | `v1.6.13-alpha` | historical closeout / HOLD |
 
-## v1.6.14-alpha candidate — Manuscript / Zenodo correction package planning
+## v1.6.14-alpha — Native four-gate claim audit
 
 Purpose:
 
-Prepare a correction package that clearly separates:
+Define exactly what the native controlled synthetic-field claim must answer before any manuscript or DOI correction route begins.
 
-- historical first-alpha three-corpus proof shape;
-- native four-gate mechanism;
-- later four-gate controlled evidence;
-- shadow route historical closeout;
-- what must be updated in any public manuscript / Zenodo version.
+Question:
 
-Allowed:
+> Can a final trinary witness distinguish earned-one from raw expression pressure, latent overcrown, relation/return debt, and false-one pressure under controlled synthetic-field adversarial weather?
 
-- docs;
-- correction note;
-- manuscript boundary language;
-- checklist for new version upload.
+Required structure:
+
+- four dedicated adversarial families: distinction, polarity, relation, return;
+- positive zero-state accounting: latent overcrown, relation debt, return debt, quarantine / not-yet;
+- trinary outcome accounting: `+1`, `0`, `-1`;
+- no shadow revival;
+- no physical or observed-universe bridge claim.
+
+Delivered in this gate:
+
+- claim audit report;
+- readiness criteria;
+- native evidence route;
+- v2.0 boundary update.
+
+## v1.6.15-alpha candidate — Native ablation baselines
+
+Purpose:
+
+Make the native final trinary witness fight meaningful competitors instead of only reporting `0` final false crowns.
+
+Required ablations:
+
+- raw-expression-only witness;
+- binary yes/no witness;
+- no-return witness;
+- no-relation witness;
+- no-lineage / no-return-depth witness;
+- no-echo-independence witness;
+- no-zero-hold witness.
+
+Pass condition:
+
+Native witness must preserve earned-one, hold structured zero pressure, and demote false-one pressure better than the ablated alternatives. A witness that avoids false crowns only by refusing everything does not pass.
+
+## v1.6.16-alpha candidate — Four-corpus triad27 native evidence
+
+Purpose:
+
+Run the repaired native question at `triad27 = 3^3` local-expression weather with all four adversarial families.
+
+Required outputs:
+
+- earned-one preservation;
+- raw pressure separation;
+- latent overcrown hold;
+- relation debt hold;
+- return debt hold;
+- false-one demotion;
+- trinary confusion table for `+1 / 0 / -1`;
+- ablation comparison.
+
+## v1.6.17-alpha candidate — Deep81 / Wide243 native evidence
+
+Purpose:
+
+Only after triad27 passes, test whether the native witness survives deeper perturbation and temporal-depth stress.
+
+Weather ladder:
+
+- `deep81 = 3^4` perturbation / late-shock bridge;
+- `wide243 = 3^5` temporal-depth / time-axis stress.
 
 Forbidden:
 
-- backdating history;
-- hiding failed shadow evidence;
-- claiming role-blind discovery;
-- changing old proof numbers to make the route look cleaner.
+- using bigger weather to hide triad27 weakness;
+- confusing native witness evidence with shadow role-blind discovery.
 
-## v1.6.15-alpha candidate — Runs hygiene and canonical evidence inventory
+## v1.6.18-alpha candidate — Fresh-seed reproduction and correction package planning
+
+Purpose:
+
+Prepare, but not yet upload, a corrected manuscript/evidence package after the native route earns it.
+
+Required separation:
+
+- historical first-alpha three-corpus proof shape;
+- repaired four-gate native evidence;
+- shadow route historical/HOLD status;
+- simulation support vs mathematical analogy vs physical speculation.
+
+No Zenodo route begins until this package is coherent.
+
+## v1.6.19-alpha optional — Runs hygiene and canonical evidence inventory
 
 Purpose:
 
@@ -296,19 +369,37 @@ Forbidden:
 - committing `runs/` artifacts;
 - confusing assistant handoff bundles with repo truth.
 
-## v2.0 direction — External review and observed-universe bridge
+## Deferred after v1.6 closeout — External review and observed-universe bridge
 
-Only after v1.6 closeout:
+This is not an active v1.6 implementation route and not a proof claim. It may begin only after the native four-gate witness has a clean controlled synthetic-field closeout: four adversarial corpora, ablation baselines, triad27/deep81/wide243 evidence, fresh-seed reproduction, and stable public claim boundaries.
 
-- external reproduction of small runs;
-- effective dimension comparisons: PCA rank, stable rank, graph diffusion, spectral-style return probabilities;
-- comparison against relevant emergence / pregeometry / many-valued logic literature;
-- evidence DOI plan;
+Future work may include:
+
+- external reproduction of small deterministic runs;
+- effective-dimension comparisons: PCA rank, stable rank, graph diffusion behavior, spectral-style return probabilities;
+- comparison against emergence, pregeometry, causal-order, effective-dimension, and many-valued-logic literature;
+- evidence DOI plan for versioned code, deterministic run bundles, manuscript, and provenance notes;
 - manuscript update separating simulation support, mathematical analogy, and physical speculation.
 
 Observed-universe bridge rule:
 
 > A match to known math or observed behavior is support for a modeling analogy, not proof that the universe uses ZeroGateSim.
+
+## v2.0 boundary — Stable external-review release package
+
+`v2.0` should mean that the controlled synthetic-field witness claim is complete enough to show externally. It is not the start of observed-universe proof work.
+
+Ready-for-v2.0 conditions:
+
+- four dedicated adversarial families exist;
+- native witness beats ablated witnesses;
+- zero-state categories are positively measured;
+- triad27, deep81, and wide243 are coherent;
+- fresh seeds reproduce the main result;
+- README and ROADMAP tell the truth;
+- paper correction package is ready;
+- shadow route is clearly historical/HOLD;
+- no role-blind discovery language remains active.
 
 ## HOLD conditions
 

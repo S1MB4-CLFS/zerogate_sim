@@ -1,6 +1,6 @@
 # ZeroGateSim
 
-**Current public line:** `v1.6.13-alpha` — shadow route historical closeout and public-surface cleanup  
+**Current public line:** `v1.6.14-alpha` — native four-gate claim audit and route correction  
 **Status:** speculative research software / controlled synthetic-field experiment line  
 **Working identity:** zero-gate dimensional emergence simulator  
 **Core question:** can a final trinary witness distinguish earned-one from raw expression pressure, latent overcrown, relation/return debt, and false-one pressure under controlled synthetic-field adversarial weather?
@@ -154,10 +154,10 @@ C_Z^i(t)=\min(D_i(t),P_i(t),R_i(t),B_i(t))
 
 ## Active route
 
-The active route after `v1.6.13-alpha` is:
+The active route after `v1.6.14-alpha` is:
 
 ```text
-native geometry -> native math -> code fidelity -> invariant tests -> known-logic mirrors -> controlled synthetic-field evidence -> claim-boundary repair -> manuscript / evidence correction package
+native four-gate claim audit -> native ablation baselines -> four-corpus triad27 evidence -> deep81/wide243 native evidence -> fresh-seed reproduction -> manuscript / evidence correction package
 ```
 
 The shadow route is **not** the active route now. It is preserved as historical diagnostic work because hardened triad27 lane-specific discrimination did not beat simple baselines strongly enough to earn deeper `deep81` / `wide243` trust.
@@ -168,8 +168,31 @@ Read first:
 - [`docs/simulation_win_conditions.md`](docs/simulation_win_conditions.md)
 - [`docs/controlled_synthetic_field_language.md`](docs/controlled_synthetic_field_language.md) — controlled synthetic-field language boundary.
 - [`docs/four_gate_reconciliation.md`](docs/four_gate_reconciliation.md)
+- [`docs/native_four_gate_claim_audit.md`](docs/native_four_gate_claim_audit.md)
 - [`docs/shadow_route_history_and_closeout.md`](docs/shadow_route_history_and_closeout.md)
 - [`docs/claim_boundary.md`](docs/claim_boundary.md)
+
+
+## Current v1.6.14 gate
+
+`v1.6.14-alpha` audits the native claim instead of adding another shadow feature. It asks the scientific question the active route must now answer:
+
+> Can a final trinary witness distinguish earned-one from raw expression pressure, latent overcrown, relation/return debt, and false-one pressure under controlled synthetic-field adversarial weather?
+
+The audit tightens the answer into a testable route:
+
+- four dedicated adversarial families: distinction, polarity, relation, return;
+- positive zero-state accounting: latent overcrown, relation debt, return debt, quarantine / not-yet;
+- ablation enemies: raw-only, binary-only, no-return, no-relation, no-lineage/depth, no-echo-independence;
+- trinary outcome accounting: `+1` earned-one, `0` structured witness/hold, `-1` false-one demotion;
+- trinary weather ladder: `triad27`, `deep81`, `wide243`;
+- fresh-seed reproduction before manuscript correction or DOI work.
+
+Read: [`docs/native_four_gate_claim_audit.md`](docs/native_four_gate_claim_audit.md).
+
+Boundary:
+
+This is not Zenodo correction yet, not observed-universe bridge work, and not proof of physical dimensional genesis. It is the map for making the controlled synthetic-field native witness claim strong enough to review.
 
 ## Current evidence state
 

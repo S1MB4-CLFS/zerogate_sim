@@ -1,9 +1,9 @@
 # Version Truth
 
-**Status:** README overflow moved here in `v1.6.9-alpha`; current spine repaired in `v1.6.13-alpha`  
+**Status:** README overflow moved here in `v1.6.9-alpha`; current spine repaired in `v1.6.14-alpha`  
 **Purpose:** preserve the release spine and recent checkpoints without forcing the README to open with a wall of version bookkeeping.
 
-The active public line is now `v1.6.13-alpha` — shadow route historical closeout and public-surface cleanup.
+The active public line is now `v1.6.14-alpha` — native four-gate claim audit and route correction.
 
 ## Release spine
 
@@ -15,6 +15,7 @@ The active public line is now `v1.6.13-alpha` — shadow route historical closeo
 - `v1.5.x-alpha` — stronger controlled synthetic-field experiments: seed-block reporting, threshold sensitivity, witness ablation, controlled language, and fresh deep81/wide243 evidence.
 - `v1.6.0-alpha` to `v1.6.12-alpha` — role-stripped shadow route exploration and testing infrastructure; useful tooling, scientific claim not earned.
 - `v1.6.13-alpha` — shadow route historical closeout and README/ROADMAP surface cleanup.
+- `v1.6.14-alpha` — native four-gate claim audit, readiness criteria, and route correction before manuscript/Zenodo work.
 
 ## Recent checkpoints
 
@@ -42,3 +43,13 @@ The active public line is now `v1.6.13-alpha` — shadow route historical closeo
 - `v1.6.13-alpha` parks the shadow route as historical diagnostic work and removes shadow result visuals/data from README and ROADMAP surfaces.
 
 Detailed release notes live in [`docs/release_notes/`](release_notes/).
+
+## v1.6.14 route correction
+
+The active line returns to the native four-gate witness question. Shadow remains historical/HOLD. Zenodo and observed-universe bridge work are deferred until native ablations, four-corpus triad27, deep81/wide243 evidence, and fresh-seed reproduction are coherent.
+
+Native witness remains:
+
+```text
+C_Z = min(D, P, R, B)
+```
