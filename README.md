@@ -1,6 +1,6 @@
 # ZeroGateSim
 
-**Current public line:** `v1.6.23-alpha` — history vault and current evidence surface cleanup  
+**Current public line:** `v1.6.24-alpha` — How It Works and v1.6 closeout route lock  
 **Status:** speculative research software / controlled synthetic-field experiment line  
 **Working identity:** Four Gates of Becoming witness simulator  
 **Core question:** can a final trinary witness distinguish earned-one from raw expression pressure, latent overcrown, relation/return debt, and false-one pressure under controlled synthetic-field adversarial weather?
@@ -58,6 +58,50 @@ ZeroGateSim tests a different spine:
 
 The simulator exists because a theory does not earn trust by sounding beautiful. It earns its first bones by meeting pressure.
 
+
+## How it works
+
+ZeroGateSim tests a simple operational claim: raw expression is pressure, not truth.
+
+A candidate does not become final `+1` merely because it is loud, separable, or locally coherent. It must move through the Four Gates of Becoming and survive a final trinary witness.
+
+```text
+Distinction -> Polarity -> Relation -> Return -> final trinary witness
+```
+
+The native witness keeps the weakest-gate rule:
+
+```text
+C_Z = min(D, P, R, B)
+```
+
+where:
+
+- `D` asks whether the candidate separates from background.
+- `P` asks whether it has meaningful polarity around zero.
+- `R` asks whether polarity binds into relation instead of isolated split or drift.
+- `B` asks whether the structure returns through witness pressure while preserving coherence.
+
+The final output is trinary:
+
+```text
++1 earned-one      expression survived the witness stack
+ 0 structured zero latent, relation debt, return debt, or not-yet pressure is held
+-1 resist/demote  false-one pressure is exposed and refused
+```
+
+The current evidence route tests that grammar under controlled synthetic adversarial weather:
+
+```text
+triad27 = 3^3 local expression weather
+deep81  = 3^4 perturbation / late-shock bridge
+wide243 = 3^5 temporal-depth / time-axis stress
+```
+
+The project compares the native witness against raw, binary, dead-safe, and ablated witnesses. The current bounded claim is that, inside controlled synthetic fields, the Four Gates witness preserved earned expression, held relation/return debt as structured zero, and demoted false-one pressure where simpler witnesses exposed failure modes.
+
+This does not prove cosmology, physical dimensional genesis, quantum gravity, or that reality itself is trinary. It is a computational approximation of zero-zone gating.
+
 ## First visual spine
 
 These first three maps are the fastest route into the project. They show mechanism, witness, and test pressure before the README descends into machinery.
@@ -75,7 +119,7 @@ C_Z^i(t)=\min(D_i(t),P_i(t),R_i(t),B_i(t))
 Raw expression is pressure, not final truth:
 
 ```math
-\chi^i_{raw}(t)=H(\sigma_i(t)-\epsilon)H(C_Z^i(t)-	heta_Z)
+\chi^i_{raw}(t)=H(\sigma_i(t)-\epsilon)H(C_Z^i(t)-\theta_Z)
 ```
 
 ### Trinary witness stack
@@ -117,11 +161,11 @@ The native math witness remains the spine of the repo. In plain text: `C_Z = min
 Native anchors:
 
 ```math
-E_0 = (Z_0, 	au)
+E_0 = (Z_0, \tau)
 ```
 
 ```math
-T_3[X](	au) = (X(	au+h)-X(	au), I_h[X](	au), X(	au)-X(	au-h))
+T_3[X](\tau) = (X(\tau+h)-X(\tau), I_h[X](\tau), X(\tau)-X(\tau-h))
 ```
 
 ```math
@@ -137,7 +181,7 @@ C_Z^i(t)=\min(D_i(t),P_i(t),R_i(t),B_i(t))
 ```
 
 ```math
-\chi^i_{raw}(t)=H(\sigma_i(t)-\epsilon)H(C_Z^i(t)-	heta_Z)
+\chi^i_{raw}(t)=H(\sigma_i(t)-\epsilon)H(C_Z^i(t)-\theta_Z)
 ```
 
 ```math
@@ -146,10 +190,10 @@ C_Z^i(t)=\min(D_i(t),P_i(t),R_i(t),B_i(t))
 
 ## Active route
 
-The active route after `v1.6.23-alpha` is:
+The active route after `v1.6.24-alpha` is:
 
 ```text
-fresh-seed debt reproduction -> evidence consolidation / history vault -> manuscript and README correction package planning
+anti-tautology audit -> reproduction command package -> manuscript correction package -> v1.6 closeout -> v1.7 operational claim package
 ```
 
 The shadow route is **not** the active route now. It is preserved as historical diagnostic work in the [history vault](docs/history_vault/README.md).
@@ -164,6 +208,8 @@ Read first:
 - [`docs/four_gates_triad27_debt_evidence.md`](docs/four_gates_triad27_debt_evidence.md)
 - [`docs/four_gates_deepwide_debt_evidence.md`](docs/four_gates_deepwide_debt_evidence.md)
 - [`docs/four_gates_fresh_seed_debt_reproduction.md`](docs/four_gates_fresh_seed_debt_reproduction.md)
+- [`docs/current_evidence_index.md`](docs/current_evidence_index.md)
+- [`docs/anti_tautology_audit_plan.md`](docs/anti_tautology_audit_plan.md)
 - [`docs/claim_boundary.md`](docs/claim_boundary.md)
 
 ## Current evidence state
@@ -241,7 +287,9 @@ The README keeps only the recent native route because it explains the current ev
 - `v1.6.19-alpha` — Four Gates debt candidate generator;
 - `v1.6.20-alpha` — Four Gates triad27 debt evidence;
 - `v1.6.21-alpha` — Four Gates deep81 / wide243 debt evidence;
-- `v1.6.22-alpha` — Four Gates fresh-seed debt reproduction.
+- `v1.6.22-alpha` — Four Gates fresh-seed debt reproduction;
+- `v1.6.23-alpha` — history vault and current evidence surface cleanup;
+- `v1.6.24-alpha` — How It Works, current evidence index, and v1.6 closeout route lock.
 
 Older proof and shadow history lives in the history vault.
 
