@@ -1,6 +1,6 @@
 # ZeroGateSim Roadmap
 
-**Current line:** `v1.7.4-alpha` — Perturbation Spectrum Witness  
+**Current line:** `v1.7.5-alpha` — Masked Role-Dependence Audit  
 **Release posture:** public research-alpha / controlled synthetic-field experiment line
 
 ZeroGateSim now has a repaired Four Gates evidence path. The older generated toy-field proof record remains preserved in the history vault, not on the active claim surface. The history vault keeps what the project was; the README shows what the project is; this roadmap shows what still has to be earned.
@@ -53,6 +53,9 @@ C_Z = min(D, P, R, B)
 | `v1.7.0` core question contract | complete | answer grammar, lane contract, falsifier register, and forbidden-claim boundary opened; no new evidence crown |
 | `v1.7.1` return gate trace lock | complete | return-potential, observed return, return-depth, return debt, collapse, and false return theater separated; no new evidence crown |
 | `v1.7.2` lane taxonomy / latent overcrown repair | complete | core lanes are distinct; latent overcrown is explicit HOLD until reproduced, narrowed, or closed partial |
+| `v1.7.3` baseline / ablation falsifier matrix | complete | weaker witnesses are locked as enemies; no new evidence crown |
+| `v1.7.4` perturbation spectrum witness | complete | spectrum-under-perturbation rules are locked; no new evidence crown |
+| `v1.7.5` masked role-dependence audit | current | masked numeric visibility is locked before fresh holdout; not role-blind discovery |
 
 ## Locked v1.6 closeout route
 
@@ -195,7 +198,8 @@ The core question is answered in full only if all of these gates pass.
 | `v1.7.1-alpha` | Return Gate Trace Lock | complete; reviewer can distinguish return-potential, observed return, return-depth, return debt, collapse, and false return theater | return reads like metaphor instead of measurable witness behavior |
 | `v1.7.2-alpha` | Lane Taxonomy and Latent Overcrown Repair | complete; core lanes are distinct, and latent overcrown is repaired as explicit HOLD | latent overcrown remains non-reproducible but stays in the full claim anyway |
 | `v1.7.3-alpha` | Baseline and Ablation Falsifier Matrix | complete; baseline enemies are locked against earned-one preservation, structured zero, and false-one demotion | a simpler witness explains the same result |
-| `v1.7.4-alpha` | Perturbation Spectrum Witness | current; spectrum lanes and weather-curve rules are locked before masked role-dependence audit | perturbation creates new-looking pressure and the witness crowns it without return, lineage, and independence |
+| `v1.7.4-alpha` | Perturbation Spectrum Witness | complete; spectrum lanes and weather-curve rules are locked before masked role-dependence audit | perturbation creates new-looking pressure and the witness crowns it without return, lineage, and independence |
+| `v1.7.5-alpha` | Masked Role-Dependence Audit | current; masked numeric visibility and role-dependence pressure are locked before fresh holdout | lanes only exist because labels say they exist |
 | `v1.7.5-alpha` | Masked Role-Dependence Audit | numeric witness pattern still separates earned-one, relation debt, return debt, false-one pressure, and final false-crown safety when labels are masked | lanes only exist because labels say they exist |
 | `v1.7.6-alpha` | Fresh Holdout Synthetic-Field Challenge | lane pattern survives fresh seeds, held-out profile variants, controlled weather shifts, and candidate-name masking | result only survives the known reference profile |
 | `v1.7.7-alpha` | Reviewer Start Here / Reproduction Package | cold reviewer can understand the question, witness, lane grammar, falsifiers, small reproduction path, and forbidden claims | project still requires private explanation to understand why the result matters |
@@ -335,7 +339,7 @@ deep81 = 3^4 perturbation / late-shock bridge
 wide243 = 3^5 temporal-depth / time-axis stress
 ```
 
-## v1.7.4-alpha current note
+## v1.7.4-alpha note
 
 `v1.7.4-alpha` locks the perturbation spectrum witness. It preserves `C_Z = min(D, P, R, B)`, adds no new heavy evidence crown, does not start manuscript v2, and prepares `v1.7.5-alpha` Masked Role-Dependence Audit. The witness must later show lane-level behavior under weather, not one scalar victory count: raw pressure may move, structured zero/debt must remain visible, false-one pressure must be demoted, and final false-one crowns must stay zero.
 
@@ -343,6 +347,28 @@ wide243 = 3^5 temporal-depth / time-axis stress
 ### v1.7.5-alpha — Masked Role-Dependence Audit
 
 The current harness may use designed roles. That is allowed. But `v1.7` must show which outputs are witness-computed and which are role-shaped.
+
+Expected artifacts:
+
+```text
+docs/v1_7_masked_role_dependence_audit.md
+docs/v1_7_masked_numeric_visibility.md
+docs/v1_7_role_dependence_pressure.md
+docs/v1_7_role_blind_forbidden_language.md
+tests/test_v1_7_masked_role_dependence_audit.py
+```
+
+Required result:
+
+```text
+When direct role labels are masked, numeric witness surfaces still show earned-one, relation debt, return debt, false-one pressure, and final false-crown safety.
+```
+
+Stop condition:
+
+```text
+Lane assignment is just role-label recounting, role leakage carries the result, or any final false-one crown appears.
+```
 
 Allowed claim after pass:
 
@@ -355,6 +381,10 @@ Forbidden claim after pass:
 ```text
 The witness independently discovers all false-one or debt states in unlabeled fields.
 ```
+
+## v1.7.5-alpha current note
+
+`v1.7.5-alpha` locks the masked role-dependence audit. It preserves `C_Z = min(D, P, R, B)`, adds no new heavy evidence crown, does not start manuscript v2, and prepares `v1.7.6-alpha` Fresh Holdout Synthetic-Field Challenge. Passing masked numeric visibility does not mean role-blind discovery; it only says the controlled designed-profile witness is not merely role-label bookkeeping.
 
 ### v1.7.6-alpha — Fresh Holdout Synthetic-Field Challenge
 

@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "zerogate-sim"
-version = "1.7.4a0"
+version = "1.7.5a0"
 description = "Toy simulation framework for zero-gate dimensional emergence."
 readme = "README.md"
 requires-python = ">=3.12"
@@ -75,6 +75,7 @@ zerogate-v1-7-return-gate-trace = "zerogate_sim.v1_7_return_gate_trace:main"
 zerogate-v1-7-lane-taxonomy = "zerogate_sim.v1_7_lane_taxonomy:main"
 zerogate-v1-7-baseline-falsifier-matrix = "zerogate_sim.v1_7_baseline_falsifier_matrix:main"
 zerogate-v1-7-perturbation-spectrum = "zerogate_sim.v1_7_perturbation_spectrum:main"
+zerogate-v1-7-masked-role-audit = "zerogate_sim.v1_7_masked_role_dependence_audit:main"
 
 [tool.setuptools.packages.find]
 where = ["src"]

@@ -1,9 +1,9 @@
 # Version Truth
 
-**Status:** README overflow moved here in `v1.6.9-alpha`; current spine advanced in `v1.7.4-alpha`  
+**Status:** README overflow moved here in `v1.6.9-alpha`; current spine advanced in `v1.7.5-alpha`  
 **Purpose:** preserve the release spine and recent checkpoints without forcing the README to open with a wall of version bookkeeping.
 
-The active public line is now `v1.7.4-alpha` — Perturbation Spectrum Witness.
+The active public line is now `v1.7.5-alpha` — Masked Role-Dependence Audit.
 
 ## Release spine
 
@@ -35,6 +35,7 @@ The active public line is now `v1.7.4-alpha` — Perturbation Spectrum Witness.
 - `v1.7.2-alpha` — Lane Taxonomy and Latent Overcrown Repair: separates required lanes, repairs latent overcrown as explicit HOLD, and adds no new heavy evidence crown.
 - `v1.7.3-alpha` — Baseline and Ablation Falsifier Matrix: aligns weaker witnesses as falsifier enemies before perturbation spectrum work.
 - `v1.7.4-alpha` — Perturbation Spectrum Witness: locks spectrum-under-perturbation lane behavior before masked role-dependence audit.
+- `v1.7.5-alpha` — Masked Role-Dependence Audit: locks masked numeric visibility and role-dependence pressure before fresh holdout.
 
 ## Recent checkpoints
 
@@ -80,6 +81,7 @@ The active public line is now `v1.7.4-alpha` — Perturbation Spectrum Witness.
 - `v1.7.2-alpha` adds `docs/v1_7_lane_taxonomy.md`, `docs/v1_7_latent_overcrown_repair.md`, `docs/v1_7_relation_return_debt_specificity.md`, `docs/v1_7_lane_visibility_decision_rules.md`, and `zerogate-v1-7-lane-taxonomy`; it repairs the lane taxonomy before baseline/ablation falsifier work.
 - `v1.7.3-alpha` adds `docs/v1_7_baseline_falsifier_matrix.md`, `docs/v1_7_ablation_summary.md`, `docs/v1_7_failure_mode_table.md`, and `zerogate-v1-7-baseline-falsifier-matrix`; it locks the baseline enemy matrix before perturbation spectrum work.
 - `v1.7.4-alpha` adds `docs/v1_7_witness_spectrum.md`, `docs/v1_7_perturbation_curve.md`, `docs/v1_7_weather_curve_summary.md`, `docs/v1_7_expected_quiet_lane_activation.md`, and `zerogate-v1-7-perturbation-spectrum`; it locks the perturbation spectrum witness before masked role-dependence work.
+- `v1.7.5-alpha` adds `docs/v1_7_masked_role_dependence_audit.md`, `docs/v1_7_masked_numeric_visibility.md`, `docs/v1_7_role_dependence_pressure.md`, `docs/v1_7_role_blind_forbidden_language.md`, and `zerogate-v1-7-masked-role-audit`; it locks masked numeric review before fresh holdout.
 
 Detailed release notes live in [`docs/release_notes/`](release_notes/).
 
@@ -185,3 +187,8 @@ C_Z = min(D, P, R, B)
 ## v1.7.4-alpha note
 
 `v1.7.4-alpha` is the Perturbation Spectrum Witness gate. It preserves `C_Z = min(D, P, R, B)`, does not start manuscript v2, does not revive shadow, does not upload to Zenodo, and does not claim observed-universe proof. It requires lane-level behavior under weather: earned-one, raw expression pressure, latent overcrown, relation debt, return debt, echo dependence, lineage instability, false-one pressure, and final false-one crowns must be reported separately before the v1.7 core question can close.
+
+
+## v1.7.5-alpha note
+
+`v1.7.5-alpha` is the Masked Role-Dependence Audit gate. It preserves `C_Z = min(D, P, R, B)`, does not start manuscript v2, does not revive shadow as discovery, does not upload to Zenodo, and does not claim role-blind false-one detection. It separates witness-computed lane visibility from role-label recounting: role labels may define the controlled adversarial harness, but masked numeric review must keep earned-one, relation debt, return debt, false-one pressure, and final false-crown safety visible before fresh holdout can begin.

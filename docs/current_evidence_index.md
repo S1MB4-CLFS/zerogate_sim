@@ -32,7 +32,8 @@ C_Z = min(D, P, R, B)
 | v1.7 return gate trace lock | `v1.7.1-alpha` | return trace / mechanism boundary | witness | no new evidence crown; separates return-potential from observed return and blocks false-return readings |
 | v1.7 lane taxonomy / latent overcrown repair | `v1.7.2-alpha` | lane taxonomy / witness translation | witness | no heavy evidence crown; latent overcrown repaired as explicit HOLD until reproduced or narrowed |
 | v1.7 baseline / ablation falsifier matrix | `v1.7.3-alpha` | baseline matrix / falsifier translation | witness | no heavy evidence crown; weaker witnesses aligned as enemies before perturbation spectrum |
-| v1.7 perturbation spectrum witness | `v1.7.4-alpha` | spectrum-under-perturbation contract | witness | no heavy evidence crown; raw pressure may move while final witness must fail safely |
+| v1.7 perturbation spectrum witness | `v1.7.4-alpha` | spectrum-under-perturbation contract | complete | no heavy evidence crown; raw pressure may move while final witness must fail safely |
+| v1.7 masked role-dependence audit | `v1.7.5-alpha` | masked numeric visibility contract | witness | no role-blind discovery claim; separates witness-computed lanes from role-label recounting |
 
 ## Canonical state pattern
 
@@ -65,6 +66,8 @@ final false-one crowns = 0
 `v1.7.3-alpha` locks the Baseline and Ablation Falsifier Matrix. It names raw-only, binary, dead-safe, average-gate, no-return, no-relation, no-lineage/no-return-depth, no-echo-independence, no-zero-hold, and no-false-one-demotion witnesses as required enemies. It adds no new heavy evidence crown and preserves `C_Z = min(D, P, R, B)`.
 
 `v1.7.4-alpha` locks the Perturbation Spectrum Witness. It requires lane-level behavior across `triad27`, `deep81`, and `wide243`, keeps raw expression pressure separate from earned-one, keeps structured zero/debt lanes visible, treats false-one pressure as pressure rather than crown, and preserves `C_Z = min(D, P, R, B)`. It adds no new heavy evidence crown.
+
+`v1.7.5-alpha` locks the Masked Role-Dependence Audit. It requires masked numeric visibility for earned-one, relation debt, return debt, false-one pressure, and final false-crown safety while explicitly resisting role-blind discovery language. It adds no new heavy evidence crown.
 
 ## Not current evidence
 

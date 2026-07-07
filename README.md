@@ -1,6 +1,6 @@
 # ZeroGateSim
 
-**Current public line:** `v1.7.4-alpha` — Perturbation Spectrum Witness  
+**Current public line:** `v1.7.5-alpha` — Masked Role-Dependence Audit  
 **Status:** speculative research software / controlled synthetic-field experiment line  
 **Working identity:** Four Gates of Becoming witness simulator  
 **Core question:** can a final trinary witness distinguish earned-one from raw expression pressure, latent overcrown, relation/return debt, and false-one pressure under controlled synthetic-field adversarial weather?
@@ -190,10 +190,10 @@ C_Z^i(t)=\min(D_i(t),P_i(t),R_i(t),B_i(t))
 
 ## Active route
 
-The active route after `v1.7.4-alpha` is:
+The active route after `v1.7.5-alpha` is:
 
 ```text
-anti-tautology audit complete -> reproduction command package complete -> manuscript correction package complete -> v1.6 closeout complete -> v1.7.0 core question contract complete -> v1.7.1 return gate trace lock complete -> v1.7.2 lane taxonomy and latent overcrown repair complete -> v1.7.3 baseline and ablation falsifier matrix complete -> v1.7.4 perturbation spectrum witness complete -> v1.7.5-alpha masked role-dependence audit
+anti-tautology audit complete -> reproduction command package complete -> manuscript correction package complete -> v1.6 closeout complete -> v1.7.0 core question contract complete -> v1.7.1 return gate trace lock complete -> v1.7.2 lane taxonomy and latent overcrown repair complete -> v1.7.3 baseline and ablation falsifier matrix complete -> v1.7.4 perturbation spectrum witness complete -> v1.7.5 masked role-dependence audit complete -> v1.7.6-alpha fresh holdout synthetic-field challenge
 ```
 
 The shadow route is **not** the active route now. It is preserved as historical diagnostic work in the [history vault](docs/history_vault/README.md).
@@ -230,6 +230,10 @@ Read first:
 - [`docs/v1_7_perturbation_curve.md`](docs/v1_7_perturbation_curve.md)
 - [`docs/v1_7_weather_curve_summary.md`](docs/v1_7_weather_curve_summary.md)
 - [`docs/v1_7_expected_quiet_lane_activation.md`](docs/v1_7_expected_quiet_lane_activation.md)
+- [`docs/v1_7_masked_role_dependence_audit.md`](docs/v1_7_masked_role_dependence_audit.md)
+- [`docs/v1_7_masked_numeric_visibility.md`](docs/v1_7_masked_numeric_visibility.md)
+- [`docs/v1_7_role_dependence_pressure.md`](docs/v1_7_role_dependence_pressure.md)
+- [`docs/v1_7_role_blind_forbidden_language.md`](docs/v1_7_role_blind_forbidden_language.md)
 - [`docs/v1_7_answer_grammar.md`](docs/v1_7_answer_grammar.md)
 - [`docs/v1_7_falsifier_register.md`](docs/v1_7_falsifier_register.md)
 - [`docs/v1_7_forbidden_claims.md`](docs/v1_7_forbidden_claims.md)
@@ -256,6 +260,8 @@ Read first:
 `v1.7.3-alpha` locks the Baseline and Ablation Falsifier Matrix. It names the weaker witnesses that must fail before the v1.7 core question can close: raw-only, binary, dead-safe, average-gate, no-return, no-relation, no-lineage/no-return-depth, no-echo-independence, no-zero-hold, and no-false-one-demotion. It adds no new heavy evidence crown, keeps `C_Z = min(D, P, R, B)` unchanged, and prepares `v1.7.4-alpha` perturbation spectrum witness.
 
 `v1.7.4-alpha` locks the Perturbation Spectrum Witness. It requires lane-level behavior across `triad27`, `deep81`, and `wide243`: earned-one, raw expression pressure, latent overcrown, relation debt, return debt, echo dependence, lineage instability, false-one pressure, and final false-one crowns. It adds no new heavy evidence crown, keeps `C_Z = min(D, P, R, B)` unchanged, and prepares `v1.7.5-alpha` masked role-dependence audit.
+
+`v1.7.5-alpha` locks the Masked Role-Dependence Audit. It requires masked numeric visibility for earned-one, raw expression pressure, relation debt, return debt, false-one pressure, and final false-one crown safety. It adds no new heavy evidence crown, keeps `C_Z = min(D, P, R, B)` unchanged, and prepares `v1.7.6-alpha` fresh holdout synthetic-field challenge.
 
 The recent native evidence line now has the shape the project was trying to reach:
 
@@ -342,6 +348,7 @@ The README keeps only the recent native route because it explains the current ev
 - `v1.7.2-alpha` — Lane Taxonomy and Latent Overcrown Repair.
 - `v1.7.3-alpha` — Baseline and Ablation Falsifier Matrix.
 - `v1.7.4-alpha` — Perturbation Spectrum Witness.
+- `v1.7.5-alpha` — Masked Role-Dependence Audit.
 
 Older proof and shadow history lives in the history vault.
 
@@ -477,3 +484,7 @@ Future manuscript and evidence records may use separate explicit licenses.
 ## v1.7.4-alpha note
 
 `v1.7.4-alpha` is the Perturbation Spectrum Witness gate. It preserves `C_Z = min(D, P, R, B)`, does not start manuscript v2, does not revive shadow, does not upload to Zenodo, and does not claim observed-universe proof. It locks the spectrum-under-perturbation contract: raw pressure may move, structured zero/debt lanes may rise, false-one pressure may surface, and final false-one crowns must remain zero for any later `+1` closeout candidate. It prepares `v1.7.5-alpha` Masked Role-Dependence Audit.
+
+## v1.7.5-alpha note
+
+`v1.7.5-alpha` is the Masked Role-Dependence Audit gate. It preserves `C_Z = min(D, P, R, B)`, does not start manuscript v2, does not revive shadow as discovery, does not upload to Zenodo, and does not claim role-blind false-one detection. It locks the masked numeric review contract: role labels may define the controlled harness, but they may not be the hidden mechanism that assigns earned-one, relation debt, return debt, false-one pressure, or false-crown safety. It prepares `v1.7.6-alpha` Fresh Holdout Synthetic-Field Challenge.

@@ -146,8 +146,8 @@ def test_v1_7_2_public_surfaces_and_version_truth() -> None:
     rules_doc = read("docs/v1_7_lane_visibility_decision_rules.md")
     release = read("docs/release_notes/v1_7_2_alpha.md")
 
-    assert "1.7.4-alpha" in read("src/zerogate_sim/__init__.py")
-    assert 'version = "1.7.4a0"' in read("pyproject.toml")
+    assert "1.7.5-alpha" in read("src/zerogate_sim/__init__.py")
+    assert 'version = "1.7.5a0"' in read("pyproject.toml")
     assert "zerogate-v1-7-lane-taxonomy" in read("pyproject.toml")
 
     for text in [readme, roadmap, version_truth, evidence_index, lane_doc, latent_doc, rr_doc, rules_doc, release]:
@@ -162,5 +162,5 @@ def test_v1_7_2_public_surfaces_and_version_truth() -> None:
     assert "Relation Debt vs Return Debt" in rr_doc
     assert "Lane Visibility Decision Rules" in rules_doc
     assert "no new heavy evidence crown" in release
-    assert "v1.7.4-alpha" in readme
-    assert "v1.7.4-alpha" in roadmap
+    assert "v1.7.5-alpha" in readme
+    assert "v1.7.5-alpha" in roadmap
