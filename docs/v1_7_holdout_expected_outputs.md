@@ -40,3 +40,6 @@ A successful row is not merely a row with zero false crowns. It must also avoid 
 | final false-one crowns | must remain `0`; Any final false-one crown blocks later `+1` closeout language |
 
 A partial rung result may be useful. It is not the full v1.7 answer.
+
+
+Post-holdout audit note: `v1.7.7-alpha` checks these holdout expectations for anti-tautology and role-dependence pressure before reviewer packaging.

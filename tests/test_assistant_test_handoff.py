@@ -142,7 +142,7 @@ def test_build_test_handoff_classifies_full_compressed_and_visual_outputs(tmp_pa
 
     paths = build_test_handoff(
         out_dir=repo / "handoff",
-        version="v1.7.6-alpha",
+        version="v1.7.7-alpha",
         status="passed",
         repo_root=repo,
         notes=["triad27 rung inspected before deeper weather"],
@@ -150,7 +150,7 @@ def test_build_test_handoff_classifies_full_compressed_and_visual_outputs(tmp_pa
         compressed_summaries=[compressed],
         visual_outputs=[visual],
         includes=[generic],
-        report_label_notes=["Included historical debt-evidence reports may retain internal report-version labels; active package boundary remains v1.7.6-alpha."],
+        report_label_notes=["Included historical debt-evidence reports may retain internal report-version labels; active package boundary remains v1.7.7-alpha."],
     )
 
     data = json.loads(paths["assistant_test_handoff_json"].read_text(encoding="utf-8"))

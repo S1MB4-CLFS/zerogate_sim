@@ -240,12 +240,12 @@ def test_v1_7_3_public_surfaces_remain_historical_under_current_package() -> Non
     failure_doc = read("docs/v1_7_failure_mode_table.md")
     release = read("docs/release_notes/v1_7_3_alpha.md")
 
-    assert "1.7.6-alpha" in read("src/zerogate_sim/__init__.py")
-    assert 'version = "1.7.6a0"' in read("pyproject.toml")
+    assert "1.7.7-alpha" in read("src/zerogate_sim/__init__.py")
+    assert 'version = "1.7.7a0"' in read("pyproject.toml")
     assert "zerogate-v1-7-baseline-falsifier" in read("pyproject.toml")
 
     for text in [readme, roadmap, version_truth, evidence_index]:
-        assert "v1.7.6-alpha" in text
+        assert "v1.7.7-alpha" in text
         assert "C_Z = min(D, P, R, B)" in text
 
     for text in [matrix_doc, summary_doc, failure_doc, release]:
@@ -258,5 +258,5 @@ def test_v1_7_3_public_surfaces_remain_historical_under_current_package() -> Non
     assert "native final trinary witness must win three ways" in summary_doc
     assert "dead-safe equivalence" in failure_doc
     assert "no new heavy evidence crown" in release
-    assert "v1.7.6-alpha" in readme
-    assert "v1.7.6-alpha" in roadmap
+    assert "v1.7.7-alpha" in readme
+    assert "v1.7.7-alpha" in roadmap

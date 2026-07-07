@@ -1,6 +1,6 @@
 # ZeroGateSim Roadmap
 
-**Current line:** `v1.7.6-alpha` — Fresh Holdout Synthetic-Field Challenge  
+**Current line:** `v1.7.7-alpha` — Anti-Tautology Audit / Role-Dependence Check  
 **Release posture:** public research-alpha / controlled synthetic-field experiment line
 
 ZeroGateSim now has a repaired Four Gates evidence path. The older generated toy-field proof record remains preserved in the history vault, not on the active claim surface. The history vault keeps what the project was; the README shows what the project is; this roadmap shows what still has to be earned.
@@ -56,7 +56,8 @@ C_Z = min(D, P, R, B)
 | `v1.7.3` baseline / ablation falsifier matrix | complete | weaker witnesses are locked as enemies; no new evidence crown |
 | `v1.7.4` perturbation spectrum witness | complete | spectrum-under-perturbation rules are locked; no new evidence crown |
 | `v1.7.5` masked role-dependence audit | complete | masked numeric visibility is locked before fresh holdout; not role-blind discovery |
-| `v1.7.6` fresh holdout synthetic-field challenge | current | fresh seeds, held-out variants, controlled weather shifts, candidate-name masking, and pre-frozen manifests are locked before reviewer packaging |
+| `v1.7.6` fresh holdout synthetic-field challenge | complete | fresh seeds, held-out variants, controlled weather shifts, candidate-name masking, and pre-frozen manifests are locked before post-holdout audit |
+| `v1.7.7` anti-tautology audit / role-dependence check | current | post-holdout result is checked for non-vacuity, non-dead-safe behavior, candidate-name masking, role-dependence pressure, and bounded translation before reviewer packaging |
 
 ## Locked v1.6 closeout route
 
@@ -201,9 +202,10 @@ The core question is answered in full only if all of these gates pass.
 | `v1.7.3-alpha` | Baseline and Ablation Falsifier Matrix | complete; baseline enemies are locked against earned-one preservation, structured zero, and false-one demotion | a simpler witness explains the same result |
 | `v1.7.4-alpha` | Perturbation Spectrum Witness | complete; spectrum lanes and weather-curve rules are locked before masked role-dependence audit | perturbation creates new-looking pressure and the witness crowns it without return, lineage, and independence |
 | `v1.7.5-alpha` | Masked Role-Dependence Audit | complete; numeric witness pattern remains visible when direct role labels are masked | lanes only exist because labels say they exist |
-| `v1.7.6-alpha` | Fresh Holdout Synthetic-Field Challenge | current; holdout design, weather ladder, candidate-name masking, and pre-frozen expected-output manifest are locked before reviewer packaging | result only survives the known reference profile |
-| `v1.7.7-alpha` | Reviewer Start Here / Reproduction Package | cold reviewer can understand the question, witness, lane grammar, falsifiers, small reproduction path, and forbidden claims | project still requires private explanation to understand why the result matters |
-| `v1.7.8-alpha` | Core Question Closeout | closeout sentence matches the evidence exactly and decides `+1`, `0`, or `-1` | closeout sentence is stronger than the evidence |
+| `v1.7.6-alpha` | Fresh Holdout Synthetic-Field Challenge | complete; holdout design, weather ladder, candidate-name masking, and pre-frozen expected-output manifest are locked before post-holdout audit | result only survives the known reference profile |
+| `v1.7.7-alpha` | Anti-Tautology Audit / Role-Dependence Check | current; post-holdout evidence is checked for tautology, role/name leakage, dead-safe refusal, vacuity, and bounded claim translation | audit passes only because labels or definitions bake in success |
+| `v1.7.8-alpha` | Reviewer Start Here / Reproduction Package | cold reviewer can understand the question, witness, lane grammar, falsifiers, small reproduction path, and forbidden claims | project still requires private explanation to understand why the result matters |
+| `v1.7.9-alpha` | Core Question Closeout | closeout sentence matches the evidence exactly and decides `+1`, `0`, or `-1` | closeout sentence is stronger than the evidence |
 
 ### v1.7.0-alpha — Operational Claim Contract
 
@@ -418,7 +420,7 @@ deep81 = 3^4 perturbation / late-shock holdout bridge
 wide243 = 3^5 temporal-depth / full controlled weather stress
 ```
 
-All three weather tiers are required before the full holdout answer can support `v1.7.8-alpha` closeout. `v1.7.6-alpha` locks the design, schema, evaluator, and stop conditions; it does not require CI to run the heavy 27/81/243 evidence stack. After `v1.7.6-alpha` is CI green, the full ladder should be run before `v1.7.7-alpha` packages the reviewer path.
+All three weather tiers are required before the full holdout answer can support `v1.7.9-alpha` closeout. `v1.7.6-alpha` locks the design, schema, evaluator, and stop conditions; it does not require CI to run the heavy 27/81/243 evidence stack. After `v1.7.6-alpha` is CI green, the full ladder should be run before `v1.7.7-alpha` audits anti-tautology and role-dependence pressure. Reviewer packaging now waits for `v1.7.8-alpha`.
 
 Process scar: run `triad27` first and inspect the report, evaluator, and assistant handoff before running `deep81`; inspect `deep81` before running `wide243`. Do not use an all-weather one-shot runner until the smallest rung proves the output pipeline.
 
@@ -446,11 +448,59 @@ or result only survives the known reference profile.
 
 ## v1.7.6-alpha current note
 
-`v1.7.6-alpha` locks the fresh holdout synthetic-field challenge. It preserves `C_Z = min(D, P, R, B)`, adds no new heavy evidence crown, does not start manuscript v2, and prepares `v1.7.7-alpha` Reviewer Start Here / Reproduction Package. The 27/81/243 ladder belongs to the full holdout answer, but this gate is the contract/evaluator lock. After `v1.7.6-alpha` is CI green, run the ladder one rung at a time: `triad27` -> inspect -> `deep81` -> inspect -> `wide243` -> inspect -> `v1.7.7-alpha`. No heavy run is allowed to masquerade as closeout until `v1.7.8-alpha` decides the core question.
+`v1.7.6-alpha` locks the fresh holdout synthetic-field challenge. It preserves `C_Z = min(D, P, R, B)`, adds no new heavy evidence crown, does not start manuscript v2, and prepares `v1.7.7-alpha` Anti-Tautology Audit / Role-Dependence Check. The 27/81/243 ladder belongs to the full holdout answer, but this gate is the contract/evaluator lock. After `v1.7.6-alpha` is CI green, run the ladder one rung at a time: `triad27` -> inspect -> `deep81` -> inspect -> `wide243` -> inspect -> `v1.7.7-alpha` audit -> `v1.7.8-alpha` reviewer package. No heavy run is allowed to masquerade as closeout until `v1.7.9-alpha` decides the core question.
 
 Output structure note: local holdout output should produce a full output report, compressed summary, optional visual outputs, machine decision files, and assistant handoff with strict include audit. These local artifacts are not repo truth unless a later patch deliberately promotes a bounded summary.
 
-### v1.7.7-alpha — Reviewer Start Here / Reproduction Package
+### v1.7.7-alpha — Anti-Tautology Audit / Role-Dependence Check
+
+`v1.7.7-alpha` audits the completed fresh holdout ladder before reviewer packaging. This repeats the useful v1.6.x lesson: do not package a result until the result has faced anti-tautology and role-dependence pressure.
+
+The audit follows a known empirical routine:
+
+```text
+pre-register expectations
+-> hold out fresh cases
+-> keep positive controls active
+-> keep negative controls active
+-> mask labels / role-name leakage
+-> compare against simpler explanations
+-> explain the decision path
+-> bound the claim
+```
+
+Expected artifacts:
+
+```text
+docs/v1_7_anti_tautology_role_dependence_check.md
+docs/v1_7_anti_tautology_known_routine.md
+docs/v1_7_post_holdout_audit_schema.md
+tests/test_v1_7_anti_tautology_role_dependence_check.py
+```
+
+Required result:
+
+```text
+The completed triad27/deep81/wide243 holdout ladder is non-vacuous, non-dead-safe, candidate-name masked, role-bounded, and not merely true by definition.
+```
+
+Stop condition:
+
+```text
+any final false-one crown,
+post-hoc expected manifest,
+missing weather rung,
+candidate-name / role-label leakage,
+dead-safe no-crown behavior,
+false-one pressure absent,
+or role-blind discovery language.
+```
+
+## v1.7.7-alpha current note
+
+`v1.7.7-alpha` preserves `C_Z = min(D, P, R, B)`, adds no new heavy evidence crown, does not start manuscript v2, and prepares `v1.7.8-alpha` Reviewer Start Here / Reproduction Package. It checks that the post-holdout result is not tautological, not vacuous, not dead-safe, and not carried by role/name leakage. Passing this audit does not solve role-blind discovery; it only makes the controlled synthetic-field holdout result ready to package for review.
+
+### v1.7.8-alpha — Reviewer Start Here / Reproduction Package
 
 `v1.7` must include a narrow reader door. The evidence cannot require a reviewer to wander the entire repo cathedral with a candle and a sandwich.
 
@@ -467,7 +517,7 @@ scripts/run_v1_7_small_reproduction.ps1
 tests/test_v1_7_reviewer_path.py
 ```
 
-`v1.7.7-alpha` must package the output in a human-readable shape:
+`v1.7.8-alpha` must package the output in a human-readable shape:
 
 ```text
 full_output/
@@ -479,7 +529,7 @@ handoff/
 
 The assistant handoff should carry both the complete system output report and the compressed reviewer state. Future display work may render these files in a more universal visual layer, but that display layer is not part of the scientific claim.
 
-### v1.7.8-alpha — Core Question Closeout
+### v1.7.9-alpha — Core Question Closeout
 
 This version closes `v1.7` with one of three decisions.
 
@@ -503,13 +553,13 @@ A `-1` closeout must say:
 
 ## Manuscript v2 upgrade gate — before v1.8
 
-If `v1.7.8-alpha` closes `+1`, the original manuscript must be upgraded before `v1.8` begins.
+If `v1.7.9-alpha` closes `+1`, the original manuscript must be upgraded before `v1.8` begins.
 
 This is **manuscript v2**, not software `v2.0`. It exists because the main question would then be answered inside its bounded domain, and the archived first-research-alpha manuscript would need to become an updated readable record before the project continues into broader synthetic challenges.
 
-If `v1.7.8-alpha` closes `0`, manuscript v2 may become a bounded correction / partial-answer manuscript, or it may wait while the unresolved `v1.7` lane is repaired.
+If `v1.7.9-alpha` closes `0`, manuscript v2 may become a bounded correction / partial-answer manuscript, or it may wait while the unresolved `v1.7` lane is repaired.
 
-If `v1.7.8-alpha` closes `-1`, manuscript v2 does not begin.
+If `v1.7.9-alpha` closes `-1`, manuscript v2 does not begin.
 
 Required manuscript v2 content after a `+1` closeout:
 

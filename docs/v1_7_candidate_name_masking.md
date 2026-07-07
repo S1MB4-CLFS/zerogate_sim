@@ -26,3 +26,6 @@ Candidate-name masking does not solve role-blind discovery.
 If the lane can only be interpreted because the candidate name tells the story, the holdout remains `0` or `-1`, not `+1`.
 
 Candidate-name masking is not role-blind discovery. It is a controlled holdout hygiene gate that removes obvious name/role hints while preserving numeric witness surfaces.
+
+
+Post-holdout audit note: `v1.7.7-alpha` checks these holdout expectations for anti-tautology and role-dependence pressure before reviewer packaging.

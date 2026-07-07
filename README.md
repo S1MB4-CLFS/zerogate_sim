@@ -1,6 +1,6 @@
 # ZeroGateSim
 
-**Current public line:** `v1.7.6-alpha` — Fresh Holdout Synthetic-Field Challenge  
+**Current public line:** `v1.7.7-alpha` — Anti-Tautology Audit / Role-Dependence Check  
 **Status:** speculative research software / controlled synthetic-field experiment line  
 **Working identity:** Four Gates of Becoming witness simulator  
 **Core question:** can a final trinary witness distinguish earned-one from raw expression pressure, latent overcrown, relation/return debt, and false-one pressure under controlled synthetic-field adversarial weather?
@@ -193,7 +193,7 @@ C_Z^i(t)=\min(D_i(t),P_i(t),R_i(t),B_i(t))
 The active route after `v1.7.6-alpha` is:
 
 ```text
-anti-tautology audit complete -> reproduction command package complete -> manuscript correction package complete -> v1.6 closeout complete -> v1.7.0 core question contract complete -> v1.7.1 return gate trace lock complete -> v1.7.2 lane taxonomy and latent overcrown repair complete -> v1.7.3 baseline and ablation falsifier matrix complete -> v1.7.4 perturbation spectrum witness complete -> v1.7.5 masked role-dependence audit complete -> v1.7.6 fresh holdout synthetic-field challenge complete -> v1.7.7-alpha reviewer start here / reproduction package
+anti-tautology audit complete -> reproduction command package complete -> manuscript correction package complete -> v1.6 closeout complete -> v1.7.0 core question contract complete -> v1.7.1 return gate trace lock complete -> v1.7.2 lane taxonomy and latent overcrown repair complete -> v1.7.3 baseline and ablation falsifier matrix complete -> v1.7.4 perturbation spectrum witness complete -> v1.7.5 masked role-dependence audit complete -> v1.7.6 fresh holdout synthetic-field challenge complete -> v1.7.7 anti-tautology audit / role-dependence check -> v1.7.8-alpha reviewer start here / reproduction package
 ```
 
 The shadow route is **not** the active route now. It is preserved as historical diagnostic work in the [history vault](docs/history_vault/README.md).
@@ -361,6 +361,7 @@ The README keeps only the recent native route because it explains the current ev
 - `v1.7.4-alpha` — Perturbation Spectrum Witness.
 - `v1.7.5-alpha` — Masked Role-Dependence Audit.
 - `v1.7.6-alpha` — Fresh Holdout Synthetic-Field Challenge.
+- `v1.7.7-alpha` — Anti-Tautology Audit / Role-Dependence Check.
 
 Older proof and shadow history lives in the history vault.
 
@@ -503,4 +504,9 @@ Future manuscript and evidence records may use separate explicit licenses.
 
 ## v1.7.6-alpha note
 
-`v1.7.6-alpha` is the Fresh Holdout Synthetic-Field Challenge gate. It preserves `C_Z = min(D, P, R, B)`, does not start manuscript v2, does not upload to Zenodo, does not claim role-blind discovery, and does not close the core question. It locks fresh seed pressure, held-out profile variants, controlled weather shifts, candidate-name masking, and a pre-frozen expected-output manifest. The `triad27`, `deep81`, and `wide243` rungs are all required for later full holdout closeout; `v1.7.6-alpha` locks the contract/evaluator, `v1.7.7-alpha` packages reviewer reproduction, and `v1.7.8-alpha` decides the core question.
+`v1.7.6-alpha` is the Fresh Holdout Synthetic-Field Challenge gate. It preserves `C_Z = min(D, P, R, B)`, does not start manuscript v2, does not upload to Zenodo, does not claim role-blind discovery, and does not close the core question. It locks fresh seed pressure, held-out profile variants, controlled weather shifts, candidate-name masking, and a pre-frozen expected-output manifest. The `triad27`, `deep81`, and `wide243` rungs are all required for later full holdout closeout; `v1.7.6-alpha` locks the contract/evaluator, `v1.7.7-alpha` audits anti-tautology and role-dependence pressure, `v1.7.8-alpha` packages reviewer reproduction, and `v1.7.9-alpha` decides the core question.
+
+
+## v1.7.7-alpha note
+
+`v1.7.7-alpha` is the Anti-Tautology Audit / Role-Dependence Check gate. It preserves `C_Z = min(D, P, R, B)`, does not start manuscript v2, does not upload to Zenodo, does not claim role-blind discovery, and does not close the core question. It checks the post-holdout ladder for pre-registration, non-vacuous false-one pressure, non-dead-safe earned-one preservation, candidate-name masking, role-dependence pressure, structured zero/debt visibility, and bounded claim translation before `v1.7.8-alpha` reviewer/reproduction packaging.

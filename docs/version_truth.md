@@ -1,9 +1,9 @@
 # Version Truth
 
-**Status:** README overflow moved here in `v1.6.9-alpha`; current spine advanced in `v1.7.6-alpha`  
+**Status:** README overflow moved here in `v1.6.9-alpha`; current spine advanced in `v1.7.7-alpha`  
 **Purpose:** preserve the release spine and recent checkpoints without forcing the README to open with a wall of version bookkeeping.
 
-The active public line is now `v1.7.6-alpha` — Fresh Holdout Synthetic-Field Challenge.
+The active public line is now `v1.7.7-alpha` — Anti-Tautology Audit / Role-Dependence Check.
 
 ## Release spine
 
@@ -36,7 +36,8 @@ The active public line is now `v1.7.6-alpha` — Fresh Holdout Synthetic-Field C
 - `v1.7.3-alpha` — Baseline and Ablation Falsifier Matrix: aligns weaker witnesses as falsifier enemies before perturbation spectrum work.
 - `v1.7.4-alpha` — Perturbation Spectrum Witness: locks spectrum-under-perturbation lane behavior before masked role-dependence audit.
 - `v1.7.5-alpha` — Masked Role-Dependence Audit: locks masked numeric visibility and role-dependence pressure before fresh holdout.
-- `v1.7.6-alpha` — Fresh Holdout Synthetic-Field Challenge: locks fresh holdout design, weather ladder, candidate-name masking, and pre-frozen expected-output manifests before reviewer packaging.
+- `v1.7.6-alpha` — Fresh Holdout Synthetic-Field Challenge: locks fresh holdout design, weather ladder, candidate-name masking, and pre-frozen expected-output manifests before post-holdout audit.
+- `v1.7.7-alpha` — Anti-Tautology Audit / Role-Dependence Check: audits the fresh holdout ladder against pre-registration, non-vacuity, positive/negative controls, label leakage, role-dependence, and bounded claim translation before reviewer packaging.
 
 ## Recent checkpoints
 
@@ -199,3 +200,5 @@ C_Z = min(D, P, R, B)
 ## v1.7.6-alpha note
 
 `v1.7.6-alpha` is the Fresh Holdout Synthetic-Field Challenge gate. It preserves `C_Z = min(D, P, R, B)`, does not start manuscript v2, does not revive shadow as discovery, does not upload to Zenodo, and does not claim role-blind false-one detection or observed-universe proof. It locks fresh seeds, held-out profile variants, controlled weather shifts, candidate-name masking, and expected-output manifests written before the run. The `triad27`, `deep81`, and `wide243` rungs are required for later full holdout closeout, but this version is the contract/evaluator lock before `v1.7.7-alpha` reviewer packaging.
+
+- `v1.7.7-alpha` adds `docs/v1_7_anti_tautology_role_dependence_check.md`, `docs/v1_7_anti_tautology_known_routine.md`, `docs/v1_7_post_holdout_audit_schema.md`, and `zerogate-v1-7-anti-tautology-role-audit`; it verifies that post-holdout evidence is not tautological, vacuous, dead-safe, or role/name-leakage carried before reviewer packaging.

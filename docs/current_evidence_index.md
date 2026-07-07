@@ -34,7 +34,8 @@ C_Z = min(D, P, R, B)
 | v1.7 baseline / ablation falsifier matrix | `v1.7.3-alpha` | baseline matrix / falsifier translation | witness | no heavy evidence crown; weaker witnesses aligned as enemies before perturbation spectrum |
 | v1.7 perturbation spectrum witness | `v1.7.4-alpha` | spectrum-under-perturbation contract | complete | no heavy evidence crown; raw pressure may move while final witness must fail safely |
 | v1.7 masked role-dependence audit | `v1.7.5-alpha` | masked numeric visibility contract | witness | no role-blind discovery claim; separates witness-computed lanes from role-label recounting |
-| v1.7 fresh holdout synthetic-field challenge | `v1.7.6-alpha` | fresh holdout contract / tier policy | witness | no heavy evidence crown; locks fresh seeds, held-out variants, weather shifts, candidate-name masking, and pre-frozen manifests |
+| v1.7 fresh holdout synthetic-field challenge | `v1.7.6-alpha` | fresh holdout contract / tier policy | complete | no heavy evidence crown; locks fresh seeds, held-out variants, weather shifts, candidate-name masking, and pre-frozen manifests |
+| v1.7 anti-tautology / role-dependence check | `v1.7.7-alpha` | post-holdout audit / role-dependence boundary | witness | no core closeout; checks that holdout evidence is non-vacuous, non-dead-safe, masked, role-bounded, and not tautological |
 
 ## Canonical state pattern
 
@@ -72,7 +73,7 @@ final false-one crowns = 0
 
 `v1.7.6-alpha` locks the Fresh Holdout Synthetic-Field Challenge. It defines fresh seeds, held-out profile variants, controlled weather shifts, candidate-name masking, and lane-level expected-output manifests written before the run. It makes `triad27`, `deep81`, and `wide243` required for later full holdout closeout while adding no new heavy evidence crown.
 
-Post-CI process note: the holdout ladder must run one rung at a time (`triad27` -> inspect -> `deep81` -> inspect -> `wide243` -> inspect). No local run attempt is promoted into this index by default. Future `v1.7.7-alpha` packaging should use the output contract in `docs/v1_7_holdout_output_structure.md`, including full output reports, compressed summaries, visual outputs when available, and strict assistant handoff audit.
+Post-CI process note: the holdout ladder must run one rung at a time (`triad27` -> inspect -> `deep81` -> inspect -> `wide243` -> inspect). No local run attempt is promoted into this index by default. `v1.7.7-alpha` audits the completed rung-level output before packaging. Future `v1.7.8-alpha` packaging should use the output contract in `docs/v1_7_holdout_output_structure.md`, including full output reports, compressed summaries, visual outputs when available, and strict assistant handoff audit.
 
 ## Not current evidence
 
@@ -84,3 +85,5 @@ The following remain historical or analogy lanes:
 - physics, quantum, topology, ER=EPR, or observed-universe analogies.
 
 These may explain how the project got here, but they do not carry the current Four Gates evidence claim.
+
+`v1.7.7-alpha` locks the Anti-Tautology Audit / Role-Dependence Check after fresh holdout and before reviewer packaging. It checks rung completeness, frozen manifests, candidate-name masking, earned-one positive controls, false-one negative controls, structured zero/debt visibility, and bounded role-dependence language. It does not close the core question.
