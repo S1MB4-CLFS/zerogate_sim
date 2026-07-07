@@ -1,9 +1,9 @@
 # Version Truth
 
-**Status:** README overflow moved here in `v1.6.9-alpha`; current spine advanced in `v1.7.5-alpha`  
+**Status:** README overflow moved here in `v1.6.9-alpha`; current spine advanced in `v1.7.6-alpha`  
 **Purpose:** preserve the release spine and recent checkpoints without forcing the README to open with a wall of version bookkeeping.
 
-The active public line is now `v1.7.5-alpha` — Masked Role-Dependence Audit.
+The active public line is now `v1.7.6-alpha` — Fresh Holdout Synthetic-Field Challenge.
 
 ## Release spine
 
@@ -36,6 +36,7 @@ The active public line is now `v1.7.5-alpha` — Masked Role-Dependence Audit.
 - `v1.7.3-alpha` — Baseline and Ablation Falsifier Matrix: aligns weaker witnesses as falsifier enemies before perturbation spectrum work.
 - `v1.7.4-alpha` — Perturbation Spectrum Witness: locks spectrum-under-perturbation lane behavior before masked role-dependence audit.
 - `v1.7.5-alpha` — Masked Role-Dependence Audit: locks masked numeric visibility and role-dependence pressure before fresh holdout.
+- `v1.7.6-alpha` — Fresh Holdout Synthetic-Field Challenge: locks fresh holdout design, weather ladder, candidate-name masking, and pre-frozen expected-output manifests before reviewer packaging.
 
 ## Recent checkpoints
 
@@ -82,6 +83,7 @@ The active public line is now `v1.7.5-alpha` — Masked Role-Dependence Audit.
 - `v1.7.3-alpha` adds `docs/v1_7_baseline_falsifier_matrix.md`, `docs/v1_7_ablation_summary.md`, `docs/v1_7_failure_mode_table.md`, and `zerogate-v1-7-baseline-falsifier-matrix`; it locks the baseline enemy matrix before perturbation spectrum work.
 - `v1.7.4-alpha` adds `docs/v1_7_witness_spectrum.md`, `docs/v1_7_perturbation_curve.md`, `docs/v1_7_weather_curve_summary.md`, `docs/v1_7_expected_quiet_lane_activation.md`, and `zerogate-v1-7-perturbation-spectrum`; it locks the perturbation spectrum witness before masked role-dependence work.
 - `v1.7.5-alpha` adds `docs/v1_7_masked_role_dependence_audit.md`, `docs/v1_7_masked_numeric_visibility.md`, `docs/v1_7_role_dependence_pressure.md`, `docs/v1_7_role_blind_forbidden_language.md`, and `zerogate-v1-7-masked-role-audit`; it locks masked numeric review before fresh holdout.
+- `v1.7.6-alpha` adds `docs/v1_7_holdout_design.md`, `docs/v1_7_holdout_expected_outputs.md`, `docs/v1_7_holdout_weather_ladder.md`, `docs/v1_7_candidate_name_masking.md`, and `zerogate-v1-7-fresh-holdout-challenge`; it locks the fresh holdout challenge before reviewer/reproduction packaging.
 
 Detailed release notes live in [`docs/release_notes/`](release_notes/).
 
@@ -192,3 +194,8 @@ C_Z = min(D, P, R, B)
 ## v1.7.5-alpha note
 
 `v1.7.5-alpha` is the Masked Role-Dependence Audit gate. It preserves `C_Z = min(D, P, R, B)`, does not start manuscript v2, does not revive shadow as discovery, does not upload to Zenodo, and does not claim role-blind false-one detection. It separates witness-computed lane visibility from role-label recounting: role labels may define the controlled adversarial harness, but masked numeric review must keep earned-one, relation debt, return debt, false-one pressure, and final false-crown safety visible before fresh holdout can begin.
+
+
+## v1.7.6-alpha note
+
+`v1.7.6-alpha` is the Fresh Holdout Synthetic-Field Challenge gate. It preserves `C_Z = min(D, P, R, B)`, does not start manuscript v2, does not revive shadow as discovery, does not upload to Zenodo, and does not claim role-blind false-one detection or observed-universe proof. It locks fresh seeds, held-out profile variants, controlled weather shifts, candidate-name masking, and expected-output manifests written before the run. The `triad27`, `deep81`, and `wide243` rungs are required for later full holdout closeout, but this version is the contract/evaluator lock before `v1.7.7-alpha` reviewer packaging.

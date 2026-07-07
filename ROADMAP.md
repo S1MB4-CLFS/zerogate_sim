@@ -1,6 +1,6 @@
 # ZeroGateSim Roadmap
 
-**Current line:** `v1.7.5-alpha` — Masked Role-Dependence Audit  
+**Current line:** `v1.7.6-alpha` — Fresh Holdout Synthetic-Field Challenge  
 **Release posture:** public research-alpha / controlled synthetic-field experiment line
 
 ZeroGateSim now has a repaired Four Gates evidence path. The older generated toy-field proof record remains preserved in the history vault, not on the active claim surface. The history vault keeps what the project was; the README shows what the project is; this roadmap shows what still has to be earned.
@@ -55,7 +55,8 @@ C_Z = min(D, P, R, B)
 | `v1.7.2` lane taxonomy / latent overcrown repair | complete | core lanes are distinct; latent overcrown is explicit HOLD until reproduced, narrowed, or closed partial |
 | `v1.7.3` baseline / ablation falsifier matrix | complete | weaker witnesses are locked as enemies; no new evidence crown |
 | `v1.7.4` perturbation spectrum witness | complete | spectrum-under-perturbation rules are locked; no new evidence crown |
-| `v1.7.5` masked role-dependence audit | current | masked numeric visibility is locked before fresh holdout; not role-blind discovery |
+| `v1.7.5` masked role-dependence audit | complete | masked numeric visibility is locked before fresh holdout; not role-blind discovery |
+| `v1.7.6` fresh holdout synthetic-field challenge | current | fresh seeds, held-out variants, controlled weather shifts, candidate-name masking, and pre-frozen manifests are locked before reviewer packaging |
 
 ## Locked v1.6 closeout route
 
@@ -199,9 +200,8 @@ The core question is answered in full only if all of these gates pass.
 | `v1.7.2-alpha` | Lane Taxonomy and Latent Overcrown Repair | complete; core lanes are distinct, and latent overcrown is repaired as explicit HOLD | latent overcrown remains non-reproducible but stays in the full claim anyway |
 | `v1.7.3-alpha` | Baseline and Ablation Falsifier Matrix | complete; baseline enemies are locked against earned-one preservation, structured zero, and false-one demotion | a simpler witness explains the same result |
 | `v1.7.4-alpha` | Perturbation Spectrum Witness | complete; spectrum lanes and weather-curve rules are locked before masked role-dependence audit | perturbation creates new-looking pressure and the witness crowns it without return, lineage, and independence |
-| `v1.7.5-alpha` | Masked Role-Dependence Audit | current; masked numeric visibility and role-dependence pressure are locked before fresh holdout | lanes only exist because labels say they exist |
-| `v1.7.5-alpha` | Masked Role-Dependence Audit | numeric witness pattern still separates earned-one, relation debt, return debt, false-one pressure, and final false-crown safety when labels are masked | lanes only exist because labels say they exist |
-| `v1.7.6-alpha` | Fresh Holdout Synthetic-Field Challenge | lane pattern survives fresh seeds, held-out profile variants, controlled weather shifts, and candidate-name masking | result only survives the known reference profile |
+| `v1.7.5-alpha` | Masked Role-Dependence Audit | complete; numeric witness pattern remains visible when direct role labels are masked | lanes only exist because labels say they exist |
+| `v1.7.6-alpha` | Fresh Holdout Synthetic-Field Challenge | current; holdout design, weather ladder, candidate-name masking, and pre-frozen expected-output manifest are locked before reviewer packaging | result only survives the known reference profile |
 | `v1.7.7-alpha` | Reviewer Start Here / Reproduction Package | cold reviewer can understand the question, witness, lane grammar, falsifiers, small reproduction path, and forbidden claims | project still requires private explanation to understand why the result matters |
 | `v1.7.8-alpha` | Core Question Closeout | closeout sentence matches the evidence exactly and decides `+1`, `0`, or `-1` | closeout sentence is stronger than the evidence |
 
@@ -382,7 +382,7 @@ Forbidden claim after pass:
 The witness independently discovers all false-one or debt states in unlabeled fields.
 ```
 
-## v1.7.5-alpha current note
+## v1.7.5-alpha note
 
 `v1.7.5-alpha` locks the masked role-dependence audit. It preserves `C_Z = min(D, P, R, B)`, adds no new heavy evidence crown, does not start manuscript v2, and prepares `v1.7.6-alpha` Fresh Holdout Synthetic-Field Challenge. Passing masked numeric visibility does not mean role-blind discovery; it only says the controlled designed-profile witness is not merely role-label bookkeeping.
 
@@ -399,6 +399,50 @@ controlled weather shifts
 candidate-name masking
 lane-level expected-output manifest written before run
 ```
+
+Expected artifacts:
+
+```text
+docs/v1_7_holdout_design.md
+docs/v1_7_holdout_expected_outputs.md
+docs/v1_7_holdout_weather_ladder.md
+docs/v1_7_candidate_name_masking.md
+tests/test_v1_7_fresh_holdout_challenge.py
+```
+
+Weather ladder:
+
+```text
+triad27 = 3^3 local expression holdout smoke
+deep81 = 3^4 perturbation / late-shock holdout bridge
+wide243 = 3^5 temporal-depth / full controlled weather stress
+```
+
+All three weather tiers are required before the full holdout answer can support `v1.7.8-alpha` closeout. `v1.7.6-alpha` locks the design, schema, evaluator, and stop conditions; it does not require CI to run the heavy 27/81/243 evidence stack. After `v1.7.6-alpha` is CI green, the full ladder should be run before `v1.7.7-alpha` packages the reviewer path.
+
+Required result:
+
+```text
+Fresh holdout lane pattern remains visible:
+earned-one preserved,
+raw expression remains pressure,
+relation/return debt visible,
+false-one pressure demoted,
+final false-one crowns = 0.
+```
+
+Stop condition:
+
+```text
+any final false-one crown appears,
+expected-output manifest is not pre-frozen,
+candidate names leak lane assignment,
+or result only survives the known reference profile.
+```
+
+## v1.7.6-alpha current note
+
+`v1.7.6-alpha` locks the fresh holdout synthetic-field challenge. It preserves `C_Z = min(D, P, R, B)`, adds no new heavy evidence crown, does not start manuscript v2, and prepares `v1.7.7-alpha` Reviewer Start Here / Reproduction Package. The 27/81/243 ladder belongs to the full holdout answer, but this gate is the contract/evaluator lock. After `v1.7.6-alpha` is CI green, run the full ladder before `v1.7.7-alpha` packages the reviewer path; no heavy run is allowed to masquerade as closeout until `v1.7.8-alpha` decides the core question.
 
 ### v1.7.7-alpha — Reviewer Start Here / Reproduction Package
 

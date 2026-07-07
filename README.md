@@ -1,6 +1,6 @@
 # ZeroGateSim
 
-**Current public line:** `v1.7.5-alpha` — Masked Role-Dependence Audit  
+**Current public line:** `v1.7.6-alpha` — Fresh Holdout Synthetic-Field Challenge  
 **Status:** speculative research software / controlled synthetic-field experiment line  
 **Working identity:** Four Gates of Becoming witness simulator  
 **Core question:** can a final trinary witness distinguish earned-one from raw expression pressure, latent overcrown, relation/return debt, and false-one pressure under controlled synthetic-field adversarial weather?
@@ -190,10 +190,10 @@ C_Z^i(t)=\min(D_i(t),P_i(t),R_i(t),B_i(t))
 
 ## Active route
 
-The active route after `v1.7.5-alpha` is:
+The active route after `v1.7.6-alpha` is:
 
 ```text
-anti-tautology audit complete -> reproduction command package complete -> manuscript correction package complete -> v1.6 closeout complete -> v1.7.0 core question contract complete -> v1.7.1 return gate trace lock complete -> v1.7.2 lane taxonomy and latent overcrown repair complete -> v1.7.3 baseline and ablation falsifier matrix complete -> v1.7.4 perturbation spectrum witness complete -> v1.7.5 masked role-dependence audit complete -> v1.7.6-alpha fresh holdout synthetic-field challenge
+anti-tautology audit complete -> reproduction command package complete -> manuscript correction package complete -> v1.6 closeout complete -> v1.7.0 core question contract complete -> v1.7.1 return gate trace lock complete -> v1.7.2 lane taxonomy and latent overcrown repair complete -> v1.7.3 baseline and ablation falsifier matrix complete -> v1.7.4 perturbation spectrum witness complete -> v1.7.5 masked role-dependence audit complete -> v1.7.6 fresh holdout synthetic-field challenge complete -> v1.7.7-alpha reviewer start here / reproduction package
 ```
 
 The shadow route is **not** the active route now. It is preserved as historical diagnostic work in the [history vault](docs/history_vault/README.md).
@@ -234,6 +234,10 @@ Read first:
 - [`docs/v1_7_masked_numeric_visibility.md`](docs/v1_7_masked_numeric_visibility.md)
 - [`docs/v1_7_role_dependence_pressure.md`](docs/v1_7_role_dependence_pressure.md)
 - [`docs/v1_7_role_blind_forbidden_language.md`](docs/v1_7_role_blind_forbidden_language.md)
+- [`docs/v1_7_holdout_design.md`](docs/v1_7_holdout_design.md)
+- [`docs/v1_7_holdout_expected_outputs.md`](docs/v1_7_holdout_expected_outputs.md)
+- [`docs/v1_7_holdout_weather_ladder.md`](docs/v1_7_holdout_weather_ladder.md)
+- [`docs/v1_7_candidate_name_masking.md`](docs/v1_7_candidate_name_masking.md)
 - [`docs/v1_7_answer_grammar.md`](docs/v1_7_answer_grammar.md)
 - [`docs/v1_7_falsifier_register.md`](docs/v1_7_falsifier_register.md)
 - [`docs/v1_7_forbidden_claims.md`](docs/v1_7_forbidden_claims.md)
@@ -262,6 +266,8 @@ Read first:
 `v1.7.4-alpha` locks the Perturbation Spectrum Witness. It requires lane-level behavior across `triad27`, `deep81`, and `wide243`: earned-one, raw expression pressure, latent overcrown, relation debt, return debt, echo dependence, lineage instability, false-one pressure, and final false-one crowns. It adds no new heavy evidence crown, keeps `C_Z = min(D, P, R, B)` unchanged, and prepares `v1.7.5-alpha` masked role-dependence audit.
 
 `v1.7.5-alpha` locks the Masked Role-Dependence Audit. It requires masked numeric visibility for earned-one, raw expression pressure, relation debt, return debt, false-one pressure, and final false-one crown safety. It adds no new heavy evidence crown, keeps `C_Z = min(D, P, R, B)` unchanged, and prepares `v1.7.6-alpha` fresh holdout synthetic-field challenge.
+
+`v1.7.6-alpha` locks the Fresh Holdout Synthetic-Field Challenge. It defines fresh seeds, held-out profile variants, controlled weather shifts, candidate-name masking, and pre-frozen expected-output manifests. It makes the 27/81/243 ladder explicit as required for later full holdout closeout, but it does not require CI to run heavy evidence, does not close the core question, and prepares the run order for `v1.7.7-alpha` reviewer/reproduction packaging.
 
 The recent native evidence line now has the shape the project was trying to reach:
 
@@ -349,6 +355,7 @@ The README keeps only the recent native route because it explains the current ev
 - `v1.7.3-alpha` — Baseline and Ablation Falsifier Matrix.
 - `v1.7.4-alpha` — Perturbation Spectrum Witness.
 - `v1.7.5-alpha` — Masked Role-Dependence Audit.
+- `v1.7.6-alpha` — Fresh Holdout Synthetic-Field Challenge.
 
 Older proof and shadow history lives in the history vault.
 
@@ -488,3 +495,7 @@ Future manuscript and evidence records may use separate explicit licenses.
 ## v1.7.5-alpha note
 
 `v1.7.5-alpha` is the Masked Role-Dependence Audit gate. It preserves `C_Z = min(D, P, R, B)`, does not start manuscript v2, does not revive shadow as discovery, does not upload to Zenodo, and does not claim role-blind false-one detection. It locks the masked numeric review contract: role labels may define the controlled harness, but they may not be the hidden mechanism that assigns earned-one, relation debt, return debt, false-one pressure, or false-crown safety. It prepares `v1.7.6-alpha` Fresh Holdout Synthetic-Field Challenge.
+
+## v1.7.6-alpha note
+
+`v1.7.6-alpha` is the Fresh Holdout Synthetic-Field Challenge gate. It preserves `C_Z = min(D, P, R, B)`, does not start manuscript v2, does not upload to Zenodo, does not claim role-blind discovery, and does not close the core question. It locks fresh seed pressure, held-out profile variants, controlled weather shifts, candidate-name masking, and a pre-frozen expected-output manifest. The `triad27`, `deep81`, and `wide243` rungs are all required for later full holdout closeout; `v1.7.6-alpha` locks the contract/evaluator, `v1.7.7-alpha` packages reviewer reproduction, and `v1.7.8-alpha` decides the core question.

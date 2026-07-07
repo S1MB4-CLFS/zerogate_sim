@@ -70,8 +70,8 @@ def test_v1_6_27_public_surfaces_and_route() -> None:
     doc = read("docs/manuscript_correction_package.md")
     release = read("docs/release_notes/v1_6_28_alpha.md")
 
-    assert "1.7.5-alpha" in read("src/zerogate_sim/__init__.py")
-    assert 'version = "1.7.5a0"' in read("pyproject.toml")
+    assert "1.7.6-alpha" in read("src/zerogate_sim/__init__.py")
+    assert 'version = "1.7.6a0"' in read("pyproject.toml")
     assert "zerogate-four-gates-manuscript-correction-package" in read("pyproject.toml")
 
     for text in [readme, roadmap, version_truth, evidence_index, doc, release]:

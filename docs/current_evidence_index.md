@@ -34,6 +34,7 @@ C_Z = min(D, P, R, B)
 | v1.7 baseline / ablation falsifier matrix | `v1.7.3-alpha` | baseline matrix / falsifier translation | witness | no heavy evidence crown; weaker witnesses aligned as enemies before perturbation spectrum |
 | v1.7 perturbation spectrum witness | `v1.7.4-alpha` | spectrum-under-perturbation contract | complete | no heavy evidence crown; raw pressure may move while final witness must fail safely |
 | v1.7 masked role-dependence audit | `v1.7.5-alpha` | masked numeric visibility contract | witness | no role-blind discovery claim; separates witness-computed lanes from role-label recounting |
+| v1.7 fresh holdout synthetic-field challenge | `v1.7.6-alpha` | fresh holdout contract / tier policy | witness | no heavy evidence crown; locks fresh seeds, held-out variants, weather shifts, candidate-name masking, and pre-frozen manifests |
 
 ## Canonical state pattern
 
@@ -68,6 +69,8 @@ final false-one crowns = 0
 `v1.7.4-alpha` locks the Perturbation Spectrum Witness. It requires lane-level behavior across `triad27`, `deep81`, and `wide243`, keeps raw expression pressure separate from earned-one, keeps structured zero/debt lanes visible, treats false-one pressure as pressure rather than crown, and preserves `C_Z = min(D, P, R, B)`. It adds no new heavy evidence crown.
 
 `v1.7.5-alpha` locks the Masked Role-Dependence Audit. It requires masked numeric visibility for earned-one, relation debt, return debt, false-one pressure, and final false-crown safety while explicitly resisting role-blind discovery language. It adds no new heavy evidence crown.
+
+`v1.7.6-alpha` locks the Fresh Holdout Synthetic-Field Challenge. It defines fresh seeds, held-out profile variants, controlled weather shifts, candidate-name masking, and lane-level expected-output manifests written before the run. It makes `triad27`, `deep81`, and `wide243` required for later full holdout closeout while adding no new heavy evidence crown.
 
 ## Not current evidence
 

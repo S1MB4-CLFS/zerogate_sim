@@ -258,8 +258,8 @@ def test_four_gates_deepwide_debt_public_surfaces_are_current() -> None:
     version_truth = (ROOT / "docs/version_truth.md").read_text(encoding="utf-8")
     doc = (ROOT / "docs/four_gates_deepwide_debt_evidence.md").read_text(encoding="utf-8")
     release = (ROOT / "docs/release_notes/v1_6_21_alpha.md").read_text(encoding="utf-8")
-    assert "1.7.5-alpha" in (ROOT / "src/zerogate_sim/__init__.py").read_text(encoding="utf-8")
-    assert 'version = "1.7.5a0"' in (ROOT / "pyproject.toml").read_text(encoding="utf-8")
+    assert "1.7.6-alpha" in (ROOT / "src/zerogate_sim/__init__.py").read_text(encoding="utf-8")
+    assert 'version = "1.7.6a0"' in (ROOT / "pyproject.toml").read_text(encoding="utf-8")
     for text in [readme, roadmap, version_truth, doc, release]:
         assert "v1.6.21-alpha" in text
         assert "deep81 / wide243 debt evidence" in text

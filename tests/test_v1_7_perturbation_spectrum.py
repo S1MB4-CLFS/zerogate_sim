@@ -182,12 +182,12 @@ def test_v1_7_4_public_surfaces_and_version_truth() -> None:
     quiet_doc = read("docs/v1_7_expected_quiet_lane_activation.md")
     release = read("docs/release_notes/v1_7_4_alpha.md")
 
-    assert "1.7.5-alpha" in read("src/zerogate_sim/__init__.py")
-    assert 'version = "1.7.5a0"' in read("pyproject.toml")
+    assert "1.7.6-alpha" in read("src/zerogate_sim/__init__.py")
+    assert 'version = "1.7.6a0"' in read("pyproject.toml")
     assert "zerogate-v1-7-perturbation-spectrum" in read("pyproject.toml")
 
     for text in [readme, roadmap, version_truth, evidence_index]:
-        assert "v1.7.5-alpha" in text
+        assert "v1.7.6-alpha" in text
         assert "C_Z = min(D, P, R, B)" in text
 
     for text in [spectrum_doc, curve_doc, weather_doc, quiet_doc, release]:
@@ -200,5 +200,5 @@ def test_v1_7_4_public_surfaces_and_version_truth() -> None:
     assert "triad27" in weather_doc and "deep81" in weather_doc and "wide243" in weather_doc
     assert "final false-one crowns" in quiet_doc
     assert "no new heavy evidence crown" in release
-    assert "v1.7.5-alpha" in readme
-    assert "v1.7.5-alpha" in roadmap
+    assert "v1.7.6-alpha" in readme
+    assert "v1.7.6-alpha" in roadmap
