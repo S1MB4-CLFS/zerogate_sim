@@ -135,6 +135,10 @@ def build_test_handoff(
     notes: list[str] | None = None,
     repo_root: Path | None = None,
     includes: list[Path] | None = None,
+    full_output_reports: list[Path] | None = None,
+    compressed_summaries: list[Path] | None = None,
+    visual_outputs: list[Path] | None = None,
+    report_label_notes: list[str] | None = None,
     zip_name: str = "assistant_test_handoff.zip",
     allow_missing_includes: bool = False,
 ) -> dict[str, Path]:
@@ -150,20 +154,46 @@ def build_test_handoff(
     v1.4.3 truth repair: included files preserve source-relative paths under the
     bundle's ``included/`` directory so reports with the same basename from
     different run folders cannot overwrite each other.
+
+    v1.7.6 holdout-output repair: assistant handoffs may classify included
+    files as full output reports, compressed summaries, or visual outputs. This
+    lets a future reviewer package carry the complete system output and a
+    human-readable compressed state in one handoff without treating local run
+    artifacts as repo truth.
     """
 
     out_dir = ensure_dir(out_dir)
     repo_root = repo_root or Path.cwd()
     notes = notes or []
     includes = includes or []
+    full_output_reports = full_output_reports or []
+    compressed_summaries = compressed_summaries or []
+    visual_outputs = visual_outputs or []
+    report_label_notes = report_label_notes or []
     now = datetime.now(timezone.utc).replace(microsecond=0).isoformat()
 
-    include_results = [_copy_include(include, out_dir, repo_root=repo_root) for include in includes]
+    role_inputs = {
+        "full_output_reports": full_output_reports,
+        "compressed_summaries": compressed_summaries,
+        "visual_outputs": visual_outputs,
+        "generic_includes": includes,
+    }
+    role_results: dict[str, list[IncludeResult]] = {}
+    include_results: list[IncludeResult] = []
+    for role, paths in role_inputs.items():
+        copied = [_copy_include(include, out_dir, repo_root=repo_root) for include in paths]
+        role_results[role] = copied
+        include_results.extend(copied)
+
     if not allow_missing_includes:
         _raise_for_missing_includes(include_results)
 
     included_files = [item.bundled_path for item in include_results if item.status == "included"]
     missing_includes = [item for item in include_results if item.status != "included"]
+    role_files = {
+        role: [item.bundled_path for item in results if item.status == "included"]
+        for role, results in role_results.items()
+    }
 
     data = {
         "bundle_kind": "zerogate_assistant_test_handoff",
@@ -177,10 +207,23 @@ def build_test_handoff(
         "git_log_oneline_decorate": _run_git(["--no-pager", "log", "--oneline", "--decorate", "-8"], cwd=repo_root),
         "git_tags_v": _run_git(["tag", "--list", "v*", "--sort=-creatordate"], cwd=repo_root),
         "included_files": included_files,
+        "full_output_reports": role_files["full_output_reports"],
+        "compressed_summaries": role_files["compressed_summaries"],
+        "visual_outputs": role_files["visual_outputs"],
+        "generic_includes": role_files["generic_includes"],
+        "include_results_by_role": {role: [item.__dict__ for item in results] for role, results in role_results.items()},
         "include_results": [item.__dict__ for item in include_results],
         "missing_includes": [item.__dict__ for item in missing_includes],
         "missing_include_count": len(missing_includes),
         "strict_includes": not allow_missing_includes,
+        "report_label_notes": report_label_notes,
+        "handoff_output_contract": {
+            "full_output_reports": "complete system output / evidence report files needed for deep assistant review",
+            "compressed_summaries": "short human-readable summaries or state cards used for fast review",
+            "visual_outputs": "figures, SVGs, PNGs, or HTML/cards that support future human-facing output",
+            "generic_includes": "other strict evidence includes",
+            "local_run_artifacts_are_repo_truth": False,
+        },
     }
 
     json_path = out_dir / "assistant_test_handoff.json"
@@ -227,6 +270,32 @@ def build_test_handoff(
     else:
         lines.append("- none")
     lines.append("")
+    lines.append("## Output structure")
+    lines.append("")
+    lines.append("The handoff can carry both the full system output report and a compressed reviewer state. Local run artifacts remain evidence for inspection; they are not repo truth unless deliberately promoted in a later patch.")
+    lines.append("")
+    for title, key in [
+        ("Full output reports", "full_output_reports"),
+        ("Compressed summaries", "compressed_summaries"),
+        ("Visual outputs", "visual_outputs"),
+        ("Generic includes", "generic_includes"),
+    ]:
+        lines.append(f"### {title}")
+        lines.append("")
+        items = data[key]
+        if items:
+            for item in items:
+                lines.append(f"- `{item}`")
+        else:
+            lines.append("- none")
+        lines.append("")
+    if report_label_notes:
+        lines.append("### Report label notes")
+        lines.append("")
+        for note in report_label_notes:
+            lines.append(f"- {note}")
+        lines.append("")
+
     lines.append("## Include audit")
     lines.append("")
     if include_results:
@@ -250,6 +319,8 @@ def build_test_handoff(
     lines.append("This bundle records local gate results for continuation. It is not proof of cosmology, not proof of final theory truth, and not a substitute for the repo tests or release boundary.")
     lines.append("")
     lines.append("Truth rule: a requested include that is missing is a failed handoff unless explicitly allowed with `--allow-missing-include`. Requested includes preserve source-relative paths so same-named reports from different runs cannot overwrite each other.")
+    lines.append("")
+    lines.append("Output rule: full reports, compressed summaries, and visuals are labeled separately so a future human-facing display can read the same handoff without flattening the evidence into one blob.")
     lines.append("")
     md_path.write_text("\n".join(lines), encoding="utf-8")
 
@@ -276,6 +347,10 @@ def build_parser() -> argparse.ArgumentParser:
     parser.add_argument("--status", choices=["passed", "failed", "hold", "partial"], default="passed")
     parser.add_argument("--note", action="append", default=[])
     parser.add_argument("--include", action="append", type=Path, default=[])
+    parser.add_argument("--full-output-report", action="append", type=Path, default=[], help="Strict include for complete system output / evidence report files.")
+    parser.add_argument("--compressed-summary", action="append", type=Path, default=[], help="Strict include for compact reviewer summaries or state cards.")
+    parser.add_argument("--visual-output", action="append", type=Path, default=[], help="Strict include for visual outputs such as SVG, PNG, HTML, or human-facing cards.")
+    parser.add_argument("--report-label-note", action="append", default=[], help="Boundary note for included report labels, e.g. historical internal report-version labels.")
     parser.add_argument("--allow-missing-include", action="store_true", help="Record missing include paths instead of failing. Use only when missing files are expected.")
     parser.add_argument("--zip-name", default="assistant_test_handoff.zip")
     return parser
@@ -289,6 +364,10 @@ def main(argv: list[str] | None = None) -> int:
         status=args.status,
         notes=list(args.note),
         includes=list(args.include),
+        full_output_reports=list(args.full_output_report),
+        compressed_summaries=list(args.compressed_summary),
+        visual_outputs=list(args.visual_output),
+        report_label_notes=list(args.report_label_note),
         zip_name=args.zip_name,
         allow_missing_includes=args.allow_missing_include,
     )

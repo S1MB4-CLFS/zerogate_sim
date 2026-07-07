@@ -20,7 +20,8 @@ GATE_KIND = "fresh_holdout_synthetic_field_challenge_not_closeout"
 NEXT_GATE = "v1.7.7-alpha — Reviewer Start Here / Reproduction Package"
 RUN_ORDER_ANSWER = (
     "v1.7.6 locks the fresh-holdout design and evaluation schema. After v1.7.6 is CI green, "
-    "run triad27, deep81, and wide243 holdout summaries before v1.7.7 packages the reviewer path."
+    "run triad27 first, inspect its report/evaluator/handoff, then run deep81, then wide243. "
+    "Only after all three rungs are safe should v1.7.7 package the reviewer path."
 )
 
 REQUIRED_WEATHER_RUNGS = ["triad27", "deep81", "wide243"]
@@ -34,6 +35,7 @@ OUTPUT_FILES = {
     "run_order": "v1_7_holdout_run_order.csv",
     "candidate_masking": "v1_7_candidate_name_masking.csv",
     "input_schema": "v1_7_holdout_input_schema.csv",
+    "output_structure": "v1_7_holdout_output_structure.csv",
     "evaluation": "v1_7_holdout_evaluation.csv",
     "audit": "v1_7_holdout_audit.json",
     "bundle": "v1_7_fresh_holdout_challenge_bundle.zip",
@@ -178,30 +180,67 @@ RUN_ORDER_ROWS = [
     {
         "step": 1,
         "when": "v1.7.6-alpha merged and CI green",
-        "action": "run triad27 fresh holdout summary",
-        "why": "small local expression weather catches obvious false-crown and dead-safe failures first",
-        "next_allowed": "deep81 if safe; repair or HOLD if red",
+        "action": "run triad27 fresh holdout summary only",
+        "why": "small local expression weather catches output plumbing, false-crown, and dead-safe failures first",
+        "next_allowed": "inspect triad27 report/evaluator/handoff before deep81; repair or HOLD if red",
     },
     {
         "step": 2,
-        "when": "triad27 holdout safe",
-        "action": "run deep81 fresh holdout summary",
-        "why": "perturbation / late-shock bridge tests whether lane pattern degrades safely",
-        "next_allowed": "wide243 if safe; repair or HOLD if red",
+        "when": "triad27 report/evaluator/handoff are valid",
+        "action": "run deep81 fresh holdout summary only",
+        "why": "perturbation / late-shock bridge tests whether lane pattern degrades safely after the smallest rung is proven",
+        "next_allowed": "inspect deep81 report/evaluator/handoff before wide243; repair or HOLD if red",
     },
     {
         "step": 3,
-        "when": "deep81 holdout safe",
-        "action": "run wide243 fresh holdout summary",
+        "when": "deep81 report/evaluator/handoff are valid",
+        "action": "run wide243 fresh holdout summary only",
         "why": "temporal-depth stress is required before full v1.7 closeout can be trusted",
         "next_allowed": "v1.7.7 reviewer package if safe; v1.7.8 +1 only later",
     },
     {
         "step": 4,
-        "when": "triad27 / deep81 / wide243 summaries exist",
+        "when": "triad27 / deep81 / wide243 summaries and handoffs exist",
         "action": "package reviewer path in v1.7.7-alpha",
-        "why": "reviewer package should point to actual holdout summaries, not a promise to run them later",
+        "why": "reviewer package should point to actual holdout summaries, full output reports, compressed summaries, and visuals, not a promise to run them later",
         "next_allowed": "v1.7.8 core question closeout after reviewer path is clean",
+    },
+]
+
+RUN_ORDER_FORBIDDEN = [
+    "do not use an all-weather one-shot runner before triad27 proves the report/evaluator/handoff pipeline",
+    "do not print a COMPLETE banner after any failed required include or report gate",
+    "do not call local run artifacts repo truth unless a later patch deliberately promotes them",
+]
+
+OUTPUT_STRUCTURE_ROWS = [
+    {
+        "output_layer": "full_output_report",
+        "required_payload": "complete system report / decision JSON / CSV evidence needed for deep assistant review",
+        "handoff_role": "--full-output-report",
+        "future_human_display_use": "source for expandable technical trace, tables, and audit cards",
+        "repo_truth_boundary": "local run evidence only unless deliberately promoted by a later patch",
+    },
+    {
+        "output_layer": "compressed_summary",
+        "required_payload": "short reader state: rung status, lane counts, false-crown status, boundary, next action",
+        "handoff_role": "--compressed-summary",
+        "future_human_display_use": "top card / dashboard / reviewer quick read",
+        "repo_truth_boundary": "summary must point to full output report, not replace it",
+    },
+    {
+        "output_layer": "visual_outputs",
+        "required_payload": "SVG/PNG/HTML/cards or plots that make the lane structure legible",
+        "handoff_role": "--visual-output",
+        "future_human_display_use": "human-friendly display layer after the evidence pipeline is stable",
+        "repo_truth_boundary": "visuals orient; they do not upgrade the claim",
+    },
+    {
+        "output_layer": "historical_report_label_note",
+        "required_payload": "included debt-evidence report modules may retain historical internal report-version labels",
+        "handoff_role": "--report-label-note",
+        "future_human_display_use": "prevents reviewer confusion when v1.6 report modules are wrapped by v1.7.6 evaluation",
+        "repo_truth_boundary": "active package/evaluator boundary decides the current gate",
     },
 ]
 
@@ -411,6 +450,10 @@ def _readme_lines(evaluation_rows: list[dict[str, object]], evaluation_decision:
         "",
         "The three-rung holdout ladder belongs after this gate is merged and CI green, so `v1.7.7-alpha` can package actual reproduction guidance instead of a promise-shaped fog machine.",
         "",
+        "Process scar: run triad27 first and inspect the report, evaluator, and assistant handoff before deeper rungs. Do not use an all-weather one-shot runner until the smallest rung proves the output pipeline.",
+        "",
+        "Report label note: some debt-evidence builders are historical modules and may retain internal v1.6 report-version labels when wrapped by a v1.7.6 holdout evaluator. The active package/evaluator boundary remains `v1.7.6-alpha`.",
+        "",
         "## Holdout law",
         "",
         "A holdout is not a rerun in a fake mustache. It must separate fresh seeds, held-out controlled variants, candidate-name masking, and predeclared lane expectations before the summary is judged.",
@@ -477,6 +520,7 @@ def build_v1_7_fresh_holdout_challenge(output_dir: Path, *, holdout_summary_csv:
     write_dict_rows_csv(paths["run_order"], RUN_ORDER_ROWS)
     write_dict_rows_csv(paths["candidate_masking"], CANDIDATE_MASKING_ROWS)
     write_dict_rows_csv(paths["input_schema"], INPUT_SCHEMA_ROWS)
+    write_dict_rows_csv(paths["output_structure"], OUTPUT_STRUCTURE_ROWS)
     write_dict_rows_csv(paths["evaluation"], evaluation_rows)
 
     decision: dict[str, Any] = {
@@ -494,6 +538,9 @@ def build_v1_7_fresh_holdout_challenge(output_dir: Path, *, holdout_summary_csv:
         "core_question_closed": False,
         "required_weather_rungs": REQUIRED_WEATHER_RUNGS,
         "run_order_answer": RUN_ORDER_ANSWER,
+        "run_order_forbidden": RUN_ORDER_FORBIDDEN,
+        "output_structure_layers": [row["output_layer"] for row in OUTPUT_STRUCTURE_ROWS],
+        "historical_report_label_note": "Some included debt-evidence builders may retain historical internal report-version labels; the active holdout evaluator boundary remains v1.7.6-alpha.",
         "holdout_summary_csv": str(holdout_summary_csv) if holdout_summary_csv is not None else None,
         "evaluation_rows": len(evaluation_rows),
         "next_gate": NEXT_GATE,

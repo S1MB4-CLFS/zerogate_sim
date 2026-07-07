@@ -72,6 +72,8 @@ final false-one crowns = 0
 
 `v1.7.6-alpha` locks the Fresh Holdout Synthetic-Field Challenge. It defines fresh seeds, held-out profile variants, controlled weather shifts, candidate-name masking, and lane-level expected-output manifests written before the run. It makes `triad27`, `deep81`, and `wide243` required for later full holdout closeout while adding no new heavy evidence crown.
 
+Post-CI process note: the holdout ladder must run one rung at a time (`triad27` -> inspect -> `deep81` -> inspect -> `wide243` -> inspect). No local run attempt is promoted into this index by default. Future `v1.7.7-alpha` packaging should use the output contract in `docs/v1_7_holdout_output_structure.md`, including full output reports, compressed summaries, visual outputs when available, and strict assistant handoff audit.
+
 ## Not current evidence
 
 The following remain historical or analogy lanes:

@@ -26,6 +26,34 @@ v1.7.6-alpha CI green
 
 The full ladder should run before `v1.7.7-alpha` packages the reviewer path. `v1.7.7-alpha` should package actual evidence summaries and commands, not a promise to maybe test later. CI should not carry the heavy evidence burden; CI guards the contract, schema, and evaluator.
 
+## Process scar
+
+Run `triad27` first. Inspect the triad27 report, evaluator output, and assistant handoff before running `deep81`. Inspect `deep81` before running `wide243`.
+
+Do not use an all-weather one-shot runner until the smallest rung proves the output pipeline. The correct heavy-run rhythm is:
+
+```text
+triad27 -> inspect -> deep81 -> inspect -> wide243 -> inspect -> reviewer package
+```
+
+## Historical report label note
+
+Some included debt-evidence report modules may retain historical internal report-version labels. When wrapped by the `v1.7.6-alpha` fresh holdout evaluator, the active package/evaluator boundary remains `v1.7.6-alpha`.
+
+## Output structure expectation
+
+Each valid rung should eventually produce:
+
+```text
+full output report
+compressed summary
+visual outputs when available
+machine decision files
+assistant handoff with strict include audit
+```
+
+The compressed summary is a reader door into the full output report. It must not replace the full evidence.
+
 ## Tier meanings
 
 | rung | cells | role |

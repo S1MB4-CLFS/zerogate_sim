@@ -123,3 +123,55 @@ def test_build_test_handoff_preserves_same_basename_includes(tmp_path) -> None:
     assert "distinction_triad27/matrix_known_logic_closeout_read.md" in text
     assert "polarity_triad27/matrix_known_logic_closeout_read.md" in text
     assert "relation_triad27/matrix_known_logic_closeout_read.md" in text
+
+
+def test_build_test_handoff_classifies_full_compressed_and_visual_outputs(tmp_path) -> None:
+    repo = tmp_path / "repo"
+    full = repo / "runs" / "v1_7_6" / "reports" / "full" / "system_output_report.md"
+    compressed = repo / "runs" / "v1_7_6" / "reports" / "summary" / "compressed_state.md"
+    visual = repo / "runs" / "v1_7_6" / "reports" / "visuals" / "holdout_card.svg"
+    generic = repo / "runs" / "v1_7_6" / "reports" / "machine" / "decision.json"
+    for path, content in [
+        (full, "full output\n"),
+        (compressed, "compressed state\n"),
+        (visual, "<svg></svg>\n"),
+        (generic, "{}\n"),
+    ]:
+        path.parent.mkdir(parents=True, exist_ok=True)
+        path.write_text(content, encoding="utf-8")
+
+    paths = build_test_handoff(
+        out_dir=repo / "handoff",
+        version="v1.7.6-alpha",
+        status="passed",
+        repo_root=repo,
+        notes=["triad27 rung inspected before deeper weather"],
+        full_output_reports=[full],
+        compressed_summaries=[compressed],
+        visual_outputs=[visual],
+        includes=[generic],
+        report_label_notes=["Included historical debt-evidence reports may retain internal report-version labels; active package boundary remains v1.7.6-alpha."],
+    )
+
+    data = json.loads(paths["assistant_test_handoff_json"].read_text(encoding="utf-8"))
+    assert data["missing_include_count"] == 0
+    assert data["handoff_output_contract"]["local_run_artifacts_are_repo_truth"] is False
+    assert data["full_output_reports"] == ["included/runs/v1_7_6/reports/full/system_output_report.md"]
+    assert data["compressed_summaries"] == ["included/runs/v1_7_6/reports/summary/compressed_state.md"]
+    assert data["visual_outputs"] == ["included/runs/v1_7_6/reports/visuals/holdout_card.svg"]
+    assert data["generic_includes"] == ["included/runs/v1_7_6/reports/machine/decision.json"]
+    assert data["report_label_notes"]
+
+    text = paths["assistant_test_handoff_md"].read_text(encoding="utf-8")
+    assert "Full output reports" in text
+    assert "Compressed summaries" in text
+    assert "Visual outputs" in text
+    assert "Report label notes" in text
+    assert "historical debt-evidence reports" in text
+
+    with zipfile.ZipFile(paths["assistant_test_handoff_zip"]) as zf:
+        names = set(zf.namelist())
+    assert data["full_output_reports"][0] in names
+    assert data["compressed_summaries"][0] in names
+    assert data["visual_outputs"][0] in names
+    assert data["generic_includes"][0] in names

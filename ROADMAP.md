@@ -420,6 +420,10 @@ wide243 = 3^5 temporal-depth / full controlled weather stress
 
 All three weather tiers are required before the full holdout answer can support `v1.7.8-alpha` closeout. `v1.7.6-alpha` locks the design, schema, evaluator, and stop conditions; it does not require CI to run the heavy 27/81/243 evidence stack. After `v1.7.6-alpha` is CI green, the full ladder should be run before `v1.7.7-alpha` packages the reviewer path.
 
+Process scar: run `triad27` first and inspect the report, evaluator, and assistant handoff before running `deep81`; inspect `deep81` before running `wide243`. Do not use an all-weather one-shot runner until the smallest rung proves the output pipeline.
+
+Reviewer label note: included debt-evidence report modules may retain historical internal report-version labels. The active package/evaluator boundary for the holdout run remains `v1.7.6-alpha`.
+
 Required result:
 
 ```text
@@ -442,7 +446,9 @@ or result only survives the known reference profile.
 
 ## v1.7.6-alpha current note
 
-`v1.7.6-alpha` locks the fresh holdout synthetic-field challenge. It preserves `C_Z = min(D, P, R, B)`, adds no new heavy evidence crown, does not start manuscript v2, and prepares `v1.7.7-alpha` Reviewer Start Here / Reproduction Package. The 27/81/243 ladder belongs to the full holdout answer, but this gate is the contract/evaluator lock. After `v1.7.6-alpha` is CI green, run the full ladder before `v1.7.7-alpha` packages the reviewer path; no heavy run is allowed to masquerade as closeout until `v1.7.8-alpha` decides the core question.
+`v1.7.6-alpha` locks the fresh holdout synthetic-field challenge. It preserves `C_Z = min(D, P, R, B)`, adds no new heavy evidence crown, does not start manuscript v2, and prepares `v1.7.7-alpha` Reviewer Start Here / Reproduction Package. The 27/81/243 ladder belongs to the full holdout answer, but this gate is the contract/evaluator lock. After `v1.7.6-alpha` is CI green, run the ladder one rung at a time: `triad27` -> inspect -> `deep81` -> inspect -> `wide243` -> inspect -> `v1.7.7-alpha`. No heavy run is allowed to masquerade as closeout until `v1.7.8-alpha` decides the core question.
+
+Output structure note: local holdout output should produce a full output report, compressed summary, optional visual outputs, machine decision files, and assistant handoff with strict include audit. These local artifacts are not repo truth unless a later patch deliberately promotes a bounded summary.
 
 ### v1.7.7-alpha — Reviewer Start Here / Reproduction Package
 
@@ -456,9 +462,22 @@ docs/v1_7_minimal_reproduction.md
 docs/v1_7_expected_outputs.md
 docs/v1_7_claim_boundary_card.md
 docs/v1_7_evidence_manifest.md
+docs/v1_7_holdout_output_structure.md
 scripts/run_v1_7_small_reproduction.ps1
 tests/test_v1_7_reviewer_path.py
 ```
+
+`v1.7.7-alpha` must package the output in a human-readable shape:
+
+```text
+full_output/
+compressed_summary/
+visuals/
+machine/
+handoff/
+```
+
+The assistant handoff should carry both the complete system output report and the compressed reviewer state. Future display work may render these files in a more universal visual layer, but that display layer is not part of the scientific claim.
 
 ### v1.7.8-alpha — Core Question Closeout
 

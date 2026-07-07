@@ -11,8 +11,10 @@ from zerogate_sim.v1_7_fresh_holdout_challenge import (
     GATE_KIND,
     NEXT_GATE,
     NATIVE_WITNESS,
+    OUTPUT_STRUCTURE_ROWS,
     REQUIRED_WEATHER_RUNGS,
     RUN_ORDER_ANSWER,
+    RUN_ORDER_FORBIDDEN,
     WEATHER_LADDER_ROWS,
     build_v1_7_fresh_holdout_challenge,
     classify_holdout_row,
@@ -70,6 +72,7 @@ def test_v1_7_fresh_holdout_outputs_without_evaluation(tmp_path: Path) -> None:
         "run_order",
         "candidate_masking",
         "input_schema",
+        "output_structure",
         "evaluation",
         "audit",
         "bundle",
@@ -91,12 +94,17 @@ def test_v1_7_fresh_holdout_outputs_without_evaluation(tmp_path: Path) -> None:
     assert decision["core_question_closed"] is False
     assert decision["required_weather_rungs"] == REQUIRED_WEATHER_RUNGS
     assert decision["run_order_answer"] == RUN_ORDER_ANSWER
+    assert decision["run_order_forbidden"] == RUN_ORDER_FORBIDDEN
+    assert decision["output_structure_layers"] == [row["output_layer"] for row in OUTPUT_STRUCTURE_ROWS]
+    assert "historical internal report-version labels" in decision["historical_report_label_note"]
     assert decision["next_gate"] == NEXT_GATE
 
     readme = paths["read"].read_text(encoding="utf-8")
     assert "No fresh holdout summary CSV was supplied" in readme
     assert "triad27" in readme and "deep81" in readme and "wide243" in readme
     assert "not role-blind discovery" in readme
+    assert "run triad27 first" in readme
+    assert "historical modules" in readme
     assert NEXT_GATE in readme
 
 
@@ -104,6 +112,23 @@ def test_v1_7_fresh_holdout_weather_ladder_rows_are_complete() -> None:
     assert [row["weather_rung"] for row in WEATHER_LADDER_ROWS] == ["triad27", "deep81", "wide243"]
     assert {int(row["cells"]) for row in WEATHER_LADDER_ROWS} == {27, 81, 243}
     assert all("before v1.7.7" in row["run_timing"] for row in WEATHER_LADDER_ROWS)
+    assert "one-shot runner" in RUN_ORDER_FORBIDDEN[0]
+
+
+def test_v1_7_fresh_holdout_output_structure_rows_are_complete() -> None:
+    layers = [row["output_layer"] for row in OUTPUT_STRUCTURE_ROWS]
+    assert layers == [
+        "full_output_report",
+        "compressed_summary",
+        "visual_outputs",
+        "historical_report_label_note",
+    ]
+    assert {row["handoff_role"] for row in OUTPUT_STRUCTURE_ROWS} == {
+        "--full-output-report",
+        "--compressed-summary",
+        "--visual-output",
+        "--report-label-note",
+    }
 
 
 def test_v1_7_fresh_holdout_classifies_and_collapses_rows() -> None:
@@ -163,12 +188,14 @@ def test_v1_7_6_public_surfaces_and_version_truth() -> None:
     weather_doc = read("docs/v1_7_holdout_weather_ladder.md")
     masking_doc = read("docs/v1_7_candidate_name_masking.md")
     release = read("docs/release_notes/v1_7_6_alpha.md")
+    output_doc = read("docs/v1_7_holdout_output_structure.md")
+    process_note = read("docs/release_notes/v1_7_6_holdout_output_process_note.md")
 
     assert "1.7.6-alpha" in read("src/zerogate_sim/__init__.py")
     assert 'version = "1.7.6a0"' in read("pyproject.toml")
     assert "zerogate-v1-7-fresh-holdout-challenge" in read("pyproject.toml")
 
-    for text in [readme, roadmap, version_truth, evidence_index, holdout_doc, expected_doc, weather_doc, masking_doc, release]:
+    for text in [readme, roadmap, version_truth, evidence_index, holdout_doc, expected_doc, weather_doc, masking_doc, release, output_doc, process_note]:
         assert "v1.7.6-alpha" in text
         assert "C_Z = min(D, P, R, B)" in text
 
@@ -176,9 +203,15 @@ def test_v1_7_6_public_surfaces_and_version_truth() -> None:
     assert "Fresh Holdout Synthetic-Field Challenge" in roadmap
     assert "triad27" in weather_doc and "deep81" in weather_doc and "wide243" in weather_doc
     assert "before `v1.7.7-alpha`" in weather_doc
+    assert "Run `triad27` first" in weather_doc
+    assert "all-weather one-shot" in weather_doc
     assert "candidate-name masking" in holdout_doc
     assert "Any final false-one crown" in expected_doc
     assert "Candidate-name masking is not role-blind discovery" in masking_doc
     assert "no new heavy evidence crown" in release
+    assert "full output report" in output_doc
+    assert "compressed summary" in output_doc
+    assert "historical internal report-version labels" in output_doc
+    assert "No run result is promoted" in process_note
     assert "v1.7.7-alpha" in readme
     assert "v1.7.7-alpha" in roadmap

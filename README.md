@@ -238,6 +238,7 @@ Read first:
 - [`docs/v1_7_holdout_expected_outputs.md`](docs/v1_7_holdout_expected_outputs.md)
 - [`docs/v1_7_holdout_weather_ladder.md`](docs/v1_7_holdout_weather_ladder.md)
 - [`docs/v1_7_candidate_name_masking.md`](docs/v1_7_candidate_name_masking.md)
+- [`docs/v1_7_holdout_output_structure.md`](docs/v1_7_holdout_output_structure.md)
 - [`docs/v1_7_answer_grammar.md`](docs/v1_7_answer_grammar.md)
 - [`docs/v1_7_falsifier_register.md`](docs/v1_7_falsifier_register.md)
 - [`docs/v1_7_forbidden_claims.md`](docs/v1_7_forbidden_claims.md)
@@ -268,6 +269,10 @@ Read first:
 `v1.7.5-alpha` locks the Masked Role-Dependence Audit. It requires masked numeric visibility for earned-one, raw expression pressure, relation debt, return debt, false-one pressure, and final false-one crown safety. It adds no new heavy evidence crown, keeps `C_Z = min(D, P, R, B)` unchanged, and prepares `v1.7.6-alpha` fresh holdout synthetic-field challenge.
 
 `v1.7.6-alpha` locks the Fresh Holdout Synthetic-Field Challenge. It defines fresh seeds, held-out profile variants, controlled weather shifts, candidate-name masking, and pre-frozen expected-output manifests. It makes the 27/81/243 ladder explicit as required for later full holdout closeout, but it does not require CI to run heavy evidence, does not close the core question, and prepares the run order for `v1.7.7-alpha` reviewer/reproduction packaging.
+
+Post-CI holdout run law: run `triad27` first and inspect the report/evaluator/handoff before deeper weather. Then run `deep81`, inspect, then `wide243`, inspect. Do not use an all-weather one-shot runner until the smallest rung proves the output pipeline.
+
+Output contract: future holdout handoffs should carry a full output report, compressed summary, optional visual outputs, machine decision files, and a report-label note when historical report modules retain internal version labels. Local run artifacts remain local evidence, not repo truth.
 
 The recent native evidence line now has the shape the project was trying to reach:
 
