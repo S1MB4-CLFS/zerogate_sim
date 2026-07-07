@@ -123,20 +123,356 @@ No new native gate was introduced in these steps; the native witness remains `C_
 
 `v1.6.28-alpha` closes v1.6 as a bounded controlled synthetic-field evidence line. It preserves `C_Z = min(D, P, R, B)`, does not upload to Zenodo, does not revive shadow, and does not claim observed-universe proof. It allows v1.7 to operationalize and audit the bounded claim that the Four Gates witness operationalizes a synthetic zero-zone gating principle.
 
-## v1.7 boundary
+## v1.7 boundary — Core Question Answer Line
 
-`v1.7` must not declare the core claim by vibes. It must make the claim auditable or demote it.
+`v1.7` starts only after the `v1.6.28-alpha` closeout and exists to answer one bounded question:
 
-Projected v1.7 line after v1.6 closeout:
+> Can a final trinary witness distinguish earned-one from raw expression pressure, latent overcrown, relation debt, return debt, and false-one pressure under controlled synthetic-field adversarial weather?
 
-| version | role |
-|---|---|
-| `v1.7.0-alpha` | operational claim definition for synthetic zero-zone gating |
-| `v1.7.1-alpha` | evidence package alignment and reviewer path |
-| `v1.7.2-alpha` | external small-run reproduction instructions |
-| `v1.7.3-alpha` | stable external-review release candidate |
+This is the main question for the current software line.
 
-## v2.0 boundary
+`v1.7` is not:
+
+- a physics claim;
+- an observed-universe bridge;
+- a role-blind discovery claim;
+- a new native math route;
+- a manuscript crown by enthusiasm.
+
+Native witness remains:
+
+```text
+C_Z = min(D, P, R, B)
+```
+
+No `v1.7` step may mutate the native witness unless a later roadmap explicitly opens a separate branch. The `v1.7` job is not to make the witness prettier. The job is to find out whether the witness survives clean falsifier pressure.
+
+## v1.7 answer grammar
+
+The core question closes only through a trinary decision:
+
+```text
++1 — yes, answered inside controlled synthetic-field adversarial weather.
+ 0 — partial / bounded / unresolved; preserve evidence but do not crown the full question.
+-1 — no; demote the question or repair the architecture before continuing.
+```
+
+A `+1` answer means:
+
+> Inside controlled synthetic-field adversarial weather, the final trinary witness distinguishes earned-one from raw expression pressure, latent overcrown, relation debt, return debt, and false-one pressure better than raw, binary, dead-safe, average-gate, and ablated witnesses, while preserving final false-one crowns at zero.
+
+A `+1` answer does **not** mean:
+
+- role-blind discovery has been solved;
+- the system generalizes to unknown natural fields;
+- the model proves external reality;
+- the manuscript may claim more than controlled synthetic-field evidence.
+
+## v1.7 full-answer conditions
+
+The core question is answered in full only if all of these gates pass.
+
+| gate | required result | fail / hold condition |
+|---|---|---|
+| Lane visibility | `+1 earned-one`, raw expression pressure, `0 latent overcrown`, `0 relation debt`, `0 return debt`, and `-1 false-one pressure` are all visible as distinct report states | any lane is missing, collapsed into generic hold, or explainable only by role label |
+| Earned-one preservation | real earned controls still receive `+1` | witness becomes dead-safe by refusing crowns |
+| False-one safety | final false-one crowns remain `0` | any trap or false pressure receives final crown |
+| Structured zero | latent, relation debt, and return debt are held as meaningful `0`, not hidden failure | zero-state is only non-crown, not positive witness |
+| Return specificity | return-potential, observed return, return-depth, and return debt are separated | return collapses into zero-crossing, oscillation, or vague “coming back” |
+| Baseline superiority | native witness beats raw, binary, dead-safe, average-gate, no-return, no-relation, no-lineage, no-echo, and no-zero-hold witnesses | a simpler witness explains the result equally well |
+| Role-dependence audit | labels may define the controlled harness, but reported states must be witness-computed and visible under masked numeric review | lane assignment is just role-label recounting |
+| Fresh / holdout pressure | result survives fresh seeds and held-out controlled profile variants | result only works on the designed reference profile |
+| Reviewer path | a cold reviewer can reproduce the small path and understand the claim boundary | evidence remains private-cathedral logic |
+
+## v1.7 planned coded line
+
+| version | role | pass condition | stop / hold condition |
+|---|---|---|---|
+| `v1.7.0-alpha` | Operational Claim Contract / first coded v1.7 gate | roadmap, README, and claim docs all say the same bounded core question; every strong word has a falsifier | claim depends on vibes, implied ontology, or private architecture |
+| `v1.7.1-alpha` | Return Gate Trace Lock | reviewer can distinguish return-potential, observed return, return-depth, return debt, collapse, and false return theater | return reads like metaphor instead of measurable witness behavior |
+| `v1.7.2-alpha` | Lane Taxonomy and Latent Overcrown Repair | all core lanes are distinct, including latent overcrown if it reproduces | latent overcrown remains non-reproducible but stays in the full claim anyway |
+| `v1.7.3-alpha` | Baseline and Ablation Falsifier Matrix | native witness preserves earned-one, holds structured zero, and demotes false-one pressure better than weaker witnesses | a simpler witness explains the same result |
+| `v1.7.4-alpha` | Perturbation Spectrum Witness | raw pressure may move under weather, but final witness fails safely: `+1` when earned, `0` when unresolved, `-1` when false | perturbation creates new-looking pressure and the witness crowns it without return, lineage, and independence |
+| `v1.7.5-alpha` | Masked Role-Dependence Audit | numeric witness pattern still separates earned-one, relation debt, return debt, false-one pressure, and final false-crown safety when labels are masked | lanes only exist because labels say they exist |
+| `v1.7.6-alpha` | Fresh Holdout Synthetic-Field Challenge | lane pattern survives fresh seeds, held-out profile variants, controlled weather shifts, and candidate-name masking | result only survives the known reference profile |
+| `v1.7.7-alpha` | Reviewer Start Here / Reproduction Package | cold reviewer can understand the question, witness, lane grammar, falsifiers, small reproduction path, and forbidden claims | project still requires private explanation to understand why the result matters |
+| `v1.7.8-alpha` | Core Question Closeout | closeout sentence matches the evidence exactly and decides `+1`, `0`, or `-1` | closeout sentence is stronger than the evidence |
+
+### v1.7.0-alpha — Operational Claim Contract
+
+The first coded `v1.7` gate defines the exact claim being tested before adding new evidence.
+
+Expected artifacts:
+
+```text
+docs/v1_7_core_question_contract.md
+docs/v1_7_answer_grammar.md
+docs/v1_7_forbidden_claims.md
+docs/v1_7_falsifier_register.md
+tests/test_v1_7_core_question_contract.py
+```
+
+Required result:
+
+```text
+The roadmap, README, and claim docs all say the same bounded question.
+Every strong claim has a falsifier.
+```
+
+### v1.7.1-alpha — Return Gate Trace Lock
+
+Return is the hinge of the project. `v1.7.1-alpha` must lock the distinction between return-potential and observed return.
+
+Trace to preserve:
+
+```text
+Gamma = D * P * R
+Gamma = return-potential generated by distinction, polarity, and relation
+B = observed return
+C_Z = min(D, P, R, B)
+return-depth = coherent return survived over time
+return debt = Gamma is meaningful but B / memory / closure / depth is incomplete
+```
+
+Boundary:
+
+```text
+Do not call return-potential physical gravity.
+Do not implement a new force engine in v1.7.
+Do not add literal closed-topology machinery.
+```
+
+### v1.7.2-alpha — Lane Taxonomy and Latent Overcrown Repair
+
+The current `v1.6` evidence supports earned-one, relation debt, return debt, and false-one demotion strongly enough to enter `v1.7`. Latent overcrown is the fragile lane because it did not reproduce cleanly in the later fresh-seed path.
+
+Decision rule:
+
+```text
+If latent overcrown reproduces, keep it in the full core question.
+If latent overcrown does not reproduce, demote the v1.7 answer to 0 or rewrite the core question without latent overcrown.
+```
+
+No ghost lanes. No fake crown. No haunted bookkeeping.
+
+### v1.7.3-alpha — Baseline and Ablation Falsifier Matrix
+
+Required baseline enemies:
+
+```text
+raw-expression-only witness
+binary yes/no witness
+dead-safe witness
+average-gate witness
+no-return witness
+no-relation witness
+no-lineage / no-return-depth witness
+no-echo-independence witness
+no-zero-hold witness
+```
+
+Especially fatal failure:
+
+```text
+A dead-safe witness gets zero false crowns by refusing real earned-one.
+```
+
+That is not intelligence. That is a locked door with a lab badge.
+
+### v1.7.4-alpha — Perturbation Spectrum Witness
+
+The useful proof-shape here is spectrum under perturbation, not one scalar victory count.
+
+Required spectrum lanes:
+
+```text
+earned-one
+raw expression pressure
+latent overcrown
+relation debt
+return debt
+echo dependence
+lineage instability
+false-one pressure
+final false-one crowns
+```
+
+Required weather views:
+
+```text
+triad27 = local expression weather
+deep81 = perturbation / late-shock bridge
+wide243 = temporal-depth / time-axis stress
+```
+
+### v1.7.5-alpha — Masked Role-Dependence Audit
+
+The current harness may use designed roles. That is allowed. But `v1.7` must show which outputs are witness-computed and which are role-shaped.
+
+Allowed claim after pass:
+
+```text
+The witness can represent and reproduce structured zero/debt states in controlled designed scenarios.
+```
+
+Forbidden claim after pass:
+
+```text
+The witness independently discovers all false-one or debt states in unlabeled fields.
+```
+
+### v1.7.6-alpha — Fresh Holdout Synthetic-Field Challenge
+
+This remains controlled synthetic-field work. It is not role-blind discovery.
+
+Required holdout pressure:
+
+```text
+fresh seeds not used in the reference run
+held-out profile variants
+controlled weather shifts
+candidate-name masking
+lane-level expected-output manifest written before run
+```
+
+### v1.7.7-alpha — Reviewer Start Here / Reproduction Package
+
+`v1.7` must include a narrow reader door. The evidence cannot require a reviewer to wander the entire repo cathedral with a candle and a sandwich.
+
+Expected artifacts:
+
+```text
+REVIEWER_START_HERE.md
+docs/v1_7_minimal_reproduction.md
+docs/v1_7_expected_outputs.md
+docs/v1_7_claim_boundary_card.md
+docs/v1_7_evidence_manifest.md
+scripts/run_v1_7_small_reproduction.ps1
+tests/test_v1_7_reviewer_path.py
+```
+
+### v1.7.8-alpha — Core Question Closeout
+
+This version closes `v1.7` with one of three decisions.
+
+```text
++1 — controlled synthetic-field answer earned.
+ 0 — partial answer; preserve evidence but do not crown full question.
+-1 — answer failed; demote or redesign before manuscript work.
+```
+
+A `+1` closeout may say:
+
+> Yes. Inside controlled synthetic-field adversarial weather, the final trinary witness distinguishes earned-one from raw expression pressure, latent overcrown, relation debt, return debt, and false-one pressure, while preserving earned-one, holding structured zero, demoting false-one pressure, beating weaker baselines, surviving fresh holdout pressure, and maintaining zero final false-one crowns.
+
+A `0` closeout may say:
+
+> Partially. The witness distinguishes earned-one, relation debt, return debt, and false-one pressure, but one or more lanes, baselines, holdout pressures, or role-dependence audits remain unresolved.
+
+A `-1` closeout must say:
+
+> No. The full claim is not earned under controlled synthetic-field adversarial weather.
+
+## Manuscript v2 upgrade gate — before v1.8
+
+If `v1.7.8-alpha` closes `+1`, the original manuscript must be upgraded before `v1.8` begins.
+
+This is **manuscript v2**, not software `v2.0`. It exists because the main question would then be answered inside its bounded domain, and the archived first-research-alpha manuscript would need to become an updated readable record before the project continues into broader synthetic challenges.
+
+If `v1.7.8-alpha` closes `0`, manuscript v2 may become a bounded correction / partial-answer manuscript, or it may wait while the unresolved `v1.7` lane is repaired.
+
+If `v1.7.8-alpha` closes `-1`, manuscript v2 does not begin.
+
+Required manuscript v2 content after a `+1` closeout:
+
+```text
+historical first-research-alpha lineage
+v1.6 controlled Four Gates evidence
+v1.7 core question answer
+return gate trace
+baseline / falsifier matrix
+holdout and masked-role results
+claim boundary
+limitations
+future-work lanes
+```
+
+Manuscript v2 may say only what the repo has earned.
+
+No archive upload until:
+
+```text
+software evidence is closed,
+claim language is bounded,
+and the manuscript does not outrun the repo.
+```
+
+## v1.8 boundary — Independent Synthetic Challenge Line
+
+`v1.8` begins only after both conditions hold:
+
+```text
+v1.7 core question closes with +1, and
+manuscript v2 has been drafted or deliberately frozen as the bounded record of that answer.
+```
+
+If `v1.7` closes `0`, `v1.8` repairs unresolved lanes instead of generalizing. If `v1.7` closes `-1`, `v1.8` does not begin.
+
+`v1.8` asks a stronger question:
+
+> Does the final trinary witness preserve the same distinction pattern when the synthetic field generator becomes less hand-shaped?
+
+Projected line:
+
+| version | role | pass condition |
+|---|---|---|
+| `v1.8.0-alpha` | independent generator interface | independent synthetic profiles can be added without changing native witness |
+| `v1.8.1-alpha` | independent controlled profile family A | lane expectations written before run |
+| `v1.8.2-alpha` | independent controlled profile family B | result not dependent on one generator shape |
+| `v1.8.3-alpha` | distribution-shift weather challenge | witness degrades safely under shifted synthetic pressure |
+| `v1.8.4-alpha` | independent synthetic challenge closeout | bounded generalization claim earned, held, or resisted |
+
+Allowed claim after `v1.8 +1`:
+
+> The controlled synthetic-field result transfers across multiple independently designed synthetic profile families.
+
+Forbidden claim after `v1.8 +1`:
+
+> The system has solved unknown-field discovery.
+
+## v1.9 boundary — Role-Stripped / Role-Blind Candidate Line
+
+`v1.9` is the first line allowed to seriously revisit role-stripped or role-blind language.
+
+The required route is:
+
+```text
+role-stripped features -> transparent score -> baseline/falsifier -> holdout -> maybe shadow closeout
+```
+
+Never skip from score to discovery.
+
+Projected line:
+
+| version | role | pass condition |
+|---|---|---|
+| `v1.9.0-alpha` | role-stripped feature contract | features exclude direct role labels |
+| `v1.9.1-alpha` | transparent witness score | score explains its lane assignments |
+| `v1.9.2-alpha` | role-stripped baseline/falsifier audit | baselines cannot explain the result equally well |
+| `v1.9.3-alpha` | role-stripped holdout challenge | score survives held-out profiles |
+| `v1.9.4-alpha` | role-blind language closeout | decide whether any role-blind wording is earned |
+
+Allowed outcomes:
+
+```text
++1 — limited role-stripped classification claim earned.
+ 0 — diagnostic score useful but not discovery.
+-1 — role-blind route demoted.
+```
+
+Even a `+1` here remains bounded unless later external evidence earns more.
+
+## v2.0 boundary — Stable external-review release package
 
 `v2.0` means stable external-review release package.
 
@@ -148,17 +484,142 @@ It does **not** mean:
 - quantum / wormhole / spacetime claim;
 - role-blind discovery.
 
-Deferred after v1.6/v1.7 closeout:
+Required before software `v2.0`:
 
-- external reproduction of small deterministic runs;
-- effective-dimension comparisons such as PCA rank, stable rank, graph diffusion behavior, and spectral-style return probabilities;
-- literature comparison against emergence, pregeometry, effective dimension, and many-valued logic;
-- evidence DOI plan;
-- manuscript update separating simulation support, mathematical analogy, and physical speculation.
+```text
+v1.7 core question closeout
+manuscript v2 bounded upgrade or freeze decision
+fresh holdout evidence
+baseline/falsifier matrix
+return gate trace
+reviewer start-here path
+small reproduction package
+claim boundary card
+public evidence manifest
+```
 
-Observed-universe bridge rule:
+`v2.0` closes only when:
+
+```text
+A serious external reader can clone, run, inspect, and understand the controlled claim without private explanation.
+```
+
+## v2.1 boundary — Add-on Manuscript / Paper Line
+
+`v2.1` is for papers or manuscript add-ons that use evidence earned after manuscript v2.
+
+Allowed material:
+
+```text
+v1.8 independent synthetic challenge results if earned
+v1.9 role-stripped results if earned
+external review feedback and reproduction attempts
+additional limitations discovered after manuscript v2
+```
+
+Forbidden material:
+
+```text
+retroactive strengthening of manuscript v2 without evidence
+observed-universe claim creep
+role-blind discovery language before holdout earns it
+```
+
+## v2.2 boundary — Independent Structural Comparison Line
+
+`v2.2` is future work.
+
+Its purpose is to compare ZeroGateSim witness behavior with independent structural measures, not to borrow authority from them.
+
+Possible comparison families:
+
+```text
+stable-rank style behavior
+PCA-rank style behavior
+graph-diffusion behavior
+spectral-style return probabilities
+independent recurrence / closure metrics
+```
+
+Allowed claim:
+
+> These comparisons test whether ZeroGateSim witness lanes correlate with independent structural behavior in synthetic systems.
+
+Forbidden claim:
+
+> External structural similarity proves the theory.
+
+## v3.0 boundary — Open Synthetic Challenge Line
+
+`v3.0` begins only after the internal and external-review packages are clean.
+
+Purpose:
+
+```text
+Allow adversarial synthetic generators, external reproduction attempts, and open challenge profiles without changing native witness math.
+```
+
+Projected goals:
+
+```text
+plugin generator API
+challenge manifest format
+public falsifier suite
+external run registry
+separate success / hold / failure reports
+```
+
+Open challenge rule:
+
+```text
+A failed challenge is evidence, not embarrassment.
+A repaired model must show the scar.
+```
+
+## Observed-universe bridge rule
 
 > A match to known math or observed behavior is support for a modeling analogy, not proof that the universe uses ZeroGateSim.
+
+This rule remains active across `v1.7`, manuscript v2, `v1.8`, and every later line. External resemblance can motivate a comparison gate; it cannot become a crown.
+
+## Permanent HOLD / RESIST lanes
+
+These remain out of scope until deliberately reopened by a later roadmap.
+
+```text
+observed-universe bridge
+physics proof
+cosmology proof
+role-blind discovery before holdout
+new native gate
+literal force-engine interpretation of return
+private inspiration embedded in public schemas
+shadow-route revival before v1.9
+manuscript upload before software closeout
+```
+
+## Roadmap spine
+
+The forward route is:
+
+```text
+v1.7 — answer the core controlled synthetic-field question
+manuscript v2 — upgrade the original manuscript after a successful v1.7 closeout and before v1.8
+v1.8 — test transfer across independent synthetic generators
+v1.9 — test role-stripped / role-blind candidate language
+v2.0 — stable external-review release package
+v2.1 — add-on manuscript / paper line for post-manuscript-v2 evidence
+v2.2 — independent structural comparison
+v3.0 — open synthetic challenge
+```
+
+The central law remains:
+
+```text
+No crown without return.
+No science without falsifier.
+No roadmap without continuity.
+```
 
 ## Historical material
 
