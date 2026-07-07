@@ -230,7 +230,7 @@ def test_v1_7_baseline_matrix_cli(tmp_path: Path) -> None:
     assert (out / "v1_7_baseline_falsifier_matrix_bundle.zip").exists()
 
 
-def test_v1_7_3_public_surfaces_and_version_truth() -> None:
+def test_v1_7_3_public_surfaces_remain_historical_under_current_package() -> None:
     readme = read("README.md")
     roadmap = read("ROADMAP.md")
     version_truth = read("docs/version_truth.md")
@@ -240,11 +240,15 @@ def test_v1_7_3_public_surfaces_and_version_truth() -> None:
     failure_doc = read("docs/v1_7_failure_mode_table.md")
     release = read("docs/release_notes/v1_7_3_alpha.md")
 
-    assert "1.7.3-alpha" in read("src/zerogate_sim/__init__.py")
-    assert 'version = "1.7.3a0"' in read("pyproject.toml")
+    assert "1.7.4-alpha" in read("src/zerogate_sim/__init__.py")
+    assert 'version = "1.7.4a0"' in read("pyproject.toml")
     assert "zerogate-v1-7-baseline-falsifier" in read("pyproject.toml")
 
-    for text in [readme, roadmap, version_truth, evidence_index, matrix_doc, summary_doc, failure_doc, release]:
+    for text in [readme, roadmap, version_truth, evidence_index]:
+        assert "v1.7.4-alpha" in text
+        assert "C_Z = min(D, P, R, B)" in text
+
+    for text in [matrix_doc, summary_doc, failure_doc, release]:
         assert "v1.7.3-alpha" in text
         assert "C_Z = min(D, P, R, B)" in text
 
