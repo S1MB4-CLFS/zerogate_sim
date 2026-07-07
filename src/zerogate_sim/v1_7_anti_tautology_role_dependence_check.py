@@ -17,7 +17,7 @@ CORE_QUESTION = (
 )
 DECISION = "anti_tautology_role_dependence_check_locked_not_closeout"
 GATE_KIND = "post_holdout_anti_tautology_role_dependence_check_not_closeout"
-NEXT_GATE = "v1.7.8-alpha — Reviewer Start Here / Reproduction Package"
+NEXT_GATE = "v1.7.8-alpha — Repo Cleanup / Cohesion Check"
 
 REQUIRED_RUNGS = ["triad27", "deep81", "wide243"]
 REQUIRED_LANES = [

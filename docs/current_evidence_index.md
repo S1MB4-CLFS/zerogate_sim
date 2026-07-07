@@ -1,9 +1,8 @@
 # Current Evidence Index
 
 **Introduced:** `v1.6.24-alpha`  
-**Purpose:** name the current canonical evidence surface without forcing the README to carry every historical report.
-
-This index describes the canonical current evidence line for the Four Gates of Becoming witness. It is not a physics claim and not a Zenodo upload plan.
+**Compacted:** `v1.7.8-alpha`  
+**Purpose:** name the canonical current evidence surface without forcing the README to carry every historical report.
 
 Native witness remains:
 
@@ -15,65 +14,58 @@ C_Z = min(D, P, R, B)
 
 > In controlled synthetic adversarial fields, the Four Gates witness can preserve earned expression, hold unresolved relation/return debt as structured zero, and demote false-one pressure better than raw, binary, dead-safe, and ablated witnesses.
 
-## Canonical current evidence
+## Current canonical state
 
-| gate | version | canonical role | decision | caveat |
-|---|---|---|---|---|
-| triad27 debt evidence | `v1.6.20-alpha` | small-weather repaired debt test | expand | small-weather only |
-| deep81 / wide243 debt evidence | `v1.6.21-alpha` | deeper-weather debt test | expand | some debt families inactive |
-| fresh-seed debt reproduction | `v1.6.22-alpha` | qualitative reproduction on seeds `9-17` | expand | latent overcrown did not reproduce |
-| history vault cleanup | `v1.6.23-alpha` | public surface cleanup | hygiene | no new evidence |
-| closeout route lock | `v1.6.24-alpha` | audit path definition | hygiene | no new evidence |
-| anti-tautology audit | `v1.6.25-alpha` | role-dependence check | witness | debt states are designed-profile shaped but witness-counted |
-| reproduction command package | `v1.6.26-alpha` | command package | expand | small smoke and full reference/fresh reproduction command paths |
-| manuscript correction package | `v1.6.27-alpha` | correction package | expand | v2 outline and later Zenodo plan; no upload yet |
-| v1.6 closeout | `v1.6.28-alpha` | closeout decision | expand | bounded controlled synthetic-field claim earned for v1.7; broader claims blocked |
-| v1.7 core question contract | `v1.7.0-alpha` | operational claim contract | witness | no new evidence crown; defines answer grammar and falsifiers |
-| v1.7 return gate trace lock | `v1.7.1-alpha` | return trace / mechanism boundary | witness | no new evidence crown; separates return-potential from observed return and blocks false-return readings |
-| v1.7 lane taxonomy / latent overcrown repair | `v1.7.2-alpha` | lane taxonomy / witness translation | witness | no heavy evidence crown; latent overcrown repaired as explicit HOLD until reproduced or narrowed |
-| v1.7 baseline / ablation falsifier matrix | `v1.7.3-alpha` | baseline matrix / falsifier translation | witness | no heavy evidence crown; weaker witnesses aligned as enemies before perturbation spectrum |
-| v1.7 perturbation spectrum witness | `v1.7.4-alpha` | spectrum-under-perturbation contract | complete | no heavy evidence crown; raw pressure may move while final witness must fail safely |
-| v1.7 masked role-dependence audit | `v1.7.5-alpha` | masked numeric visibility contract | witness | no role-blind discovery claim; separates witness-computed lanes from role-label recounting |
-| v1.7 fresh holdout synthetic-field challenge | `v1.7.6-alpha` | fresh holdout contract / tier policy | complete | no heavy evidence crown; locks fresh seeds, held-out variants, weather shifts, candidate-name masking, and pre-frozen manifests |
-| v1.7 anti-tautology / role-dependence check | `v1.7.7-alpha` | post-holdout audit / role-dependence boundary | witness | no core closeout; checks that holdout evidence is non-vacuous, non-dead-safe, masked, role-bounded, and not tautological |
+Detailed state now lives here:
 
-## Canonical state pattern
+- [`current_evidence_state.md`](current_evidence_state.md)
+- [`v1_7_latest_holdout_snapshot.md`](v1_7_latest_holdout_snapshot.md)
+- [`recent_native_evidence_history.md`](recent_native_evidence_history.md)
 
-The current evidence supports this bounded pattern:
+Compact current pattern:
 
 ```text
 +1 earned-one visible
+ 0 latent overcrown visible and bounded
  0 relation debt visible
  0 return debt visible
 -1 false-one pressure visible and demoted
 final false-one crowns = 0
 ```
 
-## Current package gate
+## Canonical current evidence gates
 
-`v1.6.25-alpha` checked the role-dependence boundary. The honest status is bounded: debt states are designed-profile shaped but witness-counted and reproducible.
+| gate | version | canonical role | decision | caveat |
+|---|---|---|---|---|
+| v1.6 closeout | `v1.6.28-alpha` | bounded v1.6 closeout | expand | controlled synthetic-field only |
+| core question contract | `v1.7.0-alpha` | answer grammar / falsifiers | witness | no evidence crown |
+| return gate trace lock | `v1.7.1-alpha` | return-potential vs observed return | witness | no physics/topology claim |
+| lane taxonomy | `v1.7.2-alpha` | lane separation and latent overcrown repair | witness | latent remains bounded |
+| baseline / ablation matrix | `v1.7.3-alpha` | weaker-witness falsifier surface | witness | not a heavy evidence run |
+| perturbation spectrum | `v1.7.4-alpha` | lane behavior under weather | witness | spectrum contract |
+| masked role-dependence audit | `v1.7.5-alpha` | masked numeric visibility | witness | no role-blind discovery |
+| fresh holdout challenge | `v1.7.6-alpha` | fresh seeds / weather ladder / evaluator | witness | CI guards contract, not heavy runs |
+| anti-tautology / role-dependence check | `v1.7.7-alpha` | post-holdout audit | witness | no core closeout |
+| repo cleanup / cohesion check | `v1.7.8-alpha` | public surface repair | hygiene | no new science crown |
 
-`v1.6.26-alpha` packages reproduction commands before manuscript correction. It adds no new scientific claim.
+## Historical evidence anchors
 
-`v1.6.27-alpha` packages manuscript correction materials for later v2 paper work. It does not start the Zenodo route and does not make a new evidence claim.
+`v1.6.27-alpha` / `v1.6.28-alpha` preserve the Manuscript Correction Package route and closeout boundary. `v1.6.22-alpha` caveat: latent overcrown did not reproduce cleanly, while relation debt and return debt did.
 
-`v1.6.28-alpha` closes v1.6 as a bounded `+1` for the controlled synthetic-field Four Gates witness evidence line. It opens v1.7 operationalization while keeping role-blind, observed-universe, and physics claims blocked.
 
-`v1.7.0-alpha` opens the Core Question Contract. It defines the answer grammar, lane contract, falsifier register, and forbidden-claim boundary before any heavier v1.7 evidence work. It adds no new evidence crown.
+`v1.6.25-alpha` remains the first anti-tautology / role-dependence audit anchor. Detailed native history lives in [`recent_native_evidence_history.md`](recent_native_evidence_history.md).
 
-`v1.7.1-alpha` locks the Return Gate Trace. It separates `Gamma = D * P * R` return-potential from observed return `B`, keeps `C_Z = min(D, P, R, B)` untouched, treats return debt as structured zero, and blocks false-return readings before v1.7.2 lane taxonomy. It adds no new evidence crown.
+## Latest holdout snapshot
 
-`v1.7.2-alpha` locks the Lane Taxonomy and Latent Overcrown Repair. It separates earned-one, raw expression pressure, latent overcrown, relation debt, return debt, and false-one pressure as distinct report lanes; it repairs latent overcrown as explicit HOLD until reproduced or narrowed; and it prepares baseline / ablation falsifier pressure without adding a full evidence crown.
+The latest local v1.7 holdout handoff snapshot is:
 
-`v1.7.3-alpha` locks the Baseline and Ablation Falsifier Matrix. It names raw-only, binary, dead-safe, average-gate, no-return, no-relation, no-lineage/no-return-depth, no-echo-independence, no-zero-hold, and no-false-one-demotion witnesses as required enemies. It adds no new heavy evidence crown and preserves `C_Z = min(D, P, R, B)`.
+| rung | earned | raw pressure | latent | relation debt | return debt | false pressure | final false crowns |
+|---|---:|---:|---:|---:|---:|---:|---:|
+| triad27 | 839 | 1,283 | 9 | 39 | 75 | 321 | 0 |
+| deep81 | 1,950 | 3,012 | 9 | 120 | 126 | 807 | 0 |
+| wide243 | 9,417 | 14,058 | 21 | 465 | 612 | 3,543 | 0 |
 
-`v1.7.4-alpha` locks the Perturbation Spectrum Witness. It requires lane-level behavior across `triad27`, `deep81`, and `wide243`, keeps raw expression pressure separate from earned-one, keeps structured zero/debt lanes visible, treats false-one pressure as pressure rather than crown, and preserves `C_Z = min(D, P, R, B)`. It adds no new heavy evidence crown.
-
-`v1.7.5-alpha` locks the Masked Role-Dependence Audit. It requires masked numeric visibility for earned-one, relation debt, return debt, false-one pressure, and final false-crown safety while explicitly resisting role-blind discovery language. It adds no new heavy evidence crown.
-
-`v1.7.6-alpha` locks the Fresh Holdout Synthetic-Field Challenge. It defines fresh seeds, held-out profile variants, controlled weather shifts, candidate-name masking, and lane-level expected-output manifests written before the run. It makes `triad27`, `deep81`, and `wide243` required for later full holdout closeout while adding no new heavy evidence crown.
-
-Post-CI process note: the holdout ladder must run one rung at a time (`triad27` -> inspect -> `deep81` -> inspect -> `wide243` -> inspect). No local run attempt is promoted into this index by default. `v1.7.7-alpha` audits the completed rung-level output before packaging. Future `v1.7.8-alpha` packaging should use the output contract in `docs/v1_7_holdout_output_structure.md`, including full output reports, compressed summaries, visual outputs when available, and strict assistant handoff audit.
+This snapshot is not yet the reviewer reproduction package. It is current evidence pressure for the next packaging gate.
 
 ## Not current evidence
 
@@ -85,5 +77,3 @@ The following remain historical or analogy lanes:
 - physics, quantum, topology, ER=EPR, or observed-universe analogies.
 
 These may explain how the project got here, but they do not carry the current Four Gates evidence claim.
-
-`v1.7.7-alpha` locks the Anti-Tautology Audit / Role-Dependence Check after fresh holdout and before reviewer packaging. It checks rung completeness, frozen manifests, candidate-name masking, earned-one positive controls, false-one negative controls, structured zero/debt visibility, and bounded role-dependence language. It does not close the core question.

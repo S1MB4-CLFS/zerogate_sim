@@ -17,7 +17,7 @@ CORE_QUESTION = (
 )
 DECISION = "fresh_holdout_challenge_locked_not_closeout"
 GATE_KIND = "fresh_holdout_synthetic_field_challenge_not_closeout"
-NEXT_GATE = "v1.7.7-alpha — Reviewer Start Here / Reproduction Package"
+NEXT_GATE = "v1.7.7-alpha — Anti-Tautology Audit / Role-Dependence Check"
 RUN_ORDER_ANSWER = (
     "v1.7.6 locks the fresh-holdout design and evaluation schema. After v1.7.6 is CI green, "
     "run triad27 first, inspect its report/evaluator/handoff, then run deep81, then wide243. "
@@ -87,7 +87,7 @@ HOLDOUT_DESIGN_ROWS = [
     {
         "design_rule": "latent_overcrown_reproduce_or_hold",
         "meaning": "latent overcrown is fragile; it must reproduce or remain explicit HOLD before v1.7 closeout",
-        "pass_signal": "latent overcrown is either visible in fresh holdout or marked as latent HOLD for v1.7.8 narrowing",
+        "pass_signal": "latent overcrown is either visible in fresh holdout or marked as latent HOLD for v1.7.10 narrowing",
         "failure_signal": "latent overcrown silently becomes stable evidence without reproducing",
         "claim_boundary": "do not fake the fragile lane",
     },
@@ -113,7 +113,7 @@ EXPECTED_OUTPUT_ROWS = [
     {
         "lane": "latent_overcrown",
         "required_for_full_question": "conditional",
-        "expected_holdout_behavior": "fresh holdout either reproduces latent overcrown or explicitly keeps it in HOLD for v1.7.8 narrowing",
+        "expected_holdout_behavior": "fresh holdout either reproduces latent overcrown or explicitly keeps it in HOLD for v1.7.10 narrowing",
         "pass_signal": "latent_overcrown > 0 or decision names latent hold",
         "failure_signal": "latent overcrown remains unreproduced but stays in a +1 closeout sentence",
         "safe_decision": "0 latent-overcrown hold unless reproduced",
@@ -172,7 +172,7 @@ WEATHER_LADDER_ROWS = [
         "cells": 243,
         "purpose": "temporal-depth / time-axis stress",
         "run_timing": "after deep81 holdout is safe and before v1.7.7 packaging",
-        "success_signal": "full ladder summary ready for reviewer package and v1.7.8 closeout pressure",
+        "success_signal": "full ladder summary ready for audit, cleanup, reviewer packaging, and v1.7.10 closeout pressure",
     },
 ]
 
@@ -196,14 +196,14 @@ RUN_ORDER_ROWS = [
         "when": "deep81 report/evaluator/handoff are valid",
         "action": "run wide243 fresh holdout summary only",
         "why": "temporal-depth stress is required before full v1.7 closeout can be trusted",
-        "next_allowed": "v1.7.7 reviewer package if safe; v1.7.8 +1 only later",
+        "next_allowed": "v1.7.7 anti-tautology audit if safe; v1.7.8 cleanup and v1.7.9 reviewer package before any v1.7.10 +1",
     },
     {
         "step": 4,
         "when": "triad27 / deep81 / wide243 summaries and handoffs exist",
-        "action": "package reviewer path in v1.7.7-alpha",
-        "why": "reviewer package should point to actual holdout summaries, full output reports, compressed summaries, and visuals, not a promise to run them later",
-        "next_allowed": "v1.7.8 core question closeout after reviewer path is clean",
+        "action": "audit anti-tautology / role-dependence in v1.7.7-alpha",
+        "why": "anti-tautology audit should inspect actual holdout summaries before cleanup and reviewer packaging",
+        "next_allowed": "v1.7.8 cleanup after audit; v1.7.9 reviewer path after cleanup; v1.7.10 closeout only later",
     },
 ]
 
@@ -498,7 +498,7 @@ def _readme_lines(evaluation_rows: list[dict[str, object]], evaluation_decision:
             "",
             "## Next gate",
             "",
-            f"`{NEXT_GATE}` packages the reviewer path after the holdout ladder has a clean summary or explicitly records what remains in HOLD.",
+            f"`{NEXT_GATE}` audits anti-tautology and role-dependence pressure after the holdout ladder has a clean summary or explicitly records what remains in HOLD.",
         ]
     )
     return lines

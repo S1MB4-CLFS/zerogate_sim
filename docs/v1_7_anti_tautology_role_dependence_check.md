@@ -3,7 +3,7 @@
 **Version:** `v1.7.7-alpha`  
 **Native witness:** `C_Z = min(D, P, R, B)`
 
-`v1.7.7-alpha` sits after the `v1.7.6-alpha` fresh holdout ladder and before reviewer / reproduction packaging.
+`v1.7.7-alpha` sits after the `v1.7.6-alpha` fresh holdout ladder and before repo cleanup and reviewer / reproduction packaging.
 
 Its job is not to produce a new crown. Its job is to ask whether the post-holdout result can be trusted as a non-tautological, non-vacuous, role-bounded controlled synthetic-field result.
 
@@ -73,4 +73,4 @@ The result proves external reality, physics, cosmology, or observed-universe str
 
 ## Next gate
 
-`v1.7.8-alpha — Reviewer Start Here / Reproduction Package`.
+`v1.7.8-alpha — Repo Cleanup / Cohesion Check`.

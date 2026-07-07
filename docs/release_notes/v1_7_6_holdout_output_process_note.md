@@ -14,7 +14,7 @@ The holdout ladder should not be run as an all-weather one-shot until `triad27` 
 Required future rhythm:
 
 ```text
-triad27 -> inspect -> deep81 -> inspect -> wide243 -> inspect -> v1.7.7 package
+triad27 -> inspect -> deep81 -> inspect -> wide243 -> inspect -> v1.7.7 audit -> v1.7.8 cleanup -> v1.7.9 package
 ```
 
 ## Pressure fixed

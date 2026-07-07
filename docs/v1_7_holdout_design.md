@@ -28,7 +28,7 @@ deep81 = 3^4 perturbation / late-shock holdout bridge
 wide243 = 3^5 temporal-depth / full controlled weather stress
 ```
 
-`v1.7.6-alpha` locks and can evaluate the holdout contract. It does not require CI to run the full heavy 27/81/243 evidence stack. Once `v1.7.6-alpha` is CI green, run the full holdout ladder before `v1.7.7-alpha` audits anti-tautology and role-dependence pressure. `v1.7.8-alpha` packages the reviewer/reproduction path, and `v1.7.9-alpha` closes the core question using whatever evidence has actually been run and passed.
+`v1.7.6-alpha` locks and can evaluate the holdout contract. It does not require CI to run the full heavy 27/81/243 evidence stack. Once `v1.7.6-alpha` is CI green, run the full holdout ladder before `v1.7.7-alpha` audits anti-tautology and role-dependence pressure. `v1.7.8-alpha` cleans the repo surface, `v1.7.9-alpha` packages the reviewer/reproduction path, and `v1.7.10-alpha` closes the core question using whatever evidence has actually been run and passed.
 
 ## Pass condition
 

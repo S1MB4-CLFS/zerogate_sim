@@ -1,9 +1,9 @@
 # Version Truth
 
-**Status:** README overflow moved here in `v1.6.9-alpha`; current spine advanced in `v1.7.7-alpha`  
+**Status:** README overflow moved here in `v1.6.9-alpha`; current spine advanced in `v1.7.8-alpha`  
 **Purpose:** preserve the release spine and recent checkpoints without forcing the README to open with a wall of version bookkeeping.
 
-The active public line is now `v1.7.7-alpha` — Anti-Tautology Audit / Role-Dependence Check.
+The active public line is now `v1.7.8-alpha` — Repo Cleanup / Cohesion Check.
 
 ## Release spine
 
@@ -38,6 +38,7 @@ The active public line is now `v1.7.7-alpha` — Anti-Tautology Audit / Role-Dep
 - `v1.7.5-alpha` — Masked Role-Dependence Audit: locks masked numeric visibility and role-dependence pressure before fresh holdout.
 - `v1.7.6-alpha` — Fresh Holdout Synthetic-Field Challenge: locks fresh holdout design, weather ladder, candidate-name masking, and pre-frozen expected-output manifests before post-holdout audit.
 - `v1.7.7-alpha` — Anti-Tautology Audit / Role-Dependence Check: audits the fresh holdout ladder against pre-registration, non-vacuity, positive/negative controls, label leakage, role-dependence, and bounded claim translation before reviewer packaging.
+- `v1.7.8-alpha` — Repo Cleanup / Cohesion Check: moves long evidence lists out of README, exposes the latest holdout snapshot and anti-tautology path on the front page, and shifts reviewer packaging to `v1.7.9-alpha` with closeout at `v1.7.10-alpha`.
 
 ## Recent checkpoints
 
@@ -180,7 +181,7 @@ C_Z = min(D, P, R, B)
 
 ## v1.7.2-alpha note
 
-`v1.7.2-alpha` is the Lane Taxonomy and Latent Overcrown Repair gate. It preserves `C_Z = min(D, P, R, B)`, does not start manuscript v2, does not revive shadow, does not upload to Zenodo, and does not claim observed-universe proof. It locks earned-one, raw expression pressure, latent overcrown, relation debt, return debt, and false-one pressure as distinct report lanes. Latent overcrown remains structured zero but is held for later reproduction pressure; if it does not reproduce, `v1.7.8-alpha` must close at `0` or narrow the core question.
+`v1.7.2-alpha` is the Lane Taxonomy and Latent Overcrown Repair gate. It preserves `C_Z = min(D, P, R, B)`, does not start manuscript v2, does not revive shadow, does not upload to Zenodo, and does not claim observed-universe proof. It locks earned-one, raw expression pressure, latent overcrown, relation debt, return debt, and false-one pressure as distinct report lanes. Latent overcrown remains structured zero but is held for later reproduction pressure; if it does not reproduce, `v1.7.10-alpha` must close at `0` or narrow the core question.
 
 
 ## v1.7.3-alpha note
@@ -199,6 +200,10 @@ C_Z = min(D, P, R, B)
 
 ## v1.7.6-alpha note
 
-`v1.7.6-alpha` is the Fresh Holdout Synthetic-Field Challenge gate. It preserves `C_Z = min(D, P, R, B)`, does not start manuscript v2, does not revive shadow as discovery, does not upload to Zenodo, and does not claim role-blind false-one detection or observed-universe proof. It locks fresh seeds, held-out profile variants, controlled weather shifts, candidate-name masking, and expected-output manifests written before the run. The `triad27`, `deep81`, and `wide243` rungs are required for later full holdout closeout, but this version is the contract/evaluator lock before `v1.7.7-alpha` reviewer packaging.
+`v1.7.6-alpha` is the Fresh Holdout Synthetic-Field Challenge gate. It preserves `C_Z = min(D, P, R, B)`, does not start manuscript v2, does not revive shadow as discovery, does not upload to Zenodo, and does not claim role-blind false-one detection or observed-universe proof. It locks fresh seeds, held-out profile variants, controlled weather shifts, candidate-name masking, and expected-output manifests written before the run. The `triad27`, `deep81`, and `wide243` rungs are required for later full holdout closeout, but this version is the contract/evaluator lock before `v1.7.7-alpha` anti-tautology audit.
 
 - `v1.7.7-alpha` adds `docs/v1_7_anti_tautology_role_dependence_check.md`, `docs/v1_7_anti_tautology_known_routine.md`, `docs/v1_7_post_holdout_audit_schema.md`, and `zerogate-v1-7-anti-tautology-role-audit`; it verifies that post-holdout evidence is not tautological, vacuous, dead-safe, or role/name-leakage carried before reviewer packaging.
+
+## v1.7.8-alpha note
+
+`v1.7.8-alpha` is the Repo Cleanup / Cohesion Check gate. It preserves `C_Z = min(D, P, R, B)`, does not start manuscript v2, does not upload to Zenodo, does not claim role-blind discovery, and does not close the core question. It moves detailed evidence state, recent native evidence history, and front-page routing into dedicated docs; it puts the latest holdout snapshot and anti-tautology path on the README front page; it moves reviewer packaging to `v1.7.9-alpha` and core question closeout to `v1.7.10-alpha`.

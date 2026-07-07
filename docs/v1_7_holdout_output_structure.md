@@ -3,7 +3,7 @@
 **Version:** `v1.7.6-alpha`  
 **Native witness:** `C_Z = min(D, P, R, B)`
 
-This note records the output structure required after the `v1.7.6-alpha` fresh holdout contract and before `v1.7.7-alpha` audit and `v1.7.8-alpha` packaging reviewer packaging.
+This note records the output structure required after the `v1.7.6-alpha` fresh holdout contract and before `v1.7.7-alpha` audit, `v1.7.8-alpha` cleanup, and `v1.7.9-alpha` reviewer packaging.
 
 No run result is promoted into repo evidence by this note. Local `runs/` artifacts remain local evidence until a later patch deliberately promotes a bounded summary.
 
@@ -89,7 +89,7 @@ Do not treat controlled holdout output as role-blind discovery.
 
 ## v1.7.7 dependency
 
-`v1.7.7-alpha` should audit the clean rung-level output before reviewer/reproduction guidance. `v1.7.8-alpha` should package reviewer/reproduction guidance only after the audit passes. It should include this structure:
+`v1.7.7-alpha` should audit the clean rung-level output before reviewer/reproduction guidance. `v1.7.8-alpha` should clean the repo surface after the audit passes. `v1.7.9-alpha` should package reviewer/reproduction guidance only after cleanup passes. It should include this structure:
 
 ```text
 full_output/

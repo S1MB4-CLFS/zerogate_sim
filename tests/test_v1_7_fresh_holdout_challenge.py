@@ -191,8 +191,8 @@ def test_v1_7_6_public_surfaces_and_version_truth() -> None:
     output_doc = read("docs/v1_7_holdout_output_structure.md")
     process_note = read("docs/release_notes/v1_7_6_holdout_output_process_note.md")
 
-    assert "1.7.7-alpha" in read("src/zerogate_sim/__init__.py")
-    assert 'version = "1.7.7a0"' in read("pyproject.toml")
+    assert "1.7.8-alpha" in read("src/zerogate_sim/__init__.py")
+    assert 'version = "1.7.8a0"' in read("pyproject.toml")
     assert "zerogate-v1-7-fresh-holdout-challenge" in read("pyproject.toml")
 
     for text in [readme, roadmap, version_truth, evidence_index, holdout_doc, expected_doc, weather_doc, masking_doc, release, output_doc, process_note]:

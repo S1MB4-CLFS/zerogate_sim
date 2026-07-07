@@ -1,6 +1,6 @@
 # ZeroGateSim
 
-**Current public line:** `v1.7.7-alpha` — Anti-Tautology Audit / Role-Dependence Check  
+**Current public line:** `v1.7.8-alpha` — Repo Cleanup / Cohesion Check  
 **Status:** speculative research software / controlled synthetic-field experiment line  
 **Working identity:** Four Gates of Becoming witness simulator  
 **Core question:** can a final trinary witness distinguish earned-one from raw expression pressure, latent overcrown, relation/return debt, and false-one pressure under controlled synthetic-field adversarial weather?
@@ -17,6 +17,21 @@ It tests a narrower software-theory claim:
 
 Historical proof records, v1.5 controlled evidence, and the v1.6 shadow route are preserved in the [history vault](docs/history_vault/README.md). They explain how the repo got here; they are not the current README evidence surface.
 
+## Latest evidence snapshot
+
+The latest v1.7 local holdout snapshot is now visible on the front page because it is the current evidence pressure point. It is **not** the reviewer reproduction package and **does not** close the core question.
+
+| rung | earned-one | raw pressure | latent | relation debt | return debt | false-one pressure | final false crowns | lane pattern |
+|---|---:|---:|---:|---:|---:|---:|---:|---|
+| triad27 | 839 | 1,283 | 9 | 39 | 75 | 321 | 0 | true |
+| deep81 | 1,950 | 3,012 | 9 | 120 | 126 | 807 | 0 | true |
+| wide243 | 9,417 | 14,058 | 21 | 465 | 612 | 3,543 | 0 | true |
+| **total** | **12,206** | **18,353** | **39** | **624** | **813** | **4,671** | **0** | **true across all** |
+
+Read the bounded snapshot:
+
+- [`docs/v1_7_latest_holdout_snapshot.md`](docs/v1_7_latest_holdout_snapshot.md)
+
 ## Core theory
 
 The central hypothesis is:
@@ -32,10 +47,10 @@ The four gates are:
 
 Return is not decorative. Distinction separates. Polarity tensions. Relation binds. When binding becomes coherent, expansion curves back as return.
 
-The zero-gate coherence of candidate `i` at time `t` is:
+The native witness remains:
 
-```math
-C_Z^i(t)=\min(g_D^i(t),g_P^i(t),g_R^i(t),g_B^i(t))
+```text
+C_Z = min(D, P, R, B)
 ```
 
 The minimum matters. A candidate does not pass because one gate is beautiful. The weakest gate decides the coherence pressure.
@@ -46,18 +61,9 @@ Core sentence:
 
 ## Why this exists
 
-The usual ladder of dimensional explanation often begins with:
+The usual ladder of dimensional explanation often begins with point, line, plane, cube, then time. That ladder may work as a classroom drawing. It does not work as a genesis model because it describes completed structures, not how structure becomes expressible.
 
-> point, line, plane, cube, then time.
-
-That ladder may work as a classroom drawing. It does not work as a genesis model. It describes completed structures, not how structure becomes expressible.
-
-ZeroGateSim tests a different spine:
-
-> Time is not merely the fourth room in the house of space. Time is the generative ordering condition through which dimensions become expressed.
-
-The simulator exists because a theory does not earn trust by sounding beautiful. It earns its first bones by meeting pressure.
-
+ZeroGateSim exists because a theory does not earn trust by sounding beautiful. It earns its first bones by meeting pressure.
 
 ## How it works
 
@@ -67,12 +73,6 @@ A candidate does not become final `+1` merely because it is loud, separable, or 
 
 ```text
 Distinction -> Polarity -> Relation -> Return -> final trinary witness
-```
-
-The native witness keeps the weakest-gate rule:
-
-```text
-C_Z = min(D, P, R, B)
 ```
 
 where:
@@ -98,303 +98,75 @@ deep81  = 3^4 perturbation / late-shock bridge
 wide243 = 3^5 temporal-depth / time-axis stress
 ```
 
-The project compares the native witness against raw, binary, dead-safe, and ablated witnesses. The current bounded claim is that, inside controlled synthetic fields, the Four Gates witness preserved earned expression, held relation/return debt as structured zero, and demoted false-one pressure where simpler witnesses exposed failure modes.
-
 This does not prove cosmology, physical dimensional genesis, quantum gravity, or that reality itself is trinary. It is a computational approximation of zero-zone gating.
 
 ## First visual spine
 
-These first three maps are the fastest route into the project. They show mechanism, witness, and test pressure before the README descends into machinery.
+These first three maps are the fastest route into the project. They show mechanism, witness, and test pressure before the reader enters the detailed reports.
 
 ### Zero-gate cycle
 
 ![Zero-gate cycle](docs/assets/zero_gate_cycle.svg)
 
-Native coherence is weakest-gate coherence:
-
-```math
-C_Z^i(t)=\min(D_i(t),P_i(t),R_i(t),B_i(t))
-```
-
-Raw expression is pressure, not final truth:
-
-```math
-\chi^i_{raw}(t)=H(\sigma_i(t)-\epsilon)H(C_Z^i(t)-\theta_Z)
-```
-
 ### Trinary witness stack
 
 ![Trinary witness stack](docs/assets/trinary_witness_stack.svg)
-
-Final earned-one is raw expression after return-depth, lineage, independence, and role-aware witness in the current harness:
-
-```math
-\chi^i_{earned}(t)=\chi^i_{raw}(t)H(k_i(t)-K^*)W^i_{lineage}(t)W^i_{independence}(t)W^i_{role}
-```
-
-The output grammar is trinary:
-
-```text
-+1 earned-one
- 0 witness / hold / debt / quarantine / not-yet
--1 resist / reject / false-one demotion
-```
 
 ### Proof harness map
 
 ![Proof harness map](docs/assets/proof_harness_map.svg)
 
-Weather is trinary, not decimal decoration:
+## Current route
+
+The active route is now:
 
 ```text
-triad27 = 3^3 local expression weather
-deep81  = 3^4 perturbation / late-shock bridge
-wide243 = 3^5 temporal-depth / time-axis stress
-```
-
-The current Four Gates evidence route uses distinction, polarity, relation, and return as dedicated native run families before broader claims are trusted.
-
-## Native math witness
-
-The native math witness remains the spine of the repo. In plain text: `C_Z = min(D, P, R, B)`.
-
-Native anchors:
-
-```math
-E_0 = (Z_0, \tau)
-```
-
-```math
-T_3[X](\tau) = (X(\tau+h)-X(\tau), I_h[X](\tau), X(\tau)-X(\tau-h))
-```
-
-```math
-L_i = (-e_i, 0, +e_i)
-```
-
-```math
-\Gamma_i(t)=D_i(t)P_i(t)R_i(t)
-```
-
-```math
-C_Z^i(t)=\min(D_i(t),P_i(t),R_i(t),B_i(t))
-```
-
-```math
-\chi^i_{raw}(t)=H(\sigma_i(t)-\epsilon)H(C_Z^i(t)-\theta_Z)
-```
-
-```math
-\chi^i_{earned}(t)=\chi^i_{raw}(t)H(k_i(t)-K^*)W^i_{lineage}(t)W^i_{independence}(t)W^i_{role}
-```
-
-## Active route
-
-The active route after `v1.7.6-alpha` is:
-
-```text
-anti-tautology audit complete -> reproduction command package complete -> manuscript correction package complete -> v1.6 closeout complete -> v1.7.0 core question contract complete -> v1.7.1 return gate trace lock complete -> v1.7.2 lane taxonomy and latent overcrown repair complete -> v1.7.3 baseline and ablation falsifier matrix complete -> v1.7.4 perturbation spectrum witness complete -> v1.7.5 masked role-dependence audit complete -> v1.7.6 fresh holdout synthetic-field challenge complete -> v1.7.7 anti-tautology audit / role-dependence check -> v1.7.8-alpha reviewer start here / reproduction package
+v1.7.7-alpha anti-tautology audit / role-dependence check complete
+-> v1.7.8-alpha repo cleanup / cohesion check current
+-> v1.7.9-alpha reviewer start here / reproduction package next
+-> v1.7.10-alpha core question closeout later
+-> manuscript v2 only after closeout succeeds or a bounded partial-answer record is deliberately frozen
 ```
 
 The shadow route is **not** the active route now. It is preserved as historical diagnostic work in the [history vault](docs/history_vault/README.md).
 
-Read first:
+Compact v1.7 gate ledger:
 
-- [`docs/math_witness_map.md`](docs/math_witness_map.md)
-- [`docs/simulation_win_conditions.md`](docs/simulation_win_conditions.md)
+| version | gate | status |
+|---|---|---|
+| `v1.7.0-alpha` | Core Question Contract | complete |
+| `v1.7.1-alpha` | Return Gate Trace Lock | complete |
+| `v1.7.2-alpha` | Lane Taxonomy and Latent Overcrown Repair | complete |
+| `v1.7.3-alpha` | Baseline and Ablation Falsifier Matrix | complete |
+| `v1.7.4-alpha` | Perturbation Spectrum Witness | complete |
+| `v1.7.5-alpha` | Masked Role-Dependence Audit | complete |
+| `v1.7.6-alpha` | Fresh Holdout Synthetic-Field Challenge | complete |
+| `v1.7.7-alpha` | Anti-Tautology Audit / Role-Dependence Check | complete |
+| `v1.7.8-alpha` | Repo Cleanup / Cohesion Check | current |
+| `v1.7.9-alpha` | Reviewer Start Here / Reproduction Package | next |
+| `v1.7.10-alpha` | Core Question Closeout | later |
+
+## Inspect the current state
+
+Start here if you want the clean current surface rather than the whole history at once:
+
+- [`docs/current_evidence_state.md`](docs/current_evidence_state.md) — detailed current evidence state.
 - [`docs/controlled_synthetic_field_language.md`](docs/controlled_synthetic_field_language.md) — controlled synthetic-field language boundary.
-- [`docs/four_gates_debt_candidate_design.md`](docs/four_gates_debt_candidate_design.md)
-- [`docs/four_gates_debt_candidate_generator.md`](docs/four_gates_debt_candidate_generator.md)
-- [`docs/four_gates_triad27_debt_evidence.md`](docs/four_gates_triad27_debt_evidence.md)
-- [`docs/four_gates_deepwide_debt_evidence.md`](docs/four_gates_deepwide_debt_evidence.md)
-- [`docs/four_gates_fresh_seed_debt_reproduction.md`](docs/four_gates_fresh_seed_debt_reproduction.md)
-- [`docs/current_evidence_index.md`](docs/current_evidence_index.md)
-- [`docs/anti_tautology_audit_plan.md`](docs/anti_tautology_audit_plan.md)
-- [`docs/anti_tautology_audit_report.md`](docs/anti_tautology_audit_report.md)
-- [`docs/four_gates_reproduction_command_package.md`](docs/four_gates_reproduction_command_package.md)
-- [`docs/manuscript_correction_package.md`](docs/manuscript_correction_package.md)
-- [`docs/v1_6_closeout_decision.md`](docs/v1_6_closeout_decision.md)
-- [`docs/v1_7_core_question_contract.md`](docs/v1_7_core_question_contract.md)
-- [`docs/v1_7_return_gate_trace.md`](docs/v1_7_return_gate_trace.md)
-- [`docs/v1_7_return_potential_vs_observed_return.md`](docs/v1_7_return_potential_vs_observed_return.md)
-- [`docs/v1_7_return_debt_taxonomy.md`](docs/v1_7_return_debt_taxonomy.md)
-- [`docs/v1_7_return_gate_forbidden_readings.md`](docs/v1_7_return_gate_forbidden_readings.md)
-- [`docs/v1_7_lane_taxonomy.md`](docs/v1_7_lane_taxonomy.md)
-- [`docs/v1_7_latent_overcrown_repair.md`](docs/v1_7_latent_overcrown_repair.md)
-- [`docs/v1_7_relation_return_debt_specificity.md`](docs/v1_7_relation_return_debt_specificity.md)
-- [`docs/v1_7_lane_visibility_decision_rules.md`](docs/v1_7_lane_visibility_decision_rules.md)
-- [`docs/v1_7_baseline_falsifier_matrix.md`](docs/v1_7_baseline_falsifier_matrix.md)
-- [`docs/v1_7_ablation_summary.md`](docs/v1_7_ablation_summary.md)
-- [`docs/v1_7_failure_mode_table.md`](docs/v1_7_failure_mode_table.md)
-- [`docs/v1_7_witness_spectrum.md`](docs/v1_7_witness_spectrum.md)
-- [`docs/v1_7_perturbation_curve.md`](docs/v1_7_perturbation_curve.md)
-- [`docs/v1_7_weather_curve_summary.md`](docs/v1_7_weather_curve_summary.md)
-- [`docs/v1_7_expected_quiet_lane_activation.md`](docs/v1_7_expected_quiet_lane_activation.md)
-- [`docs/v1_7_masked_role_dependence_audit.md`](docs/v1_7_masked_role_dependence_audit.md)
-- [`docs/v1_7_masked_numeric_visibility.md`](docs/v1_7_masked_numeric_visibility.md)
-- [`docs/v1_7_role_dependence_pressure.md`](docs/v1_7_role_dependence_pressure.md)
-- [`docs/v1_7_role_blind_forbidden_language.md`](docs/v1_7_role_blind_forbidden_language.md)
-- [`docs/v1_7_holdout_design.md`](docs/v1_7_holdout_design.md)
-- [`docs/v1_7_holdout_expected_outputs.md`](docs/v1_7_holdout_expected_outputs.md)
-- [`docs/v1_7_holdout_weather_ladder.md`](docs/v1_7_holdout_weather_ladder.md)
-- [`docs/v1_7_candidate_name_masking.md`](docs/v1_7_candidate_name_masking.md)
-- [`docs/v1_7_holdout_output_structure.md`](docs/v1_7_holdout_output_structure.md)
-- [`docs/v1_7_answer_grammar.md`](docs/v1_7_answer_grammar.md)
-- [`docs/v1_7_falsifier_register.md`](docs/v1_7_falsifier_register.md)
-- [`docs/v1_7_forbidden_claims.md`](docs/v1_7_forbidden_claims.md)
-- [`docs/claim_boundary.md`](docs/claim_boundary.md)
+- [`docs/v1_7_latest_holdout_snapshot.md`](docs/v1_7_latest_holdout_snapshot.md) — latest 27/81/243 holdout snapshot.
+- [`docs/v1_7_front_page_map.md`](docs/v1_7_front_page_map.md) — what belongs on the README front page and what belongs behind links.
+- [`docs/recent_native_evidence_history.md`](docs/recent_native_evidence_history.md) — recent native route ledger moved out of the README.
+- [`docs/current_evidence_index.md`](docs/current_evidence_index.md) — canonical current evidence index.
+- [`docs/version_truth.md`](docs/version_truth.md) — release spine and checkpoint truth.
 
-## Current evidence state
+## Inspect the anti-tautology path
 
-### Anti-tautology and reproduction boundary
+The post-holdout audit must be readable and self-explaining before reviewer packaging.
 
-`v1.6.25-alpha` completed the role-dependence check. The honest result is bounded: debt states are witness-counted and reproducible, but the current evidence is still designed-profile / role-shaped rather than independent role-blind discovery.
+- [`docs/v1_7_anti_tautology_role_dependence_check.md`](docs/v1_7_anti_tautology_role_dependence_check.md) — what the audit checks and why.
+- [`docs/v1_7_anti_tautology_known_routine.md`](docs/v1_7_anti_tautology_known_routine.md) — known routine: pre-registration, holdout split, positive controls, negative controls, leakage checks, baselines, and bounded translation.
+- [`docs/v1_7_post_holdout_audit_schema.md`](docs/v1_7_post_holdout_audit_schema.md) — input schema and command surface.
 
-`v1.6.26-alpha` adds the reproduction command package so a skeptical reader can run a small pipeline smoke, locate canonical heavy evidence, and see the full reference/fresh seed reproduction route before manuscript correction.
-
-`v1.6.27-alpha` adds the manuscript correction package. It prepares section-level patch maps, claim lanes, canonical evidence tables, and a later Zenodo new-version plan without writing the full v2 paper or starting any Zenodo upload.
-
-`v1.6.28-alpha` closes v1.6 as a bounded `+1` for controlled synthetic-field Four Gates witness evidence and opens v1.7. It does not start Zenodo, does not revive shadow, and does not claim observed-universe proof.
-
-`v1.7.0-alpha` opens the Core Question Contract. It adds the claim/answer/falsifier documents for the v1.7 answer line, adds no new evidence crown, does not start manuscript v2, and keeps role-blind, observed-universe, and physics claims blocked.
-
-`v1.7.1-alpha` locks the Return Gate Trace. It separates `Gamma = D * P * R` return-potential from observed return `B`, keeps `C_Z = min(D, P, R, B)` untouched, defines return debt as structured zero, and blocks zero-crossing / gravity / topology overreadings before v1.7.2 lane taxonomy.
-
-`v1.7.2-alpha` locks the Lane Taxonomy and Latent Overcrown Repair. It separates earned-one, raw expression pressure, latent overcrown, relation debt, return debt, and false-one pressure as distinct report lanes. Latent overcrown remains named but is repaired as explicit HOLD until reproduced, narrowed, or closed partial. This adds no new heavy evidence crown and prepares `v1.7.3-alpha` baseline / ablation falsifier pressure.
-
-`v1.7.3-alpha` locks the Baseline and Ablation Falsifier Matrix. It names the weaker witnesses that must fail before the v1.7 core question can close: raw-only, binary, dead-safe, average-gate, no-return, no-relation, no-lineage/no-return-depth, no-echo-independence, no-zero-hold, and no-false-one-demotion. It adds no new heavy evidence crown, keeps `C_Z = min(D, P, R, B)` unchanged, and prepares `v1.7.4-alpha` perturbation spectrum witness.
-
-`v1.7.4-alpha` locks the Perturbation Spectrum Witness. It requires lane-level behavior across `triad27`, `deep81`, and `wide243`: earned-one, raw expression pressure, latent overcrown, relation debt, return debt, echo dependence, lineage instability, false-one pressure, and final false-one crowns. It adds no new heavy evidence crown, keeps `C_Z = min(D, P, R, B)` unchanged, and prepares `v1.7.5-alpha` masked role-dependence audit.
-
-`v1.7.5-alpha` locks the Masked Role-Dependence Audit. It requires masked numeric visibility for earned-one, raw expression pressure, relation debt, return debt, false-one pressure, and final false-one crown safety. It adds no new heavy evidence crown, keeps `C_Z = min(D, P, R, B)` unchanged, and prepares `v1.7.6-alpha` fresh holdout synthetic-field challenge.
-
-`v1.7.6-alpha` locks the Fresh Holdout Synthetic-Field Challenge. It defines fresh seeds, held-out profile variants, controlled weather shifts, candidate-name masking, and pre-frozen expected-output manifests. It makes the 27/81/243 ladder explicit as required for later full holdout closeout, but it does not require CI to run heavy evidence, does not close the core question, and prepares the run order for `v1.7.7-alpha` reviewer/reproduction packaging.
-
-Post-CI holdout run law: run `triad27` first and inspect the report/evaluator/handoff before deeper weather. Then run `deep81`, inspect, then `wide243`, inspect. Do not use an all-weather one-shot runner until the smallest rung proves the output pipeline.
-
-Output contract: future holdout handoffs should carry a full output report, compressed summary, optional visual outputs, machine decision files, and a report-label note when historical report modules retain internal version labels. Local run artifacts remain local evidence, not repo truth.
-
-The recent native evidence line now has the shape the project was trying to reach:
-
-```text
-+1 earned-one visible
- 0 relation debt visible
- 0 return debt visible
--1 false-one pressure visible and demoted
-final false-one crowns = 0
-```
-
-### Four Gates triad27 debt evidence
-
-![Four Gates triad27 debt evidence](docs/assets/four_gates_triad27_debt_evidence_card.svg)
-
-`v1.6.20-alpha` showed the repaired small-weather debt pattern:
-
-| lane | count |
-|---|---:|
-| earned-one | `925` |
-| latent overcrown | `3` |
-| relation debt | `30` |
-| return debt | `63` |
-| raw false-one pressure | `402` |
-| final false-one crowns | `0` |
-
-### Four Gates deep81 / wide243 debt evidence
-
-![Four Gates deep81 wide243 debt evidence](docs/assets/four_gates_deepwide_debt_evidence_card.svg)
-
-`v1.6.21-alpha` pushed the pattern into deeper weather:
-
-| lane | count |
-|---|---:|
-| earned-one | `11,984` |
-| latent overcrown | `18` |
-| relation debt | `351` |
-| return debt | `660` |
-| raw false-one pressure | `4,980` |
-| final false-one crowns | `0` |
-
-### Fresh-seed reproduction
-
-![Four Gates fresh-seed reproduction](docs/assets/four_gates_fresh_seed_debt_reproduction_card.svg)
-
-`v1.6.22-alpha` reproduced the qualitative pattern on fresh seeds `9-17`:
-
-| lane | reference seeds 0-8 | fresh seeds 9-17 |
-|---|---:|---:|
-| earned-one | `11,984` | `11,732` |
-| relation debt | `351` | `528` |
-| return debt | `660` | `537` |
-| raw false-one pressure | `4,980` | `4,659` |
-| final false-one crowns | `0` | `0` |
-
-Caveat:
-
-```text
-latent overcrown reproduced as 18 -> 0, so latent overcrown remains seed-sensitive.
-relation debt and return debt did reproduce.
-```
-
-### Recent native evidence history
-
-The README keeps only the recent native route because it explains the current evidence surface:
-
-- `v1.6.14-alpha` — native four-gate claim audit;
-- `v1.6.15-alpha` — native ablation baselines;
-- `v1.6.16-alpha` — four-corpus triad27 native evidence;
-- `v1.6.17-alpha` — deep81 / wide243 native evidence with debt lanes partial;
-- `v1.6.18-alpha` — Four Gates debt candidate design;
-- `v1.6.19-alpha` — Four Gates debt candidate generator;
-- `v1.6.20-alpha` — Four Gates triad27 debt evidence;
-- `v1.6.21-alpha` — Four Gates deep81 / wide243 debt evidence;
-- `v1.6.22-alpha` — Four Gates fresh-seed debt reproduction;
-- `v1.6.23-alpha` — history vault and current evidence surface cleanup;
-- `v1.6.24-alpha` — How It Works, current evidence index, and v1.6 closeout route lock.
-- `v1.6.25-alpha` — Anti-Tautology Audit / Role-Dependence Check;
-- `v1.6.26-alpha` — Reproduction Command Package;
-- `v1.6.27-alpha` — Manuscript Correction Package.
-- `v1.6.28-alpha` — v1.6 Closeout Decision.
-- `v1.7.0-alpha` — Core Question Contract.
-- `v1.7.1-alpha` — Return Gate Trace Lock.
-- `v1.7.2-alpha` — Lane Taxonomy and Latent Overcrown Repair.
-- `v1.7.3-alpha` — Baseline and Ablation Falsifier Matrix.
-- `v1.7.4-alpha` — Perturbation Spectrum Witness.
-- `v1.7.5-alpha` — Masked Role-Dependence Audit.
-- `v1.7.6-alpha` — Fresh Holdout Synthetic-Field Challenge.
-- `v1.7.7-alpha` — Anti-Tautology Audit / Role-Dependence Check.
-
-Older proof and shadow history lives in the history vault.
-
-Boundary:
-
-No Zenodo upload yet, no shadow route revival, no observed-universe bridge, no spacetime metric claim, no new native gate, and no native witness mutation. Native witness remains `C_Z = min(D, P, R, B)`.
-
-## History vault
-
-The history vault keeps what the project was so the README can show what the project is.
-
-- [`docs/history_vault/README.md`](docs/history_vault/README.md) — vault index.
-- [`docs/history_vault/shadow_route_history_and_closeout.md`](docs/history_vault/shadow_route_history_and_closeout.md) — full shadow route status.
-- [`docs/history_vault/legacy_evidence_visuals.md`](docs/history_vault/legacy_evidence_visuals.md) — old evidence and shadow visuals.
-- [`docs/history_vault/runs_history_vault_plan.md`](docs/history_vault/runs_history_vault_plan.md) — local `runs/` archive plan and ZIP command pattern.
-
-## Known-logic comparison boundary
-
-Known logic work began with fuzzy / many-valued, Belnap evidence-state, paraconsistent conflict-locality, and three-valued compression mirrors. This is a projection mirror, not an identity claim.
-
-Allowed:
-
-> Project ZeroGateSim states into fuzzy, Belnap, paraconsistent, Kleene, or Lukasiewicz mirrors to see what is preserved, collapsed, or distorted.
-
-Forbidden:
-
-> ZeroGateSim is identical to any of those logics.
-
-Read:
-
-- [`docs/known_logic_boundary.md`](docs/known_logic_boundary.md)
-- [`docs/known_logic_closeout.md`](docs/known_logic_closeout.md)
-- [`docs/known_logic_comparison_report.md`](docs/known_logic_comparison_report.md)
+The audit does not claim role-blind discovery. It asks whether the fresh holdout evidence is non-vacuous, non-dead-safe, masked against name leakage, role-bounded, and not true by definition.
 
 ## Quickstart
 
@@ -419,10 +191,10 @@ Run the native math invariant tests:
 & $P -m pytest tests\test_native_math_invariants.py -q
 ```
 
-Run a current Four Gates debt evidence tool after the required matrix folders exist:
+Run the v1.7.8 cohesion check report:
 
 ```powershell
-& $P -m zerogate_sim.four_gates_fresh_seed_debt_reproduction_report --help
+& $P -m zerogate_sim.v1_7_repo_cleanup_cohesion_check --out runs\v1_7_8_repo_cleanup_cohesion_check
 ```
 
 More detailed quickstart:
@@ -468,14 +240,58 @@ Recommended route:
 1. README top card.
 2. Claim boundary.
 3. Math witness map.
-4. Current evidence cards.
-5. Four Gates debt reproduction docs.
-6. Quickstart or code.
-7. History vault only after the current proof boundary is understood.
+4. Current evidence state.
+5. Anti-tautology path.
+6. Latest holdout snapshot.
+7. Quickstart or code.
+8. History vault only after the current proof boundary is understood.
 
 Reviewer guide:
 
 - [`docs/for_reviewers.md`](docs/for_reviewers.md)
+
+
+## Compact trace anchors
+
+This README keeps only a compact trace so old evidence contracts remain searchable while detailed ledgers live behind links.
+
+Native/history route anchors: `v1.6.10-alpha`, `v1.6.11-alpha`, `v1.6.14-alpha`, `v1.6.15-alpha`, `v1.6.16-alpha`, `v1.6.17-alpha`, `v1.6.18-alpha`, `v1.6.19-alpha`, `v1.6.20-alpha`, `v1.6.21-alpha`, `v1.6.22-alpha`, `v1.6.23-alpha`, `v1.6.24-alpha`, `v1.6.25-alpha`, `v1.6.26-alpha`, `v1.6.27-alpha`, `v1.6.28-alpha` — v1.6 Closeout Decision.
+
+Current v1.7 route anchors: `v1.7.0-alpha`, `v1.7.1-alpha`, `v1.7.2-alpha`, `v1.7.3-alpha`, `v1.7.4-alpha`, `v1.7.5-alpha`, `v1.7.6-alpha`, `v1.7.7-alpha`, `v1.7.8-alpha`, `v1.7.9-alpha`, `v1.7.10-alpha`.
+
+
+Evidence phrase anchors retained for tested trace: four-corpus triad27 native evidence; deep81 / wide243 native evidence; deep81 / wide243 debt evidence; fresh-seed debt reproduction; Manuscript Correction Package; anti-tautology audit complete -> reproduction command package complete -> manuscript correction package.
+
+Current evidence card filenames retained for trace: `four_gates_triad27_debt_evidence_card.svg`, `four_gates_deepwide_debt_evidence_card.svg`, `four_gates_fresh_seed_debt_reproduction_card.svg`.
+
+Full lists live in [`docs/recent_native_evidence_history.md`](docs/recent_native_evidence_history.md), [`docs/current_evidence_state.md`](docs/current_evidence_state.md), and [`docs/version_truth.md`](docs/version_truth.md).
+
+## History vault
+
+The history vault keeps what the project was so the README can show what the project is.
+
+- [`docs/history_vault/README.md`](docs/history_vault/README.md) — vault index.
+- [`docs/history_vault/shadow_route_history_and_closeout.md`](docs/history_vault/shadow_route_history_and_closeout.md) — full shadow route status.
+- [`docs/history_vault/legacy_evidence_visuals.md`](docs/history_vault/legacy_evidence_visuals.md) — old evidence and shadow visuals.
+- [`docs/history_vault/runs_history_vault_plan.md`](docs/history_vault/runs_history_vault_plan.md) — local `runs/` archive plan and ZIP command pattern.
+
+## Known-logic comparison boundary
+
+Known logic work began with fuzzy / many-valued, Belnap evidence-state, paraconsistent conflict-locality, and three-valued compression mirrors. This is a projection mirror, not an identity claim.
+
+Allowed:
+
+> Project ZeroGateSim states into fuzzy, Belnap, paraconsistent, Kleene, or Lukasiewicz mirrors to see what is preserved, collapsed, or distorted.
+
+Forbidden:
+
+> ZeroGateSim is identical to any of those logics.
+
+Read:
+
+- [`docs/known_logic_boundary.md`](docs/known_logic_boundary.md)
+- [`docs/known_logic_closeout.md`](docs/known_logic_closeout.md)
+- [`docs/known_logic_comparison_report.md`](docs/known_logic_comparison_report.md)
 
 ## Boundary and release references
 
@@ -485,6 +301,7 @@ Long release and process lists live in dedicated files so the README begins with
 - [`docs/test_truth_and_handoff_boundary.md`](docs/test_truth_and_handoff_boundary.md) — strict assistant handoff, `runs/` evidence, and test-truth rules.
 - [`docs/version_truth.md`](docs/version_truth.md) — release spine and recent checkpoints.
 - [`docs/release_notes/`](docs/release_notes/) — detailed release notes.
+- [`docs/release_notes/v1_7_8_alpha.md`](docs/release_notes/v1_7_8_alpha.md) — current cleanup/cohesion note.
 
 ## License and citation
 
@@ -493,20 +310,3 @@ The source repository uses the MIT License.
 Citation metadata is stored in [`CITATION.cff`](CITATION.cff). The DOI field is intentionally absent until a Zenodo record exists.
 
 Future manuscript and evidence records may use separate explicit licenses.
-
-## v1.7.4-alpha note
-
-`v1.7.4-alpha` is the Perturbation Spectrum Witness gate. It preserves `C_Z = min(D, P, R, B)`, does not start manuscript v2, does not revive shadow, does not upload to Zenodo, and does not claim observed-universe proof. It locks the spectrum-under-perturbation contract: raw pressure may move, structured zero/debt lanes may rise, false-one pressure may surface, and final false-one crowns must remain zero for any later `+1` closeout candidate. It prepares `v1.7.5-alpha` Masked Role-Dependence Audit.
-
-## v1.7.5-alpha note
-
-`v1.7.5-alpha` is the Masked Role-Dependence Audit gate. It preserves `C_Z = min(D, P, R, B)`, does not start manuscript v2, does not revive shadow as discovery, does not upload to Zenodo, and does not claim role-blind false-one detection. It locks the masked numeric review contract: role labels may define the controlled harness, but they may not be the hidden mechanism that assigns earned-one, relation debt, return debt, false-one pressure, or false-crown safety. It prepares `v1.7.6-alpha` Fresh Holdout Synthetic-Field Challenge.
-
-## v1.7.6-alpha note
-
-`v1.7.6-alpha` is the Fresh Holdout Synthetic-Field Challenge gate. It preserves `C_Z = min(D, P, R, B)`, does not start manuscript v2, does not upload to Zenodo, does not claim role-blind discovery, and does not close the core question. It locks fresh seed pressure, held-out profile variants, controlled weather shifts, candidate-name masking, and a pre-frozen expected-output manifest. The `triad27`, `deep81`, and `wide243` rungs are all required for later full holdout closeout; `v1.7.6-alpha` locks the contract/evaluator, `v1.7.7-alpha` audits anti-tautology and role-dependence pressure, `v1.7.8-alpha` packages reviewer reproduction, and `v1.7.9-alpha` decides the core question.
-
-
-## v1.7.7-alpha note
-
-`v1.7.7-alpha` is the Anti-Tautology Audit / Role-Dependence Check gate. It preserves `C_Z = min(D, P, R, B)`, does not start manuscript v2, does not upload to Zenodo, does not claim role-blind discovery, and does not close the core question. It checks the post-holdout ladder for pre-registration, non-vacuous false-one pressure, non-dead-safe earned-one preservation, candidate-name masking, role-dependence pressure, structured zero/debt visibility, and bounded claim translation before `v1.7.8-alpha` reviewer/reproduction packaging.

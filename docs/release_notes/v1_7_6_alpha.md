@@ -29,6 +29,6 @@ This release adds no new heavy evidence crown, does not answer the v1.7 core que
 
 ## Timing
 
-`v1.7.6-alpha` defines and optionally evaluates the holdout ladder. After `v1.7.6-alpha` is CI green, the full `triad27` / `deep81` / `wide243` holdout summaries should be run before `v1.7.7-alpha` audits anti-tautology and role-dependence pressure. `v1.7.8-alpha` packages reviewer-facing small / medium / full reproduction commands. `v1.7.9-alpha` is the only v1.7 gate allowed to close the core question.
+`v1.7.6-alpha` defines and optionally evaluates the holdout ladder. After `v1.7.6-alpha` is CI green, the full `triad27` / `deep81` / `wide243` holdout summaries should be run before `v1.7.7-alpha` audits anti-tautology and role-dependence pressure. `v1.7.8-alpha` cleans the repo surface before packaging, `v1.7.9-alpha` packages reviewer-facing small / medium / full reproduction commands, and `v1.7.10-alpha` is the only v1.7 gate allowed to close the core question.
 
 The next gate is `v1.7.7-alpha — Anti-Tautology Audit / Role-Dependence Check`.

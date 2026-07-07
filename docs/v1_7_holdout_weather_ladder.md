@@ -21,11 +21,12 @@ v1.7.6-alpha CI green
 -> deep81 holdout summary
 -> wide243 holdout summary
 -> v1.7.7-alpha anti-tautology / role-dependence audit
--> v1.7.8-alpha reviewer package
--> v1.7.9-alpha core question closeout
+-> v1.7.8-alpha repo cleanup / cohesion check
+-> v1.7.9-alpha reviewer package
+-> v1.7.10-alpha core question closeout
 ```
 
-The full ladder should run before `v1.7.7-alpha` audits anti-tautology and role-dependence pressure. `v1.7.8-alpha` should package actual evidence summaries and commands, not a promise to maybe test later. CI should not carry the heavy evidence burden; CI guards the contract, schema, and evaluator.
+The full ladder should run before `v1.7.7-alpha` audits anti-tautology and role-dependence pressure. `v1.7.8-alpha` should clean the repo surface and `v1.7.9-alpha` should package actual evidence summaries and commands, not a promise to maybe test later. CI should not carry the heavy evidence burden; CI guards the contract, schema, and evaluator.
 
 ## Process scar
 

@@ -155,8 +155,8 @@ def test_fresh_seed_reproduction_public_surfaces_are_current() -> None:
     version_truth = (ROOT / "docs/version_truth.md").read_text(encoding="utf-8")
     doc = (ROOT / "docs/four_gates_fresh_seed_debt_reproduction.md").read_text(encoding="utf-8")
     release = (ROOT / "docs/release_notes/v1_6_22_alpha.md").read_text(encoding="utf-8")
-    assert "1.7.7-alpha" in (ROOT / "src/zerogate_sim/__init__.py").read_text(encoding="utf-8")
-    assert 'version = "1.7.7a0"' in (ROOT / "pyproject.toml").read_text(encoding="utf-8")
+    assert "1.7.8-alpha" in (ROOT / "src/zerogate_sim/__init__.py").read_text(encoding="utf-8")
+    assert 'version = "1.7.8a0"' in (ROOT / "pyproject.toml").read_text(encoding="utf-8")
     for text in [readme, roadmap, version_truth, doc, release]:
         assert "v1.6.22-alpha" in text
         assert "fresh-seed debt reproduction" in text

@@ -36,8 +36,10 @@ def test_v1_7_roadmap_names_all_answer_gates_and_closeout() -> None:
         "v1.7.7-alpha",
         "Anti-Tautology Audit / Role-Dependence Check",
         "v1.7.8-alpha",
-        "Reviewer Start Here / Reproduction Package",
+        "Repo Cleanup / Cohesion Check",
         "v1.7.9-alpha",
+        "Reviewer Start Here / Reproduction Package",
+        "v1.7.10-alpha",
         "Core Question Closeout",
     ]:
         assert needle in roadmap
