@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "zerogate-sim"
-version = "1.7.1a0"
+version = "1.7.2a0"
 description = "Toy simulation framework for zero-gate dimensional emergence."
 readme = "README.md"
 requires-python = ">=3.12"
@@ -72,6 +72,7 @@ zerogate-four-gates-manuscript-correction-package = "zerogate_sim.four_gates_man
 zerogate-four-gates-v1-6-closeout = "zerogate_sim.four_gates_v1_6_closeout_report:main"
 zerogate-v1-7-core-question-contract = "zerogate_sim.v1_7_core_question_contract:main"
 zerogate-v1-7-return-gate-trace = "zerogate_sim.v1_7_return_gate_trace:main"
+zerogate-v1-7-lane-taxonomy = "zerogate_sim.v1_7_lane_taxonomy:main"
 
 [tool.setuptools.packages.find]
 where = ["src"]

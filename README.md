@@ -1,6 +1,6 @@
 # ZeroGateSim
 
-**Current public line:** `v1.7.1-alpha` — Return Gate Trace Lock  
+**Current public line:** `v1.7.2-alpha` — Lane Taxonomy and Latent Overcrown Repair  
 **Status:** speculative research software / controlled synthetic-field experiment line  
 **Working identity:** Four Gates of Becoming witness simulator  
 **Core question:** can a final trinary witness distinguish earned-one from raw expression pressure, latent overcrown, relation/return debt, and false-one pressure under controlled synthetic-field adversarial weather?
@@ -190,10 +190,10 @@ C_Z^i(t)=\min(D_i(t),P_i(t),R_i(t),B_i(t))
 
 ## Active route
 
-The active route after `v1.7.1-alpha` is:
+The active route after `v1.7.2-alpha` is:
 
 ```text
-anti-tautology audit complete -> reproduction command package complete -> manuscript correction package complete -> v1.6 closeout complete -> v1.7.0 core question contract complete -> v1.7.1 return gate trace lock complete -> v1.7.2 lane taxonomy and latent overcrown repair
+anti-tautology audit complete -> reproduction command package complete -> manuscript correction package complete -> v1.6 closeout complete -> v1.7.0 core question contract complete -> v1.7.1 return gate trace lock complete -> v1.7.2 lane taxonomy and latent overcrown repair complete -> v1.7.3 baseline and ablation falsifier matrix
 ```
 
 The shadow route is **not** the active route now. It is preserved as historical diagnostic work in the [history vault](docs/history_vault/README.md).
@@ -219,6 +219,10 @@ Read first:
 - [`docs/v1_7_return_potential_vs_observed_return.md`](docs/v1_7_return_potential_vs_observed_return.md)
 - [`docs/v1_7_return_debt_taxonomy.md`](docs/v1_7_return_debt_taxonomy.md)
 - [`docs/v1_7_return_gate_forbidden_readings.md`](docs/v1_7_return_gate_forbidden_readings.md)
+- [`docs/v1_7_lane_taxonomy.md`](docs/v1_7_lane_taxonomy.md)
+- [`docs/v1_7_latent_overcrown_repair.md`](docs/v1_7_latent_overcrown_repair.md)
+- [`docs/v1_7_relation_return_debt_specificity.md`](docs/v1_7_relation_return_debt_specificity.md)
+- [`docs/v1_7_lane_visibility_decision_rules.md`](docs/v1_7_lane_visibility_decision_rules.md)
 - [`docs/v1_7_answer_grammar.md`](docs/v1_7_answer_grammar.md)
 - [`docs/v1_7_falsifier_register.md`](docs/v1_7_falsifier_register.md)
 - [`docs/v1_7_forbidden_claims.md`](docs/v1_7_forbidden_claims.md)
@@ -239,6 +243,8 @@ Read first:
 `v1.7.0-alpha` opens the Core Question Contract. It adds the claim/answer/falsifier documents for the v1.7 answer line, adds no new evidence crown, does not start manuscript v2, and keeps role-blind, observed-universe, and physics claims blocked.
 
 `v1.7.1-alpha` locks the Return Gate Trace. It separates `Gamma = D * P * R` return-potential from observed return `B`, keeps `C_Z = min(D, P, R, B)` untouched, defines return debt as structured zero, and blocks zero-crossing / gravity / topology overreadings before v1.7.2 lane taxonomy.
+
+`v1.7.2-alpha` locks the Lane Taxonomy and Latent Overcrown Repair. It separates earned-one, raw expression pressure, latent overcrown, relation debt, return debt, and false-one pressure as distinct report lanes. Latent overcrown remains named but is repaired as explicit HOLD until reproduced, narrowed, or closed partial. This adds no new heavy evidence crown and prepares `v1.7.3-alpha` baseline / ablation falsifier pressure.
 
 The recent native evidence line now has the shape the project was trying to reach:
 
@@ -322,6 +328,7 @@ The README keeps only the recent native route because it explains the current ev
 - `v1.6.28-alpha` — v1.6 Closeout Decision.
 - `v1.7.0-alpha` — Core Question Contract.
 - `v1.7.1-alpha` — Return Gate Trace Lock.
+- `v1.7.2-alpha` — Lane Taxonomy and Latent Overcrown Repair.
 
 Older proof and shadow history lives in the history vault.
 

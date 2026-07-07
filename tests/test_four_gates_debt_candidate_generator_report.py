@@ -63,8 +63,8 @@ def test_generator_public_surfaces_and_route_are_current() -> None:
     version_truth = (ROOT / "docs/version_truth.md").read_text(encoding="utf-8")
     doc = (ROOT / "docs/four_gates_debt_candidate_generator.md").read_text(encoding="utf-8")
     release = (ROOT / "docs/release_notes/v1_6_19_alpha.md").read_text(encoding="utf-8")
-    assert "1.7.1-alpha" in (ROOT / "src/zerogate_sim/__init__.py").read_text(encoding="utf-8")
-    assert 'version = "1.7.1a0"' in (ROOT / "pyproject.toml").read_text(encoding="utf-8")
+    assert "1.7.2-alpha" in (ROOT / "src/zerogate_sim/__init__.py").read_text(encoding="utf-8")
+    assert 'version = "1.7.2a0"' in (ROOT / "pyproject.toml").read_text(encoding="utf-8")
     for text in [readme, roadmap, version_truth, doc, release]:
         assert "v1.6.19-alpha" in text
         assert "Four Gates" in text

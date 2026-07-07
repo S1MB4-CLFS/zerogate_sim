@@ -70,8 +70,8 @@ def test_v1_6_28_public_surfaces_and_route() -> None:
     closeout = read("docs/v1_6_closeout_decision.md")
     release = read("docs/release_notes/v1_6_28_alpha.md")
 
-    assert "1.7.1-alpha" in read("src/zerogate_sim/__init__.py")
-    assert 'version = "1.7.1a0"' in read("pyproject.toml")
+    assert "1.7.2-alpha" in read("src/zerogate_sim/__init__.py")
+    assert 'version = "1.7.2a0"' in read("pyproject.toml")
     assert "zerogate-four-gates-v1-6-closeout" in read("pyproject.toml")
 
     for text in [readme, roadmap, version_truth, evidence_index, closeout, release]:
