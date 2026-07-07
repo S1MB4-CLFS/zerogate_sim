@@ -61,7 +61,7 @@ def test_v1_7_8_route_and_snapshot_constants_are_complete() -> None:
         "repo_cohesion_check",
     }
     assert {row["check"] for row in COHESION_CHECKS} >= {
-        "readme_front_page_not_ledger_dump",
+        "readme_front_page_math_and_visual_cards_preserved",
         "current_evidence_state_has_home",
         "recent_native_history_has_home",
         "anti_tautology_path_is_inspectable",
@@ -89,6 +89,15 @@ def test_v1_7_8_public_surfaces_are_cohesive() -> None:
 
     assert "Current public line:** `v1.7.8-alpha` — Repo Cleanup / Cohesion Check" in readme
     assert "Latest evidence snapshot" in readme
+    assert "```math" in readme
+    assert r"E_0 = (Z_0, \tau)" in readme
+    assert r"T_3[X](\tau)" in readme
+    assert r"\Gamma_i(t)=D_i(t)P_i(t)R_i(t)" in readme
+    assert r"\chi^i_{earned}" in readme
+    assert "docs/assets/v1_7_6_triad27_holdout_card.svg" in readme
+    assert "docs/assets/v1_7_6_deep81_holdout_card.svg" in readme
+    assert "docs/assets/v1_7_6_wide243_holdout_card.svg" in readme
+    assert "docs/assets/v1_7_6_holdout_total_card.svg" in readme
     assert "docs/v1_7_latest_holdout_snapshot.md" in readme
     assert "docs/current_evidence_state.md" in readme
     assert "docs/recent_native_evidence_history.md" in readme

@@ -33,3 +33,8 @@ It does not close the core question, start manuscript v2, upload to Zenodo, clai
 ## Next gate
 
 `v1.7.9-alpha — Reviewer Start Here / Reproduction Package`.
+
+
+## Repair note
+
+The v1.7.8 cleanup keeps the README math witness block intact and presents the latest triad27/deep81/wide243 holdout snapshot as visual cards. Long ledgers move to dedicated docs; the math spine and current evidence visuals remain on the front page.

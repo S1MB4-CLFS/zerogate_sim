@@ -46,3 +46,17 @@ Native witness remains:
 ```text
 C_Z = min(D, P, R, B)
 ```
+
+
+## Non-negotiable front-page preservation
+
+The README must preserve the native math witness block. Cleanup may move long ledgers out of the README, but it must not strip the math spine.
+
+The latest holdout evidence should be shown as visual cards first, not as an Excel-style table. The compact machine-readable counts can live below the card and in dedicated docs.
+
+Required front-page visual cards:
+
+- `docs/assets/v1_7_6_triad27_holdout_card.svg`
+- `docs/assets/v1_7_6_deep81_holdout_card.svg`
+- `docs/assets/v1_7_6_wide243_holdout_card.svg`
+- `docs/assets/v1_7_6_holdout_total_card.svg`

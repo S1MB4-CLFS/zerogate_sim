@@ -49,3 +49,14 @@ This gate does not:
 - mutate native math.
 
 It makes the repo coherent enough for `v1.7.9-alpha` to package reviewer-facing reproduction logic without asking readers to decode a release-history haystack with a flashlight and a prayer.
+
+
+## README math preservation repair
+
+A cohesion cleanup is allowed to move long ledgers into dedicated docs. It is not allowed to remove the math witness from the README. The native math block is part of the project's public identity and review trace:
+
+```text
+E0, T3, Li, Gamma, CZ, chi_raw, chi_earned
+```
+
+The latest holdout result should be displayed as visual cards, with a compact text read below it. Tables may exist in machine-readable reports, but the front page should not reduce the witness result to spreadsheet posture.
