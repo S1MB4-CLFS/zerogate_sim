@@ -1,6 +1,6 @@
 # ZeroGateSim Roadmap
 
-**Current line:** `v1.6.28-alpha` — v1.6 Closeout Decision  
+**Current line:** `v1.7.0-alpha` — Core Question Contract  
 **Release posture:** public research-alpha / controlled synthetic-field experiment line
 
 ZeroGateSim now has a repaired Four Gates evidence path. The older generated toy-field proof record remains preserved in the history vault, not on the active claim surface. The history vault keeps what the project was; the README shows what the project is; this roadmap shows what still has to be earned.
@@ -49,7 +49,8 @@ C_Z = min(D, P, R, B)
 | `v1.6.25` anti-tautology audit | witness_bounded_role_shaped_but_witness_computed | debt states are designed-profile shaped but witness-counted |
 | `v1.6.26` reproduction command package | expand | packages small smoke and full reference/fresh reproduction commands |
 | `v1.6.27` manuscript correction package | expand | prepares v2 paper map and later Zenodo new-version plan; no upload yet |
-| `v1.6.28` v1.6 closeout | current | bounded controlled synthetic-field Four Gates witness claim earned for v1.7 operationalization |
+| `v1.6.28` v1.6 closeout | complete | bounded controlled synthetic-field Four Gates witness claim earned for v1.7 operationalization |
+| `v1.7.0` core question contract | current | answer grammar, lane contract, falsifier register, and forbidden-claim boundary opened; no new evidence crown |
 
 ## Locked v1.6 closeout route
 
@@ -60,7 +61,7 @@ No new theory branch belongs in v1.6. The remaining versions are verification an
 | `v1.6.25-alpha` | Anti-Tautology Audit / Role-Dependence Check | completed; bounded result is designed-profile shaped but witness-counted |
 | `v1.6.26-alpha` | Reproduction Command Package | completed; provide small smoke and full heavy reference/fresh reproduction command paths |
 | `v1.6.27-alpha` | Manuscript Correction Package | completed; prepare corrected paper/README language, claim lanes, evidence table, and later Zenodo new-version plan; do not upload yet |
-| `v1.6.28-alpha` | v1.6 Closeout Decision | current; bounded controlled synthetic-field claim earns `+1` for v1.7 operationalization; broader claims remain bounded or resisted |
+| `v1.6.28-alpha` | v1.6 Closeout Decision | complete; bounded controlled synthetic-field claim earns `+1` for v1.7 operationalization; broader claims remain bounded or resisted |
 
 ## v1.6 closeout decision
 
@@ -188,7 +189,7 @@ The core question is answered in full only if all of these gates pass.
 
 | version | role | pass condition | stop / hold condition |
 |---|---|---|---|
-| `v1.7.0-alpha` | Operational Claim Contract / first coded v1.7 gate | roadmap, README, and claim docs all say the same bounded core question; every strong word has a falsifier | claim depends on vibes, implied ontology, or private architecture |
+| `v1.7.0-alpha` | Operational Claim Contract / first coded v1.7 gate | current; roadmap, README, and claim docs all say the same bounded core question; every strong word has a falsifier | claim depends on vibes, implied ontology, or private architecture |
 | `v1.7.1-alpha` | Return Gate Trace Lock | reviewer can distinguish return-potential, observed return, return-depth, return debt, collapse, and false return theater | return reads like metaphor instead of measurable witness behavior |
 | `v1.7.2-alpha` | Lane Taxonomy and Latent Overcrown Repair | all core lanes are distinct, including latent overcrown if it reproduces | latent overcrown remains non-reproducible but stays in the full claim anyway |
 | `v1.7.3-alpha` | Baseline and Ablation Falsifier Matrix | native witness preserves earned-one, holds structured zero, and demotes false-one pressure better than weaker witnesses | a simpler witness explains the same result |
@@ -218,6 +219,10 @@ Required result:
 The roadmap, README, and claim docs all say the same bounded question.
 Every strong claim has a falsifier.
 ```
+
+## v1.7.0-alpha current note
+
+`v1.7.0-alpha` opens the answer line. It adds the Core Question Contract, answer grammar, forbidden claims, and falsifier register. It adds no new evidence crown, does not start manuscript v2, and does not mutate `C_Z = min(D, P, R, B)`.
 
 ### v1.7.1-alpha — Return Gate Trace Lock
 

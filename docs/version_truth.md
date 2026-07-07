@@ -1,9 +1,9 @@
 # Version Truth
 
-**Status:** README overflow moved here in `v1.6.9-alpha`; current spine advanced in `v1.6.28-alpha`  
+**Status:** README overflow moved here in `v1.6.9-alpha`; current spine advanced in `v1.7.0-alpha`  
 **Purpose:** preserve the release spine and recent checkpoints without forcing the README to open with a wall of version bookkeeping.
 
-The active public line is now `v1.6.28-alpha` — v1.6 Closeout Decision.
+The active public line is now `v1.7.0-alpha` — Core Question Contract.
 
 ## Release spine
 
@@ -30,6 +30,7 @@ The active public line is now `v1.6.28-alpha` — v1.6 Closeout Decision.
 - `v1.6.26-alpha` — Reproduction Command Package: adds small smoke and full reference/fresh reproduction command scripts, canonical evidence manifest, and expected output map before manuscript correction.
 - `v1.6.27-alpha` — Manuscript Correction Package: prepares future v2 manuscript outline, section patch map, claim lanes, canonical evidence table, and later Zenodo new-version plan without uploading or writing the full paper.
 - `v1.6.28-alpha` — v1.6 Closeout Decision: closes v1.6 as bounded controlled synthetic-field evidence and allows v1.7 operational claim work to begin.
+- `v1.7.0-alpha` — Core Question Contract: opens the v1.7 answer line, defines answer grammar / lane contract / falsifiers / forbidden claims, and adds no new evidence crown.
 
 ## Recent checkpoints
 
@@ -70,6 +71,7 @@ The active public line is now `v1.6.28-alpha` — v1.6 Closeout Decision.
 - `v1.6.26-alpha` adds `docs/four_gates_reproduction_command_package.md` and `zerogate-four-gates-reproduction-package`; it packages reproduction commands without adding new science.
 - `v1.6.27-alpha` adds `docs/manuscript_correction_package.md` and `zerogate-four-gates-manuscript-correction-package`; it prepares manuscript correction material without starting the Zenodo route.
 - `v1.6.28-alpha` adds `docs/v1_6_closeout_decision.md` and `zerogate-four-gates-v1-6-closeout`; it records the earned / partial / demoted closeout decision before v1.7.
+- `v1.7.0-alpha` adds `docs/v1_7_core_question_contract.md`, `docs/v1_7_answer_grammar.md`, `docs/v1_7_forbidden_claims.md`, `docs/v1_7_falsifier_register.md`, and `zerogate-v1-7-core-question-contract`; it opens the core question answer line without adding new science evidence.
 
 Detailed release notes live in [`docs/release_notes/`](release_notes/).
 
@@ -151,3 +153,8 @@ C_Z = min(D, P, R, B)
 ## v1.6.28-alpha note
 
 `v1.6.28-alpha` is the v1.6 Closeout Decision gate. It preserves `C_Z = min(D, P, R, B)`, does not upload to Zenodo, does not revive shadow, and does not claim observed-universe proof. It closes the controlled synthetic-field evidence line as bounded `+1` for v1.7 operationalization while keeping role-blind discovery, physical/cosmological claims, and observed-universe bridge claims blocked.
+
+
+## v1.7.0-alpha note
+
+`v1.7.0-alpha` is the Core Question Contract gate. It preserves `C_Z = min(D, P, R, B)`, does not start manuscript v2, does not revive shadow, does not upload to Zenodo, and does not claim observed-universe proof. It defines the bounded core question, answer grammar, lane contract, falsifier register, and forbidden claims before the `v1.7.1-alpha` Return Gate Trace Lock.

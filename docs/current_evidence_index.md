@@ -28,6 +28,7 @@ C_Z = min(D, P, R, B)
 | reproduction command package | `v1.6.26-alpha` | command package | expand | small smoke and full reference/fresh reproduction command paths |
 | manuscript correction package | `v1.6.27-alpha` | correction package | expand | v2 outline and later Zenodo plan; no upload yet |
 | v1.6 closeout | `v1.6.28-alpha` | closeout decision | expand | bounded controlled synthetic-field claim earned for v1.7; broader claims blocked |
+| v1.7 core question contract | `v1.7.0-alpha` | operational claim contract | witness | no new evidence crown; defines answer grammar and falsifiers |
 
 ## Canonical state pattern
 
@@ -50,6 +51,8 @@ final false-one crowns = 0
 `v1.6.27-alpha` packages manuscript correction materials for later v2 paper work. It does not start the Zenodo route and does not make a new evidence claim.
 
 `v1.6.28-alpha` closes v1.6 as a bounded `+1` for the controlled synthetic-field Four Gates witness evidence line. It opens v1.7 operationalization while keeping role-blind, observed-universe, and physics claims blocked.
+
+`v1.7.0-alpha` opens the Core Question Contract. It defines the answer grammar, lane contract, falsifier register, and forbidden-claim boundary before any heavier v1.7 evidence work. It adds no new evidence crown.
 
 ## Not current evidence
 
