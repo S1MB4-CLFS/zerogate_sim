@@ -1,6 +1,6 @@
 # ZeroGateSim Roadmap
 
-**Current line:** `v1.7.0-alpha` — Core Question Contract  
+**Current line:** `v1.7.1-alpha` — Return Gate Trace Lock  
 **Release posture:** public research-alpha / controlled synthetic-field experiment line
 
 ZeroGateSim now has a repaired Four Gates evidence path. The older generated toy-field proof record remains preserved in the history vault, not on the active claim surface. The history vault keeps what the project was; the README shows what the project is; this roadmap shows what still has to be earned.
@@ -50,7 +50,8 @@ C_Z = min(D, P, R, B)
 | `v1.6.26` reproduction command package | expand | packages small smoke and full reference/fresh reproduction commands |
 | `v1.6.27` manuscript correction package | expand | prepares v2 paper map and later Zenodo new-version plan; no upload yet |
 | `v1.6.28` v1.6 closeout | complete | bounded controlled synthetic-field Four Gates witness claim earned for v1.7 operationalization |
-| `v1.7.0` core question contract | current | answer grammar, lane contract, falsifier register, and forbidden-claim boundary opened; no new evidence crown |
+| `v1.7.0` core question contract | complete | answer grammar, lane contract, falsifier register, and forbidden-claim boundary opened; no new evidence crown |
+| `v1.7.1` return gate trace lock | current | return-potential, observed return, return-depth, return debt, collapse, and false return theater separated; no new evidence crown |
 
 ## Locked v1.6 closeout route
 
@@ -189,8 +190,8 @@ The core question is answered in full only if all of these gates pass.
 
 | version | role | pass condition | stop / hold condition |
 |---|---|---|---|
-| `v1.7.0-alpha` | Operational Claim Contract / first coded v1.7 gate | current; roadmap, README, and claim docs all say the same bounded core question; every strong word has a falsifier | claim depends on vibes, implied ontology, or private architecture |
-| `v1.7.1-alpha` | Return Gate Trace Lock | reviewer can distinguish return-potential, observed return, return-depth, return debt, collapse, and false return theater | return reads like metaphor instead of measurable witness behavior |
+| `v1.7.0-alpha` | Operational Claim Contract / first coded v1.7 gate | complete; roadmap, README, and claim docs all say the same bounded core question; every strong word has a falsifier | claim depends on vibes, implied ontology, or private architecture |
+| `v1.7.1-alpha` | Return Gate Trace Lock | current; reviewer can distinguish return-potential, observed return, return-depth, return debt, collapse, and false return theater | return reads like metaphor instead of measurable witness behavior |
 | `v1.7.2-alpha` | Lane Taxonomy and Latent Overcrown Repair | all core lanes are distinct, including latent overcrown if it reproduces | latent overcrown remains non-reproducible but stays in the full claim anyway |
 | `v1.7.3-alpha` | Baseline and Ablation Falsifier Matrix | native witness preserves earned-one, holds structured zero, and demotes false-one pressure better than weaker witnesses | a simpler witness explains the same result |
 | `v1.7.4-alpha` | Perturbation Spectrum Witness | raw pressure may move under weather, but final witness fails safely: `+1` when earned, `0` when unresolved, `-1` when false | perturbation creates new-looking pressure and the witness crowns it without return, lineage, and independence |
@@ -220,7 +221,7 @@ The roadmap, README, and claim docs all say the same bounded question.
 Every strong claim has a falsifier.
 ```
 
-## v1.7.0-alpha current note
+## v1.7.0-alpha note
 
 `v1.7.0-alpha` opens the answer line. It adds the Core Question Contract, answer grammar, forbidden claims, and falsifier register. It adds no new evidence crown, does not start manuscript v2, and does not mutate `C_Z = min(D, P, R, B)`.
 
@@ -246,6 +247,10 @@ Do not call return-potential physical gravity.
 Do not implement a new force engine in v1.7.
 Do not add literal closed-topology machinery.
 ```
+
+## v1.7.1-alpha current note
+
+`v1.7.1-alpha` locks the return-gate trace. It adds return-potential vs observed-return docs, return-debt taxonomy, forbidden return readings, and `zerogate-v1-7-return-gate-trace`. It adds no new evidence crown, does not start manuscript v2, and does not mutate `C_Z = min(D, P, R, B)`.
 
 ### v1.7.2-alpha — Lane Taxonomy and Latent Overcrown Repair
 

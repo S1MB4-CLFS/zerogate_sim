@@ -1,9 +1,9 @@
 # Version Truth
 
-**Status:** README overflow moved here in `v1.6.9-alpha`; current spine advanced in `v1.7.0-alpha`  
+**Status:** README overflow moved here in `v1.6.9-alpha`; current spine advanced in `v1.7.1-alpha`  
 **Purpose:** preserve the release spine and recent checkpoints without forcing the README to open with a wall of version bookkeeping.
 
-The active public line is now `v1.7.0-alpha` — Core Question Contract.
+The active public line is now `v1.7.1-alpha` — Return Gate Trace Lock.
 
 ## Release spine
 
@@ -31,6 +31,7 @@ The active public line is now `v1.7.0-alpha` — Core Question Contract.
 - `v1.6.27-alpha` — Manuscript Correction Package: prepares future v2 manuscript outline, section patch map, claim lanes, canonical evidence table, and later Zenodo new-version plan without uploading or writing the full paper.
 - `v1.6.28-alpha` — v1.6 Closeout Decision: closes v1.6 as bounded controlled synthetic-field evidence and allows v1.7 operational claim work to begin.
 - `v1.7.0-alpha` — Core Question Contract: opens the v1.7 answer line, defines answer grammar / lane contract / falsifiers / forbidden claims, and adds no new evidence crown.
+- `v1.7.1-alpha` — Return Gate Trace Lock: separates `Gamma = D * P * R` return-potential from observed return `B`, locks return debt as structured zero, and adds no new evidence crown.
 
 ## Recent checkpoints
 
@@ -72,6 +73,7 @@ The active public line is now `v1.7.0-alpha` — Core Question Contract.
 - `v1.6.27-alpha` adds `docs/manuscript_correction_package.md` and `zerogate-four-gates-manuscript-correction-package`; it prepares manuscript correction material without starting the Zenodo route.
 - `v1.6.28-alpha` adds `docs/v1_6_closeout_decision.md` and `zerogate-four-gates-v1-6-closeout`; it records the earned / partial / demoted closeout decision before v1.7.
 - `v1.7.0-alpha` adds `docs/v1_7_core_question_contract.md`, `docs/v1_7_answer_grammar.md`, `docs/v1_7_forbidden_claims.md`, `docs/v1_7_falsifier_register.md`, and `zerogate-v1-7-core-question-contract`; it opens the core question answer line without adding new science evidence.
+- `v1.7.1-alpha` adds `docs/v1_7_return_gate_trace.md`, `docs/v1_7_return_potential_vs_observed_return.md`, `docs/v1_7_return_debt_taxonomy.md`, `docs/v1_7_return_gate_forbidden_readings.md`, and `zerogate-v1-7-return-gate-trace`; it locks return-gate trace before lane taxonomy and heavier evidence gates.
 
 Detailed release notes live in [`docs/release_notes/`](release_notes/).
 
@@ -158,3 +160,8 @@ C_Z = min(D, P, R, B)
 ## v1.7.0-alpha note
 
 `v1.7.0-alpha` is the Core Question Contract gate. It preserves `C_Z = min(D, P, R, B)`, does not start manuscript v2, does not revive shadow, does not upload to Zenodo, and does not claim observed-universe proof. It defines the bounded core question, answer grammar, lane contract, falsifier register, and forbidden claims before the `v1.7.1-alpha` Return Gate Trace Lock.
+
+
+## v1.7.1-alpha note
+
+`v1.7.1-alpha` is the Return Gate Trace Lock. It preserves `C_Z = min(D, P, R, B)`, does not start manuscript v2, does not revive shadow, does not upload to Zenodo, and does not claim observed-universe proof. It separates return-potential `Gamma = D * P * R` from observed return `B`, names false return theater, keeps return debt as structured zero, and prepares `v1.7.2-alpha` Lane Taxonomy and Latent Overcrown Repair.

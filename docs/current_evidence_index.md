@@ -29,6 +29,7 @@ C_Z = min(D, P, R, B)
 | manuscript correction package | `v1.6.27-alpha` | correction package | expand | v2 outline and later Zenodo plan; no upload yet |
 | v1.6 closeout | `v1.6.28-alpha` | closeout decision | expand | bounded controlled synthetic-field claim earned for v1.7; broader claims blocked |
 | v1.7 core question contract | `v1.7.0-alpha` | operational claim contract | witness | no new evidence crown; defines answer grammar and falsifiers |
+| v1.7 return gate trace lock | `v1.7.1-alpha` | return trace / mechanism boundary | witness | no new evidence crown; separates return-potential from observed return and blocks false-return readings |
 
 ## Canonical state pattern
 
@@ -53,6 +54,8 @@ final false-one crowns = 0
 `v1.6.28-alpha` closes v1.6 as a bounded `+1` for the controlled synthetic-field Four Gates witness evidence line. It opens v1.7 operationalization while keeping role-blind, observed-universe, and physics claims blocked.
 
 `v1.7.0-alpha` opens the Core Question Contract. It defines the answer grammar, lane contract, falsifier register, and forbidden-claim boundary before any heavier v1.7 evidence work. It adds no new evidence crown.
+
+`v1.7.1-alpha` locks the Return Gate Trace. It separates `Gamma = D * P * R` return-potential from observed return `B`, keeps `C_Z = min(D, P, R, B)` untouched, treats return debt as structured zero, and blocks false-return readings before v1.7.2 lane taxonomy. It adds no new evidence crown.
 
 ## Not current evidence
 
