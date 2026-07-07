@@ -1,9 +1,9 @@
 # Version Truth
 
-**Status:** README overflow moved here in `v1.6.9-alpha`; current spine advanced in `v1.7.2-alpha`  
+**Status:** README overflow moved here in `v1.6.9-alpha`; current spine advanced in `v1.7.3-alpha`  
 **Purpose:** preserve the release spine and recent checkpoints without forcing the README to open with a wall of version bookkeeping.
 
-The active public line is now `v1.7.2-alpha` — Lane Taxonomy and Latent Overcrown Repair.
+The active public line is now `v1.7.3-alpha` — Baseline and Ablation Falsifier Matrix.
 
 ## Release spine
 
@@ -33,6 +33,7 @@ The active public line is now `v1.7.2-alpha` — Lane Taxonomy and Latent Overcr
 - `v1.7.0-alpha` — Core Question Contract: opens the v1.7 answer line, defines answer grammar / lane contract / falsifiers / forbidden claims, and adds no new evidence crown.
 - `v1.7.1-alpha` — Return Gate Trace Lock: separates `Gamma = D * P * R` return-potential from observed return `B`, locks return debt as structured zero, and adds no new evidence crown.
 - `v1.7.2-alpha` — Lane Taxonomy and Latent Overcrown Repair: separates required lanes, repairs latent overcrown as explicit HOLD, and adds no new heavy evidence crown.
+- `v1.7.3-alpha` — Baseline and Ablation Falsifier Matrix: aligns weaker witnesses as falsifier enemies before perturbation spectrum work.
 
 ## Recent checkpoints
 
@@ -76,6 +77,7 @@ The active public line is now `v1.7.2-alpha` — Lane Taxonomy and Latent Overcr
 - `v1.7.0-alpha` adds `docs/v1_7_core_question_contract.md`, `docs/v1_7_answer_grammar.md`, `docs/v1_7_forbidden_claims.md`, `docs/v1_7_falsifier_register.md`, and `zerogate-v1-7-core-question-contract`; it opens the core question answer line without adding new science evidence.
 - `v1.7.1-alpha` adds `docs/v1_7_return_gate_trace.md`, `docs/v1_7_return_potential_vs_observed_return.md`, `docs/v1_7_return_debt_taxonomy.md`, `docs/v1_7_return_gate_forbidden_readings.md`, and `zerogate-v1-7-return-gate-trace`; it locks return-gate trace before lane taxonomy and heavier evidence gates.
 - `v1.7.2-alpha` adds `docs/v1_7_lane_taxonomy.md`, `docs/v1_7_latent_overcrown_repair.md`, `docs/v1_7_relation_return_debt_specificity.md`, `docs/v1_7_lane_visibility_decision_rules.md`, and `zerogate-v1-7-lane-taxonomy`; it repairs the lane taxonomy before baseline/ablation falsifier work.
+- `v1.7.3-alpha` adds `docs/v1_7_baseline_falsifier_matrix.md`, `docs/v1_7_ablation_summary.md`, `docs/v1_7_failure_mode_table.md`, and `zerogate-v1-7-baseline-falsifier-matrix`; it locks the baseline enemy matrix before perturbation spectrum work.
 
 Detailed release notes live in [`docs/release_notes/`](release_notes/).
 
@@ -172,3 +174,8 @@ C_Z = min(D, P, R, B)
 ## v1.7.2-alpha note
 
 `v1.7.2-alpha` is the Lane Taxonomy and Latent Overcrown Repair gate. It preserves `C_Z = min(D, P, R, B)`, does not start manuscript v2, does not revive shadow, does not upload to Zenodo, and does not claim observed-universe proof. It locks earned-one, raw expression pressure, latent overcrown, relation debt, return debt, and false-one pressure as distinct report lanes. Latent overcrown remains structured zero but is held for later reproduction pressure; if it does not reproduce, `v1.7.8-alpha` must close at `0` or narrow the core question.
+
+
+## v1.7.3-alpha note
+
+`v1.7.3-alpha` is the Baseline and Ablation Falsifier Matrix gate. It preserves `C_Z = min(D, P, R, B)`, does not start manuscript v2, does not revive shadow, does not upload to Zenodo, and does not claim observed-universe proof. It aligns raw-only, binary, dead-safe, average-gate, no-return, no-relation, no-lineage/no-return-depth, no-echo-independence, no-zero-hold, and no-false-one-demotion witnesses as enemies that the native witness must beat before the v1.7 core question can close.

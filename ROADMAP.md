@@ -1,6 +1,6 @@
 # ZeroGateSim Roadmap
 
-**Current line:** `v1.7.2-alpha` — Lane Taxonomy and Latent Overcrown Repair  
+**Current line:** `v1.7.3-alpha` — Baseline and Ablation Falsifier Matrix  
 **Release posture:** public research-alpha / controlled synthetic-field experiment line
 
 ZeroGateSim now has a repaired Four Gates evidence path. The older generated toy-field proof record remains preserved in the history vault, not on the active claim surface. The history vault keeps what the project was; the README shows what the project is; this roadmap shows what still has to be earned.
@@ -193,8 +193,8 @@ The core question is answered in full only if all of these gates pass.
 |---|---|---|---|
 | `v1.7.0-alpha` | Operational Claim Contract / first coded v1.7 gate | complete; roadmap, README, and claim docs all say the same bounded core question; every strong word has a falsifier | claim depends on vibes, implied ontology, or private architecture |
 | `v1.7.1-alpha` | Return Gate Trace Lock | complete; reviewer can distinguish return-potential, observed return, return-depth, return debt, collapse, and false return theater | return reads like metaphor instead of measurable witness behavior |
-| `v1.7.2-alpha` | Lane Taxonomy and Latent Overcrown Repair | current; core lanes are distinct, and latent overcrown is repaired as explicit HOLD | latent overcrown remains non-reproducible but stays in the full claim anyway |
-| `v1.7.3-alpha` | Baseline and Ablation Falsifier Matrix | native witness preserves earned-one, holds structured zero, and demotes false-one pressure better than weaker witnesses | a simpler witness explains the same result |
+| `v1.7.2-alpha` | Lane Taxonomy and Latent Overcrown Repair | complete; core lanes are distinct, and latent overcrown is repaired as explicit HOLD | latent overcrown remains non-reproducible but stays in the full claim anyway |
+| `v1.7.3-alpha` | Baseline and Ablation Falsifier Matrix | current; baseline enemies are locked against earned-one preservation, structured zero, and false-one demotion | a simpler witness explains the same result |
 | `v1.7.4-alpha` | Perturbation Spectrum Witness | raw pressure may move under weather, but final witness fails safely: `+1` when earned, `0` when unresolved, `-1` when false | perturbation creates new-looking pressure and the witness crowns it without return, lineage, and independence |
 | `v1.7.5-alpha` | Masked Role-Dependence Audit | numeric witness pattern still separates earned-one, relation debt, return debt, false-one pressure, and final false-crown safety when labels are masked | lanes only exist because labels say they exist |
 | `v1.7.6-alpha` | Fresh Holdout Synthetic-Field Challenge | lane pattern survives fresh seeds, held-out profile variants, controlled weather shifts, and candidate-name masking | result only survives the known reference profile |
@@ -266,7 +266,7 @@ If latent overcrown does not reproduce, demote the v1.7 answer to 0 or rewrite t
 
 No ghost lanes. No fake crown. No haunted bookkeeping.
 
-## v1.7.2-alpha current note
+## v1.7.2-alpha note
 
 `v1.7.2-alpha` locks the lane taxonomy and latent-overcrown repair surface. It preserves `C_Z = min(D, P, R, B)`, adds no new heavy evidence crown, does not start manuscript v2, and prepares `v1.7.3-alpha` Baseline and Ablation Falsifier Matrix.
 
@@ -293,6 +293,11 @@ A dead-safe witness gets zero false crowns by refusing real earned-one.
 ```
 
 That is not intelligence. That is a locked door with a lab badge.
+
+## v1.7.3-alpha current note
+
+`v1.7.3-alpha` locks the baseline and ablation falsifier matrix. It preserves `C_Z = min(D, P, R, B)`, adds no new heavy evidence crown, does not start manuscript v2, and prepares `v1.7.4-alpha` Perturbation Spectrum Witness. The native witness must later beat raw-only, binary, dead-safe, average-gate, no-return, no-relation, no-lineage/return-depth, no-echo, no-zero-hold, and no-false-one-demotion enemies.
+
 
 ### v1.7.4-alpha — Perturbation Spectrum Witness
 

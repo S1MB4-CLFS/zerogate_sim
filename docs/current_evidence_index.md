@@ -31,6 +31,7 @@ C_Z = min(D, P, R, B)
 | v1.7 core question contract | `v1.7.0-alpha` | operational claim contract | witness | no new evidence crown; defines answer grammar and falsifiers |
 | v1.7 return gate trace lock | `v1.7.1-alpha` | return trace / mechanism boundary | witness | no new evidence crown; separates return-potential from observed return and blocks false-return readings |
 | v1.7 lane taxonomy / latent overcrown repair | `v1.7.2-alpha` | lane taxonomy / witness translation | witness | no heavy evidence crown; latent overcrown repaired as explicit HOLD until reproduced or narrowed |
+| v1.7 baseline / ablation falsifier matrix | `v1.7.3-alpha` | baseline matrix / falsifier translation | witness | no heavy evidence crown; weaker witnesses aligned as enemies before perturbation spectrum |
 
 ## Canonical state pattern
 
@@ -59,6 +60,8 @@ final false-one crowns = 0
 `v1.7.1-alpha` locks the Return Gate Trace. It separates `Gamma = D * P * R` return-potential from observed return `B`, keeps `C_Z = min(D, P, R, B)` untouched, treats return debt as structured zero, and blocks false-return readings before v1.7.2 lane taxonomy. It adds no new evidence crown.
 
 `v1.7.2-alpha` locks the Lane Taxonomy and Latent Overcrown Repair. It separates earned-one, raw expression pressure, latent overcrown, relation debt, return debt, and false-one pressure as distinct report lanes; it repairs latent overcrown as explicit HOLD until reproduced or narrowed; and it prepares baseline / ablation falsifier pressure without adding a full evidence crown.
+
+`v1.7.3-alpha` locks the Baseline and Ablation Falsifier Matrix. It names raw-only, binary, dead-safe, average-gate, no-return, no-relation, no-lineage/no-return-depth, no-echo-independence, no-zero-hold, and no-false-one-demotion witnesses as required enemies. It adds no new heavy evidence crown and preserves `C_Z = min(D, P, R, B)`.
 
 ## Not current evidence
 
