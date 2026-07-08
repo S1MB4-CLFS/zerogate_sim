@@ -38,3 +38,16 @@ It does not close the core question, start manuscript v2, upload to Zenodo, clai
 ## Repair note
 
 The v1.7.8 cleanup keeps the README math witness block intact and presents the latest triad27/deep81/wide243 holdout snapshot as visual cards. Long ledgers move to dedicated docs; the math spine and current evidence visuals remain on the front page.
+
+## Flow repair note
+
+The final v1.7.8 README order is human-first:
+
+```text
+identity -> theory -> math witness -> software mechanism -> current route -> latest visual evidence -> inspection map
+```
+
+The latest triad27/deep81/wide243 cards remain on the front page, but they no longer appear before the reader understands the witness grammar. Detailed lists remain in markdown paths instead of vanishing into the attic.
+
+SVG card assets are LF-normalized through `.gitattributes` to avoid future line-ending warning noise.
+

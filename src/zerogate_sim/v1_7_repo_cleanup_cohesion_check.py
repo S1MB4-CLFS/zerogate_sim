@@ -35,7 +35,19 @@ FRONT_PAGE_ROUTES = [
         "route": "latest_holdout_snapshot",
         "readme_label": "Latest v1.7 holdout snapshot",
         "target": "docs/v1_7_latest_holdout_snapshot.md",
-        "reason": "puts the 27/81/243 result on the front page as visual cards without pretending it is a packaged reproduction bundle",
+        "reason": "puts the 27/81/243 result on the front page as visual cards after the mechanism is explained, without pretending it is a packaged reproduction bundle",
+    },
+    {
+        "route": "holdout_weather_ladder",
+        "readme_label": "Holdout weather ladder",
+        "target": "docs/v1_7_holdout_weather_ladder.md",
+        "reason": "keeps triad27, deep81, and wide243 as separate evidence rungs instead of an all-in-one blob",
+    },
+    {
+        "route": "holdout_output_structure",
+        "readme_label": "Holdout output structure",
+        "target": "docs/v1_7_holdout_output_structure.md",
+        "reason": "documents the full report, compressed summary, visual output, and assistant handoff layers",
     },
     {
         "route": "anti_tautology_path",
@@ -56,6 +68,12 @@ FRONT_PAGE_ROUTES = [
         "reason": "moves the long version list out of the README while preserving traceability",
     },
     {
+        "route": "documentation_pathways",
+        "readme_label": "Documentation pathways",
+        "target": "README.md#inspection-map",
+        "reason": "keeps current evidence, audit, boundary, history, and release homes visible without dumping every ledger onto the front page",
+    },
+    {
         "route": "version_truth",
         "readme_label": "Version truth",
         "target": "docs/version_truth.md",
@@ -71,10 +89,34 @@ FRONT_PAGE_ROUTES = [
 
 COHESION_CHECKS = [
     {
+        "check": "readme_human_flow_teaches_before_results",
+        "pass_signal": "README introduces project identity, purpose, mechanism, visual spine, and native math before latest holdout cards",
+        "failure_signal": "README displays test results before the reader knows what a rung, lane, witness, or false crown means",
+        "claim_boundary": "reader-order repair, not new scientific evidence",
+    },
+    {
         "check": "readme_front_page_math_and_visual_cards_preserved",
         "pass_signal": "README carries math witness, visual holdout cards, top-card links, and a compact holdout snapshot, not the full evidence ledger",
         "failure_signal": "README strips the math witness, replaces the latest evidence cards with spreadsheet posture, or becomes a wall of version notes",
         "claim_boundary": "readability repair, not new scientific evidence",
+    },
+    {
+        "check": "readme_human_order_preserved",
+        "pass_signal": "README explains identity, theory, math, and software mechanism before showing latest holdout cards",
+        "failure_signal": "test results appear before the reader knows what the evidence cards witness",
+        "claim_boundary": "reader flow repair only",
+    },
+    {
+        "check": "markdown_pathways_remain_visible",
+        "pass_signal": "README inspection map links to current state, holdout ladder, output structure, anti-tautology, recent native history, history vault, and version truth",
+        "failure_signal": "long lists disappear without a named markdown home",
+        "claim_boundary": "navigation repair only",
+    },
+    {
+        "check": "svg_line_endings_normalized",
+        "pass_signal": ".gitattributes pins SVG evidence cards to LF text",
+        "failure_signal": "SVG card commits emit repeated LF/CRLF warning noise",
+        "claim_boundary": "repo hygiene only",
     },
     {
         "check": "current_evidence_state_has_home",
@@ -196,7 +238,7 @@ def _write_read(path: Path) -> None:
         f"**Native witness:** `{NATIVE_WITNESS}`",
         f"**Decision:** `{DECISION}`",
         "",
-        "This gate exists because the project had enough new v1.7 material that the README was turning into evidence soup. The repair is front-page cohesion, not a new science crown.",
+        "This gate exists because the project had enough new v1.7 material that the README was turning into evidence soup. The repair is front-page cohesion and human reading order, not a new science crown.",
         "",
         "## What this gate checks",
         "",
@@ -243,7 +285,7 @@ def _write_read(path: Path) -> None:
         "",
         "## Boundary",
         "",
-        "This check does not claim role-blind discovery, independent generator validation, physics, cosmology, or observed-universe proof. It only makes the repo surfaces coherent enough to package the next reviewer path without making readers walk through a haunted spreadsheet attic.",
+        "This check does not claim role-blind discovery, independent generator validation, physics, cosmology, or observed-universe proof. It only makes the repo surfaces coherent enough to package the next reviewer path without making readers walk through a haunted spreadsheet attic, and without making them stare at results before they know what the witness is.",
     ])
     path.write_text("\n".join(lines) + "\n", encoding="utf-8")
 

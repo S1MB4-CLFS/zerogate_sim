@@ -17,47 +17,15 @@ It tests a narrower software-theory claim:
 
 Historical proof records, v1.5 controlled evidence, and the v1.6 shadow route are preserved in the [history vault](docs/history_vault/README.md). They explain how the repo got here; they are not the current README evidence surface.
 
-## Latest evidence snapshot — visual cards
+## How to read this README
 
-The latest v1.7 local holdout snapshot belongs on the front page because it is the current evidence pressure point. It is **not** the reviewer reproduction package and **does not** close the core question.
-
-The three rungs were inspected separately:
+Read this page in order. The latest holdout cards are important, but they come **after** the mechanism because a reader should know what the cards witness before seeing the result.
 
 ```text
-triad27 -> inspect -> deep81 -> inspect -> wide243 -> inspect -> package later
+identity -> core theory -> why this exists -> software mechanism -> visual spine -> math witness -> current route -> latest evidence cards -> inspection paths
 ```
 
-### triad27 — local expression weather
-
-![v1.7.6 triad27 holdout card](docs/assets/v1_7_6_triad27_holdout_card.svg)
-
-### deep81 — perturbation / late-shock bridge
-
-![v1.7.6 deep81 holdout card](docs/assets/v1_7_6_deep81_holdout_card.svg)
-
-### wide243 — temporal-depth / time-axis stress
-
-![v1.7.6 wide243 holdout card](docs/assets/v1_7_6_wide243_holdout_card.svg)
-
-### combined witness read
-
-![v1.7.6 holdout total card](docs/assets/v1_7_6_holdout_total_card.svg)
-
-```text
-+1 earned-one total          = 12,206
-raw expression pressure      = 18,353
-0 latent overcrown           = 39
-0 relation debt              = 624
-0 return debt                = 813
--1 false-one pressure        = 4,671
-final false-one crowns       = 0
-lane pattern                 = true across triad27 / deep81 / wide243
-```
-
-Read the bounded snapshot and the output-structure contract:
-
-- [`docs/v1_7_latest_holdout_snapshot.md`](docs/v1_7_latest_holdout_snapshot.md)
-- [`docs/v1_7_holdout_output_structure.md`](docs/v1_7_holdout_output_structure.md)
+Detailed ledgers live behind markdown paths so the README stays human-readable without hiding the evidence trail.
 
 ## Core theory
 
@@ -100,7 +68,6 @@ ZeroGateSim tests a different spine:
 
 The simulator exists because a theory does not earn trust by sounding beautiful. It earns its first bones by meeting pressure.
 
-
 ## How it works
 
 ZeroGateSim tests a simple operational claim: raw expression is pressure, not truth.
@@ -130,14 +97,6 @@ The final output is trinary:
 +1 earned-one      expression survived the witness stack
  0 structured zero latent, relation debt, return debt, or not-yet pressure is held
 -1 resist/demote  false-one pressure is exposed and refused
-```
-
-The current evidence route tests that grammar under controlled synthetic adversarial weather:
-
-```text
-triad27 = 3^3 local expression weather
-deep81  = 3^4 perturbation / late-shock bridge
-wide243 = 3^5 temporal-depth / time-axis stress
 ```
 
 The project compares the native witness against raw, binary, dead-safe, and ablated witnesses. The current bounded claim is that, inside controlled synthetic fields, the Four Gates witness preserved earned expression, held relation/return debt as structured zero, and demoted false-one pressure where simpler witnesses exposed failure modes.
@@ -230,7 +189,6 @@ C_Z^i(t)=\min(D_i(t),P_i(t),R_i(t),B_i(t))
 \chi^i_{earned}(t)=\chi^i_{raw}(t)H(k_i(t)-K^*)W^i_{lineage}(t)W^i_{independence}(t)W^i_{role}
 ```
 
-
 ## Current route
 
 The active route after `v1.7.8-alpha` is:
@@ -251,17 +209,63 @@ v1.7.0-alpha core question contract complete
 
 The shadow route is **not** the active route now. It is preserved as historical diagnostic work in the [history vault](docs/history_vault/README.md).
 
-## Inspect the current state
+## Latest evidence snapshot — visual cards
 
-The README keeps the project face, the math, and the newest holdout visual cards. Detailed ledgers live behind links so the front page does not become a spreadsheet crypt.
+The latest v1.7 local holdout snapshot is displayed here after the theory and mechanism so the cards have context. It is **not** the reviewer reproduction package and **does not** close the core question.
+
+The three rungs were inspected separately:
+
+```text
+triad27 -> inspect -> deep81 -> inspect -> wide243 -> inspect -> package later
+```
+
+### triad27 — local expression weather
+
+![v1.7.6 triad27 holdout card](docs/assets/v1_7_6_triad27_holdout_card.svg)
+
+### deep81 — perturbation / late-shock bridge
+
+![v1.7.6 deep81 holdout card](docs/assets/v1_7_6_deep81_holdout_card.svg)
+
+### wide243 — temporal-depth / time-axis stress
+
+![v1.7.6 wide243 holdout card](docs/assets/v1_7_6_wide243_holdout_card.svg)
+
+### combined witness read
+
+![v1.7.6 holdout total card](docs/assets/v1_7_6_holdout_total_card.svg)
+
+```text
++1 earned-one total          = 12,206
+raw expression pressure      = 18,353
+0 latent overcrown           = 39
+0 relation debt              = 624
+0 return debt                = 813
+-1 false-one pressure        = 4,671
+final false-one crowns       = 0
+lane pattern                 = true across triad27 / deep81 / wide243
+```
+
+Read the bounded snapshot and output-structure contract:
+
+- [`docs/v1_7_latest_holdout_snapshot.md`](docs/v1_7_latest_holdout_snapshot.md)
+- [`docs/v1_7_holdout_output_structure.md`](docs/v1_7_holdout_output_structure.md)
+
+## Inspection map
+
+The README keeps the project face, the math, and the newest visual cards. Everything that became too long for the front page still has a visible path.
+
+### Current v1.7 state
 
 - [`docs/current_evidence_state.md`](docs/current_evidence_state.md) — detailed v1.7 evidence state and boundaries.
-- [`docs/recent_native_evidence_history.md`](docs/recent_native_evidence_history.md) — recent native route history moved out of the README.
-- [`docs/v1_7_front_page_map.md`](docs/v1_7_front_page_map.md) — why each front-page route exists.
+- [`docs/v1_7_latest_holdout_snapshot.md`](docs/v1_7_latest_holdout_snapshot.md) — three-rung holdout snapshot behind the visual cards.
+- [`docs/v1_7_holdout_weather_ladder.md`](docs/v1_7_holdout_weather_ladder.md) — why triad27 / deep81 / wide243 are separate rungs.
+- [`docs/v1_7_holdout_output_structure.md`](docs/v1_7_holdout_output_structure.md) — full report, compressed summary, visual output, and handoff layers.
+- [`docs/v1_7_front_page_map.md`](docs/v1_7_front_page_map.md) — why the README is ordered this way.
 - [`docs/current_evidence_index.md`](docs/current_evidence_index.md) — current evidence index.
 - [`docs/version_truth.md`](docs/version_truth.md) — version spine and release truth.
 
-## Inspect the anti-tautology path
+### Anti-tautology / role-dependence path
 
 The post-holdout anti-tautology and role-dependence check is inspectable before reviewer packaging:
 
@@ -281,6 +285,42 @@ pre-register expectations
 -> explain the decision path
 -> bound the claim
 ```
+
+### Recent native evidence history
+
+Recent native evidence history is still in sight, but it no longer crowds the README body:
+
+- [`docs/recent_native_evidence_history.md`](docs/recent_native_evidence_history.md)
+- [`docs/native_triad27_evidence.md`](docs/native_triad27_evidence.md)
+- [`docs/native_deepwide_evidence.md`](docs/native_deepwide_evidence.md)
+- [`docs/four_gates_triad27_debt_evidence.md`](docs/four_gates_triad27_debt_evidence.md)
+- [`docs/four_gates_deepwide_debt_evidence.md`](docs/four_gates_deepwide_debt_evidence.md)
+- [`docs/four_gates_fresh_seed_debt_reproduction.md`](docs/four_gates_fresh_seed_debt_reproduction.md)
+
+Previous native evidence card assets remain traceable:
+
+- `docs/assets/four_gates_triad27_debt_evidence_card.svg`
+- `docs/assets/four_gates_deepwide_debt_evidence_card.svg`
+- `docs/assets/four_gates_fresh_seed_debt_reproduction_card.svg`
+
+### History vault
+
+The history vault keeps what the project was so the README can show what the project is.
+
+- [`docs/history_vault/README.md`](docs/history_vault/README.md) — vault index.
+- [`docs/history_vault/shadow_route_history_and_closeout.md`](docs/history_vault/shadow_route_history_and_closeout.md) — full shadow route status.
+- [`docs/history_vault/legacy_evidence_visuals.md`](docs/history_vault/legacy_evidence_visuals.md) — old evidence and shadow visuals.
+- [`docs/history_vault/runs_history_vault_plan.md`](docs/history_vault/runs_history_vault_plan.md) — local `runs/` archive plan and ZIP command pattern.
+
+### Boundary and release references
+
+Long release and process lists live in dedicated files so the README begins with the project rather than bookkeeping:
+
+- [`docs/claim_boundary.md`](docs/claim_boundary.md) — supported and unsupported claims.
+- [`docs/runtime_ci_support.md`](docs/runtime_ci_support.md) — Python/runtime and CI support boundary.
+- [`docs/test_truth_and_handoff_boundary.md`](docs/test_truth_and_handoff_boundary.md) — strict assistant handoff, `runs/` evidence, and test-truth rules.
+- [`docs/controlled_synthetic_field_language.md`](docs/controlled_synthetic_field_language.md) — controlled synthetic-field wording.
+- [`docs/release_notes/`](docs/release_notes/) — detailed release notes.
 
 ## Current evidence state
 
@@ -305,12 +345,6 @@ Fresh Holdout Synthetic-Field Challenge
 Anti-Tautology Audit / Role-Dependence Check
 ```
 
-Previous native evidence card assets are kept as trace links, while the newest holdout cards are displayed above:
-
-- `docs/assets/four_gates_triad27_debt_evidence_card.svg`
-- `docs/assets/four_gates_deepwide_debt_evidence_card.svg`
-- `docs/assets/four_gates_fresh_seed_debt_reproduction_card.svg`
-
 Native/repaired evidence phrase anchors preserved for tested public-surface continuity:
 
 ```text
@@ -320,10 +354,6 @@ deep81 / wide243 debt evidence
 fresh-seed debt reproduction
 v1.6 Closeout Decision
 ```
-
-The detailed evidence state is now in [`docs/current_evidence_state.md`](docs/current_evidence_state.md). The recent native evidence history is in [`docs/recent_native_evidence_history.md`](docs/recent_native_evidence_history.md). Older proof and shadow history lives in the history vault.
-
-The newest holdout result is kept visually above because it is the active pressure surface. Previous evidence cards remain available through docs and the history vault; they are not erased, but the front page now shows the newest three rungs first.
 
 Boundary:
 
@@ -336,15 +366,6 @@ No new native gate.
 No native witness mutation.
 Native witness remains C_Z = min(D, P, R, B).
 ```
-
-## History vault
-
-The history vault keeps what the project was so the README can show what the project is.
-
-- [`docs/history_vault/README.md`](docs/history_vault/README.md) — vault index.
-- [`docs/history_vault/shadow_route_history_and_closeout.md`](docs/history_vault/shadow_route_history_and_closeout.md) — full shadow route status.
-- [`docs/history_vault/legacy_evidence_visuals.md`](docs/history_vault/legacy_evidence_visuals.md) — old evidence and shadow visuals.
-- [`docs/history_vault/runs_history_vault_plan.md`](docs/history_vault/runs_history_vault_plan.md) — local `runs/` archive plan and ZIP command pattern.
 
 ## Known-logic comparison boundary
 
@@ -433,26 +454,18 @@ This keeps the lineage honest:
 
 Recommended route:
 
-1. README top card.
-2. Claim boundary.
-3. Math witness map.
-4. Current evidence cards.
-5. Four Gates debt reproduction docs.
-6. Quickstart or code.
-7. History vault only after the current proof boundary is understood.
+1. README identity and claim boundary.
+2. Core theory and native math witness.
+3. First visual spine.
+4. How the software witness works.
+5. Latest v1.7 holdout cards.
+6. Anti-tautology / role-dependence audit path.
+7. Quickstart or code.
+8. History vault only after the current proof boundary is understood.
 
 Reviewer guide:
 
 - [`docs/for_reviewers.md`](docs/for_reviewers.md)
-
-## Boundary and release references
-
-Long release and process lists live in dedicated files so the README begins with the project rather than bookkeeping:
-
-- [`docs/runtime_ci_support.md`](docs/runtime_ci_support.md) — Python/runtime and CI support boundary.
-- [`docs/test_truth_and_handoff_boundary.md`](docs/test_truth_and_handoff_boundary.md) — strict assistant handoff, `runs/` evidence, and test-truth rules.
-- [`docs/version_truth.md`](docs/version_truth.md) — release spine and recent checkpoints.
-- [`docs/release_notes/`](docs/release_notes/) — detailed release notes.
 
 ## License and citation
 
@@ -461,4 +474,3 @@ The source repository uses the MIT License.
 Citation metadata is stored in [`CITATION.cff`](CITATION.cff). The DOI field is intentionally absent until a Zenodo record exists.
 
 Future manuscript and evidence records may use separate explicit licenses.
-

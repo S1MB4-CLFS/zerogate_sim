@@ -54,14 +54,21 @@ def test_v1_7_8_route_and_snapshot_constants_are_complete() -> None:
     assert {row["route"] for row in FRONT_PAGE_ROUTES} >= {
         "current_evidence_state",
         "latest_holdout_snapshot",
+        "holdout_weather_ladder",
+        "holdout_output_structure",
         "anti_tautology_path",
         "known_routine",
         "recent_native_history",
+        "documentation_pathways",
         "version_truth",
         "repo_cohesion_check",
     }
     assert {row["check"] for row in COHESION_CHECKS} >= {
+        "readme_human_flow_teaches_before_results",
         "readme_front_page_math_and_visual_cards_preserved",
+        "readme_human_order_preserved",
+        "markdown_pathways_remain_visible",
+        "svg_line_endings_normalized",
         "current_evidence_state_has_home",
         "recent_native_history_has_home",
         "anti_tautology_path_is_inspectable",
@@ -86,6 +93,7 @@ def test_v1_7_8_public_surfaces_are_cohesive() -> None:
     assert "1.7.8-alpha" in read("src/zerogate_sim/__init__.py")
     assert 'version = "1.7.8a0"' in read("pyproject.toml")
     assert "zerogate-v1-7-repo-cohesion-check" in read("pyproject.toml")
+    assert "*.svg text eol=lf" in read(".gitattributes")
 
     assert "Current public line:** `v1.7.8-alpha` — Repo Cleanup / Cohesion Check" in readme
     assert "Latest evidence snapshot" in readme
@@ -99,13 +107,32 @@ def test_v1_7_8_public_surfaces_are_cohesive() -> None:
     assert "docs/assets/v1_7_6_wide243_holdout_card.svg" in readme
     assert "docs/assets/v1_7_6_holdout_total_card.svg" in readme
     assert "docs/v1_7_latest_holdout_snapshot.md" in readme
+
+    assert "How to read this README" in readme
+    assert "Inspection map" in readme
+    assert readme.index("## Core theory") < readme.index("## Latest evidence snapshot")
+    assert readme.index("## Native math witness") < readme.index("## Latest evidence snapshot")
+    assert readme.index("## How it works") < readme.index("## Latest evidence snapshot")
+    assert readme.index("docs/assets/v1_7_6_triad27_holdout_card.svg") > readme.index("## Latest evidence snapshot")
+    assert "docs/v1_7_holdout_weather_ladder.md" in readme
+    assert "docs/v1_7_holdout_output_structure.md" in readme
+    assert "docs/v1_7_post_holdout_audit_schema.md" in readme
     assert "docs/current_evidence_state.md" in readme
     assert "docs/recent_native_evidence_history.md" in readme
     assert "docs/v1_7_anti_tautology_role_dependence_check.md" in readme
     assert "docs/v1_7_anti_tautology_known_routine.md" in readme
+    assert "docs/v1_7_post_holdout_audit_schema.md" in readme
+    assert "docs/current_evidence_index.md" in readme
+    assert "docs/controlled_synthetic_field_language.md" in readme
+    assert "docs/test_truth_and_handoff_boundary.md" in readme
+    assert "docs/runtime_ci_support.md" in readme
+    assert "docs/history_vault/legacy_evidence_visuals.md" in readme
+    assert "docs/release_notes/" in readme
     assert "v1.7.9-alpha reviewer start here / reproduction package next" in readme
     assert "v1.7.10-alpha core question closeout later" in readme
 
+    assert "README should teach before it displays evidence" in front_page
+    assert "latest holdout visual cards" in front_page
     assert "v1.7.8-alpha" in roadmap
     assert "Repo Cleanup / Cohesion Check" in roadmap
     assert "v1.7.9-alpha" in roadmap
