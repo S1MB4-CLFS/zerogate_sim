@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="620" viewBox="0 0 1200 620" role="img" aria-labelledby="title desc">
+<title id="title">ZeroGateSim v1.7.10 Core Question Closeout</title>
+<desc id="desc">Bounded plus-one closeout card for controlled synthetic-field adversarial weather.</desc>
+<rect width="1200" height="620" rx="28" fill="#0b1020"/>
+<rect x="36" y="36" width="1128" height="548" rx="24" fill="#121a2e" stroke="#55b86a" stroke-width="3"/>
+<text x="72" y="96" fill="#e9eefc" font-family="system-ui, Segoe UI, sans-serif" font-size="42" font-weight="800">v1.7.10-alpha — Core Question Closeout</text>
+<text x="72" y="138" fill="#b9c5dc" font-family="system-ui, Segoe UI, sans-serif" font-size="22">Answer: +1 inside controlled synthetic-field adversarial weather</text>
+<text x="72" y="184" fill="#ffffff" font-family="system-ui, Segoe UI, sans-serif" font-size="28" font-weight="700">Final false-one crowns: 0</text>
+<g font-family="system-ui, Segoe UI, sans-serif">
+<rect x="72" y="226" width="305" height="95" rx="16" fill="#0f1729" stroke="#2e3b57"/>
+<text x="96" y="262" fill="#9fb0cf" font-size="16">+1 earned-one</text>
+<text x="96" y="302" fill="#e9eefc" font-size="42" font-weight="800">12,206</text>
+<rect x="402" y="226" width="305" height="95" rx="16" fill="#0f1729" stroke="#2e3b57"/>
+<text x="426" y="262" fill="#9fb0cf" font-size="16">raw pressure</text>
+<text x="426" y="302" fill="#e9eefc" font-size="42" font-weight="800">18,353</text>
+<rect x="732" y="226" width="305" height="95" rx="16" fill="#0f1729" stroke="#2e3b57"/>
+<text x="756" y="262" fill="#9fb0cf" font-size="16">false-one pressure</text>
+<text x="756" y="302" fill="#e9eefc" font-size="42" font-weight="800">4,671</text>
+<rect x="72" y="348" width="305" height="95" rx="16" fill="#0f1729" stroke="#2e3b57"/>
+<text x="96" y="384" fill="#9fb0cf" font-size="16">0 latent overcrown</text>
+<text x="96" y="424" fill="#e9eefc" font-size="42" font-weight="800">39</text>
+<rect x="402" y="348" width="305" height="95" rx="16" fill="#0f1729" stroke="#2e3b57"/>
+<text x="426" y="384" fill="#9fb0cf" font-size="16">0 relation debt</text>
+<text x="426" y="424" fill="#e9eefc" font-size="42" font-weight="800">624</text>
+<rect x="732" y="348" width="305" height="95" rx="16" fill="#0f1729" stroke="#2e3b57"/>
+<text x="756" y="384" fill="#9fb0cf" font-size="16">0 return debt</text>
+<text x="756" y="424" fill="#e9eefc" font-size="42" font-weight="800">813</text>
+</g>
+<text x="72" y="500" fill="#c9d4ea" font-family="system-ui, Segoe UI, sans-serif" font-size="22">Boundaries: not role-blind discovery; not independent generator validation; not physics/cosmology proof.</text>
+<text x="72" y="538" fill="#55b86a" font-family="system-ui, Segoe UI, sans-serif" font-size="24" font-weight="700">Next: manuscript v2 bounded upgrade before v1.8.</text>
+</svg>

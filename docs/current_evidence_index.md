@@ -1,7 +1,7 @@
 # Current Evidence Index
 
 **Introduced:** `v1.6.24-alpha`  
-**Compacted:** `v1.7.9-alpha`  
+**Compacted:** `v1.7.10-alpha`  
 **Purpose:** name the canonical current evidence surface without forcing the README to carry every historical report.
 
 Native witness remains:
@@ -47,7 +47,8 @@ final false-one crowns = 0
 | fresh holdout challenge | `v1.7.6-alpha` | fresh seeds / weather ladder / evaluator | witness | CI guards contract, not heavy runs |
 | anti-tautology / role-dependence check | `v1.7.7-alpha` | post-holdout audit | witness | no core closeout |
 | repo cleanup / cohesion check | `v1.7.8-alpha` | public surface repair | hygiene | no new science crown |
-| reviewer start here / reproduction package | `v1.7.9-alpha` | reviewer path and separated rung reproduction package | packaging | no core-question closeout |
+| reviewer start here / reproduction package | `v1.7.9-alpha` | reviewer path and separated rung reproduction package | packaging | prepared closeout |
+| core question closeout | `v1.7.10-alpha` | bounded v1.7 answer | expand | controlled synthetic-field only |
 
 ## Historical evidence anchors
 
@@ -66,7 +67,7 @@ The latest local v1.7 holdout handoff snapshot is:
 | deep81 | 1,950 | 3,012 | 9 | 120 | 126 | 807 | 0 |
 | wide243 | 9,417 | 14,058 | 21 | 465 | 612 | 3,543 | 0 |
 
-This snapshot is now referenced by the v1.7.9 reviewer reproduction package. It is still not core-question closeout.
+This snapshot is referenced by the v1.7.9 reviewer reproduction package and closed by v1.7.10 as a bounded controlled synthetic-field answer. It is still not role-blind discovery, independent generator validation, or physics/cosmology proof.
 
 ## Not current evidence
 

@@ -83,11 +83,11 @@ def test_v1_7_9_public_surfaces_and_paths() -> None:
     release = read("docs/release_notes/v1_7_9_alpha.md")
     script = read("scripts/run_v1_7_small_reproduction.ps1")
 
-    assert "1.7.9-alpha" in read("src/zerogate_sim/__init__.py")
-    assert 'version = "1.7.9a0"' in read("pyproject.toml")
+    assert "1.7.10-alpha" in read("src/zerogate_sim/__init__.py")
+    assert 'version = "1.7.10a0"' in read("pyproject.toml")
     assert "zerogate-v1-7-reviewer-package" in read("pyproject.toml")
 
-    assert "Current public line:** `v1.7.9-alpha` — Reviewer Start Here / Reproduction Package" in readme
+    assert "Current public line:** `v1.7.10-alpha` — Core Question Closeout" in readme
     assert "## How to read this README" in readme
     assert "## Reviewer start here / reproduction package" in readme
     assert "REVIEWER_START_HERE.md" in readme
@@ -96,7 +96,7 @@ def test_v1_7_9_public_surfaces_and_paths() -> None:
     assert "docs/v1_7_claim_boundary_card.md" in readme
     assert "docs/v1_7_evidence_manifest.md" in readme
     assert "scripts\\run_v1_7_small_reproduction.ps1" in readme
-    assert "v1.7.10-alpha core question closeout next" in readme
+    assert "manuscript v2 bounded upgrade next before v1.8" in readme
     assert readme.index("## Native math witness") < readme.index("## Latest evidence snapshot")
     assert readme.index("## Latest evidence snapshot") < readme.index("## Reviewer start here / reproduction package") < readme.index("## Inspection map")
     assert "docs/assets/v1_7_6_triad27_holdout_card.svg" in readme
@@ -107,7 +107,7 @@ def test_v1_7_9_public_surfaces_and_paths() -> None:
     assert "triad27 -> inspect -> deep81 -> inspect -> wide243 -> inspect" in reviewer
     assert "full_output/" in expected
     assert "A false handoff is a false crown" in expected
-    assert "core v1.7 question is not formally closed" in boundary
+    assert "core v1.7 question is formally closed" in boundary
     assert "v1.7.10-alpha" in boundary
     assert "REVIEWER_START_HERE.md" in manifest
     assert "Reviewer Start Here / Reproduction Package" in roadmap
@@ -116,7 +116,7 @@ def test_v1_7_9_public_surfaces_and_paths() -> None:
     assert "Reviewer Start Here / Reproduction Package" in current_state
     assert "reviewer package" in release.lower()
     assert "$Args" not in script
-    assert "v1.7.9-alpha" in script
+    assert "v1.7.10-alpha" in script
     assert "test_v1_7_reviewer_path.py" in script
     for name, text in {"reviewer": reviewer, "minimal": minimal, "expected": expected, "boundary": boundary, "manifest": manifest}.items():
         bad = [ch for ch in text if ord(ch) < 32 and ch not in "\n\t"]

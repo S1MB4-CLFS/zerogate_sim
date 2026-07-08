@@ -7,7 +7,7 @@ from typing import Iterable
 
 from zerogate_sim.reporting import ensure_dir, write_dict_rows_csv, write_evidence_bundle
 
-CURRENT_VERSION = "v1.7.9-alpha"
+CURRENT_VERSION = "v1.7.10-alpha"
 NATIVE_WITNESS = "C_Z = min(D, P, R, B)"
 DECISION = "reviewer_reproduction_package_locked_not_closeout"
 GATE_KIND = "reviewer_start_here_reproduction_package_not_closeout"
@@ -102,7 +102,7 @@ def _rung_script(rung: str) -> str:
     return f'''$ErrorActionPreference = "Stop"
 Set-StrictMode -Version Latest
 
-# v1.7.9 reviewer reproduction helper — {rung} only.
+# v1.7 reviewer reproduction helper — {rung} only.
 # No all-weather one-shot. Run, inspect, then decide whether to continue.
 
 function Run($Name, [scriptblock]$Command) {{
@@ -121,7 +121,7 @@ $env:PYTEST_DISABLE_PLUGIN_AUTOLOAD = "1"
 
 Run "version check" {{
     $Version = (& $P -c "import zerogate_sim; print(zerogate_sim.__version__)").Trim()
-    if ($Version -ne "1.7.9-alpha") {{ throw "Expected 1.7.9-alpha. Found: $Version" }}
+    if ($Version -ne "1.7.10-alpha") {{ throw "Expected 1.7.10-alpha. Found: $Version" }}
 }}
 
 Write-Host "`n{rung} reproduction helper reached safe start." -ForegroundColor Green
@@ -141,13 +141,13 @@ Write-Host "Build combined reviewer index only after triad27, deep81, and wide24
 
 def _write_read(path: Path) -> None:
     lines = [
-        "# v1.7.9-alpha — Reviewer Start Here / Reproduction Package",
+        "# v1.7 Reviewer Start Here / Reproduction Package",
         "",
         f"**Version:** `{CURRENT_VERSION}`",
         f"**Native witness:** `{NATIVE_WITNESS}`",
         f"**Decision:** `{DECISION}`",
         "",
-        "This gate creates the narrow reader door before core-question closeout. It packages path, outputs, claim boundary, and reproduction commands. It does not answer the core question and does not close the core question.",
+        "This package creates the narrow reader door used by the v1.7.10 closeout. It packages path, outputs, claim boundary, and reproduction commands; it does not answer the core question by itself. The closeout answer lives in docs/v1_7_core_question_closeout.md.",
         "",
         "## Safe route",
         "",

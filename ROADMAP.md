@@ -1,6 +1,6 @@
 # ZeroGateSim Roadmap
 
-**Current line:** `v1.7.9-alpha` — Reviewer Start Here / Reproduction Package  
+**Current line:** `v1.7.10-alpha` — Core Question Closeout  
 **Release posture:** public research-alpha / controlled synthetic-field experiment line
 
 ZeroGateSim now has a repaired Four Gates evidence path. The older generated toy-field proof record remains preserved in the history vault, not on the active claim surface. The history vault keeps what the project was; the README shows what the project is; this roadmap shows what still has to be earned.
@@ -59,7 +59,7 @@ C_Z = min(D, P, R, B)
 | `v1.7.6` fresh holdout synthetic-field challenge | complete | fresh seeds, held-out variants, controlled weather shifts, candidate-name masking, and pre-frozen manifests are locked before post-holdout audit |
 | `v1.7.7` anti-tautology audit / role-dependence check | complete | post-holdout result is checked for non-vacuity, non-dead-safe behavior, candidate-name masking, role-dependence pressure, and bounded translation before reviewer packaging |
 | `v1.7.8` repo cleanup / cohesion check | complete | README, evidence index, release spine, front-page routes, and audit paths are cleaned before reviewer packaging |
-| `v1.7.9` reviewer start here / reproduction package | current | reviewer-facing path, expected outputs, strict handoff layers, and separated rung reproduction are packaged before closeout |
+| `v1.7.9` reviewer start here / reproduction package | complete | reviewer-facing path, expected outputs, strict handoff layers, and separated rung reproduction are packaged before closeout |
 
 ## Locked v1.6 closeout route
 
@@ -207,8 +207,8 @@ The core question is answered in full only if all of these gates pass.
 | `v1.7.6-alpha` | Fresh Holdout Synthetic-Field Challenge | complete; holdout design, weather ladder, candidate-name masking, and pre-frozen expected-output manifest are locked before post-holdout audit | result only survives the known reference profile |
 | `v1.7.7-alpha` | Anti-Tautology Audit / Role-Dependence Check | complete; post-holdout evidence is checked for tautology, role/name leakage, dead-safe refusal, vacuity, and bounded claim translation | audit passes only because labels or definitions bake in success |
 | `v1.7.8-alpha` | Repo Cleanup / Cohesion Check | complete; README, evidence index, front-page routes, anti-tautology path, version truth, and recent history are made coherent | the repo remains technically correct but publicly hard to inspect |
-| `v1.7.9-alpha` | Reviewer Start Here / Reproduction Package | current; reviewer path, separated rung commands, expected outputs, and handoff manifest are packaged | the evidence remains local but not reproducible/readable by a cold reviewer |
-| `v1.7.10-alpha` | Core Question Closeout | closeout sentence matches the evidence exactly and decides `+1`, `0`, or `-1` | closeout sentence is stronger than the evidence |
+| `v1.7.9-alpha` | Reviewer Start Here / Reproduction Package | complete; reviewer path, separated rung commands, expected outputs, and handoff manifest are packaged | the evidence remains local but not reproducible/readable by a cold reviewer |
+| `v1.7.10-alpha` | Core Question Closeout | current; closeout sentence matches the evidence exactly and decides `+1`, `0`, or `-1` | closeout sentence is stronger than the evidence |
 
 ### v1.7.0-alpha — Operational Claim Contract
 
@@ -564,9 +564,9 @@ Required result:
 triad27, deep81, and wide243 remain separate reproducible rungs; each rung keeps full output report, compressed summary, visual/top card, evaluator output, and strict handoff expectations. The combined index is navigation only.
 ```
 
-## v1.7.9-alpha current note
+## v1.7.9-alpha note
 
-`v1.7.9-alpha` preserves `C_Z = min(D, P, R, B)`, adds no new science crown, does not start manuscript v2, and prepares `v1.7.10-alpha` Core Question Closeout. It creates the reviewer start page, reproduction command map, expected output map, evidence manifest, claim boundary card, and package CLI. It resists all-weather one-shot testing as the first path.
+`v1.7.9-alpha` preserved `C_Z = min(D, P, R, B)`, added no new science crown, did not start manuscript v2, and prepared `v1.7.10-alpha` Core Question Closeout. It creates the reviewer start page, reproduction command map, expected output map, evidence manifest, claim boundary card, and package CLI. It resists all-weather one-shot testing as the first path.
 
 Current requirement:
 
@@ -605,6 +605,14 @@ A `0` closeout may say:
 A `-1` closeout must say:
 
 > No. The full claim is not earned under controlled synthetic-field adversarial weather.
+
+## v1.7.10-alpha current note
+
+`v1.7.10-alpha` preserves `C_Z = min(D, P, R, B)` and closes the v1.7 core question as bounded `+1` inside controlled synthetic-field adversarial weather. It does not start manuscript v2, does not upload to Zenodo, does not claim role-blind discovery, does not claim independent generator validation, and does not claim physics/cosmology/observed-universe proof. It opens the manuscript v2 upgrade gate before v1.8.
+
+Closeout sentence:
+
+> Yes. Inside controlled synthetic-field adversarial weather, the final trinary witness distinguishes earned-one from raw expression pressure, latent overcrown, relation debt, return debt, and false-one pressure, while preserving earned-one, holding structured zero/debt lanes, demoting false-one pressure, and maintaining zero final false-one crowns.
 
 ## Manuscript v2 upgrade gate — before v1.8
 

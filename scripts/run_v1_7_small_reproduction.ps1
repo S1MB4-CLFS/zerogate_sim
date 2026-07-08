@@ -1,6 +1,6 @@
 $ErrorActionPreference = "Stop"
 Set-StrictMode -Version Latest
-# v1.7.9-alpha small reviewer reproduction runner
+# v1.7.10-alpha small reviewer reproduction / closeout-support runner
 
 function Run($Name, [scriptblock]$Command) {
     Write-Host "`n=== $Name ===" -ForegroundColor Cyan
@@ -29,16 +29,16 @@ $env:PYTEST_DISABLE_PLUGIN_AUTOLOAD = "1"
 Run "version check" {
     $Version = (& $P -c "import zerogate_sim; print(zerogate_sim.__version__)").Trim()
     Write-Host "ZeroGateSim version: $Version"
-    if ($Version -ne "1.7.9-alpha") {
-        throw "Expected 1.7.9-alpha. Found: $Version"
+    if ($Version -ne "1.7.10-alpha") {
+        throw "Expected 1.7.10-alpha. Found: $Version"
     }
 }
 
-Run "v1.7.9 reviewer path target test" {
+Run "v1.7.10 reviewer path target test" {
     & $P -m pytest tests\test_v1_7_reviewer_path.py -q
 }
 
-$Out = "runs\v1_7_9_reviewer_reproduction_package"
+$Out = "runs\v1_7_10_reviewer_reproduction_package"
 if (Test-Path $Out) {
     Remove-Item $Out -Recurse -Force
 }
@@ -58,7 +58,7 @@ Run "verify reviewer package outputs" {
     RequireFile (Join-Path $Out "v1_7_reviewer_reproduction_package_bundle.zip") "reviewer package bundle"
 }
 
-Write-Host "`n=== V1.7.9 SMALL REPRODUCTION COMPLETE ===" -ForegroundColor Green
+Write-Host "`n=== V1.7.10 SMALL REPRODUCTION COMPLETE ===" -ForegroundColor Green
 Write-Host "Read:" -ForegroundColor Green
 Write-Host "$((Resolve-Path (Join-Path $Out 'v1_7_reviewer_reproduction_package_read.md')).Path)"
 Write-Host "`nBundle:" -ForegroundColor Green

@@ -25,7 +25,8 @@ C_Z = min(D, P, R, B)
 | `v1.7.6-alpha` | Fresh Holdout Synthetic-Field Challenge | complete | locks fresh seeds, held-out variants, weather ladder, candidate-name masking, and expected manifests |
 | `v1.7.7-alpha` | Anti-Tautology Audit / Role-Dependence Check | complete | checks non-vacuity, non-dead-safe behavior, leakage pressure, role-dependence boundary, and bounded translation |
 | `v1.7.8-alpha` | Repo Cleanup / Cohesion Check | complete | makes README, evidence index, release spine, and audit paths coherent before reviewer packaging |
-| `v1.7.9-alpha` | Reviewer Start Here / Reproduction Package | current | packages reviewer path, separated rung reproduction rhythm, expected outputs, and strict handoff layers before closeout |
+| `v1.7.9-alpha` | Reviewer Start Here / Reproduction Package | complete | packages reviewer path, separated rung reproduction rhythm, expected outputs, and strict handoff layers before closeout |
+| `v1.7.10-alpha` | Core Question Closeout | current | closes the v1.7 core question as bounded `+1` inside controlled synthetic-field adversarial weather |
 
 ## Latest holdout snapshot
 
@@ -51,7 +52,7 @@ false-one pressure = 4,671
 final false-one crowns = 0
 ```
 
-This is local assistant-handoff evidence now routed through the v1.7.9 reviewer package. It is not core-question closeout.
+This is local assistant-handoff evidence routed through the v1.7.9 reviewer package and closed by v1.7.10 as a bounded controlled synthetic-field answer.
 
 ## Historical evidence anchors still relevant
 
@@ -64,10 +65,10 @@ This is local assistant-handoff evidence now routed through the v1.7.9 reviewer 
 | `v1.6.25-alpha` anti-tautology audit | first role-dependence boundary | designed-profile shaped but witness-counted |
 | `v1.6.28-alpha` closeout | bounded v1.6 `+1` for controlled synthetic-field evidence | opened v1.7; did not close role-blind or physics claims |
 
-## What remains unclosed
+## What remains unclosed after v1.7.10
 
 - Role-blind discovery is not solved.
 - Independent generator validation is not done.
 - External empirical validation is not done.
 - Observed-universe, physics, cosmology, and dimensional-origin claims remain blocked.
-- Manuscript v2 still waits until `v1.7.10-alpha` closes, narrows, or explicitly freezes the core question.
+- Manuscript v2 is now the next bounded upgrade gate before v1.8.

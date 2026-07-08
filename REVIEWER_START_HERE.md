@@ -1,6 +1,6 @@
-# Reviewer Start Here — ZeroGateSim v1.7.9-alpha
+# Reviewer Start Here — ZeroGateSim v1.7.10-alpha
 
-**Current line:** `v1.7.9-alpha` — Reviewer Start Here / Reproduction Package  
+**Current line:** `v1.7.10-alpha` — Core Question Closeout  
 **Native witness:** `C_Z = min(D, P, R, B)`  
 **Boundary:** controlled synthetic-field software evidence only.
 
@@ -24,7 +24,7 @@ The current v1.7 question is:
 
 > Can a final trinary witness distinguish earned-one from raw expression pressure, latent overcrown, relation debt, return debt, and false-one pressure under controlled synthetic-field adversarial weather?
 
-`v1.7.9-alpha` does not close that question. It packages the reviewer path so `v1.7.10-alpha` can close, narrow, or demote the answer without requiring private chat context.
+`v1.7.9-alpha` packaged the reviewer path. `v1.7.10-alpha` closes the bounded controlled synthetic-field answer without requiring private chat context.
 
 ## Small reproduction
 
@@ -46,6 +46,10 @@ triad27 -> inspect -> deep81 -> inspect -> wide243 -> inspect -> package
 
 No all-weather one-shot is the default reviewer route. The small rung keeps the goblin visible.
 
+## Closeout boundary
+
+The controlled synthetic-field core question is closed `+1`. Everything below remains forbidden.
+
 ## Forbidden readings
 
 Do not read this package as:
@@ -56,4 +60,4 @@ Do not read this package as:
 - manuscript v2;
 - core-question closeout.
 
-Those remain blocked until a later gate earns them.
+Those remain blocked after `v1.7.10-alpha`; only the controlled synthetic-field core question is closed.

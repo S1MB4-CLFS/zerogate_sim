@@ -65,8 +65,8 @@ def test_public_version_truth_surfaces_preserve_v1_6_14_and_route_to_v1_6_15() -
     version_truth = (ROOT / "docs/version_truth.md").read_text(encoding="utf-8")
     release = (ROOT / "docs/release_notes/v1_6_14_alpha.md").read_text(encoding="utf-8")
     doc = (ROOT / "docs/native_four_gate_claim_audit.md").read_text(encoding="utf-8")
-    assert "1.7.9-alpha" in (ROOT / "src/zerogate_sim/__init__.py").read_text(encoding="utf-8")
-    assert 'version = "1.7.9a0"' in (ROOT / "pyproject.toml").read_text(encoding="utf-8")
+    assert "1.7.10-alpha" in (ROOT / "src/zerogate_sim/__init__.py").read_text(encoding="utf-8")
+    assert 'version = "1.7.10a0"' in (ROOT / "pyproject.toml").read_text(encoding="utf-8")
     for text in [version_truth, release, doc]:
         assert "v1.6.14-alpha" in text
         assert "C_Z = min(D, P, R, B)" in text

@@ -9,7 +9,7 @@ from typing import Iterable
 
 from zerogate_sim.reporting import ensure_dir, write_dict_rows_csv, write_evidence_bundle
 
-CURRENT_VERSION = "v1.7.9-alpha"
+CURRENT_VERSION = "v1.7.10-alpha"
 NATIVE_WITNESS = "C_Z = min(D, P, R, B)"
 
 OUTPUT_FILES = {
@@ -103,7 +103,7 @@ def _lane_pattern(row: dict[str, object]) -> bool:
 
 def _write_read(path: Path, row: dict[str, object]) -> None:
     lines = [
-        f"# v1.7.9 {row['weather_rung']} Holdout Rung Summary",
+        f"# v1.7 {row['weather_rung']} Holdout Rung Summary",
         "",
         "This is a controlled synthetic-field rung summary. It is not core-question closeout and not role-blind discovery.",
         "",
@@ -212,7 +212,7 @@ def build_v1_7_holdout_rung_summary(
 
 
 def main(argv: Iterable[str] | None = None) -> int:
-    parser = argparse.ArgumentParser(description="Build a v1.7.9 holdout rung summary from matrix final-output CSVs.")
+    parser = argparse.ArgumentParser(description="Build a v1.7 holdout rung summary from matrix final-output CSVs.")
     parser.add_argument("--rung", choices=["triad27", "deep81", "wide243"], required=True)
     parser.add_argument("--start-seed", type=int, required=True)
     parser.add_argument("--count", type=int, required=True)

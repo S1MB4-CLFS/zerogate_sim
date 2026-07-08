@@ -90,12 +90,12 @@ def test_v1_7_8_public_surfaces_are_cohesive() -> None:
     cleanup_doc = read("docs/v1_7_repo_cleanup_cohesion_check.md")
     release = read("docs/release_notes/v1_7_8_alpha.md")
 
-    assert "1.7.9-alpha" in read("src/zerogate_sim/__init__.py")
-    assert 'version = "1.7.9a0"' in read("pyproject.toml")
+    assert "1.7.10-alpha" in read("src/zerogate_sim/__init__.py")
+    assert 'version = "1.7.10a0"' in read("pyproject.toml")
     assert "zerogate-v1-7-repo-cohesion-check" in read("pyproject.toml")
     assert "*.svg text eol=lf" in read(".gitattributes")
 
-    assert "Current public line:** `v1.7.9-alpha` — Reviewer Start Here / Reproduction Package" in readme
+    assert "Current public line:** `v1.7.10-alpha` — Core Question Closeout" in readme
     assert "Latest evidence snapshot" in readme
     assert "```math" in readme
     assert r"E_0 = (Z_0, \tau)" in readme
@@ -128,8 +128,8 @@ def test_v1_7_8_public_surfaces_are_cohesive() -> None:
     assert "docs/runtime_ci_support.md" in readme
     assert "docs/history_vault/legacy_evidence_visuals.md" in readme
     assert "docs/release_notes/" in readme
-    assert "v1.7.9-alpha reviewer start here / reproduction package current" in readme
-    assert "v1.7.10-alpha core question closeout next" in readme
+    assert "v1.7.10-alpha core question closeout current" in readme
+    assert "manuscript v2 bounded upgrade next before v1.8" in readme
 
     assert "README should teach before it displays evidence" in front_page
     assert "latest holdout visual cards" in front_page

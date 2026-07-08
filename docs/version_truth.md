@@ -1,9 +1,9 @@
 # Version Truth
 
-**Status:** README overflow moved here in `v1.6.9-alpha`; current spine advanced in `v1.7.9-alpha`  
+**Status:** README overflow moved here in `v1.6.9-alpha`; current spine advanced in `v1.7.10-alpha`  
 **Purpose:** preserve the release spine and recent checkpoints without forcing the README to open with a wall of version bookkeeping.
 
-The active public line is now `v1.7.9-alpha` — Reviewer Start Here / Reproduction Package.
+The active public line is now `v1.7.10-alpha` — Core Question Closeout.
 
 ## Release spine
 
@@ -40,6 +40,7 @@ The active public line is now `v1.7.9-alpha` — Reviewer Start Here / Reproduct
 - `v1.7.7-alpha` — Anti-Tautology Audit / Role-Dependence Check: audits the fresh holdout ladder against pre-registration, non-vacuity, positive/negative controls, label leakage, role-dependence, and bounded claim translation before reviewer packaging.
 - `v1.7.8-alpha` — Repo Cleanup / Cohesion Check: moved long evidence lists out of README, exposed the latest holdout snapshot and anti-tautology path on the front page, and shifted reviewer packaging to `v1.7.9-alpha` with closeout at `v1.7.10-alpha`.
 - `v1.7.9-alpha` — Reviewer Start Here / Reproduction Package: adds the reviewer start page, reproduction command map, expected output map, evidence manifest, and package CLI while keeping closeout at `v1.7.10-alpha`.
+- `v1.7.10-alpha` — Core Question Closeout: closes the v1.7 core question as bounded `+1` inside controlled synthetic-field adversarial weather and opens manuscript v2 as the next bounded upgrade gate before v1.8.
 
 ## Recent checkpoints
 
@@ -212,3 +213,8 @@ C_Z = min(D, P, R, B)
 ## v1.7.9-alpha note
 
 `v1.7.9-alpha` is the Reviewer Start Here / Reproduction Package gate. It preserves `C_Z = min(D, P, R, B)`, does not start manuscript v2, does not upload to Zenodo, does not claim role-blind discovery, and does not close the core question. It packages the separated rung reproduction rhythm, expected output layers, strict handoff manifest, and reviewer start path before `v1.7.10-alpha` closeout.
+
+
+## v1.7.10-alpha note
+
+`v1.7.10-alpha` is the Core Question Closeout gate. It preserves `C_Z = min(D, P, R, B)`, closes the v1.7 core question as bounded `+1` inside controlled synthetic-field adversarial weather, does not start manuscript v2, does not upload to Zenodo, does not claim role-blind discovery, does not claim independent generator validation, and does not claim physics/cosmology/observed-universe proof. The next movement is manuscript v2 as a bounded upgrade/correction before v1.8.

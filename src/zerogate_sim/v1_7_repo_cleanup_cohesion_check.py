@@ -203,7 +203,7 @@ RELEASE_SHIFT_ROWS = [
         "reason": "README, evidence index, release spine, and audit path need a coherent front page before reviewer packaging",
     },
     {
-        "version": "v1.7.9-alpha",
+        "version": "v1.7.10-alpha",
         "role": "Reviewer Start Here / Reproduction Package",
         "status": "next gate",
         "reason": "only after the repo presents the evidence and audit path cleanly should reviewer commands be packaged",

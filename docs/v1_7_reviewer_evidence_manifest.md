@@ -26,6 +26,6 @@ wide243 = 3^5 temporal-depth / time-axis stress
 - no false handoff;
 - no table-only front-page collapse;
 - no all-weather first-run masking;
-- no core-question closeout before reproduction package truth.
+- core-question closeout now lives in v1.7.10 and remains bounded.
 
 Native witness remains `C_Z = min(D, P, R, B)`.

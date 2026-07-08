@@ -1,6 +1,7 @@
 # v1.7 Evidence Manifest
 
 **Introduced:** `v1.7.9-alpha`  
+**Updated:** `v1.7.10-alpha`  
 **Purpose:** keep the current evidence paths visible for reviewers without bloating the README.
 
 **Native witness:** `C_Z = min(D, P, R, B)`
@@ -17,6 +18,10 @@
 - [`v1_7_reproduction_commands.md`](v1_7_reproduction_commands.md)
 - [`v1_7_expected_outputs.md`](v1_7_expected_outputs.md)
 - [`v1_7_claim_boundary_card.md`](v1_7_claim_boundary_card.md)
+- [`v1_7_core_question_closeout.md`](v1_7_core_question_closeout.md)
+- [`v1_7_answer_status_card.md`](v1_7_answer_status_card.md)
+- [`v1_7_closeout_claim_boundary.md`](v1_7_closeout_claim_boundary.md)
+- [`v1_7_go_no_go_for_manuscript_v2.md`](v1_7_go_no_go_for_manuscript_v2.md)
 - [`v1_7_reproduction_run_order.md`](v1_7_reproduction_run_order.md)
 - [`v1_7_reviewer_evidence_manifest.md`](v1_7_reviewer_evidence_manifest.md)
 - [`v1_7_reproduction_expected_outputs.md`](v1_7_reproduction_expected_outputs.md)

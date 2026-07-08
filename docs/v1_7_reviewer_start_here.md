@@ -17,4 +17,4 @@ docs/v1_7_latest_holdout_snapshot.md
 docs/v1_7_anti_tautology_role_dependence_check.md
 ```
 
-`v1.7.9-alpha` packages the path. `v1.7.10-alpha` decides the core question.
+`v1.7.9-alpha` packages the path. `v1.7.10-alpha` closes the bounded controlled synthetic-field core question.

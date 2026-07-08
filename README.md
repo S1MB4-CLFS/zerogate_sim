@@ -1,6 +1,6 @@
 # ZeroGateSim
 
-**Current public line:** `v1.7.9-alpha` — Reviewer Start Here / Reproduction Package  
+**Current public line:** `v1.7.10-alpha` — Core Question Closeout  
 **Status:** speculative research software / controlled synthetic-field experiment line  
 **Working identity:** Four Gates of Becoming witness simulator  
 **Core question:** can a final trinary witness distinguish earned-one from raw expression pressure, latent overcrown, relation/return debt, and false-one pressure under controlled synthetic-field adversarial weather?
@@ -15,7 +15,7 @@ It tests a narrower software-theory claim:
 
 > Inside controlled synthetic fields, a final trinary witness using the Four Gates of Becoming can preserve earned expression, hold structured zero/debt states, and demote false-one pressure better than raw, binary, dead-safe, and ablated witnesses.
 
-Historical proof records, v1.5 controlled evidence, and the v1.6 shadow route are preserved in the [history vault](docs/history_vault/README.md). They explain how the repo got here; they are not the current README evidence surface.
+The v1.7 core question is now closed as `+1` inside controlled synthetic-field adversarial weather. Historical proof records, v1.5 controlled evidence, and the v1.6 shadow route are preserved in the [history vault](docs/history_vault/README.md). They explain how the repo got here; they are not the current README evidence surface.
 
 ## How to read this README
 
@@ -191,7 +191,7 @@ C_Z^i(t)=\min(D_i(t),P_i(t),R_i(t),B_i(t))
 
 ## Current route
 
-The active route after `v1.7.9-alpha` is:
+The active route after `v1.7.10-alpha` is:
 
 ```text
 v1.7.0-alpha core question contract complete
@@ -203,8 +203,9 @@ v1.7.0-alpha core question contract complete
 -> v1.7.6-alpha Fresh Holdout Synthetic-Field Challenge complete
 -> v1.7.7-alpha Anti-Tautology Audit / Role-Dependence Check complete
 -> v1.7.8-alpha repo cleanup / cohesion check complete
--> v1.7.9-alpha reviewer start here / reproduction package current
--> v1.7.10-alpha core question closeout next
+-> v1.7.9-alpha reviewer start here / reproduction package complete
+-> v1.7.10-alpha core question closeout current
+-> manuscript v2 bounded upgrade next before v1.8
 ```
 
 The shadow route is **not** the active route now. It is preserved as historical diagnostic work in the [history vault](docs/history_vault/README.md).
@@ -254,7 +255,7 @@ Read the bounded snapshot and output-structure contract:
 
 ## Reviewer start here / reproduction package
 
-`v1.7.9-alpha` adds the narrow reviewer door. It does not close the core question; it makes the closeout auditable.
+`v1.7.9-alpha` adds the narrow reviewer door. It made the closeout auditable and remains the inspection path for `v1.7.10-alpha`.
 
 Start here:
 
@@ -272,10 +273,36 @@ Start here:
 Safe run order:
 
 ```text
-smoke -> triad27 -> inspect -> deep81 -> inspect -> wide243 -> inspect -> combined package -> v1.7.10 closeout
+smoke -> triad27 -> inspect -> deep81 -> inspect -> wide243 -> inspect -> combined package -> v1.7.10 closeout -> manuscript v2 gate
 ```
 
 The combined package is navigation only. It must not replace the separate rung records.
+
+## Core question closeout
+
+`v1.7.10-alpha` closes the v1.7 core question as `+1` inside controlled synthetic-field adversarial weather.
+
+![v1.7.10 core question closeout card](docs/assets/v1_7_10_core_question_closeout_card.svg)
+
+Closeout sentence:
+
+> Yes. Inside controlled synthetic-field adversarial weather, the final trinary witness distinguishes earned-one from raw expression pressure, latent overcrown, relation debt, return debt, and false-one pressure, while preserving earned-one, holding structured zero/debt lanes, demoting false-one pressure, and maintaining zero final false-one crowns.
+
+Boundary remains strict:
+
+```text
+role-blind discovery = not solved
+independent generator validation = not done
+physics / cosmology / observed-universe proof = not claimed
+next movement = manuscript v2 bounded upgrade before v1.8
+```
+
+Read:
+
+- [`docs/v1_7_core_question_closeout.md`](docs/v1_7_core_question_closeout.md)
+- [`docs/v1_7_answer_status_card.md`](docs/v1_7_answer_status_card.md)
+- [`docs/v1_7_closeout_claim_boundary.md`](docs/v1_7_closeout_claim_boundary.md)
+- [`docs/v1_7_go_no_go_for_manuscript_v2.md`](docs/v1_7_go_no_go_for_manuscript_v2.md)
 
 ## Inspection map
 
@@ -298,6 +325,10 @@ The README keeps the project face, the math, and the newest visual cards. Everyt
 - [`docs/v1_7_front_page_map.md`](docs/v1_7_front_page_map.md) — why the README is ordered this way.
 - [`docs/current_evidence_index.md`](docs/current_evidence_index.md) — current evidence index.
 - [`docs/version_truth.md`](docs/version_truth.md) — version spine and release truth.
+- [`docs/v1_7_core_question_closeout.md`](docs/v1_7_core_question_closeout.md) — v1.7 closeout decision.
+- [`docs/v1_7_answer_status_card.md`](docs/v1_7_answer_status_card.md) — trinary answer state.
+- [`docs/v1_7_closeout_claim_boundary.md`](docs/v1_7_closeout_claim_boundary.md) — allowed and forbidden post-closeout claims.
+- [`docs/v1_7_go_no_go_for_manuscript_v2.md`](docs/v1_7_go_no_go_for_manuscript_v2.md) — next gate.
 - [`REVIEWER_START_HERE.md`](REVIEWER_START_HERE.md) — narrow reviewer door and reproduction route.
 - [`docs/v1_7_reviewer_reproduction_package.md`](docs/v1_7_reviewer_reproduction_package.md) — reviewer package contract.
 - [`docs/v1_7_reproduction_commands.md`](docs/v1_7_reproduction_commands.md) — separate rung command map.
@@ -371,7 +402,7 @@ Current v1.7 front-page route preserves the v1.6 release spine as trace anchors,
 ```text
 anti-tautology audit complete -> reproduction command package complete -> manuscript correction package complete -> v1.6 closeout complete
 v1.6.14-alpha -> v1.6.15-alpha -> v1.6.16-alpha -> v1.6.17-alpha -> v1.6.18-alpha -> v1.6.19-alpha -> v1.6.20-alpha -> v1.6.21-alpha -> v1.6.22-alpha -> v1.6.23-alpha -> v1.6.24-alpha -> v1.6.25-alpha -> v1.6.26-alpha -> v1.6.27-alpha -> v1.6.28-alpha
-v1.7.0-alpha -> v1.7.1-alpha -> v1.7.2-alpha -> v1.7.3-alpha -> v1.7.4-alpha -> v1.7.5-alpha -> v1.7.6-alpha -> v1.7.7-alpha -> v1.7.8-alpha -> v1.7.9-alpha -> v1.7.10-alpha
+v1.7.0-alpha -> v1.7.1-alpha -> v1.7.2-alpha -> v1.7.3-alpha -> v1.7.4-alpha -> v1.7.5-alpha -> v1.7.6-alpha -> v1.7.7-alpha -> v1.7.8-alpha -> v1.7.9-alpha -> v1.7.10-alpha -> manuscript v2 gate
 ```
 
 Named recent gates remain inspectable:
@@ -385,6 +416,7 @@ Fresh Holdout Synthetic-Field Challenge
 Anti-Tautology Audit / Role-Dependence Check
 Repo Cleanup / Cohesion Check
 Reviewer Start Here / Reproduction Package
+Core Question Closeout
 ```
 
 Native/repaired evidence phrase anchors preserved for tested public-surface continuity:

@@ -1,0 +1,17 @@
+v1.7.10-alpha core question closeout patch
+
+New closeout surfaces:
+- docs/v1_7_core_question_closeout.md
+- docs/v1_7_answer_status_card.md
+- docs/v1_7_closeout_claim_boundary.md
+- docs/v1_7_go_no_go_for_manuscript_v2.md
+- docs/assets/v1_7_10_core_question_closeout_card.svg
+- src/zerogate_sim/v1_7_core_question_closeout.py
+- tests/test_v1_7_core_question_closeout.py
+
+Boundary:
+- C_Z = min(D, P, R, B) unchanged
+- role-blind discovery not claimed
+- independent generator validation not claimed
+- physics/cosmology/observed-universe proof not claimed
+- manuscript v2 not started; it is the next bounded gate before v1.8
