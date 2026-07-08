@@ -1,7 +1,7 @@
 # v1.7 Latest Holdout Snapshot
 
 **Status:** local assistant-handoff evidence snapshot from the `v1.7.6-alpha` fresh holdout ladder  
-**Repo gate using it:** `v1.7.8-alpha` front-page cleanup / cohesion check  
+**Repo gates using it:** `v1.7.8-alpha` front-page cleanup / cohesion check; `v1.7.9-alpha` reviewer reproduction package path  
 **Boundary:** controlled synthetic-field evidence only; not role-blind discovery, not independent-generator validation, not physics, not cosmology, and not core-question closeout.
 
 This page records the compact result from the three separate rung handoffs inspected after `v1.7.6-alpha`.
@@ -9,7 +9,7 @@ This page records the compact result from the three separate rung handoffs inspe
 The run law remains:
 
 ```text
-triad27 -> inspect -> deep81 -> inspect -> wide243 -> inspect -> package later
+triad27 -> inspect -> deep81 -> inspect -> wide243 -> inspect -> reviewer package -> closeout later
 ```
 
 The combined snapshot must not replace the separate rung records. It is a front-page orientation layer.

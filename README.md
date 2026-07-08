@@ -1,6 +1,6 @@
 # ZeroGateSim
 
-**Current public line:** `v1.7.8-alpha` — Repo Cleanup / Cohesion Check  
+**Current public line:** `v1.7.9-alpha` — Reviewer Start Here / Reproduction Package  
 **Status:** speculative research software / controlled synthetic-field experiment line  
 **Working identity:** Four Gates of Becoming witness simulator  
 **Core question:** can a final trinary witness distinguish earned-one from raw expression pressure, latent overcrown, relation/return debt, and false-one pressure under controlled synthetic-field adversarial weather?
@@ -22,7 +22,7 @@ Historical proof records, v1.5 controlled evidence, and the v1.6 shadow route ar
 Read this page in order. The latest holdout cards are important, but they come **after** the mechanism because a reader should know what the cards witness before seeing the result.
 
 ```text
-identity -> core theory -> why this exists -> software mechanism -> visual spine -> math witness -> current route -> latest evidence cards -> inspection paths
+identity -> core theory -> why this exists -> software mechanism -> visual spine -> math witness -> current route -> latest evidence cards -> reviewer package -> inspection paths
 ```
 
 Detailed ledgers live behind markdown paths so the README stays human-readable without hiding the evidence trail.
@@ -191,7 +191,7 @@ C_Z^i(t)=\min(D_i(t),P_i(t),R_i(t),B_i(t))
 
 ## Current route
 
-The active route after `v1.7.8-alpha` is:
+The active route after `v1.7.9-alpha` is:
 
 ```text
 v1.7.0-alpha core question contract complete
@@ -202,9 +202,9 @@ v1.7.0-alpha core question contract complete
 -> v1.7.5-alpha Masked Role-Dependence Audit complete
 -> v1.7.6-alpha Fresh Holdout Synthetic-Field Challenge complete
 -> v1.7.7-alpha Anti-Tautology Audit / Role-Dependence Check complete
--> v1.7.8-alpha repo cleanup / cohesion check current
--> v1.7.9-alpha reviewer start here / reproduction package next
--> v1.7.10-alpha core question closeout later
+-> v1.7.8-alpha repo cleanup / cohesion check complete
+-> v1.7.9-alpha reviewer start here / reproduction package current
+-> v1.7.10-alpha core question closeout next
 ```
 
 The shadow route is **not** the active route now. It is preserved as historical diagnostic work in the [history vault](docs/history_vault/README.md).
@@ -251,9 +251,43 @@ Read the bounded snapshot and output-structure contract:
 - [`docs/v1_7_latest_holdout_snapshot.md`](docs/v1_7_latest_holdout_snapshot.md)
 - [`docs/v1_7_holdout_output_structure.md`](docs/v1_7_holdout_output_structure.md)
 
+
+## Reviewer start here / reproduction package
+
+`v1.7.9-alpha` adds the narrow reviewer door. It does not close the core question; it makes the closeout auditable.
+
+Start here:
+
+- [`REVIEWER_START_HERE.md`](REVIEWER_START_HERE.md) — human entry path, read order, run order, and stop conditions.
+- [`docs/v1_7_minimal_reproduction.md`](docs/v1_7_minimal_reproduction.md) — smallest safe smoke/reproduction path.
+- [`docs/v1_7_expected_outputs.md`](docs/v1_7_expected_outputs.md) — expected full output, compressed summary, visual, machine, and handoff layers.
+- [`docs/v1_7_claim_boundary_card.md`](docs/v1_7_claim_boundary_card.md) — allowed and forbidden claim language before closeout.
+- [`docs/v1_7_evidence_manifest.md`](docs/v1_7_evidence_manifest.md) — package-facing evidence manifest.
+- [`scripts\run_v1_7_small_reproduction.ps1`](scripts/run_v1_7_small_reproduction.ps1) — small reviewer package smoke script.
+- [`docs/v1_7_reviewer_reproduction_package.md`](docs/v1_7_reviewer_reproduction_package.md) — package contract and command-generation route.
+- [`docs/v1_7_reproduction_run_order.md`](docs/v1_7_reproduction_run_order.md) — `triad27 -> inspect -> deep81 -> inspect -> wide243 -> inspect`.
+- [`docs/v1_7_reviewer_evidence_manifest.md`](docs/v1_7_reviewer_evidence_manifest.md) — current evidence surfaces used by the package.
+- [`docs/v1_7_reproduction_expected_outputs.md`](docs/v1_7_reproduction_expected_outputs.md) — extended output-layer trace.
+
+Safe run order:
+
+```text
+smoke -> triad27 -> inspect -> deep81 -> inspect -> wide243 -> inspect -> combined package -> v1.7.10 closeout
+```
+
+The combined package is navigation only. It must not replace the separate rung records.
+
 ## Inspection map
 
 The README keeps the project face, the math, and the newest visual cards. Everything that became too long for the front page still has a visible path.
+
+### Reviewer package
+
+- [`REVIEWER_START_HERE.md`](REVIEWER_START_HERE.md) — narrow reviewer door.
+- [`docs/v1_7_reviewer_reproduction_package.md`](docs/v1_7_reviewer_reproduction_package.md) — package contract.
+- [`docs/v1_7_reproduction_run_order.md`](docs/v1_7_reproduction_run_order.md) — separate-rung order.
+- [`docs/v1_7_reviewer_evidence_manifest.md`](docs/v1_7_reviewer_evidence_manifest.md) — evidence path manifest.
+- [`docs/v1_7_reproduction_expected_outputs.md`](docs/v1_7_reproduction_expected_outputs.md) — output layer contract.
 
 ### Current v1.7 state
 
@@ -264,6 +298,12 @@ The README keeps the project face, the math, and the newest visual cards. Everyt
 - [`docs/v1_7_front_page_map.md`](docs/v1_7_front_page_map.md) — why the README is ordered this way.
 - [`docs/current_evidence_index.md`](docs/current_evidence_index.md) — current evidence index.
 - [`docs/version_truth.md`](docs/version_truth.md) — version spine and release truth.
+- [`REVIEWER_START_HERE.md`](REVIEWER_START_HERE.md) — narrow reviewer door and reproduction route.
+- [`docs/v1_7_reviewer_reproduction_package.md`](docs/v1_7_reviewer_reproduction_package.md) — reviewer package contract.
+- [`docs/v1_7_reproduction_commands.md`](docs/v1_7_reproduction_commands.md) — separate rung command map.
+- [`docs/v1_7_expected_outputs.md`](docs/v1_7_expected_outputs.md) — expected output and handoff layers.
+- [`docs/v1_7_evidence_manifest.md`](docs/v1_7_evidence_manifest.md) — package evidence manifest.
+- [`docs/v1_7_claim_boundary_card.md`](docs/v1_7_claim_boundary_card.md) — closeout-safe claim boundary.
 
 ### Anti-tautology / role-dependence path
 
@@ -331,7 +371,7 @@ Current v1.7 front-page route preserves the v1.6 release spine as trace anchors,
 ```text
 anti-tautology audit complete -> reproduction command package complete -> manuscript correction package complete -> v1.6 closeout complete
 v1.6.14-alpha -> v1.6.15-alpha -> v1.6.16-alpha -> v1.6.17-alpha -> v1.6.18-alpha -> v1.6.19-alpha -> v1.6.20-alpha -> v1.6.21-alpha -> v1.6.22-alpha -> v1.6.23-alpha -> v1.6.24-alpha -> v1.6.25-alpha -> v1.6.26-alpha -> v1.6.27-alpha -> v1.6.28-alpha
-v1.7.0-alpha -> v1.7.1-alpha -> v1.7.2-alpha -> v1.7.3-alpha -> v1.7.4-alpha -> v1.7.5-alpha -> v1.7.6-alpha -> v1.7.7-alpha -> v1.7.8-alpha
+v1.7.0-alpha -> v1.7.1-alpha -> v1.7.2-alpha -> v1.7.3-alpha -> v1.7.4-alpha -> v1.7.5-alpha -> v1.7.6-alpha -> v1.7.7-alpha -> v1.7.8-alpha -> v1.7.9-alpha -> v1.7.10-alpha
 ```
 
 Named recent gates remain inspectable:
@@ -343,6 +383,8 @@ Perturbation Spectrum Witness
 Masked Role-Dependence Audit
 Fresh Holdout Synthetic-Field Challenge
 Anti-Tautology Audit / Role-Dependence Check
+Repo Cleanup / Cohesion Check
+Reviewer Start Here / Reproduction Package
 ```
 
 Native/repaired evidence phrase anchors preserved for tested public-surface continuity:
@@ -460,11 +502,14 @@ Recommended route:
 4. How the software witness works.
 5. Latest v1.7 holdout cards.
 6. Anti-tautology / role-dependence audit path.
-7. Quickstart or code.
-8. History vault only after the current proof boundary is understood.
+7. Reviewer reproduction package.
+8. Quickstart or code.
+9. History vault only after the current proof boundary is understood.
 
 Reviewer guide:
 
+- [`REVIEWER_START_HERE.md`](REVIEWER_START_HERE.md)
+- [`docs/v1_7_reviewer_reproduction_package.md`](docs/v1_7_reviewer_reproduction_package.md)
 - [`docs/for_reviewers.md`](docs/for_reviewers.md)
 
 ## License and citation

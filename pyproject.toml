@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "zerogate-sim"
-version = "1.7.8a0"
+version = "1.7.9a0"
 description = "Toy simulation framework for zero-gate dimensional emergence."
 readme = "README.md"
 requires-python = ">=3.12"
@@ -79,6 +79,9 @@ zerogate-v1-7-masked-role-audit = "zerogate_sim.v1_7_masked_role_dependence_audi
 zerogate-v1-7-fresh-holdout-challenge = "zerogate_sim.v1_7_fresh_holdout_challenge:main"
 zerogate-v1-7-anti-tautology-role-audit = "zerogate_sim.v1_7_anti_tautology_role_dependence_check:main"
 zerogate-v1-7-repo-cohesion-check = "zerogate_sim.v1_7_repo_cleanup_cohesion_check:main"
+zerogate-v1-7-reviewer-package = "zerogate_sim.v1_7_reviewer_reproduction_package:main"
+zerogate-v1-7-holdout-rung-summary = "zerogate_sim.v1_7_holdout_rung_summary:main"
+zerogate-v1-7-reviewer-reproduction-package = "zerogate_sim.v1_7_reviewer_reproduction_package:main"
 
 [tool.setuptools.packages.find]
 where = ["src"]

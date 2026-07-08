@@ -1,7 +1,7 @@
 # Current Evidence Index
 
 **Introduced:** `v1.6.24-alpha`  
-**Compacted:** `v1.7.8-alpha`  
+**Compacted:** `v1.7.9-alpha`  
 **Purpose:** name the canonical current evidence surface without forcing the README to carry every historical report.
 
 Native witness remains:
@@ -47,6 +47,7 @@ final false-one crowns = 0
 | fresh holdout challenge | `v1.7.6-alpha` | fresh seeds / weather ladder / evaluator | witness | CI guards contract, not heavy runs |
 | anti-tautology / role-dependence check | `v1.7.7-alpha` | post-holdout audit | witness | no core closeout |
 | repo cleanup / cohesion check | `v1.7.8-alpha` | public surface repair | hygiene | no new science crown |
+| reviewer start here / reproduction package | `v1.7.9-alpha` | reviewer path and separated rung reproduction package | packaging | no core-question closeout |
 
 ## Historical evidence anchors
 
@@ -65,7 +66,7 @@ The latest local v1.7 holdout handoff snapshot is:
 | deep81 | 1,950 | 3,012 | 9 | 120 | 126 | 807 | 0 |
 | wide243 | 9,417 | 14,058 | 21 | 465 | 612 | 3,543 | 0 |
 
-This snapshot is not yet the reviewer reproduction package. It is current evidence pressure for the next packaging gate.
+This snapshot is now referenced by the v1.7.9 reviewer reproduction package. It is still not core-question closeout.
 
 ## Not current evidence
 

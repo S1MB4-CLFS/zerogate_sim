@@ -1,6 +1,6 @@
 # ZeroGateSim Roadmap
 
-**Current line:** `v1.7.8-alpha` — Repo Cleanup / Cohesion Check  
+**Current line:** `v1.7.9-alpha` — Reviewer Start Here / Reproduction Package  
 **Release posture:** public research-alpha / controlled synthetic-field experiment line
 
 ZeroGateSim now has a repaired Four Gates evidence path. The older generated toy-field proof record remains preserved in the history vault, not on the active claim surface. The history vault keeps what the project was; the README shows what the project is; this roadmap shows what still has to be earned.
@@ -58,7 +58,8 @@ C_Z = min(D, P, R, B)
 | `v1.7.5` masked role-dependence audit | complete | masked numeric visibility is locked before fresh holdout; not role-blind discovery |
 | `v1.7.6` fresh holdout synthetic-field challenge | complete | fresh seeds, held-out variants, controlled weather shifts, candidate-name masking, and pre-frozen manifests are locked before post-holdout audit |
 | `v1.7.7` anti-tautology audit / role-dependence check | complete | post-holdout result is checked for non-vacuity, non-dead-safe behavior, candidate-name masking, role-dependence pressure, and bounded translation before reviewer packaging |
-| `v1.7.8` repo cleanup / cohesion check | current | README, evidence index, release spine, front-page routes, and audit paths are cleaned before reviewer packaging |
+| `v1.7.8` repo cleanup / cohesion check | complete | README, evidence index, release spine, front-page routes, and audit paths are cleaned before reviewer packaging |
+| `v1.7.9` reviewer start here / reproduction package | current | reviewer-facing path, expected outputs, strict handoff layers, and separated rung reproduction are packaged before closeout |
 
 ## Locked v1.6 closeout route
 
@@ -205,8 +206,8 @@ The core question is answered in full only if all of these gates pass.
 | `v1.7.5-alpha` | Masked Role-Dependence Audit | complete; numeric witness pattern remains visible when direct role labels are masked | lanes only exist because labels say they exist |
 | `v1.7.6-alpha` | Fresh Holdout Synthetic-Field Challenge | complete; holdout design, weather ladder, candidate-name masking, and pre-frozen expected-output manifest are locked before post-holdout audit | result only survives the known reference profile |
 | `v1.7.7-alpha` | Anti-Tautology Audit / Role-Dependence Check | complete; post-holdout evidence is checked for tautology, role/name leakage, dead-safe refusal, vacuity, and bounded claim translation | audit passes only because labels or definitions bake in success |
-| `v1.7.8-alpha` | Repo Cleanup / Cohesion Check | current; README, evidence index, front-page routes, anti-tautology path, version truth, and recent history are made coherent | the repo remains technically correct but publicly hard to inspect |
-| `v1.7.9-alpha` | Reviewer Start Here / Reproduction Package | cold reviewer can understand the question, witness, lane grammar, falsifiers, small reproduction path, and forbidden claims | project still requires private explanation to understand why the result matters |
+| `v1.7.8-alpha` | Repo Cleanup / Cohesion Check | complete; README, evidence index, front-page routes, anti-tautology path, version truth, and recent history are made coherent | the repo remains technically correct but publicly hard to inspect |
+| `v1.7.9-alpha` | Reviewer Start Here / Reproduction Package | current; reviewer path, separated rung commands, expected outputs, and handoff manifest are packaged | the evidence remains local but not reproducible/readable by a cold reviewer |
 | `v1.7.10-alpha` | Core Question Closeout | closeout sentence matches the evidence exactly and decides `+1`, `0`, or `-1` | closeout sentence is stronger than the evidence |
 
 ### v1.7.0-alpha — Operational Claim Contract
@@ -537,35 +538,48 @@ version truth conflicts with roadmap,
 or any wording claims role-blind, physics, cosmology, or observed-universe proof.
 ```
 
-## v1.7.8-alpha current note
+## v1.7.8-alpha note
 
-`v1.7.8-alpha` preserves `C_Z = min(D, P, R, B)`, adds no new evidence crown, does not start manuscript v2, and prepares `v1.7.9-alpha` Reviewer Start Here / Reproduction Package. It moves long evidence/history lists out of the README, puts the latest holdout snapshot and anti-tautology path on the front page, and makes the repo surfaces coherent before reviewer packaging.
+`v1.7.8-alpha` preserved `C_Z = min(D, P, R, B)`, added no new evidence crown, did not start manuscript v2, and prepared `v1.7.9-alpha` Reviewer Start Here / Reproduction Package. It moves long evidence/history lists out of the README, puts the latest holdout snapshot and anti-tautology path on the front page, and makes the repo surfaces coherent before reviewer packaging.
 
 ### v1.7.9-alpha — Reviewer Start Here / Reproduction Package
 
-`v1.7` must include a narrow reader door. The evidence cannot require a reviewer to wander the entire repo cathedral with a candle and a sandwich.
+`v1.7.9-alpha` packages the v1.7 evidence path for a cold reviewer. It is a reproduction/readability gate, not core-question closeout.
 
 Expected artifacts:
 
 ```text
 REVIEWER_START_HERE.md
-docs/v1_7_minimal_reproduction.md
+docs/v1_7_reviewer_reproduction_package.md
+docs/v1_7_reproduction_commands.md
 docs/v1_7_expected_outputs.md
-docs/v1_7_claim_boundary_card.md
 docs/v1_7_evidence_manifest.md
-docs/v1_7_holdout_output_structure.md
-scripts/run_v1_7_small_reproduction.ps1
-tests/test_v1_7_reviewer_path.py
+docs/release_notes/v1_7_9_alpha.md
+tests/test_v1_7_reviewer_reproduction_package.py
 ```
 
-`v1.7.9-alpha` must package the output in a human-readable shape:
+Required result:
 
 ```text
-full_output/
-compressed_summary/
-visuals/
-machine/
-handoff/
+triad27, deep81, and wide243 remain separate reproducible rungs; each rung keeps full output report, compressed summary, visual/top card, evaluator output, and strict handoff expectations. The combined index is navigation only.
+```
+
+## v1.7.9-alpha current note
+
+`v1.7.9-alpha` preserves `C_Z = min(D, P, R, B)`, adds no new science crown, does not start manuscript v2, and prepares `v1.7.10-alpha` Core Question Closeout. It creates the reviewer start page, reproduction command map, expected output map, evidence manifest, claim boundary card, and package CLI. It resists all-weather one-shot testing as the first path.
+
+Current requirement:
+
+```text
+smoke -> triad27 -> inspect -> deep81 -> inspect -> wide243 -> inspect -> combined package -> v1.7.10 closeout
+```
+
+The combined package is a navigation layer only. It must not replace the separate rung records.
+
+Stop condition:
+
+```text
+reviewer path is hidden, reproduction commands are all-in-one only, expected outputs are unclear, or the package implies core-question closeout before v1.7.10.
 ```
 
 The assistant handoff should carry both the complete system output report and the compressed reviewer state. Future display work may render these files in a more universal visual layer, but that display layer is not part of the scientific claim.

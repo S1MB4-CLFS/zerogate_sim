@@ -1,9 +1,9 @@
 # Version Truth
 
-**Status:** README overflow moved here in `v1.6.9-alpha`; current spine advanced in `v1.7.8-alpha`  
+**Status:** README overflow moved here in `v1.6.9-alpha`; current spine advanced in `v1.7.9-alpha`  
 **Purpose:** preserve the release spine and recent checkpoints without forcing the README to open with a wall of version bookkeeping.
 
-The active public line is now `v1.7.8-alpha` — Repo Cleanup / Cohesion Check.
+The active public line is now `v1.7.9-alpha` — Reviewer Start Here / Reproduction Package.
 
 ## Release spine
 
@@ -38,7 +38,8 @@ The active public line is now `v1.7.8-alpha` — Repo Cleanup / Cohesion Check.
 - `v1.7.5-alpha` — Masked Role-Dependence Audit: locks masked numeric visibility and role-dependence pressure before fresh holdout.
 - `v1.7.6-alpha` — Fresh Holdout Synthetic-Field Challenge: locks fresh holdout design, weather ladder, candidate-name masking, and pre-frozen expected-output manifests before post-holdout audit.
 - `v1.7.7-alpha` — Anti-Tautology Audit / Role-Dependence Check: audits the fresh holdout ladder against pre-registration, non-vacuity, positive/negative controls, label leakage, role-dependence, and bounded claim translation before reviewer packaging.
-- `v1.7.8-alpha` — Repo Cleanup / Cohesion Check: moves long evidence lists out of README, exposes the latest holdout snapshot and anti-tautology path on the front page, and shifts reviewer packaging to `v1.7.9-alpha` with closeout at `v1.7.10-alpha`.
+- `v1.7.8-alpha` — Repo Cleanup / Cohesion Check: moved long evidence lists out of README, exposed the latest holdout snapshot and anti-tautology path on the front page, and shifted reviewer packaging to `v1.7.9-alpha` with closeout at `v1.7.10-alpha`.
+- `v1.7.9-alpha` — Reviewer Start Here / Reproduction Package: adds the reviewer start page, reproduction command map, expected output map, evidence manifest, and package CLI while keeping closeout at `v1.7.10-alpha`.
 
 ## Recent checkpoints
 
@@ -207,3 +208,7 @@ C_Z = min(D, P, R, B)
 ## v1.7.8-alpha note
 
 `v1.7.8-alpha` is the Repo Cleanup / Cohesion Check gate. It preserves `C_Z = min(D, P, R, B)`, does not start manuscript v2, does not upload to Zenodo, does not claim role-blind discovery, and does not close the core question. It moves detailed evidence state, recent native evidence history, and front-page routing into dedicated docs; it puts the latest holdout snapshot and anti-tautology path on the README front page; it moves reviewer packaging to `v1.7.9-alpha` and core question closeout to `v1.7.10-alpha`.
+
+## v1.7.9-alpha note
+
+`v1.7.9-alpha` is the Reviewer Start Here / Reproduction Package gate. It preserves `C_Z = min(D, P, R, B)`, does not start manuscript v2, does not upload to Zenodo, does not claim role-blind discovery, and does not close the core question. It packages the separated rung reproduction rhythm, expected output layers, strict handoff manifest, and reviewer start path before `v1.7.10-alpha` closeout.

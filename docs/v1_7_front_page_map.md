@@ -1,6 +1,6 @@
 # v1.7 Front Page Map
 
-**Introduced:** `v1.7.8-alpha`  
+**Introduced:** `v1.7.8-alpha`; reviewer path added in `v1.7.9-alpha`  
 **Purpose:** explain what belongs on the README front page and what belongs behind links.
 
 The README is not the evidence vault. It is the door.
@@ -10,7 +10,7 @@ The README is not the evidence vault. It is the door.
 README should teach before it displays evidence. A cold reader should meet the project before they meet the results:
 
 ```text
-identity -> why it exists -> core theory -> native math -> software mechanism -> current route -> latest evidence cards -> inspection paths
+identity -> core theory -> why this exists -> software mechanism -> visual spine -> native math -> current route -> latest evidence cards -> reviewer package -> inspection paths
 ```
 
 The latest 27/81/243 cards are front-page material, but they must not appear before the reader understands what `earned-one`, `raw expression pressure`, relation debt, return debt, and false-one pressure mean.
@@ -78,3 +78,7 @@ Required front-page visual cards:
 - `docs/assets/v1_7_6_deep81_holdout_card.svg`
 - `docs/assets/v1_7_6_wide243_holdout_card.svg`
 - `docs/assets/v1_7_6_holdout_total_card.svg`
+
+## v1.7.9 reviewer path addition
+
+The README now links `REVIEWER_START_HERE.md`, `docs/v1_7_minimal_reproduction.md`, `docs/v1_7_expected_outputs.md`, `docs/v1_7_claim_boundary_card.md`, and `docs/v1_7_evidence_manifest.md` after the current route and before the latest evidence snapshot. The route remains human-first: mechanism before results, package before closeout.

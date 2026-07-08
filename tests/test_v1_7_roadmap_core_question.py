@@ -35,7 +35,7 @@ def test_v1_7_roadmap_names_all_answer_gates_and_closeout() -> None:
         "Reviewer path",
         "v1.7.7-alpha",
         "Anti-Tautology Audit / Role-Dependence Check",
-        "v1.7.8-alpha",
+        "v1.7.9-alpha",
         "Repo Cleanup / Cohesion Check",
         "v1.7.9-alpha",
         "Reviewer Start Here / Reproduction Package",

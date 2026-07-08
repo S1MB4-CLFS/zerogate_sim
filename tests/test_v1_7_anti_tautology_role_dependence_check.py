@@ -207,8 +207,8 @@ def test_v1_7_7_public_surfaces_and_version_truth() -> None:
     schema_doc = read("docs/v1_7_post_holdout_audit_schema.md")
     release = read("docs/release_notes/v1_7_7_alpha.md")
 
-    assert "1.7.8-alpha" in read("src/zerogate_sim/__init__.py")
-    assert 'version = "1.7.8a0"' in read("pyproject.toml")
+    assert "1.7.9-alpha" in read("src/zerogate_sim/__init__.py")
+    assert 'version = "1.7.9a0"' in read("pyproject.toml")
     assert "zerogate-v1-7-anti-tautology-role-audit" in read("pyproject.toml")
 
     for text in [readme, roadmap, version_truth, evidence_index, audit_doc, routine_doc, schema_doc, release]:
@@ -221,6 +221,6 @@ def test_v1_7_7_public_surfaces_and_version_truth() -> None:
     assert "positive controls" in routine_doc
     assert "role_leakage_score" in schema_doc
     assert "no role-blind discovery claim" in release
-    assert "v1.7.8-alpha" in readme
-    assert "v1.7.8-alpha" in roadmap
+    assert "v1.7.9-alpha" in readme
+    assert "v1.7.9-alpha" in roadmap
     assert "v1.7.9-alpha" in roadmap
