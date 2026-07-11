@@ -59,8 +59,11 @@ def test_manuscript_v2_hold_is_before_v1_8_repair_and_is_not_software_v2_0() -> 
 
 def test_later_roadmap_keeps_role_blind_and_external_claims_bounded() -> None:
     roadmap = read("ROADMAP.md")
-    assert "role-stripped features -> transparent score -> baseline/falsifier -> holdout -> maybe shadow closeout" in roadmap
-    assert "Never skip from score to discovery." in roadmap
+    history = read("docs/history_vault/v1_7_authority_map.md")
+    historical_route = "role-stripped features -> transparent score -> baseline/falsifier -> holdout -> maybe shadow closeout"
+    assert historical_route not in roadmap
+    assert historical_route in history
+    assert "old v1.9 role-stripped plan is superseded" in roadmap
     assert "Stable external-review release package" in roadmap
     assert "Permanent HOLD / RESIST lanes" in roadmap
     assert "observed-universe bridge" in roadmap

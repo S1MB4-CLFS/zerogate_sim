@@ -42,7 +42,9 @@ That sentence is **not** crowned by v1.6 alone. It is allowed into v1.7 as the c
 - Latent overcrown did not reproduce on fresh seeds and must not be overstated.
 - Some debt candidate families were inactive.
 - The shadow route remains historical diagnostic HOLD.
-- The current Zenodo manuscript remains a historical first-research-alpha artifact; full v2 paper work waits until v1.7 succeeds.
+- The Zenodo manuscript remains a historical first-research-alpha artifact.
+  The old condition “wait until v1.7 succeeds” is superseded by v1.7.11
+  `0 / HOLD`; manuscript work now waits for the v1.8.4 empirical-readiness gate.
 - No physics, cosmology, observed-universe, spacetime-metric, quantum-gravity, or role-blind discovery claim is made.
 
 ## Allowed next gate

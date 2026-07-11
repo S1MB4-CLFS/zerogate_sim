@@ -60,8 +60,6 @@ def test_v1_6_27_public_surfaces_and_route() -> None:
     version_truth = read("docs/version_truth.md")
     doc = read("docs/manuscript_correction_package.md")
     release = read("docs/release_notes/v1_6_28_alpha.md")
-    assert "1.7.11-alpha" in read("src/zerogate_sim/__init__.py")
-    assert 'version = "1.7.11a0"' in read("pyproject.toml")
     for text in [readme, roadmap, version_truth, doc, release]:
         assert "v1.6.28-alpha" in text
         assert "Manuscript Correction Package" in text or "manuscript correction package" in text

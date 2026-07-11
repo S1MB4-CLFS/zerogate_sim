@@ -8,10 +8,16 @@ Original pre-simulation drafts belong here. Preserve them as historical trace. D
 
 ## `zenodo_ready/`
 
-Post-test manuscripts belong here once the repo is public and citable.
+This is a historical manuscript scaffold, not a current writing authorization.
+Public/citable/release-tagged status is insufficient. Positive manuscript v2
+work begins only after the
+[`empirical-readiness gate`](../manuscript_v2_empirical_readiness_gate.md)
+receives a valid v1.8.4 `SUPPORTED_BOUNDED` closeout.
 
 Recommended next manuscript line:
 
 **Zero-Gate Dimensional Genesis: Simulation-Supported Foundation Edition**
 
-The post-test paper should state clearly that the v1.0-alpha result is a toy-field proof-of-concept, not proof of physical cosmology.
+The title and claim are placeholders until that gate opens. `HOLD` or
+`INVALID_EVIDENCE` authorizes no manuscript; `FALSIFIED` requires a separately
+authorized negative/correction route.

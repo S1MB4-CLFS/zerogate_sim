@@ -1,7 +1,10 @@
-# Reviewer Start Here — ZeroGateSim v1.7.11-alpha
+# Reviewer Start Here — ZeroGateSim
 
-**Current line:** `v1.7.11-alpha` — Evidence Integrity Correction
-**Decision:** `0 / HOLD`
+**Current development line:** `v1.8.0-alpha` — Observable Schema and Label Firewall
+
+**Scientific authority:** `v1.7.11-alpha` — Evidence Integrity Correction
+
+**Scientific decision:** `0 / HOLD`
 **Native witness:** `C_Z = min(D, P, R, B)`
 **Boundary:** controlled synthetic-field research software only.
 
@@ -14,6 +17,7 @@ Read in this order:
 
 ```text
 README.md
+-> docs/v1_8_observable_schema_label_firewall.md
 -> docs/v1_7_11_evidence_integrity_correction.md
 -> docs/v1_7_claim_boundary_card.md
 -> docs/v1_7_latest_holdout_snapshot.md
@@ -35,6 +39,11 @@ They do not yet:
 - lineage is emitted beside the final verdict rather than consumed by it.
 
 `v1.7.11-alpha` therefore reopens the core question at `0 / HOLD`.
+
+`v1.8.0-alpha` repairs the callback-argument/schema and local hash-integrity
+boundary and is locally green. It does not change that scientific answer: its
+scorer is a synthetic canary, no scientific thresholds are selected, and no
+frozen holdout is revealed.
 
 ## Small software reproduction
 

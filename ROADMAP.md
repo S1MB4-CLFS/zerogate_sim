@@ -1,7 +1,12 @@
 # ZeroGateSim Roadmap
 
-**Current line:** `v1.7.11-alpha` — Evidence Integrity Correction
-**Release posture:** public research-alpha / controlled synthetic-field experiment line
+**Current development line:** `v1.8.0-alpha` — Observable Schema and Label Firewall
+
+**Latest released scientific authority:** `v1.7.11-alpha` — Evidence Integrity Correction
+
+**Scientific decision:** `0 / HOLD`
+
+**Release posture:** local development checkpoint; public research-alpha / controlled synthetic-field experiment line
 
 ZeroGateSim is correcting its Four Gates evidence path. The older generated toy-field proof record remains preserved in the history vault. `v1.7.10-alpha` remains preserved history, but its active `+1` authority is superseded: zero false crowns were construction-bound and the weather rungs were pooled despite nesting. The current decision is `0 / HOLD`.
 
@@ -63,6 +68,7 @@ C_Z = min(D, P, R, B)
 | `v1.7.9` reviewer start here / reproduction package | complete | reviewer-facing path, expected outputs, strict handoff layers, and separated rung reproduction are packaged before closeout |
 | `v1.7.10` core question closeout | historical / superseded | reproducible release history; pooled totals and zero false crowns do not establish blind empirical discrimination |
 | `v1.7.11` evidence integrity correction | current `0 / HOLD` | atomic overlap, denominators, rates, fail-closed provenance, and construction-bound demotion |
+| `v1.8.0` observable schema and label firewall | local software green; unreleased | callback receives only seven observables; hash-bound predictions and split artifacts are checked before label evaluation; no scientific scorer or new evidence crown |
 
 ## Locked v1.6 closeout route
 
@@ -130,7 +136,7 @@ No new native gate was introduced in these steps; the native witness remains `C_
 
 ## v1.6.27-alpha note
 
-`v1.6.27-alpha` adds the Manuscript Correction Package. It preserves `C_Z = min(D, P, R, B)`, does not upload to Zenodo, does not revive shadow, and does not claim observed-universe proof. It prepares the future v2 manuscript outline, section patch map, claim lane register, canonical evidence table, and later Zenodo new-version plan. The current Zenodo paper remains the historical first-research-alpha artifact; full v2 paper work waits until v1.7 succeeds.
+`v1.6.27-alpha` added the historical Manuscript Correction Package. It preserved `C_Z = min(D, P, R, B)`, did not upload to Zenodo, did not revive shadow, and did not claim observed-universe proof. Its original plan assumed v1.7 could open full v2 paper work; v1.7.11 superseded that assumption. Manuscript work now waits for the explicit v1.8.4 empirical-readiness gate.
 
 ## v1.6.28-alpha note
 
@@ -622,7 +628,7 @@ Closeout sentence:
 
 > Historical statement only; not the current project decision.
 
-## v1.7.11-alpha current note
+## v1.7.11-alpha scientific-authority note
 
 `v1.7.11-alpha` is the Evidence Integrity Correction. It preserves `C_Z = min(D, P, R, B)`, reopens the core question at `0 / HOLD`, and adds executable atomic overlap, source-hash, denominator, rate, and nested-union accounting. It does not rewrite the scientific mechanism.
 
@@ -639,8 +645,8 @@ Final summaries must equal typed gate-row recomputation; caller-selected test
 contracts cannot issue authoritative unique-union counts.
 
 Manuscript v2, DTA transfer, scientific thresholds, frozen blind holdout, and
-Zenodo remain on HOLD. A software v1.7.11 prerelease may proceed only under
-separately granted release authority; it does not promote the scientific claim.
+Zenodo remain on HOLD. The released v1.7.11 software state does not promote the
+scientific claim; v1.8.0 remains an unreleased local development checkpoint.
 
 ## Manuscript v2 upgrade gate — HOLD
 
@@ -648,7 +654,13 @@ The premise for manuscript promotion is no longer met. Do not convert the constr
 
 This is **manuscript v2**, not software `v2.0`. Historical v1.7.10 decision logic would have opened it after a bounded `+1`; v1.7.11 withdraws that permission.
 
-Future prerequisite: only a role-free empirical closeout may reopen manuscript work. If that happens, required content includes:
+Future prerequisite: only a valid v1.8.4 role-free empirical closeout may
+reopen manuscript work. Positive manuscript v2 prose begins only after an
+artifact-generated `SUPPORTED_BOUNDED` result passes the complete
+[`manuscript v2 empirical-readiness gate`](docs/manuscript_v2_empirical_readiness_gate.md).
+`HOLD` and `INVALID_EVIDENCE` authorize no manuscript. A valid `FALSIFIED`
+result may support a separately authorized negative/correction paper, but not
+the positive v2 claim. If the positive route opens, required content includes:
 
 ```text
 historical first-research-alpha lineage
@@ -690,15 +702,37 @@ The current `0 / HOLD` therefore opens repair, not generalization.
 
 > Can a frozen role-free witness discriminate the defined temporal-relation structures without labels, semantic proxies, nested-count inflation, or dead-safe refusal?
 
-Projected line:
+Implemented/current line:
 
 | version | role | pass condition |
 |---|---|---|
-| `v1.8.0-alpha` | observable schema and label firewall | scorer cannot receive labels, semantic proxies, or legacy role-derived outputs; predictions hash before label join |
-| `v1.8.1-alpha` | exact implemented lineage path | cycle/return-aligned lineage is a required verdict input and ablation changes the claimed lane |
-| `v1.8.2-alpha` | frozen blind witness and Anti-Tautology Audit v2 | injected false crowns are counted; always-HOLD and simple baselines fail |
-| `v1.8.3-alpha` | unseen generator-family holdout | one-shot frozen evaluation on families not used for tuning; duplicates across splits blocked |
-| `v1.8.4-alpha` | empirical closeout | artifact-generated `SUPPORTED_BOUNDED`, `HOLD`, `FALSIFIED`, or `INVALID_EVIDENCE` decision |
+| `v1.8.0-alpha` | observable schema and label firewall | **local green**: exact seven-field allowlist; identifiers outside callback; receipt-bound predictions frozen before label join; forbidden-field, permutation, identifier-leak, and failure-capability tests pass |
+| `v1.8.1-alpha` | lineage-bearing predictor package and development-only preregistration | an observable-only lineage path is implemented exactly, its ablation changes the claimed lane, candidate scoring remains development-only, and threshold choices require a new checkpoint |
+| `v1.8.2-alpha` | failure-capable development evaluation and baselines | selected scorer is compared against always-HOLD/CROWN/RESIST and simple baselines under locked development data; no frozen holdout labels are opened |
+| `v1.8.3-alpha` | unseen-generator holdout contract and prediction freeze | family separation and duplicate blocking are executable; scorer, thresholds, and predictions freeze before any held-out label join |
+| `v1.8.4-alpha` | one-pass label join and empirical closeout | artifact-generated `SUPPORTED_BOUNDED`, `HOLD`, `FALSIFIED`, or `INVALID_EVIDENCE` decision with uncertainty and full audit receipts |
+
+### v1.8.0-alpha checkpoint
+
+The seven permitted predictor values are `strength`, `distinction`, `polarity`,
+`relation`, `return_observed`, `echo_mimic_score`, and
+`observed_stability_score`. Labels, identifiers, scenario controls, legacy
+role-shaped aggregates, and derived verdict fields are forbidden. The local
+canary result is `LOCAL_GREEN_FIREWALL_ONLY`; scientific authority remains the
+v1.7.11 `0 / HOLD` decision.
+
+Stop here before:
+
+```text
+scientific scorer thresholds
+frozen holdout reveal
+DTA transfer or integration
+manuscript v2 prose
+merge, tag, push, PR, or release
+```
+
+This checkpoint is documented in
+[`docs/v1_8_observable_schema_label_firewall.md`](docs/v1_8_observable_schema_label_firewall.md).
 
 Strongest candidate claim after a future `SUPPORTED_BOUNDED` result:
 
@@ -708,37 +742,18 @@ Forbidden claim after `v1.8 +1`:
 
 > The system has solved unknown-field discovery.
 
-## v1.9 boundary — Role-Stripped / Role-Blind Candidate Line
+## v1.9 boundary — reserved after empirical closeout
 
-Historical plan: `v1.9` was the first line allowed to revisit role-stripped or role-blind language. The v1.7.11 correction moves the label firewall and frozen role-free witness into v1.8; the remaining v1.9 table is provisional and must be replanned after empirical closeout.
+The old v1.9 role-stripped plan is superseded by the v1.8 repair line and is
+preserved only in the
+[`v1.7 authority map`](docs/history_vault/v1_7_authority_map.md). Do not run a
+second role-blind program in parallel with v1.8.
 
-The required route is:
-
-```text
-role-stripped features -> transparent score -> baseline/falsifier -> holdout -> maybe shadow closeout
-```
-
-Never skip from score to discovery.
-
-Projected line:
-
-| version | role | pass condition |
-|---|---|---|
-| `v1.9.0-alpha` | role-stripped feature contract | features exclude direct role labels |
-| `v1.9.1-alpha` | transparent witness score | score explains its lane assignments |
-| `v1.9.2-alpha` | role-stripped baseline/falsifier audit | baselines cannot explain the result equally well |
-| `v1.9.3-alpha` | role-stripped holdout challenge | score survives held-out profiles |
-| `v1.9.4-alpha` | role-blind language closeout | decide whether any role-blind wording is earned |
-
-Allowed outcomes:
-
-```text
-+1 — limited role-stripped classification claim earned.
- 0 — diagnostic score useful but not discovery.
--1 — role-blind route demoted.
-```
-
-Even a `+1` here remains bounded unless later external evidence earns more.
+Only a valid v1.8.4 closeout may define v1.9. Its likely job is replication,
+transfer planning, and external-review hardening. `SUPPORTED_BOUNDED` does not
+automatically authorize DTA transfer; `HOLD` or `INVALID_EVIDENCE` keeps the
+scientific route closed; `FALSIFIED` requires repair or an explicitly
+authorized negative-result route.
 
 ## v2.0 boundary — Stable external-review release package
 
@@ -862,7 +877,7 @@ role-blind discovery before holdout
 new native gate
 literal force-engine interpretation of return
 private inspiration embedded in public schemas
-shadow-route revival before v1.9
+shadow-route revival without a newly authorized post-v1.8 evidence plan
 manuscript upload before software closeout
 ```
 
@@ -873,7 +888,7 @@ The forward route is:
 ```text
 v1.7 — evidence integrity correction; current answer 0 / HOLD
 manuscript v2 — HOLD until a future role-free empirical closeout earns revision
-v1.8 — build the label firewall, exact lineage path, frozen blind witness, and unseen-family holdout
+v1.8 — label firewall local green; next build exact lineage path, frozen blind witness, and unseen-family holdout
 v1.9 — reserve for replication/transfer planning after v1.8 empirical closeout
 v2.0 — stable external-review release package
 v2.1 — add-on manuscript / paper line for post-manuscript-v2 evidence

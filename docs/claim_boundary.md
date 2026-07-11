@@ -1,10 +1,13 @@
 # ZeroGateSim Claim Boundary
 
-**Current version:** `v1.7.11-alpha`
+**Current development version:** `v1.8.0-alpha`
+
+**Scientific authority:** `v1.7.11-alpha`
 
 **Decision:** `0 / HOLD`
 
-**Scientific status:** `HOLD_CONSTRUCTION_BOUND`
+**Scientific status:** `HOLD_CONSTRUCTION_BOUND`; v1.8 decision is
+`LOCAL_GREEN_FIREWALL_ONLY`
 
 ## Supported current claim
 
@@ -21,10 +24,11 @@ empirical discrimination.
 
 ## Current decision boundary
 
+ZeroGateSim v1.8.0 has implemented an observable-only boundary, prediction
+freeze, exact post-freeze join, and failure-capable synthetic evaluator.
 ZeroGateSim has not yet demonstrated:
 
-- a scorer isolated from truth roles, expected outcomes, or semantic labels;
-- the ability to expose and count an injected post-prediction false crown;
+- a scientific scorer that discriminates without truth roles, expected outcomes, semantic labels, or proxies;
 - manuscript lineage consumed by the final earned-one verdict;
 - independent generator-family validation;
 - usefulness or safety for Deep Temporal Affect;
@@ -56,7 +60,8 @@ Do not promote construction-bound output into inference.
 
 > ZeroGateSim currently reproduces role-aware lane partitioning in controlled
 > synthetic fields, while its core discrimination question remains at `0 / HOLD`
-> pending a frozen role-free witness.
+> pending a frozen role-free scientific witness; v1.8.0 supplies the label
+> firewall and failure-capable evaluator infrastructure only.
 
 ## DREED posture
 

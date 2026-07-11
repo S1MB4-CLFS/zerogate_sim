@@ -57,19 +57,41 @@ More access compresses mechanics; it does not collapse authority.
 
 ## Current corrective boundary
 
-`v1.7.11-alpha` is an Evidence Integrity Correction.
+`v1.8.0-alpha` is the Observable Schema and Label Firewall.
 
-- Preserve `v1.7.10-alpha` as historical release state.
-- Current scientific status is `0 / HOLD` (`HOLD_CONSTRUCTION_BOUND`), not a new `+1`.
-- The historical zero-false-crown result is construction-bound because the final
-  path branches on truth role.
-- Historical triad/deep/wide totals are nested arithmetic sums, not independent
-  pooled evidence.
-- Manuscript v2, DTA transfer, Zenodo, and scientific-threshold selection remain
-  on HOLD.
-- Do not alter `gates.py`, `earned_one.py`, or `final_output.py` in v1.7.11; this
-  version exposes and accounts for their current behavior. The role-free scorer
-  belongs to the next version boundary.
+- Preserve `v1.7.11-alpha` as the latest released evidence-integrity correction
+  and current scientific authority at `0 / HOLD`
+  (`HOLD_CONSTRUCTION_BOUND`).
+- Build an exact observable-only numeric schema. Unknown, semantic, identifier,
+  role, target, legacy verdict, and proxy fields fail closed.
+- Keep opaque join identifiers outside the predictor callback.
+- Freeze and hash predictions before any label join. Prediction and evaluation
+  live in separate modules and separately serialized artifacts.
+- Hash and parse the same immutable byte snapshot. Require both the expected
+  prediction receipt and expected split-manifest hash before evaluation;
+  the split manifest binds observables, join keys, and the label vault.
+- Treat predictor-contract hashes as caller declarations until a later package
+  binds code and configuration. In-process callbacks are not OS sandboxes.
+- Prove label-permutation and identifier-renaming invariance, tamper refusal,
+  row-order consistency, exact joins, and evaluator failure capability with
+  synthetic canaries only.
+- Select no new scientific scorer, score threshold, abstention rule, or holdout
+  criterion in v1.8.0.
+- Do not reveal or run a frozen empirical holdout, start manuscript v2 prose,
+  transfer into DTA, or alter `gates.py`, `earned_one.py`, or `final_output.py`.
+- Manuscript v2, DTA transfer, frozen holdout reveal, and scientific thresholds
+  remain explicit HOLD/checkpoint lanes.
+
+Every version updates `README.md`, `ROADMAP.md`, `docs/version_truth.md`, current
+evidence surfaces, the claim boundary, release note, history pointer, and one
+central version-surface test.
+
+## Coding economics default
+
+Codex works through local green. At the checkpoint, prefer a manual handoff for
+CI review, PR merge, branch deletion, and optional release mechanics. Codex must
+provide exact commands or URLs and re-baseline after any manual code or evidence
+edit. Do not spend agent time polling CI unless explicitly requested.
 
 ## Authority
 

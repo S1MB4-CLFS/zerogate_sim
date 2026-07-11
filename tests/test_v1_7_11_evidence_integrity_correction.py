@@ -321,8 +321,6 @@ def test_source_order_cannot_change_unique_union(tmp_path: Path) -> None:
 
 
 def test_v1_7_11_public_contract_and_version_truth() -> None:
-    assert 'version = "1.7.11a0"' in (ROOT / "pyproject.toml").read_text(encoding="utf-8")
-    assert '__version__ = "1.7.11-alpha"' in (ROOT / "src/zerogate_sim/__init__.py").read_text(encoding="utf-8")
     agents = (ROOT / "AGENTS.md").read_text(encoding="utf-8")
     assert "HOLD_CONSTRUCTION_BOUND" in agents
     assert "Manuscript v2, DTA transfer" in agents

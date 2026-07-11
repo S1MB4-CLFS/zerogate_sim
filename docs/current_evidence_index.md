@@ -1,7 +1,10 @@
 # Current Evidence Index
 
-**Current line:** `v1.7.11-alpha` — Evidence Integrity Correction
-**Decision:** `0 / HOLD`
+**Current development line:** `v1.8.0-alpha` — Observable Schema and Label Firewall
+
+**Scientific authority:** `v1.7.11-alpha` — Evidence Integrity Correction
+
+**Scientific decision:** `0 / HOLD`
 **Native witness:** `C_Z = min(D, P, R, B)`
 
 ## Canonical current evidence surfaces
@@ -9,18 +12,20 @@
 This is the canonical current evidence index; historical packages remain named
 below so version tests cannot silently erase their route.
 
-1. [`v1_7_11_evidence_integrity_correction.md`](v1_7_11_evidence_integrity_correction.md) — current decision, atomic overlap, rates, and holds.
-2. [`current_evidence_state.md`](current_evidence_state.md) — compact current state.
-3. [`v1_7_latest_holdout_snapshot.md`](v1_7_latest_holdout_snapshot.md) — historical rung artifacts with corrected interpretation.
-4. [`../REVIEWER_START_HERE.md`](../REVIEWER_START_HERE.md) — cold-review route.
-5. [`version_truth.md`](version_truth.md) — release history and current authority.
+1. [`v1_8_observable_schema_label_firewall.md`](v1_8_observable_schema_label_firewall.md) — current software boundary and local-green evidence.
+2. [`v1_7_11_evidence_integrity_correction.md`](v1_7_11_evidence_integrity_correction.md) — current scientific decision, atomic overlap, rates, and holds.
+3. [`current_evidence_state.md`](current_evidence_state.md) — compact current state.
+4. [`v1_7_latest_holdout_snapshot.md`](v1_7_latest_holdout_snapshot.md) — historical rung artifacts with corrected interpretation.
+5. [`../REVIEWER_START_HERE.md`](../REVIEWER_START_HERE.md) — cold-review route.
+6. [`version_truth.md`](version_truth.md) — release history and current authority.
 
 ## Evidence authority
 
 | surface | version | current decision | caveat |
 |---|---|---|---|
 | Core Question Closeout | `v1.7.10-alpha` | historical / superseded | role-aware construction and nested pooled totals |
-| Evidence Integrity Correction | `v1.7.11-alpha` | `0 / HOLD` | accounting corrected; role-free witness not yet implemented |
+| Evidence Integrity Correction | `v1.7.11-alpha` | `0 / HOLD` | accounting corrected; role-free scientific scorer not yet implemented |
+| Observable Schema and Label Firewall | `v1.8.0-alpha` | local software green; science unchanged | exact boundary and failure-capable evaluator; no scientific scorer or holdout result |
 
 ## Nested-safe snapshot
 

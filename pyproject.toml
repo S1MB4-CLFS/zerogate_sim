@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "zerogate-sim"
-version = "1.7.11a0"
+version = "1.8.0a0"
 description = "Toy simulation framework for zero-gate dimensional emergence."
 readme = "README.md"
 requires-python = ">=3.12"
@@ -84,6 +84,7 @@ zerogate-v1-7-holdout-rung-summary = "zerogate_sim.v1_7_holdout_rung_summary:mai
 zerogate-v1-7-reviewer-reproduction-package = "zerogate_sim.v1_7_reviewer_reproduction_package:main"
 zerogate-v1-7-core-question-closeout = "zerogate_sim.v1_7_core_question_closeout:main"
 zerogate-v1-7-evidence-integrity-correction = "zerogate_sim.v1_7_evidence_integrity_correction:main"
+zerogate-v1-8-observable-schema-label-firewall = "zerogate_sim.v1_8_observable_schema_label_firewall:main"
 
 [tool.setuptools.packages.find]
 where = ["src"]
