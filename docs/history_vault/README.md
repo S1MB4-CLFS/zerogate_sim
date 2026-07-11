@@ -14,7 +14,10 @@ The vault is not the active claim surface. It is the historical witness shelf.
 
 ## Active boundary
 
-The active claim route after `v1.6.23-alpha` is the Four Gates controlled synthetic-field evidence line. Historical material can be cited for lineage, but it should not crowd the README top surface or masquerade as the current proof state.
+The current development route is the v1.8 role-free witness repair line. The
+latest released scientific authority is v1.7.11 at `0 / HOLD`. Historical
+material can be cited for lineage, but it must not crowd the README top surface
+or masquerade as current evidence.
 
 ## Vault index
 
@@ -23,3 +26,4 @@ The active claim route after `v1.6.23-alpha` is the Four Gates controlled synthe
 - [`README_surface_v1_6_22_snapshot.md`](README_surface_v1_6_22_snapshot.md) — README snapshot before v1.6.23 cleanup.
 - [`ROADMAP_v1_6_22_snapshot.md`](ROADMAP_v1_6_22_snapshot.md) — ROADMAP snapshot before v1.6.23 cleanup.
 - [`runs_history_vault_plan.md`](runs_history_vault_plan.md) — local `runs/` keep/archive plan and ZIP command pattern.
+- [`v1_7_authority_map.md`](v1_7_authority_map.md) — v1.7 historical/current authority map and superseded v1.9 plan.

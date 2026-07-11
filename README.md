@@ -1,7 +1,10 @@
 # ZeroGateSim
 
+**Current development line:** `v1.8.0-alpha` — Observable Schema and Label Firewall
+
 **Current public line:** `v1.7.11-alpha` — Evidence Integrity Correction
-**Status:** `0 / HOLD`; speculative research software / controlled synthetic-field experiment line
+
+**Scientific authority:** `v1.7.11-alpha`, `0 / HOLD`; speculative research software / controlled synthetic-field experiment line
 **Working identity:** Four Gates of Becoming witness simulator  
 **Core question:** can a final trinary witness distinguish earned-one from raw expression pressure, latent overcrown, relation/return debt, and false-one pressure under controlled synthetic-field adversarial weather?
 
@@ -16,6 +19,13 @@ It tests a narrower software-theory claim:
 > The legacy role-aware controlled harness reproducibly partitions its designed earned, debt, and false-pressure lanes. Whether a frozen role-free witness can discriminate those structures remains open.
 
 `v1.7.11-alpha` reopens the v1.7 core question at `0 / HOLD`. `v1.7.10-alpha` remains reproducible history, but its zero-false-crown result is construction-bound and its pooled rung totals are nested arithmetic sums, not independent empirical evidence. Read the [Evidence Integrity Correction](docs/v1_7_11_evidence_integrity_correction.md).
+
+`v1.8.0-alpha` is a local software repair checkpoint, not a new scientific
+result. It defines an exact observable-only input surface, freezes and hashes
+predictions before label join, and uses synthetic invariance tests to keep
+prediction bytes unchanged under label permutation and identifier renaming.
+Separate evaluator canaries count injected false crowns and reject constant
+refusal. Read the [Observable Schema and Label Firewall](docs/v1_8_observable_schema_label_firewall.md).
 
 The corrected accounting pass is bound to five exact candidate corpora, the
 27/81/243 scenario grids, and seeds 18-26 under a recorded contract hash. Final
@@ -216,8 +226,9 @@ v1.7.0-alpha core question contract complete
 -> v1.7.8-alpha repo cleanup / cohesion check complete
 -> v1.7.9-alpha reviewer start here / reproduction package complete
 -> v1.7.10-alpha historical core question closeout superseded
--> v1.7.11-alpha evidence integrity correction current: 0 / HOLD
--> v1.8.0-alpha observable schema and label firewall next
+-> v1.7.11-alpha evidence integrity correction: released scientific authority, 0 / HOLD
+-> v1.8.0-alpha observable schema and label firewall: local software checkpoint green
+-> CHECKPOINT before scientific scorer thresholds or any holdout reveal
 ```
 
 The shadow route is **not** the active route now. It is preserved as historical diagnostic work in the [history vault](docs/history_vault/README.md).
@@ -308,7 +319,8 @@ role-free scorer = not implemented
 lineage in final verdict = not implemented
 independent generator validation = not done
 manuscript v2 / DTA transfer = HOLD
-next movement = v1.8.0 observable schema and label firewall
+v1.8.0 movement = callback-argument/schema and hash-integrity firewall local green
+next checkpoint = v1.8.1 lineage-bearing predictor design before threshold selection
 ```
 
 Read:
@@ -316,6 +328,45 @@ Read:
 - [`docs/v1_7_11_evidence_integrity_correction.md`](docs/v1_7_11_evidence_integrity_correction.md)
 - [`docs/v1_7_core_question_closeout.md`](docs/v1_7_core_question_closeout.md) — historical closeout, superseded.
 - [`docs/v1_7_go_no_go_for_manuscript_v2.md`](docs/v1_7_go_no_go_for_manuscript_v2.md) — current decision is HOLD.
+
+## Observable Schema and Label Firewall
+
+`v1.8.0-alpha` closes the first repair gate without pretending to close the
+scientific question. The predictor receives exactly these seven finite values:
+
+```text
+strength
+distinction
+polarity
+relation
+return_observed
+echo_mimic_score
+observed_stability_score
+```
+
+Every missing or extra field fails closed. Source identifiers and hash-bound
+join identifiers remain outside the callback. Prediction bytes, their manifest,
+and a pre-label receipt are written before the separate evaluation path may
+load the label artifact. Label permutation and identifier renaming leave
+prediction bytes invariant; deliberate false crowns and constant predictors
+remain visible failures.
+
+This earns only `LOCAL_GREEN_FIREWALL_ONLY`. It does not supply a scientific
+scorer, choose thresholds, reveal a frozen holdout, validate an unseen
+generator family, start manuscript v2, or authorize DTA transfer.
+
+Run the synthetic infrastructure canary:
+
+```powershell
+.\.venv\Scripts\python.exe -m zerogate_sim.v1_8_observable_schema_label_firewall `
+  --out runs\v1_8_observable_schema_label_firewall_local
+```
+
+Read:
+
+- [`docs/v1_8_observable_schema_label_firewall.md`](docs/v1_8_observable_schema_label_firewall.md) — exact schema, freeze order, adversarial controls, and limitations.
+- [`docs/manuscript_v2_empirical_readiness_gate.md`](docs/manuscript_v2_empirical_readiness_gate.md) — the evidence gate that must be earned before manuscript prose begins.
+- [`docs/UNIVERSAL_CODING_WORKFLOW_v3_CODEX_PROJECT.md`](docs/UNIVERSAL_CODING_WORKFLOW_v3_CODEX_PROJECT.md) — includes the permanent Coding Economics split between agent work and safe manual work.
 
 ## Inspection map
 
@@ -329,7 +380,7 @@ The README keeps the project face, the math, and the newest visual cards. Everyt
 - [`docs/v1_7_reviewer_evidence_manifest.md`](docs/v1_7_reviewer_evidence_manifest.md) — evidence path manifest.
 - [`docs/v1_7_reproduction_expected_outputs.md`](docs/v1_7_reproduction_expected_outputs.md) — output layer contract.
 
-### Current v1.7 state
+### Current scientific authority and v1.8 repair
 
 - [`docs/v1_7_11_evidence_integrity_correction.md`](docs/v1_7_11_evidence_integrity_correction.md) — current `0 / HOLD` decision and executable correction.
 - [`docs/current_evidence_state.md`](docs/current_evidence_state.md) — detailed v1.7 evidence state and boundaries.
@@ -349,6 +400,12 @@ The README keeps the project face, the math, and the newest visual cards. Everyt
 - [`docs/v1_7_expected_outputs.md`](docs/v1_7_expected_outputs.md) — expected output and handoff layers.
 - [`docs/v1_7_evidence_manifest.md`](docs/v1_7_evidence_manifest.md) — package evidence manifest.
 - [`docs/v1_7_claim_boundary_card.md`](docs/v1_7_claim_boundary_card.md) — current `0 / HOLD` claim boundary.
+
+### Current v1.8 software repair
+
+- [`docs/v1_8_observable_schema_label_firewall.md`](docs/v1_8_observable_schema_label_firewall.md) — local-green firewall contract and honest limits.
+- [`docs/manuscript_v2_empirical_readiness_gate.md`](docs/manuscript_v2_empirical_readiness_gate.md) — manuscript timing and decision gate.
+- [`docs/release_notes/v1_8_0_alpha.md`](docs/release_notes/v1_8_0_alpha.md) — version-local change record.
 
 ### Anti-tautology / role-dependence path
 
@@ -411,12 +468,12 @@ Long release and process lists live in dedicated files so the README begins with
 
 The detailed evidence state is now in [`docs/current_evidence_state.md`](docs/current_evidence_state.md). The recent native evidence history is in [`docs/recent_native_evidence_history.md`](docs/recent_native_evidence_history.md). Older proof and shadow history lives in the history vault. The controlled synthetic-field language boundary lives at [`docs/controlled_synthetic_field_language.md`](docs/controlled_synthetic_field_language.md).
 
-Current v1.7 front-page route preserves the v1.6 release spine as trace anchors, not as the main visual surface:
+The current front-page route preserves the v1.6/v1.7 release spine as trace anchors, not as the main visual surface:
 
 ```text
 anti-tautology audit complete -> reproduction command package complete -> manuscript correction package complete -> v1.6 closeout complete
 v1.6.14-alpha -> v1.6.15-alpha -> v1.6.16-alpha -> v1.6.17-alpha -> v1.6.18-alpha -> v1.6.19-alpha -> v1.6.20-alpha -> v1.6.21-alpha -> v1.6.22-alpha -> v1.6.23-alpha -> v1.6.24-alpha -> v1.6.25-alpha -> v1.6.26-alpha -> v1.6.27-alpha -> v1.6.28-alpha
-v1.7.0-alpha -> v1.7.1-alpha -> v1.7.2-alpha -> v1.7.3-alpha -> v1.7.4-alpha -> v1.7.5-alpha -> v1.7.6-alpha -> v1.7.7-alpha -> v1.7.8-alpha -> v1.7.9-alpha -> v1.7.10-alpha historical -> v1.7.11-alpha HOLD -> v1.8.0 label firewall
+v1.7.0-alpha -> v1.7.1-alpha -> v1.7.2-alpha -> v1.7.3-alpha -> v1.7.4-alpha -> v1.7.5-alpha -> v1.7.6-alpha -> v1.7.7-alpha -> v1.7.8-alpha -> v1.7.9-alpha -> v1.7.10-alpha historical -> v1.7.11-alpha HOLD -> v1.8.0 firewall local green -> threshold checkpoint
 ```
 
 Named recent gates remain inspectable:
@@ -531,10 +588,10 @@ Read the full boundary:
 
 Do not overwrite the original theory draft.
 
-The repo preserves two lanes:
+The repo preserves two lanes, both presently historical or gated:
 
 - [`docs/papers/history/`](docs/papers/history/) — original pre-simulation manuscript, preserved as historical trace.
-- [`docs/papers/zenodo_ready/`](docs/papers/zenodo_ready/) — later simulation-supported manuscript scaffold.
+- [`docs/papers/zenodo_ready/`](docs/papers/zenodo_ready/) — historical scaffold; manuscript v2 prose remains blocked by the empirical-readiness gate.
 
 This keeps the lineage honest:
 

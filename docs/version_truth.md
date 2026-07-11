@@ -1,9 +1,12 @@
 # Version Truth
 
-**Status:** README overflow moved here in `v1.6.9-alpha`; current spine corrected in `v1.7.11-alpha`
+**Status:** README overflow moved here in `v1.6.9-alpha`; development spine advanced in `v1.8.0-alpha`
 **Purpose:** preserve the release spine and recent checkpoints without forcing the README to open with a wall of version bookkeeping.
 
-The active public line is now `v1.7.11-alpha` — Evidence Integrity Correction, with the core question reopened at `0 / HOLD`.
+The current development line is `v1.8.0-alpha` — Observable Schema and Label
+Firewall. The latest merged release and scientific authority remain
+`v1.7.11-alpha` — Evidence Integrity Correction, with the core question at
+`0 / HOLD`.
 
 ## Release spine
 
@@ -42,6 +45,7 @@ The active public line is now `v1.7.11-alpha` — Evidence Integrity Correction,
 - `v1.7.9-alpha` — Reviewer Start Here / Reproduction Package: adds the reviewer start page, reproduction command map, expected output map, evidence manifest, and package CLI while keeping closeout at `v1.7.10-alpha`.
 - `v1.7.10-alpha` — Historical Core Question Closeout: recorded a bounded `+1` at release time; `v1.7.11-alpha` supersedes its current authority as construction-bound and withdraws the manuscript GO.
 - `v1.7.11-alpha` — Evidence Integrity Correction: preserves v1.7.10 as historical release state but supersedes its active `+1`; corrects nested-rung accounting, locks authority to five profiles / 27-81-243 scenarios / seeds 18-26 under a contract hash, recomputes summaries from typed gate rows, removes self-attested provenance from the current summary path, and holds manuscript v2 and DTA transfer.
+- `v1.8.0-alpha` — **unreleased development checkpoint**, Observable Schema and Label Firewall: introduces an exact seven-field observable contract, serializes join keys and labels as separate hash-bound artifacts, keeps identifiers out of the predictor callback, freezes prediction bytes and a receipt before label loading, and adds fail-closed leakage, permutation, join-integrity, and failure-capability tests. This is local software infrastructure only; v1.7.11 remains the scientific authority.
 
 ## Recent checkpoints
 
@@ -222,4 +226,21 @@ C_Z = min(D, P, R, B)
 
 ## v1.7.11-alpha note
 
-`v1.7.11-alpha` is the Evidence Integrity Correction. It preserves `C_Z = min(D, P, R, B)`, reopens the v1.7 core question at `0 / HOLD`, records 260,253 unique atomic cases rather than 375,921 nested representations, and marks zero final false crowns as construction-bound. Authority requires the exact five-profile, 27/81/243-scenario, seed-18-through-26 contract and typed gate-row recomputation. Manuscript v2, DTA transfer, scientific thresholds, frozen blind holdout, and Zenodo remain on HOLD. A separately authorized software prerelease does not promote those scientific lanes. The next coded boundary is `v1.8.0-alpha — Observable Schema and Label Firewall`.
+`v1.7.11-alpha` is the Evidence Integrity Correction. It preserves `C_Z = min(D, P, R, B)`, reopens the v1.7 core question at `0 / HOLD`, records 260,253 unique atomic cases rather than 375,921 nested representations, and marks zero final false crowns as construction-bound. Authority requires the exact five-profile, 27/81/243-scenario, seed-18-through-26 contract and typed gate-row recomputation. Manuscript v2, DTA transfer, scientific thresholds, frozen blind holdout, and Zenodo remain on HOLD. Its released software state does not promote those scientific lanes. The completed next development boundary is `v1.8.0-alpha — Observable Schema and Label Firewall`.
+
+## v1.8.0-alpha note
+
+`v1.8.0-alpha` is the Observable Schema and Label Firewall. It does not mutate
+`C_Z = min(D, P, R, B)` and does not implement a scientific scorer. It accepts
+only seven finite pre-verdict observables, keeps source/blind IDs outside the
+predictor callback, writes canonical prediction bytes plus a manifest and
+receipt, and requires the expected receipt hash before a separate module may
+load labels. Synthetic canaries demonstrate label-permutation and identifier
+invariance, exact join checks, visible false crowns, and rejection of
+always-HOLD/CROWN/RESIST. The decision is `LOCAL_GREEN_FIREWALL_ONLY`.
+Scientific thresholds, frozen holdout reveal, manuscript v2, DTA transfer, and
+release actions remain behind explicit checkpoints.
+
+The next proposed coded gate is `v1.8.1-alpha — Lineage-Bearing Predictor
+Package and Development-Only Preregistration`, with a checkpoint before any
+scientific threshold is selected.

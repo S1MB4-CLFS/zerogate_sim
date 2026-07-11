@@ -1,0 +1,80 @@
+v1.8.0-alpha Observable Schema and Label Firewall patch
+
+Operating protocol:
+- docs/UNIVERSAL_CODING_WORKFLOW_v3_CODEX_PROJECT.md
+- C:\dev\UNIVERSAL_CODING_WORKFLOW_v3_CODEX_PROJECT.md (workspace copy, byte-identical)
+- AGENTS.md
+- permanent Coding Economics and version-surface laws
+
+Implementation:
+- pyproject.toml
+- src/zerogate_sim/__init__.py
+- src/zerogate_sim/v1_8_observable_schema.py
+- src/zerogate_sim/v1_8_prediction_freeze.py
+- src/zerogate_sim/v1_8_label_join.py
+- src/zerogate_sim/v1_8_observable_schema_label_firewall.py
+- tests/test_v1_8_observable_schema_label_firewall.py
+- tests/test_version_surface_contract.py
+- historical tests: repeated package-version assertions removed; v1.8 routing
+  expectations updated without changing historical artifact assertions
+
+Public/version truth:
+- README.md
+- ROADMAP.md
+- REVIEWER_START_HERE.md
+- docs/version_truth.md
+- docs/current_evidence_state.md
+- docs/current_evidence_index.md
+- docs/claim_boundary.md
+- docs/recent_native_evidence_history.md
+- docs/v1_8_observable_schema_label_firewall.md
+- docs/release_notes/v1_8_0_alpha.md
+- docs/manuscript_v2_empirical_readiness_gate.md
+- docs/history_vault/v1_7_authority_map.md
+- docs/history_vault/README.md
+- docs/manuscript_correction_package.md
+- docs/v1_6_closeout_decision.md
+- docs/papers/README.md
+- docs/papers/zenodo_ready/README.md
+
+Executable boundary:
+- exact seven-field observable allowlist; unknown fields fail closed
+- identifiers and labels excluded from immutable callback arguments
+- observable, join-key, and label artifacts separately serialized and hash-bound
+- observable bytes snapshotted before callbacks and checked after callbacks
+- reverse-order repeat consistency rejects positional/state leakage
+- canonical predictions, manifest, and pre-label receipt
+- split manifest binds observable, join-key, and label-vault hashes
+- expected receipt and split-manifest hashes required for evaluation
+- verifier hashes and parses the same immutable byte snapshot
+- exact duplicate/missing/extra join refusal
+- label permutation, identifier renaming, and row permutation controls
+- visible injected false crown and HOLD-overcrown
+- always-HOLD, always-CROWN, and always-RESIST invalid
+- generated decision depends on executable forbidden/tamper canaries
+
+Verified local checkpoint:
+- focused v1.8 + centralized version-surface tests: 54 passed
+- full repository suite: 390 passed
+- evidence directory: runs/v1_8_observable_schema_label_firewall_checkpoint_20260711_final
+- decision: LOCAL_GREEN_FIREWALL_ONLY
+- science: HOLD_NO_SCIENTIFIC_THRESHOLDS
+- pre-label receipt SHA-256: 6f09c834af1cc05485a46fb86d01b48196f5704fb2436fde4feea2a035cec8c0
+- decision JSON SHA-256: 169a8a895289decd03c61f6d4d208b294a2f069d0bc7009b3850fddcd22e3865
+- bundle SHA-256: 214d919d834a798b8e2e6e984037e2f91dd01e27648119551b18ca9d6236fe97
+
+Boundary:
+- development decision LOCAL_GREEN_FIREWALL_ONLY
+- scientific authority remains v1.7.11-alpha, 0 / HOLD
+- C_Z = min(D, P, R, B) unchanged
+- synthetic canary predictor only; no scientific scorer
+- caller-declared predictor contract is not yet bound to code/config
+- no scientific thresholds or abstention rule selected
+- no frozen holdout revealed
+- no manuscript v2 prose
+- no DTA transfer/integration
+- no merge, tag, push, PR, release, Zenodo, or email action
+
+Next proposed gate:
+- v1.8.1-alpha Lineage-Bearing Predictor Package and Development-Only Preregistration
+- explicit checkpoint before scorer thresholds

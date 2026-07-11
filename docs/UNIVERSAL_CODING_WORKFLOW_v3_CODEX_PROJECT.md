@@ -342,3 +342,75 @@ Amend this protocol only when a real wound, repeated friction, or a new executio
 surface justifies a durable rule. Keep project-specific commands and prohibitions
 in each repository's `AGENTS.md`; keep universal authority and evidence discipline
 here.
+
+## 18. Coding economics
+
+Spend Codex on uncertainty, integration, adversarial reasoning, and reproducible
+verification. Spend human effort on bounded decisions and deterministic UI
+actions.
+
+### Manual by default after a checkpoint
+
+When exact artifacts and instructions are ready, the human can usually save
+agent cost by:
+
+- reading the diff and checkpoint summary;
+- inspecting CI results;
+- reviewing and merging a prepared pull request;
+- deleting a merged branch;
+- creating or publishing a tag/release from prepared notes only after a
+  separately explicit release decision and checklist;
+- returning commit, PR, CI, tag, and release URLs;
+- disclosing any manual edits before Codex resumes.
+
+Do not spend agent time merely waiting for CI or clicking deterministic merge
+buttons unless explicitly requested.
+
+### Codex by default
+
+Use Codex for:
+
+- repository diagnosis and coherent multi-file implementation;
+- focused, adversarial, and failure-capability tests;
+- artifact, provenance, denominator, and hash inspection;
+- claim, documentation, and version-surface consistency;
+- preparing exact commands, checklists, pull-request text, and release notes.
+
+Never outsource scientific threshold choice, holdout reveal, evidence
+interpretation, destructive recovery, or silent code edits as cheap mechanics.
+If the human edits code or generated evidence, Codex re-baselines before
+continuing.
+
+### Economy tiers
+
+- `LOCAL GREEN`: Codex implements through full local QA; the human handles git
+  and release UI.
+- `PATCH READY`: Codex prepares the patch and focused tests; the human runs the
+  supplied full-test command and returns raw output.
+- `FULL RELEASE`: Codex performs named publication mechanics only under explicit
+  `RELEASE ON` authority.
+
+Batch one coherent version boundary per prompt. Run focused gates before the
+full suite. Do not regenerate unchanged canonical evidence. Use subagents only
+when independent high-risk review is likely to prevent meaningful rework. Stop
+when the enough gate is met.
+
+Human release mechanics never promote scientific authority.
+
+## 19. Version-surface law
+
+Every version must keep its public logic synchronized with its code. Before
+local green, update:
+
+- the README with the current software line, scientific authority, implemented
+  behavior, limitations, and next gate;
+- the ROADMAP with the completed movement, active movement, future gates, and
+  manuscript relationship;
+- version truth, current evidence surfaces, claim boundary, release note, and
+  history pointer when the project uses them;
+- one centralized version-surface test rather than repeated current-version
+  assertions in historical tests.
+
+If a required surface is intentionally unchanged, record that fact in the patch
+manifest. Superseded material moves behind a historical banner or vault index;
+stable links should not be broken merely to make the front page look cleaner.

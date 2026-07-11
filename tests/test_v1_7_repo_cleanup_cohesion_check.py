@@ -90,8 +90,6 @@ def test_v1_7_8_public_surfaces_are_cohesive() -> None:
     cleanup_doc = read("docs/v1_7_repo_cleanup_cohesion_check.md")
     release = read("docs/release_notes/v1_7_8_alpha.md")
 
-    assert "1.7.11-alpha" in read("src/zerogate_sim/__init__.py")
-    assert 'version = "1.7.11a0"' in read("pyproject.toml")
     assert "zerogate-v1-7-repo-cohesion-check" in read("pyproject.toml")
     assert "*.svg text eol=lf" in read(".gitattributes")
 
@@ -130,7 +128,7 @@ def test_v1_7_8_public_surfaces_are_cohesive() -> None:
     assert "docs/history_vault/legacy_evidence_visuals.md" in readme
     assert "docs/release_notes/" in readme
     assert "v1.7.10-alpha historical core question closeout superseded" in readme
-    assert "v1.8.0-alpha observable schema and label firewall next" in readme
+    assert "v1.8.0-alpha observable schema and label firewall: local software checkpoint green" in readme
 
     assert "README should teach before it displays evidence" in front_page
     assert "latest holdout visual cards" in front_page

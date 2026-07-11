@@ -83,8 +83,6 @@ def test_v1_7_9_public_surfaces_and_paths() -> None:
     release = read("docs/release_notes/v1_7_9_alpha.md")
     script = read("scripts/run_v1_7_small_reproduction.ps1")
 
-    assert "1.7.11-alpha" in read("src/zerogate_sim/__init__.py")
-    assert 'version = "1.7.11a0"' in read("pyproject.toml")
     assert "zerogate-v1-7-reviewer-package" in read("pyproject.toml")
 
     assert "Current public line:** `v1.7.11-alpha`" in readme
@@ -97,7 +95,7 @@ def test_v1_7_9_public_surfaces_and_paths() -> None:
     assert "docs/v1_7_claim_boundary_card.md" in readme
     assert "docs/v1_7_evidence_manifest.md" in readme
     assert "scripts\\run_v1_7_small_reproduction.ps1" in readme
-    assert "v1.8.0-alpha observable schema and label firewall next" in readme
+    assert "v1.8.0-alpha observable schema and label firewall: local software checkpoint green" in readme
     assert readme.index("## Native math witness") < readme.index("## Latest evidence snapshot")
     assert readme.index("## Latest evidence snapshot") < readme.index("## Reviewer start here / reproduction package") < readme.index("## Inspection map")
     assert "docs/assets/v1_7_6_triad27_holdout_card.svg" in readme

@@ -39,7 +39,10 @@ The README should show the project. This file can hold the ledger.
 - `v1.7.9-alpha` — Reviewer Start Here / Reproduction Package.
 - `v1.7.10-alpha` — historical Core Question Closeout, now superseded.
 - `v1.7.11-alpha` — Evidence Integrity Correction; current answer `0 / HOLD`.
-- `v1.8.0-alpha` — Observable Schema and Label Firewall next.
+- `v1.8.0-alpha` — Observable Schema and Label Firewall local software green;
+  scientific authority remains v1.7.11 `0 / HOLD`.
+- `v1.8.1-alpha` — next checkpoint: lineage-bearing predictor package and
+  development-only preregistration before threshold selection.
 - Manuscript v2 and DTA transfer — HOLD until a future role-free empirical closeout earns them.
 
 ## Boundary

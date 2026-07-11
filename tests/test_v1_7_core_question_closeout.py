@@ -203,8 +203,6 @@ def test_v1_7_11_public_surfaces() -> None:
     correction = read("docs/v1_7_11_evidence_integrity_correction.md")
     release = read("docs/release_notes/v1_7_11_alpha.md")
 
-    assert "1.7.11-alpha" in read("src/zerogate_sim/__init__.py")
-    assert 'version = "1.7.11a0"' in read("pyproject.toml")
     assert "zerogate-v1-7-evidence-integrity-correction" in read("pyproject.toml")
 
     for text in [readme, roadmap, version_truth, current_state, evidence_index, correction, release]:

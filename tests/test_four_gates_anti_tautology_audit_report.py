@@ -264,8 +264,6 @@ def test_v1_6_25_public_surfaces_and_route() -> None:
     version_truth = (ROOT / "docs/version_truth.md").read_text(encoding="utf-8")
     doc = (ROOT / "docs/anti_tautology_audit_report.md").read_text(encoding="utf-8")
     release = (ROOT / "docs/release_notes/v1_6_25_alpha.md").read_text(encoding="utf-8")
-    assert "1.7.11-alpha" in (ROOT / "src/zerogate_sim/__init__.py").read_text(encoding="utf-8")
-    assert 'version = "1.7.11a0"' in (ROOT / "pyproject.toml").read_text(encoding="utf-8")
     for text in [readme, roadmap, version_truth, doc, release]:
         assert "v1.6.25-alpha" in text
         assert "Anti-Tautology Audit" in text or "anti-tautology" in text

@@ -1,7 +1,10 @@
 # Current Evidence State
 
-**Current version:** `v1.7.11-alpha`
-**Decision:** `0 / HOLD`
+**Current development version:** `v1.8.0-alpha`
+
+**Scientific authority:** `v1.7.11-alpha`
+
+**Scientific decision:** `0 / HOLD`
 **Native witness:** `C_Z = min(D, P, R, B)`
 
 ## Active claim
@@ -16,6 +19,7 @@
 | `v1.7.9-alpha` | Reviewer Start Here / Reproduction Package | historical packaging | still the reproduction door; not current claim authority |
 | `v1.7.10-alpha` | Core Question Closeout | historical / superseded | reproducible release state; its `+1` is construction-bound |
 | `v1.7.11-alpha` | Evidence Integrity Correction | current `0 / HOLD` | corrects provenance and nested-rung accounting; opens role-free repair |
+| `v1.8.0-alpha` | Observable Schema and Label Firewall | local software green | implements callback-argument/schema and hash-integrity checks; adds no scientific scorer or evidence crown |
 
 ## Corrected holdout accounting
 
@@ -45,9 +49,21 @@ to the answer key, so zero false crowns are construction-bound. The existing
 anti-tautology audit did not execute a frozen role-free scorer or prove that a
 deliberate false crown could occur and be counted.
 
+## v1.8.0 software state
+
+The local firewall uses an exact seven-field observable allowlist, keeps all
+identifiers outside the predictor callback, freezes canonical predictions and
+a receipt before label loading, and fails closed on schema, hash, duplicate,
+join, label-permutation, and identifier-leak violations. Synthetic canaries
+also prove the evaluator can detect an injected false crown and reject
+constant HOLD/CROWN/RESIST behavior.
+
+This is infrastructure evidence only. It does not change the scientific
+decision below.
+
 ## Current holds
 
-- Role-free discovery: not implemented.
+- Role-free scientific discrimination: not demonstrated.
 - Lineage in the final verdict: not implemented.
 - Independent generator validation: not done.
 - Manuscript v2: HOLD.
@@ -56,6 +72,9 @@ deliberate false crown could occur and be counted.
 
 ## Next
 
-`v1.8.0-alpha — Observable Schema and Label Firewall`.
+Checkpoint before scientific scorer thresholds. The next proposed coded gate is
+`v1.8.1-alpha — Lineage-Bearing Predictor Package and Development-Only
+Preregistration`.
 
 See [`v1_7_11_evidence_integrity_correction.md`](v1_7_11_evidence_integrity_correction.md).
+See [`v1_8_observable_schema_label_firewall.md`](v1_8_observable_schema_label_firewall.md).

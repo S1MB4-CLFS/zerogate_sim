@@ -3,11 +3,15 @@
 **Introduced:** `v1.6.27-alpha`  
 **Current closeout note:** `v1.6.28-alpha` records the v1.6 closeout after this Manuscript Correction Package.  
 **Native witness:** `C_Z = min(D, P, R, B)`  
-**Status:** planning package only; not the full v2 manuscript.
+**Status:** historical planning package only; superseded as a writing trigger by
+the v1.7.11 `0 / HOLD` correction and the
+[`manuscript v2 empirical-readiness gate`](manuscript_v2_empirical_readiness_gate.md).
 
 This gate prepares the material needed to later write a corrected manuscript version without starting the Zenodo route yet.
 
-The current Zenodo manuscript remains a strong historical first-research-alpha artifact. It should be preserved as the original paper, not erased or quietly rewritten.
+The current Zenodo manuscript remains a historical first-research-alpha
+artifact. It should be preserved as the original paper, not erased or quietly
+rewritten, but “historical” does not mean its scientific claim remains current.
 
 ## Why this package exists
 
@@ -54,13 +58,15 @@ four_gates_manuscript_correction_package_audit.json
 four_gates_manuscript_correction_package_bundle.zip
 ```
 
-## Current allowed claim lane
+## Historical candidate claim lane — not current authority
 
 The candidate sentence for later v1.7/v2 work is:
 
 > In controlled synthetic adversarial fields, the Four Gates witness operationalizes a synthetic zero-zone gating principle: it delays premature expression, preserves earned expression, holds unresolved relation/return debt as structured zero, and demotes false-one pressure better than raw, binary, dead-safe, and ablated witnesses.
 
-This is not yet the final paper claim. It remains a candidate until closeout and v1.7 packaging.
+This is not a current paper claim. v1.7.11 superseded the construction-bound
+closeout. Positive manuscript prose now waits for a valid v1.8.4
+`SUPPORTED_BOUNDED` decision; `HOLD` and `INVALID_EVIDENCE` authorize no paper.
 
 ## Boundaries
 
