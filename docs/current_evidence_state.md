@@ -1,74 +1,61 @@
 # Current Evidence State
 
-**Purpose:** detailed current evidence state moved out of the README in `v1.7.8-alpha` so the front page stays readable.
+**Current version:** `v1.7.11-alpha`
+**Decision:** `0 / HOLD`
+**Native witness:** `C_Z = min(D, P, R, B)`
 
-Native witness remains:
+## Active claim
 
-```text
-C_Z = min(D, P, R, B)
-```
+> The legacy role-aware controlled harness reproducibly partitions its designed earned, debt, and false-pressure lanes. Blind empirical discrimination remains unearned.
 
-## Active claim candidate
+## Current posture
 
-> Inside controlled synthetic adversarial fields, the Four Gates witness can preserve earned expression, hold unresolved relation/return debt as structured zero, and demote false-one pressure better than raw, binary, dead-safe, and ablated witnesses.
-
-## Current v1.7 posture
-
-| version | gate | status | claim boundary |
+| version | gate | status | current authority |
 |---|---|---|---|
-| `v1.7.0-alpha` | Core Question Contract | complete | defines the answer grammar and falsifiers; no evidence crown |
-| `v1.7.1-alpha` | Return Gate Trace Lock | complete | separates return-potential from observed return |
-| `v1.7.2-alpha` | Lane Taxonomy / Latent Overcrown Repair | complete | keeps latent overcrown explicit and bounded |
-| `v1.7.3-alpha` | Baseline and Ablation Falsifier Matrix | complete | names weaker witnesses that must fail |
-| `v1.7.4-alpha` | Perturbation Spectrum Witness | complete | requires lane behavior under weather, not one scalar victory count |
-| `v1.7.5-alpha` | Masked Role-Dependence Audit | complete | masked numeric visibility; no role-blind claim |
-| `v1.7.6-alpha` | Fresh Holdout Synthetic-Field Challenge | complete | locks fresh seeds, held-out variants, weather ladder, candidate-name masking, and expected manifests |
-| `v1.7.7-alpha` | Anti-Tautology Audit / Role-Dependence Check | complete | checks non-vacuity, non-dead-safe behavior, leakage pressure, role-dependence boundary, and bounded translation |
-| `v1.7.8-alpha` | Repo Cleanup / Cohesion Check | complete | makes README, evidence index, release spine, and audit paths coherent before reviewer packaging |
-| `v1.7.9-alpha` | Reviewer Start Here / Reproduction Package | complete | packages reviewer path, separated rung reproduction rhythm, expected outputs, and strict handoff layers before closeout |
-| `v1.7.10-alpha` | Core Question Closeout | current | closes the v1.7 core question as bounded `+1` inside controlled synthetic-field adversarial weather |
+| `v1.7.0`–`v1.7.9` | contracts, historical audits, holdout, reviewer path | historical support | useful implementation/reproduction trace; not blind validation |
+| `v1.7.9-alpha` | Reviewer Start Here / Reproduction Package | historical packaging | still the reproduction door; not current claim authority |
+| `v1.7.10-alpha` | Core Question Closeout | historical / superseded | reproducible release state; its `+1` is construction-bound |
+| `v1.7.11-alpha` | Evidence Integrity Correction | current `0 / HOLD` | corrects provenance and nested-rung accounting; opens role-free repair |
 
-## Latest holdout snapshot
+## Corrected holdout accounting
 
-See [`v1_7_latest_holdout_snapshot.md`](v1_7_latest_holdout_snapshot.md).
-
-Compact result:
+| rung | opportunities | earned | earned rate | raw | raw rate | false pressure | false-pressure rate |
+|---|---:|---:|---:|---:|---:|---:|---:|
+| triad27 | 28,917 | 839 | 2.9014% | 1,283 | 4.4368% | 321 | 1.1101% |
+| deep81 | 86,751 | 1,950 | 2.2478% | 3,012 | 3.4720% | 807 | 0.9302% |
+| wide243 | 260,253 | 9,417 | 3.6184% | 14,058 | 5.4017% | 3,543 | 1.3614% |
 
 ```text
-triad27: earned 839; false pressure 321; final false crowns 0
-deep81: earned 1,950; false pressure 807; final false crowns 0
-wide243: earned 9,417; false pressure 3,543; final false crowns 0
+naive nested opportunity sum = 375,921 (invalid pooled evidence)
+unique atomic union           = 260,253
+duplicate representations    = 115,668
 ```
 
-Total snapshot:
+The old pooled event totals—12,206 earned, 18,353 raw, and 4,671 false pressure—are historical arithmetic sums, not unique evidence totals.
 
-```text
-earned-one = 12,206
-raw expression pressure = 18,353
-latent overcrown = 39
-relation debt = 624
-return debt = 813
-false-one pressure = 4,671
-final false-one crowns = 0
-```
+The canonical pass is locked to five exact candidate corpora, all 27/81/243
+scenario cells, and seeds 18-26. Its contract SHA-256 is
+`ecaddfc43bd276b58bba0fd9914f8e62e3652a639c750f619b15b13493f74a34`.
+Final-output summaries match counts recomputed from typed gate rows.
 
-This is local assistant-handoff evidence routed through the v1.7.9 reviewer package and closed by v1.7.10 as a bounded controlled synthetic-field answer.
+## Why final false crowns do not close the question
 
-## Historical evidence anchors still relevant
+The current earned-one/final path uses `truth_role`. A trap is demoted with access
+to the answer key, so zero false crowns are construction-bound. The existing
+anti-tautology audit did not execute a frozen role-free scorer or prove that a
+deliberate false crown could occur and be counted.
 
-| anchor | role | caveat |
-|---|---|---|
-| first-research-alpha proof record | historical proof floor | generated toy-field domain |
-| `v1.6.20-alpha` triad27 debt evidence | small-weather debt visibility | small-weather only |
-| `v1.6.21-alpha` deep81/wide243 debt evidence | deeper-weather debt visibility | some debt families inactive in older line |
-| `v1.6.22-alpha` fresh-seed debt reproduction | qualitative reproduction across seed block | latent overcrown seed-sensitive |
-| `v1.6.25-alpha` anti-tautology audit | first role-dependence boundary | designed-profile shaped but witness-counted |
-| `v1.6.28-alpha` closeout | bounded v1.6 `+1` for controlled synthetic-field evidence | opened v1.7; did not close role-blind or physics claims |
+## Current holds
 
-## What remains unclosed after v1.7.10
+- Role-free discovery: not implemented.
+- Lineage in the final verdict: not implemented.
+- Independent generator validation: not done.
+- Manuscript v2: HOLD.
+- DTA transfer/integration: HOLD.
+- External empirical, clinical, physical, cosmological, and observed-universe claims: blocked.
 
-- Role-blind discovery is not solved.
-- Independent generator validation is not done.
-- External empirical validation is not done.
-- Observed-universe, physics, cosmology, and dimensional-origin claims remain blocked.
-- Manuscript v2 is now the next bounded upgrade gate before v1.8.
+## Next
+
+`v1.8.0-alpha — Observable Schema and Label Firewall`.
+
+See [`v1_7_11_evidence_integrity_correction.md`](v1_7_11_evidence_integrity_correction.md).

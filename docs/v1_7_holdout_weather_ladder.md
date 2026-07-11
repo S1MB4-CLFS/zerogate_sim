@@ -13,7 +13,7 @@ deep81  = 3^4 perturbation / late-shock bridge
 wide243 = 3^5 temporal-depth / time-axis stress
 ```
 
-## Run timing
+## Historical run timing and current correction
 
 ```text
 v1.7.6-alpha CI green
@@ -23,7 +23,9 @@ v1.7.6-alpha CI green
 -> v1.7.7-alpha anti-tautology / role-dependence audit
 -> v1.7.8-alpha repo cleanup / cohesion check
 -> v1.7.9-alpha reviewer package
--> v1.7.10-alpha core question closeout
+-> v1.7.10-alpha historical core question closeout
+-> v1.7.11-alpha integrity correction / 0 HOLD
+-> v1.8.0-alpha observable schema and label firewall
 ```
 
 The full ladder should run before `v1.7.7-alpha` audits anti-tautology and role-dependence pressure. `v1.7.8-alpha` should clean the repo surface and `v1.7.9-alpha` should package actual evidence summaries and commands, not a promise to maybe test later. CI should not carry the heavy evidence burden; CI guards the contract, schema, and evaluator.

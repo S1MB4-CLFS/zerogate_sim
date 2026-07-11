@@ -1,13 +1,17 @@
 # Four Gates Anti-Tautology Audit / Role-Dependence Check
 
+> **Historical / insufficient audit:** preserved as a record of v1.6.25. Its
+> summary-state checks did not establish label isolation or a frozen role-free
+> scorer. It has no current claim authority after v1.7.11.
+
 **Introduced:** `v1.6.25-alpha`  
 **Native witness:** `C_Z = min(D, P, R, B)`
 
-This gate asks whether the current Four Gates debt evidence is doing real witness work or merely re-counting labels designed into the `four_gates_debt` candidate profile.
+This gate asked whether the then-current Four Gates debt evidence was doing real witness work or merely re-counting labels designed into the `four_gates_debt` candidate profile.
 
 ## Why this audit exists
 
-The current evidence line is promising:
+The evidence line looked promising at that historical gate:
 
 ```text
 +1 earned-one visible
@@ -28,9 +32,11 @@ The audit therefore separates four questions:
 
 ## Expected bounded outcome
 
-The likely honest result is not independent role-blind discovery. The current evidence uses a designed `four_gates_debt` profile. If the audit passes, the proper claim is bounded:
+The anticipated result was not independent role-blind discovery. The evidence used a designed `four_gates_debt` profile. At that time, a passing audit would have supported only this historical bounded claim:
 
-> The Four Gates witness can represent, preserve, and reproduce structured zero/debt states in designed controlled synthetic-field scenarios while maintaining earned-one and false-one separation.
+> Historical v1.6.25 wording: the Four Gates witness appeared to represent and
+> reproduce structured zero/debt states in designed controlled scenarios. That
+> wording is not a current empirical-discrimination claim.
 
 The stronger claim is **not** earned yet:
 

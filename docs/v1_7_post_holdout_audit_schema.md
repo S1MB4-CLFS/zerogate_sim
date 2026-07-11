@@ -1,5 +1,7 @@
 # v1.7.7-alpha — Post-Holdout Audit Schema
 
+> **Historical schema:** self-declared masking, manifest, reference, control, or pass fields are not proof under `v1.7.11-alpha`. Current evidence integrity must be recomputed from source artifacts and hashes.
+
 **Version:** `v1.7.7-alpha`  
 **Native witness:** `C_Z = min(D, P, R, B)`
 

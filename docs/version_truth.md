@@ -1,9 +1,9 @@
 # Version Truth
 
-**Status:** README overflow moved here in `v1.6.9-alpha`; current spine advanced in `v1.7.10-alpha`  
+**Status:** README overflow moved here in `v1.6.9-alpha`; current spine corrected in `v1.7.11-alpha`
 **Purpose:** preserve the release spine and recent checkpoints without forcing the README to open with a wall of version bookkeeping.
 
-The active public line is now `v1.7.10-alpha` — Core Question Closeout.
+The active public line is now `v1.7.11-alpha` — Evidence Integrity Correction, with the core question reopened at `0 / HOLD`.
 
 ## Release spine
 
@@ -40,7 +40,8 @@ The active public line is now `v1.7.10-alpha` — Core Question Closeout.
 - `v1.7.7-alpha` — Anti-Tautology Audit / Role-Dependence Check: audits the fresh holdout ladder against pre-registration, non-vacuity, positive/negative controls, label leakage, role-dependence, and bounded claim translation before reviewer packaging.
 - `v1.7.8-alpha` — Repo Cleanup / Cohesion Check: moved long evidence lists out of README, exposed the latest holdout snapshot and anti-tautology path on the front page, and shifted reviewer packaging to `v1.7.9-alpha` with closeout at `v1.7.10-alpha`.
 - `v1.7.9-alpha` — Reviewer Start Here / Reproduction Package: adds the reviewer start page, reproduction command map, expected output map, evidence manifest, and package CLI while keeping closeout at `v1.7.10-alpha`.
-- `v1.7.10-alpha` — Core Question Closeout: closes the v1.7 core question as bounded `+1` inside controlled synthetic-field adversarial weather and opens manuscript v2 as the next bounded upgrade gate before v1.8.
+- `v1.7.10-alpha` — Historical Core Question Closeout: recorded a bounded `+1` at release time; `v1.7.11-alpha` supersedes its current authority as construction-bound and withdraws the manuscript GO.
+- `v1.7.11-alpha` — Evidence Integrity Correction: preserves v1.7.10 as historical release state but supersedes its active `+1`; corrects nested-rung accounting, locks authority to five profiles / 27-81-243 scenarios / seeds 18-26 under a contract hash, recomputes summaries from typed gate rows, removes self-attested provenance from the current summary path, and holds manuscript v2 and DTA transfer.
 
 ## Recent checkpoints
 
@@ -217,4 +218,8 @@ C_Z = min(D, P, R, B)
 
 ## v1.7.10-alpha note
 
-`v1.7.10-alpha` is the Core Question Closeout gate. It preserves `C_Z = min(D, P, R, B)`, closes the v1.7 core question as bounded `+1` inside controlled synthetic-field adversarial weather, does not start manuscript v2, does not upload to Zenodo, does not claim role-blind discovery, does not claim independent generator validation, and does not claim physics/cosmology/observed-universe proof. The next movement is manuscript v2 as a bounded upgrade/correction before v1.8.
+`v1.7.10-alpha` is the historical Core Question Closeout release. It preserves `C_Z = min(D, P, R, B)` and remains reproducible at its tag. `v1.7.11-alpha` supersedes its current claim authority because the final path consumes truth role and the three weather rungs were pooled despite nesting.
+
+## v1.7.11-alpha note
+
+`v1.7.11-alpha` is the Evidence Integrity Correction. It preserves `C_Z = min(D, P, R, B)`, reopens the v1.7 core question at `0 / HOLD`, records 260,253 unique atomic cases rather than 375,921 nested representations, and marks zero final false crowns as construction-bound. Authority requires the exact five-profile, 27/81/243-scenario, seed-18-through-26 contract and typed gate-row recomputation. Manuscript v2, DTA transfer, scientific thresholds, frozen blind holdout, and Zenodo remain on HOLD. A separately authorized software prerelease does not promote those scientific lanes. The next coded boundary is `v1.8.0-alpha — Observable Schema and Label Firewall`.

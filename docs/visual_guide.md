@@ -29,13 +29,14 @@ Use this when introducing the theory.
 
 ### `docs/assets/trinary_witness_stack.svg`
 
-Explains the final output stack:
+Explains the intended final output stack. It is not an exact v1.7.11 code
+trace: lineage is report-only in the current implementation.
 
 Raw expression is pressure. Earned-one is final +1.
 Zero holds latent, overcrown, relation debt, and quarantine states.
 Minus rejects false-one pressure.
 
-Use this when explaining why raw +1 is not final truth.
+Use this when explaining the design target, together with the v1.7.11 caveat.
 
 ### `docs/assets/proof_harness_map.svg`
 

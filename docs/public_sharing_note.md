@@ -2,15 +2,22 @@
 
 Use this as a base when introducing ZeroGateSim publicly.
 
+**Current status:** `v1.7.11-alpha`, `0 / HOLD`. Do not reuse older `+1`
+language without its historical/superseded label.
+
 ## Short version
 
 ZeroGateSim is a toy-field simulation framework for testing a speculative theory of zero-gate dimensional emergence.
 
 The key result is not that the universe has been proven trinary. It has not.
 
-The key result is narrower: inside generated toy fields, the earned-one witness separated final earned expression from raw expression pressure, latent overcrown, and false-one pressure across distinction, polarity, and relation adversaries.
+The current result is narrower: the legacy role-aware harness reproducibly
+partitions its designed synthetic lanes. Corrected accounting finds `260,253`
+unique atomic cases within `375,921` nested representations.
 
-Across the first proof record and fresh-seed reproduction, the system detected and demoted `2388` raw false-one pressures with `0` final false-one crowns across `13122` seeded runs.
+Zero final false-one crowns are construction-bound because the final path knows
+truth role. Blind discrimination, manuscript promotion, and DTA transfer remain
+unearned.
 
 ## One-line description
 
@@ -20,7 +27,8 @@ Across the first proof record and fresh-seed reproduction, the system detected a
 
 Good:
 
-> This is a software-theory proof-of-concept inside generated toy fields.
+> This is reproducible role-aware software behavior inside generated toy fields;
+> the core scientific question remains at `0 / HOLD`.
 
 Bad:
 

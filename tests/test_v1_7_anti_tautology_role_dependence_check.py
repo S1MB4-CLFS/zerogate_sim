@@ -30,6 +30,8 @@ def read(path: str) -> str:
 def _sample_rows() -> list[dict[str, object]]:
     base = {
         "fresh_seed_block": "18-26",
+        "provenance_status": "verified",
+        "scoring_label_firewall": "verified",
         "candidate_names_masked": "true",
         "expected_manifest_frozen": "true",
         "reference_profile_reused": "false",
@@ -42,6 +44,7 @@ def _sample_rows() -> list[dict[str, object]]:
     return [
         {
             **base,
+            "holdout_run_id": "triad27_18_26",
             "weather_rung": "triad27",
             "final_earned_one_events": 839,
             "raw_expression_pressure": 1283,
@@ -53,6 +56,7 @@ def _sample_rows() -> list[dict[str, object]]:
         },
         {
             **base,
+            "holdout_run_id": "deep81_18_26",
             "weather_rung": "deep81",
             "final_earned_one_events": 1950,
             "raw_expression_pressure": 3012,
@@ -64,6 +68,7 @@ def _sample_rows() -> list[dict[str, object]]:
         },
         {
             **base,
+            "holdout_run_id": "wide243_18_26",
             "weather_rung": "wide243",
             "final_earned_one_events": 9417,
             "raw_expression_pressure": 14058,
@@ -146,11 +151,11 @@ def test_v1_7_anti_tautology_known_routine_rows_are_complete() -> None:
 def test_v1_7_anti_tautology_evaluation_decisions() -> None:
     rows = _sample_rows()
     evaluation = evaluate_audit_rows(rows)
-    assert collapse_audit_decision(evaluation) == "expand_audit_passed_not_tautological_role_bounded"
-    assert all(row["row_status"] == "witness_post_holdout_audit_row_passed" for row in evaluation)
+    assert collapse_audit_decision(evaluation) == "invalid_evidence_legacy_self_attested_or_role_aware"
+    assert all(row["row_status"] == "invalid_legacy_audit_superseded" for row in evaluation)
 
     missing = evaluate_audit_rows(rows[:2])
-    assert collapse_audit_decision(missing) == "hold_audit_weather_ladder_incomplete"
+    assert collapse_audit_decision(missing) == "invalid_evidence_legacy_self_attested_or_role_aware"
 
     false_crown = dict(rows[0])
     false_crown["final_false_one_crowns"] = 1
@@ -182,12 +187,39 @@ def test_v1_7_anti_tautology_with_holdout_csv(tmp_path: Path) -> None:
     readme = paths["read"].read_text(encoding="utf-8")
     evaluation = paths["evaluation"].read_text(encoding="utf-8")
 
-    assert decision["evaluation_decision"] == "expand_audit_passed_not_tautological_role_bounded"
+    assert decision["evaluation_decision"] == "invalid_evidence_legacy_self_attested_or_role_aware"
+    assert decision["current_claim_authority"] is False
     assert decision["summary"]["total_final_earned_one_events"] == 12206
     assert decision["summary"]["total_false_one_pressure"] == 4671
     assert decision["summary"]["total_final_false_one_crowns"] == 0
     assert "triad27" in readme and "wide243" in readme
-    assert "witness_post_holdout_audit_row_passed" in evaluation
+    assert "invalid_legacy_audit_superseded" in evaluation
+
+
+def test_v1_7_anti_tautology_rejects_self_attested_provenance() -> None:
+    rows = _sample_rows()
+    for row in rows:
+        row.pop("provenance_status")
+        row.pop("scoring_label_firewall")
+    evaluation = evaluate_audit_rows(rows)
+    assert {row["row_status"] for row in evaluation} == {"invalid_self_attested_provenance"}
+    assert collapse_audit_decision(evaluation) == "invalid_evidence_legacy_self_attested_or_role_aware"
+
+
+def test_v1_7_anti_tautology_duplicate_inputs_do_not_inflate_totals(tmp_path: Path) -> None:
+    csv_path = tmp_path / "holdout.csv"
+    _write_csv(csv_path, _sample_rows())
+    single = build_v1_7_anti_tautology_role_dependence_check(
+        tmp_path / "single",
+        holdout_summary_csvs=[csv_path],
+    )
+    duplicate = build_v1_7_anti_tautology_role_dependence_check(
+        tmp_path / "duplicate",
+        holdout_summary_csvs=[csv_path, csv_path],
+    )
+    single_decision = json.loads(single["decision"].read_text(encoding="utf-8"))
+    duplicate_decision = json.loads(duplicate["decision"].read_text(encoding="utf-8"))
+    assert single_decision["summary"] == duplicate_decision["summary"]
 
 
 def test_v1_7_anti_tautology_cli(tmp_path: Path) -> None:
@@ -207,8 +239,8 @@ def test_v1_7_7_public_surfaces_and_version_truth() -> None:
     schema_doc = read("docs/v1_7_post_holdout_audit_schema.md")
     release = read("docs/release_notes/v1_7_7_alpha.md")
 
-    assert "1.7.10-alpha" in read("src/zerogate_sim/__init__.py")
-    assert 'version = "1.7.10a0"' in read("pyproject.toml")
+    assert "1.7.11-alpha" in read("src/zerogate_sim/__init__.py")
+    assert 'version = "1.7.11a0"' in read("pyproject.toml")
     assert "zerogate-v1-7-anti-tautology-role-audit" in read("pyproject.toml")
 
     for text in [readme, roadmap, version_truth, evidence_index, audit_doc, routine_doc, schema_doc, release]:

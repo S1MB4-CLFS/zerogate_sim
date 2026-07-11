@@ -77,8 +77,8 @@ def test_v1_7_0_public_surfaces_remain_historical_under_current_package() -> Non
     evidence_index = read("docs/current_evidence_index.md")
     release = read("docs/release_notes/v1_7_0_alpha.md")
 
-    assert "1.7.10-alpha" in read("src/zerogate_sim/__init__.py")
-    assert 'version = "1.7.10a0"' in read("pyproject.toml")
+    assert "1.7.11-alpha" in read("src/zerogate_sim/__init__.py")
+    assert 'version = "1.7.11a0"' in read("pyproject.toml")
     assert "zerogate-v1-7-core-question-contract" in read("pyproject.toml")
 
     for text in [readme, roadmap, version_truth, evidence_index, release]:

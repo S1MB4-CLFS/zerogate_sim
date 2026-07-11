@@ -1,9 +1,13 @@
 # Anti-Tautology Audit Plan
 
+> **Historical plan:** preserved to show the original audit design. v1.7.11
+> found that this audit did not execute a role-free scorer and therefore did not
+> detect the construction-bound final path.
+
 **Target version:** `v1.6.25-alpha`  
 **Created:** `v1.6.24-alpha`
 
-The current evidence line is promising, but the next gate must ask the hard question:
+At v1.6.24 the evidence line looked promising, and the next gate was meant to ask the hard question:
 
 > Did the Four Gates witness derive structured zero/debt states from gate and return dynamics, or did the reports mostly count labels we designed into the candidate profile?
 

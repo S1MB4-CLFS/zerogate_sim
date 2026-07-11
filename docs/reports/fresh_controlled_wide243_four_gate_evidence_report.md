@@ -229,7 +229,10 @@ S_{\tau} = B_{\tau+} - B_{\tau-}
 
 Temporal-stretch severity, measured here as stretched-field breach minus compressed-field breach.
 
-Native witness status: **OK**. The core law remains `C_Z = min(D, P, R, B)`, and final earned-one still requires raw pressure plus return-depth, lineage, independence, and role-aware witness. These new symbols are report readers, not replacement physics and not new native gates.
+Historical report wording treated the intended earned-one stack as raw pressure
+plus return-depth, lineage, independence, and role-aware witness. v1.7.11 later
+established that lineage is report-only in the executable final path. The core
+law remains `C_Z = min(D, P, R, B)`.
 
 ## Role-blind shadow design implications
 

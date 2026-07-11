@@ -1,57 +1,65 @@
 # ZeroGateSim Claim Boundary
 
-This document states what ZeroGateSim currently supports and what it does not support.
+**Current version:** `v1.7.11-alpha`
 
-## Supported claim
+**Decision:** `0 / HOLD`
 
-Inside generated toy fields, the current ZeroGateSim earned-one witness separated:
+**Scientific status:** `HOLD_CONSTRUCTION_BOUND`
 
-- raw expression pressure;
-- latent overcrown;
-- false-one pressure;
-- final earned-one.
+## Supported current claim
 
-Across the original proof harness and fresh-seed reproduction, the system detected and demoted `2388` raw false-one pressures with `0` final false-one crowns across `13122` seeded toy-field runs.
+Inside controlled generated toy fields, the legacy role-aware harness
+reproducibly partitions its designed earned, debt, and false-pressure lanes.
+The evidence-integrity correction identifies `260,253` unique atomic cases
+instead of treating `375,921` nested triad/deep/wide representations as
+independent evidence.
 
-This supports a **software-theory proof-of-concept**:
+The unique-union descriptive output includes `9,417` earned-one events,
+`3,543` false-one pressures, and `0` final false-one crowns. Because the final
+path consumes `truth_role`, that zero is true by construction; it is not blind
+empirical discrimination.
 
-> The final trinary witness can distinguish earned-one from raw expression, latent overcrown, and false-one pressure under structured adversarial toy-field weather.
+## Current decision boundary
 
-## Unsupported claims
+ZeroGateSim has not yet demonstrated:
 
-ZeroGateSim does **not** prove:
+- a scorer isolated from truth roles, expected outcomes, or semantic labels;
+- the ability to expose and count an injected post-prediction false crown;
+- manuscript lineage consumed by the final earned-one verdict;
+- independent generator-family validation;
+- usefulness or safety for Deep Temporal Affect;
+- physical, cosmological, clinical, or observed-world truth.
 
-- physical cosmology;
-- physical dimensional emergence;
-- that reality itself is trinary;
-- that the zero-gate model replaces general relativity or existing physics;
-- that the current equations are final;
-- that toy-field success transfers directly to nature.
+Manuscript v2 and DTA transfer remain on HOLD.
+
+## Historical claim correction
+
+`v1.7.10-alpha` recorded a bounded `+1` closeout. That decision is historical
+and superseded. Its artifacts remain reproducible, but the inference was too
+strong because the evaluator used truth role and pooled nested weather rungs.
 
 ## Evidence, logic, inference, metaphor, speculation
 
-**Evidence:** what the simulation produced.
+**Evidence:** what the simulation emitted under a declared contract.
 
-**Logic:** what follows from the model implementation.
+**Logic:** what follows from the implemented code path.
 
-**Inference:** what the result may suggest.
+**Inference:** what survives label isolation, falsification, and holdout checks.
 
-**Metaphor:** how the result is explained.
+**Metaphor:** how the mechanism is explained.
 
 **Speculation:** what remains unproven.
 
-The current result is strongest as evidence and logic inside the implemented toy-field domain. Its larger metaphysical interpretation remains speculative.
+Do not promote construction-bound output into inference.
 
 ## Release-safe sentence
 
-> ZeroGateSim v1 first-research-alpha confirms that earned-one witness can contain false-one pressure inside generated toy fields. It does not confirm the universe is trinary.
+> ZeroGateSim currently reproduces role-aware lane partitioning in controlled
+> synthetic fields, while its core discrimination question remains at `0 / HOLD`
+> pending a frozen role-free witness.
 
 ## DREED posture
 
-DREED is used here as a pressure lantern. It keeps public language from claiming more than the simulation supports.
-
-If a sentence sounds like proof of reality, lower it.
-
-If a sentence hides the result, clarify it.
-
-If a sentence turns the toy model into cosmology, stop and repair.
+DREED is used here as a pressure lantern. If a sentence sounds like proof of
+reality, lower it. If it hides a failed authority boundary, clarify it. If it
+turns a toy model into cosmology or a clinical mechanism, stop and repair.

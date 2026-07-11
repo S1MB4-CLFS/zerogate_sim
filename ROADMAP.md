@@ -1,9 +1,9 @@
 # ZeroGateSim Roadmap
 
-**Current line:** `v1.7.10-alpha` — Core Question Closeout  
+**Current line:** `v1.7.11-alpha` — Evidence Integrity Correction
 **Release posture:** public research-alpha / controlled synthetic-field experiment line
 
-ZeroGateSim now has a repaired Four Gates evidence path. The older generated toy-field proof record remains preserved in the history vault, not on the active claim surface. The history vault keeps what the project was; the README shows what the project is; this roadmap shows what still has to be earned.
+ZeroGateSim is correcting its Four Gates evidence path. The older generated toy-field proof record remains preserved in the history vault. `v1.7.10-alpha` remains preserved history, but its active `+1` authority is superseded: zero false crowns were construction-bound and the weather rungs were pooled despite nesting. The current decision is `0 / HOLD`.
 
 Historical lanes live in [`docs/history_vault/README.md`](docs/history_vault/README.md). Detailed version truth lives in [`docs/version_truth.md`](docs/version_truth.md).
 
@@ -21,14 +21,15 @@ Active research target:
 
 > Can a final trinary witness distinguish earned-one from raw expression pressure, latent overcrown, relation/return debt, and false-one pressure under controlled synthetic-field adversarial weather?
 
-The current evidence line shows the important trinary state shape:
+The legacy role-aware evidence line reproducibly shows this designed state shape:
 
 ```text
 +1 earned-one visible
  0 relation debt visible
  0 return debt visible
 -1 false-one pressure visible and demoted
-final false-one crowns = 0
+final false-one crowns = 0 by a role-aware construction
+current scientific decision = 0 / HOLD
 ```
 
 Native witness remains:
@@ -60,6 +61,8 @@ C_Z = min(D, P, R, B)
 | `v1.7.7` anti-tautology audit / role-dependence check | complete | post-holdout result is checked for non-vacuity, non-dead-safe behavior, candidate-name masking, role-dependence pressure, and bounded translation before reviewer packaging |
 | `v1.7.8` repo cleanup / cohesion check | complete | README, evidence index, release spine, front-page routes, and audit paths are cleaned before reviewer packaging |
 | `v1.7.9` reviewer start here / reproduction package | complete | reviewer-facing path, expected outputs, strict handoff layers, and separated rung reproduction are packaged before closeout |
+| `v1.7.10` core question closeout | historical / superseded | reproducible release history; pooled totals and zero false crowns do not establish blind empirical discrimination |
+| `v1.7.11` evidence integrity correction | current `0 / HOLD` | atomic overlap, denominators, rates, fail-closed provenance, and construction-bound demotion |
 
 ## Locked v1.6 closeout route
 
@@ -208,7 +211,8 @@ The core question is answered in full only if all of these gates pass.
 | `v1.7.7-alpha` | Anti-Tautology Audit / Role-Dependence Check | complete; post-holdout evidence is checked for tautology, role/name leakage, dead-safe refusal, vacuity, and bounded claim translation | audit passes only because labels or definitions bake in success |
 | `v1.7.8-alpha` | Repo Cleanup / Cohesion Check | complete; README, evidence index, front-page routes, anti-tautology path, version truth, and recent history are made coherent | the repo remains technically correct but publicly hard to inspect |
 | `v1.7.9-alpha` | Reviewer Start Here / Reproduction Package | complete; reviewer path, separated rung commands, expected outputs, and handoff manifest are packaged | the evidence remains local but not reproducible/readable by a cold reviewer |
-| `v1.7.10-alpha` | Core Question Closeout | current; closeout sentence matches the evidence exactly and decides `+1`, `0`, or `-1` | closeout sentence is stronger than the evidence |
+| `v1.7.10-alpha` | Core Question Closeout | historical; preserved at its tag but superseded as construction-bound | historical result is treated as current authority |
+| `v1.7.11-alpha` | Evidence Integrity Correction | current; atomic cases, nesting, denominators, rates, and provenance are executable; active answer is `0 / HOLD` | old pooled totals or self-attested audit facts retain claim authority |
 
 ### v1.7.0-alpha — Operational Claim Contract
 
@@ -264,7 +268,10 @@ Do not add literal closed-topology machinery.
 
 ### v1.7.2-alpha — Lane Taxonomy and Latent Overcrown Repair
 
-The current `v1.6` evidence supports earned-one, relation debt, return debt, and false-one demotion strongly enough to enter `v1.7`. Latent overcrown is the fragile lane because it did not reproduce cleanly in the later fresh-seed path.
+At that historical transition, the `v1.6` evidence was judged strong enough to
+enter `v1.7`; v1.7.11 does not treat that judgment as current blind evidence.
+Latent overcrown was already the fragile lane because it did not reproduce
+cleanly in the later fresh-seed path.
 
 Decision rule:
 
@@ -449,7 +456,7 @@ candidate names leak lane assignment,
 or result only survives the known reference profile.
 ```
 
-## v1.7.6-alpha current note
+## v1.7.6-alpha historical note
 
 `v1.7.6-alpha` locks the fresh holdout synthetic-field challenge. It preserves `C_Z = min(D, P, R, B)`, adds no new heavy evidence crown, does not start manuscript v2, and prepares `v1.7.7-alpha` Anti-Tautology Audit / Role-Dependence Check. The 27/81/243 ladder belongs to the full holdout answer, but this gate is the contract/evaluator lock. After `v1.7.6-alpha` is CI green, run the ladder one rung at a time: `triad27` -> inspect -> `deep81` -> inspect -> `wide243` -> inspect -> `v1.7.7-alpha` audit -> `v1.7.8-alpha` repo cleanup / cohesion check -> `v1.7.9-alpha` reviewer package. No heavy run is allowed to masquerade as closeout until `v1.7.10-alpha` decides the core question.
 
@@ -499,7 +506,7 @@ false-one pressure absent,
 or role-blind discovery language.
 ```
 
-## v1.7.7-alpha current note
+## v1.7.7-alpha historical note
 
 `v1.7.7-alpha` preserves `C_Z = min(D, P, R, B)`, adds no new heavy evidence crown, does not start manuscript v2, and prepares `v1.7.8-alpha` Repo Cleanup / Cohesion Check. It checks that the post-holdout result is not tautological, not vacuous, not dead-safe, and not carried by role/name leakage. Passing this audit does not solve role-blind discovery; it only makes the controlled synthetic-field holdout result ready for front-page cleanup and then reviewer packaging.
 
@@ -568,7 +575,7 @@ triad27, deep81, and wide243 remain separate reproducible rungs; each rung keeps
 
 `v1.7.9-alpha` preserved `C_Z = min(D, P, R, B)`, added no new science crown, did not start manuscript v2, and prepared `v1.7.10-alpha` Core Question Closeout. It creates the reviewer start page, reproduction command map, expected output map, evidence manifest, claim boundary card, and package CLI. It resists all-weather one-shot testing as the first path.
 
-Current requirement:
+Historical v1.7.9 requirement:
 
 ```text
 smoke -> triad27 -> inspect -> deep81 -> inspect -> wide243 -> inspect -> combined package -> v1.7.10 closeout
@@ -584,9 +591,10 @@ reviewer path is hidden, reproduction commands are all-in-one only, expected out
 
 The assistant handoff should carry both the complete system output report and the compressed reviewer state. Future display work may render these files in a more universal visual layer, but that display layer is not part of the scientific claim.
 
-### v1.7.10-alpha — Core Question Closeout
+### v1.7.10-alpha — Historical Core Question Closeout Contract
 
-This version closes `v1.7` with one of three decisions.
+This version was designed to close `v1.7` with one of three decisions. Its
+issued `+1` is now historical and superseded by v1.7.11 `0 / HOLD`.
 
 ```text
 +1 — controlled synthetic-field answer earned.
@@ -606,25 +614,41 @@ A `-1` closeout must say:
 
 > No. The full claim is not earned under controlled synthetic-field adversarial weather.
 
-## v1.7.10-alpha current note
+## v1.7.10-alpha historical note
 
-`v1.7.10-alpha` preserves `C_Z = min(D, P, R, B)` and closes the v1.7 core question as bounded `+1` inside controlled synthetic-field adversarial weather. It does not start manuscript v2, does not upload to Zenodo, does not claim role-blind discovery, does not claim independent generator validation, and does not claim physics/cosmology/observed-universe proof. It opens the manuscript v2 upgrade gate before v1.8.
+`v1.7.10-alpha` preserves `C_Z = min(D, P, R, B)` and records the historical bounded `+1` closeout. `v1.7.11-alpha` supersedes that closeout's current authority because the final path consumes truth role and the triad/deep/wide arithmetic sum is not independent evidence.
 
 Closeout sentence:
 
-> Yes. Inside controlled synthetic-field adversarial weather, the final trinary witness distinguishes earned-one from raw expression pressure, latent overcrown, relation debt, return debt, and false-one pressure, while preserving earned-one, holding structured zero/debt lanes, demoting false-one pressure, and maintaining zero final false-one crowns.
+> Historical statement only; not the current project decision.
 
-## Manuscript v2 upgrade gate — before v1.8
+## v1.7.11-alpha current note
 
-If `v1.7.10-alpha` closes `+1`, the original manuscript must be upgraded before `v1.8` begins.
+`v1.7.11-alpha` is the Evidence Integrity Correction. It preserves `C_Z = min(D, P, R, B)`, reopens the core question at `0 / HOLD`, and adds executable atomic overlap, source-hash, denominator, rate, and nested-union accounting. It does not rewrite the scientific mechanism.
 
-This is **manuscript v2**, not software `v2.0`. It exists because the main question would then be answered inside its bounded domain, and the archived first-research-alpha manuscript would need to become an updated readable record before the project continues into broader synthetic challenges.
+```text
+naive nested opportunities = 375,921 (invalid pooled evidence)
+unique atomic union         = 260,253
+duplicate representations  = 115,668
+payload conflicts           = 0
+```
 
-If `v1.7.10-alpha` closes `0`, manuscript v2 may become a bounded correction / partial-answer manuscript, or it may wait while the unresolved `v1.7` lane is repaired.
+Accounting authority is frozen to five exact candidate corpora, the complete
+27/81/243 scenario grids, and seeds 18-26 under a recorded contract SHA-256.
+Final summaries must equal typed gate-row recomputation; caller-selected test
+contracts cannot issue authoritative unique-union counts.
 
-If `v1.7.10-alpha` closes `-1`, manuscript v2 does not begin.
+Manuscript v2, DTA transfer, scientific thresholds, frozen blind holdout, and
+Zenodo remain on HOLD. A software v1.7.11 prerelease may proceed only under
+separately granted release authority; it does not promote the scientific claim.
 
-Required manuscript v2 content after a `+1` closeout:
+## Manuscript v2 upgrade gate — HOLD
+
+The premise for manuscript promotion is no longer met. Do not convert the construction-bound closeout into a polished manuscript claim.
+
+This is **manuscript v2**, not software `v2.0`. Historical v1.7.10 decision logic would have opened it after a bounded `+1`; v1.7.11 withdraws that permission.
+
+Future prerequisite: only a role-free empirical closeout may reopen manuscript work. If that happens, required content includes:
 
 ```text
 historical first-research-alpha lineage
@@ -648,34 +672,37 @@ claim language is bounded,
 and the manuscript does not outrun the repo.
 ```
 
-## v1.8 boundary — Independent Synthetic Challenge Line
+## v1.8 boundary — Role-Free Witness Repair Line
 
-`v1.8` begins only after both conditions hold:
+First gate: **Observable Schema and Label Firewall**.
+
+`v1.8` begins as a corrective implementation line after v1.7.11 accounting is green. It does not begin with independent generators, because a new generator would merely transport the current tautology.
 
 ```text
-v1.7 core question closes with +1, and
-manuscript v2 has been drafted or deliberately frozen as the bounded record of that answer.
+observable inputs are separated from labels,
+blind predictions are written and hashed before label join,
+and the audit can expose a deliberate false crown.
 ```
 
-If `v1.7` closes `0`, `v1.8` repairs unresolved lanes instead of generalizing. If `v1.7` closes `-1`, `v1.8` does not begin.
+The current `0 / HOLD` therefore opens repair, not generalization.
 
 `v1.8` asks a stronger question:
 
-> Does the final trinary witness preserve the same distinction pattern when the synthetic field generator becomes less hand-shaped?
+> Can a frozen role-free witness discriminate the defined temporal-relation structures without labels, semantic proxies, nested-count inflation, or dead-safe refusal?
 
 Projected line:
 
 | version | role | pass condition |
 |---|---|---|
-| `v1.8.0-alpha` | independent generator interface | independent synthetic profiles can be added without changing native witness |
-| `v1.8.1-alpha` | independent controlled profile family A | lane expectations written before run |
-| `v1.8.2-alpha` | independent controlled profile family B | result not dependent on one generator shape |
-| `v1.8.3-alpha` | distribution-shift weather challenge | witness degrades safely under shifted synthetic pressure |
-| `v1.8.4-alpha` | independent synthetic challenge closeout | bounded generalization claim earned, held, or resisted |
+| `v1.8.0-alpha` | observable schema and label firewall | scorer cannot receive labels, semantic proxies, or legacy role-derived outputs; predictions hash before label join |
+| `v1.8.1-alpha` | exact implemented lineage path | cycle/return-aligned lineage is a required verdict input and ablation changes the claimed lane |
+| `v1.8.2-alpha` | frozen blind witness and Anti-Tautology Audit v2 | injected false crowns are counted; always-HOLD and simple baselines fail |
+| `v1.8.3-alpha` | unseen generator-family holdout | one-shot frozen evaluation on families not used for tuning; duplicates across splits blocked |
+| `v1.8.4-alpha` | empirical closeout | artifact-generated `SUPPORTED_BOUNDED`, `HOLD`, `FALSIFIED`, or `INVALID_EVIDENCE` decision |
 
-Allowed claim after `v1.8 +1`:
+Strongest candidate claim after a future `SUPPORTED_BOUNDED` result:
 
-> The controlled synthetic-field result transfers across multiple independently designed synthetic profile families.
+> A frozen role-free ZeroGate witness discriminates defined temporal-relation structures across unseen controlled synthetic generator families under preregistered error, retention, and abstention bounds.
 
 Forbidden claim after `v1.8 +1`:
 
@@ -683,7 +710,7 @@ Forbidden claim after `v1.8 +1`:
 
 ## v1.9 boundary — Role-Stripped / Role-Blind Candidate Line
 
-`v1.9` is the first line allowed to seriously revisit role-stripped or role-blind language.
+Historical plan: `v1.9` was the first line allowed to revisit role-stripped or role-blind language. The v1.7.11 correction moves the label firewall and frozen role-free witness into v1.8; the remaining v1.9 table is provisional and must be replanned after empirical closeout.
 
 The required route is:
 
@@ -725,11 +752,11 @@ It does **not** mean:
 - quantum / wormhole / spacetime claim;
 - role-blind discovery.
 
-Required before software `v2.0`:
+Future prerequisites before software `v2.0`:
 
 ```text
-v1.7 core question closeout
-manuscript v2 bounded upgrade or freeze decision
+role-free empirical closeout with current claim authority
+manuscript v2 bounded upgrade or explicit evidence-based HOLD decision
 fresh holdout evidence
 baseline/falsifier matrix
 return gate trace
@@ -844,10 +871,10 @@ manuscript upload before software closeout
 The forward route is:
 
 ```text
-v1.7 — answer the core controlled synthetic-field question
-manuscript v2 — upgrade the original manuscript after a successful v1.7 closeout and before v1.8
-v1.8 — test transfer across independent synthetic generators
-v1.9 — test role-stripped / role-blind candidate language
+v1.7 — evidence integrity correction; current answer 0 / HOLD
+manuscript v2 — HOLD until a future role-free empirical closeout earns revision
+v1.8 — build the label firewall, exact lineage path, frozen blind witness, and unseen-family holdout
+v1.9 — reserve for replication/transfer planning after v1.8 empirical closeout
 v2.0 — stable external-review release package
 v2.1 — add-on manuscript / paper line for post-manuscript-v2 evidence
 v2.2 — independent structural comparison

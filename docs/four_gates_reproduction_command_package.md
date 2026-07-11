@@ -1,16 +1,20 @@
 # Four Gates Reproduction Command Package
 
+> **Historical package:** this v1.6.26 route is preserved for reproducibility.
+> Its former evidence claim is superseded by the v1.7.11 `0 / HOLD` correction.
+
 **Introduced:** `v1.6.26-alpha`  
 **Status:** reproduction packaging gate, not new science  
 **Native witness:** `C_Z = min(D, P, R, B)`
 
-`v1.6.26-alpha` packages the reproduction route for the current Four Gates evidence line.
+`v1.6.26-alpha` packaged the reproduction route for the Four Gates evidence line
+as it was understood at that version.
 
 It does not add a new gate, new candidate family, new physics claim, Zenodo route, or shadow-route revival.
 
 ## Why this version exists
 
-The current evidence is promising, but a research claim does not become useful just because internal reports look good. A skeptical reader needs a clear path:
+At that time the evidence looked promising, but a research claim did not become useful just because internal reports looked good. A skeptical reader needed a clear path:
 
 ```text
 clone / open repo
@@ -54,7 +58,7 @@ The full script regenerates reference and fresh seed evidence, then compares the
 
 ## Expected qualitative pattern
 
-The evidence route is only useful if it preserves the current pattern:
+The historical evidence route was expected to preserve this pattern:
 
 ```text
 +1 earned-one visible
@@ -66,7 +70,7 @@ final false-one crowns = 0
 
 ## Boundary
 
-The current claim remains bounded:
+The historical v1.6.26 claim was bounded as follows; it has no current claim authority:
 
 > In controlled synthetic adversarial fields, the Four Gates witness operationalizes a synthetic zero-zone gating principle.
 

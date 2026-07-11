@@ -5,7 +5,7 @@ This file mirrors the top-level `REVIEWER_START_HERE.md` as a docs-path target f
 Start with:
 
 ```text
-README.md -> REVIEWER_START_HERE.md -> docs/v1_7_claim_boundary_card.md -> docs/v1_7_minimal_reproduction.md
+README.md -> docs/v1_7_11_evidence_integrity_correction.md -> REVIEWER_START_HERE.md -> docs/v1_7_claim_boundary_card.md -> docs/v1_7_minimal_reproduction.md
 ```
 
 Then inspect:
@@ -17,4 +17,4 @@ docs/v1_7_latest_holdout_snapshot.md
 docs/v1_7_anti_tautology_role_dependence_check.md
 ```
 
-`v1.7.9-alpha` packages the path. `v1.7.10-alpha` closes the bounded controlled synthetic-field core question.
+`v1.7.9-alpha` packages the historical path. `v1.7.10-alpha` recorded a closeout that `v1.7.11-alpha` supersedes as construction-bound. The current answer is `0 / HOLD`.

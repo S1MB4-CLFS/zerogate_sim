@@ -1,5 +1,7 @@
 # v1.7 Latest Holdout Snapshot
 
+> **Corrected interpretation (`v1.7.11-alpha`):** these are nested role-aware views. Do not sum them as independent evidence. The unique atomic union is wide243 with 260,253 opportunities; the 375,921 arithmetic sum contains 115,668 duplicate representations. Zero final false crowns remain construction-bound.
+
 **Status:** local assistant-handoff evidence snapshot from the `v1.7.6-alpha` fresh holdout ladder  
 **Repo gates using it:** `v1.7.8-alpha` front-page cleanup / cohesion check; `v1.7.9-alpha` reviewer reproduction package path; `v1.7.10-alpha` bounded core-question closeout  
 **Boundary:** controlled synthetic-field evidence only; not role-blind discovery, not independent-generator validation, not physics, not cosmology.
@@ -92,10 +94,10 @@ false-one pressure rises under deeper weather;
 final false-one crowns remain zero.
 ```
 
-That pattern supported reviewer packaging after the anti-tautology / role-dependence audit and front-page cohesion check. In `v1.7.10-alpha`, it contributes to the bounded `+1` closeout of the controlled synthetic-field core question.
+That pattern supported reviewer packaging after the anti-tautology / role-dependence audit and front-page cohesion check. In `v1.7.10-alpha`, it contributed to a bounded `+1` closeout that v1.7.11 now marks historical and superseded.
 
 It still does not support role-blind discovery, independent generator validation, or physics/cosmology claims.
 
 ## Next required use
 
-`v1.7.10-alpha` closes the bounded core question. The next movement is manuscript v2 as a bounded upgrade before v1.8.
+Historical v1.7.10 interpretation: the bounded core question was closed and manuscript v2 came next. Current v1.7.11 interpretation: the question is reopened at `0 / HOLD`, and role-free witness repair comes before any manuscript promotion.

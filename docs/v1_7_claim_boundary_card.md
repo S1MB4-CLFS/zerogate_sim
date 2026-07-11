@@ -1,33 +1,43 @@
 # v1.7 Claim Boundary Card
 
-**Introduced:** `v1.7.9-alpha`  
-**Updated:** `v1.7.10-alpha`  
+**Current version:** `v1.7.11-alpha`
+**Decision:** `0 / HOLD`
 **Native witness:** `C_Z = min(D, P, R, B)`
 
-## Allowed claim
+## Allowed current claim
 
-Inside controlled synthetic-field adversarial weather, the current evidence line shows the final trinary witness preserving earned expression, holding structured zero/debt lanes, and demoting false-one pressure without final false-one crowns.
+Inside controlled synthetic-field adversarial weather, the legacy role-aware
+harness reproducibly partitions its designed earned, debt, and false-pressure
+lanes. Corrected accounting identifies 260,253 unique atomic cases rather than
+375,921 nested representations.
 
-## Closed in v1.7.10
+This is construction-bound software behavior. It is not blind discrimination.
+Manuscript v2 and DTA transfer remain on HOLD.
 
-The core v1.7 question is formally closed as `+1` inside controlled synthetic-field adversarial weather.
+## Historical v1.7.10 decision — superseded
+
+`v1.7.10-alpha` recorded the core question as `+1`. `v1.7.11-alpha` withdraws
+that decision's current authority because the final path consumes truth role,
+lineage does not enter the final verdict, and the rungs were pooled despite
+nesting. That `+1` is historical and superseded.
 
 ## Forbidden claims
 
 Do not claim:
 
 - role-blind discovery is solved;
+- final false crowns demonstrate a role-free detector;
 - independent generator validation is done;
-- external empirical validation is done;
-- physics, cosmology, observed-universe, or dimensional-origin proof;
-- manuscript v2 has already been written;
-- v1.8 has begun before manuscript v2 is drafted or deliberately frozen;
-- the closeout proves anything outside controlled synthetic-field software evidence.
+- lineage is implemented in final earned-one;
+- manuscript v2 or DTA transfer is earned;
+- external empirical or clinical validation is done;
+- physics, cosmology, observed-universe, or dimensional-origin proof.
 
 ## Correct reader posture
 
 ```text
-+1 for controlled synthetic-field core-question closeout
-0 for independent generator / role-blind / external empirical questions
--1 for physics / cosmology / observed-universe overreach
+0 / HOLD for the controlled synthetic-field core question
+HOLD for manuscript v2 and DTA transfer
+GO for local v1.8 role-free witness repair only
+RESIST physics / cosmology / clinical / observed-universe overreach
 ```

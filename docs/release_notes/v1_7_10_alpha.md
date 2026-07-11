@@ -1,5 +1,7 @@
 # v1.7.10-alpha — Core Question Closeout
 
+> Historical release note. `v1.7.11-alpha` preserves this release as reproducible history but supersedes its active `+1` authority through the Evidence Integrity Correction.
+
 `v1.7.10-alpha` closes the v1.7 core question.
 
 ## Decision
@@ -39,4 +41,4 @@ It does not start manuscript v2, upload to Zenodo, claim role-blind discovery, c
 
 ## Next
 
-Manuscript v2 upgrade gate — before v1.8.
+Historical v1.7.10 next gate: manuscript v2 before v1.8. Superseded by the v1.7.11 Evidence Integrity Correction.

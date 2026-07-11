@@ -1,81 +1,59 @@
 # Current Evidence Index
 
-**Introduced:** `v1.6.24-alpha`  
-**Compacted:** `v1.7.10-alpha`  
-**Purpose:** name the canonical current evidence surface without forcing the README to carry every historical report.
+**Current line:** `v1.7.11-alpha` — Evidence Integrity Correction
+**Decision:** `0 / HOLD`
+**Native witness:** `C_Z = min(D, P, R, B)`
 
-Native witness remains:
+## Canonical current evidence surfaces
 
-```text
-C_Z = min(D, P, R, B)
-```
+This is the canonical current evidence index; historical packages remain named
+below so version tests cannot silently erase their route.
 
-## Active claim candidate
+1. [`v1_7_11_evidence_integrity_correction.md`](v1_7_11_evidence_integrity_correction.md) — current decision, atomic overlap, rates, and holds.
+2. [`current_evidence_state.md`](current_evidence_state.md) — compact current state.
+3. [`v1_7_latest_holdout_snapshot.md`](v1_7_latest_holdout_snapshot.md) — historical rung artifacts with corrected interpretation.
+4. [`../REVIEWER_START_HERE.md`](../REVIEWER_START_HERE.md) — cold-review route.
+5. [`version_truth.md`](version_truth.md) — release history and current authority.
 
-> In controlled synthetic adversarial fields, the Four Gates witness can preserve earned expression, hold unresolved relation/return debt as structured zero, and demote false-one pressure better than raw, binary, dead-safe, and ablated witnesses.
+## Evidence authority
 
-## Current canonical state
+| surface | version | current decision | caveat |
+|---|---|---|---|
+| Core Question Closeout | `v1.7.10-alpha` | historical / superseded | role-aware construction and nested pooled totals |
+| Evidence Integrity Correction | `v1.7.11-alpha` | `0 / HOLD` | accounting corrected; role-free witness not yet implemented |
 
-Detailed state now lives here:
+## Nested-safe snapshot
 
-- [`current_evidence_state.md`](current_evidence_state.md)
-- [`v1_7_latest_holdout_snapshot.md`](v1_7_latest_holdout_snapshot.md)
-- [`recent_native_evidence_history.md`](recent_native_evidence_history.md)
+| aggregation | opportunities | earned | raw | false pressure | final false crowns | valid as unique evidence? |
+|---|---:|---:|---:|---:|---:|---|
+| wide243 unique atomic union | 260,253 | 9,417 | 14,058 | 3,543 | 0 | yes for descriptive accounting only |
+| triad + deep + wide arithmetic sum | 375,921 | 12,206 | 18,353 | 4,671 | 0 | no; nested cases are duplicated |
 
-Compact current pattern:
+Even the unique-union row remains role-aware construction output. It is not a
+blind-discrimination result.
 
-```text
-+1 earned-one visible
- 0 latent overcrown visible and bounded
- 0 relation debt visible
- 0 return debt visible
--1 false-one pressure visible and demoted
-final false-one crowns = 0
-```
+Current accounting authority additionally requires the frozen v1.7.11 contract:
+five exact candidate corpora, 27/81/243 scenario cells, seeds 18-26, typed
+gate-row recomputation, and an exact contract hash match.
 
-## Canonical current evidence gates
+## Historical anchors
 
-| gate | version | canonical role | decision | caveat |
-|---|---|---|---|---|
-| v1.6 closeout | `v1.6.28-alpha` | bounded v1.6 closeout | expand | controlled synthetic-field only |
-| core question contract | `v1.7.0-alpha` | answer grammar / falsifiers | witness | no evidence crown |
-| return gate trace lock | `v1.7.1-alpha` | return-potential vs observed return | witness | no physics/topology claim |
-| lane taxonomy | `v1.7.2-alpha` | lane separation and latent overcrown repair | witness | latent remains bounded |
-| baseline / ablation matrix | `v1.7.3-alpha` | weaker-witness falsifier surface | witness | not a heavy evidence run |
-| perturbation spectrum | `v1.7.4-alpha` | lane behavior under weather | witness | spectrum contract |
-| masked role-dependence audit | `v1.7.5-alpha` | masked numeric visibility | witness | no role-blind discovery |
-| fresh holdout challenge | `v1.7.6-alpha` | fresh seeds / weather ladder / evaluator | witness | CI guards contract, not heavy runs |
-| anti-tautology / role-dependence check | `v1.7.7-alpha` | post-holdout audit | witness | no core closeout |
-| repo cleanup / cohesion check | `v1.7.8-alpha` | public surface repair | hygiene | no new science crown |
-| reviewer start here / reproduction package | `v1.7.9-alpha` | reviewer path and separated rung reproduction package | packaging | prepared closeout |
-| core question closeout | `v1.7.10-alpha` | bounded v1.7 answer | expand | controlled synthetic-field only |
+The history vault, v1.5 controlled reports, the historical Manuscript Correction Package,
+the `v1.6.25-alpha` first
+anti-tautology boundary, the `v1.6.28-alpha` historical closeout, the v1.6 debt
+line, the `v1.7.0-alpha` core contract, `v1.7.1-alpha` return trace,
+`v1.7.2-alpha` lane taxonomy, the `v1.7.7-alpha`
+historical Anti-Tautology Audit, and v1.7.9 reviewer package
+remain useful traces. They do not override the current
+`0 / HOLD` decision.
 
-## Historical evidence anchors
-
-`v1.6.27-alpha` / `v1.6.28-alpha` preserve the Manuscript Correction Package route and closeout boundary. `v1.6.22-alpha` caveat: latent overcrown did not reproduce cleanly, while relation debt and return debt did.
-
-
-`v1.6.25-alpha` remains the first anti-tautology / role-dependence audit anchor. Detailed native history lives in [`recent_native_evidence_history.md`](recent_native_evidence_history.md).
-
-## Latest holdout snapshot
-
-The latest local v1.7 holdout handoff snapshot is:
-
-| rung | earned | raw pressure | latent | relation debt | return debt | false pressure | final false crowns |
-|---|---:|---:|---:|---:|---:|---:|---:|
-| triad27 | 839 | 1,283 | 9 | 39 | 75 | 321 | 0 |
-| deep81 | 1,950 | 3,012 | 9 | 120 | 126 | 807 | 0 |
-| wide243 | 9,417 | 14,058 | 21 | 465 | 612 | 3,543 | 0 |
-
-This snapshot is referenced by the v1.7.9 reviewer reproduction package and closed by v1.7.10 as a bounded controlled synthetic-field answer. It is still not role-blind discovery, independent generator validation, or physics/cosmology proof.
+Historical caveat retained: latent overcrown did not reproduce cleanly in the
+fresh-seed path; relation and return debt did.
 
 ## Not current evidence
 
-The following remain historical or analogy lanes:
-
-- first-alpha three-corpus proof record;
-- v1.5 controlled reports;
-- full shadow route;
-- physics, quantum, topology, ER=EPR, or observed-universe analogies.
-
-These may explain how the project got here, but they do not carry the current Four Gates evidence claim.
+- role-blind discovery;
+- independent generator validation;
+- lineage authority in the final verdict;
+- manuscript v2 or DTA transfer readiness;
+- physics, cosmology, clinical, or observed-world claims.

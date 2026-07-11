@@ -1,5 +1,7 @@
 # v1.7.7-alpha — Anti-Tautology Audit / Role-Dependence Check
 
+> **Historical / superseded:** `v1.7.11-alpha` found that this audit trusted summary declarations and did not execute a role-free scorer. It has no current claim authority; see [`v1_7_11_evidence_integrity_correction.md`](v1_7_11_evidence_integrity_correction.md).
+
 **Version:** `v1.7.7-alpha`  
 **Native witness:** `C_Z = min(D, P, R, B)`
 

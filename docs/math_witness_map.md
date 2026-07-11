@@ -1,5 +1,9 @@
 # ZeroGateSim Native Math Witness Map
 
+> **Historical design map with v1.7.11 correction:** the earned-one equation
+> below is an intended contract, not the exact current executable path. Lineage
+> is emitted as a neighboring report and is not consumed by final earned-one.
+
 **Line:** `v1.2-alpha`  
 **Purpose:** lock the native geometry → math → code → test chain before external logic comparison.
 
@@ -453,13 +457,15 @@ A real one is not the first thing after zero. It is what zero can return as with
 
 ### Equation
 
+Intended design equation:
+
 ```math
 \chi^i_{earned}(t)=\chi^i_{raw}(t)H(k_i(t)-K^*)W^i_{lineage}(t)W^i_{independence}(t)W^i_{role}
 ```
 
 ### Code trace
 
-The final witness stack is distributed across:
+The historical design distributed related artifacts across:
 
 - `zerogate_sim.endurance`
 - `zerogate_sim.lineage`
@@ -467,9 +473,16 @@ The final witness stack is distributed across:
 - `zerogate_sim.earned_one`
 - `zerogate_sim.final_output`
 
+The exact v1.7.11 verdict path is narrower: `earned_one.build_earned_one_rows`
+consumes gate rows, `truth_role`, and echo-independence. It does not accept a
+lineage row or lineage verdict as input. `zerogate_sim.lineage` remains
+report-only beside the final path.
+
 ### Invariant
 
-Final `+1` must not be raw `+1` automatically. Raw expression must survive return-depth, temporal lineage, echo-independence, and proof-harness role witness.
+Design target: final `+1` must not be raw `+1` automatically, and lineage should
+become a required, ablatable input. Current fact: v1.7.11 has not implemented
+that lineage dependency.
 
 ### External-logic relevance
 
