@@ -52,6 +52,8 @@ Executable boundary:
 - visible injected false crown and HOLD-overcrown
 - always-HOLD, always-CROWN, and always-RESIST invalid
 - generated decision depends on executable forbidden/tamper canaries
+- CI portability correction removes Windows newline dependence from the tamper
+  test and treats the external workspace protocol copy as optional in CI
 
 Verified local checkpoint:
 - focused v1.8 + centralized version-surface tests: 54 passed

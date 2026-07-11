@@ -38,3 +38,11 @@ Scientific authority remains `v1.7.11-alpha`, `0 / HOLD`.
 `v1.8.1-alpha — Lineage-Bearing Predictor Package and Development-Only
 Preregistration`, only after explicit authorization to begin scorer/threshold
 design.
+
+## CI portability correction
+
+- Tamper regression now changes prediction bytes directly instead of relying on
+  platform-specific newline translation.
+- The repository protocol surface is always tested; byte equality with the
+  optional workspace-level protocol copy is tested only when that external copy
+  exists.

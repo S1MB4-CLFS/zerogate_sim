@@ -440,8 +440,8 @@ def test_freeze_refuses_overwrite(tmp_path: Path) -> None:
 
 def test_prediction_tamper_fails_before_label_loader_runs(tmp_path: Path) -> None:
     split, freeze, receipt_sha = _frozen_probe(tmp_path)
-    text = freeze["predictions"].read_text(encoding="utf-8")
-    freeze["predictions"].write_text(text.replace("0.8,1", "0.8,-1"), encoding="utf-8")
+    original = freeze["predictions"].read_bytes()
+    freeze["predictions"].write_bytes(original + b"tamper")
     called = False
 
     def forbidden_label_read(_: Path) -> None:
