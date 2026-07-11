@@ -62,7 +62,7 @@ assumption).
 | human intervention | none required |
 | credit usage | `not_recorded` |
 
-## v1.8.2-alpha — local closeout; GitHub publication pending
+## v1.8.2-alpha — merged scientific stop
 
 | item | observation |
 |---|---|
@@ -86,6 +86,10 @@ assumption).
 | correctly unexecuted | nested selection never became valid, so baseline/ablation comparison and cluster uncertainty were not run or inferred |
 | final local verification | 123 focused v1.8.2/version-surface tests and 601 full-suite tests passed |
 | final independent diff review | no P1/P2 blockers; retained hashes and every bound source byte matched, invalid outputs remained unexecuted where required, no holdout implementation/access, and generated evidence stayed ignored |
+| checkpoint commit | `528ac55e76cd974be72d0572429963d4c0319d4f` |
+| pull request | [#5](https://github.com/S1MB4-CLFS/zerogate_sim/pull/5) |
+| remote verification | push and pull-request `pytest (release 3.12)` runs both passed before merge: [push run](https://github.com/S1MB4-CLFS/zerogate_sim/actions/runs/29164269010), [PR run](https://github.com/S1MB4-CLFS/zerogate_sim/actions/runs/29164277666) |
+| merge receipt | `14f0abe7a88bf0c11e18d45e0e5e7c2df879e256` |
 | holdout boundary | v1.8.3 and v1.8.4 are blocked; no holdout material exists or was accessed |
 | human intervention | none required during implementation/evidence execution |
 | credit usage | `not_recorded` |
