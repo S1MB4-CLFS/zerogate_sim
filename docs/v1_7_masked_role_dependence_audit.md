@@ -1,5 +1,7 @@
 # v1.7.5-alpha — Masked Role-Dependence Audit
 
+> **Historical / superseded for claim authority:** masked numeric visibility did not establish a role-free scoring path. `v1.7.11-alpha` returns the core question to `0 / HOLD`.
+
 **Version:** `v1.7.5-alpha`  
 **Native witness:** `C_Z = min(D, P, R, B)`  
 **Core question:** can a final trinary witness distinguish earned-one from raw expression pressure, latent overcrown, relation debt, return debt, and false-one pressure under controlled synthetic-field adversarial weather?

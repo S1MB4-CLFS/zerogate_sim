@@ -1,7 +1,7 @@
 # ZeroGateSim
 
-**Current public line:** `v1.7.10-alpha` — Core Question Closeout  
-**Status:** speculative research software / controlled synthetic-field experiment line  
+**Current public line:** `v1.7.11-alpha` — Evidence Integrity Correction
+**Status:** `0 / HOLD`; speculative research software / controlled synthetic-field experiment line
 **Working identity:** Four Gates of Becoming witness simulator  
 **Core question:** can a final trinary witness distinguish earned-one from raw expression pressure, latent overcrown, relation/return debt, and false-one pressure under controlled synthetic-field adversarial weather?
 
@@ -13,9 +13,14 @@ It does **not** prove cosmology, physical dimensions, quantum gravity, or that r
 
 It tests a narrower software-theory claim:
 
-> Inside controlled synthetic fields, a final trinary witness using the Four Gates of Becoming can preserve earned expression, hold structured zero/debt states, and demote false-one pressure better than raw, binary, dead-safe, and ablated witnesses.
+> The legacy role-aware controlled harness reproducibly partitions its designed earned, debt, and false-pressure lanes. Whether a frozen role-free witness can discriminate those structures remains open.
 
-The v1.7 core question is now closed as `+1` inside controlled synthetic-field adversarial weather. Historical proof records, v1.5 controlled evidence, and the v1.6 shadow route are preserved in the [history vault](docs/history_vault/README.md). They explain how the repo got here; they are not the current README evidence surface.
+`v1.7.11-alpha` reopens the v1.7 core question at `0 / HOLD`. `v1.7.10-alpha` remains reproducible history, but its zero-false-crown result is construction-bound and its pooled rung totals are nested arithmetic sums, not independent empirical evidence. Read the [Evidence Integrity Correction](docs/v1_7_11_evidence_integrity_correction.md).
+
+The corrected accounting pass is bound to five exact candidate corpora, the
+27/81/243 scenario grids, and seeds 18-26 under a recorded contract hash. Final
+counts are recomputed from typed gate rows; caller-selected mini-contracts
+cannot issue authoritative unique-union totals.
 
 ## How to read this README
 
@@ -99,7 +104,7 @@ The final output is trinary:
 -1 resist/demote  false-one pressure is exposed and refused
 ```
 
-The project compares the native witness against raw, binary, dead-safe, and ablated witnesses. The current bounded claim is that, inside controlled synthetic fields, the Four Gates witness preserved earned expression, held relation/return debt as structured zero, and demoted false-one pressure where simpler witnesses exposed failure modes.
+The project compares the native witness against raw, binary, dead-safe, and ablated witnesses. The current bounded claim is narrower: inside controlled synthetic fields, the legacy role-aware harness reproducibly partitions its designed earned, debt, and false-pressure lanes. Whether a frozen role-free witness outperforms simpler baselines remains open.
 
 This does not prove cosmology, physical dimensional genesis, quantum gravity, or that reality itself is trinary. It is a computational approximation of zero-zone gating.
 
@@ -123,11 +128,14 @@ Raw expression is pressure, not final truth:
 \chi^i_{raw}(t)=H(\sigma_i(t)-\epsilon)H(C_Z^i(t)-\theta_Z)
 ```
 
-### Trinary witness stack
+### Intended trinary witness stack
 
 ![Trinary witness stack](docs/assets/trinary_witness_stack.svg)
 
-Final earned-one is raw expression after return-depth, lineage, independence, and role-aware witness in the current harness:
+This diagram preserves the intended witness design, not an exact v1.7.11 code
+trace. The equation below is a target contract. In the current implementation,
+`earned_one.build_earned_one_rows` consumes truth role and echo-independence;
+lineage artifacts are written beside the verdict but are not consumed by it.
 
 ```math
 \chi^i_{earned}(t)=\chi^i_{raw}(t)H(k_i(t)-K^*)W^i_{lineage}(t)W^i_{independence}(t)W^i_{role}
@@ -185,13 +193,16 @@ C_Z^i(t)=\min(D_i(t),P_i(t),R_i(t),B_i(t))
 \chi^i_{raw}(t)=H(\sigma_i(t)-\epsilon)H(C_Z^i(t)-\theta_Z)
 ```
 
+The next equation is the intended earned-one design, not the exact implemented
+v1.7.11 decision path; lineage is currently report-only.
+
 ```math
 \chi^i_{earned}(t)=\chi^i_{raw}(t)H(k_i(t)-K^*)W^i_{lineage}(t)W^i_{independence}(t)W^i_{role}
 ```
 
 ## Current route
 
-The active route after `v1.7.10-alpha` is:
+The active route after the v1.7.11 correction is:
 
 ```text
 v1.7.0-alpha core question contract complete
@@ -204,8 +215,9 @@ v1.7.0-alpha core question contract complete
 -> v1.7.7-alpha Anti-Tautology Audit / Role-Dependence Check complete
 -> v1.7.8-alpha repo cleanup / cohesion check complete
 -> v1.7.9-alpha reviewer start here / reproduction package complete
--> v1.7.10-alpha core question closeout current
--> manuscript v2 bounded upgrade next before v1.8
+-> v1.7.10-alpha historical core question closeout superseded
+-> v1.7.11-alpha evidence integrity correction current: 0 / HOLD
+-> v1.8.0-alpha observable schema and label firewall next
 ```
 
 The shadow route is **not** the active route now. It is preserved as historical diagnostic work in the [history vault](docs/history_vault/README.md).
@@ -232,19 +244,20 @@ triad27 -> inspect -> deep81 -> inspect -> wide243 -> inspect -> package later
 
 ![v1.7.6 wide243 holdout card](docs/assets/v1_7_6_wide243_holdout_card.svg)
 
-### combined witness read
+### historical combined witness read — invalid as unique pooled evidence
 
 ![v1.7.6 holdout total card](docs/assets/v1_7_6_holdout_total_card.svg)
 
 ```text
-+1 earned-one total          = 12,206
-raw expression pressure      = 18,353
-0 latent overcrown           = 39
-0 relation debt              = 624
-0 return debt                = 813
--1 false-one pressure        = 4,671
-final false-one crowns       = 0
-lane pattern                 = true across triad27 / deep81 / wide243
+historical nested opportunity sum = 375,921  (invalid pooled evidence)
+unique atomic union               = 260,253  (wide243 contains the narrow slices)
+duplicate representations        = 115,668
+
+unique-union role-aware counts:
+earned-one                        = 9,417
+raw expression pressure           = 14,058
+false-one pressure                = 3,543
+final false-one crowns            = 0  (construction-bound; not a blind result)
 ```
 
 Read the bounded snapshot and output-structure contract:
@@ -255,7 +268,7 @@ Read the bounded snapshot and output-structure contract:
 
 ## Reviewer start here / reproduction package
 
-`v1.7.9-alpha` adds the narrow reviewer door. It made the closeout auditable and remains the inspection path for `v1.7.10-alpha`.
+`v1.7.9-alpha` remains the historical reproduction door. `v1.7.11-alpha` changes how those artifacts may be interpreted: reproduction confirms the role-aware harness and supplies inputs to the integrity audit; it does not reproduce blind discrimination.
 
 Start here:
 
@@ -273,36 +286,36 @@ Start here:
 Safe run order:
 
 ```text
-smoke -> triad27 -> inspect -> deep81 -> inspect -> wide243 -> inspect -> combined package -> v1.7.10 closeout -> manuscript v2 gate
+smoke -> triad27 -> inspect -> deep81 -> inspect -> wide243 -> atomic overlap audit -> v1.7.11 HOLD
 ```
 
 The combined package is navigation only. It must not replace the separate rung records.
 
-## Core question closeout
+## Evidence Integrity Correction
 
-`v1.7.10-alpha` closes the v1.7 core question as `+1` inside controlled synthetic-field adversarial weather.
+`v1.7.11-alpha` supersedes the active authority of the v1.7.10 closeout and returns the core question to `0 / HOLD`.
 
-![v1.7.10 core question closeout card](docs/assets/v1_7_10_core_question_closeout_card.svg)
+The v1.7.10 card remains a historical artifact, not the current project decision.
 
-Closeout sentence:
+Correction sentence:
 
-> Yes. Inside controlled synthetic-field adversarial weather, the final trinary witness distinguishes earned-one from raw expression pressure, latent overcrown, relation debt, return debt, and false-one pressure, while preserving earned-one, holding structured zero/debt lanes, demoting false-one pressure, and maintaining zero final false-one crowns.
+> v1.7.11-alpha reopens the core question at 0/HOLD: the current path uses truth role, lineage is not consumed by the final verdict, and the weather rungs are nested views. The surviving claim is reproducible role-aware harness behavior, not blind empirical discrimination.
 
 Boundary remains strict:
 
 ```text
-role-blind discovery = not solved
+role-free scorer = not implemented
+lineage in final verdict = not implemented
 independent generator validation = not done
-physics / cosmology / observed-universe proof = not claimed
-next movement = manuscript v2 bounded upgrade before v1.8
+manuscript v2 / DTA transfer = HOLD
+next movement = v1.8.0 observable schema and label firewall
 ```
 
 Read:
 
-- [`docs/v1_7_core_question_closeout.md`](docs/v1_7_core_question_closeout.md)
-- [`docs/v1_7_answer_status_card.md`](docs/v1_7_answer_status_card.md)
-- [`docs/v1_7_closeout_claim_boundary.md`](docs/v1_7_closeout_claim_boundary.md)
-- [`docs/v1_7_go_no_go_for_manuscript_v2.md`](docs/v1_7_go_no_go_for_manuscript_v2.md)
+- [`docs/v1_7_11_evidence_integrity_correction.md`](docs/v1_7_11_evidence_integrity_correction.md)
+- [`docs/v1_7_core_question_closeout.md`](docs/v1_7_core_question_closeout.md) — historical closeout, superseded.
+- [`docs/v1_7_go_no_go_for_manuscript_v2.md`](docs/v1_7_go_no_go_for_manuscript_v2.md) — current decision is HOLD.
 
 ## Inspection map
 
@@ -318,6 +331,7 @@ The README keeps the project face, the math, and the newest visual cards. Everyt
 
 ### Current v1.7 state
 
+- [`docs/v1_7_11_evidence_integrity_correction.md`](docs/v1_7_11_evidence_integrity_correction.md) — current `0 / HOLD` decision and executable correction.
 - [`docs/current_evidence_state.md`](docs/current_evidence_state.md) — detailed v1.7 evidence state and boundaries.
 - [`docs/v1_7_latest_holdout_snapshot.md`](docs/v1_7_latest_holdout_snapshot.md) — three-rung holdout snapshot behind the visual cards.
 - [`docs/v1_7_holdout_weather_ladder.md`](docs/v1_7_holdout_weather_ladder.md) — why triad27 / deep81 / wide243 are separate rungs.
@@ -325,16 +339,16 @@ The README keeps the project face, the math, and the newest visual cards. Everyt
 - [`docs/v1_7_front_page_map.md`](docs/v1_7_front_page_map.md) — why the README is ordered this way.
 - [`docs/current_evidence_index.md`](docs/current_evidence_index.md) — current evidence index.
 - [`docs/version_truth.md`](docs/version_truth.md) — version spine and release truth.
-- [`docs/v1_7_core_question_closeout.md`](docs/v1_7_core_question_closeout.md) — v1.7 closeout decision.
-- [`docs/v1_7_answer_status_card.md`](docs/v1_7_answer_status_card.md) — trinary answer state.
-- [`docs/v1_7_closeout_claim_boundary.md`](docs/v1_7_closeout_claim_boundary.md) — allowed and forbidden post-closeout claims.
-- [`docs/v1_7_go_no_go_for_manuscript_v2.md`](docs/v1_7_go_no_go_for_manuscript_v2.md) — next gate.
+- [`docs/v1_7_core_question_closeout.md`](docs/v1_7_core_question_closeout.md) — historical v1.7.10 closeout, superseded.
+- [`docs/v1_7_answer_status_card.md`](docs/v1_7_answer_status_card.md) — historical trinary answer state, superseded.
+- [`docs/v1_7_closeout_claim_boundary.md`](docs/v1_7_closeout_claim_boundary.md) — historical post-closeout language, superseded.
+- [`docs/v1_7_go_no_go_for_manuscript_v2.md`](docs/v1_7_go_no_go_for_manuscript_v2.md) — current manuscript HOLD and local repair route.
 - [`REVIEWER_START_HERE.md`](REVIEWER_START_HERE.md) — narrow reviewer door and reproduction route.
 - [`docs/v1_7_reviewer_reproduction_package.md`](docs/v1_7_reviewer_reproduction_package.md) — reviewer package contract.
 - [`docs/v1_7_reproduction_commands.md`](docs/v1_7_reproduction_commands.md) — separate rung command map.
 - [`docs/v1_7_expected_outputs.md`](docs/v1_7_expected_outputs.md) — expected output and handoff layers.
 - [`docs/v1_7_evidence_manifest.md`](docs/v1_7_evidence_manifest.md) — package evidence manifest.
-- [`docs/v1_7_claim_boundary_card.md`](docs/v1_7_claim_boundary_card.md) — closeout-safe claim boundary.
+- [`docs/v1_7_claim_boundary_card.md`](docs/v1_7_claim_boundary_card.md) — current `0 / HOLD` claim boundary.
 
 ### Anti-tautology / role-dependence path
 
@@ -402,7 +416,7 @@ Current v1.7 front-page route preserves the v1.6 release spine as trace anchors,
 ```text
 anti-tautology audit complete -> reproduction command package complete -> manuscript correction package complete -> v1.6 closeout complete
 v1.6.14-alpha -> v1.6.15-alpha -> v1.6.16-alpha -> v1.6.17-alpha -> v1.6.18-alpha -> v1.6.19-alpha -> v1.6.20-alpha -> v1.6.21-alpha -> v1.6.22-alpha -> v1.6.23-alpha -> v1.6.24-alpha -> v1.6.25-alpha -> v1.6.26-alpha -> v1.6.27-alpha -> v1.6.28-alpha
-v1.7.0-alpha -> v1.7.1-alpha -> v1.7.2-alpha -> v1.7.3-alpha -> v1.7.4-alpha -> v1.7.5-alpha -> v1.7.6-alpha -> v1.7.7-alpha -> v1.7.8-alpha -> v1.7.9-alpha -> v1.7.10-alpha -> manuscript v2 gate
+v1.7.0-alpha -> v1.7.1-alpha -> v1.7.2-alpha -> v1.7.3-alpha -> v1.7.4-alpha -> v1.7.5-alpha -> v1.7.6-alpha -> v1.7.7-alpha -> v1.7.8-alpha -> v1.7.9-alpha -> v1.7.10-alpha historical -> v1.7.11-alpha HOLD -> v1.8.0 label firewall
 ```
 
 Named recent gates remain inspectable:
@@ -416,7 +430,7 @@ Fresh Holdout Synthetic-Field Challenge
 Anti-Tautology Audit / Role-Dependence Check
 Repo Cleanup / Cohesion Check
 Reviewer Start Here / Reproduction Package
-Core Question Closeout
+Evidence Integrity Correction / Core Question Reopened
 ```
 
 Native/repaired evidence phrase anchors preserved for tested public-surface continuity:
@@ -494,9 +508,9 @@ More detailed quickstart:
 
 ## Claim boundary
 
-Supported current claim, if the evidence remains intact through package planning:
+Supported current claim:
 
-> Inside controlled synthetic fields, the Four Gates final trinary witness preserved earned-one, held relation/return debt as structured zero, and demoted false-one pressure across triad27, deep81, wide243, and fresh-seed reproduction, while raw, binary, dead-safe, and ablated witnesses exposed visible failure modes.
+> Inside controlled synthetic fields, the legacy role-aware harness reproducibly partitions its designed earned, debt, and false-pressure lanes. This is construction-bound software behavior and does not yet establish a blind discriminator.
 
 Unsupported claims:
 
@@ -505,6 +519,8 @@ Unsupported claims:
 - this proves that reality itself is trinary;
 - this replaces physics or mathematics;
 - this solves role-blind false-one detection;
+- this establishes a role-free empirical discriminator;
+- this earns manuscript v2 or DTA transfer;
 - this proves an observed-universe bridge.
 
 Read the full boundary:

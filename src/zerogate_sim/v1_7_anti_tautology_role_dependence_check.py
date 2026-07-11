@@ -2,6 +2,7 @@ from __future__ import annotations
 
 import argparse
 import csv
+import hashlib
 import json
 from pathlib import Path
 from typing import Any, Iterable
@@ -18,6 +19,7 @@ CORE_QUESTION = (
 DECISION = "anti_tautology_role_dependence_check_locked_not_closeout"
 GATE_KIND = "post_holdout_anti_tautology_role_dependence_check_not_closeout"
 NEXT_GATE = "v1.7.8-alpha — Repo Cleanup / Cohesion Check"
+CURRENT_AUTHORITY = "superseded_by_v1.7.11_evidence_integrity_correction"
 
 REQUIRED_RUNGS = ["triad27", "deep81", "wide243"]
 REQUIRED_LANES = [
@@ -317,7 +319,12 @@ def _read_csv(path: Path) -> list[dict[str, str]]:
 
 def read_many_csv(paths: Iterable[Path]) -> list[dict[str, str]]:
     rows: list[dict[str, str]] = []
+    seen_hashes: set[str] = set()
     for path in paths:
+        source_hash = hashlib.sha256(path.read_bytes()).hexdigest()
+        if source_hash in seen_hashes:
+            continue
+        seen_hashes.add(source_hash)
         rows.extend(_read_csv(path))
     return rows
 
@@ -325,13 +332,19 @@ def read_many_csv(paths: Iterable[Path]) -> list[dict[str, str]]:
 def classify_audit_row(row: dict[str, object]) -> str:
     if _to_int(row.get("final_false_one_crowns")) > 0:
         return "resist_false_crown_stop"
+    if not str(row.get("holdout_run_id", "")).strip():
+        return "invalid_missing_holdout_run_id"
+    if str(row.get("provenance_status", "")).strip().lower() != "verified":
+        return "invalid_self_attested_provenance"
+    if str(row.get("scoring_label_firewall", "")).strip().lower() != "verified":
+        return "invalid_role_aware_scoring"
     if not _to_bool(row.get("candidate_names_masked")):
         return "resist_candidate_name_leakage"
     if not _to_bool(row.get("expected_manifest_frozen")):
         return "resist_post_hoc_manifest"
     if _to_bool(row.get("reference_profile_reused")):
         return "resist_reference_profile_reused"
-    if not _to_bool(row.get("earned_controls_present"), default=True):
+    if not _to_bool(row.get("earned_controls_present"), default=False):
         return "resist_dead_safe_missing_earned_controls"
     if _to_int(row.get("final_earned_one_events")) <= 0:
         return "resist_dead_safe_no_earned_one"
@@ -351,21 +364,53 @@ def classify_audit_row(row: dict[str, object]) -> str:
         return "hold_raw_pressure_not_visible"
     if _to_int(row.get("latent_overcrown")) <= 0:
         return "witness_core_lanes_visible_latent_hold"
-    return "witness_post_holdout_audit_row_passed"
+    return "invalid_legacy_audit_superseded"
 
 
 def evaluate_audit_rows(rows: Iterable[dict[str, object]]) -> list[dict[str, object]]:
     evaluation: list[dict[str, object]] = []
+    seen_run_ids: set[str] = set()
     for row in rows:
+        holdout_run_id = str(row.get("holdout_run_id", "")).strip()
+        if holdout_run_id and holdout_run_id in seen_run_ids:
+            evaluation.append(
+                {
+                    "holdout_run_id": holdout_run_id,
+                    "weather_rung": row.get("weather_rung", ""),
+                    "row_status": "invalid_duplicate_holdout_run_id",
+                    "fresh_seed_block": row.get("fresh_seed_block", ""),
+                    "candidate_names_masked": False,
+                    "expected_manifest_frozen": False,
+                    "reference_profile_reused": False,
+                    "earned_controls_present": False,
+                    "lane_pattern_matches_expected": False,
+                    "final_earned_one_events": 0,
+                    "raw_expression_pressure": 0,
+                    "latent_overcrown": 0,
+                    "relation_debt": 0,
+                    "return_debt": 0,
+                    "false_one_pressure": 0,
+                    "final_false_one_crowns": 0,
+                    "role_labels_masked": "not_supplied",
+                    "role_leakage_score": 0.0,
+                    "label_only_lane_assignment": False,
+                    "provenance_status": "invalid_duplicate",
+                    "scoring_label_firewall": "not_verified",
+                }
+            )
+            continue
+        if holdout_run_id:
+            seen_run_ids.add(holdout_run_id)
         evaluation.append(
             {
+                "holdout_run_id": holdout_run_id,
                 "weather_rung": row.get("weather_rung", ""),
                 "row_status": classify_audit_row(row),
                 "fresh_seed_block": row.get("fresh_seed_block", ""),
                 "candidate_names_masked": _to_bool(row.get("candidate_names_masked")),
                 "expected_manifest_frozen": _to_bool(row.get("expected_manifest_frozen")),
                 "reference_profile_reused": _to_bool(row.get("reference_profile_reused")),
-                "earned_controls_present": _to_bool(row.get("earned_controls_present"), default=True),
+                "earned_controls_present": _to_bool(row.get("earned_controls_present"), default=False),
                 "lane_pattern_matches_expected": _to_bool(row.get("lane_pattern_matches_expected")),
                 "final_earned_one_events": _to_int(row.get("final_earned_one_events")),
                 "raw_expression_pressure": _to_int(row.get("raw_expression_pressure")),
@@ -377,6 +422,8 @@ def evaluate_audit_rows(rows: Iterable[dict[str, object]]) -> list[dict[str, obj
                 "role_labels_masked": _to_bool(row.get("role_labels_masked"), default=True) if row.get("role_labels_masked", "") not in {"", None} else "not_supplied",
                 "role_leakage_score": _to_float(row.get("role_leakage_score")),
                 "label_only_lane_assignment": _to_bool(row.get("label_only_lane_assignment")),
+                "provenance_status": row.get("provenance_status", "not_verified"),
+                "scoring_label_firewall": row.get("scoring_label_firewall", "not_verified"),
             }
         )
     return evaluation
@@ -390,6 +437,8 @@ def collapse_audit_decision(evaluation_rows: Iterable[dict[str, object]]) -> str
     rungs = {str(row.get("weather_rung", "")) for row in rows}
     missing_rungs = [rung for rung in REQUIRED_RUNGS if rung not in rungs]
 
+    if any(status.startswith("invalid_") for status in statuses):
+        return "invalid_evidence_legacy_self_attested_or_role_aware"
     if any(status.startswith("resist_") for status in statuses):
         if "resist_false_crown_stop" in statuses:
             return "resist_audit_false_crown_stop"
@@ -447,6 +496,10 @@ def _readme_lines(evaluation_rows: list[dict[str, object]], evaluation_decision:
         f"**Version:** `{CURRENT_VERSION}`",
         f"**Decision:** `{DECISION}`",
         f"**Native witness:** `{NATIVE_WITNESS}`",
+        "",
+        "**Current authority:** `superseded_by_v1.7.11_evidence_integrity_correction`.",
+        "",
+        "This historical audit cannot establish current claim authority from summary-supplied booleans. Current inputs without executable provenance and a role-free scoring firewall return invalid evidence.",
         "",
         "## Core question",
         "",
@@ -550,6 +603,8 @@ def build_v1_7_anti_tautology_role_dependence_check(
         "manuscript_v2_started": False,
         "role_blind_discovery_claimed": False,
         "core_question_closed": False,
+        "current_claim_authority": False,
+        "current_authority_status": CURRENT_AUTHORITY,
         "holdout_summary_csvs": [str(path) for path in csv_paths],
         "evaluation_rows": len(evaluation_rows),
         "required_weather_rungs": REQUIRED_RUNGS,

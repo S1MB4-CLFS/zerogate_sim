@@ -2,6 +2,11 @@
 
 ZeroGateSim is easiest to read if you start with the claim boundary, not the full theory paper.
 
+> **Current correction:** `v1.7.11-alpha` is `0 / HOLD`. Historical `+1`
+> wording is superseded because the final path consumes truth role and the
+> weather rungs were nested. Start with the current claim boundary and evidence
+> integrity correction.
+
 ## Start here
 
 1. [Claim boundary](claim_boundary.md)
@@ -36,7 +41,8 @@ Ask whether the public claim matches the evidence.
 
 The safe claim is:
 
-> Earned-one witness separated raw expression pressure from final earned expression, latent overcrown, and false-one pressure inside generated toy fields.
+> The legacy role-aware harness reproducibly partitions designed lanes inside
+> generated toy fields; blind discrimination remains unearned.
 
 The unsafe claim is:
 
@@ -44,17 +50,16 @@ The unsafe claim is:
 
 That second sentence should go directly into the compost bin.
 
-## What would falsify or weaken the current software claim?
+## What blocks a stronger software claim?
 
 Important pressure points:
 
-- final false-one crowns reappear in fresh proof records;
-- trap candidates repeatedly become final earned-one;
-- core expressers are silenced under ordinary weather;
-- simpler baselines match or outperform earned-one witness under adversarial corpora;
-- the result depends on one seed range only;
-- visual outputs contradict summary reports;
-- proof numbers cannot be reproduced from command-line tools.
+- any truth role, expected outcome, or semantic label reaches the scorer;
+- an injected false crown cannot be exposed and counted;
+- always-HOLD or dead-safe behavior passes;
+- lineage ablation leaves a claimed lineage-dependent verdict unchanged;
+- an unseen generator family breaks the frozen observable-only path;
+- proof numbers cannot be reconstructed from typed atomic evidence.
 
 ## What is still future work?
 

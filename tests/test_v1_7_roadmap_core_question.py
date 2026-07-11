@@ -45,14 +45,16 @@ def test_v1_7_roadmap_names_all_answer_gates_and_closeout() -> None:
         assert needle in roadmap
 
 
-def test_manuscript_v2_is_before_v1_8_and_is_not_software_v2_0() -> None:
+def test_manuscript_v2_hold_is_before_v1_8_repair_and_is_not_software_v2_0() -> None:
     roadmap = read("ROADMAP.md")
     manuscript_gate = roadmap.index("## Manuscript v2 upgrade gate")
     v18_boundary = roadmap.index("## v1.8 boundary")
     software_v20 = roadmap.index("## v2.0 boundary")
     assert manuscript_gate < v18_boundary < software_v20
     assert "This is **manuscript v2**, not software `v2.0`." in roadmap
-    assert "manuscript v2 has been drafted or deliberately frozen" in roadmap
+    assert "The premise for manuscript promotion is no longer met" in roadmap
+    assert "Role-Free Witness Repair Line" in roadmap
+    assert "Observable Schema and Label Firewall" in roadmap
 
 
 def test_later_roadmap_keeps_role_blind_and_external_claims_bounded() -> None:

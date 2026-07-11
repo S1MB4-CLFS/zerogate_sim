@@ -1,5 +1,9 @@
 # ZeroGateSim Fuzzy / Many-Valued Mirror
 
+> **v1.7.11 correction:** this historical v1.3 comparison refers to an intended
+> full witness stack. Current final earned-one consumes truth role and
+> echo-independence but does not consume lineage.
+
 **Line:** `v1.3.0-alpha`
 **Status:** first known-logic projection mirror
 
@@ -90,4 +94,6 @@ These files are included in the matrix evidence bundle.
 
 ## Boundary sentence
 
-ZeroGateSim can be compared to fuzzy / many-valued scoring because it uses continuous gate scores. It is not identical to fuzzy logic because final earned-one depends on native return, lineage, independence, and witness grammar.
+ZeroGateSim can be compared to fuzzy / many-valued scoring because it uses
+continuous gate scores. The intended design extends beyond fuzzy conjunction,
+but lineage remains report-only in the current final path.

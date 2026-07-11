@@ -34,11 +34,13 @@ The README should show the project. This file can hold the ledger.
 - `v1.7.7-alpha` — Anti-Tautology Audit / Role-Dependence Check.
 - `v1.7.8-alpha` — Repo Cleanup / Cohesion Check.
 
-## Next planned gates
+## Historical completion and correction
 
 - `v1.7.9-alpha` — Reviewer Start Here / Reproduction Package.
-- `v1.7.10-alpha` — Core Question Closeout.
-- Manuscript v2 — only after `v1.7.10-alpha` succeeds or deliberately freezes a bounded partial-answer record.
+- `v1.7.10-alpha` — historical Core Question Closeout, now superseded.
+- `v1.7.11-alpha` — Evidence Integrity Correction; current answer `0 / HOLD`.
+- `v1.8.0-alpha` — Observable Schema and Label Firewall next.
+- Manuscript v2 and DTA transfer — HOLD until a future role-free empirical closeout earns them.
 
 ## Boundary
 

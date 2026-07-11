@@ -34,19 +34,23 @@ Mechanism:
 
 DREED pressure: a reader must see that return is not arbitrary. Return is prompted by coherent binding.
 
-## Figure 2 — Trinary Witness Stack
+## Figure 2 — Intended Trinary Witness Stack
 
 File: `docs/assets/trinary_witness_stack.svg`
 
-Purpose: show why raw +1 is not final truth.
+Purpose: show why raw +1 should not become final truth automatically. This is a
+design target, not an exact v1.7.11 implementation trace.
 
 Mechanism:
 
-Raw local expression enters witness filters:
+The intended design sends raw local expression through:
 
 - truth role;
 - temporal lineage;
 - echo-independence.
+
+Current correction: truth role and echo-independence affect the role-aware
+verdict; temporal lineage is emitted beside it and is not consumed.
 
 Final output becomes:
 

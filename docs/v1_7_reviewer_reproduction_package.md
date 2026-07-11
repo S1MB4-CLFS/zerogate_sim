@@ -1,8 +1,11 @@
 # v1.7.9-alpha — Reviewer Start Here / Reproduction Package
 
+> **Historical package:** this records the pre-closeout reviewer route. Current
+> authority starts at the v1.7.11 evidence-integrity correction and `0 / HOLD`.
+
 **Version:** `v1.7.9-alpha`  
 **Native witness:** `C_Z = min(D, P, R, B)`  
-**Purpose:** make the current evidence path readable and reproducible before core-question closeout.
+**Purpose at v1.7.9:** make the then-current evidence path readable and reproducible before core-question closeout.
 
 This gate packages a reviewer-facing path. It is not a new science crown and not the core-question closeout.
 

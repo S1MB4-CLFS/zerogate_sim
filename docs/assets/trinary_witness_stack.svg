@@ -43,8 +43,8 @@
 <line x1="0" y1="864" x2="1900" y2="864" stroke="#27364a" stroke-opacity="0.16"/>
 <line x1="0" y1="960" x2="1900" y2="960" stroke="#27364a" stroke-opacity="0.16"/>
 <line x1="0" y1="1056" x2="1900" y2="1056" stroke="#27364a" stroke-opacity="0.16"/>
-<text x="70" y="70" fill="#f0f6fc" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="42" font-weight="800" text-anchor="start">Final Trinary Witness Stack</text>
-<text x="72" y="112" fill="#a8b9d0" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="20" font-weight="500" text-anchor="start">Output map: raw +1 pressure must pass witness before it becomes final +1</text>
+<text x="70" y="70" fill="#f0f6fc" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="42" font-weight="800" text-anchor="start">Intended Trinary Witness Stack</text>
+<text x="72" y="112" fill="#a8b9d0" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="20" font-weight="500" text-anchor="start">Design target; v1.7.11 lineage is report-only and not consumed by the final verdict</text>
 <rect x="80" y="430" width="300" height="175" rx="28" fill="#1d2432" fill-opacity="1" stroke="#79c0ff" stroke-width="3" filter="url(#shadow)"/>
 <text x="230" y="477" fill="#79c0ff" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="28" font-weight="900" text-anchor="middle">Raw local +1</text>
 <text x="120" y="525.0" fill="#d6e4ff" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="18" font-weight="400" text-anchor="start">passed local zero-gate; not</text>
@@ -57,10 +57,10 @@
 <text x="540" y="349.0" fill="#d6e4ff" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="16" font-weight="400" text-anchor="start">resist?</text>
 <line x1="730" y1="365" x2="730" y2="430" stroke="#d6e4ff" stroke-width="4" stroke-linecap="round" opacity="1" marker-end="url(#arrow)"/>
 <rect x="495" y="430" width="470" height="160" rx="26" fill="#111827" fill-opacity="1" stroke="#d2a8ff" stroke-width="3" filter="url(#shadow)"/>
-<text x="730" y="478" fill="#f0f6fc" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="29" font-weight="900" text-anchor="middle">Temporal lineage</text>
-<text x="730" y="518" fill="#d2a8ff" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="20" font-weight="900" text-anchor="middle">early / witness / late</text>
-<text x="540" y="554.0" fill="#d6e4ff" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="16" font-weight="400" text-anchor="start">Did the posture keep its name after time</text>
-<text x="540" y="574.0" fill="#d6e4ff" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="16" font-weight="400" text-anchor="start">touched it?</text>
+<text x="730" y="478" fill="#f0f6fc" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="29" font-weight="900" text-anchor="middle">Temporal lineage (report-only)</text>
+<text x="730" y="518" fill="#d2a8ff" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="20" font-weight="900" text-anchor="middle">not consumed in v1.7.11</text>
+<text x="540" y="554.0" fill="#d6e4ff" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="16" font-weight="400" text-anchor="start">Emitted beside the verdict; intended as a</text>
+<text x="540" y="574.0" fill="#d6e4ff" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="16" font-weight="400" text-anchor="start">future required and ablatable input</text>
 <line x1="730" y1="590" x2="730" y2="655" stroke="#d6e4ff" stroke-width="4" stroke-linecap="round" opacity="1" marker-end="url(#arrow)"/>
 <rect x="495" y="655" width="470" height="160" rx="26" fill="#111827" fill-opacity="1" stroke="#7ee787" stroke-width="3" filter="url(#shadow)"/>
 <text x="730" y="703" fill="#f0f6fc" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="29" font-weight="900" text-anchor="middle">Echo-independence</text>
@@ -85,8 +85,8 @@
 <text x="1310" y="792.0" fill="#d6e4ff" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="18" font-weight="400" text-anchor="start">false-one demotion · trap rejection</text>
 <text x="1310" y="814.5" fill="#d6e4ff" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="18" font-weight="400" text-anchor="start">collapse held without crown</text>
 <rect x="80" y="910" width="1720" height="120" rx="26" fill="#0d1117" fill-opacity="1" stroke="#f2cc60" stroke-width="3" filter="url(#shadow)"/>
-<text x="115" y="955" fill="#f2cc60" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="27" font-weight="900" text-anchor="start">F26 lesson / public proof posture</text>
+<text x="115" y="955" fill="#f2cc60" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="27" font-weight="900" text-anchor="start">Historical F26 posture — superseded as construction-bound</text>
 <text x="115" y="994.0" fill="#f0f6fc" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="18" font-weight="400" text-anchor="start">A field echo can pass raw local expression by borrowing relation. Final witness must demote it. First-research-alpha record: 2,388 raw false-one</text>
 <text x="115" y="1016.5" fill="#f0f6fc" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="18" font-weight="400" text-anchor="start">pressures demoted; final false-one crowns = 0.</text>
-<text x="950.0" y="1088" fill="#8b949e" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="16" font-weight="500" text-anchor="middle">The witness is not mercy. It is the rule that +1 must be earned, not merely loud.</text>
+<text x="950.0" y="1088" fill="#8b949e" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="16" font-weight="500" text-anchor="middle">Conceptual stack; current role-aware verdict does not consume lineage.</text>
 </svg>

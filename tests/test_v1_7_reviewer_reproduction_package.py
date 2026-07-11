@@ -86,15 +86,16 @@ def test_v1_7_9_public_surfaces_and_paths() -> None:
     boundary_card = read("docs/v1_7_claim_boundary_card.md")
     release = read("docs/release_notes/v1_7_9_alpha.md")
 
-    assert "1.7.10-alpha" in read("src/zerogate_sim/__init__.py")
-    assert 'version = "1.7.10a0"' in read("pyproject.toml")
+    assert "1.7.11-alpha" in read("src/zerogate_sim/__init__.py")
+    assert 'version = "1.7.11a0"' in read("pyproject.toml")
     assert "zerogate-v1-7-reviewer-package" in read("pyproject.toml")
 
-    assert "Current public line:** `v1.7.10-alpha` — Core Question Closeout" in readme
+    assert "Current public line:** `v1.7.11-alpha`" in readme
+    assert "Evidence Integrity Correction" in readme
     assert readme.index("## Core theory") < readme.index("## Latest evidence snapshot") < readme.index("## Reviewer start here / reproduction package") < readme.index("## Inspection map")
     assert "REVIEWER_START_HERE.md" in readme
     assert "docs/v1_7_reproduction_commands.md" in readme
-    assert "manuscript v2 bounded upgrade next before v1.8" in readme
+    assert "v1.8.0-alpha observable schema and label firewall next" in readme
     assert "v1.7.9-alpha -> v1.7.9-alpha" not in readme
     assert roadmap.count("| `v1.7.9-alpha` | Reviewer Start Here / Reproduction Package |") == 1
     assert "```math" in readme

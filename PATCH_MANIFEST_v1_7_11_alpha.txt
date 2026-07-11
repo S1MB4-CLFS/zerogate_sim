@@ -1,0 +1,71 @@
+v1.7.11-alpha Evidence Integrity Correction patch
+
+Operating protocol:
+- docs/UNIVERSAL_CODING_WORKFLOW_v3_CODEX_PROJECT.md
+- AGENTS.md
+
+New authoritative correction surfaces:
+- docs/v1_7_11_evidence_integrity_correction.md
+- docs/release_notes/v1_7_11_alpha.md
+- src/zerogate_sim/v1_7_evidence_integrity_correction.py
+- tests/test_v1_7_11_evidence_integrity_correction.py
+
+Corrected active reporting:
+- src/zerogate_sim/v1_7_holdout_rung_summary.py
+- src/zerogate_sim/v1_7_anti_tautology_role_dependence_check.py
+- src/zerogate_sim/v1_7_core_question_closeout.py
+- tests/test_v1_7_holdout_rung_summary.py
+- tests/test_v1_7_anti_tautology_role_dependence_check.py
+- tests/test_v1_7_core_question_closeout.py
+
+Public/version truth:
+- README.md
+- REVIEWER_START_HERE.md
+- ROADMAP.md
+- docs/current_evidence_index.md
+- docs/current_evidence_state.md
+- docs/version_truth.md
+- historical v1.7 closeout/audit surfaces carry supersession notices
+- package version assertions updated to v1.7.11-alpha
+
+Executable correction:
+- canonical atomic identity normalizes absent perturbation to -1 and absent time to 0
+- source and metadata SHA-256 provenance
+- frozen canonical evidence contract: five profiles, 27/81/243 scenarios, seeds 18-26
+- canonical contract ID/SHA-256 required by closeout
+- triad/deep/wide overlap and payload-conflict audit
+- typed payload canonicalization and gate-row recomputation of final summaries
+- replayable identity/payload rows with root-relative source identifiers
+- explicit opportunity denominators and lane rates
+- nested-safe unique-union totals
+- legacy arithmetic pooled totals marked invalid as unique evidence
+- duplicate aggregate artifacts cannot inflate rung summaries
+- duplicate candidate rows and semantically duplicate summaries fail closed
+- failed/noncanonical CLI audits exit nonzero and issue no unique-union counts
+- aggregate provenance facts report not_verified instead of hardcoded success
+- old anti-tautology summary path has no current claim authority
+- closeout requires an integrity artifact and remains 0/HOLD
+
+Verified local result:
+- declared atomic representations: 375,921
+- unique atomic cases: 260,253
+- duplicate representations: 115,668
+- payload conflicts: 0
+- gate-score files: 15,795 declared / 10,935 unique hashes
+- unique-union rung: wide243
+- unique-union earned/raw/false-pressure: 9,417 / 14,058 / 3,543
+- final false crowns: 0, explicitly construction-bound
+
+Boundary:
+- C_Z = min(D, P, R, B) unchanged
+- current answer is 0 / HOLD
+- no role-free scorer yet
+- lineage remains report-only outside the final verdict
+- no scientific thresholds selected
+- manuscript v2 HOLD
+- DTA transfer/integration HOLD
+- no commit, tag, push, PR, release, Zenodo, or email action occurred during CODER ON
+- later software publication requires separate RELEASE ON authority and does not lift scientific or Zenodo HOLD
+
+Next coded boundary:
+- v1.8.0-alpha Observable Schema and Label Firewall

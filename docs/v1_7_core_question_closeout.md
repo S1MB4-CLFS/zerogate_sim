@@ -1,5 +1,7 @@
 # v1.7 Core Question Closeout
 
+> **Historical / superseded:** `v1.7.11-alpha` reopens this decision at `0 / HOLD`. The v1.7.10 output is reproducible history, but its zero-false-crown result is construction-bound and its pooled rung totals are nested arithmetic sums, not independent evidence. See [`v1_7_11_evidence_integrity_correction.md`](v1_7_11_evidence_integrity_correction.md).
+
 **Version:** `v1.7.10-alpha`  
 **Decision:** `+1 controlled_synthetic_field_answer_earned`  
 **Native witness:** `C_Z = min(D, P, R, B)`
@@ -10,9 +12,10 @@
 
 ## Answer
 
-> Yes — inside controlled synthetic-field adversarial weather.
+> Historical v1.7.10 answer: Yes, inside controlled synthetic-field adversarial weather.
 
-The answer is bounded. It closes the v1.7 software-theory question, not reality, physics, cosmology, observed-universe behavior, independent generator transfer, or role-blind discovery.
+That answer was bounded even when issued. v1.7.11 now withdraws its current
+authority and reopens the software-theory question at `0 / HOLD`.
 
 ![v1.7.10 core question closeout card](assets/v1_7_10_core_question_closeout_card.svg)
 
@@ -37,7 +40,7 @@ lane pattern              = true across triad27 / deep81 / wide243
 
 ## Closeout sentence
 
-ZeroGateSim `v1.7.10-alpha` closes the v1.7 core question as `+1` inside controlled synthetic-field adversarial weather: the final trinary witness distinguishes earned-one from raw expression pressure, latent overcrown, relation debt, return debt, and false-one pressure, while preserving earned-one, holding structured zero/debt lanes, demoting false-one pressure, and maintaining zero final false-one crowns.
+ZeroGateSim `v1.7.10-alpha` recorded the v1.7 core question as `+1` inside controlled synthetic-field adversarial weather. This historical sentence is superseded by the v1.7.11 `0 / HOLD` correction.
 
 ## What remains forbidden
 
@@ -50,4 +53,4 @@ ZeroGateSim `v1.7.10-alpha` closes the v1.7 core question as `+1` inside control
 
 ## Next
 
-Manuscript v2 upgrade gate — before v1.8.
+Historical next movement, superseded by v1.7.11: manuscript v2 upgrade before v1.8. Current movement: role-free witness repair; manuscript remains on HOLD.

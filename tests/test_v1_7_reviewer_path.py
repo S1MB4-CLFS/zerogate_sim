@@ -83,11 +83,12 @@ def test_v1_7_9_public_surfaces_and_paths() -> None:
     release = read("docs/release_notes/v1_7_9_alpha.md")
     script = read("scripts/run_v1_7_small_reproduction.ps1")
 
-    assert "1.7.10-alpha" in read("src/zerogate_sim/__init__.py")
-    assert 'version = "1.7.10a0"' in read("pyproject.toml")
+    assert "1.7.11-alpha" in read("src/zerogate_sim/__init__.py")
+    assert 'version = "1.7.11a0"' in read("pyproject.toml")
     assert "zerogate-v1-7-reviewer-package" in read("pyproject.toml")
 
-    assert "Current public line:** `v1.7.10-alpha` — Core Question Closeout" in readme
+    assert "Current public line:** `v1.7.11-alpha`" in readme
+    assert "Evidence Integrity Correction" in readme
     assert "## How to read this README" in readme
     assert "## Reviewer start here / reproduction package" in readme
     assert "REVIEWER_START_HERE.md" in readme
@@ -96,18 +97,21 @@ def test_v1_7_9_public_surfaces_and_paths() -> None:
     assert "docs/v1_7_claim_boundary_card.md" in readme
     assert "docs/v1_7_evidence_manifest.md" in readme
     assert "scripts\\run_v1_7_small_reproduction.ps1" in readme
-    assert "manuscript v2 bounded upgrade next before v1.8" in readme
+    assert "v1.8.0-alpha observable schema and label firewall next" in readme
     assert readme.index("## Native math witness") < readme.index("## Latest evidence snapshot")
     assert readme.index("## Latest evidence snapshot") < readme.index("## Reviewer start here / reproduction package") < readme.index("## Inspection map")
     assert "docs/assets/v1_7_6_triad27_holdout_card.svg" in readme
 
-    for text in [reviewer, minimal, expected, boundary, manifest, roadmap, version_truth, current_state, release]:
+    for text in [reviewer, minimal, expected, manifest, roadmap, version_truth, current_state, release]:
         assert "v1.7.9-alpha" in text
+    assert "v1.7.11-alpha" in boundary
+    assert "v1.7.9-alpha" not in boundary
     assert "C_Z = min(D, P, R, B)" in reviewer
     assert "triad27 -> inspect -> deep81 -> inspect -> wide243 -> inspect" in reviewer
     assert "full_output/" in expected
     assert "A false handoff is a false crown" in expected
-    assert "core v1.7 question is formally closed" in boundary
+    assert "historical and superseded" in boundary
+    assert "DTA transfer remain on HOLD" in boundary
     assert "v1.7.10-alpha" in boundary
     assert "REVIEWER_START_HERE.md" in manifest
     assert "Reviewer Start Here / Reproduction Package" in roadmap

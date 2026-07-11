@@ -1,5 +1,9 @@
 # Role-Blind Shadow Design
 
+> **Historical design correction:** v1.7.11 found that lineage is not consumed
+> by the current final verdict. The equation below records the intended stack,
+> not an exact implementation trace.
+
 **Version:** `v1.6.0-alpha`  
 **Status:** design-only / report-only / no engine authority  
 **Line:** role-blind shadow design after fresh controlled `deep81` and `wide243` evidence
@@ -40,13 +44,18 @@ C_Z^i(t)=\min(D_i(t),P_i(t),R_i(t),B_i(t))
 
 Plain boundary: `C_Z = min(D, P, R, B)`.
 
-Current final earned-one still belongs to the existing final witness stack:
+At v1.6.0, the intended final earned-one stack was written as:
 
 ```math
 \chi^i_{earned}(t)=\chi^i_{raw}(t)H(k_i(t)-K^*)W^i_{lineage}(t)W^i_{independence}(t)W^i_{role}
 ```
 
-The role-blind shadow must not use `W_role` as an input. It does not replace the current role-aware witness. During evaluation, role-aware labels may be used only after scoring to measure whether the blind score separated pressure better than baseline.
+The role-blind shadow must not use `W_role` as an input. In the actual current
+path, `truth_role` still affects the verdict and lineage does not. During a
+future blind evaluation, labels may be joined only after frozen predictions are
+hashed.
+
+It does not replace the current role-aware witness.
 
 ## Allowed observables
 

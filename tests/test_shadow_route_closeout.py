@@ -9,8 +9,8 @@ def read(path: str) -> str:
 
 
 def test_version_truth_surfaces_include_current_and_preserve_shadow_closeout() -> None:
-    assert "1.7.10-alpha" in read("src/zerogate_sim/__init__.py")
-    assert 'version = "1.7.10a0"' in read("pyproject.toml")
+    assert "1.7.11-alpha" in read("src/zerogate_sim/__init__.py")
+    assert 'version = "1.7.11a0"' in read("pyproject.toml")
     assert "v1.6.28-alpha" in read("README.md")
     assert "v1.6.28-alpha" in read("ROADMAP.md")
     assert "v1.6.14-alpha" in read("docs/version_truth.md")

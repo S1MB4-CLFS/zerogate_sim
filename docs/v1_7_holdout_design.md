@@ -6,6 +6,8 @@
 
 `v1.7.6-alpha` locks the holdout design required before the core question can be closed. It does not answer the core question by itself. It defines what a fresh controlled synthetic-field challenge must contain so the witness cannot merely repeat the known reference profile.
 
+> **Historical route note:** v1.7.11 later found that this contract used self-attested summary facts and nested rungs. The current answer is `0 / HOLD`; the corrected route continues through the v1.7.11 integrity audit and v1.8.0 label firewall.
+
 ## Required holdout pressure
 
 ```text
@@ -28,7 +30,7 @@ deep81 = 3^4 perturbation / late-shock holdout bridge
 wide243 = 3^5 temporal-depth / full controlled weather stress
 ```
 
-`v1.7.6-alpha` locks and can evaluate the holdout contract. It does not require CI to run the full heavy 27/81/243 evidence stack. Once `v1.7.6-alpha` is CI green, run the full holdout ladder before `v1.7.7-alpha` audits anti-tautology and role-dependence pressure. `v1.7.8-alpha` cleans the repo surface, `v1.7.9-alpha` packages the reviewer/reproduction path, and `v1.7.10-alpha` closes the core question using whatever evidence has actually been run and passed.
+Historical sequence: `v1.7.6-alpha` locked the contract, `v1.7.7-alpha` ran the old audit, `v1.7.9-alpha` packaged the path, and `v1.7.10-alpha` recorded a closeout. Current correction: `v1.7.11-alpha` supersedes that closeout and routes next to `v1.8.0-alpha` Observable Schema and Label Firewall.
 
 ## Pass condition
 
