@@ -1,6 +1,6 @@
 # Current Evidence State
 
-**Current development version:** `v1.8.1-alpha`
+**Current development version:** `v1.8.2-alpha`
 
 **Scientific authority:** `v1.7.11-alpha`
 
@@ -21,6 +21,7 @@
 | `v1.7.11-alpha` | Evidence Integrity Correction | current `0 / HOLD` | corrects provenance and nested-rung accounting; opens role-free repair |
 | `v1.8.0-alpha` | Observable Schema and Label Firewall | local software green | implements callback-argument/schema and hash-integrity checks; adds no scientific scorer or evidence crown |
 | `v1.8.1-alpha` | Lineage-Bearing Predictor Package | local development green | base-schema-bound three-frame prior-touch score, verified-byte execution, source/receipt verification, and complete v1.8.2 method lock; thresholds and empirical authority remain unearned |
+| `v1.8.2-alpha` | Failure-Capable Development Evaluation | `INVALID_CONSTANT_OR_DEAD_SAFE_PREDICTOR` | exact joins and failure canaries passed, but no locked option crowned the complete piecewise-hysteresis lineage; selected option `null`, progression false |
 
 ## Corrected holdout accounting
 
@@ -71,10 +72,26 @@ manifest, and a strict verifier recomputes the frozen score artifacts. Source
 declarations are hash-bound declarations, not external proof. This demonstrates
 an implemented path, not empirical necessity.
 
+v1.8.2 executed the locked evaluator on class-conditioned controlled synthetic
+development material: four lineages, 12 cases per role per lineage, 144 raw and
+144 effective unique cases, exact joins, and zero duplicates. All six
+failure-capability fixtures passed. The primary scorer emitted 144 unique
+values from `0.029125411853012872` to `0.8196793296679462`, but
+`piecewise_hysteresis_v1` had a maximum of `0.58779880167953524`. It therefore
+had zero crowns under all three locked threshold options.
+
+The resulting status is `INVALID_CONSTANT_OR_DEAD_SAFE_PREDICTOR`, with exact
+reason
+`no valid locked threshold option; piecewise_hysteresis_v1:INVALID_DEAD_SAFE_NO_CROWNS`.
+The selected option remains `null` and progression is false. Because valid
+nested selection was impossible, uncertainty, baseline comparisons, and
+frozen/retuned ablation comparisons correctly record
+`NOT_EXECUTED_INVALID_INPUT`.
+
 ## Current holds
 
 - Role-free scientific discrimination: not demonstrated.
-- Prior-touch support in the final frozen verdict: not implemented.
+- Prior-touch support in a valid selected frozen verdict: not demonstrated.
 - Continuous temporal persistence: not implemented or claimed.
 - Independent generator validation: not done.
 - Manuscript v2: HOLD.
@@ -83,20 +100,20 @@ an implemented path, not empirical necessity.
 
 ## Next
 
-The next coded gate is `v1.8.2-alpha — Failure-Capable Development Evaluation
-and Baselines`. It may select thresholds from the locked options using
-development labels only. Its method is fixed to four generator lineages,
-nested lineage folds, a deterministic lexicographic objective, locked
-baselines/ablations, exact denominators, lineage-cluster uncertainty,
-duplicate/permutation controls, and fail-closed stops. Unseen-generator holdout
-material remains unopened until v1.8.3.
+The v1.8.2 result did not earn `READY_FOR_V1_8_3_CONTRACT_ONLY`. No v1.8.3
+holdout contract/freeze or v1.8.4 one-pass join executes from this branch of the
+decision grammar.
 
-The user authorized full-agent implementation and GitHub merge mechanics
-through v1.8.4, including v1.8.2 threshold selection, v1.8.3 holdout freeze,
-and the v1.8.4 one-pass join. This changes execution authority, not evidence
-authority. Tags/releases, DTA transfer, manuscript prose, Zenodo, and email
-remain forbidden.
+The next scientific action must be a new preregistered repair version and a new
+untouched development set. The already revealed v1.8.2 labels may support
+diagnosis, but they may not be used to retune the three locked options. The
+failed development set is retained as evidence rather than converted into a
+friendlier threshold-selection set.
+
+Tags/releases, DTA transfer, manuscript prose, Zenodo, and email remain
+forbidden.
 
 See [`v1_7_11_evidence_integrity_correction.md`](v1_7_11_evidence_integrity_correction.md).
 See [`v1_8_observable_schema_label_firewall.md`](v1_8_observable_schema_label_firewall.md).
 See [`v1_8_1_lineage_predictor_package.md`](v1_8_1_lineage_predictor_package.md).
+See [`v1_8_2_failure_capable_development_evaluation.md`](v1_8_2_failure_capable_development_evaluation.md).

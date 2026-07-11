@@ -57,7 +57,7 @@ More access compresses mechanics; it does not collapse authority.
 - A failed frozen holdout is preserved and retired, not converted into a tuning
   set.
 
-## Current corrective boundary
+## Inherited v1.8.1 boundary
 
 `v1.8.1-alpha` is the Lineage-Bearing Predictor Package and Development-Only
 Plan Lock.
@@ -113,6 +113,57 @@ Plan Lock.
   sequence. Manuscript v2, DTA transfer, Zenodo, tags, and releases remain
   forbidden.
 
+## Implemented v1.8.2 boundary
+
+`v1.8.2-alpha` is the Failure-Capable Development Evaluation and Threshold
+Selection gate. It may select one of the three v1.8.1-locked threshold options
+using development labels only after all raw traces, frames, scores, options,
+and model-by-option predictions are frozen and receipt-verified.
+
+- Development generators are explicitly class-conditioned synthetic material;
+  do not call them label-free or independent empirical data.
+- Once raw traces are fixed, labels, blind IDs, and generator groups must not
+  alter observable frames, model scores, threshold options, or precomputed
+  predictions.
+- Build exactly four distinct generator backends with 12 raw cases per role per
+  backend. Generator lineage, not row, is the split and uncertainty unit.
+- Use separate build-split, freeze-prelabel, and evaluate commands. Expected
+  split and pre-label receipt hashes are mandatory caller inputs; no command may
+  discover its own expected receipt.
+- The post-label evaluator must not import or invoke generators, extractors, or
+  predictors. It verifies frozen artifacts before its first label/group read.
+- Report raw/effective denominators, duplicates, cross-lineage overlap,
+  per-lineage metrics, lineage-macro rates, OOF predictions, baselines,
+  frozen/retuned ablations, and deterministic cluster uncertainty.
+- `READY_FOR_V1_8_3_CONTRACT_ONLY` is development progression, not scientific
+  support. Baseline equivalence, prior-touch equivalence, dead-safe behavior,
+  or failed failure canaries remain visible HOLD/INVALID outcomes.
+- v1.8.3 holdout material does not exist yet and is not addressable by v1.8.2
+  APIs. Do not scan the workspace or accept arbitrary input roots.
+
+## Observed v1.8.2 outcome
+
+The retained development decision is
+`INVALID_CONSTANT_OR_DEAD_SAFE_PREDICTOR`; progression is false and the
+selected threshold option is null.
+
+- Integrity passed: 144 raw cases, 144 unique effective cases, four exact
+  generator lineages, 12 cases per role per lineage, exact joins, no observable
+  duplicates, and 6/6 production-routed failure canaries.
+- The primary is variable globally (144 unique scores), but
+  `piecewise_hysteresis_v1` has maximum score `0.58779880167953524` and therefore
+  zero crowns at all locked crown minima (`0.8`, `0.7`, and `0.6`).
+- No valid nested selection exists. Baseline, ablation, and cluster-uncertainty
+  stages remain unexecuted; do not infer their result.
+- Preserve `runs/v1_8_2_development_evaluation` as the retained local evidence
+  root. Its evaluation receipt SHA-256 is
+  `00935943039930113e732ea8f794adce0087458f2fc94d234285b089c440a205`.
+- Do not lower thresholds, regenerate cases, or reinterpret the revealed
+  development labels inside v1.8.2. A repair requires a new preregistered
+  version boundary and untouched development material.
+- v1.8.3 and v1.8.4 are blocked. Do not generate, freeze, or reveal holdout
+  material from this invalid prerequisite.
+
 Every version updates `README.md`, `ROADMAP.md`, `docs/version_truth.md`, current
 evidence surfaces, the claim boundary, release note, history pointer, and one
 central version-surface test.
@@ -130,6 +181,11 @@ execution to observe time savings and quality. Record cycles, review findings,
 CI/merge receipts, human intervention, and user-supplied credit context in
 `docs/workflow_research_ledger.md`.
 
+Workflow-research mode may intentionally delegate deterministic Git/CI work
+that would be cheaper for the human to click manually. Record that choice as an
+observation cost, not as the permanent default and never as permission to work
+past a failed scientific gate.
+
 ## Authority
 
 For this named sequence, the user has explicitly authorized Codex through
@@ -146,6 +202,9 @@ For this named sequence, the user has explicitly authorized Codex through
 
 This authorization does not require advancing past a failed gate. Preserve and
 obey `INVALID`, `HOLD`, or `FALSIFIED` outcomes; never retune on holdout labels.
+The v1.8.2 invalid result has now triggered that stop. The authorization remains
+a historical mechanics boundary; it does not authorize v1.8.3 or v1.8.4 until
+a new valid prerequisite is earned.
 
 Still forbidden without new explicit authority:
 

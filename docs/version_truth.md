@@ -1,10 +1,10 @@
 # Version Truth
 
-**Status:** README overflow moved here in `v1.6.9-alpha`; development spine advanced in `v1.8.1-alpha`
+**Status:** README overflow moved here in `v1.6.9-alpha`; development spine advanced in `v1.8.2-alpha`
 **Purpose:** preserve the release spine and recent checkpoints without forcing the README to open with a wall of version bookkeeping.
 
-The current development line is `v1.8.1-alpha` — Lineage-Bearing Predictor
-Package. The latest scientific authority remains
+The current development line is `v1.8.2-alpha` — Failure-Capable Development
+Evaluation. The latest scientific authority remains
 `v1.7.11-alpha` — Evidence Integrity Correction, with the core question at
 `0 / HOLD`.
 
@@ -47,6 +47,7 @@ Package. The latest scientific authority remains
 - `v1.7.11-alpha` — Evidence Integrity Correction: preserves v1.7.10 as historical release state but supersedes its active `+1`; corrects nested-rung accounting, locks authority to five profiles / 27-81-243 scenarios / seeds 18-26 under a contract hash, recomputes summaries from typed gate rows, removes self-attested provenance from the current summary path, and holds manuscript v2 and DTA transfer.
 - `v1.8.0-alpha` — **merged software checkpoint**, Observable Schema and Label Firewall: introduces an exact seven-field observable contract, serializes join keys and labels as separate hash-bound artifacts, keeps identifiers out of the predictor callback, freezes prediction bytes and a receipt before label loading, and adds fail-closed leakage, permutation, join-integrity, and failure-capability tests. It has no tag/release and adds no scientific authority; v1.7.11 remains authoritative.
 - `v1.8.1-alpha` — **development checkpoint**, Lineage-Bearing Predictor Package: derives an early/witness/late schema from the hash-bound v1.8.0 fields, implements threshold-free prior-touch support and a no-prior-touch ablation without claiming continuous persistence, executes from the verified source-byte snapshot, requires an allowed-root source manifest, strictly verifies frozen scores, and locks the complete v1.8.2 method while leaving the selected threshold null.
+- `v1.8.2-alpha` — **invalid development gate**, Failure-Capable Development Evaluation: executes the locked class-conditioned controlled-synthetic corpus, exact post-freeze join, duplicate audit, failure canaries, and nested selector; returns `INVALID_CONSTANT_OR_DEAD_SAFE_PREDICTOR` because `piecewise_hysteresis_v1` cannot crown under any locked option, leaves the selected option null, and authorizes no v1.8.3 progression.
 
 ## Recent checkpoints
 
@@ -269,3 +270,29 @@ selected in v1.8.1. The user separately authorized full-agent execution,
 commit/push/PR/CI/merge, development threshold selection, and holdout mechanics
 through v1.8.4. Tags/releases, DTA transfer, manuscript prose, Zenodo, and email
 remain forbidden.
+
+## v1.8.2-alpha note
+
+`v1.8.2-alpha` is the Failure-Capable Development Evaluation. Its generators
+are class-conditioned controlled synthetic development material, not
+independent empirical data. The exact post-freeze semantic join contains four
+lineages with 12 cases per role per lineage: 144 raw cases, 144 effective unique
+cases, and zero observable duplicates. All six evaluator failure-capability
+fixtures pass.
+
+The primary prior-touch scorer emits 144 unique values spanning
+`0.029125411853012872` through `0.8196793296679462`, but the maximum in
+`piecewise_hysteresis_v1` is `0.58779880167953524`. That lineage has no crowns
+at any locked crown boundary. The evaluator therefore records
+`INVALID_CONSTANT_OR_DEAD_SAFE_PREDICTOR`, exact reason
+`no valid locked threshold option; piecewise_hysteresis_v1:INVALID_DEAD_SAFE_NO_CROWNS`,
+selected option `null`, and progression `false`.
+
+Uncertainty, baseline comparison, and frozen/retuned ablation comparison did
+not execute because valid nested selection was impossible. This is the correct
+fail-closed result, not missing evidence to be filled after seeing the labels.
+Scientific authority stays at v1.7.11 `0 / HOLD`.
+`READY_FOR_V1_8_3_CONTRACT_ONLY` was not earned, so v1.8.3 and v1.8.4 do not
+execute. Any repair requires a new preregistered version and a new untouched
+development set; retuning the locked options against the revealed v1.8.2 labels
+is forbidden.

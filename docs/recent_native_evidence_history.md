@@ -45,15 +45,18 @@ The README should show the project. This file can hold the ledger.
   base-schema-bound three-frame prior-touch support, dormant reappearance
   explicitly allowed, verified-byte execution, allowed-root source manifest,
   strict freeze verifier, complete v1.8.2 method lock, selected threshold null.
-- `v1.8.2-alpha` — next: development-only threshold selection, baselines, and
-  failure-capable falsifier evaluation across four generator lineages and nested
-  lineage folds.
-- `v1.8.3-alpha` — authorized next: unseen-generator holdout contract and
-  prediction freeze after v1.8.2 earns `READY_FOR_V1_8_3_CONTRACT_ONLY`.
-- `v1.8.4-alpha` — authorized next: one-pass label join and artifact-generated
-  `SUPPORTED_BOUNDED`, `HOLD`, `FALSIFIED`, or `INVALID_EVIDENCE` closeout.
-- Git commit/push/PR/CI/merge through v1.8.4 is authorized as workflow research;
-  tags/releases remain forbidden.
+- `v1.8.2-alpha` — Failure-Capable Development Evaluation returned
+  `INVALID_CONSTANT_OR_DEAD_SAFE_PREDICTOR`; 144 raw/effective unique cases,
+  exact joins, zero duplicates, and 6/6 failure canaries passed, but
+  `piecewise_hysteresis_v1` had no crowns under any locked option. Selected
+  option is `null`; progression is false.
+- `v1.8.3-alpha` — not executed; v1.8.2 did not earn
+  `READY_FOR_V1_8_3_CONTRACT_ONLY`.
+- `v1.8.4-alpha` — not executed; no valid frozen threshold or v1.8.3 holdout
+  contract exists to authorize the one-pass join.
+- Next scientific action — a newly preregistered repair version with a new
+  untouched development set; never retune on the revealed v1.8.2 labels.
+- Tags/releases remain forbidden.
 - Manuscript v2 and DTA transfer — HOLD until a future role-free empirical closeout earns them.
 
 ## Boundary

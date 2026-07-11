@@ -1,6 +1,6 @@
 # ZeroGateSim
 
-**Current development line:** `v1.8.1-alpha` — Lineage-Bearing Predictor Package
+**Current development line:** `v1.8.2-alpha` — Failure-Capable Development Evaluation (`INVALID_CONSTANT_OR_DEAD_SAFE_PREDICTOR`)
 
 **Current public line:** `v1.7.11-alpha` — Evidence Integrity Correction
 
@@ -38,6 +38,18 @@ constrain inputs to an allowed root, but their no-label/no-holdout declarations
 remain content-bound declarations rather than external proof. This is still
 development infrastructure: no scientific threshold or holdout label is
 selected.
+
+`v1.8.2-alpha` executes the locked development method on four distinct,
+class-conditioned controlled-synthetic generator lineages. The integrity path
+worked: 144 raw cases remained 144 unique effective cases, exact joins and all
+role denominators passed, no observable duplicates were found, and all six
+failure-capability canaries passed through shared production guards. The
+scientific gate did not pass. `piecewise_hysteresis_v1` produced no crown under
+any locked option because its maximum primary score was `0.5877988`, below the
+narrowest crown boundary `0.6`. The artifact-generated result is
+`INVALID_CONSTANT_OR_DEAD_SAFE_PREDICTOR`; no threshold was selected and
+v1.8.3/v1.8.4 were not opened. Read the
+[Failure-Capable Development Evaluation](docs/v1_8_2_failure_capable_development_evaluation.md).
 
 The corrected accounting pass is bound to five exact candidate corpora, the
 27/81/243 scenario grids, and seeds 18-26 under a recorded contract hash. Final
@@ -241,7 +253,8 @@ v1.7.0-alpha core question contract complete
 -> v1.7.11-alpha evidence integrity correction: released scientific authority, 0 / HOLD
 -> v1.8.0-alpha observable schema and label firewall: local software checkpoint green
 -> v1.8.1-alpha lineage-bearing predictor package: local development checkpoint
--> next: v1.8.2 development-only threshold selection and falsifier evaluation
+-> v1.8.2-alpha development evaluation: INVALID dead-safe lineage; selected option null
+-> v1.8.3 / v1.8.4 blocked; next movement requires a new preregistered repair and untouched development set
 ```
 
 The shadow route is **not** the active route now. It is preserved as historical diagnostic work in the [history vault](docs/history_vault/README.md).
@@ -335,7 +348,8 @@ independent generator validation = not done
 manuscript v2 / DTA transfer = HOLD
 v1.8.0 movement = callback-argument/schema and hash-integrity firewall local green
 v1.8.1 movement = verified three-frame prior-touch package without threshold selection
-next checkpoint = v1.8.2 development-only threshold selection and falsifiers
+v1.8.2 movement = exact development chain valid; nested threshold selection invalid because one lineage has zero crowns under all locked options
+next checkpoint = define a new preregistered repair boundary; do not retune on the revealed v1.8.2 labels
 ```
 
 Read:
@@ -424,6 +438,44 @@ does not pre-authorize a positive result: locked `INVALID`, `HOLD`, or
 manuscript prose, Zenodo, and email remain forbidden. See the
 [`workflow research ledger`](docs/workflow_research_ledger.md).
 
+## Failure-Capable Development Evaluation
+
+`v1.8.2-alpha` separates the work into three executable boundaries:
+
+```text
+build class-conditioned numeric traces and label-free observables
+-> freeze every model score, option, and proposal before labels
+-> verify retained receipts, then join development labels and groups
+```
+
+The retained chain binds the four generator implementations, 144 raw traces,
+three-frame observables, nine continuous models, three constant controls, all
+three locked threshold options, split vaults, evaluator source, and result
+artifacts. Generator lineage is the split and uncertainty unit. The post-label
+evaluator has no import path to the generators, extractor, scorer registry,
+pre-label coordinator, or predictor package.
+
+The observed stop is specific and reproducible:
+
+```text
+raw cases = effective unique cases = 144
+generator lineages = 4
+cases per role per lineage = 12
+piecewise_hysteresis_v1 primary maximum = 0.58779880167953524
+narrowest locked crown minimum = 0.6
+valid crown-producing option on that lineage = none
+selected threshold option = null
+decision = INVALID_CONSTANT_OR_DEAD_SAFE_PREDICTOR
+```
+
+Because valid nested selection never existed, baseline/ablation comparisons and
+cluster uncertainty correctly remained unexecuted rather than being used to
+decorate an invalid result. This is controlled synthetic development evidence,
+not independent empirical validation. It preserves v1.7.11 `0 / HOLD`, blocks
+v1.8.3 and v1.8.4, and forbids moving a threshold below `0.6` after seeing these
+labels. Any repair needs a new version contract and new untouched development
+material.
+
 ## Inspection map
 
 The README keeps the project face, the math, and the newest visual cards. Everything that became too long for the front page still has a visible path.
@@ -461,9 +513,11 @@ The README keeps the project face, the math, and the newest visual cards. Everyt
 
 - [`docs/v1_8_observable_schema_label_firewall.md`](docs/v1_8_observable_schema_label_firewall.md) — local-green firewall contract and honest limits.
 - [`docs/v1_8_1_lineage_predictor_package.md`](docs/v1_8_1_lineage_predictor_package.md) — exact three-frame prior-touch score, package binding, verifier, and limitations.
+- [`docs/v1_8_2_failure_capable_development_evaluation.md`](docs/v1_8_2_failure_capable_development_evaluation.md) — retained invalid development result, data quality, exact blocker, and stop boundary.
 - [`docs/manuscript_v2_empirical_readiness_gate.md`](docs/manuscript_v2_empirical_readiness_gate.md) — manuscript timing and decision gate.
 - [`docs/release_notes/v1_8_0_alpha.md`](docs/release_notes/v1_8_0_alpha.md) — version-local change record.
 - [`docs/release_notes/v1_8_1_alpha.md`](docs/release_notes/v1_8_1_alpha.md) — lineage-package change record.
+- [`docs/release_notes/v1_8_2_alpha.md`](docs/release_notes/v1_8_2_alpha.md) — failure-capable development-evaluation change record.
 - [`docs/workflow_research_ledger.md`](docs/workflow_research_ledger.md) — end-to-end Codex economics observations.
 
 ### Anti-tautology / role-dependence path
@@ -532,7 +586,7 @@ The current front-page route preserves the v1.6/v1.7 release spine as trace anch
 ```text
 anti-tautology audit complete -> reproduction command package complete -> manuscript correction package complete -> v1.6 closeout complete
 v1.6.14-alpha -> v1.6.15-alpha -> v1.6.16-alpha -> v1.6.17-alpha -> v1.6.18-alpha -> v1.6.19-alpha -> v1.6.20-alpha -> v1.6.21-alpha -> v1.6.22-alpha -> v1.6.23-alpha -> v1.6.24-alpha -> v1.6.25-alpha -> v1.6.26-alpha -> v1.6.27-alpha -> v1.6.28-alpha
-v1.7.0-alpha -> v1.7.1-alpha -> v1.7.2-alpha -> v1.7.3-alpha -> v1.7.4-alpha -> v1.7.5-alpha -> v1.7.6-alpha -> v1.7.7-alpha -> v1.7.8-alpha -> v1.7.9-alpha -> v1.7.10-alpha historical -> v1.7.11-alpha HOLD -> v1.8.0 firewall local green -> v1.8.1 lineage package -> v1.8.2 development selection
+v1.7.0-alpha -> v1.7.1-alpha -> v1.7.2-alpha -> v1.7.3-alpha -> v1.7.4-alpha -> v1.7.5-alpha -> v1.7.6-alpha -> v1.7.7-alpha -> v1.7.8-alpha -> v1.7.9-alpha -> v1.7.10-alpha historical -> v1.7.11-alpha HOLD -> v1.8.0 firewall local green -> v1.8.1 lineage package -> v1.8.2 development INVALID / v1.8.3 blocked
 ```
 
 Named recent gates remain inspectable:

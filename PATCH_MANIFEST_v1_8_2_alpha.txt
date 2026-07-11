@@ -1,0 +1,100 @@
+v1.8.2-alpha Failure-Capable Development Evaluation patch
+
+Development data and observable chain:
+- contracts/v1_8_2_development_generator.json
+- src/zerogate_sim/v1_8_2_numeric_contract.py
+- src/zerogate_sim/v1_8_2_development_split.py
+- src/zerogate_sim/v1_8_2_raw_generators.py
+- src/zerogate_sim/v1_8_2_observable_extractor.py
+- src/zerogate_sim/v1_8_2_development_fingerprint.py
+- tests/test_v1_8_2_development_data.py
+
+Pre-label model/option freeze:
+- src/zerogate_sim/v1_8_2_threshold_contract.py
+- src/zerogate_sim/v1_8_2_score_registry.py
+- src/zerogate_sim/v1_8_2_prelabel_freeze.py
+- tests/test_v1_8_2_prelabel_firewall.py
+
+Post-label evaluation and calculations:
+- src/zerogate_sim/v1_8_2_metrics.py
+- src/zerogate_sim/v1_8_2_nested_selection.py
+- src/zerogate_sim/v1_8_2_cluster_bootstrap.py
+- src/zerogate_sim/v1_8_2_development_evaluator.py
+- tests/test_v1_8_2_evaluation_math.py
+- tests/test_v1_8_2_development_evaluator.py
+
+Version and workflow surfaces:
+- pyproject.toml
+- src/zerogate_sim/__init__.py
+- AGENTS.md
+- README.md
+- ROADMAP.md
+- REVIEWER_START_HERE.md
+- docs/UNIVERSAL_CODING_WORKFLOW_v3_CODEX_PROJECT.md
+- C:\dev\UNIVERSAL_CODING_WORKFLOW_v3_CODEX_PROJECT.md (byte-identical workspace copy; outside repository)
+- docs/workflow_research_ledger.md
+- docs/v1_8_2_failure_capable_development_evaluation.md
+- docs/release_notes/v1_8_2_alpha.md
+- docs/version_truth.md
+- docs/current_evidence_state.md
+- docs/current_evidence_index.md
+- docs/claim_boundary.md
+- docs/recent_native_evidence_history.md
+- tests/test_version_surface_contract.py
+
+Retained local evidence (ignored, not staged):
+- runs/v1_8_2_development_evaluation/
+- split receipt SHA-256 c9dc6890d6ae9a1a865c8d433878a79536bd8ae7357db257c0f06482df8bf461
+- observable input SHA-256 bcc3cad731a8fac78cb256fd9c15d24161df7c50c6c24a8f173471dacbc8d59c
+- source manifest SHA-256 1cb70ba191328bc2aca97906fb7247cd2e42408acf6b21cd7cdeef6e697fe782
+- development fingerprint SHA-256 571f3f2ce1a9b777957eea0a6854d23bc56dc339a1fff578138d860bd6a506cf
+- pre-label receipt SHA-256 9c77254645e7cbc814e01ff62e07ac0cff478e35ea64278881030457dc890daf
+- evaluator contract SHA-256 5f3cd3a086cc42c5f2f06804b4f9d9bff6d35dbfefc7cb06016c6a8ff8d7a82b
+- development result SHA-256 27a934de013f56f47b3f929d781c7c6fe1e461bb50b0007cf45685fe19e28866
+- evaluation manifest SHA-256 54fac47bd6ef598545ba9528acce19993d23895f10252982df6021852ce3eaf2
+- evaluation receipt SHA-256 00935943039930113e732ea8f794adce0087458f2fc94d234285b089c440a205
+
+Observed decision:
+- INVALID_CONSTANT_OR_DEAD_SAFE_PREDICTOR
+- progression_authorized=false
+- selected threshold option=null
+- scientific authority remains v1.7.11-alpha, 0 / HOLD
+- 144 raw / 144 effective / 144 unique cases
+- 4 generator lineages; 12 cases per role per lineage
+- 0 duplicate representations; exact blind and atomic joins
+- 6/6 production-routed failure-capability fixtures pass
+- primary scores are globally variable (144 unique)
+- piecewise_hysteresis_v1 maximum primary score is 0.58779880167953524
+- piecewise_hysteresis_v1 has zero crowns at locked minima 0.8, 0.7, and 0.6
+- no valid nested threshold selection exists
+- baseline, ablation, and cluster-uncertainty evaluation correctly did not run
+- v1.8.3 and v1.8.4 are blocked; no holdout exists or was accessed
+
+Adversarial review repairs:
+- exact source, pre-label, and evaluator method allowlists and hashes
+- generator contract file-byte and semantic-root cross-binding
+- exact raw trace, frame-window, and raw-slice verification
+- evaluator artifacts verify before the first label/group read
+- semantic join and duplicate invalid outcomes remain artifact-generated
+- simple baselines use the locked comparison path; dual frozen/retuned gates
+  apply only to the two ablations
+- dead-safe baseline exceptions no longer auto-pass
+- unexpected ablation math failures are invalid artifacts, not scientific HOLDs
+- primary constant/dead-safe exits before undefined bootstrap calculations
+- failure-capability fixtures call shared production guards instead of a
+  fixture-only status oracle
+- writer cleanup removes only identity-proven owned files
+
+Workflow-research wound and repair:
+- two deterministic review harness joins used auto-deleted temporary roots
+- the retained build reproduced all four captured pre-label roots byte-for-byte
+  without parameter or implementation changes
+- Protocol v3 now classifies a label-opening review as a scientific run and
+  forbids automatic temporary cleanup for real label joins
+
+Forbidden and unchanged:
+- no threshold was lowered or selected after label reveal
+- no generator was regenerated or tuned after the retained result
+- no v1.8.3 holdout contract, data, prediction, or reveal
+- no changes to gates.py, earned_one.py, or final_output.py
+- no DTA transfer, manuscript v2 prose, tag, release, Zenodo, or email
