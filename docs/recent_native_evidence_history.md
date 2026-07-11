@@ -39,10 +39,21 @@ The README should show the project. This file can hold the ledger.
 - `v1.7.9-alpha` — Reviewer Start Here / Reproduction Package.
 - `v1.7.10-alpha` — historical Core Question Closeout, now superseded.
 - `v1.7.11-alpha` — Evidence Integrity Correction; current answer `0 / HOLD`.
-- `v1.8.0-alpha` — Observable Schema and Label Firewall local software green;
+- `v1.8.0-alpha` — Observable Schema and Label Firewall merged software green;
   scientific authority remains v1.7.11 `0 / HOLD`.
-- `v1.8.1-alpha` — next checkpoint: lineage-bearing predictor package and
-  development-only preregistration before threshold selection.
+- `v1.8.1-alpha` — Lineage-Bearing Predictor Package local development green;
+  base-schema-bound three-frame prior-touch support, dormant reappearance
+  explicitly allowed, verified-byte execution, allowed-root source manifest,
+  strict freeze verifier, complete v1.8.2 method lock, selected threshold null.
+- `v1.8.2-alpha` — next: development-only threshold selection, baselines, and
+  failure-capable falsifier evaluation across four generator lineages and nested
+  lineage folds.
+- `v1.8.3-alpha` — authorized next: unseen-generator holdout contract and
+  prediction freeze after v1.8.2 earns `READY_FOR_V1_8_3_CONTRACT_ONLY`.
+- `v1.8.4-alpha` — authorized next: one-pass label join and artifact-generated
+  `SUPPORTED_BOUNDED`, `HOLD`, `FALSIFIED`, or `INVALID_EVIDENCE` closeout.
+- Git commit/push/PR/CI/merge through v1.8.4 is authorized as workflow research;
+  tags/releases remain forbidden.
 - Manuscript v2 and DTA transfer — HOLD until a future role-free empirical closeout earns them.
 
 ## Boundary

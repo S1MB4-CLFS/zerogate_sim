@@ -1,3 +1,3 @@
 """ZeroGateSim: toy simulation framework for zero-gate dimensional emergence."""
 
-__version__ = "1.8.0-alpha"
+__version__ = "1.8.1-alpha"

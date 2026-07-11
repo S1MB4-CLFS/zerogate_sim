@@ -1,6 +1,6 @@
 # Reviewer Start Here — ZeroGateSim
 
-**Current development line:** `v1.8.0-alpha` — Observable Schema and Label Firewall
+**Current development line:** `v1.8.1-alpha` — Lineage-Bearing Predictor Package
 
 **Scientific authority:** `v1.7.11-alpha` — Evidence Integrity Correction
 
@@ -17,6 +17,7 @@ Read in this order:
 
 ```text
 README.md
+-> docs/v1_8_1_lineage_predictor_package.md
 -> docs/v1_8_observable_schema_label_firewall.md
 -> docs/v1_7_11_evidence_integrity_correction.md
 -> docs/v1_7_claim_boundary_card.md
@@ -44,6 +45,26 @@ They do not yet:
 boundary and is locally green. It does not change that scientific answer: its
 scorer is a synthetic canary, no scientific thresholds are selected, and no
 frozen holdout is revealed.
+
+`v1.8.1-alpha` adds an ordered early/witness/late **prior-touch support** path.
+It does not claim continuous persistence: a strong early touch may support a
+late reappearance across a lower witness frame. The three-frame schema derives
+from and hash-binds the v1.8.0 schema, and predictor execution is loaded from
+the verified source-byte snapshot rather than mutable imported functions.
+
+Score freezes require an allowed-root source manifest and caller-retained
+expected hashes, then a strict verifier recomputes the score table, manifest,
+and receipt. The source manifest's no-label/no-holdout statements are
+content-bound declarations, not external proof of unrestricted history.
+Synthetic ablation and formula-input canaries show implemented mechanism
+behavior, not empirical accuracy. The selected threshold remains null.
+
+The v1.8.2 method is already byte-locked: exact threshold boundaries, four
+generator lineages, nested leave-one-lineage-out folds, a deterministic
+lexicographic objective, constant/simple baselines, frozen and retuned
+ablations, lineage-cluster uncertainty, duplicate/aliasing controls, and
+fail-closed stops. Passing that development gate would mean only
+`READY_FOR_V1_8_3_CONTRACT_ONLY`.
 
 ## Small software reproduction
 
@@ -94,6 +115,6 @@ Do not read this package as:
 - a current `+1` core-question closeout;
 - blind or role-free false-one detection;
 - independent generator validation;
-- evidence that lineage affects the final verdict;
+- evidence that prior-touch support improves or affects the final frozen verdict;
 - permission for manuscript v2 or DTA transfer;
 - physics, cosmology, dimensional-origin, clinical, or observed-universe proof.

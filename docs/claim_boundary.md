@@ -1,13 +1,13 @@
 # ZeroGateSim Claim Boundary
 
-**Current development version:** `v1.8.0-alpha`
+**Current development version:** `v1.8.1-alpha`
 
 **Scientific authority:** `v1.7.11-alpha`
 
 **Decision:** `0 / HOLD`
 
-**Scientific status:** `HOLD_CONSTRUCTION_BOUND`; v1.8 decision is
-`LOCAL_GREEN_FIREWALL_ONLY`
+**Scientific status:** `HOLD_CONSTRUCTION_BOUND`; v1.8.1 decision is
+`LOCAL_GREEN_LINEAGE_PACKAGE_ONLY`
 
 ## Supported current claim
 
@@ -24,12 +24,23 @@ empirical discrimination.
 
 ## Current decision boundary
 
-ZeroGateSim v1.8.0 has implemented an observable-only boundary, prediction
-freeze, exact post-freeze join, and failure-capable synthetic evaluator.
+ZeroGateSim v1.8.0 implemented an observable-only boundary, prediction freeze,
+exact post-freeze join, and failure-capable synthetic evaluator. v1.8.1 adds an
+exact early/witness/late **prior-touch support** path derived from and hash-bound
+to the v1.8.0 schema, a no-prior-touch ablation, execution from the verified
+source-byte snapshot, an allowed-root source-manifest boundary, and strict
+post-freeze recomputation.
+
+The source manifest binds declarations that labels and holdout material did not
+construct the observables. Those are declarations, not independent proof of
+the source's unrestricted history. The implemented formula also does not claim
+continuous persistence: dormant reappearance across a lower witness frame is
+allowed.
 ZeroGateSim has not yet demonstrated:
 
 - a scientific scorer that discriminates without truth roles, expected outcomes, semantic labels, or proxies;
-- manuscript lineage consumed by the final earned-one verdict;
+- empirical necessity or predictive benefit of prior-touch support;
+- continuous temporal persistence;
 - independent generator-family validation;
 - usefulness or safety for Deep Temporal Affect;
 - physical, cosmological, clinical, or observed-world truth.
@@ -61,7 +72,8 @@ Do not promote construction-bound output into inference.
 > ZeroGateSim currently reproduces role-aware lane partitioning in controlled
 > synthetic fields, while its core discrimination question remains at `0 / HOLD`
 > pending a frozen role-free scientific witness; v1.8.0 supplies the label
-> firewall and failure-capable evaluator infrastructure only.
+> firewall, while v1.8.1 supplies a verified threshold-free prior-touch scorer
+> and development-method lock without adding empirical authority.
 
 ## DREED posture
 

@@ -132,6 +132,15 @@ A failed holdout is not reused as a tuning set.
 Explicitly authorizes only the named staging, commit, push, pull request, tag,
 archive, or release actions. It is not standing permission for later versions.
 
+### Named sequence authorization
+
+The human may explicitly authorize a bounded multi-version sequence in one
+instruction. Record the exact version range, included scientific and Git
+actions, excluded actions, and evidence stop conditions in the repository
+`AGENTS.md` and workflow-research ledger. This is standing permission only for
+that named sequence and only for the listed actions; it does not imply tag,
+release, publication, transfer, or communication authority unless named.
+
 ### CODER RESTORE `<known target>`
 
 Explicit destructive recovery to a named, verified target. Unrelated user work
@@ -163,6 +172,11 @@ authority, or damage repository trust. Stop and preserve the wound.
 - a repair that would make failure harder to see;
 - transition from development evidence to frozen holdout;
 - transfer into a sibling project such as DTA.
+
+A named sequence authorization may pre-authorize specific checkpoints in this
+list. Codex still records each boundary and obeys falsifiers: an `INVALID`,
+`HOLD`, or `FALSIFIED` result is not converted into permission to continue the
+scientific claim.
 
 ### Explicit authorization required
 
@@ -396,6 +410,44 @@ when independent high-risk review is likely to prevent meaningful rework. Stop
 when the enough gate is met.
 
 Human release mechanics never promote scientific authority.
+
+### Workflow-research mode
+
+Coding economics is also an empirical question. The human may deliberately
+authorize full-agent execution even when a manual step would be cheaper, in
+order to observe whether end-to-end delegation saves time or improves quality.
+Label that choice as workflow research rather than treating it as the permanent
+default.
+
+For a multi-version workflow-research sequence:
+
+- record the authorized versions and actions before continuing;
+- preserve a coherent commit, local-green result, CI result, PR, and merge
+  receipt for each version rather than collapsing the sequence into one patch;
+- distinguish permission to run a threshold or holdout gate from evidence that
+  the gate passed;
+- stop or redirect when the locked decision grammar returns `INVALID`, `HOLD`,
+  or `FALSIFIED`;
+- keep exclusions such as tags, releases, DTA transfer, manuscript prose,
+  archive upload, or email explicit.
+
+For each version, preserve a small ledger of:
+
+- elapsed execution/CI cycles;
+- local and remote test outcomes;
+- independent reviews and defects caught;
+- unexpected agent or human interventions;
+- user-supplied credit cost when available, otherwise `not_recorded`;
+- user-supplied purchased-credit or budget context separately from measured
+  credit consumption;
+- whether full-agent execution saved, shifted, or added human work.
+
+Do not optimize for credits alone. Scientific integrity, failure detection,
+clarity, and total human attention remain part of the economic result.
+
+When GitHub does not enforce required checks, never assume `auto-merge` will
+wait. Inspect branch protection/check state and merge only after every intended
+CI check reports success.
 
 ## 19. Version-surface law
 

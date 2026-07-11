@@ -170,12 +170,9 @@ def write_canonical_json(path: str | Path, value: object) -> Path:
 
 
 def _strict_finite_unit_float(value: object, *, field: str, source: str) -> float:
-    if isinstance(value, bool) or value is None or isinstance(value, str) and not value.strip():
+    if isinstance(value, bool) or type(value) not in {int, float}:
         raise ObservableFirewallError(f"{source}: {field!r} must be a finite numeric value")
-    try:
-        number = float(value)
-    except (TypeError, ValueError) as exc:
-        raise ObservableFirewallError(f"{source}: malformed numeric field {field!r}: {value!r}") from exc
+    number = float(value)
     if not math.isfinite(number) or not 0.0 <= number <= 1.0:
         raise ObservableFirewallError(
             f"{source}: {field!r} must satisfy 0 <= value <= 1, got {value!r}"

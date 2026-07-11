@@ -229,7 +229,20 @@ def test_missing_observable_fails_closed() -> None:
         validate_observables(values)
 
 
-@pytest.mark.parametrize("bad", [True, "", "not-a-number", float("nan"), float("inf"), -0.1, 1.1])
+@pytest.mark.parametrize(
+    "bad",
+    [
+        True,
+        "",
+        "not-a-number",
+        "0.5",
+        object(),
+        float("nan"),
+        float("inf"),
+        -0.1,
+        1.1,
+    ],
+)
 def test_invalid_observable_never_becomes_zero(bad: object) -> None:
     values = dict(FEATURE_ROWS[0])
     values["strength"] = bad
