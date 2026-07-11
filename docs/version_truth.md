@@ -1,10 +1,10 @@
 # Version Truth
 
-**Status:** README overflow moved here in `v1.6.9-alpha`; development spine advanced in `v1.8.0-alpha`
+**Status:** README overflow moved here in `v1.6.9-alpha`; development spine advanced in `v1.8.1-alpha`
 **Purpose:** preserve the release spine and recent checkpoints without forcing the README to open with a wall of version bookkeeping.
 
-The current development line is `v1.8.0-alpha` — Observable Schema and Label
-Firewall. The latest merged release and scientific authority remain
+The current development line is `v1.8.1-alpha` — Lineage-Bearing Predictor
+Package. The latest scientific authority remains
 `v1.7.11-alpha` — Evidence Integrity Correction, with the core question at
 `0 / HOLD`.
 
@@ -45,7 +45,8 @@ Firewall. The latest merged release and scientific authority remain
 - `v1.7.9-alpha` — Reviewer Start Here / Reproduction Package: adds the reviewer start page, reproduction command map, expected output map, evidence manifest, and package CLI while keeping closeout at `v1.7.10-alpha`.
 - `v1.7.10-alpha` — Historical Core Question Closeout: recorded a bounded `+1` at release time; `v1.7.11-alpha` supersedes its current authority as construction-bound and withdraws the manuscript GO.
 - `v1.7.11-alpha` — Evidence Integrity Correction: preserves v1.7.10 as historical release state but supersedes its active `+1`; corrects nested-rung accounting, locks authority to five profiles / 27-81-243 scenarios / seeds 18-26 under a contract hash, recomputes summaries from typed gate rows, removes self-attested provenance from the current summary path, and holds manuscript v2 and DTA transfer.
-- `v1.8.0-alpha` — **unreleased development checkpoint**, Observable Schema and Label Firewall: introduces an exact seven-field observable contract, serializes join keys and labels as separate hash-bound artifacts, keeps identifiers out of the predictor callback, freezes prediction bytes and a receipt before label loading, and adds fail-closed leakage, permutation, join-integrity, and failure-capability tests. This is local software infrastructure only; v1.7.11 remains the scientific authority.
+- `v1.8.0-alpha` — **merged software checkpoint**, Observable Schema and Label Firewall: introduces an exact seven-field observable contract, serializes join keys and labels as separate hash-bound artifacts, keeps identifiers out of the predictor callback, freezes prediction bytes and a receipt before label loading, and adds fail-closed leakage, permutation, join-integrity, and failure-capability tests. It has no tag/release and adds no scientific authority; v1.7.11 remains authoritative.
+- `v1.8.1-alpha` — **development checkpoint**, Lineage-Bearing Predictor Package: derives an early/witness/late schema from the hash-bound v1.8.0 fields, implements threshold-free prior-touch support and a no-prior-touch ablation without claiming continuous persistence, executes from the verified source-byte snapshot, requires an allowed-root source manifest, strictly verifies frozen scores, and locks the complete v1.8.2 method while leaving the selected threshold null.
 
 ## Recent checkpoints
 
@@ -241,6 +242,30 @@ always-HOLD/CROWN/RESIST. The decision is `LOCAL_GREEN_FIREWALL_ONLY`.
 Scientific thresholds, frozen holdout reveal, manuscript v2, DTA transfer, and
 release actions remain behind explicit checkpoints.
 
-The next proposed coded gate is `v1.8.1-alpha — Lineage-Bearing Predictor
-Package and Development-Only Preregistration`, with a checkpoint before any
-scientific threshold is selected.
+This checkpoint is merged. Its GitHub CI portability repair is also merged and
+green.
+
+## v1.8.1-alpha note
+
+`v1.8.1-alpha` is the Lineage-Bearing Predictor Package and Development Plan
+Lock. It preserves the v1.8.0 label firewall, derives and hash-binds the exact
+seven fields, and requires numeric JSON values rather than coercible strings.
+Each case contains three ordered frames. The implemented formula is prior-touch
+support: late pressure is capped by the stronger early/witness touch. It is not
+continuous persistence, and dormant reappearance across a lower witness frame
+is explicitly allowed. The no-prior-touch ablation uses late pressure alone.
+
+The predictor runtime is loaded from the verified source-byte snapshot. An
+allowed-root source manifest binds input bytes, purpose, and no-label/no-holdout
+declarations; those declarations are not external proof. A strict verifier
+recomputes and compares frozen scores, manifest, and receipt. The v1.8.2 lock
+now specifies threshold boundaries, four generator lineages, nested folds,
+lexicographic selection, baselines/ablations, uncertainty, duplicate and
+permutation rules, and fail-closed stops.
+
+The decision is `LOCAL_GREEN_LINEAGE_PACKAGE_ONLY`; scientific authority
+remains v1.7.11 `0 / HOLD`, and no scientific threshold or holdout label is
+selected in v1.8.1. The user separately authorized full-agent execution,
+commit/push/PR/CI/merge, development threshold selection, and holdout mechanics
+through v1.8.4. Tags/releases, DTA transfer, manuscript prose, Zenodo, and email
+remain forbidden.

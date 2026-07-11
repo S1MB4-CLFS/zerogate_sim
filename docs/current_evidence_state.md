@@ -1,6 +1,6 @@
 # Current Evidence State
 
-**Current development version:** `v1.8.0-alpha`
+**Current development version:** `v1.8.1-alpha`
 
 **Scientific authority:** `v1.7.11-alpha`
 
@@ -20,6 +20,7 @@
 | `v1.7.10-alpha` | Core Question Closeout | historical / superseded | reproducible release state; its `+1` is construction-bound |
 | `v1.7.11-alpha` | Evidence Integrity Correction | current `0 / HOLD` | corrects provenance and nested-rung accounting; opens role-free repair |
 | `v1.8.0-alpha` | Observable Schema and Label Firewall | local software green | implements callback-argument/schema and hash-integrity checks; adds no scientific scorer or evidence crown |
+| `v1.8.1-alpha` | Lineage-Bearing Predictor Package | local development green | base-schema-bound three-frame prior-touch score, verified-byte execution, source/receipt verification, and complete v1.8.2 method lock; thresholds and empirical authority remain unearned |
 
 ## Corrected holdout accounting
 
@@ -49,7 +50,7 @@ to the answer key, so zero false crowns are construction-bound. The existing
 anti-tautology audit did not execute a frozen role-free scorer or prove that a
 deliberate false crown could occur and be counted.
 
-## v1.8.0 software state
+## v1.8 software state
 
 The local firewall uses an exact seven-field observable allowlist, keeps all
 identifiers outside the predictor callback, freezes canonical predictions and
@@ -61,10 +62,20 @@ constant HOLD/CROWN/RESIST behavior.
 This is infrastructure evidence only. It does not change the scientific
 decision below.
 
+v1.8.1 adds an exact early/witness/late schema derived from and hash-bound to
+the v1.8.0 fields. Its threshold-free formula is prior-touch support, not
+continuous persistence; dormant reappearance is allowed. The no-prior-touch
+ablation changes synthetic rank ordering. Predictor execution loads from the
+verified source-byte snapshot, score inputs require an allowed-root source
+manifest, and a strict verifier recomputes the frozen score artifacts. Source
+declarations are hash-bound declarations, not external proof. This demonstrates
+an implemented path, not empirical necessity.
+
 ## Current holds
 
 - Role-free scientific discrimination: not demonstrated.
-- Lineage in the final verdict: not implemented.
+- Prior-touch support in the final frozen verdict: not implemented.
+- Continuous temporal persistence: not implemented or claimed.
 - Independent generator validation: not done.
 - Manuscript v2: HOLD.
 - DTA transfer/integration: HOLD.
@@ -72,9 +83,20 @@ decision below.
 
 ## Next
 
-Checkpoint before scientific scorer thresholds. The next proposed coded gate is
-`v1.8.1-alpha — Lineage-Bearing Predictor Package and Development-Only
-Preregistration`.
+The next coded gate is `v1.8.2-alpha — Failure-Capable Development Evaluation
+and Baselines`. It may select thresholds from the locked options using
+development labels only. Its method is fixed to four generator lineages,
+nested lineage folds, a deterministic lexicographic objective, locked
+baselines/ablations, exact denominators, lineage-cluster uncertainty,
+duplicate/permutation controls, and fail-closed stops. Unseen-generator holdout
+material remains unopened until v1.8.3.
+
+The user authorized full-agent implementation and GitHub merge mechanics
+through v1.8.4, including v1.8.2 threshold selection, v1.8.3 holdout freeze,
+and the v1.8.4 one-pass join. This changes execution authority, not evidence
+authority. Tags/releases, DTA transfer, manuscript prose, Zenodo, and email
+remain forbidden.
 
 See [`v1_7_11_evidence_integrity_correction.md`](v1_7_11_evidence_integrity_correction.md).
 See [`v1_8_observable_schema_label_firewall.md`](v1_8_observable_schema_label_firewall.md).
+See [`v1_8_1_lineage_predictor_package.md`](v1_8_1_lineage_predictor_package.md).

@@ -1,6 +1,6 @@
 # ZeroGateSim
 
-**Current development line:** `v1.8.0-alpha` — Observable Schema and Label Firewall
+**Current development line:** `v1.8.1-alpha` — Lineage-Bearing Predictor Package
 
 **Current public line:** `v1.7.11-alpha` — Evidence Integrity Correction
 
@@ -26,6 +26,18 @@ predictions before label join, and uses synthetic invariance tests to keep
 prediction bytes unchanged under label permutation and identifier renaming.
 Separate evaluator canaries count injected false crowns and reject constant
 refusal. Read the [Observable Schema and Label Firewall](docs/v1_8_observable_schema_label_firewall.md).
+
+`v1.8.1-alpha` implements an exact three-frame **prior-touch support** path:
+every case is an ordered early/witness/late sequence whose seven fields derive
+from, and hash-bind, the v1.8.0 observable schema. The score caps late owned
+pressure by the stronger earlier touch. It does not claim continuous
+persistence; `.9 -> 0 -> .9` is explicitly allowed as dormant reappearance.
+Predictor execution is loaded from the verified source-byte snapshot, and a
+strict post-freeze verifier recomputes the score artifacts. Source manifests
+constrain inputs to an allowed root, but their no-label/no-holdout declarations
+remain content-bound declarations rather than external proof. This is still
+development infrastructure: no scientific threshold or holdout label is
+selected.
 
 The corrected accounting pass is bound to five exact candidate corpora, the
 27/81/243 scenario grids, and seeds 18-26 under a recorded contract hash. Final
@@ -228,7 +240,8 @@ v1.7.0-alpha core question contract complete
 -> v1.7.10-alpha historical core question closeout superseded
 -> v1.7.11-alpha evidence integrity correction: released scientific authority, 0 / HOLD
 -> v1.8.0-alpha observable schema and label firewall: local software checkpoint green
--> CHECKPOINT before scientific scorer thresholds or any holdout reveal
+-> v1.8.1-alpha lineage-bearing predictor package: local development checkpoint
+-> next: v1.8.2 development-only threshold selection and falsifier evaluation
 ```
 
 The shadow route is **not** the active route now. It is preserved as historical diagnostic work in the [history vault](docs/history_vault/README.md).
@@ -315,12 +328,14 @@ Correction sentence:
 Boundary remains strict:
 
 ```text
-role-free scorer = not implemented
-lineage in final verdict = not implemented
+role-free scientific discrimination = not demonstrated
+prior-touch scorer kernel = implemented; continuous persistence is not claimed
+prior-touch support in final verdict = not implemented
 independent generator validation = not done
 manuscript v2 / DTA transfer = HOLD
 v1.8.0 movement = callback-argument/schema and hash-integrity firewall local green
-next checkpoint = v1.8.1 lineage-bearing predictor design before threshold selection
+v1.8.1 movement = verified three-frame prior-touch package without threshold selection
+next checkpoint = v1.8.2 development-only threshold selection and falsifiers
 ```
 
 Read:
@@ -368,6 +383,47 @@ Read:
 - [`docs/manuscript_v2_empirical_readiness_gate.md`](docs/manuscript_v2_empirical_readiness_gate.md) — the evidence gate that must be earned before manuscript prose begins.
 - [`docs/UNIVERSAL_CODING_WORKFLOW_v3_CODEX_PROJECT.md`](docs/UNIVERSAL_CODING_WORKFLOW_v3_CODEX_PROJECT.md) — includes the permanent Coding Economics split between agent work and safe manual work.
 
+## Lineage-Bearing Predictor Package
+
+`v1.8.1-alpha` uses three ordered frames rather than pretending one snapshot is
+a temporal path:
+
+```text
+early -> witness -> late
+```
+
+Each frame derives from the v1.8.0 seven-field allowlist and binds the base
+schema ID and hash. The predictor computes minimum owned pressure per frame,
+then limits the late score by the strongest earlier touch. The no-prior-touch
+ablation uses late pressure alone. Synthetic canaries require sustained
+pressure to outrank a one-frame late spike under the full predictor, with that
+ranking reversed when prior-touch support is removed.
+
+This is not a continuity operator. A strong early frame, low witness frame, and
+strong late frame is accepted as dormant reappearance. The package executes
+the scorer from verified source bytes, requires an allowed-root source
+manifest, and strictly recomputes and verifies the freeze before downstream
+use. The source declarations are not proof of unrestricted local history.
+
+The byte-bound v1.8.2 method requires four generator lineages, nested
+leave-one-lineage-out folds, exact threshold boundaries, a deterministic
+lexicographic objective, simple and constant baselines, frozen and retuned
+ablations, lineage-cluster uncertainty, duplicate/aliasing controls, and
+fail-closed stops.
+
+The predictor callback and score-freeze path are threshold-free and label-free;
+their source declarations remain declarations rather than external proof. Read
+[`docs/v1_8_1_lineage_predictor_package.md`](docs/v1_8_1_lineage_predictor_package.md)
+for the exact formula, package binding, plan lock, and limitations.
+
+As workflow research, the user has authorized Codex to execute the planned
+v1.8.2-through-v1.8.4 sequence end to end, including development threshold
+selection, holdout freeze/join, commits, push, PRs, CI repair, and merges. This
+does not pre-authorize a positive result: locked `INVALID`, `HOLD`, or
+`FALSIFIED` outcomes remain controlling. Tags/releases, DTA transfer,
+manuscript prose, Zenodo, and email remain forbidden. See the
+[`workflow research ledger`](docs/workflow_research_ledger.md).
+
 ## Inspection map
 
 The README keeps the project face, the math, and the newest visual cards. Everything that became too long for the front page still has a visible path.
@@ -404,8 +460,11 @@ The README keeps the project face, the math, and the newest visual cards. Everyt
 ### Current v1.8 software repair
 
 - [`docs/v1_8_observable_schema_label_firewall.md`](docs/v1_8_observable_schema_label_firewall.md) — local-green firewall contract and honest limits.
+- [`docs/v1_8_1_lineage_predictor_package.md`](docs/v1_8_1_lineage_predictor_package.md) — exact three-frame prior-touch score, package binding, verifier, and limitations.
 - [`docs/manuscript_v2_empirical_readiness_gate.md`](docs/manuscript_v2_empirical_readiness_gate.md) — manuscript timing and decision gate.
 - [`docs/release_notes/v1_8_0_alpha.md`](docs/release_notes/v1_8_0_alpha.md) — version-local change record.
+- [`docs/release_notes/v1_8_1_alpha.md`](docs/release_notes/v1_8_1_alpha.md) — lineage-package change record.
+- [`docs/workflow_research_ledger.md`](docs/workflow_research_ledger.md) — end-to-end Codex economics observations.
 
 ### Anti-tautology / role-dependence path
 
@@ -473,7 +532,7 @@ The current front-page route preserves the v1.6/v1.7 release spine as trace anch
 ```text
 anti-tautology audit complete -> reproduction command package complete -> manuscript correction package complete -> v1.6 closeout complete
 v1.6.14-alpha -> v1.6.15-alpha -> v1.6.16-alpha -> v1.6.17-alpha -> v1.6.18-alpha -> v1.6.19-alpha -> v1.6.20-alpha -> v1.6.21-alpha -> v1.6.22-alpha -> v1.6.23-alpha -> v1.6.24-alpha -> v1.6.25-alpha -> v1.6.26-alpha -> v1.6.27-alpha -> v1.6.28-alpha
-v1.7.0-alpha -> v1.7.1-alpha -> v1.7.2-alpha -> v1.7.3-alpha -> v1.7.4-alpha -> v1.7.5-alpha -> v1.7.6-alpha -> v1.7.7-alpha -> v1.7.8-alpha -> v1.7.9-alpha -> v1.7.10-alpha historical -> v1.7.11-alpha HOLD -> v1.8.0 firewall local green -> threshold checkpoint
+v1.7.0-alpha -> v1.7.1-alpha -> v1.7.2-alpha -> v1.7.3-alpha -> v1.7.4-alpha -> v1.7.5-alpha -> v1.7.6-alpha -> v1.7.7-alpha -> v1.7.8-alpha -> v1.7.9-alpha -> v1.7.10-alpha historical -> v1.7.11-alpha HOLD -> v1.8.0 firewall local green -> v1.8.1 lineage package -> v1.8.2 development selection
 ```
 
 Named recent gates remain inspectable:

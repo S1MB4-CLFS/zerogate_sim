@@ -1,6 +1,6 @@
 # ZeroGateSim Roadmap
 
-**Current development line:** `v1.8.0-alpha` — Observable Schema and Label Firewall
+**Current development line:** `v1.8.1-alpha` — Lineage-Bearing Predictor Package
 
 **Latest released scientific authority:** `v1.7.11-alpha` — Evidence Integrity Correction
 
@@ -68,7 +68,8 @@ C_Z = min(D, P, R, B)
 | `v1.7.9` reviewer start here / reproduction package | complete | reviewer-facing path, expected outputs, strict handoff layers, and separated rung reproduction are packaged before closeout |
 | `v1.7.10` core question closeout | historical / superseded | reproducible release history; pooled totals and zero false crowns do not establish blind empirical discrimination |
 | `v1.7.11` evidence integrity correction | current `0 / HOLD` | atomic overlap, denominators, rates, fail-closed provenance, and construction-bound demotion |
-| `v1.8.0` observable schema and label firewall | local software green; unreleased | callback receives only seven observables; hash-bound predictions and split artifacts are checked before label evaluation; no scientific scorer or new evidence crown |
+| `v1.8.0` observable schema and label firewall | merged software checkpoint | callback receives only seven observables; hash-bound predictions and split artifacts are checked before label evaluation; no scientific scorer or new evidence crown |
+| `v1.8.1` lineage-bearing predictor package | local development green | base-schema-bound early/witness/late prior-touch score, verified-byte execution, strict freeze verifier, and complete v1.8.2 method lock; no selected threshold or empirical crown |
 
 ## Locked v1.6 closeout route
 
@@ -644,9 +645,10 @@ Accounting authority is frozen to five exact candidate corpora, the complete
 Final summaries must equal typed gate-row recomputation; caller-selected test
 contracts cannot issue authoritative unique-union counts.
 
-Manuscript v2, DTA transfer, scientific thresholds, frozen blind holdout, and
-Zenodo remain on HOLD. The released v1.7.11 software state does not promote the
-scientific claim; v1.8.0 remains an unreleased local development checkpoint.
+Manuscript v2, DTA transfer, and Zenodo remain on HOLD. The released v1.7.11
+software state does not promote the scientific claim. v1.8.0 is now a merged
+software checkpoint; scientific threshold and holdout execution are authorized
+only inside the separately bounded v1.8.2-through-v1.8.4 research sequence.
 
 ## Manuscript v2 upgrade gate — HOLD
 
@@ -707,12 +709,12 @@ Implemented/current line:
 | version | role | pass condition |
 |---|---|---|
 | `v1.8.0-alpha` | observable schema and label firewall | **local green**: exact seven-field allowlist; identifiers outside callback; receipt-bound predictions frozen before label join; forbidden-field, permutation, identifier-leak, and failure-capability tests pass |
-| `v1.8.1-alpha` | lineage-bearing predictor package and development-only preregistration | an observable-only lineage path is implemented exactly, its ablation changes the claimed lane, candidate scoring remains development-only, and threshold choices require a new checkpoint |
-| `v1.8.2-alpha` | failure-capable development evaluation and baselines | selected scorer is compared against always-HOLD/CROWN/RESIST and simple baselines under locked development data; no frozen holdout labels are opened |
+| `v1.8.1-alpha` | lineage-bearing predictor package and development plan lock | **local green**: three-frame prior-touch support, v1.8.0 schema-hash binding, verified-byte execution, allowed-root source manifest, strict post-freeze verifier, and complete v1.8.2 method lock; selected threshold remains null |
+| `v1.8.2-alpha` | failure-capable development evaluation and baselines | four generator lineages, nested lineage folds, exact threshold boundaries, lexicographic selection, baselines/ablations, uncertainty, duplicates, and fail-closed stops execute on development data only; no frozen holdout labels are opened |
 | `v1.8.3-alpha` | unseen-generator holdout contract and prediction freeze | family separation and duplicate blocking are executable; scorer, thresholds, and predictions freeze before any held-out label join |
 | `v1.8.4-alpha` | one-pass label join and empirical closeout | artifact-generated `SUPPORTED_BOUNDED`, `HOLD`, `FALSIFIED`, or `INVALID_EVIDENCE` decision with uncertainty and full audit receipts |
 
-### v1.8.0-alpha checkpoint
+### v1.8.0-alpha merged checkpoint
 
 The seven permitted predictor values are `strength`, `distinction`, `polarity`,
 `relation`, `return_observed`, `echo_mimic_score`, and
@@ -721,18 +723,57 @@ role-shaped aggregates, and derived verdict fields are forbidden. The local
 canary result is `LOCAL_GREEN_FIREWALL_ONLY`; scientific authority remains the
 v1.7.11 `0 / HOLD` decision.
 
-Stop here before:
+That merged checkpoint prohibited:
 
 ```text
 scientific scorer thresholds
 frozen holdout reveal
 DTA transfer or integration
 manuscript v2 prose
-merge, tag, push, PR, or release
+scientific promotion from software-green status
 ```
 
 This checkpoint is documented in
 [`docs/v1_8_observable_schema_label_firewall.md`](docs/v1_8_observable_schema_label_firewall.md).
+
+### v1.8.1-alpha current checkpoint
+
+The implemented mechanism is an exact ordered early/witness/late
+**prior-touch support** path. It is not continuous persistence: a strong early
+touch may support a strong late reappearance across a lower witness frame. The
+three-frame schema derives from and hash-binds the v1.8.0 seven-field schema.
+Synthetic canaries show a rank-changing mechanism wound and verify every
+formula operand; they do not show empirical discrimination.
+
+Predictor execution is compiled from the verified source-byte snapshot. Score
+freezes require an allowed-root source manifest and a caller-retained expected
+manifest hash. The manifest's no-label/no-holdout statements are declarations,
+not external history proof. A strict post-freeze verifier recomputes scores,
+manifest, and receipt before downstream use.
+
+The selected threshold remains null. The byte-bound v1.8.2 method fixes exact
+threshold boundaries, four generator lineages with all three roles, nested
+leave-one-lineage-out folds, a deterministic lexicographic objective,
+constant/simple baselines, frozen and retuned ablations, exact denominators,
+lineage-cluster uncertainty, duplicate/aliasing handling, permutation rules,
+and fail-closed stop states. v1.8.2 success means only
+`READY_FOR_V1_8_3_CONTRACT_ONLY`.
+
+### Authorized v1.8.2-through-v1.8.4 execution sequence
+
+The user has authorized Codex to implement, test, independently review,
+commit, push, open PRs, inspect/repair CI, and merge each planned version
+through v1.8.4. Scientific threshold selection on locked development data,
+the v1.8.3 holdout contract/freeze, and the v1.8.4 one-pass label join are
+included.
+
+This authority permits execution, not promotion. Locked `INVALID`, `HOLD`, or
+`FALSIFIED` results remain authoritative and may stop or redirect the sequence.
+Tags, releases, DTA transfer, manuscript prose, Zenodo, and email remain
+forbidden.
+
+Read
+[`docs/v1_8_1_lineage_predictor_package.md`](docs/v1_8_1_lineage_predictor_package.md).
 
 Strongest candidate claim after a future `SUPPORTED_BOUNDED` result:
 

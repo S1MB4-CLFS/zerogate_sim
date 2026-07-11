@@ -1,0 +1,66 @@
+v1.8.1-alpha Lineage-Bearing Predictor Package patch
+
+Core implementation:
+- src/zerogate_sim/v1_8_lineage_schema.py
+- src/zerogate_sim/v1_8_lineage_predictor.py
+- src/zerogate_sim/v1_8_predictor_package.py
+- src/zerogate_sim/v1_8_1_lineage_predictor_package.py
+- contracts/v1_8_1_lineage_predictor.json
+- contracts/v1_8_1_development_plan_lock.json
+- tests/test_v1_8_1_lineage_predictor_package.py
+
+Version and workflow surfaces:
+- .gitignore (root uv.lock ignored to prevent tool-generated untracked churn)
+- pyproject.toml
+- src/zerogate_sim/__init__.py
+- AGENTS.md
+- README.md
+- ROADMAP.md
+- REVIEWER_START_HERE.md
+- docs/UNIVERSAL_CODING_WORKFLOW_v3_CODEX_PROJECT.md
+- C:\dev\UNIVERSAL_CODING_WORKFLOW_v3_CODEX_PROJECT.md (byte-identical workspace copy)
+- docs/workflow_research_ledger.md
+- docs/v1_8_1_lineage_predictor_package.md
+- docs/release_notes/v1_8_1_alpha.md
+- docs/version_truth.md
+- docs/current_evidence_state.md
+- docs/current_evidence_index.md
+- docs/claim_boundary.md
+- docs/recent_native_evidence_history.md
+- tests/test_version_surface_contract.py
+
+Boundaries:
+- v1.8.0 firewall preserved and numeric typing strengthened
+- three-frame fields derive from and hash-bind the v1.8.0 schema
+- exact prior-touch support semantics; continuous persistence is not claimed
+- dormant reappearance is explicitly allowed and canary-covered
+- no role-shaped legacy lineage import
+- predictor execution is loaded from the verified source-byte snapshot
+- allowed-root source manifest is required; declarations are not external proof
+- strict post-freeze verifier recomputes scores, manifest, and receipt
+- complete v1.8.2 method lock: exact threshold boundaries, four generator
+  lineages, nested lineage folds, baseline formulas, metric denominators,
+  lexicographic selection/comparison, dual ablations, SHA-256-indexed cluster
+  uncertainty, failure fixtures, duplicates, permutations, and stop states
+- no scientific threshold selected
+- no development label join in score path
+- no holdout generation or reveal
+- no DTA transfer or manuscript prose
+- scientific authority remains v1.7.11-alpha, 0 / HOLD
+
+Adversarial review repairs:
+- closed verified-disk-bytes versus mutable-runtime execution gap
+- replaced self-attested source history with an allowed-root, hash-bound
+  declaration boundary
+- narrowed lineage wording to prior-touch support
+- added per-input and dormant-reappearance formula canaries
+- completed the future method lock
+- made cleanup ownership-safe
+- bound the base schema and added a consuming freeze verifier
+
+Authorized follow-on workflow research:
+- implementation, commit, push, PR, CI, and merge through v1.8.4
+- v1.8.2 scientific threshold selection, v1.8.3 holdout freeze, and v1.8.4
+  one-pass label join
+- tags/releases, DTA transfer, manuscript prose, Zenodo, and email remain
+  forbidden

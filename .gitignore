@@ -13,6 +13,7 @@ htmlcov/
 .venv/
 venv/
 ENV/
+uv.lock
 
 # Build artifacts
 build/
