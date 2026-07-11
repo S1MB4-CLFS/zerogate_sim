@@ -1,13 +1,13 @@
 # ZeroGateSim Claim Boundary
 
-**Current development version:** `v1.8.1-alpha`
+**Current development version:** `v1.8.2-alpha`
 
 **Scientific authority:** `v1.7.11-alpha`
 
 **Decision:** `0 / HOLD`
 
-**Scientific status:** `HOLD_CONSTRUCTION_BOUND`; v1.8.1 decision is
-`LOCAL_GREEN_LINEAGE_PACKAGE_ONLY`
+**Scientific status:** `HOLD_CONSTRUCTION_BOUND`; v1.8.2 development decision is
+`INVALID_CONSTANT_OR_DEAD_SAFE_PREDICTOR`
 
 ## Supported current claim
 
@@ -36,6 +36,17 @@ construct the observables. Those are declarations, not independent proof of
 the source's unrestricted history. The implemented formula also does not claim
 continuous persistence: dormant reappearance across a lower witness frame is
 allowed.
+
+v1.8.2 then executed the locked development evaluation on 144
+class-conditioned controlled synthetic cases across four generator lineages.
+Exact joins, 144 unique effective cases, zero duplicates, and all six evaluator
+failure-capability fixtures passed. The primary scores were nonconstant, but
+`piecewise_hysteresis_v1` reached only `0.58779880167953524`; it could not emit
+a crown at any locked threshold. The selector returned
+`INVALID_CONSTANT_OR_DEAD_SAFE_PREDICTOR`, selected option `null`, and
+progression `false`. This is a genuine failed development gate, not empirical
+support.
+
 ZeroGateSim has not yet demonstrated:
 
 - a scientific scorer that discriminates without truth roles, expected outcomes, semantic labels, or proxies;
@@ -45,7 +56,8 @@ ZeroGateSim has not yet demonstrated:
 - usefulness or safety for Deep Temporal Affect;
 - physical, cosmological, clinical, or observed-world truth.
 
-Manuscript v2 and DTA transfer remain on HOLD.
+Manuscript v2 and DTA transfer remain on HOLD. v1.8.3 holdout work and the
+v1.8.4 one-pass join do not execute from this result.
 
 ## Historical claim correction
 
@@ -73,7 +85,16 @@ Do not promote construction-bound output into inference.
 > synthetic fields, while its core discrimination question remains at `0 / HOLD`
 > pending a frozen role-free scientific witness; v1.8.0 supplies the label
 > firewall, while v1.8.1 supplies a verified threshold-free prior-touch scorer
-> and development-method lock without adding empirical authority.
+> and development-method lock, and v1.8.2 honestly invalidates threshold
+> progression because one complete development lineage cannot crown under any
+> locked option.
+
+## Repair boundary
+
+The next action must be a new preregistered repair version using a new untouched
+development set. The revealed v1.8.2 labels may diagnose this failure, but they
+may not be used to retune the three locked threshold options or to manufacture
+progression into v1.8.3.
 
 ## DREED posture
 

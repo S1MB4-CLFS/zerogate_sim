@@ -261,6 +261,9 @@ A scientific witness is not role-free unless all of the following hold:
 - semantic names and opaque identifiers cannot carry outcomes;
 - a deliberate false crown can occur and is counted by the evaluator;
 - always-HOLD, always-resist, and always-crown baselines fail;
+- failure-capability fixtures call the same production guard and decision
+  functions as the real evaluator; a second fixture-only status oracle is not
+  evidence and must fail review;
 - duplicated evidence cannot improve rates, uncertainty, or the decision;
 - lineage and other claimed mechanisms affect controlled predictions and
   held-out performance;
@@ -307,6 +310,12 @@ On failure:
 4. Re-run from the smallest safe point.
 5. Void obsolete instructions or artifacts.
 6. Never build a passed handoff after a failed required gate.
+
+A review harness that opens real development or holdout labels is a scientific
+run, not a read-only inspection. It must use a persistent named evidence root,
+retain receipts, and never rely on automatic temporary-directory cleanup. If an
+ephemeral run occurs accidentally, record the wound and compare any later
+retained deterministic build byte-for-byte; never tune between them.
 
 ## 13. Repository and release hygiene
 
@@ -418,6 +427,14 @@ authorize full-agent execution even when a manual step would be cheaper, in
 order to observe whether end-to-end delegation saves time or improves quality.
 Label that choice as workflow research rather than treating it as the permanent
 default.
+
+In this mode, minimizing credits is not the only objective. The human may buy a
+credit allowance and intentionally delegate deterministic CI, PR, and merge
+mechanics to observe continuity across versions. Record purchased allowance as
+budget context, measured consumption only when telemetry exists, and the manual
+actions that would otherwise have been cheaper. The experiment still stops at
+the first locked `INVALID`, `HOLD`, or `FALSIFIED` gate; spending more cannot buy
+scientific progression.
 
 For a multi-version workflow-research sequence:
 

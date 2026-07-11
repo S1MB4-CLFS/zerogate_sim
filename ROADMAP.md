@@ -1,6 +1,6 @@
 # ZeroGateSim Roadmap
 
-**Current development line:** `v1.8.1-alpha` — Lineage-Bearing Predictor Package
+**Current development line:** `v1.8.2-alpha` — Development Evaluation stopped at `INVALID_CONSTANT_OR_DEAD_SAFE_PREDICTOR`
 
 **Latest released scientific authority:** `v1.7.11-alpha` — Evidence Integrity Correction
 
@@ -70,6 +70,7 @@ C_Z = min(D, P, R, B)
 | `v1.7.11` evidence integrity correction | current `0 / HOLD` | atomic overlap, denominators, rates, fail-closed provenance, and construction-bound demotion |
 | `v1.8.0` observable schema and label firewall | merged software checkpoint | callback receives only seven observables; hash-bound predictions and split artifacts are checked before label evaluation; no scientific scorer or new evidence crown |
 | `v1.8.1` lineage-bearing predictor package | local development green | base-schema-bound early/witness/late prior-touch score, verified-byte execution, strict freeze verifier, and complete v1.8.2 method lock; no selected threshold or empirical crown |
+| `v1.8.2` failure-capable development evaluation | **INVALID / scientific stop** | 144/144 unique effective cases and exact joins passed, but `piecewise_hysteresis_v1` had zero crowns under all three locked options; selected threshold remains null and v1.8.3 is blocked |
 
 ## Locked v1.6 closeout route
 
@@ -710,9 +711,9 @@ Implemented/current line:
 |---|---|---|
 | `v1.8.0-alpha` | observable schema and label firewall | **local green**: exact seven-field allowlist; identifiers outside callback; receipt-bound predictions frozen before label join; forbidden-field, permutation, identifier-leak, and failure-capability tests pass |
 | `v1.8.1-alpha` | lineage-bearing predictor package and development plan lock | **local green**: three-frame prior-touch support, v1.8.0 schema-hash binding, verified-byte execution, allowed-root source manifest, strict post-freeze verifier, and complete v1.8.2 method lock; selected threshold remains null |
-| `v1.8.2-alpha` | failure-capable development evaluation and baselines | four generator lineages, nested lineage folds, exact threshold boundaries, lexicographic selection, baselines/ablations, uncertainty, duplicates, and fail-closed stops execute on development data only; no frozen holdout labels are opened |
-| `v1.8.3-alpha` | unseen-generator holdout contract and prediction freeze | family separation and duplicate blocking are executable; scorer, thresholds, and predictions freeze before any held-out label join |
-| `v1.8.4-alpha` | one-pass label join and empirical closeout | artifact-generated `SUPPORTED_BOUNDED`, `HOLD`, `FALSIFIED`, or `INVALID_EVIDENCE` decision with uncertainty and full audit receipts |
+| `v1.8.2-alpha` | failure-capable development evaluation and baselines | **complete / INVALID**: integrity, exact joins, duplicate audit, and 6/6 failure canaries passed; no locked threshold produced a crown on `piecewise_hysteresis_v1`, so selection stopped before baselines, ablations, or uncertainty |
+| `v1.8.3-alpha` | unseen-generator holdout contract and prediction freeze | **blocked by v1.8.2**; must not be created from an invalid development result |
+| `v1.8.4-alpha` | one-pass label join and empirical closeout | **blocked by v1.8.2**; no holdout exists or was revealed |
 
 ### v1.8.0-alpha merged checkpoint
 
@@ -736,7 +737,7 @@ scientific promotion from software-green status
 This checkpoint is documented in
 [`docs/v1_8_observable_schema_label_firewall.md`](docs/v1_8_observable_schema_label_firewall.md).
 
-### v1.8.1-alpha current checkpoint
+### v1.8.1-alpha inherited checkpoint
 
 The implemented mechanism is an exact ordered early/witness/late
 **prior-touch support** path. It is not continuous persistence: a strong early
@@ -759,6 +760,29 @@ lineage-cluster uncertainty, duplicate/aliasing handling, permutation rules,
 and fail-closed stop states. v1.8.2 success means only
 `READY_FOR_V1_8_3_CONTRACT_ONLY`.
 
+### v1.8.2-alpha current checkpoint — invalid development selection
+
+The three-stage build/freeze/join path executed with retained hash roots. All
+144 class-conditioned controlled-synthetic cases joined exactly; all were
+unique, all four generator lineages retained 12 cases per role, and all six
+failure-capability fixtures passed through production guards. Primary scores
+were variable globally (144 unique values), so this is not a literal constant
+scorer.
+
+The locked selector nevertheless failed closed. On
+`piecewise_hysteresis_v1`, the maximum primary score was
+`0.58779880167953524`. The lowest permitted crown threshold was `0.6`, so the
+lineage produced zero crowns for wide, medium, and narrow options. Every option
+was therefore invalid under the locked non-dead-safe denominator rule. The
+artifact-generated result is `INVALID_CONSTANT_OR_DEAD_SAFE_PREDICTOR`, the
+selected option is null, and baseline/ablation/uncertainty stages correctly did
+not run.
+
+This revealed development set is retired for threshold choice. Do not lower a
+threshold, relabel a generator, or regenerate friendlier cases inside v1.8.2.
+A future movement must first preregister a repair hypothesis and use untouched
+development material. v1.8.3 and v1.8.4 remain blocked.
+
 ### Authorized v1.8.2-through-v1.8.4 execution sequence
 
 The user has authorized Codex to implement, test, independently review,
@@ -771,6 +795,11 @@ This authority permits execution, not promotion. Locked `INVALID`, `HOLD`, or
 `FALSIFIED` results remain authoritative and may stop or redirect the sequence.
 Tags, releases, DTA transfer, manuscript prose, Zenodo, and email remain
 forbidden.
+
+The v1.8.2 result exercised that stop condition. The standing mechanics
+authority through v1.8.4 does not override the failed scientific prerequisite;
+the sequence stops at v1.8.2 until a separately named repair boundary is
+authorized and preregistered.
 
 Read
 [`docs/v1_8_1_lineage_predictor_package.md`](docs/v1_8_1_lineage_predictor_package.md).

@@ -1,6 +1,6 @@
 # Reviewer Start Here — ZeroGateSim
 
-**Current development line:** `v1.8.1-alpha` — Lineage-Bearing Predictor Package
+**Current development line:** `v1.8.2-alpha` — Failure-Capable Development Evaluation
 
 **Scientific authority:** `v1.7.11-alpha` — Evidence Integrity Correction
 
@@ -17,6 +17,7 @@ Read in this order:
 
 ```text
 README.md
+-> docs/v1_8_2_failure_capable_development_evaluation.md
 -> docs/v1_8_1_lineage_predictor_package.md
 -> docs/v1_8_observable_schema_label_firewall.md
 -> docs/v1_7_11_evidence_integrity_correction.md
@@ -59,12 +60,20 @@ content-bound declarations, not external proof of unrestricted history.
 Synthetic ablation and formula-input canaries show implemented mechanism
 behavior, not empirical accuracy. The selected threshold remains null.
 
-The v1.8.2 method is already byte-locked: exact threshold boundaries, four
-generator lineages, nested leave-one-lineage-out folds, a deterministic
-lexicographic objective, constant/simple baselines, frozen and retuned
-ablations, lineage-cluster uncertainty, duplicate/aliasing controls, and
-fail-closed stops. Passing that development gate would mean only
-`READY_FOR_V1_8_3_CONTRACT_ONLY`.
+v1.8.2 executed that byte-locked method on class-conditioned controlled
+synthetic development material. The 144 raw cases remained 144 effective
+unique cases after exact joins and a zero-duplicate audit, and all six
+failure-capability fixtures passed. The primary score was nonconstant across
+the corpus, but the complete `piecewise_hysteresis_v1` lineage had a maximum
+score of `0.58779880167953524`. It therefore produced no crowns under any of
+the locked `.8`, `.7`, or `.6` crown boundaries.
+
+The exact result is `INVALID_CONSTANT_OR_DEAD_SAFE_PREDICTOR`, with reason
+`no valid locked threshold option; piecewise_hysteresis_v1:INVALID_DEAD_SAFE_NO_CROWNS`.
+The selected option is `null`; uncertainty, baseline comparison, and ablation
+comparison correctly did not execute because valid nested selection was
+impossible. `READY_FOR_V1_8_3_CONTRACT_ONLY` was not earned, and no v1.8.3 or
+v1.8.4 execution is authorized by this result.
 
 ## Small software reproduction
 
@@ -115,6 +124,7 @@ Do not read this package as:
 - a current `+1` core-question closeout;
 - blind or role-free false-one detection;
 - independent generator validation;
-- evidence that prior-touch support improves or affects the final frozen verdict;
+- a valid selected scientific threshold or evidence that prior-touch support
+  improves the final frozen verdict;
 - permission for manuscript v2 or DTA transfer;
 - physics, cosmology, dimensional-origin, clinical, or observed-universe proof.

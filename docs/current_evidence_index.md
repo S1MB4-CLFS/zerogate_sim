@@ -1,6 +1,6 @@
 # Current Evidence Index
 
-**Current development line:** `v1.8.1-alpha` — Lineage-Bearing Predictor Package
+**Current development line:** `v1.8.2-alpha` — Failure-Capable Development Evaluation
 
 **Scientific authority:** `v1.7.11-alpha` — Evidence Integrity Correction
 
@@ -12,13 +12,14 @@
 This is the canonical current evidence index; historical packages remain named
 below so version tests cannot silently erase their route.
 
-1. [`v1_8_1_lineage_predictor_package.md`](v1_8_1_lineage_predictor_package.md) — current threshold-free prior-touch package, verified freeze path, method lock, and limitations.
-2. [`v1_8_observable_schema_label_firewall.md`](v1_8_observable_schema_label_firewall.md) — merged callback/schema and hash-integrity boundary.
-3. [`v1_7_11_evidence_integrity_correction.md`](v1_7_11_evidence_integrity_correction.md) — current scientific decision, atomic overlap, rates, and holds.
-4. [`current_evidence_state.md`](current_evidence_state.md) — compact current state.
-5. [`v1_7_latest_holdout_snapshot.md`](v1_7_latest_holdout_snapshot.md) — historical rung artifacts with corrected interpretation.
-6. [`../REVIEWER_START_HERE.md`](../REVIEWER_START_HERE.md) — cold-review route.
-7. [`version_truth.md`](version_truth.md) — release history and current authority.
+1. [`v1_8_2_failure_capable_development_evaluation.md`](v1_8_2_failure_capable_development_evaluation.md) — current invalid development result, exact reason, retained hashes, and repair boundary.
+2. [`v1_8_1_lineage_predictor_package.md`](v1_8_1_lineage_predictor_package.md) — threshold-free prior-touch package, verified freeze path, method lock, and limitations.
+3. [`v1_8_observable_schema_label_firewall.md`](v1_8_observable_schema_label_firewall.md) — merged callback/schema and hash-integrity boundary.
+4. [`v1_7_11_evidence_integrity_correction.md`](v1_7_11_evidence_integrity_correction.md) — current scientific authority, atomic overlap, rates, and holds.
+5. [`current_evidence_state.md`](current_evidence_state.md) — compact current state.
+6. [`v1_7_latest_holdout_snapshot.md`](v1_7_latest_holdout_snapshot.md) — historical rung artifacts with corrected interpretation.
+7. [`../REVIEWER_START_HERE.md`](../REVIEWER_START_HERE.md) — cold-review route.
+8. [`version_truth.md`](version_truth.md) — release history and current authority.
 
 ## Evidence authority
 
@@ -28,6 +29,12 @@ below so version tests cannot silently erase their route.
 | Evidence Integrity Correction | `v1.7.11-alpha` | `0 / HOLD` | accounting corrected; role-free scientific scorer not yet implemented |
 | Observable Schema and Label Firewall | `v1.8.0-alpha` | local software green; science unchanged | exact boundary and failure-capable evaluator; no scientific scorer or holdout result |
 | Lineage-Bearing Predictor Package | `v1.8.1-alpha` | local development green; science unchanged | prior-touch, not continuous persistence; base-schema hash binding, verified-byte execution, source declaration boundary, strict freeze verifier, and complete v1.8.2 method lock; no threshold selection or empirical result |
+| Failure-Capable Development Evaluation | `v1.8.2-alpha` | `INVALID_CONSTANT_OR_DEAD_SAFE_PREDICTOR`; science remains `0 / HOLD` | 144 unique cases, exact joins, zero duplicates, and 6/6 failure canaries; piecewise-hysteresis cannot crown under any locked option, selected option `null`, progression false |
+
+The v1.8.2 corpus is class-conditioned controlled synthetic development
+material, not independent empirical data. Valid nested selection was impossible,
+so uncertainty, baseline comparison, and ablation comparison did not execute.
+No v1.8.3 or v1.8.4 evidence exists.
 
 ## Nested-safe snapshot
 
@@ -61,7 +68,7 @@ fresh-seed path; relation and return debt did.
 
 - role-blind discovery;
 - independent generator validation;
-- prior-touch-support authority in the final frozen verdict;
+- a valid selected threshold or prior-touch-support authority in a frozen verdict;
 - continuous-persistence evidence;
 - manuscript v2 or DTA transfer readiness;
 - physics, cosmology, clinical, or observed-world claims.
